@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="py-16 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold mb-2">{{ .Title }}</h1>
+    <p class="text-rk-text-secondary mb-10">{{ .Description }}</p>
+
+    {{ $paginator := .Paginate (where .Pages "Kind" "page") 12 }}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{ range $paginator.Pages }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+
+    <!-- Pagination -->
+    {{ if gt $paginator.TotalPages 1 }}
+    <nav class="flex items-center justify-center gap-4 mt-12">
+      {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}" class="btn-outline text-sm">← {{ i18n "newer_posts" }}</a>
+      {{ end }}
+      <span class="text-rk-text-secondary text-sm">
+        {{ i18n "page_of" (dict "Current" $paginator.PageNumber "Total" $paginator.TotalPages) }}
+      </span>
+      {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}" class="btn-outline text-sm">{{ i18n "older_posts" }} →</a>
+      {{ end }}
+    </nav>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,124 @@
+{{ define "main" }}
+{{- $allPosts := where .Site.RegularPages "Section" "posts" -}}
+{{- $featured := first 1 $allPosts -}}
+{{- $rest := after 1 $allPosts -}}
+
+{{/* ---- Blog title + tagline ---- */}}
+<section class="pt-14 pb-10 px-4 text-center">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold mb-3">
+      {{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}
+    </h1>
+    <p class="text-rk-text-secondary text-lg leading-relaxed">
+      {{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}
+    </p>
+  </div>
+</section>
+
+{{/* ---- Featured post + sidebar (DO-style) ---- */}}
+<section class="px-4 pb-12">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6">
+
+    {{/* Left: Featured post card */}}
+    {{ with index $featured 0 }}
+    <article class="lg:col-span-3 bg-rk-card border border-rk-border rounded-2xl overflow-hidden flex flex-col">
+      {{/* Large image */}}
+      <a href="{{ .Permalink }}" class="block overflow-hidden">
+        {{- $imgURL := partial "post-image.html" . -}}
+        {{ if $imgURL }}
+        <img src="{{ $imgURL }}" alt="{{ .Title }}" class="w-full h-56 md:h-72 object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+        {{ else }}
+        <div class="w-full h-56 md:h-72 bg-gradient-to-br from-rk-blue/20 to-rk-violet/20 flex items-center justify-center">
+          <svg class="w-16 h-16 text-rk-blue/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+            <path d="M12 2L3 7v6c0 5.25 3.75 10.08 9 11.25C17.25 23.08 21 18.25 21 13V7l-9-5z"/>
+          </svg>
+        </div>
+        {{ end }}
+      </a>
+      {{/* Content */}}
+      <div class="p-6 flex flex-col flex-1">
+        {{ with (index .Params.categories 0) }}
+        <a href="{{ "categories/" | relLangURL }}{{ . | urlize }}/" class="text-xs font-medium px-3 py-1 rounded-full bg-rk-blue/10 text-rk-blue w-fit no-underline mb-4">{{ . }}</a>
+        {{ end }}
+        <h2 class="text-xl md:text-2xl font-bold mb-3 leading-tight">
+          <a href="{{ .Permalink }}" class="text-rk-text hover:text-rk-blue no-underline transition-colors">{{ .Title }}</a>
+        </h2>
+        <div class="flex items-center gap-2 text-sm text-rk-text-secondary mb-4">
+          {{ with .Params.author }}<span class="text-rk-blue">{{ . }}</span>{{ end }}
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          <span>·</span>
+          <span>{{ math.Round (div (countwords .Content) 200.0) }} min</span>
+        </div>
+        <a href="{{ .Permalink }}" class="text-sm text-rk-text hover:text-rk-blue no-underline mt-auto inline-flex items-center gap-1">
+          {{ i18n "read_more" | default "Read more" }} <span>→</span>
+        </a>
+      </div>
+    </article>
+    {{ end }}
+
+    {{/* Right: stacked cards */}}
+    <div class="lg:col-span-2 flex flex-col gap-6">
+
+      {{/* Category topics */}}
+      <div class="bg-rk-card border border-rk-border rounded-2xl p-6">
+        <h3 class="font-semibold mb-4">{{ i18n "categories" | default "Category topics" }}</h3>
+        <div class="flex flex-wrap gap-2">
+          {{ range .Site.Taxonomies.categories }}
+            <a href="{{ .Page.Permalink }}" class="text-sm px-4 py-2 rounded-full border border-rk-border text-rk-text hover:border-rk-blue hover:text-rk-blue transition-colors no-underline">
+              {{ .Page.Title }}
+            </a>
+          {{ end }}
+          {{ range .Site.Taxonomies.tags }}
+            <a href="{{ .Page.Permalink }}" class="text-sm px-4 py-2 rounded-full border border-rk-border text-rk-text-secondary hover:border-rk-blue hover:text-rk-blue transition-colors no-underline">
+              {{ .Page.Title }}
+            </a>
+          {{ end }}
+        </div>
+      </div>
+
+      {{/* CTA banner */}}
+      <div class="bg-gradient-to-r from-rk-blue/10 to-rk-violet/10 border border-rk-border rounded-2xl p-6 flex items-center gap-4">
+        <p class="text-sm leading-relaxed flex-1">{{ i18n "footer_description" | default "Comprehensive cybersecurity platform unifying GRC, SOC, Threat Modeling and more" }}</p>
+        <a href="{{ .Site.Params.demoURL }}" class="btn-primary text-sm whitespace-nowrap no-underline shrink-0" target="_blank" rel="noopener">{{ i18n "try_demo" | default "Try Demo" }}</a>
+      </div>
+
+      {{/* Newsletter */}}
+      <div class="bg-rk-card border border-rk-border rounded-2xl p-6">
+        <h3 class="font-semibold mb-2">{{ i18n "newsletter_title" | default "Stay up to date" }}</h3>
+        <form id="newsletter-form-home" action="#" method="POST" class="mt-3">
+          <div class="flex gap-2">
+            <input type="email" name="email" required
+              placeholder="{{ i18n "newsletter_email" | default "Email address" }}"
+              class="flex-1 px-4 py-2.5 rounded-lg bg-rk-bg border border-rk-border text-rk-text text-sm placeholder-rk-text-secondary/50 focus:border-rk-blue focus:outline-none focus:ring-1 focus:ring-rk-blue transition-colors">
+            <button type="submit" class="btn-primary text-sm">{{ i18n "newsletter_subscribe" | default "Submit" }}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ---- Dashed separator ---- */}}
+<div class="max-w-6xl mx-auto px-4">
+  <hr class="border-t-2 border-dashed border-rk-border">
+</div>
+
+{{/* ---- Latest posts grid ---- */}}
+{{ if $rest }}
+<section class="py-12 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold mb-8">{{ i18n "all_posts" | default "Latest posts" }}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{ range first 9 $rest }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+    {{ if gt (len $allPosts) 10 }}
+    <div class="text-center mt-10">
+      <a href="{{ "posts/" | relLangURL }}" class="btn-outline text-sm no-underline">{{ i18n "all_posts" | default "All Posts" }} →</a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

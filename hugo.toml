@@ -1,0 +1,60 @@
+baseURL = "https://blog.riskitera.com/"
+title = "Riskitera Blog"
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+enableGitInfo = true
+theme = "riskitera"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[permalinks]
+  [permalinks.page]
+    posts = "/posts/:year/:month/:slug/"
+    case-studies = "/case-studies/:slug/"
+  [permalinks.section]
+    posts = "/posts/"
+    case-studies = "/case-studies/"
+
+[languages]
+  [languages.es]
+    languageName = "Español"
+    languageCode = "es"
+    weight = 1
+    title = "Riskitera Blog"
+    contentDir = "content/es"
+    [languages.es.params]
+      description = "Blog de ciberseguridad: GRC, SOC, Threat Modeling, Code Security y más"
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 2
+    title = "Riskitera Blog"
+    contentDir = "content/en"
+    [languages.en.params]
+      description = "Cybersecurity blog: GRC, SOC, Threat Modeling, Code Security and more"
+
+[params]
+  author = "Riskitera Team"
+  mainURL = "https://riskitera.com"
+  demoURL = "https://demo.riskitera.com"
+  logo = "/images/logo.svg"
+  ogImage = "/images/og-default.png"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5

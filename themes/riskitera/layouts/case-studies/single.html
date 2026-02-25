@@ -1,0 +1,55 @@
+{{ define "main" }}
+<article class="py-16 px-4">
+  <div class="max-w-3xl mx-auto">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-rk-text-secondary mb-8">
+      <a href="{{ .Site.Home.RelPermalink }}" class="hover:text-rk-blue">{{ i18n "home" }}</a>
+      <span class="mx-2">/</span>
+      <a href="{{ "case-studies/" | relLangURL }}" class="hover:text-rk-blue">{{ i18n "nav_case_studies" }}</a>
+      <span class="mx-2">/</span>
+      <span class="text-rk-text">{{ .Title }}</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-10">
+      <div class="flex items-center gap-4 mb-4">
+        {{ with .Params.logo }}
+        <img src="{{ . }}" alt="{{ $.Params.company }}" class="h-12 w-12 rounded-lg object-contain bg-white p-1">
+        {{ end }}
+        {{ with .Params.company }}
+        <span class="text-rk-text-secondary text-lg">{{ . }}</span>
+        {{ end }}
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">{{ .Title }}</h1>
+      {{ with .Params.industry }}
+      <span class="inline-block px-3 py-1 rounded-full text-sm bg-rk-violet/10 text-rk-violet">{{ . }}</span>
+      {{ end }}
+    </header>
+
+    <!-- Content -->
+    <div class="prose prose-invert prose-headings:text-rk-text prose-p:text-rk-text/90 prose-a:text-rk-blue prose-strong:text-rk-text prose-code:text-rk-cyan prose-pre:bg-rk-card prose-blockquote:border-rk-blue max-w-none">
+      {{ .Content }}
+    </div>
+
+    <!-- Tags -->
+    {{ with .Params.tags }}
+    <div class="flex flex-wrap gap-2 mt-10 pt-6 border-t border-rk-border">
+      {{ range . }}
+        <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}/" class="text-xs px-2.5 py-1 rounded-full bg-rk-blue/10 text-rk-blue hover:bg-rk-blue/20 transition-colors">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <!-- CTA -->
+    <div class="mt-12 p-8 rounded-xl bg-gradient-to-r from-rk-blue/10 to-rk-violet/10 border border-rk-border text-center">
+      <h3 class="text-xl font-semibold mb-3">{{ if eq .Lang "es" }}¿Quieres resultados similares?{{ else }}Want similar results?{{ end }}</h3>
+      <a href="{{ .Site.Params.demoURL }}" class="btn-primary">{{ i18n "try_demo" }}</a>
+    </div>
+
+    <!-- Back -->
+    <div class="mt-8">
+      <a href="{{ "case-studies/" | relLangURL }}" class="text-rk-text-secondary hover:text-rk-blue text-sm">← {{ i18n "nav_case_studies" }}</a>
+    </div>
+  </div>
+</article>
+{{ end }}

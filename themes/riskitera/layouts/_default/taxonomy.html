@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="py-16 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold mb-2">{{ .Title }}</h1>
+    <p class="text-rk-text-secondary mb-10">{{ len .Pages }} {{ if eq .Lang "es" }}artículos{{ else }}articles{{ end }}</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{ range .Pages }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-rk-bg text-rk-text font-sans antialiased;
+  }
+  a {
+    @apply text-rk-blue hover:text-rk-cyan transition-colors;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-rk-blue to-rk-violet bg-clip-text text-transparent;
+  }
+  .card {
+    @apply bg-rk-card border border-rk-border rounded-xl p-6 hover:bg-rk-card-hover transition-colors;
+  }
+  .btn-primary {
+    @apply bg-rk-blue text-white px-6 py-2.5 rounded-lg font-medium hover:bg-blue-600 transition-colors;
+  }
+  .btn-outline {
+    @apply border border-rk-border text-rk-text px-6 py-2.5 rounded-lg font-medium hover:border-rk-blue hover:text-rk-blue transition-colors;
+  }
+}

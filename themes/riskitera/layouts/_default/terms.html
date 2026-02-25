@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="py-16 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold mb-8">{{ .Title }}</h1>
+    <div class="flex flex-wrap gap-3">
+      {{ range .Pages }}
+        <a href="{{ .Permalink }}" class="px-5 py-2.5 rounded-full border border-rk-border text-rk-text-secondary hover:border-rk-blue hover:text-rk-blue transition-colors">
+          {{ .Title }} <span class="text-rk-text-secondary/60 ml-1">({{ len .Pages }})</span>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

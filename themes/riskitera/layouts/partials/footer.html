@@ -1,0 +1,61 @@
+<footer class="bg-rk-card mt-auto">
+  {{/* ---- Top section: 3-column grid ---- */}}
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      {{/* ---- Column 1: Logo + description ---- */}}
+      <div>
+        <a href="{{ .Site.Home.RelPermalink }}" class="flex items-center gap-2.5 no-underline hover:opacity-90 mb-4">
+          <img src="/images/logo.png" alt="Riskitera" class="h-7 w-auto">
+          <span class="text-lg font-bold text-rk-blue">Riskitera</span>
+        </a>
+        <p class="text-rk-text-secondary text-sm leading-relaxed">
+          {{ i18n "footer_description" | default "Cybersecurity platform for GRC, SOC, Threat Modeling and Code Security. AI-powered risk orchestration." }}
+        </p>
+      </div>
+
+      {{/* ---- Column 2: Quick links ---- */}}
+      <div>
+        <h3 class="text-rk-text font-semibold text-sm uppercase tracking-wider mb-4">
+          {{ i18n "footer_links_title" | default "Quick Links" }}
+        </h3>
+        <ul class="space-y-3 list-none p-0 m-0">
+          <li>
+            <a href="{{ "posts/" | relLangURL }}" class="text-rk-text-secondary hover:text-rk-text text-sm transition-colors no-underline">
+              {{ i18n "nav_blog" | default "Blog" }}
+            </a>
+          </li>
+          <li>
+            <a href="{{ "case-studies/" | relLangURL }}" class="text-rk-text-secondary hover:text-rk-text text-sm transition-colors no-underline">
+              {{ i18n "nav_case_studies" | default "Case Studies" }}
+            </a>
+          </li>
+          <li>
+            <a href="{{ "pages/about/" | relLangURL }}" class="text-rk-text-secondary hover:text-rk-text text-sm transition-colors no-underline">
+              {{ i18n "footer_about" | default "About" }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {{/* ---- Column 3: Newsletter ---- */}}
+      <div>
+        {{ partial "newsletter.html" . }}
+      </div>
+    </div>
+  </div>
+
+  {{/* ---- Bottom bar ---- */}}
+  <div class="border-t border-rk-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-rk-text-secondary text-xs m-0">
+        &copy; {{ now.Year }} Riskitera. {{ i18n "footer_rights" | default "All rights reserved" }}.
+      </p>
+      {{- with .Site.Params.mainURL }}
+      <a href="{{ . }}" class="text-rk-text-secondary hover:text-rk-blue text-xs transition-colors no-underline" target="_blank" rel="noopener">
+        riskitera.com
+      </a>
+      {{- end }}
+    </div>
+  </div>
+</footer>

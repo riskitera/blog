@@ -1,0 +1,17 @@
+<div class="text-center p-8 rounded-xl bg-rk-card border border-rk-border">
+  <h3 class="text-xl font-semibold mb-2">{{ i18n "newsletter_title" }}</h3>
+  <p class="text-rk-text-secondary mb-6">{{ i18n "newsletter_description" }}</p>
+  <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" action="#" method="POST">
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="{{ i18n "newsletter_email" }}"
+      class="flex-1 px-4 py-2.5 rounded-lg bg-rk-bg border border-rk-border text-rk-text placeholder-rk-text-secondary/50 focus:border-rk-blue focus:outline-none focus:ring-1 focus:ring-rk-blue transition-colors"
+    >
+    <button type="submit" class="btn-primary whitespace-nowrap">
+      {{ i18n "newsletter_subscribe" }}
+    </button>
+  </form>
+  <p id="newsletter-message" class="text-sm mt-3 hidden"></p>
+</div>

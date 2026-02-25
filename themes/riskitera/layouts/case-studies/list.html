@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="py-16 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold mb-2">{{ i18n "nav_case_studies" }}</h1>
+    <p class="text-rk-text-secondary mb-10">{{ .Description }}</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{ range .Pages }}
+        {{ partial "case-study-card.html" . }}
+      {{ end }}
+    </div>
+
+    {{ if eq (len .Pages) 0 }}
+    <p class="text-rk-text-secondary text-center py-12">{{ i18n "no_posts" }}</p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

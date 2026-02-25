@@ -1,0 +1,140 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{/* ---- Title ---- */}}
+{{- if .IsHome -}}
+  <title>{{ .Site.Title }}</title>
+{{- else -}}
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+{{- end -}}
+
+{{/* ---- Meta description ---- */}}
+{{- $description := "" -}}
+{{- if .Description -}}
+  {{- $description = .Description -}}
+{{- else if .IsPage -}}
+  {{- $description = .Summary | plainify | truncate 160 -}}
+{{- else if .Site.Params.description -}}
+  {{- $description = .Site.Params.description -}}
+{{- end -}}
+{{- if $description }}
+<meta name="description" content="{{ $description }}">
+{{- end }}
+
+{{/* ---- Canonical URL ---- */}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* ---- Hreflang alternates ---- */}}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+{{- range .Translations }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+{{- end }}
+
+{{/* ---- Open Graph ---- */}}
+{{- if .IsHome }}
+<meta property="og:type" content="website">
+{{- else if eq .Section "posts" }}
+<meta property="og:type" content="article">
+{{- else }}
+<meta property="og:type" content="website">
+{{- end }}
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+{{- if $description }}
+<meta property="og:description" content="{{ $description }}">
+{{- end }}
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ .Lang }}">
+{{- $ogImage := "" -}}
+{{- if .Params.image -}}
+  {{- $res := .Resources.GetMatch .Params.image -}}
+  {{- if $res -}}
+    {{- $ogImage = $res.Permalink -}}
+  {{- else -}}
+    {{- $ogImage = .Params.image | absURL -}}
+  {{- end -}}
+{{- else if .Site.Params.ogImage -}}
+  {{- $ogImage = .Site.Params.ogImage | absURL -}}
+{{- end -}}
+{{- if $ogImage }}
+<meta property="og:image" content="{{ $ogImage }}">
+{{- end }}
+
+{{/* ---- Twitter Card ---- */}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+{{- if $description }}
+<meta name="twitter:description" content="{{ $description }}">
+{{- end }}
+{{- if $ogImage }}
+<meta name="twitter:image" content="{{ $ogImage }}">
+{{- end }}
+
+{{/* ---- RSS autodiscovery ---- */}}
+{{- with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+{{- end }}
+
+{{/* ---- Favicon ---- */}}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+{{/* ---- Schema.org JSON-LD ---- */}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  {{- if .Site.Params.ogImage }}
+  "logo": "{{ .Site.Params.ogImage | absURL }}",
+  {{- end }}
+  "description": "{{ with .Site.Params.description }}{{ . }}{{ end }}"
+}
+</script>
+{{- else if and .IsPage (eq .Section "posts") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "description": "{{ $description }}",
+  {{- if $ogImage }}
+  "image": "{{ $ogImage }}",
+  {{- end }}
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author }}{{ end }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    {{- if .Site.Params.ogImage }}
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.Params.ogImage | absURL }}"
+    },
+    {{- end }}
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+{{- end }}
+
+{{/* ---- Fuse.js for search ---- */}}
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+
+{{/* ---- CSS ---- */}}
+{{- $css := resources.Get "css/output.css" -}}
+{{- if $css -}}
+  {{- if hugo.IsProduction -}}
+    {{- $css = $css | minify | fingerprint -}}
+  {{- end -}}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{- end -}}

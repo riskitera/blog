@@ -1,0 +1,5 @@
+public/
+resources/_gen/
+.hugo_build.lock
+node_modules/
+themes/riskitera/assets/css/output.css

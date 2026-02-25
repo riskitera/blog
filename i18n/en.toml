@@ -1,0 +1,130 @@
+[nav_blog]
+other = "Blog"
+
+[nav_case_studies]
+other = "Case Studies"
+
+[try_demo]
+other = "Try Demo"
+
+[read_more]
+other = "Read more"
+
+[reading_time]
+one = "{{ .Count }} min read"
+other = "{{ .Count }} min read"
+
+[related_posts]
+other = "Related Posts"
+
+[tags]
+other = "Tags"
+
+[categories]
+other = "Categories"
+
+[search_placeholder]
+other = "Search articles..."
+
+[search_shortcut]
+other = "Ctrl+K"
+
+[no_results]
+other = "No results found"
+
+[newsletter_title]
+other = "Subscribe to Newsletter"
+
+[newsletter_description]
+other = "Get the latest cybersecurity news and insights"
+
+[newsletter_email]
+other = "Your email"
+
+[newsletter_subscribe]
+other = "Subscribe"
+
+[share]
+other = "Share"
+
+[share_twitter]
+other = "Share on X"
+
+[share_linkedin]
+other = "Share on LinkedIn"
+
+[copy_link]
+other = "Copy link"
+
+[link_copied]
+other = "Link copied!"
+
+[toc]
+other = "Table of Contents"
+
+[published]
+other = "Published"
+
+[updated]
+other = "Updated"
+
+[all_posts]
+other = "All Posts"
+
+[all_tags]
+other = "All Tags"
+
+[all_categories]
+other = "All Categories"
+
+[footer_rights]
+other = "All rights reserved"
+
+[footer_description]
+other = "Comprehensive cybersecurity platform unifying GRC, SOC, Threat Modeling and more"
+
+[page_of]
+other = "Page {{ .Current }} of {{ .Total }}"
+
+[newer_posts]
+other = "Newer posts"
+
+[older_posts]
+other = "Older posts"
+
+[minutes]
+one = "minute"
+other = "minutes"
+
+[home]
+other = "Home"
+
+[about]
+other = "About"
+
+[contact]
+other = "Contact"
+
+[back_to_blog]
+other = "Back to Blog"
+
+[challenge]
+other = "Challenge"
+
+[solution]
+other = "Solution"
+
+[results]
+other = "Results"
+
+[industry]
+other = "Industry"
+
+[company]
+other = "Company"
+
+[draft_notice]
+other = "This article is a draft and has not been published yet."
+
+[no_posts]
+other = "No articles published yet."

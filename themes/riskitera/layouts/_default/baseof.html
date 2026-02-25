@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}" dir="ltr">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body class="min-h-screen flex flex-col bg-rk-bg text-rk-text">
+  {{- partial "header.html" . -}}
+  <main class="flex-1">
+    {{- block "main" . }}{{- end }}
+  </main>
+  {{- partial "footer.html" . -}}
+  {{- partial "search-modal.html" . -}}
+  <script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<article class="card group flex flex-col h-full">
+  {{- $imgURL := partial "post-image.html" . -}}
+  <div class="relative overflow-hidden rounded-lg mb-4 -mx-6 -mt-6">
+    {{ if $imgURL }}
+    <img src="{{ $imgURL }}" alt="{{ .Title }}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+    {{ else }}
+    <div class="w-full h-48 bg-gradient-to-br from-rk-blue/20 to-rk-violet/20 flex items-center justify-center">
+      <svg class="w-12 h-12 text-rk-blue/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+        <path d="M12 2L3 7v6c0 5.25 3.75 10.08 9 11.25C17.25 23.08 21 18.25 21 13V7l-9-5z"/>
+      </svg>
+    </div>
+    {{ end }}
+  </div>
+  <div class="flex items-center gap-3 text-sm text-rk-text-secondary mb-3">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+    <span>·</span>
+    <span>{{ math.Round (div (countwords .Content) 200.0) }} min</span>
+  </div>
+  <h3 class="text-lg font-semibold mb-2 group-hover:text-rk-blue transition-colors">
+    <a href="{{ .Permalink }}" class="text-rk-text hover:text-rk-blue no-underline">{{ .Title }}</a>
+  </h3>
+  <p class="text-rk-text-secondary text-sm mb-4 flex-1">
+    {{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}
+  </p>
+  {{ with .Params.tags }}
+  <div class="flex flex-wrap gap-2 mt-auto">
+    {{ range first 3 . }}
+      <span class="text-xs px-2.5 py-1 rounded-full bg-rk-blue/10 text-rk-blue">{{ . }}</span>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>

@@ -1,0 +1,20 @@
+{{/*
+  post-image.html — Resolves a post's featured image URL.
+
+  Usage: {{ partial "post-image.html" . }}
+
+  Resolution order:
+  1. Page bundle resource matching .Params.image (e.g., "featured.svg")
+  2. .Params.image as direct URL fallback
+  3. Empty string if no image configured
+*/}}
+{{- $url := "" -}}
+{{- with .Params.image -}}
+  {{- $res := $.Resources.GetMatch . -}}
+  {{- if $res -}}
+    {{- $url = $res.RelPermalink -}}
+  {{- else -}}
+    {{- $url = . -}}
+  {{- end -}}
+{{- end -}}
+{{- return $url -}}

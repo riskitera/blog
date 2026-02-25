@@ -1,0 +1,130 @@
+[nav_blog]
+other = "Blog"
+
+[nav_case_studies]
+other = "Casos de Estudio"
+
+[try_demo]
+other = "Probar Demo"
+
+[read_more]
+other = "Leer más"
+
+[reading_time]
+one = "{{ .Count }} min de lectura"
+other = "{{ .Count }} min de lectura"
+
+[related_posts]
+other = "Posts Relacionados"
+
+[tags]
+other = "Etiquetas"
+
+[categories]
+other = "Categorías"
+
+[search_placeholder]
+other = "Buscar artículos..."
+
+[search_shortcut]
+other = "Ctrl+K"
+
+[no_results]
+other = "No se encontraron resultados"
+
+[newsletter_title]
+other = "Suscríbete al Newsletter"
+
+[newsletter_description]
+other = "Recibe las últimas novedades sobre ciberseguridad"
+
+[newsletter_email]
+other = "Tu email"
+
+[newsletter_subscribe]
+other = "Suscribirse"
+
+[share]
+other = "Compartir"
+
+[share_twitter]
+other = "Compartir en X"
+
+[share_linkedin]
+other = "Compartir en LinkedIn"
+
+[copy_link]
+other = "Copiar enlace"
+
+[link_copied]
+other = "¡Enlace copiado!"
+
+[toc]
+other = "Tabla de Contenidos"
+
+[published]
+other = "Publicado"
+
+[updated]
+other = "Actualizado"
+
+[all_posts]
+other = "Todos los Posts"
+
+[all_tags]
+other = "Todas las Etiquetas"
+
+[all_categories]
+other = "Todas las Categorías"
+
+[footer_rights]
+other = "Todos los derechos reservados"
+
+[footer_description]
+other = "Plataforma integral de ciberseguridad que unifica GRC, SOC, Threat Modeling y más"
+
+[page_of]
+other = "Página {{ .Current }} de {{ .Total }}"
+
+[newer_posts]
+other = "Posts más recientes"
+
+[older_posts]
+other = "Posts anteriores"
+
+[minutes]
+one = "minuto"
+other = "minutos"
+
+[home]
+other = "Inicio"
+
+[about]
+other = "Acerca de"
+
+[contact]
+other = "Contacto"
+
+[back_to_blog]
+other = "Volver al Blog"
+
+[challenge]
+other = "Desafío"
+
+[solution]
+other = "Solución"
+
+[results]
+other = "Resultados"
+
+[industry]
+other = "Industria"
+
+[company]
+other = "Empresa"
+
+[draft_notice]
+other = "Este artículo es un borrador y aún no ha sido publicado."
+
+[no_posts]
+other = "Aún no hay artículos publicados."

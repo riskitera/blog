@@ -1,0 +1,13 @@
+{{ if .TableOfContents }}
+<nav class="sticky top-24" aria-label="{{ i18n "toc" }}">
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-rk-text-secondary mb-4">{{ i18n "toc" }}</h2>
+  <div class="toc-content text-sm border-l-2 border-rk-border pl-4 space-y-1
+              [&_ul]:list-none [&_ul]:p-0 [&_ul]:m-0 [&_ul]:space-y-1
+              [&_ul_ul]:pl-4 [&_ul_ul]:mt-1
+              [&_li]:leading-relaxed
+              [&_a]:text-rk-text-secondary [&_a]:no-underline [&_a]:transition-colors
+              [&_a:hover]:text-rk-blue">
+    {{ .TableOfContents }}
+  </div>
+</nav>
+{{ end }}
