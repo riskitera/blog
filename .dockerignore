@@ -1,0 +1,9 @@
+node_modules/
+public/
+resources/_gen/
+.hugo_build.lock
+.git/
+.claude/
+README.md
+CLAUDE.md
+Makefile
