@@ -66,3 +66,31 @@ blog/
 
 - Formato: `<type>(blog): <subject>`
 - Autor: Dani (cr0hn@cr0hn.com)
+
+<!-- wiki-brain:start -->
+## Wiki Knowledge Base (segundo cerebro de David)
+
+Path: /Users/pedri77/Documents/Claude_proyectos/Claude/claude-obsidian
+
+Cuando necesites contexto que no está en este proyecto:
+1. Lee `wiki/hot.md` (contexto reciente, ~500 palabras)
+2. Si no basta, lee `wiki/index.md` (catálogo maestro)
+3. Para dominios, lee `wiki/entities/_index.md`, `wiki/concepts/_index.md` o `wiki/sources/_index.md`
+4. Solo después drillea páginas individuales
+
+Entry points clave:
+- Perfil del owner: `wiki/entities/David Moya.md`
+- Portfolio de proyectos: `wiki/entities/Portfolio Riskitera.md`
+- Jerga y acrónimos: `wiki/meta/glossary.md`
+- Protocolo de lectura: `wiki/_brain/cowork-protocol.md`
+
+NO leas el wiki para preguntas genéricas de código o tareas ajenas al dominio de este proyecto.
+
+## Reglas de estilo (aplicar en todos los proyectos)
+
+- Español por defecto. Inglés solo para código y términos técnicos.
+- Respuestas cortas, sin preámbulo ni resumen redundante.
+- Sin em dashes ni `--` como puntuación. Usar puntos, comas, dos puntos, paréntesis.
+- Tool calls en paralelo cuando sean independientes.
+- Challengear ideas, no asentir por asentir.
+<!-- wiki-brain:end -->
