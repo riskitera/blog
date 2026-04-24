@@ -1,5 +1,6 @@
 ---
 title: "Politicas de seguridad informatica: como crearlas desde cero"
+image: "cover.png"
 description: "Guia completa para crear politicas de seguridad informatica: tipos de politicas, proceso de redaccion y aprobacion, comunicacion a empleados, ciclo de revision y plantillas alineadas con ENS e ISO 27001."
 slug: "politicas-seguridad-informatica-como-crearlas"
 date: 2026-04-06

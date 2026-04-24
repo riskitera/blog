@@ -1,5 +1,6 @@
 ---
 title: "Analista SOC: roles N1, N2 y N3 explicados con detalle"
+image: "cover.png"
 description: "Guia completa sobre los roles de analista SOC: que hace cada nivel (N1, N2, N3), habilidades requeridas, herramientas, trayectoria profesional y salarios en Espana."
 slug: "analista-soc-roles-n1-n2-n3"
 date: 2026-04-05

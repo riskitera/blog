@@ -1,5 +1,6 @@
 ---
 title: "MITRE ATT&CK: que es y como aplicarlo en tu organizacion"
+image: "cover.png"
 description: "Guia completa sobre el framework MITRE ATT&CK: matrices Enterprise, Mobile e ICS, tacticas y tecnicas, integracion con el SOC, threat hunting y herramientas como ATT&CK Navigator."
 slug: "mitre-attack-que-es-como-usarlo"
 date: 2026-04-06

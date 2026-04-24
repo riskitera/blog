@@ -1,5 +1,6 @@
 ---
 title: "Guia practica de auditoria de seguridad informatica"
+image: "cover.png"
 description: "Guia completa sobre auditoria de seguridad informatica: tipos de auditorias, fases del proceso, gestion de evidencias, frameworks ISO 19011 e ISACA, herramientas y automatizacion."
 slug: "auditoria-seguridad-informatica-guia"
 date: 2026-04-06

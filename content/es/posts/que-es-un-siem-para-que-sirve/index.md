@@ -1,5 +1,6 @@
 ---
 title: "Que es un SIEM y por que tu empresa lo necesita"
+image: "cover.png"
 description: "Guia completa sobre SIEM: que es, como funciona, principales soluciones del mercado (Splunk, QRadar, Elastic, Sentinel), open source vs comercial, y cuando necesitas uno."
 slug: "que-es-un-siem-para-que-sirve"
 date: 2026-04-05

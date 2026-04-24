@@ -1,5 +1,6 @@
 ---
 title: "NIS2: que es, a quien afecta y plazos de cumplimiento en Espana"
+image: "cover.png"
 description: "Guia completa sobre la Directiva NIS2: que empresas deben cumplirla, requisitos principales, plazos de transposicion en Espana, sanciones y pasos para prepararse."
 slug: "nis2-que-es-a-quien-afecta"
 date: 2026-04-05

@@ -1,5 +1,6 @@
 ---
 title: "DORA: el reglamento que cambia la ciberseguridad financiera en Europa"
+image: "cover.png"
 description: "Guia completa sobre el Reglamento DORA: que es, a quien afecta, los cinco pilares de resiliencia operativa digital, plazos, sanciones y como prepararse para cumplir."
 slug: "dora-reglamento-ciberseguridad-financiera"
 date: 2026-04-05
