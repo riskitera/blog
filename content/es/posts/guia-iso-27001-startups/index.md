@@ -5,7 +5,7 @@ slug: "guia-iso-27001-startups"
 date: 2026-02-22
 lastmod: 2026-02-22
 draft: false
-image: "featured.svg"
+image: "cover.png"
 tags: ["GRC", "ISO 27001", "Compliance"]
 categories: ["GRC"]
 author: "Riskitera Team"

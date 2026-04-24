@@ -5,7 +5,7 @@ slug: "bienvenidos-al-blog-riskitera"
 date: 2026-02-23
 lastmod: 2026-02-23
 draft: false
-image: "featured.svg"
+image: "cover.png"
 tags: ["GRC", "SOC", "Ciberseguridad"]
 categories: ["General"]
 author: "Riskitera Team"
