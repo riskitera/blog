@@ -1,17 +1,54 @@
 <div class="text-center p-8 rounded-xl bg-rk-card border border-rk-border">
   <h3 class="text-xl font-semibold mb-2">{{ i18n "newsletter_title" }}</h3>
   <p class="text-rk-text-secondary mb-6">{{ i18n "newsletter_description" }}</p>
-  <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" action="#" method="POST">
+  <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return submitNewsletter(event, this, 'newsletter-message')">
     <input
       type="email"
       name="email"
       required
       placeholder="{{ i18n "newsletter_email" }}"
-      class="flex-1 px-4 py-2.5 rounded-lg bg-rk-bg border border-rk-border text-rk-text placeholder-rk-text-secondary/50 focus:border-rk-blue focus:outline-none focus:ring-1 focus:ring-rk-blue transition-colors"
+      class="flex-1 min-w-0 px-4 py-2.5 rounded-lg bg-rk-bg border border-rk-border text-rk-text placeholder-rk-text-secondary/50 focus:border-rk-blue focus:outline-none focus:ring-1 focus:ring-rk-blue transition-colors"
     >
-    <button type="submit" class="btn-primary whitespace-nowrap">
+    <button type="submit" class="btn-primary whitespace-nowrap shrink-0">
       {{ i18n "newsletter_subscribe" }}
     </button>
   </form>
   <p id="newsletter-message" class="text-sm mt-3 hidden"></p>
 </div>
+<script>
+function submitNewsletter(e, form, msgId) {
+  e.preventDefault();
+  const msg = document.getElementById(msgId);
+  const email = form.querySelector('input[name=email]').value;
+  const btn = form.querySelector('button');
+  btn.disabled = true;
+  btn.textContent = '...';
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({email}),
+  })
+  .then(r => r.json())
+  .then(d => {
+    msg.classList.remove('hidden');
+    if (d.ok) {
+      msg.className = 'text-sm mt-3 text-green-400';
+      msg.textContent = d.message || 'Suscrito correctamente';
+      form.querySelector('input[name=email]').value = '';
+    } else {
+      msg.className = 'text-sm mt-3 text-red-400';
+      msg.textContent = d.error || 'Error al suscribirse';
+    }
+  })
+  .catch(() => {
+    msg.classList.remove('hidden');
+    msg.className = 'text-sm mt-3 text-red-400';
+    msg.textContent = 'Error de conexion';
+  })
+  .finally(() => {
+    btn.disabled = false;
+    btn.textContent = '{{ i18n "newsletter_subscribe" }}';
+  });
+  return false;
+}
+</script>
