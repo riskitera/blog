@@ -50,6 +50,8 @@ theme = "riskitera"
   demoURL = "https://demo.riskitera.com"
   logo = "/images/logo.svg"
   ogImage = "/images/og-default.png"
+  posthogApiKey = "phc_sQci2cJW3RTAAC88tC7myq3BWfpsji9BWihcxUTBXyHy"
+  posthogHost = "https://us.i.posthog.com"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

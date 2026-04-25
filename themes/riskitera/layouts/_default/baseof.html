@@ -11,5 +11,8 @@
   {{- partial "footer.html" . -}}
   {{- partial "search-modal.html" . -}}
   <script src="{{ "js/main.js" | relURL }}"></script>
+  {{- if hugo.IsProduction }}
+  <script src="{{ "js/tracking.js" | relURL }}" defer></script>
+  {{- end }}
 </body>
 </html>
