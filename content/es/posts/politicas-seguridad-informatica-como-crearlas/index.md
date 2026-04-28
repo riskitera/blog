@@ -16,7 +16,7 @@ Las politicas de seguridad informatica son los documentos fundamentales que esta
 
 <!--more-->
 
-## Que son las politicas de seguridad informatica
+## Que son las politicas de seguridad informatica?
 
 Una politica de seguridad informatica es un documento formal que define la posicion de la organizacion respecto a un aspecto concreto de la proteccion de la informacion. Establece que esta permitido y que no, quien es responsable de que y cuales son las consecuencias de su incumplimiento.
 
@@ -26,7 +26,7 @@ Esta jerarquia documental es fundamental para la gestion eficaz de la seguridad.
 
 ISO 27001 exige una politica de seguridad de la informacion de alto nivel como requisito del SGSI, ademas de politicas especificas para areas como el control de accesos, la clasificacion de la informacion o el uso aceptable de los recursos. El [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) requiere una politica de seguridad aprobada por el organo competente que articule la gestion continuada de la seguridad.
 
-## Tipos de politicas de seguridad esenciales
+## Que tipos de politicas de seguridad son esenciales?
 
 Cada organizacion necesita un conjunto de politicas adaptado a su tamano, sector y requisitos normativos. Los siguientes tipos son los mas comunes y necesarios.
 
@@ -90,7 +90,7 @@ El ENS define niveles de informacion (bajo, medio, alto) en las dimensiones de s
 
 Sin una clasificacion de informacion operativa, es imposible aplicar controles de seguridad proporcionales: o se protege toda la informacion con el mismo nivel (costoso y poco practico) o se toman decisiones arbitrarias e inconsistentes.
 
-## Como redactar politicas de seguridad eficaces
+## Como redactar politicas de seguridad eficaces?
 
 La calidad de la redaccion determina la utilidad practica de las politicas. Una politica mal escrita, aunque tecnicamente correcta, no sera comprendida ni aplicada.
 
@@ -128,7 +128,7 @@ Cada politica debe seguir una estructura coherente que facilite su lectura y con
 
 **Consistencia.** Las diferentes politicas deben utilizar terminologia, estructura y estilo coherentes. Las contradicciones entre politicas generan confusion y erosionan la confianza en el marco documental.
 
-## Proceso de aprobacion
+## Como es el proceso de aprobacion de politicas de seguridad?
 
 La aprobacion formal es lo que transforma un documento de trabajo en una politica con autoridad y fuerza de obligado cumplimiento.
 
@@ -154,7 +154,7 @@ Toda politica debe incluir un proceso formal para gestionar excepciones. Existir
 
 Las excepciones sin proceso formal son una fuente frecuente de riesgo y de hallazgos en [auditorias de seguridad](/es/posts/auditoria-seguridad-informatica-guia/).
 
-## Comunicacion a los empleados
+## Como comunicar las politicas de seguridad a los empleados?
 
 Una politica aprobada pero desconocida por el personal es tan inutil como la ausencia de politica. La comunicacion es una fase critica que muchas organizaciones descuidan.
 
@@ -170,11 +170,13 @@ Una politica aprobada pero desconocida por el personal es tan inutil como la aus
 
 **Acuse de recibo.** Para politicas criticas, solicitar que cada empleado confirme que ha leido y comprendido el documento. Este acuse de recibo, ademas de reforzar la comunicacion, constituye una evidencia de cumplimiento valiosa para auditorias.
 
+{{< cta type="tofu" text="Riskitera incluye plantillas de politicas de seguridad adaptadas a ENS, ISO 27001 y NIS2, listas para personalizar." label="Ver plantillas" >}}
+
 ### Adaptacion al publico
 
 No todo el personal necesita conocer todas las politicas con el mismo nivel de detalle. La comunicacion debe adaptarse a la audiencia: la direccion necesita comprender los principios y las implicaciones de negocio; el personal general necesita saber que reglas le aplican directamente y como cumplirlas; el personal tecnico necesita ademas los detalles que le permitan implementar y operar los controles.
 
-## Ciclo de revision y actualizacion
+## Con que frecuencia se deben revisar las politicas?
 
 Las politicas de seguridad no son documentos estaticos. Deben revisarse y actualizarse de forma periodica y ante eventos significativos.
 
@@ -190,7 +192,7 @@ Ademas de la revision periodica, las politicas deben actualizarse ante cambios s
 
 Cada politica debe tener un sistema de control de versiones que identifique claramente la version vigente, la fecha de aprobacion, los cambios realizados respecto a la version anterior y el historial completo de versiones. El acceso a versiones obsoletas debe restringirse o marcarse claramente para evitar que el personal consulte documentos no vigentes.
 
-## Plantillas y recursos
+## Donde encontrar plantillas de politicas de seguridad?
 
 Para organizaciones que crean politicas por primera vez, las plantillas proporcionan un punto de partida valioso que acelera significativamente el proceso.
 
@@ -210,7 +212,7 @@ Riskitera incluye plantillas de politicas de seguridad alineadas con los requisi
 
 Las plantillas son un punto de partida, no un producto final. Toda plantilla debe adaptarse al contexto especifico de la organizacion: su sector, su tamano, su estructura organizativa, su entorno tecnologico, sus requisitos normativos y su cultura corporativa. Una politica copiada literalmente de una plantilla sin adaptacion sera generica, inadecuada y dificilmente aplicable.
 
-## Errores comunes al crear politicas de seguridad
+## Cuales son los errores comunes al crear politicas de seguridad?
 
 **Redactar politicas que nadie lee ni conoce.** La politica mas perfecta tecnicamente es inutil si el personal no la conoce. La comunicacion y la formacion son tan importantes como la redaccion.
 
@@ -223,6 +225,8 @@ Las plantillas son un punto de partida, no un producto final. Toda plantilla deb
 **No gestionar excepciones.** La rigidez absoluta no funciona en organizaciones reales. Un proceso formal de excepciones permite la flexibilidad necesaria sin comprometer la integridad del marco normativo.
 
 **No actualizar las politicas.** Una politica de contrasenas que exige cambio cada 30 dias o que prohibe el teletrabajo cuando toda la organizacion trabaja en remoto erosiona la credibilidad de todo el marco documental. Las politicas deben reflejar la realidad actual de la organizacion.
+
+{{< cta type="mofu" text="Gestiona el ciclo de vida completo de tus politicas de seguridad: redaccion, aprobacion, difusion y revision periodica." >}}
 
 ## Preguntas frecuentes
 

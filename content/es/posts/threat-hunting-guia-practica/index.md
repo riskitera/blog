@@ -16,7 +16,7 @@ El threat hunting, o caza proactiva de amenazas, es la disciplina de buscar acti
 
 <!--more-->
 
-## Que es el threat hunting
+## Que es el threat hunting y por que es necesario?
 
 El threat hunting es una actividad de seguridad ofensiva en la que analistas cualificados buscan de forma proactiva amenazas que han eludido los controles de deteccion automatizados. A diferencia de la monitorizacion tradicional basada en alertas, donde el sistema notifica al analista cuando algo anomalo ocurre, el hunting invierte el flujo: es el analista quien formula hipotesis sobre posibles compromisiones y busca evidencias que las confirmen o descarten.
 
@@ -24,7 +24,7 @@ Esta actividad se fundamenta en una premisa realista: ningun sistema de deteccio
 
 El SANS Institute define tres niveles de madurez en threat hunting. En el nivel inicial (HM0), la organizacion depende exclusivamente de alertas automatizadas. En el nivel intermedio (HM1-HM2), se realizan busquedas basadas en indicadores y se comienzan a formular hipotesis. En el nivel avanzado (HM3-HM4), el hunting es sistematico, basado en inteligencia y con automatizacion personalizada. La mayoria de organizaciones se situan entre HM0 y HM1, lo que representa un area de mejora significativa.
 
-## Deteccion reactiva frente a caza proactiva
+## Cual es la diferencia entre deteccion reactiva y threat hunting proactivo?
 
 Comprender la diferencia entre deteccion reactiva y hunting proactivo es fundamental para valorar la importancia de esta disciplina.
 
@@ -40,7 +40,7 @@ El threat hunting no depende de alertas previas. El hunter analiza datos con una
 
 La caza proactiva complementa la deteccion reactiva. Los hallazgos del hunting frecuentemente se traducen en nuevas reglas de deteccion que mejoran la capacidad reactiva de la organizacion, creando un ciclo virtuoso de mejora continua.
 
-## Hunting basado en hipotesis
+## Como funciona el threat hunting basado en hipotesis?
 
 El enfoque mas efectivo para el threat hunting es la formulacion de hipotesis estructuradas. Este metodo proporciona direccion, alcance y criterios de evaluacion claros para cada campana de caza.
 
@@ -62,7 +62,7 @@ El analisis combina consultas estructuradas (queries especificas en el SIEM) con
 
 Independientemente del resultado, cada campana de hunting debe documentarse: hipotesis, fuentes de datos consultadas, consultas ejecutadas, hallazgos y conclusiones. Si se confirma la hipotesis, se inicia un proceso de respuesta a incidentes. Si se descarta, los datos recopilados enriquecen la comprension del entorno y las consultas pueden convertirse en detecciones automatizadas permanentes.
 
-## Metodologias de threat hunting
+## Que metodologias de threat hunting existen?
 
 Existen varios marcos metodologicos que proporcionan estructura y repetibilidad al proceso de hunting.
 
@@ -82,7 +82,7 @@ TaHiTI define tres fases principales: iniciacion (recopilacion de inteligencia y
 
 Este modelo define cuatro niveles de madurez en hunting: nivel 0 (sin hunting, solo deteccion reactiva), nivel 1 (hunting basado en IOCs y busquedas ad hoc), nivel 2 (hunting basado en hipotesis con procedimientos definidos) y nivel 3 (hunting automatizado con modelos predictivos y machine learning). Proporciona un camino claro de evolucion para organizaciones en diferentes etapas de madurez.
 
-## Herramientas para threat hunting
+## Que herramientas se usan en threat hunting?
 
 El hunter necesita acceso a datos ricos y herramientas que permitan consultarlos, analizarlos y visualizarlos de forma flexible.
 
@@ -110,7 +110,7 @@ Para hunting, las reglas Sigma proporcionan un punto de partida valioso: el hunt
 
 **Jupyter Notebooks** se utilizan cada vez mas para hunting avanzado, combinando la ejecucion de consultas al SIEM con analisis estadistico y visualizacion en un entorno interactivo y reproducible.
 
-## Habilidades necesarias para el threat hunter
+## Que habilidades necesita un threat hunter?
 
 El threat hunting requiere un perfil profesional multidisciplinar que combina conocimientos tecnicos profundos con capacidad analitica.
 
@@ -134,7 +134,9 @@ El hunting es fundamentalmente un ejercicio de analisis. El hunter debe ser capa
 
 La automatizacion de consultas, el procesamiento de datos a escala y la creacion de herramientas personalizadas requieren conocimientos de Python, PowerShell o Bash. Muchos hunters avanzados desarrollan sus propias herramientas y scripts para tareas recurrentes.
 
-## Construir un programa de threat hunting
+{{< cta type="tofu" text="Riskitera potencia tu programa de threat hunting con hipotesis generadas por IA y correlacion automatica de telemetria." label="Explorar" >}}
+
+## Como construir un programa de threat hunting?
 
 Implementar un programa de hunting estructurado requiere planificacion, recursos y compromiso organizacional.
 
@@ -158,7 +160,7 @@ El hunting requiere tiempo dedicado de analistas cualificados. Es dificil hacer 
 
 Sin metricas, es imposible demostrar el valor del programa y justificar su continuidad. Las metricas de proceso y resultado son esenciales para la evolucion del programa. Riskitera incluye capacidades de threat hunting proactivo en su plataforma SOC, integrando la generacion de hipotesis con la inteligencia de amenazas y automatizando la ejecucion de busquedas sobre los datos centralizados.
 
-## Metricas de un programa de threat hunting
+## Como medir la eficacia del threat hunting?
 
 Medir la eficacia del hunting es un reto frecuente. Estas son las metricas mas relevantes:
 
@@ -183,6 +185,8 @@ Medir la eficacia del hunting es un reto frecuente. Estas son las metricas mas r
 **Depender exclusivamente de herramientas automatizadas.** Las herramientas de hunting automatizado tienen valor, pero no sustituyen al analisis humano. Los atacantes avanzados estan disenados para evadir deteccion automatizada, y es el juicio del hunter lo que marca la diferencia.
 
 **No cerrar el ciclo.** El hunting debe alimentar la deteccion reactiva. Si los hallazgos no se convierten en detecciones automatizadas, la organizacion dependera siempre de campanas manuales para detectar las mismas amenazas.
+
+{{< cta type="mofu" text="Lleva tu threat hunting al siguiente nivel con una plataforma que conecta hipotesis, detecciones y evidencias de compliance." >}}
 
 ## Preguntas frecuentes
 

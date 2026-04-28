@@ -16,7 +16,7 @@ Un Centro de Operaciones de Seguridad (SOC) es el nucleo de la capacidad de dete
 
 <!--more-->
 
-## Que es un SOC y por que lo necesitas
+## Que es un SOC y por que lo necesita tu empresa?
 
 Un SOC (Security Operations Center) es una funcion centralizada que emplea personas, procesos y tecnologia para monitorizar y mejorar continuamente la postura de seguridad de una organizacion, al tiempo que previene, detecta, analiza y responde a incidentes de ciberseguridad.
 
@@ -30,7 +30,7 @@ Las razones principales para contar con un SOC son:
 - **Visibilidad global**: el SOC proporciona una vision unificada del estado de seguridad de toda la organizacion.
 - **Reduccion de costes por incidente**: segun IBM, el coste medio de una brecha de datos en Europa fue de 4,3 millones de euros en 2025. Las organizaciones con SOC redujeron ese coste en un 40 por ciento de media.
 
-## Tipos de SOC: interno, externo o hibrido
+## Que tipos de SOC existen: interno, externo o hibrido?
 
 Antes de disenar tu SOC, la primera decision estrategica es elegir el modelo operativo.
 
@@ -83,7 +83,7 @@ Combina un equipo interno reducido con el apoyo de un proveedor externo. Es el m
 
 Segun datos de INCIBE, en 2025 el 34 por ciento de las empresas medianas y grandes espanolas con SOC operaban un modelo hibrido, el 41 por ciento externalizaban completamente y el 25 por ciento mantenian un SOC interno puro.
 
-## Roles del equipo SOC: N1, N2 y N3
+## Que roles necesita un equipo SOC?
 
 El equipo de un SOC se organiza en tres niveles (tiers) con funciones, habilidades y responsabilidades diferenciadas. Si quieres profundizar en cada perfil profesional, te recomendamos nuestro articulo sobre [analistas SOC: roles N1, N2 y N3 explicados con detalle](/es/posts/2026/04/analista-soc-roles-n1-n2-n3/).
 
@@ -141,7 +141,7 @@ Un SOC tipico cuenta con 1-2 analistas N3.
 - **Ingeniero de deteccion**: desarrolla y mantiene las reglas de correlacion, los casos de uso y la infraestructura del SIEM.
 - **Ingeniero de automatizacion (SOAR)**: desarrolla playbooks automatizados y gestiona la plataforma SOAR.
 
-## Herramientas imprescindibles
+## Que herramientas necesita un SOC?
 
 La tecnologia es uno de los tres pilares del SOC, junto con las personas y los procesos.
 
@@ -181,7 +181,9 @@ Automatiza la respuesta a incidentes mediante playbooks predefinidos y orquesta 
 - **Herramientas forenses**: Velociraptor, Autopsy, Volatility.
 - **Gestion de vulnerabilidades**: Qualys, Tenable, Rapid7.
 
-## Procesos fundamentales del SOC
+{{< cta type="tofu" text="Montar un SOC requiere las herramientas adecuadas. Riskitera integra SIEM, correlacion y triage con IA en una sola plataforma." label="Conocer mas" >}}
+
+## Cuales son los procesos fundamentales de un SOC?
 
 La tecnologia sin procesos bien definidos es inutil. Estos son los procesos esenciales:
 
@@ -231,7 +233,7 @@ Mide la eficacia del SOC con metricas clave:
 - **Volumen de alertas por analista**: indicador de carga de trabajo.
 - **Cobertura MITRE ATT&CK**: porcentaje de tecnicas del framework cubiertas por reglas de deteccion.
 
-## Costes de un SOC
+## Cuanto cuesta montar y operar un SOC?
 
 El coste de un SOC varia enormemente segun el modelo, el tamano y la madurez deseada. Estas son referencias orientativas para el mercado espanol en 2026:
 
@@ -256,7 +258,7 @@ El coste de un SOC varia enormemente segun el modelo, el tamano y la madurez des
 
 Riskitera ofrece servicios de SOC gestionado 24/7 con un modelo flexible que se adapta a las necesidades de cada organizacion, combinando analistas experimentados con tecnologia avanzada de deteccion y respuesta.
 
-## Errores comunes al montar un SOC
+## Cuales son los errores mas comunes al montar un SOC?
 
 Estos son los errores que vemos con mas frecuencia en organizaciones que intentan montar un SOC:
 
@@ -283,6 +285,8 @@ Sin metricas claras (MTTD, MTTR, tasa de falsos positivos), es imposible saber s
 ### Olvidar la formacion continua
 
 El panorama de amenazas cambia constantemente. Un equipo SOC que no se forma continuamente quedara obsoleto en meses. Destina presupuesto y tiempo para certificaciones, ejercicios de red team y participacion en comunidades de seguridad.
+
+{{< cta type="mofu" text="¿Planificando tu SOC? Solicita una evaluacion gratuita y descubre como Riskitera reduce el tiempo de despliegue." >}}
 
 ## Preguntas frecuentes
 

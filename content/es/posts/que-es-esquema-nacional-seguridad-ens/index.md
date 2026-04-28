@@ -16,7 +16,7 @@ El Esquema Nacional de Seguridad (ENS) es el marco normativo que establece los p
 
 <!--more-->
 
-## Que es el Esquema Nacional de Seguridad
+## Que es el Esquema Nacional de Seguridad (ENS)?
 
 El ENS es una normativa espanola que define la politica de seguridad en la utilizacion de medios electronicos en el ambito del sector publico. Su objetivo es crear las condiciones necesarias de confianza en el uso de los medios electronicos, estableciendo medidas de seguridad para garantizar la confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad de la informacion.
 
@@ -24,7 +24,7 @@ Publicado originalmente en 2010 mediante el Real Decreto 3/2010, el ENS ha evolu
 
 El Centro Criptologico Nacional (CCN), adscrito al Centro Nacional de Inteligencia (CNI), es el organismo encargado de velar por el cumplimiento del ENS y de publicar las guias tecnicas CCN-STIC que detallan como implementar cada medida de seguridad.
 
-## Historia y evolucion del ENS
+## Como ha evolucionado el ENS desde 2010?
 
 La primera version del ENS nacio al amparo de la Ley 11/2007 de acceso electronico de los ciudadanos a los servicios publicos. En aquel momento, la digitalizacion del sector publico estaba en sus inicios y la normativa buscaba establecer unas bases minimas de seguridad.
 
@@ -37,7 +37,7 @@ Las principales novedades del ENS 2022 incluyen:
 - **Interconexion con marcos europeos**: se alinea el ENS con normativas europeas como el Reglamento eIDAS y la Directiva NIS2.
 - **Gestion de la cadena de suministro**: se exige a las Administraciones que sus proveedores tecnologicos tambien cumplan con el ENS.
 
-## Niveles de seguridad: alto, medio y bajo
+## Cuales son los niveles de seguridad del ENS: alto, medio y bajo?
 
 El ENS clasifica los sistemas de informacion en tres categorias en funcion del impacto que tendria un incidente de seguridad sobre las dimensiones de seguridad (confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad).
 
@@ -61,7 +61,7 @@ El nivel alto exige las medidas mas rigurosas: cifrado robusto de datos en repos
 
 Segun datos del CCN, en 2025 el 47 por ciento de las certificaciones ENS correspondieron al nivel medio, el 31 por ciento al nivel alto y el 22 por ciento al nivel bajo.
 
-## Quien debe cumplir el ENS
+## Quien esta obligado a cumplir el ENS?
 
 El ambito de aplicacion del ENS es amplio y no se limita al sector publico en sentido estricto:
 
@@ -76,7 +76,7 @@ Este ultimo punto es especialmente relevante: si tu empresa desarrolla software 
 
 El CCN estima que mas de 15.000 entidades en Espana estan sujetas al cumplimiento del ENS, aunque el numero de certificaciones activas a finales de 2025 rondaba las 3.200, lo que indica que todavia existe un margen significativo de mejora.
 
-## Medidas de seguridad clave
+## Cuales son las medidas de seguridad clave del ENS?
 
 El ENS organiza sus medidas de seguridad en tres marcos:
 
@@ -110,7 +110,7 @@ Se centran en la proteccion tecnica de los activos:
 - Proteccion de la informacion (clasificacion, cifrado en reposo, copias de seguridad).
 - Proteccion de los servicios (disponibilidad, proteccion frente a denegacion de servicio).
 
-## Pasos para implementar el ENS
+## Como se implementa el ENS paso a paso?
 
 La implementacion del ENS es un proceso estructurado que, dependiendo del tamano de la organizacion y del nivel de seguridad requerido, puede llevar entre 6 y 18 meses. Estos son los pasos fundamentales:
 
@@ -144,7 +144,9 @@ Una vez implementadas las medidas, somete el sistema a una auditoria de cumplimi
 
 Si tu organizacion busca optimizar este proceso, plataformas como Riskitera automatizan gran parte de la gestion documental, el seguimiento de medidas y la preparacion para la auditoria, reduciendo significativamente el esfuerzo manual y los plazos de implementacion.
 
-## Relacion del ENS con otros marcos y normativas
+{{< cta type="tofu" text="Implementar el ENS requiere mapear medidas a controles reales. Riskitera automatiza este proceso con IA." label="Ver demo ENS" >}}
+
+## Como se relaciona el ENS con ISO 27001, NIS2 y DORA?
 
 El ENS no existe de forma aislada. Forma parte de un ecosistema normativo cada vez mas interconectado:
 
@@ -153,7 +155,7 @@ El ENS no existe de forma aislada. Forma parte de un ecosistema normativo cada v
 - **DORA**: el Reglamento de Resiliencia Operativa Digital afecta al sector financiero europeo. Las entidades financieras sujetas a DORA que tambien trabajan con la Administracion publica podrian necesitar cumplir con ambos marcos. Publicaremos proximamente una guia completa sobre [DORA y la ciberseguridad financiera](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/).
 - **RGPD**: el cumplimiento del ENS contribuye a satisfacer los requisitos de seguridad del Reglamento General de Proteccion de Datos, aunque no lo sustituye.
 
-## Beneficios de la certificacion ENS
+## Que beneficios aporta la certificacion ENS?
 
 Mas alla del cumplimiento legal, la certificacion ENS aporta ventajas tangibles:
 
@@ -163,7 +165,7 @@ Mas alla del cumplimiento legal, la certificacion ENS aporta ventajas tangibles:
 - **Mejora operativa**: el proceso de implementacion obliga a documentar, racionalizar y optimizar los procesos de gestion de la seguridad.
 - **Preparacion para otras normativas**: facilita la adaptacion a NIS2, DORA y otros marcos regulatorios europeos.
 
-## Errores comunes en la implementacion del ENS
+## Cuales son los errores mas comunes al implementar el ENS?
 
 Basandonos en la experiencia del sector, estos son los errores mas frecuentes:
 
@@ -172,6 +174,8 @@ Basandonos en la experiencia del sector, estos son los errores mas frecuentes:
 - **Ignorar la cadena de suministro**: desde el RD 311/2022, los proveedores deben cumplir con el ENS. No verificar su cumplimiento es un riesgo y un incumplimiento.
 - **No asignar recursos suficientes**: la implementacion requiere dedicacion. Intentar hacerlo sin personal dedicado ni presupuesto adecuado es una receta para el fracaso.
 - **Categorizar incorrectamente el sistema**: una categorizacion erronea, ya sea por exceso o por defecto, genera problemas en la auditoria y en la operacion.
+
+{{< cta type="mofu" text="Prepara tu organizacion para la certificacion ENS con una plataforma que gestiona controles, evidencias y auditorias." >}}
 
 ## Preguntas frecuentes
 

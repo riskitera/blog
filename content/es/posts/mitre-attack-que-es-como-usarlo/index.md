@@ -16,7 +16,7 @@ MITRE ATT&CK se ha consolidado como el marco de referencia global para comprende
 
 <!--more-->
 
-## Que es MITRE ATT&CK
+## Que es MITRE ATT&CK y para que sirve?
 
 MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) es una base de conocimiento estructurada que describe el comportamiento de los atacantes a lo largo de todo el ciclo de vida de una intrusion. A diferencia de otros frameworks que se centran en controles defensivos o en la gestion de riesgos, ATT&CK adopta la perspectiva del adversario: documenta que hacen los atacantes, como lo hacen y con que herramientas.
 
@@ -26,7 +26,7 @@ La version actual de ATT&CK (v15, publicada en 2024) incluye 14 tacticas, mas de
 
 El framework es gratuito, abierto y mantenido por un equipo dedicado en MITRE con aportaciones de la comunidad global de ciberseguridad. Organizaciones como ENISA, el CCN-CERT y CISA lo referencian en sus guias y publicaciones, lo que refuerza su posicion como estandar de facto en la industria.
 
-## Las matrices de ATT&CK
+## Cuales son las matrices de MITRE ATT&CK?
 
 MITRE ATT&CK se organiza en tres matrices principales, cada una adaptada a un entorno tecnologico diferente.
 
@@ -57,7 +57,7 @@ Esta matriz cubre dispositivos Android e iOS, documentando tecnicas especificas 
 
 Orientada a sistemas de control industrial (ICS/SCADA), esta matriz documenta tecnicas utilizadas contra infraestructuras criticas como redes electricas, plantas de tratamiento de agua o instalaciones de fabricacion. Incluye tacticas especificas como la inhibicion de funciones de respuesta o la manipulacion de procesos fisicos. ENISA ha destacado en sus informes anuales la importancia de proteger estos entornos, y ATT&CK for ICS proporciona el vocabulario comun para hacerlo.
 
-## Tacticas, tecnicas y subtecnicas
+## Como se organizan las tacticas, tecnicas y subtecnicas?
 
 Comprender la jerarquia de ATT&CK es esencial para utilizarlo correctamente.
 
@@ -77,7 +77,7 @@ Las subtecnicas proporcionan un nivel adicional de granularidad. La tecnica "Boo
 
 Los procedimientos son implementaciones especificas de tecnicas por parte de grupos de amenaza concretos. Por ejemplo, el grupo APT29 (asociado a actores rusos) utiliza la subtecnica "Registry Run Keys" de una manera particular, documentada en ATT&CK con referencias a informes publicos de inteligencia.
 
-## Como aplicar MITRE ATT&CK en el SOC
+## Como se aplica MITRE ATT&CK en el SOC?
 
 La aplicacion practica de ATT&CK en un [centro de operaciones de seguridad](/es/posts/como-montar-soc-desde-cero/) transforma su capacidad de deteccion, respuesta y comunicacion.
 
@@ -99,7 +99,7 @@ ATT&CK proporciona un vocabulario comun que facilita la comunicacion entre equip
 
 ATT&CK se utiliza cada vez mas para evaluar la eficacia de productos de seguridad. Las evaluaciones ATT&CK de MITRE Engenuity someten a soluciones EDR y de seguridad endpoint a simulaciones de ataques basadas en las TTPs de grupos reales, publicando los resultados de forma transparente. Estas evaluaciones permiten a las organizaciones comparar productos con datos objetivos.
 
-## Threat hunting con ATT&CK
+## Como usar ATT&CK para threat hunting?
 
 El framework ATT&CK es una herramienta esencial para estructurar programas de threat hunting, transformando la busqueda de amenazas de una actividad ad hoc a un proceso sistematico y medible.
 
@@ -115,7 +115,9 @@ Utilizando ATT&CK como guia, el equipo de hunting puede planificar campanas que 
 
 Los hallazgos del threat hunting frecuentemente generan nuevos [IOCs](/es/posts/iocs-en-ciberseguridad-que-son/) que enriquecen la inteligencia de amenazas de la organizacion. Estos IOCs, mapeados contra las tecnicas de ATT&CK que evidencian, alimentan el ciclo continuo de mejora de la deteccion.
 
-## Herramientas para trabajar con ATT&CK
+{{< cta type="tofu" text="Riskitera mapea tus detecciones a MITRE ATT&CK automaticamente, visualizando gaps de cobertura en tiempo real." label="Ver cobertura" >}}
+
+## Que herramientas existen para trabajar con ATT&CK?
 
 El ecosistema de herramientas alrededor de ATT&CK es amplio y en constante crecimiento.
 
@@ -139,7 +141,7 @@ Las reglas Sigma, un formato abierto para escribir detecciones genericas de SIEM
 
 Desarrollado por MITRE, Caldera es una plataforma de emulacion de adversarios automatizada que ejecuta cadenas de ataque basadas en perfiles de TTPs de ATT&CK. Permite simular el comportamiento de grupos de amenaza especificos para evaluar la capacidad de deteccion y respuesta.
 
-## Integracion de ATT&CK con el SIEM
+## Como integrar ATT&CK con el SIEM?
 
 La integracion entre ATT&CK y el SIEM es una de las aplicaciones mas potentes del framework.
 
@@ -155,7 +157,7 @@ Cuando una alerta del SIEM se mapea contra ATT&CK, el analista obtiene inmediata
 
 Con las reglas etiquetadas, es posible generar metricas continuas de cobertura de deteccion: porcentaje de tecnicas cubiertas por tactica, tendencia temporal de cobertura, tecnicas con mayor volumen de alertas y tecnicas detectadas pero sin alertas reales (posibles areas de sobredeteccion). Riskitera mapea automaticamente los controles de seguridad contra las tecnicas de MITRE ATT&CK, proporcionando visibilidad instantanea sobre la cobertura de deteccion y los puntos ciegos de la organizacion.
 
-## Errores comunes al implementar ATT&CK
+## Cuales son los errores comunes al implementar ATT&CK?
 
 **Intentar cubrir toda la matriz a la vez.** ATT&CK es extenso y pretender detectar todas las tecnicas simultaneamente es inviable para la mayoria de organizaciones. Es mejor priorizar las tecnicas mas relevantes segun el perfil de amenaza y avanzar gradualmente.
 
@@ -172,6 +174,8 @@ MITRE ofrece numerosos recursos gratuitos para aprender y aplicar ATT&CK:
 La pagina oficial (attack.mitre.org) proporciona acceso completo a la base de conocimiento, con busqueda y navegacion interactiva. El blog de MITRE ATT&CK publica regularmente articulos sobre actualizaciones, casos de uso y mejores practicas. Los cursos ATT&CK Training de MITRE Engenuity ofrecen formacion estructurada. Los CTI Blueprints proporcionan plantillas para crear informes de inteligencia basados en ATT&CK.
 
 En el ambito europeo, el CCN-CERT ha publicado guias CCN-STIC que referencian ATT&CK para la deteccion de amenazas en organismos publicos espanoles, y ENISA incluye referencias al framework en su informe anual de amenazas (ENISA Threat Landscape).
+
+{{< cta type="mofu" text="Integra MITRE ATT&CK en tu SOC con una plataforma que conecta tacticas, detecciones y controles de compliance." >}}
 
 ## Preguntas frecuentes
 

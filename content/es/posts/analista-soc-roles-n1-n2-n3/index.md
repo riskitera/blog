@@ -16,7 +16,7 @@ El analista de un Centro de Operaciones de Seguridad (SOC) es uno de los perfile
 
 <!--more-->
 
-## Que es un analista SOC
+## Que es un analista SOC y que hace?
 
 Un analista SOC es el profesional encargado de monitorizar, detectar, investigar y responder a las amenazas de ciberseguridad que afectan a una organizacion. Trabaja dentro de un Centro de Operaciones de Seguridad, utilizando herramientas especializadas como SIEM, EDR y SOAR para proteger los activos digitales de la empresa.
 
@@ -24,7 +24,7 @@ El trabajo del analista SOC es fundamentalmente operativo: se trata de estar en 
 
 Si quieres entender el contexto completo en el que trabajan estos profesionales, te recomendamos nuestra [guia sobre como montar un SOC desde cero](/es/posts/2026/04/como-montar-soc-desde-cero/), donde explicamos la estructura, herramientas y procesos de un Centro de Operaciones de Seguridad.
 
-## Analista SOC N1: triaje y primera respuesta
+## Que hace un analista SOC N1?
 
 El analista N1 (tambien llamado Tier 1 o analista de triaje) es el punto de entrada al mundo del SOC y la primera linea de defensa de la organizacion. Su funcion principal es monitorizar las alertas de seguridad en tiempo real, realizar un triaje inicial y determinar si requieren investigacion adicional o si se trata de falsos positivos.
 
@@ -62,7 +62,7 @@ El analista N1 (tambien llamado Tier 1 o analista de triaje) es el punto de entr
 
 El turno comienza con un handover del turno anterior: revision de alertas pendientes, incidentes en curso y cualquier novedad relevante. Durante las siguientes 8-12 horas (dependiendo de la rotacion), el analista revisa las alertas que llegan a la consola del SIEM, realizando triaje de cada una. En un turno activo, un N1 puede procesar entre 40 y 100 alertas. La mayoria seran falsos positivos o alertas de baja severidad que se cierran directamente. Entre un 10 y un 20 por ciento requerira algun tipo de analisis adicional, y un porcentaje menor se escalara a N2.
 
-## Analista SOC N2: investigacion y respuesta a incidentes
+## Que hace un analista SOC N2?
 
 El analista N2 (Tier 2 o analista de incidentes) es el investigador del SOC. Recibe las alertas escaladas por N1 y realiza un analisis en profundidad para determinar el alcance, la gravedad y el impacto del incidente. Es el responsable de coordinar la respuesta tecnica.
 
@@ -101,7 +101,7 @@ Ademas de todas las herramientas del N1, el analista N2 utiliza:
 - Herramientas de analisis de red: Zeek, NetworkMiner, Arkime.
 - Lenguajes de scripting: Python, PowerShell, Bash.
 
-## Analista SOC N3: threat hunting y especializacion avanzada
+## Que hace un analista SOC N3?
 
 El analista N3 (Tier 3, threat hunter o analista senior) representa el nivel mas alto de experiencia tecnica dentro del SOC. Su rol trasciende la respuesta reactiva a incidentes: se centra en la caza proactiva de amenazas, el analisis avanzado y la mejora estrategica de las capacidades de deteccion.
 
@@ -141,7 +141,9 @@ Ademas de las herramientas de N1 y N2:
 - Entornos de laboratorio: maquinas virtuales dedicadas, redes aisladas para analisis de malware.
 - Herramientas de desarrollo: Git, Docker, entornos de CI/CD para automatizacion de pipelines de analisis.
 
-## Trayectoria profesional: de N1 a N3 y mas alla
+{{< cta type="tofu" text="Riskitera potencia a tus analistas SOC con triage automatizado por IA, reduciendo el ruido en N1 y liberando tiempo para N2 y N3." label="Descubrir mas" >}}
+
+## Como es la trayectoria profesional de un analista SOC?
 
 La carrera de un analista SOC es una progresion natural que, con dedicacion y formacion continua, puede llevar desde un perfil junior hasta posiciones de liderazgo tecnico o de gestion.
 
@@ -166,7 +168,7 @@ El campo de la ciberseguridad evoluciona a una velocidad que hace imprescindible
 - **Conferencias**: RootedCON, Navaja Negra, CyberCamp (INCIBE), h-c0n, Ekoparty.
 - **Publicaciones y blogs**: lectura habitual de informes de amenazas de Mandiant, CrowdStrike, Microsoft Threat Intelligence, Recorded Future.
 
-## Salarios de analistas SOC en Espana (2026)
+## Cuanto gana un analista SOC en Espana en 2026?
 
 Los salarios en ciberseguridad en Espana han experimentado un crecimiento sostenido en los ultimos anos, impulsados por la escasez de talento y la creciente demanda regulatoria. Estos son los rangos salariales orientativos para 2026, basados en datos de portales de empleo, encuestas sectoriales y nuestra experiencia en el mercado:
 
@@ -193,7 +195,7 @@ Es importante senalar que el trabajo remoto ha ampliado las opciones: muchos ana
 
 El equipo SOC de Riskitera esta formado por analistas de todos los niveles con experiencia en sectores regulados, ofreciendo servicios de monitorizacion, deteccion y respuesta 24/7 a organizaciones que necesitan capacidades SOC sin la complejidad de montarlo internamente.
 
-## Como convertirse en analista SOC
+## Como convertirse en analista SOC?
 
 Para quienes quieran iniciar una carrera como analistas SOC, este es el camino recomendado:
 
@@ -216,6 +218,8 @@ Documenta tu aprendizaje en un blog tecnico o en LinkedIn. Participa en CTF de t
 ### Paso 5: Primer empleo
 
 Busca posiciones de analista SOC N1, SOC junior o security analyst en empresas de servicios de ciberseguridad (MSSP/MDR), grandes consultoras o departamentos de seguridad de empresas medianas y grandes. Las empresas de servicios gestionados suelen ser el mejor punto de entrada porque exponen a los analistas a una variedad de tecnologias y tipos de incidentes.
+
+{{< cta type="mofu" text="¿Buscas mejorar la eficiencia de tu equipo SOC? Descubre como Riskitera automatiza el triage y escala alertas con contexto." >}}
 
 ## Preguntas frecuentes
 

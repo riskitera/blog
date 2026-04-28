@@ -60,6 +60,8 @@ Documentos mínimos obligatorios:
 - Procedimientos operativos clave
 - Registros de formación y concienciación
 
+{{< cta type="tofu" text="Riskitera simplifica la implementacion de ISO 27001 automatizando el registro de riesgos y la gestion de evidencias." label="Saber mas" >}}
+
 ## Errores comunes
 
 1. **Copiar políticas genéricas de internet**: el auditor lo detectará inmediatamente. Las políticas deben reflejar tu realidad.
@@ -67,6 +69,8 @@ Documentos mínimos obligatorios:
 3. **No realizar auditorías internas**: son obligatorias y sirven para detectar no conformidades antes de la auditoría de certificación.
 4. **Subestimar el tiempo necesario**: planifica entre 6 y 12 meses, dependiendo del alcance.
 5. **Olvidar la mejora continua**: la certificación no es el final, es el principio de un ciclo PDCA permanente.
+
+{{< cta type="mofu" text="¿Tu startup necesita ISO 27001? Descubre como Riskitera te lleva de cero a certificacion sin consultores externos." >}}
 
 ## Conclusión
 

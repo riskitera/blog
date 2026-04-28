@@ -48,4 +48,6 @@ Riskitera es una plataforma integral que unifica todas estas disciplinas en un s
 
 Suscríbete a nuestro newsletter para recibir los últimos artículos directamente en tu bandeja de entrada. También puedes seguirnos en nuestras redes sociales.
 
+{{< cta type="tofu" text="Descubre como Riskitera unifica GRC, SOC y threat intelligence en una sola plataforma." label="Explorar Riskitera" >}}
+
 **¡Bienvenidos!**

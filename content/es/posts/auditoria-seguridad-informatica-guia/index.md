@@ -16,7 +16,7 @@ La auditoria de seguridad informatica es el proceso sistematico mediante el cual
 
 <!--more-->
 
-## Que es una auditoria de seguridad informatica
+## Que es una auditoria de seguridad informatica?
 
 Una auditoria de seguridad informatica es una evaluacion independiente y documentada de los controles, politicas, procedimientos y sistemas de seguridad de una organizacion. Su objetivo es determinar en que medida estos elementos cumplen con los requisitos establecidos (normativos, contractuales o internos) y si son eficaces para proteger los activos de informacion.
 
@@ -26,7 +26,7 @@ El valor de la auditoria reside en su caracter independiente y sistematico. El a
 
 Organismos como el CCN-CERT han publicado guias especificas para la auditoria de conformidad con el ENS (guias CCN-STIC), e INCIBE proporciona recursos para que las pymes puedan evaluar su nivel de seguridad de forma autonoma.
 
-## Tipos de auditorias de seguridad
+## Que tipos de auditorias de seguridad existen?
 
 Las auditorias de seguridad se clasifican segun su origen, su objetivo y su alcance tecnico.
 
@@ -56,7 +56,7 @@ Se centra en la evaluacion de los controles tecnicos: configuracion de firewalls
 
 Las guias CCN-STIC del CCN proporcionan perfiles de seguridad para la configuracion de numerosas plataformas tecnologicas que sirven como criterio de referencia en auditorias tecnicas de organismos publicos.
 
-## Fases de una auditoria de seguridad
+## Cuales son las fases de una auditoria de seguridad?
 
 El proceso de auditoria sigue una secuencia estructurada que garantiza la exhaustividad y la calidad de los resultados.
 
@@ -116,7 +116,7 @@ La auditoria no termina con la entrega del informe. La fase de seguimiento verif
 
 Para cada no conformidad se define un plan de accion correctiva con responsable, plazo y evidencia de cierre esperada. El auditor o el responsable de seguridad realiza verificaciones de seguimiento para confirmar la implementacion y eficacia de las correcciones.
 
-## Gestion de evidencias
+## Como se gestionan las evidencias en una auditoria?
 
 La gestion de evidencias es uno de los aspectos mas exigentes del proceso de auditoria, tanto para el auditor como para la organizacion auditada.
 
@@ -140,7 +140,9 @@ Un sistema organizado de gestion de evidencias ahorra tiempo significativo duran
 
 Riskitera automatiza la recopilacion de evidencias de seguridad, extrayendo datos directamente de los sistemas y organizandolos por control normativo, lo que reduce drasticamente el esfuerzo manual de preparacion de auditorias.
 
-## Marcos de referencia para auditorias
+{{< cta type="tofu" text="La gestion de evidencias es el cuello de botella de toda auditoria. Riskitera automatiza la recopilacion y trazabilidad de evidencias." label="Ver demo" >}}
+
+## Que marcos de referencia se usan en auditorias de seguridad?
 
 ### ISO 19011
 
@@ -160,7 +162,7 @@ ISACA tambien publica el ITAF (IT Assurance Framework), un marco detallado para 
 
 El Centro Criptologico Nacional ha publicado numerosas guias CCN-STIC relevantes para la auditoria de seguridad en el ambito del ENS, incluyendo guias especificas para la auditoria de conformidad, perfiles de seguridad para diferentes plataformas tecnologicas y procedimientos de evaluacion de la seguridad. Estas guias son de obligado seguimiento para organismos del sector publico y constituyen una referencia valiosa para cualquier organizacion.
 
-## Herramientas para auditorias de seguridad
+## Que herramientas se usan en auditorias de seguridad?
 
 ### Herramientas de gestion de auditorias
 
@@ -174,7 +176,7 @@ Para auditorias tecnicas, las herramientas clave incluyen escaner de vulnerabili
 
 La recopilacion manual de evidencias es uno de los procesos mas costosos en tiempo durante una auditoria. La automatizacion mediante scripts que exportan configuraciones, generan informes de cumplimiento y recopilan logs relevantes reduce significativamente el esfuerzo. Herramientas de compliance-as-code como Chef InSpec o Open Policy Agent permiten definir los controles como codigo y verificar su cumplimiento de forma automatizada y continua.
 
-## Automatizacion de auditorias
+## Como automatizar las auditorias de seguridad?
 
 La tendencia hacia la auditoria continua representa un cambio significativo respecto al modelo tradicional de auditorias puntuales.
 
@@ -194,7 +196,7 @@ Frameworks como CIS Benchmarks proporcionan perfiles de seguridad predefinidos q
 
 Los resultados de las auditorias automatizadas alimentan directamente el proceso de gestion de riesgos: un control que deja de cumplir incrementa automaticamente el nivel de riesgo asociado, activando los procesos de tratamiento correspondientes. Esta integracion bidireccional entre auditoria y riesgos es una caracteristica de los programas GRC maduros.
 
-## Prepararse para una auditoria externa
+## Como prepararse para una auditoria externa?
 
 La preparacion es determinante para el resultado de una auditoria externa. Estas son las acciones clave:
 
@@ -209,6 +211,8 @@ La preparacion es determinante para el resultado de una auditoria externa. Estas
 **Designar un coordinador de auditoria.** Una persona que sirva como punto de contacto con el auditor, coordine la logistica, facilite el acceso a sistemas y documentacion y resuelva incidencias durante el proceso.
 
 **Revisar hallazgos de auditorias anteriores.** Verificar que todas las no conformidades de auditorias previas han sido cerradas y que las acciones correctivas fueron eficaces. Los hallazgos recurrentes son una senal negativa para los auditores.
+
+{{< cta type="mofu" text="Prepara tu proxima auditoria con una plataforma que mapea controles, gestiona evidencias y genera informes automaticamente." >}}
 
 ## Preguntas frecuentes
 

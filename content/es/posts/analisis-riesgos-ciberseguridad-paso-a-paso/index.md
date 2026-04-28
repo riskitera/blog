@@ -16,7 +16,7 @@ El analisis de riesgos es el proceso fundamental que permite a una organizacion 
 
 <!--more-->
 
-## Por que el analisis de riesgos es imprescindible
+## Por que es imprescindible el analisis de riesgos en ciberseguridad?
 
 El analisis de riesgos en ciberseguridad no es un ejercicio academico ni un requisito burocratico: es la base sobre la que se construye toda la estrategia de seguridad de una organizacion. Sus beneficios son concretos y medibles.
 
@@ -28,7 +28,7 @@ En tercer lugar, facilita la comunicacion con la direccion. Un registro de riesg
 
 Finalmente, proporciona un marco para la mejora continua. El analisis de riesgos no es un documento estatico sino un proceso ciclico que se actualiza ante cambios en el entorno de amenazas, la infraestructura tecnologica o los requisitos de negocio.
 
-## Metodologias de analisis de riesgos
+## Que metodologias de analisis de riesgos existen?
 
 Existen diversas metodologias reconocidas internacionalmente. La eleccion depende del contexto normativo, el sector y la madurez de la organizacion.
 
@@ -60,7 +60,7 @@ El NIST RMF, descrito en la publicacion especial SP 800-37, define un proceso de
 
 Aunque es de origen estadounidense, el NIST RMF es ampliamente utilizado internacionalmente debido a la calidad de su documentacion y la disponibilidad gratuita de todas sus publicaciones. ENISA lo referencia como uno de los marcos de referencia en sus guias de gestion de riesgos.
 
-## Proceso paso a paso
+## Como hacer un analisis de riesgos paso a paso?
 
 Independientemente de la metodologia elegida, el proceso de analisis de riesgos sigue una secuencia logica comun.
 
@@ -146,7 +146,9 @@ Para cada riesgo que supera el umbral de aceptacion, se selecciona una estrategi
 
 Para cada medida de mitigacion, se define un plan de implementacion con responsables, plazos, recursos necesarios y metricas de eficacia.
 
-## Herramientas para el analisis de riesgos
+{{< cta type="tofu" text="Riskitera automatiza el analisis de riesgos con IA, mapeando amenazas a controles ENS e ISO 27001." label="Ver como funciona" >}}
+
+## Que herramientas se usan para el analisis de riesgos?
 
 ### PILAR
 
@@ -160,7 +162,7 @@ Plataformas como Archer (RSA), ServiceNow GRC y OneTrust proporcionan modulos co
 
 Aunque no son ideales para analisis complejos, las hojas de calculo siguen siendo una herramienta valida para organizaciones pequenas que realizan su primer analisis de riesgos. Lo importante es que la herramienta no se convierta en un obstaculo para iniciar el proceso.
 
-## El registro de riesgos
+## Como se elabora un registro de riesgos?
 
 El registro de riesgos es el documento central que consolida los resultados del analisis. Cada entrada del registro debe incluir:
 
@@ -179,7 +181,7 @@ El registro de riesgos es el documento central que consolida los resultados del 
 
 El registro de riesgos debe revisarse al menos trimestralmente y actualizarse ante cualquier cambio significativo en el entorno de amenazas, la infraestructura o los requisitos de negocio.
 
-## Errores comunes en el analisis de riesgos
+## Cuales son los errores comunes en el analisis de riesgos?
 
 **Realizar el analisis una unica vez.** El analisis de riesgos es un proceso continuo, no un proyecto puntual. Los riesgos evolucionan constantemente y un analisis de hace dos anos puede estar completamente desactualizado.
 
@@ -191,7 +193,7 @@ El registro de riesgos debe revisarse al menos trimestralmente y actualizarse an
 
 **Ignorar el riesgo residual.** Tras implementar controles, siempre queda un riesgo residual que debe evaluarse y compararse con el umbral de aceptacion. Asumir que los controles eliminan el riesgo completamente es un error peligroso.
 
-## Consejos para un analisis de riesgos eficaz
+## Como hacer un analisis de riesgos eficaz?
 
 Empezar con lo critico. No intentes analizar todo a la vez. Identifica los 10 o 20 activos mas criticos y comienza por ellos. Un analisis profundo de los activos esenciales aporta mas valor que un analisis superficial de todo el inventario.
 
@@ -202,6 +204,8 @@ Documentar las asunciones. Toda valoracion de probabilidad e impacto implica asu
 Vincular riesgos con objetivos de negocio. Los riesgos que amenazan directamente los objetivos estrategicos de la organizacion deben recibir maxima atencion, independientemente de su naturaleza tecnica.
 
 Automatizar donde sea posible. El inventario de activos tecnologicos, el escaneo de vulnerabilidades y la monitorizacion de controles pueden automatizarse para mantener el analisis actualizado de forma continua.
+
+{{< cta type="mofu" text="Simplifica tu proximo analisis de riesgos con una plataforma que integra MAGERIT, FAIR y registro de riesgos automatizado." >}}
 
 ## Preguntas frecuentes
 

@@ -16,7 +16,7 @@ El Reglamento DORA (Digital Operational Resilience Act) es la normativa europea 
 
 <!--more-->
 
-## Que es DORA y por que existe
+## Que es el reglamento DORA y por que existe?
 
 DORA (Reglamento (UE) 2022/2554) fue adoptado el 14 de diciembre de 2022 y entro en aplicacion el 17 de enero de 2025. Nacio de una constatacion clara: el sector financiero europeo depende de forma critica de las tecnologias de la informacion y comunicacion (TIC), pero no existia un marco armonizado que garantizara la resiliencia operativa digital de las entidades financieras frente a perturbaciones graves.
 
@@ -24,7 +24,7 @@ Antes de DORA, cada Estado miembro y cada regulador sectorial abordaba la cibers
 
 Segun datos del BCE, los incidentes ciberneticos reportados por las entidades financieras europeas significativas aumentaron un 72 por ciento entre 2020 y 2024. El ataque a la plataforma ION Trading Technologies en enero de 2023, que afecto a la negociacion de derivados en toda Europa, fue uno de los incidentes que aceleraron la adopcion final de DORA.
 
-## A quien afecta DORA
+## A que entidades financieras afecta DORA?
 
 El ambito de aplicacion de DORA es extraordinariamente amplio dentro del sector financiero. Abarca 21 categorias de entidades:
 
@@ -57,7 +57,7 @@ Los proveedores TIC criticos seran designados por las Autoridades Europeas de Su
 
 DORA aplica el principio de proporcionalidad: las microempresas financieras (menos de 10 empleados y menos de 2 millones de euros de facturacion) tienen obligaciones simplificadas. Quedan exentas determinadas entidades menores como los intermediarios de seguros de pequeno tamano. Sin embargo, la exencion es estrecha y la inmensa mayoria de las entidades del sector financiero estan obligadas.
 
-## Los cinco pilares de DORA
+## Cuales son los cinco pilares de DORA?
 
 DORA se estructura en torno a cinco areas fundamentales que, conjuntamente, definen un marco integral de resiliencia operativa digital.
 
@@ -109,7 +109,7 @@ DORA fomenta el intercambio voluntario de informacion sobre ciberamenazas entre 
 - El intercambio debe respetar la normativa de proteccion de datos y competencia.
 - Las autoridades supervisoras facilitaran y promoveran estos intercambios, reconociendo que la ciberseguridad es un desafio colectivo.
 
-## Relacion de DORA con NIS2 y otras normativas
+## Como se relaciona DORA con NIS2 y otras normativas?
 
 DORA y NIS2 se aprobaron el mismo dia y fueron disenadas para complementarse:
 
@@ -119,7 +119,9 @@ DORA y NIS2 se aprobaron el mismo dia y fueron disenadas para complementarse:
 - **Directrices EBA/EIOPA/ESMA**: las directrices sectoriales preexistentes (como las Directrices EBA sobre gestion de riesgos TIC o las Directrices sobre externalizacion) se integran dentro del marco de DORA.
 - **ISO 27001**: si tu organizacion ya esta certificada en ISO 27001, dispone de una base solida para cumplir con el pilar 1 de DORA. Nuestra [guia de implementacion de ISO 27001](/es/posts/2026/02/guia-iso-27001-startups/) puede ser un recurso util para entender el marco de referencia.
 
-## Plazos y calendario de aplicacion
+{{< cta type="tofu" text="Cumplir DORA implica demostrar resiliencia operativa digital. Riskitera mapea los requisitos DORA a controles auditables automaticamente." label="Ver como" >}}
+
+## Cuando entra en vigor DORA?
 
 El calendario de DORA es el siguiente:
 
@@ -131,7 +133,7 @@ El calendario de DORA es el siguiente:
 
 En la practica, las autoridades supervisoras nacionales han adoptado un enfoque gradual en la supervision del cumplimiento durante el primer ano de aplicacion, priorizando la concienciacion y la asistencia tecnica. Sin embargo, las entidades que no demuestren avances significativos se exponen a medidas supervisoras.
 
-## Como prepararse para DORA: pasos practicos
+## Como prepararse para cumplir DORA?
 
 ### 1. Evaluacion de aplicabilidad y analisis de brechas
 
@@ -165,7 +167,7 @@ La complejidad de DORA hace que la gestion manual sea inviable para la mayoria d
 
 DORA exige la capacidad de demostrar el cumplimiento ante las autoridades supervisoras. Mantener un repositorio centralizado de politicas, procedimientos, resultados de pruebas, registros de incidentes y evidencias de cumplimiento no es opcional: es una necesidad operativa.
 
-## Sanciones por incumplimiento
+## Que sanciones contempla DORA por incumplimiento?
 
 DORA establece que los Estados miembros definan el regimen sancionador especifico, pero marca unas directrices claras:
 
@@ -174,6 +176,8 @@ DORA establece que los Estados miembros definan el regimen sancionador especific
 - Las autoridades nacionales pueden adoptar medidas administrativas como la publicacion de resoluciones sancionadoras, la imposicion de ordenes de cese y la exigencia de acciones correctivas en plazos determinados.
 
 En Espana, el Banco de Espana y la CNMV disponen de facultades sancionadoras que se aplicaran en el contexto de DORA.
+
+{{< cta type="mofu" text="Prepara tu entidad financiera para DORA con una plataforma que gestiona riesgos TIC, incidentes y pruebas de resiliencia." >}}
 
 ## Preguntas frecuentes
 
