@@ -125,6 +125,62 @@
   }
 }
 </script>
+{{/* ---- BreadcrumbList ---- */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{{ .Site.Title }}",
+      "item": "{{ .Site.BaseURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ if eq .Section "posts" }}Blog{{ else if eq .Section "case-studies" }}Case Studies{{ else }}{{ .Section | title }}{{ end }}",
+      "item": "{{ printf "%s%s/%s/" .Site.BaseURL .Lang .Section }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}"
+    }
+  ]
+}
+</script>
+{{/* ---- FAQPage schema (auto-detected from H2 "Preguntas frecuentes" + H3 questions) ---- */}}
+{{- $content := .Content -}}
+{{- if findRE `(?i)<h2[^>]*>.*(?:Preguntas frecuentes|FAQ|Frequently Asked Questions).*</h2>` $content -}}
+{{- $questions := findRE `<h3[^>]*id="[^"]*"[^>]*>([^<]+)</h3>\s*<p>([^<]+(?:<[^/][^>]*>[^<]*</[^>]*>)*[^<]*)</p>` $content -}}
+{{- if $questions }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- $faqItems := slice -}}
+    {{- range $i, $match := $questions -}}
+      {{- $question := replaceRE `<h3[^>]*>([^<]+)</h3>.*` "$1" $match -}}
+      {{- $answer := replaceRE `.*</h3>\s*<p>(.*)</p>` "$1" $match -}}
+      {{- $answer = replaceRE `<[^>]+>` "" $answer -}}
+      {{- if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ $question | htmlUnescape }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $answer | htmlUnescape | truncate 500 }}"
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}
+{{- end }}
 {{- end }}
 
 {{/* ---- PostHog Analytics ---- */}}
