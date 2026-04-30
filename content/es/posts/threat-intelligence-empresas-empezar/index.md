@@ -8,7 +8,7 @@ lastmod: 2026-07-04
 draft: false
 tags: ["CTI", "Threat Intelligence", "Herramientas"]
 categories: ["CTI"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "threat intelligence empresas"
 funnel: "mofu"
 ---

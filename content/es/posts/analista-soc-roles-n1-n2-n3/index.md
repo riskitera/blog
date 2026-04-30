@@ -3,18 +3,26 @@ title: "Analista SOC: roles N1, N2 y N3 explicados con detalle"
 image: "cover.png"
 description: "Guia completa sobre los roles de analista SOC: que hace cada nivel (N1, N2, N3), habilidades requeridas, herramientas, trayectoria profesional y salarios en Espana."
 slug: "analista-soc-roles-n1-n2-n3"
-date: 2026-04-05
-lastmod: 2026-04-05
+date: 2026-04-09
+lastmod: 2026-04-09
 draft: false
 tags: ["SOC", "Carreras", "Operaciones"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "soc-analyst-roles"
 ---
 
 El analista de un Centro de Operaciones de Seguridad (SOC) es uno de los perfiles profesionales con mayor demanda en el mercado de ciberseguridad. Segun datos del Observatorio Nacional de Tecnologia y Sociedad (ONTSI), Espana necesitara cubrir mas de 83.000 puestos de ciberseguridad entre 2025 y 2028, y los analistas SOC representan una parte significativa de esa demanda. Pero no todos los analistas SOC hacen lo mismo: el rol se estructura en tres niveles (N1, N2 y N3) con responsabilidades, habilidades y perfiles muy diferenciados.
 
 <!--more-->
+
+{{< key-takeaways >}}
+- N1 (triaje): monitoriza alertas y ejecuta playbooks. Perfil: 1-2 anos experiencia, Security+/CySA+
+- N2 (incidentes): investiga en profundidad y coordina respuesta. Perfil: 3-5 anos, GCIH/ECIH
+- N3 (threat hunter): caza proactiva y analisis avanzado de malware. Perfil: 5+ anos, GCFA/OSCP
+- Un SOC 24/7 necesita minimo 5-6 analistas N1 para cubrir turnos con vacaciones y bajas
+- Salarios en Espana (2026): N1 25-35K EUR, N2 38-55K EUR, N3 55-80K EUR
+{{< /key-takeaways >}}
 
 ## Que es un analista SOC y que hace?
 
@@ -52,7 +60,7 @@ El analista N1 (tambien llamado Tier 1 o analista de triaje) es el punto de entr
 
 ### Herramientas que usa el N1
 
-- SIEM (Splunk, QRadar, Elastic Security, Microsoft Sentinel) para monitorizar y buscar eventos.
+- SIEM ([Splunk](https://www.splunk.com/), QRadar, [Elastic Security](https://www.elastic.co/security), [Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel)) para monitorizar y buscar eventos.
 - EDR (CrowdStrike, Defender for Endpoint, SentinelOne) para validar alertas en endpoints.
 - Sistema de ticketing (ServiceNow, Jira, TheHive) para documentar y gestionar alertas.
 - Herramientas de busqueda de reputacion: VirusTotal, AbuseIPDB, Shodan, OTX AlienVault.
@@ -79,7 +87,7 @@ El analista N2 (Tier 2 o analista de incidentes) es el investigador del SOC. Rec
 
 **Conocimientos tecnicos:**
 - Analisis avanzado de logs: capacidad de correlacionar eventos de multiples fuentes para reconstruir la cadena de ataque completa.
-- Conocimiento del framework MITRE ATT&CK: mapeo de tecnicas y tacticas de los atacantes para entender y documentar los incidentes.
+- Conocimiento del framework [MITRE ATT&CK](https://attack.mitre.org/): mapeo de tecnicas y tacticas de los atacantes para entender y documentar los incidentes.
 - Analisis de malware: analisis estatico (strings, hashes, imports, pe headers) y dinamico basico (ejecucion en sandbox, analisis de comportamiento).
 - Forense digital: adquisicion de evidencias, analisis de memoria (Volatility), analisis de disco (Autopsy), analisis de trafico de red (Wireshark, Zeek).
 - Scripting: Python y/o PowerShell para automatizar tareas de investigacion y analisis.
@@ -164,8 +172,8 @@ La carrera de un analista SOC es una progresion natural que, con dedicacion y fo
 El campo de la ciberseguridad evoluciona a una velocidad que hace imprescindible la formacion permanente:
 - **Plataformas de practica**: TryHackMe, HackTheBox, LetsDefend, CyberDefenders.
 - **Competiciones CTF**: participar en Capture The Flag es una forma excelente de desarrollar habilidades practicas.
-- **Comunidad**: participacion en grupos como el FIRST, CSIRT.es, o los eventos del CCN-CERT (STIC Congress).
-- **Conferencias**: RootedCON, Navaja Negra, CyberCamp (INCIBE), h-c0n, Ekoparty.
+- **Comunidad**: participacion en grupos como el FIRST, CSIRT.es, o los eventos del [CCN-CERT](https://www.ccn-cert.cni.es/) (STIC Congress).
+- **Conferencias**: RootedCON, Navaja Negra, CyberCamp ([INCIBE](https://www.incibe.es/)), h-c0n, Ekoparty.
 - **Publicaciones y blogs**: lectura habitual de informes de amenazas de Mandiant, CrowdStrike, Microsoft Threat Intelligence, Recorded Future.
 
 ## Cuanto gana un analista SOC en Espana en 2026?
@@ -205,7 +213,7 @@ Un grado universitario en informatica, telecomunicaciones o ciberseguridad propo
 
 ### Paso 2: Certificaciones iniciales
 
-CompTIA Security+ es la certificacion mas recomendada como punto de partida. Tambien son utiles CompTIA Network+ (si necesitas reforzar redes) y la certificacion SC-900 de Microsoft como primera aproximacion a la seguridad cloud.
+[CompTIA Security+](https://www.comptia.org/certifications/security) es la certificacion mas recomendada como punto de partida. Tambien son utiles CompTIA Network+ (si necesitas reforzar redes) y la certificacion SC-900 de Microsoft como primera aproximacion a la seguridad cloud.
 
 ### Paso 3: Practica en laboratorios
 

@@ -8,7 +8,7 @@ lastmod: 2026-08-10
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Castilla y Leon"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Castilla y Leon"
 funnel: "mofu"
 geo_target: "Castilla y Leon"

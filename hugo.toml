@@ -45,13 +45,16 @@ theme = "riskitera"
       description = "Cybersecurity blog: GRC, SOC, Threat Modeling, Code Security and more"
 
 [params]
-  author = "Riskitera Team"
+  author = "David Moya"
+  authorTitle = "Fundador & CEO"
+  authorLinkedIn = "https://www.linkedin.com/in/david-moya-b3a77547/"
+  authorBio = "Fundador de Riskitera. Especialista en GRC, ciberseguridad y operaciones SOC con mas de 15 anos de experiencia en el sector."
   mainURL = "https://riskitera.com"
   demoURL = "https://demo.riskitera.com"
   logo = "/images/logo.svg"
   ogImage = "/images/og-default.png"
   posthogApiKey = "phc_sQci2cJW3RTAAC88tC7myq3BWfpsji9BWihcxUTBXyHy"
-  posthogHost = "https://us.i.posthog.com"
+  posthogHost = "https://eu.i.posthog.com"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

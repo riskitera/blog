@@ -8,7 +8,7 @@ lastmod: 2026-07-14
 draft: false
 tags: ["IA", "Compliance", "Europa"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "EU AI Act ciberseguridad"
 funnel: "mofu"
 ---

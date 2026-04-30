@@ -8,7 +8,7 @@ lastmod: 2026-06-02
 draft: false
 tags: ["SOC", "Detection Engineering", "Operaciones"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "detection engineering"
 funnel: "mofu"
 ---

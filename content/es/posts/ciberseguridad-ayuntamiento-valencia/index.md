@@ -8,7 +8,7 @@ lastmod: 2026-09-05
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Valencia"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Valencia"
 funnel: "mofu"
 geo_target: "Valencia"

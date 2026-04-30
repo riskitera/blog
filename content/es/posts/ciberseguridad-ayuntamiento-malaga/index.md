@@ -8,7 +8,7 @@ lastmod: 2026-09-08
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Malaga"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Malaga"
 funnel: "mofu"
 geo_target: "Malaga"

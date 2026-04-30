@@ -8,7 +8,7 @@ lastmod: 2026-06-13
 draft: false
 tags: ["GRC", "Seguridad", "Compliance"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "plan director seguridad"
 funnel: "mofu"
 ---

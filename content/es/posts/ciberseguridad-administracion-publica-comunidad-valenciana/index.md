@@ -8,7 +8,7 @@ lastmod: 2026-08-14
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Comunidad Valenciana"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Comunidad Valenciana"
 funnel: "mofu"
 geo_target: "Comunidad Valenciana"

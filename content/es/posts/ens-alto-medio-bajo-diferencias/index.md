@@ -8,7 +8,7 @@ lastmod: 2026-05-05
 draft: false
 tags: ["ENS", "Compliance", "Seguridad"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ENS alto medio bajo"
 funnel: "tofu"
 ---

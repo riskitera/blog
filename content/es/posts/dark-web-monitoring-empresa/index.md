@@ -8,7 +8,7 @@ lastmod: 2026-07-25
 draft: false
 tags: ["CTI", "Threat Intelligence", "OSINT"]
 categories: ["CTI"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "dark web monitoring empresa"
 funnel: "mofu"
 ---

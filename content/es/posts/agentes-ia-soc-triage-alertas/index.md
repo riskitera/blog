@@ -8,7 +8,7 @@ lastmod: 2026-05-16
 draft: false
 tags: ["IA", "SOC", "Operaciones"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "agentes IA SOC"
 funnel: "mofu"
 ---

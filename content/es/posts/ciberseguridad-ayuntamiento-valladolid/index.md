@@ -8,7 +8,7 @@ lastmod: 2026-09-15
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Valladolid"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Valladolid"
 funnel: "mofu"
 geo_target: "Valladolid"

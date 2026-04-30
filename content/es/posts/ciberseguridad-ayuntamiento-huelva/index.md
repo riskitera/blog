@@ -8,7 +8,7 @@ lastmod: 2026-09-30
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Huelva"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Huelva"
 funnel: "mofu"
 geo_target: "Huelva"

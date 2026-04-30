@@ -8,7 +8,7 @@ lastmod: 2026-08-24
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Navarra"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Navarra"
 funnel: "mofu"
 geo_target: "Navarra"

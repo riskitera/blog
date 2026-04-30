@@ -8,7 +8,7 @@ lastmod: 2026-09-23
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Pamplona"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Pamplona"
 funnel: "mofu"
 geo_target: "Pamplona"

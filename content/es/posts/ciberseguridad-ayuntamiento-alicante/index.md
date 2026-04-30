@@ -8,7 +8,7 @@ lastmod: 2026-09-13
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Alicante"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Alicante"
 funnel: "mofu"
 geo_target: "Alicante"

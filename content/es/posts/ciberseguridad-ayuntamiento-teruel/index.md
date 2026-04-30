@@ -8,7 +8,7 @@ lastmod: 2026-10-21
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Teruel"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Teruel"
 funnel: "mofu"
 geo_target: "Teruel"

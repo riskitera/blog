@@ -8,7 +8,7 @@ lastmod: 2026-09-29
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Logrono"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Logrono"
 funnel: "mofu"
 geo_target: "Logrono"

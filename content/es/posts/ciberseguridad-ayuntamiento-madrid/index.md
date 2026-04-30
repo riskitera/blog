@@ -8,7 +8,7 @@ lastmod: 2026-09-03
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Madrid"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Madrid"
 funnel: "mofu"
 geo_target: "Madrid"

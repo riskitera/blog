@@ -8,7 +8,7 @@ lastmod: 2026-07-18
 draft: false
 tags: ["Seguridad", "Operaciones", "GRC"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "zero trust guia practica"
 funnel: "mofu"
 ---

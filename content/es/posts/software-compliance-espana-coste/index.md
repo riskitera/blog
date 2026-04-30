@@ -8,7 +8,7 @@ lastmod: 2026-07-09
 draft: false
 tags: ["Compliance", "Herramientas", "GRC"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "software compliance Espana"
 funnel: "bofu"
 ---

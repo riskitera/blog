@@ -8,7 +8,7 @@ lastmod: 2026-08-22
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Region de Murcia"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Region de Murcia"
 funnel: "mofu"
 geo_target: "Region de Murcia"

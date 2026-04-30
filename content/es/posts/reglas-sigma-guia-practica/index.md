@@ -8,7 +8,7 @@ lastmod: 2026-06-04
 draft: false
 tags: ["SOC", "SIEM", "Detection Engineering"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "reglas sigma"
 funnel: "mofu"
 ---

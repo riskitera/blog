@@ -3,18 +3,26 @@ title: "Como hacer un analisis de riesgos en ciberseguridad paso a paso"
 image: "cover.png"
 description: "Guia paso a paso para realizar un analisis de riesgos en ciberseguridad: metodologias MAGERIT, FAIR, ISO 27005 y NIST RMF, inventario de activos, evaluacion de amenazas, calculo y tratamiento de riesgos."
 slug: "analisis-riesgos-ciberseguridad-paso-a-paso"
-date: 2026-04-06
-lastmod: 2026-04-06
+date: 2026-03-15
+lastmod: 2026-03-15
 draft: false
 tags: ["GRC", "Riesgos", "Metodologia"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "risk-analysis-guide"
 ---
 
-El analisis de riesgos es el proceso fundamental que permite a una organizacion identificar, evaluar y priorizar las amenazas a las que estan expuestos sus activos de informacion. Sin un analisis de riesgos riguroso, las decisiones de seguridad se toman por intuicion, lo que inevitablemente conduce a inversiones desproporcionadas en areas de bajo riesgo y proteccion insuficiente donde realmente importa. Segun datos del Informe de Amenazas de ENISA, mas del 60 por ciento de las pymes europeas que sufrieron un ciberataque grave no habian realizado un analisis de riesgos formal previo. Esta guia detalla el proceso completo, las metodologias disponibles y los errores que conviene evitar.
+El analisis de riesgos es el proceso fundamental que permite a una organizacion identificar, evaluar y priorizar las amenazas a las que estan expuestos sus activos de informacion. Sin un analisis de riesgos riguroso, las decisiones de seguridad se toman por intuicion, lo que inevitablemente conduce a inversiones desproporcionadas en areas de bajo riesgo y proteccion insuficiente donde realmente importa. Segun datos del Informe de Amenazas de [ENISA](https://www.enisa.europa.eu/), mas del 60 por ciento de las pymes europeas que sufrieron un ciberataque grave no habian realizado un analisis de riesgos formal previo. Esta guia detalla el proceso completo, las metodologias disponibles y los errores que conviene evitar.
 
 <!--more-->
+
+{{< key-takeaways >}}
+- El analisis de riesgos es obligatorio por ENS, RGPD, NIS2, DORA e ISO 27001
+- Principales metodologias: MAGERIT (referencia en Espana), FAIR (cuantitativa), ISO 27005 y NIST RMF
+- Proceso en 7 pasos: alcance, inventario de activos, amenazas, vulnerabilidades, calculo, priorizacion y tratamiento
+- Debe revisarse al menos anualmente y actualizarse ante cambios significativos
+- La herramienta PILAR del CCN facilita el analisis siguiendo MAGERIT
+{{< /key-takeaways >}}
 
 ## Por que es imprescindible el analisis de riesgos en ciberseguridad?
 
@@ -22,7 +30,7 @@ El analisis de riesgos en ciberseguridad no es un ejercicio academico ni un requ
 
 En primer lugar, permite asignar recursos de forma racional. Los presupuestos de seguridad son siempre limitados, y el analisis de riesgos identifica donde cada euro invertido genera mayor reduccion de riesgo. Sin esta informacion, las organizaciones tienden a invertir en tecnologia de moda en lugar de abordar los riesgos reales.
 
-En segundo lugar, es un requisito normativo. Regulaciones como el Esquema Nacional de Seguridad (ENS), el RGPD, la Directiva NIS2, DORA y el estandar [ISO 27001](/es/posts/guia-iso-27001-startups/) exigen la realizacion de analisis de riesgos como requisito fundamental. El articulo 32 del RGPD establece explicitamente que las medidas de seguridad deben ser proporcionales al riesgo, lo que presupone que se ha realizado una evaluacion formal.
+En segundo lugar, es un requisito normativo. Regulaciones como el Esquema Nacional de Seguridad (ENS), el [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679), la Directiva [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555), [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) y el estandar [ISO 27001](/es/posts/guia-iso-27001-startups/) exigen la realizacion de analisis de riesgos como requisito fundamental. El articulo 32 del RGPD establece explicitamente que las medidas de seguridad deben ser proporcionales al riesgo, lo que presupone que se ha realizado una evaluacion formal.
 
 En tercer lugar, facilita la comunicacion con la direccion. Un registro de riesgos bien elaborado traduce amenazas tecnicas a terminos de impacto empresarial (perdida economica, interrupcion del servicio, dano reputacional), permitiendo que los responsables de negocio tomen decisiones informadas.
 
@@ -34,13 +42,13 @@ Existen diversas metodologias reconocidas internacionalmente. La eleccion depend
 
 ### MAGERIT
 
-MAGERIT (Metodologia de Analisis y Gestion de Riesgos de los Sistemas de Informacion) es la metodologia oficial del gobierno espanol, desarrollada por el Consejo Superior de Administracion Electronica y mantenida por el CCN. Es la metodologia de referencia para el cumplimiento del [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) y es ampliamente utilizada en el sector publico espanol y en empresas que trabajan con la administracion.
+MAGERIT (Metodologia de Analisis y Gestion de Riesgos de los Sistemas de Informacion) es la metodologia oficial del gobierno espanol, desarrollada por el Consejo Superior de Administracion Electronica y mantenida por el [CCN](https://www.ccn-cert.cni.es/). Es la metodologia de referencia para el cumplimiento del [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) y es ampliamente utilizada en el sector publico espanol y en empresas que trabajan con la administracion.
 
 MAGERIT se estructura en tres libros: el metodo (que describe el proceso), el catalogo de elementos (que proporciona inventarios tipificados de activos, amenazas y salvaguardas) y la guia de tecnicas (que detalla tecnicas complementarias como analisis de impacto o arboles de ataque).
 
-Su enfoque es cualitativo-cuantitativo, permitiendo valorar activos y riesgos tanto en escalas numericas como en categorias. El CCN proporciona la herramienta PILAR como soporte oficial para la realizacion de analisis MAGERIT, facilitando significativamente el proceso.
+Su enfoque es cualitativo-cuantitativo, permitiendo valorar activos y riesgos tanto en escalas numericas como en categorias. El CCN proporciona la herramienta [PILAR](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html) como soporte oficial para la realizacion de analisis MAGERIT, facilitando significativamente el proceso.
 
-### FAIR (Factor Analysis of Information Risk)
+### [FAIR](https://www.fairinstitute.org/) (Factor Analysis of Information Risk)
 
 FAIR es el unico modelo cuantitativo estandarizado (por The Open Group) para medir el riesgo en terminos financieros. A diferencia de las metodologias cualitativas que clasifican riesgos como "alto", "medio" o "bajo", FAIR calcula la perdida esperada en unidades monetarias, utilizando distribuciones de probabilidad.
 
@@ -48,7 +56,7 @@ El modelo descompone el riesgo en factores como la frecuencia de eventos de amen
 
 FAIR es especialmente util para comunicar riesgos a la direccion financiera y para priorizar inversiones con base en el retorno de reduccion de riesgo. Sin embargo, requiere datos historicos que no siempre estan disponibles, especialmente en organizaciones menos maduras.
 
-### ISO 27005
+### [ISO 27005](https://www.iso.org/standard/80585.html)
 
 ISO 27005 es el estandar internacional que proporciona directrices para la gestion de riesgos de seguridad de la informacion en el contexto de un sistema de gestion basado en ISO 27001. No prescribe una metodologia concreta sino que establece un marco de proceso: establecimiento del contexto, identificacion de riesgos, analisis de riesgos, evaluacion de riesgos, tratamiento de riesgos y comunicacion.
 
@@ -56,7 +64,7 @@ Su principal ventaja es la alineacion directa con ISO 27001, lo que facilita la 
 
 ### NIST Risk Management Framework (RMF)
 
-El NIST RMF, descrito en la publicacion especial SP 800-37, define un proceso de gestion de riesgos en siete pasos: preparar, categorizar, seleccionar controles, implementar controles, evaluar controles, autorizar y monitorizar. Complementado con la guia SP 800-30 para evaluacion de riesgos, proporciona un marco completo y detallado.
+El NIST RMF, descrito en la publicacion especial [SP 800-37](https://csrc.nist.gov/pubs/sp/800/37/r2/final), define un proceso de gestion de riesgos en siete pasos: preparar, categorizar, seleccionar controles, implementar controles, evaluar controles, autorizar y monitorizar. Complementado con la guia [SP 800-30](https://csrc.nist.gov/pubs/sp/800/30/r1/final) para evaluacion de riesgos, proporciona un marco completo y detallado.
 
 Aunque es de origen estadounidense, el NIST RMF es ampliamente utilizado internacionalmente debido a la calidad de su documentacion y la disponibilidad gratuita de todas sus publicaciones. ENISA lo referencia como uno de los marcos de referencia en sus guias de gestion de riesgos.
 
@@ -100,7 +108,7 @@ Para cada activo o grupo de activos, se identifican las amenazas que podrian cau
 
 **Amenazas humanas intencionadas:** ataques externos (ransomware, phishing, DDoS, APT), amenazas internas (empleados descontentos, espionaje industrial), ataques de ingenieria social.
 
-Los catalogos de amenazas de MAGERIT y la taxonomia de amenazas de ENISA proporcionan listas completas que ayudan a no omitir amenazas relevantes. Los informes periodicos de INCIBE sobre incidentes en Espana y el ENISA Threat Landscape ofrecen datos actualizados sobre la prevalencia de cada tipo de amenaza.
+Los catalogos de amenazas de MAGERIT y la taxonomia de amenazas de ENISA proporcionan listas completas que ayudan a no omitir amenazas relevantes. Los informes periodicos de [INCIBE](https://www.incibe.es/) sobre incidentes en Espana y el ENISA Threat Landscape ofrecen datos actualizados sobre la prevalencia de cada tipo de amenaza.
 
 ### Paso 4: Identificacion de vulnerabilidades
 
@@ -215,7 +223,7 @@ El analisis de riesgos debe revisarse como minimo anualmente de forma completa. 
 
 ### Que metodologia es mejor para una pyme
 
-Para una pyme espanola, MAGERIT con la herramienta microPILAR es una opcion solida que facilita el cumplimiento del ENS si aplica. ISO 27005 es adecuada si la organizacion aspira a la certificacion ISO 27001. Para pymes que quieren un enfoque practico sin formalismos excesivos, el marco NIST CSF incluye una funcion de evaluacion de riesgos accesible. Lo importante no es elegir la metodologia perfecta sino comenzar el proceso con la que mejor se adapte a los recursos disponibles.
+Para una pyme espanola, MAGERIT con la herramienta microPILAR es una opcion solida que facilita el cumplimiento del ENS si aplica. ISO 27005 es adecuada si la organizacion aspira a la certificacion ISO 27001. Para pymes que quieren un enfoque practico sin formalismos excesivos, el marco [NIST CSF](https://www.nist.gov/cyberframework) incluye una funcion de evaluacion de riesgos accesible. Lo importante no es elegir la metodologia perfecta sino comenzar el proceso con la que mejor se adapte a los recursos disponibles.
 
 ### Necesito un consultor externo para hacer el analisis de riesgos
 

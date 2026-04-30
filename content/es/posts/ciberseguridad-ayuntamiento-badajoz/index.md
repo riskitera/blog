@@ -8,7 +8,7 @@ lastmod: 2026-10-09
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Badajoz"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Badajoz"
 funnel: "mofu"
 geo_target: "Badajoz"

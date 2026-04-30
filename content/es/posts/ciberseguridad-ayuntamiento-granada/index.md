@@ -8,7 +8,7 @@ lastmod: 2026-09-20
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Granada"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Granada"
 funnel: "mofu"
 geo_target: "Granada"

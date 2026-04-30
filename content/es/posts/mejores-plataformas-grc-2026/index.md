@@ -8,7 +8,7 @@ lastmod: 2026-07-07
 draft: false
 tags: ["GRC", "Herramientas", "Compliance"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "mejores plataformas GRC 2026"
 funnel: "bofu"
 ---

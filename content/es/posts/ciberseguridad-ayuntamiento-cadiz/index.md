@@ -8,7 +8,7 @@ lastmod: 2026-10-07
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Cadiz"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Cadiz"
 funnel: "mofu"
 geo_target: "Cadiz"

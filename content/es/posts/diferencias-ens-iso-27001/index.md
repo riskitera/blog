@@ -8,7 +8,7 @@ lastmod: 2026-05-07
 draft: false
 tags: ["ENS", "ISO 27001", "Compliance"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "diferencias ENS ISO 27001"
 funnel: "tofu"
 ---

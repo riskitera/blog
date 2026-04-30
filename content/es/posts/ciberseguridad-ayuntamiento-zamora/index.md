@@ -8,7 +8,7 @@ lastmod: 2026-10-17
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Zamora"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Zamora"
 funnel: "mofu"
 geo_target: "Zamora"

@@ -8,7 +8,7 @@ lastmod: 2026-09-09
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Murcia"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Murcia"
 funnel: "mofu"
 geo_target: "Murcia"

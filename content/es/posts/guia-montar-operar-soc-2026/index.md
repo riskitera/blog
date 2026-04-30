@@ -8,7 +8,7 @@ lastmod: 2026-06-30
 draft: false
 tags: ["SOC", "Operaciones", "Herramientas"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "montar operar SOC"
 funnel: "mofu"
 pillar: true

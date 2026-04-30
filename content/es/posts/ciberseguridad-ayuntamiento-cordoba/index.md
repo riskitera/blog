@@ -8,7 +8,7 @@ lastmod: 2026-09-14
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Cordoba"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Cordoba"
 funnel: "mofu"
 geo_target: "Cordoba"

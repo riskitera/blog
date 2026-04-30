@@ -3,18 +3,26 @@ title: "Guia practica de auditoria de seguridad informatica"
 image: "cover.png"
 description: "Guia completa sobre auditoria de seguridad informatica: tipos de auditorias, fases del proceso, gestion de evidencias, frameworks ISO 19011 e ISACA, herramientas y automatizacion."
 slug: "auditoria-seguridad-informatica-guia"
-date: 2026-04-06
-lastmod: 2026-04-06
+date: 2026-03-25
+lastmod: 2026-03-25
 draft: false
 tags: ["GRC", "Auditoria", "Compliance"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "security-audit-guide"
 ---
 
-La auditoria de seguridad informatica es el proceso sistematico mediante el cual se evalua si los controles de seguridad de una organizacion son adecuados, estan correctamente implementados y funcionan de forma eficaz. En un entorno regulatorio cada vez mas exigente, donde normativas como el ENS, ISO 27001, NIS2 y DORA imponen requisitos especificos de verificacion, la capacidad de realizar y superar auditorias de seguridad se ha convertido en una competencia organizacional critica. Esta guia aborda los tipos de auditorias, sus fases, la gestion de evidencias y como automatizar el proceso para reducir el esfuerzo y mejorar los resultados.
+La auditoria de seguridad informatica es el proceso sistematico mediante el cual se evalua si los controles de seguridad de una organizacion son adecuados, estan correctamente implementados y funcionan de forma eficaz. En un entorno regulatorio cada vez mas exigente, donde normativas como el [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311), [ISO 27001](https://www.iso.org/standard/27001), [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) y [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) imponen requisitos especificos de verificacion, la capacidad de realizar y superar auditorias de seguridad se ha convertido en una competencia organizacional critica. Esta guia aborda los tipos de auditorias, sus fases, la gestion de evidencias y como automatizar el proceso para reducir el esfuerzo y mejorar los resultados.
 
 <!--more-->
+
+{{< key-takeaways >}}
+- Las auditorias de seguridad son obligatorias para certificacion ISO 27001 y cumplimiento ENS
+- Tipos principales: auditoria interna, externa, de cumplimiento y tecnica (pentest)
+- El marco ISO 19011 proporciona directrices para la planificacion y ejecucion de auditorias
+- La gestion de evidencias con cadena de custodia es critica para la validez de los resultados
+- La automatizacion reduce hasta un 70% el tiempo de recopilacion de evidencias
+{{< /key-takeaways >}}
 
 ## Que es una auditoria de seguridad informatica?
 
@@ -24,7 +32,7 @@ A diferencia de una evaluacion de vulnerabilidades o un test de penetracion, que
 
 El valor de la auditoria reside en su caracter independiente y sistematico. El auditor aplica criterios predefinidos (controles de una norma, requisitos de una regulacion) y recopila evidencias objetivas que soportan sus conclusiones. Este enfoque basado en evidencias proporciona confianza a la direccion, a los reguladores y a otras partes interesadas sobre el estado real de la seguridad.
 
-Organismos como el CCN-CERT han publicado guias especificas para la auditoria de conformidad con el ENS (guias CCN-STIC), e INCIBE proporciona recursos para que las pymes puedan evaluar su nivel de seguridad de forma autonoma.
+Organismos como el [CCN-CERT](https://www.ccn-cert.cni.es/) han publicado guias especificas para la auditoria de conformidad con el ENS (guias CCN-STIC), e [INCIBE](https://www.incibe.es/) proporciona recursos para que las pymes puedan evaluar su nivel de seguridad de forma autonoma.
 
 ## Que tipos de auditorias de seguridad existen?
 
@@ -46,7 +54,7 @@ Las auditorias de certificacion ISO 27001 las realizan organismos acreditados po
 
 ### Auditoria de cumplimiento normativo
 
-Enfocada especificamente en verificar el cumplimiento de requisitos legales y regulatorios. Una auditoria de cumplimiento del RGPD evaluaria si la organizacion cumple con los principios de proteccion de datos, si ha designado un DPO cuando es obligatorio, si mantiene un registro de actividades de tratamiento y si ha realizado evaluaciones de impacto cuando procede.
+Enfocada especificamente en verificar el cumplimiento de requisitos legales y regulatorios. Una auditoria de cumplimiento del [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679) evaluaria si la organizacion cumple con los principios de proteccion de datos, si ha designado un DPO cuando es obligatorio, si mantiene un registro de actividades de tratamiento y si ha realizado evaluaciones de impacto cuando procede.
 
 Las auditorias de cumplimiento de NIS2 y DORA, aunque estas normativas son relativamente recientes, ya estan generando demanda de profesionales y metodologias especializadas en su verificacion.
 
@@ -144,13 +152,13 @@ Riskitera automatiza la recopilacion de evidencias de seguridad, extrayendo dato
 
 ## Que marcos de referencia se usan en auditorias de seguridad?
 
-### ISO 19011
+### [ISO 19011](https://www.iso.org/standard/70017.html)
 
 ISO 19011 es el estandar internacional que proporciona directrices para la auditoria de sistemas de gestion. Aunque es generico (aplicable a cualquier sistema de gestion, no solo a seguridad), establece los principios fundamentales de auditoria (integridad, presentacion ecuanime, diligencia profesional, confidencialidad, independencia, enfoque basado en evidencias), las competencias requeridas de los auditores, la gestion de programas de auditoria y la ejecucion de auditorias individuales.
 
 ISO 19011 es la referencia metodologica para las auditorias internas del SGSI basado en ISO 27001 y para las auditorias de conformidad con el ENS.
 
-### ISACA y los marcos de auditoria de SI
+### [ISACA](https://www.isaca.org/) y los marcos de auditoria de SI
 
 ISACA (Information Systems Audit and Control Association) es la organizacion profesional de referencia en auditoria de sistemas de informacion. Su framework COBIT proporciona un marco de gobierno y gestion de TI que incluye procesos especificos de aseguramiento y auditoria.
 

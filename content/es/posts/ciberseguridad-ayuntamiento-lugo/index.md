@@ -8,7 +8,7 @@ lastmod: 2026-10-06
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Lugo"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Lugo"
 funnel: "mofu"
 geo_target: "Lugo"

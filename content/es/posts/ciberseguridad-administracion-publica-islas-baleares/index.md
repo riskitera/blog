@@ -8,7 +8,7 @@ lastmod: 2026-08-02
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Islas Baleares"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Islas Baleares"
 funnel: "mofu"
 geo_target: "Islas Baleares"

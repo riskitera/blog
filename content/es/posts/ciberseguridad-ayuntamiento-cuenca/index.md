@@ -8,7 +8,7 @@ lastmod: 2026-10-13
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Cuenca"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Cuenca"
 funnel: "mofu"
 geo_target: "Cuenca"

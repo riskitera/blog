@@ -8,13 +8,21 @@ draft: false
 image: "cover.png"
 tags: ["GRC", "ISO 27001", "Compliance"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "iso27001-guide"
 ---
 
-Muchas startups ven ISO 27001 como algo inalcanzable: un proceso largo, burocrático y pensado para grandes corporaciones. La realidad es muy diferente. Con el enfoque adecuado, una startup puede lograr la certificación en menos de un año y convertirla en una ventaja competitiva real.
+Muchas startups ven [ISO 27001](https://www.iso.org/standard/27001) como algo inalcanzable: un proceso largo, burocrático y pensado para grandes corporaciones. La realidad es muy diferente. Con el enfoque adecuado, una startup puede lograr la certificación en menos de un año y convertirla en una ventaja competitiva real.
 
 <!--more-->
+
+{{< key-takeaways >}}
+- ISO 27001 es el estandar internacional de referencia para sistemas de gestion de seguridad de la informacion (SGSI)
+- La certificacion demuestra a clientes y socios un compromiso verificable con la seguridad
+- Para startups, el enfoque pragmatico es priorizar los controles del Anexo A que aplican a su contexto
+- El coste de certificacion para una pyme oscila entre 15.000 y 50.000 EUR (consultoria + auditoria)
+- El ENS espanol comparte muchos controles con ISO 27001, facilitando el cumplimiento cruzado
+{{< /key-takeaways >}}
 
 ## ¿Por qué ISO 27001?
 
@@ -23,7 +31,7 @@ ISO 27001 no es solo un sello que colgar en la web. Es un marco de trabajo que t
 - **Acceso a mercados regulados**: muchos clientes enterprise y contratos públicos exigen esta certificación.
 - **Confianza de inversores**: demuestra madurez operativa y reduce el riesgo percibido.
 - **Reducción real de incidentes**: un SGSI bien implementado detecta vulnerabilidades antes de que se conviertan en problemas.
-- **Cumplimiento normativo**: facilita la adaptación a NIS2, GDPR, ENS y otros frameworks.
+- **Cumplimiento normativo**: facilita la adaptación a NIS2, GDPR, [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311) y otros frameworks.
 
 ## Los pasos clave
 

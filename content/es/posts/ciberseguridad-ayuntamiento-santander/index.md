@@ -8,7 +8,7 @@ lastmod: 2026-09-24
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Santander"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Santander"
 funnel: "mofu"
 geo_target: "Santander"

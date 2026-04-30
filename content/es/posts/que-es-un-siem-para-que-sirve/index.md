@@ -3,18 +3,26 @@ title: "Que es un SIEM y por que tu empresa lo necesita"
 image: "cover.png"
 description: "Guia completa sobre SIEM: que es, como funciona, principales soluciones del mercado (Splunk, QRadar, Elastic, Sentinel), open source vs comercial, y cuando necesitas uno."
 slug: "que-es-un-siem-para-que-sirve"
-date: 2026-04-05
-lastmod: 2026-04-05
+date: 2026-03-30
+lastmod: 2026-03-30
 draft: false
 tags: ["SIEM", "SOC", "Herramientas"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "siem-guide"
 ---
 
-Un SIEM (Security Information and Event Management) es la herramienta central de cualquier operacion de ciberseguridad moderna. Recopila, normaliza y correlaciona los eventos de seguridad de toda la infraestructura tecnologica de una organizacion, detectando amenazas que seria imposible identificar analizando cada sistema de forma aislada. Segun Gartner, el 72 por ciento de las organizaciones con mas de 500 empleados utilizan alguna forma de SIEM, y la tendencia es claramente creciente en el segmento de empresas medianas.
+Un SIEM (Security Information and Event Management) es la herramienta central de cualquier operacion de ciberseguridad moderna. Recopila, normaliza y correlaciona los eventos de seguridad de toda la infraestructura tecnologica de una organizacion, detectando amenazas que seria imposible identificar analizando cada sistema de forma aislada. Segun [Gartner](https://www.gartner.com/), el 72 por ciento de las organizaciones con mas de 500 empleados utilizan alguna forma de SIEM, y la tendencia es claramente creciente en el segmento de empresas medianas.
 
 <!--more-->
+
+{{< key-takeaways >}}
+- Un SIEM recopila, normaliza y correlaciona eventos de seguridad de toda la infraestructura para detectar amenazas
+- Principales soluciones: Splunk, Microsoft Sentinel, IBM QRadar, Elastic Security y Google Chronicle
+- El coste para una empresa mediana oscila entre 30.000 y 200.000 EUR anuales segun la solucion
+- Alternativas open source viables: Wazuh (SIEM+EDR), Elastic Security (Basic) y OSSIM
+- El tuning continuo de reglas es critico: sin el, la fatiga de alertas inutiliza la herramienta
+{{< /key-takeaways >}}
 
 ## Que es un SIEM y para que sirve?
 
@@ -70,7 +78,7 @@ La correlacion es el corazon del SIEM. Es donde los eventos individuales, que po
 - **Basada en amenazas**: correlaciona los eventos con indicadores de compromiso (IoC) procedentes de feeds de inteligencia de amenazas. Ejemplo: "Si un host se comunica con una IP que esta en la lista de servidores C2 de Cobalt Strike, genera una alerta critica."
 - **UEBA (User and Entity Behavior Analytics)**: analiza el comportamiento de usuarios y entidades para detectar anomalias. Ejemplo: "El usuario jgarcia normalmente accede desde Madrid en horario de oficina. Hoy ha accedido desde Rusia a las 3:00 AM. Alerta de comportamiento anomalo."
 
-Las reglas de correlacion se organizan en casos de uso que, idealmente, se mapean al framework MITRE ATT&CK para garantizar una cobertura sistematica de las tecnicas de ataque conocidas.
+Las reglas de correlacion se organizan en casos de uso que, idealmente, se mapean al framework [MITRE ATT&CK](https://attack.mitre.org/) para garantizar una cobertura sistematica de las tecnicas de ataque conocidas.
 
 ### Alertas y dashboards (visualization)
 
@@ -87,7 +95,7 @@ La calidad del tuning de las reglas determina la utilidad practica del SIEM. Un 
 El SIEM almacena los logs durante un periodo configurable que depende de los requisitos normativos y operativos:
 
 - **Requisitos operativos**: generalmente entre 30 y 90 dias de datos en caliente (busqueda rapida).
-- **Requisitos normativos**: el ENS exige la conservacion de logs de auditoria durante 5 anos para nivel alto. NIS2 y DORA tambien imponen requisitos de retencion. El RGPD limita la retencion de datos personales al tiempo estrictamente necesario.
+- **Requisitos normativos**: el [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311) exige la conservacion de logs de auditoria durante 5 anos para nivel alto. [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) y [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) tambien imponen requisitos de retencion. El RGPD limita la retencion de datos personales al tiempo estrictamente necesario.
 - **Almacenamiento en frio**: los datos que superan el periodo operativo se archivan en almacenamiento mas economico pero con tiempos de acceso mayores.
 
 El coste de almacenamiento es uno de los factores mas relevantes en el coste total de propiedad de un SIEM, especialmente en modelos de licenciamiento basados en volumen de ingesta.
@@ -96,7 +104,7 @@ El coste de almacenamiento es uno de los factores mas relevantes en el coste tot
 
 El mercado de SIEM es competitivo y diverso. Estas son las principales opciones en 2026:
 
-### Splunk Enterprise Security
+### [Splunk](https://www.splunk.com/) Enterprise Security
 
 Splunk es la solucion SIEM mas reconocida del mercado. Adquirida por Cisco en 2024, destaca por su potente lenguaje de busqueda (SPL), su flexibilidad para ingerir cualquier tipo de dato y su amplio ecosistema de aplicaciones e integraciones.
 
@@ -104,7 +112,7 @@ Splunk es la solucion SIEM mas reconocida del mercado. Adquirida por Cisco en 20
 **Limitaciones:** coste elevado (especialmente en modelos de licenciamiento por volumen de ingesta), curva de aprendizaje del SPL, complejidad de administracion en despliegues grandes.
 **Modelo de licenciamiento:** por volumen de datos ingestados (GB/dia) o por entidades (workload pricing). Los precios tipicos oscilan entre 50 y 150 euros por GB/dia ingestado.
 
-### Microsoft Sentinel
+### [Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel)
 
 Sentinel es la solucion SIEM nativa de la nube de Microsoft, integrada en el ecosistema Azure. Su adopcion ha crecido enormemente gracias a su integracion nativa con Microsoft 365, Azure AD y Defender.
 
@@ -120,7 +128,7 @@ QRadar es una de las soluciones SIEM mas veteranas y respetadas del mercado, con
 **Limitaciones:** interfaz que no ha evolucionado al ritmo del mercado, administracion compleja, dependencia del hardware en despliegues on-premise. IBM ha anunciado la transicion hacia QRadar Suite (cloud-native), lo que genera incertidumbre en la base instalada.
 **Modelo de licenciamiento:** por eventos por segundo (EPS) y flujos por minuto (FPM). El coste tipico para una empresa mediana oscila entre 30.000 y 100.000 euros anuales.
 
-### Elastic Security
+### [Elastic Security](https://www.elastic.co/security)
 
 Basada en el Elastic Stack (Elasticsearch, Logstash, Kibana), Elastic Security ha evolucionado de una herramienta de analisis de logs a una solucion SIEM completa con capacidades de deteccion, respuesta y threat hunting.
 
@@ -142,7 +150,7 @@ La eleccion entre un SIEM open source y uno comercial depende de los recursos di
 
 ### Opciones open source destacadas
 
-- **Wazuh**: plataforma de seguridad open source que combina SIEM, EDR y gestion de vulnerabilidades. Muy popular en el mercado espanol, con una comunidad activa y documentacion en constante mejora. Ideal para organizaciones que buscan una solucion integral de coste reducido.
+- **[Wazuh](https://wazuh.com/)**: plataforma de seguridad open source que combina SIEM, EDR y gestion de vulnerabilidades. Muy popular en el mercado espanol, con una comunidad activa y documentacion en constante mejora. Ideal para organizaciones que buscan una solucion integral de coste reducido.
 - **Elastic Security (Basic)**: la version basica de Elastic incluye funcionalidades SIEM fundamentales. Es una opcion robusta si se dispone de experiencia con el Elastic Stack.
 - **OSSIM (AlienVault Open Source)**: pionero en el SIEM open source, aunque su desarrollo se ha ralentizado tras la adquisicion por AT&T.
 - **Apache Metron**: proyecto de la Apache Foundation para analisis de seguridad a escala, orientado a organizaciones con capacidad tecnica avanzada.
@@ -205,7 +213,7 @@ La integracion SIEM-SOAR es especialmente critica. El SOAR recibe las alertas de
 
 ### Integracion con inteligencia de amenazas
 
-El SIEM debe alimentarse de fuentes de inteligencia de amenazas (IoC, TTPs, informes de amenazas) para mejorar la deteccion. Las fuentes mas habituales incluyen feeds comerciales (Recorded Future, Mandiant), feeds publicos (OTX AlienVault, Abuse.ch, CIRCL), plataformas colaborativas (MISP) y las alertas publicadas por INCIBE-CERT y CCN-CERT.
+El SIEM debe alimentarse de fuentes de inteligencia de amenazas (IoC, TTPs, informes de amenazas) para mejorar la deteccion. Las fuentes mas habituales incluyen feeds comerciales (Recorded Future, Mandiant), feeds publicos (OTX AlienVault, Abuse.ch, CIRCL), plataformas colaborativas (MISP) y las alertas publicadas por [INCIBE-CERT](https://www.incibe.es/incibe-cert) y [CCN-CERT](https://www.ccn-cert.cni.es/).
 
 Riskitera se integra con los principales SIEM del mercado, enriqueciendo la informacion de seguridad con contexto de cumplimiento normativo y gestion de riesgos, proporcionando una vision unificada de la postura de seguridad y compliance de la organizacion.
 

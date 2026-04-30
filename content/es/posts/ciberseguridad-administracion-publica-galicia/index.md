@@ -8,7 +8,7 @@ lastmod: 2026-08-18
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Galicia"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Galicia"
 funnel: "mofu"
 geo_target: "Galicia"

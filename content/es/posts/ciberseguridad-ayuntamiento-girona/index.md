@@ -8,7 +8,7 @@ lastmod: 2026-10-05
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Girona"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Girona"
 funnel: "mofu"
 geo_target: "Girona"

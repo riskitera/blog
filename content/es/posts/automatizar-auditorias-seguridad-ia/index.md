@@ -8,7 +8,7 @@ lastmod: 2026-05-14
 draft: false
 tags: ["IA", "Auditoria", "GRC"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "automatizar auditorias seguridad"
 funnel: "mofu"
 ---

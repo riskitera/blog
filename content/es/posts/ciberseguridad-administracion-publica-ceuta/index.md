@@ -8,7 +8,7 @@ lastmod: 2026-08-30
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Ceuta"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Ceuta"
 funnel: "mofu"
 geo_target: "Ceuta"

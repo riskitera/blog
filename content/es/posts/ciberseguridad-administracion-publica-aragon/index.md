@@ -8,7 +8,7 @@ lastmod: 2026-07-29
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Aragon"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Aragon"
 funnel: "mofu"
 geo_target: "Aragon"

@@ -8,7 +8,7 @@ lastmod: 2026-10-11
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Albacete"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Albacete"
 funnel: "mofu"
 geo_target: "Albacete"

@@ -8,7 +8,7 @@ lastmod: 2026-07-23
 draft: false
 tags: ["CTI", "Threat Intelligence", "SIEM", "Herramientas"]
 categories: ["CTI"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "feeds CTI gratuitos"
 funnel: "tofu"
 ---

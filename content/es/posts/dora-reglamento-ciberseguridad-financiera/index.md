@@ -3,12 +3,12 @@ title: "DORA: el reglamento que cambia la ciberseguridad financiera en Europa"
 image: "cover.png"
 description: "Guia completa sobre el Reglamento DORA: que es, a quien afecta, los cinco pilares de resiliencia operativa digital, plazos, sanciones y como prepararse para cumplir."
 slug: "dora-reglamento-ciberseguridad-financiera"
-date: 2026-04-05
-lastmod: 2026-04-05
+date: 2026-03-10
+lastmod: 2026-03-10
 draft: false
 tags: ["DORA", "Fintech", "Compliance", "Banca"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "dora-guide"
 ---
 
@@ -16,9 +16,17 @@ El Reglamento DORA (Digital Operational Resilience Act) es la normativa europea 
 
 <!--more-->
 
+{{< key-takeaways >}}
+- DORA es lex specialis respecto a NIS2 para el sector financiero europeo
+- Aplica a entidades financieras y a sus proveedores criticos de servicios TIC
+- Cinco pilares: gestion de riesgos TIC, notificacion de incidentes, pruebas de resiliencia, gestion de terceros y comparticion de informacion
+- Sanciones: hasta 10 millones EUR o 5% de la facturacion para entidades financieras
+- Las entidades que ya cumplen ISO 27001 o ENS tienen parte del camino recorrido
+{{< /key-takeaways >}}
+
 ## Que es el reglamento DORA y por que existe?
 
-DORA (Reglamento (UE) 2022/2554) fue adoptado el 14 de diciembre de 2022 y entro en aplicacion el 17 de enero de 2025. Nacio de una constatacion clara: el sector financiero europeo depende de forma critica de las tecnologias de la informacion y comunicacion (TIC), pero no existia un marco armonizado que garantizara la resiliencia operativa digital de las entidades financieras frente a perturbaciones graves.
+[DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) (Reglamento (UE) 2022/2554) fue adoptado el 14 de diciembre de 2022 y entro en aplicacion el 17 de enero de 2025. Nacio de una constatacion clara: el sector financiero europeo depende de forma critica de las tecnologias de la informacion y comunicacion (TIC), pero no existia un marco armonizado que garantizara la resiliencia operativa digital de las entidades financieras frente a perturbaciones graves.
 
 Antes de DORA, cada Estado miembro y cada regulador sectorial abordaba la ciberseguridad financiera de forma fragmentada. El Banco Central Europeo (BCE) emitia directrices para la banca, la Autoridad Europea de Valores y Mercados (ESMA) para los mercados de capitales y la Autoridad Europea de Seguros y Pensiones de Jubilacion (EIOPA) para el sector asegurador. El resultado era un mosaico de requisitos dispares que dificultaba tanto el cumplimiento como la supervision.
 
@@ -113,11 +121,11 @@ DORA fomenta el intercambio voluntario de informacion sobre ciberamenazas entre 
 
 DORA y NIS2 se aprobaron el mismo dia y fueron disenadas para complementarse:
 
-- **DORA es lex specialis**: para las entidades financieras, DORA prevalece sobre NIS2 en los aspectos que regula. Es decir, si una entidad financiera esta sujeta a DORA, debe cumplir DORA y no NIS2 para los requisitos de gestion de riesgos TIC, notificacion de incidentes y pruebas de resiliencia. Para conocer en detalle los requisitos de [NIS2](/es/posts/2026/04/nis2-que-es-a-quien-afecta/), consulta nuestro articulo dedicado.
-- **ENS**: las entidades financieras que operen en Espana y tengan relacion con la Administracion publica pueden necesitar cumplir tanto con DORA como con el ENS.
-- **RGPD**: un incidente TIC que afecte a datos personales activara obligaciones simultaneas bajo DORA y bajo el RGPD, con plazos y autoridades de notificacion diferentes.
+- **DORA es lex specialis**: para las entidades financieras, DORA prevalece sobre [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) en los aspectos que regula. Es decir, si una entidad financiera esta sujeta a DORA, debe cumplir DORA y no NIS2 para los requisitos de gestion de riesgos TIC, notificacion de incidentes y pruebas de resiliencia. Para conocer en detalle los requisitos de [NIS2](/es/posts/2026/04/nis2-que-es-a-quien-afecta/), consulta nuestro articulo dedicado.
+- **[ENS](https://www.boe.es/eli/es/rd/2022/05/03/311)**: las entidades financieras que operen en Espana y tengan relacion con la Administracion publica pueden necesitar cumplir tanto con DORA como con el ENS.
+- **[RGPD](https://eur-lex.europa.eu/eli/reg/2016/679)**: un incidente TIC que afecte a datos personales activara obligaciones simultaneas bajo DORA y bajo el RGPD, con plazos y autoridades de notificacion diferentes.
 - **Directrices EBA/EIOPA/ESMA**: las directrices sectoriales preexistentes (como las Directrices EBA sobre gestion de riesgos TIC o las Directrices sobre externalizacion) se integran dentro del marco de DORA.
-- **ISO 27001**: si tu organizacion ya esta certificada en ISO 27001, dispone de una base solida para cumplir con el pilar 1 de DORA. Nuestra [guia de implementacion de ISO 27001](/es/posts/2026/02/guia-iso-27001-startups/) puede ser un recurso util para entender el marco de referencia.
+- **[ISO 27001](https://www.iso.org/standard/27001)**: si tu organizacion ya esta certificada en ISO 27001, dispone de una base solida para cumplir con el pilar 1 de DORA. Nuestra [guia de implementacion de ISO 27001](/es/posts/2026/02/guia-iso-27001-startups/) puede ser un recurso util para entender el marco de referencia.
 
 {{< cta type="tofu" text="Cumplir DORA implica demostrar resiliencia operativa digital. Riskitera mapea los requisitos DORA a controles auditables automaticamente." label="Ver como" >}}
 

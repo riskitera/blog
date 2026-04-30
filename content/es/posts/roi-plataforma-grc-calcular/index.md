@@ -8,7 +8,7 @@ lastmod: 2026-07-11
 draft: false
 tags: ["GRC", "Compliance", "Herramientas"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ROI plataforma GRC"
 funnel: "bofu"
 ---

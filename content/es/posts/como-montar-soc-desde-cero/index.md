@@ -3,12 +3,12 @@ title: "Como montar un SOC desde cero: guia practica para empresas"
 image: "cover.png"
 description: "Guia completa para crear un Centro de Operaciones de Seguridad (SOC): tipos, roles del equipo, herramientas necesarias, procesos, costes y errores comunes a evitar."
 slug: "como-montar-soc-desde-cero"
-date: 2026-04-05
-lastmod: 2026-04-05
+date: 2026-04-04
+lastmod: 2026-04-04
 draft: false
 tags: ["SOC", "Operaciones", "SIEM"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "soc-guide"
 ---
 
@@ -16,17 +16,25 @@ Un Centro de Operaciones de Seguridad (SOC) es el nucleo de la capacidad de dete
 
 <!--more-->
 
+{{< key-takeaways >}}
+- Tres modelos: SOC interno (700K-1.5M EUR/ano), externalizado (96K-300K EUR/ano) o hibrido (250K-500K EUR/ano)
+- Equipo minimo 24/7: 5-6 analistas N1, 2-3 N2, 1-2 N3, mas SOC Manager e ingeniero de deteccion
+- Stack tecnologico esencial: SIEM + EDR + SOAR + plataforma de threat intelligence
+- Metricas clave: MTTD, MTTR, tasa de falsos positivos y cobertura MITRE ATT&CK
+- Error mas comun: empezar por la tecnologia en lugar de por los procesos y casos de uso
+{{< /key-takeaways >}}
+
 ## Que es un SOC y por que lo necesita tu empresa?
 
 Un SOC (Security Operations Center) es una funcion centralizada que emplea personas, procesos y tecnologia para monitorizar y mejorar continuamente la postura de seguridad de una organizacion, al tiempo que previene, detecta, analiza y responde a incidentes de ciberseguridad.
 
-Segun el informe de INCIBE sobre el estado de la ciberseguridad empresarial en Espana (2025), el tiempo medio de deteccion de un incidente de seguridad en empresas sin SOC es de 197 dias, frente a los 38 dias de media en empresas con un SOC operativo. Esta diferencia es critica: cada dia que una amenaza permanece sin detectar en tus sistemas incrementa exponencialmente el dano potencial.
+Segun el informe de [INCIBE](https://www.incibe.es/) sobre el estado de la ciberseguridad empresarial en Espana (2025), el tiempo medio de deteccion de un incidente de seguridad en empresas sin SOC es de 197 dias, frente a los 38 dias de media en empresas con un SOC operativo. Esta diferencia es critica: cada dia que una amenaza permanece sin detectar en tus sistemas incrementa exponencialmente el dano potencial.
 
 Las razones principales para contar con un SOC son:
 
 - **Deteccion temprana de amenazas**: la monitorizacion continua permite identificar actividades sospechosas antes de que se conviertan en incidentes graves.
 - **Respuesta rapida a incidentes**: un equipo dedicado puede contener una amenaza en minutos u horas, en lugar de dias o semanas.
-- **Cumplimiento normativo**: regulaciones como NIS2, DORA, el ENS y la ISO 27001 exigen capacidades de monitorizacion y respuesta a incidentes que, en la practica, requieren un SOC.
+- **Cumplimiento normativo**: regulaciones como [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555), [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554), el [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311) y la [ISO 27001](https://www.iso.org/standard/27001) exigen capacidades de monitorizacion y respuesta a incidentes que, en la practica, requieren un SOC.
 - **Visibilidad global**: el SOC proporciona una vision unificada del estado de seguridad de toda la organizacion.
 - **Reduccion de costes por incidente**: segun IBM, el coste medio de una brecha de datos en Europa fue de 4,3 millones de euros en 2025. Las organizaciones con SOC redujeron ese coste en un 40 por ciento de media.
 
@@ -150,10 +158,10 @@ La tecnologia es uno de los tres pilares del SOC, junto con las personas y los p
 El SIEM es la herramienta central del SOC. Recopila logs de toda la infraestructura, los normaliza, los correlaciona y genera alertas. Para una guia detallada sobre [que es un SIEM y como funciona](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), consulta nuestro articulo dedicado.
 
 Opciones principales en el mercado:
-- **Splunk Enterprise Security**: lider de mercado, potente pero costoso.
-- **Microsoft Sentinel**: solucion cloud nativa, ideal para entornos Microsoft/Azure.
+- **[Splunk](https://www.splunk.com/) Enterprise Security**: lider de mercado, potente pero costoso.
+- **[Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel)**: solucion cloud nativa, ideal para entornos Microsoft/Azure.
 - **IBM QRadar**: robusto, con buenas capacidades de correlacion out-of-the-box.
-- **Elastic Security**: basado en Elasticsearch, con una opcion open source.
+- **[Elastic Security](https://www.elastic.co/security)**: basado en Elasticsearch, con una opcion open source.
 - **Google Chronicle (SecOps)**: enfoque cloud con capacidades de analisis a escala.
 
 ### EDR (Endpoint Detection and Response)
@@ -198,7 +206,7 @@ Define un flujo claro desde la generacion de la alerta hasta su cierre:
 
 ### Respuesta a incidentes
 
-Basado en marcos reconocidos como el NIST SP 800-61 o las guias del CCN-CERT:
+Basado en marcos reconocidos como el [NIST SP 800-61](https://csrc.nist.gov/pubs/sp/800/61/r3/final) o las guias del [CCN-CERT](https://www.ccn-cert.cni.es/):
 1. Preparacion.
 2. Deteccion y analisis.
 3. Contencion.
@@ -218,7 +226,7 @@ Proceso proactivo de busqueda de amenazas:
 ### Gestion de casos de uso
 
 Los casos de uso son las reglas de deteccion que alimentan el SIEM:
-1. Identificacion de amenazas relevantes (basada en MITRE ATT&CK).
+1. Identificacion de amenazas relevantes (basada en [MITRE ATT&CK](https://attack.mitre.org/)).
 2. Diseno de la logica de deteccion.
 3. Implementacion en el SIEM.
 4. Prueba y validacion.
@@ -300,11 +308,11 @@ Para un SOC interno con capacidad operativa basica (cobertura 8x5, casos de uso 
 
 ### Puedo montar un SOC solo con herramientas open source?
 
-Tecnicamente si. Elastic Security como SIEM, Wazuh como EDR, Shuffle como SOAR, MISP como plataforma de inteligencia y TheHive como sistema de ticketing forman un stack funcional. El coste de licencias sera minimo, pero necesitaras personal con experiencia para desplegar, configurar, mantener y operar estas herramientas, lo que puede suponer un coste mayor en personal cualificado.
+Tecnicamente si. Elastic Security como SIEM, [Wazuh](https://wazuh.com/) como EDR, Shuffle como SOAR, MISP como plataforma de inteligencia y TheHive como sistema de ticketing forman un stack funcional. El coste de licencias sera minimo, pero necesitaras personal con experiencia para desplegar, configurar, mantener y operar estas herramientas, lo que puede suponer un coste mayor en personal cualificado.
 
 ### Que certificaciones deberia tener el equipo del SOC?
 
-Las certificaciones mas valoradas en el mercado espanol para equipos SOC son: CompTIA Security+ y CySA+ para N1, GCIH y ECIH para N2, y GCFA, GREM u OSCP para N3. Para el SOC Manager, CISM o CISSP. Las certificaciones especificas de fabricantes (Splunk Certified Power User, Microsoft SC-200) tambien son muy utiles para los roles de ingenieria.
+Las certificaciones mas valoradas en el mercado espanol para equipos SOC son: [CompTIA Security+](https://www.comptia.org/certifications/security) y CySA+ para N1, GCIH y ECIH para N2, y GCFA, GREM u OSCP para N3. Para el SOC Manager, CISM o [CISSP](https://www.isc2.org/certifications/cissp). Las certificaciones especificas de fabricantes (Splunk Certified Power User, Microsoft SC-200) tambien son muy utiles para los roles de ingenieria.
 
 ### Como se mide el ROI de un SOC?
 

@@ -8,7 +8,7 @@ lastmod: 2026-09-26
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "San Sebastian"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento San Sebastian"
 funnel: "mofu"
 geo_target: "San Sebastian"

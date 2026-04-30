@@ -8,7 +8,7 @@ lastmod: 2026-08-12
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Cataluna"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Cataluna"
 funnel: "mofu"
 geo_target: "Cataluna"

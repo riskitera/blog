@@ -8,7 +8,7 @@ lastmod: 2026-10-02
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Lleida"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Lleida"
 funnel: "mofu"
 geo_target: "Lleida"

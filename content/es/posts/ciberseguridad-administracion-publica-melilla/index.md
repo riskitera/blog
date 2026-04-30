@@ -8,7 +8,7 @@ lastmod: 2026-09-01
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Melilla"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Melilla"
 funnel: "mofu"
 geo_target: "Melilla"

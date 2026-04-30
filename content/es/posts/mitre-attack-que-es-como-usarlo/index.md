@@ -3,18 +3,26 @@ title: "MITRE ATT&CK: que es y como aplicarlo en tu organizacion"
 image: "cover.png"
 description: "Guia completa sobre el framework MITRE ATT&CK: matrices Enterprise, Mobile e ICS, tacticas y tecnicas, integracion con el SOC, threat hunting y herramientas como ATT&CK Navigator."
 slug: "mitre-attack-que-es-como-usarlo"
-date: 2026-04-06
-lastmod: 2026-04-06
+date: 2026-04-14
+lastmod: 2026-04-14
 draft: false
 tags: ["MITRE", "CTI", "Framework"]
 categories: ["CTI"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "mitre-attack-guide"
 ---
 
-MITRE ATT&CK se ha consolidado como el marco de referencia global para comprender, clasificar y comunicar las tacticas y tecnicas empleadas por los adversarios en ciberataques reales. Desarrollado y mantenido por MITRE Corporation, este framework de conocimiento abierto documenta el comportamiento de mas de 140 grupos de amenazas y cataloga cientos de tecnicas observadas en incidentes reales. Para cualquier organizacion que aspire a una postura de seguridad madura, conocer y aplicar MITRE ATT&CK no es opcional: es una necesidad operativa.
+[MITRE ATT&CK](https://attack.mitre.org/) se ha consolidado como el marco de referencia global para comprender, clasificar y comunicar las tacticas y tecnicas empleadas por los adversarios en ciberataques reales. Desarrollado y mantenido por MITRE Corporation, este framework de conocimiento abierto documenta el comportamiento de mas de 140 grupos de amenazas y cataloga cientos de tecnicas observadas en incidentes reales. Para cualquier organizacion que aspire a una postura de seguridad madura, conocer y aplicar MITRE ATT&CK no es opcional: es una necesidad operativa.
 
 <!--more-->
+
+{{< key-takeaways >}}
+- MITRE ATT&CK cataloga tacticas, tecnicas y procedimientos (TTPs) de adversarios reales
+- Tres matrices principales: Enterprise (la mas usada), Mobile e ICS
+- ATT&CK Navigator permite visualizar la cobertura de deteccion de tu organizacion
+- Fundamental para threat hunting, evaluacion de controles y comunicacion con la direccion
+- Integracion directa con SIEM, EDR y plataformas de threat intelligence
+{{< /key-takeaways >}}
 
 ## Que es MITRE ATT&CK y para que sirve?
 
@@ -24,7 +32,7 @@ El proyecto comenzo en 2013 como una iniciativa interna de MITRE para documentar
 
 La version actual de ATT&CK (v15, publicada en 2024) incluye 14 tacticas, mas de 200 tecnicas y mas de 400 subtecnicas en la matriz Enterprise. Cada tecnica esta documentada con descripciones detalladas, ejemplos de procedimientos utilizados por grupos reales, fuentes de datos para su deteccion y mitigaciones recomendadas.
 
-El framework es gratuito, abierto y mantenido por un equipo dedicado en MITRE con aportaciones de la comunidad global de ciberseguridad. Organizaciones como ENISA, el CCN-CERT y CISA lo referencian en sus guias y publicaciones, lo que refuerza su posicion como estandar de facto en la industria.
+El framework es gratuito, abierto y mantenido por un equipo dedicado en MITRE con aportaciones de la comunidad global de ciberseguridad. Organizaciones como [ENISA](https://www.enisa.europa.eu/), el [CCN-CERT](https://www.ccn-cert.cni.es/) y CISA lo referencian en sus guias y publicaciones, lo que refuerza su posicion como estandar de facto en la industria.
 
 ## Cuales son las matrices de MITRE ATT&CK?
 
@@ -32,7 +40,7 @@ MITRE ATT&CK se organiza en tres matrices principales, cada una adaptada a un en
 
 ### ATT&CK for Enterprise
 
-Es la matriz mas extensa y utilizada. Cubre las plataformas Windows, macOS, Linux, entornos cloud (AWS, Azure, GCP, SaaS), redes y contenedores. Organiza el comportamiento adversario en 14 tacticas que representan los objetivos del atacante en cada fase de la intrusion:
+[Es la matriz mas extensa y utilizada](https://attack.mitre.org/matrices/enterprise/). Cubre las plataformas Windows, macOS, Linux, entornos cloud (AWS, Azure, GCP, SaaS), redes y contenedores. Organiza el comportamiento adversario en 14 tacticas que representan los objetivos del atacante en cada fase de la intrusion:
 
 1. **Reconnaissance** (Reconocimiento): el adversario recopila informacion sobre la victima antes del ataque.
 2. **Resource Development** (Desarrollo de recursos): el adversario prepara infraestructura y herramientas.
@@ -51,11 +59,11 @@ Es la matriz mas extensa y utilizada. Cubre las plataformas Windows, macOS, Linu
 
 ### ATT&CK for Mobile
 
-Esta matriz cubre dispositivos Android e iOS, documentando tecnicas especificas como la explotacion de permisos excesivos en aplicaciones, la interceptacion de comunicaciones o el acceso a datos del dispositivo. Con la creciente adopcion del trabajo movil, esta matriz gana relevancia cada ano.
+[Esta matriz](https://attack.mitre.org/matrices/mobile/) cubre dispositivos Android e iOS, documentando tecnicas especificas como la explotacion de permisos excesivos en aplicaciones, la interceptacion de comunicaciones o el acceso a datos del dispositivo. Con la creciente adopcion del trabajo movil, esta matriz gana relevancia cada ano.
 
 ### ATT&CK for ICS
 
-Orientada a sistemas de control industrial (ICS/SCADA), esta matriz documenta tecnicas utilizadas contra infraestructuras criticas como redes electricas, plantas de tratamiento de agua o instalaciones de fabricacion. Incluye tacticas especificas como la inhibicion de funciones de respuesta o la manipulacion de procesos fisicos. ENISA ha destacado en sus informes anuales la importancia de proteger estos entornos, y ATT&CK for ICS proporciona el vocabulario comun para hacerlo.
+Orientada a [sistemas de control industrial (ICS/SCADA)](https://attack.mitre.org/matrices/ics/), esta matriz documenta tecnicas utilizadas contra infraestructuras criticas como redes electricas, plantas de tratamiento de agua o instalaciones de fabricacion. Incluye tacticas especificas como la inhibicion de funciones de respuesta o la manipulacion de procesos fisicos. ENISA ha destacado en sus informes anuales la importancia de proteger estos entornos, y ATT&CK for ICS proporciona el vocabulario comun para hacerlo.
 
 ## Como se organizan las tacticas, tecnicas y subtecnicas?
 
@@ -123,7 +131,7 @@ El ecosistema de herramientas alrededor de ATT&CK es amplio y en constante creci
 
 ### ATT&CK Navigator
 
-Es la herramienta oficial de MITRE para visualizar la cobertura sobre la matriz ATT&CK. Permite crear "capas" (layers) que representan las detecciones existentes, las tecnicas utilizadas por un grupo de amenaza especifico o los resultados de un ejercicio de red team. La superposicion de capas revela visualmente las brechas de cobertura. Es una herramienta web gratuita, disponible tambien como aplicacion local.
+Es la [herramienta oficial de MITRE](https://mitre-attack.github.io/attack-navigator/) para visualizar la cobertura sobre la matriz ATT&CK. Permite crear "capas" (layers) que representan las detecciones existentes, las tecnicas utilizadas por un grupo de amenaza especifico o los resultados de un ejercicio de red team. La superposicion de capas revela visualmente las brechas de cobertura. Es una herramienta web gratuita, disponible tambien como aplicacion local.
 
 ### MITRE ATT&CK Workbench
 
@@ -135,7 +143,7 @@ Desarrollado por Red Canary, es una biblioteca de pruebas atomicas que implement
 
 ### Sigma y deteccion basada en ATT&CK
 
-Las reglas Sigma, un formato abierto para escribir detecciones genericas de SIEM, incluyen etiquetas ATT&CK que vinculan cada regla con las tecnicas que detecta. Esto permite construir una cobertura de deteccion mapeada directamente contra el framework.
+Las [reglas Sigma](https://github.com/SigmaHQ/sigma), un formato abierto para escribir detecciones genericas de SIEM, incluyen etiquetas ATT&CK que vinculan cada regla con las tecnicas que detecta. Esto permite construir una cobertura de deteccion mapeada directamente contra el framework.
 
 ### Caldera
 

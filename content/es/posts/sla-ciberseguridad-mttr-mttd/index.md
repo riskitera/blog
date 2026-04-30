@@ -8,7 +8,7 @@ lastmod: 2026-06-20
 draft: false
 tags: ["SOC", "GRC", "Operaciones"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "SLA ciberseguridad"
 funnel: "mofu"
 ---

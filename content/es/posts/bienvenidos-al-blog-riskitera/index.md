@@ -8,7 +8,7 @@ draft: false
 image: "cover.png"
 tags: ["GRC", "SOC", "Ciberseguridad"]
 categories: ["General"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "welcome-blog"
 ---
 

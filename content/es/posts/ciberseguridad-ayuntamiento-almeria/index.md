@@ -8,7 +8,7 @@ lastmod: 2026-09-25
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Almeria"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Almeria"
 funnel: "mofu"
 geo_target: "Almeria"

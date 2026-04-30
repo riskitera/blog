@@ -8,7 +8,7 @@ lastmod: 2026-09-19
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "A Coruna"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento A Coruna"
 funnel: "mofu"
 geo_target: "A Coruna"

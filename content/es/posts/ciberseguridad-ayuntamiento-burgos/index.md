@@ -8,7 +8,7 @@ lastmod: 2026-09-27
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Burgos"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Burgos"
 funnel: "mofu"
 geo_target: "Burgos"

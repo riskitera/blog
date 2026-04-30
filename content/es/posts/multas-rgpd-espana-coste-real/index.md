@@ -8,7 +8,7 @@ lastmod: 2026-06-27
 draft: false
 tags: ["RGPD", "Compliance", "Seguridad"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "multas RGPD Espana"
 funnel: "tofu"
 ---

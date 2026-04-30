@@ -94,12 +94,25 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "{{ .Site.Title }}",
-  "url": "{{ .Site.BaseURL }}",
+  "name": "Riskitera",
+  "alternateName": "Riskitera S.L.U.",
+  "url": "https://riskitera.com",
   {{- if .Site.Params.ogImage }}
   "logo": "{{ .Site.Params.ogImage | absURL }}",
   {{- end }}
-  "description": "{{ with .Site.Params.description }}{{ . }}{{ end }}"
+  "description": "{{ with .Site.Params.description }}{{ . }}{{ end }}",
+  "sameAs": [
+    "https://www.linkedin.com/company/riskitera",
+    "https://github.com/riskitera"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "url": "https://calendly.com/david-riskitera/demo-riskitera"
+  },
+  "foundingDate": "2026",
+  "areaServed": "ES",
+  "knowsAbout": ["GRC", "SOC", "Cybersecurity", "Compliance", "ENS", "NIS2", "ISO 27001", "DORA"]
 }
 </script>
 {{- else if and .IsPage (eq .Section "posts") }}
@@ -116,18 +129,26 @@
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "author": {
     "@type": "Person",
-    "name": "{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author }}{{ end }}"
+    "name": "{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author }}{{ end }}",
+    "url": "{{ .Site.Params.authorLinkedIn }}",
+    "jobTitle": "{{ .Site.Params.authorTitle }}",
+    "sameAs": ["{{ .Site.Params.authorLinkedIn }}"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Riskitera"
+    }
   },
   "publisher": {
     "@type": "Organization",
-    "name": "{{ .Site.Title }}",
+    "name": "Riskitera",
+    "url": "https://riskitera.com",
     {{- if .Site.Params.ogImage }}
     "logo": {
       "@type": "ImageObject",
       "url": "{{ .Site.Params.ogImage | absURL }}"
     },
     {{- end }}
-    "url": "{{ .Site.BaseURL }}"
+    "sameAs": ["https://www.linkedin.com/company/riskitera"]
   },
   "mainEntityOfPage": {
     "@type": "WebPage",

@@ -8,7 +8,7 @@ lastmod: 2026-06-16
 draft: false
 tags: ["SOC", "Operaciones", "Detection Engineering"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "reducir falsos positivos SOC"
 funnel: "mofu"
 ---

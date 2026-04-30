@@ -8,7 +8,7 @@ lastmod: 2026-08-16
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Extremadura"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Extremadura"
 funnel: "mofu"
 geo_target: "Extremadura"

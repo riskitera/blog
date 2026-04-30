@@ -8,7 +8,7 @@ lastmod: 2026-09-12
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Bilbao"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Bilbao"
 funnel: "mofu"
 geo_target: "Bilbao"

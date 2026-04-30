@@ -8,7 +8,7 @@ lastmod: 2026-10-04
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Ourense"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Ourense"
 funnel: "mofu"
 geo_target: "Ourense"

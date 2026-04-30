@@ -8,7 +8,7 @@ lastmod: 2026-10-12
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Ciudad Real"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Ciudad Real"
 funnel: "mofu"
 geo_target: "Ciudad Real"

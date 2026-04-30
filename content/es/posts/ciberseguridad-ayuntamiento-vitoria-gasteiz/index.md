@@ -8,7 +8,7 @@ lastmod: 2026-09-18
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Vitoria-Gasteiz"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Vitoria-Gasteiz"
 funnel: "mofu"
 geo_target: "Vitoria-Gasteiz"

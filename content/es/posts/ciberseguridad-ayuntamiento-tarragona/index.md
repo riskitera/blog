@@ -8,7 +8,7 @@ lastmod: 2026-10-01
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Tarragona"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Tarragona"
 funnel: "mofu"
 geo_target: "Tarragona"

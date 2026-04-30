@@ -8,7 +8,7 @@ lastmod: 2026-09-10
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Palma de Mallorca"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Palma de Mallorca"
 funnel: "mofu"
 geo_target: "Palma de Mallorca"

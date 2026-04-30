@@ -8,7 +8,7 @@ lastmod: 2026-09-04
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Barcelona"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Barcelona"
 funnel: "mofu"
 geo_target: "Barcelona"

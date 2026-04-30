@@ -8,7 +8,7 @@ lastmod: 2026-05-09
 draft: false
 tags: ["NIS2", "Compliance", "Europa"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "requisitos NIS2 espana"
 funnel: "mofu"
 ---

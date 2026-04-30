@@ -8,7 +8,7 @@ lastmod: 2026-09-17
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Gijon"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Gijon"
 funnel: "mofu"
 geo_target: "Gijon"

@@ -8,7 +8,7 @@ lastmod: 2026-06-18
 draft: false
 tags: ["SOC", "SIEM", "SOAR", "Herramientas"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "SOAR vs SIEM"
 funnel: "mofu"
 ---

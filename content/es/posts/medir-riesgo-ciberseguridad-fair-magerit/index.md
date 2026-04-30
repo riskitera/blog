@@ -8,7 +8,7 @@ lastmod: 2026-06-11
 draft: false
 tags: ["GRC", "Riesgos", "Metodologia"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "medir riesgo ciberseguridad"
 funnel: "mofu"
 ---

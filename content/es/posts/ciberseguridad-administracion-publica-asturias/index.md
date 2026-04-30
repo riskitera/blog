@@ -8,7 +8,7 @@ lastmod: 2026-07-31
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Asturias"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Asturias"
 funnel: "mofu"
 geo_target: "Asturias"

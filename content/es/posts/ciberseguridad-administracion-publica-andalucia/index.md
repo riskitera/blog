@@ -8,7 +8,7 @@ lastmod: 2026-07-27
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Andalucia"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Andalucia"
 funnel: "mofu"
 geo_target: "Andalucia"

@@ -8,7 +8,7 @@ lastmod: 2026-08-06
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Cantabria"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Cantabria"
 funnel: "mofu"
 geo_target: "Cantabria"

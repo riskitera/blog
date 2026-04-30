@@ -8,7 +8,7 @@ lastmod: 2026-06-06
 draft: false
 tags: ["MITRE", "SOC", "Detection Engineering"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "MITRE ATT&CK SOC"
 funnel: "mofu"
 ---

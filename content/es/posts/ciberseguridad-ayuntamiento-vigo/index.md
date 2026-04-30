@@ -8,7 +8,7 @@ lastmod: 2026-09-16
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Vigo"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Vigo"
 funnel: "mofu"
 geo_target: "Vigo"

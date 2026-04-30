@@ -8,7 +8,7 @@ draft: false
 image: "featured.svg"
 tags: ["GRC", "ISO 27001", "Compliance"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "iso27001-guide"
 ---
 

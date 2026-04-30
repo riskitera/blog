@@ -8,7 +8,7 @@ lastmod: 2026-10-03
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Jaen"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Jaen"
 funnel: "mofu"
 geo_target: "Jaen"

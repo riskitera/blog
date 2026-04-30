@@ -8,7 +8,7 @@ lastmod: 2026-09-07
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Zaragoza"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Zaragoza"
 funnel: "mofu"
 geo_target: "Zaragoza"

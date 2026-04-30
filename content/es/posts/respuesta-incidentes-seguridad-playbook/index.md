@@ -8,7 +8,7 @@ lastmod: 2026-07-02
 draft: false
 tags: ["SOC", "Operaciones", "Seguridad"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "respuesta incidentes seguridad"
 funnel: "mofu"
 ---

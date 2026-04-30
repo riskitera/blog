@@ -8,7 +8,7 @@ lastmod: 2026-09-06
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Sevilla"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Sevilla"
 funnel: "mofu"
 geo_target: "Sevilla"

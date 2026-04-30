@@ -8,7 +8,7 @@ lastmod: 2026-08-28
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "La Rioja"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica La Rioja"
 funnel: "mofu"
 geo_target: "La Rioja"

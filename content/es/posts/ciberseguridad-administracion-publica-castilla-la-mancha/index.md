@@ -8,7 +8,7 @@ lastmod: 2026-08-08
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Castilla-La Mancha"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Castilla-La Mancha"
 funnel: "mofu"
 geo_target: "Castilla-La Mancha"

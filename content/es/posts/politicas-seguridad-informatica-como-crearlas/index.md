@@ -3,18 +3,26 @@ title: "Politicas de seguridad informatica: como crearlas desde cero"
 image: "cover.png"
 description: "Guia completa para crear politicas de seguridad informatica: tipos de politicas, proceso de redaccion y aprobacion, comunicacion a empleados, ciclo de revision y plantillas alineadas con ENS e ISO 27001."
 slug: "politicas-seguridad-informatica-como-crearlas"
-date: 2026-04-06
-lastmod: 2026-04-06
+date: 2026-03-20
+lastmod: 2026-03-20
 draft: false
 tags: ["GRC", "Politicas", "Compliance"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "security-policies-guide"
 ---
 
-Las politicas de seguridad informatica son los documentos fundamentales que establecen las reglas, principios y directrices que rigen la proteccion de la informacion en una organizacion. Sin politicas claras, aprobadas y comunicadas, la seguridad depende de decisiones individuales inconsistentes, lo que genera brechas, incumplimientos normativos y una postura de seguridad fragil. Segun datos del CCN-CERT, un porcentaje significativo de los incidentes de seguridad en organismos publicos espanoles tiene su origen en la ausencia o el desconocimiento de politicas basicas. Esta guia explica que son las politicas de seguridad, que tipos necesita tu organizacion, como redactarlas, aprobarlas, comunicarlas y mantenerlas actualizadas.
+Las politicas de seguridad informatica son los documentos fundamentales que establecen las reglas, principios y directrices que rigen la proteccion de la informacion en una organizacion. Sin politicas claras, aprobadas y comunicadas, la seguridad depende de decisiones individuales inconsistentes, lo que genera brechas, incumplimientos normativos y una postura de seguridad fragil. Segun datos del [CCN-CERT](https://www.ccn-cert.cni.es/), un porcentaje significativo de los incidentes de seguridad en organismos publicos espanoles tiene su origen en la ausencia o el desconocimiento de politicas basicas. Esta guia explica que son las politicas de seguridad, que tipos necesita tu organizacion, como redactarlas, aprobarlas, comunicarlas y mantenerlas actualizadas.
 
 <!--more-->
+
+{{< key-takeaways >}}
+- Las politicas de seguridad son requisito de ISO 27001 (clausula 5.2) y del ENS (marco organizativo)
+- Tipos principales: politica general, de control de acceso, de clasificacion de informacion, de uso aceptable y de gestion de incidentes
+- El ciclo de vida incluye redaccion, aprobacion por la direccion, comunicacion y revision periodica
+- Deben estar alineadas con el marco normativo aplicable (ENS, ISO 27001, RGPD)
+- La revision periodica (al menos anual) es tan importante como la redaccion inicial
+{{< /key-takeaways >}}
 
 ## Que son las politicas de seguridad informatica?
 
@@ -24,7 +32,7 @@ Las politicas se situan en la capa mas alta del marco documental de seguridad. P
 
 Esta jerarquia documental es fundamental para la gestion eficaz de la seguridad. Las politicas cambian con poca frecuencia porque expresan principios generales. Los procedimientos y las instrucciones tecnicas cambian con mas frecuencia para adaptarse a la evolucion tecnologica, sin necesidad de modificar la politica que los sustenta.
 
-ISO 27001 exige una politica de seguridad de la informacion de alto nivel como requisito del SGSI, ademas de politicas especificas para areas como el control de accesos, la clasificacion de la informacion o el uso aceptable de los recursos. El [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) requiere una politica de seguridad aprobada por el organo competente que articule la gestion continuada de la seguridad.
+[ISO 27001](https://www.iso.org/standard/27001) exige una politica de seguridad de la informacion de alto nivel como requisito del SGSI, ademas de politicas especificas para areas como el control de accesos, la clasificacion de la informacion o el uso aceptable de los recursos. El [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) requiere una politica de seguridad aprobada por el organo competente que articule la gestion continuada de la seguridad.
 
 ## Que tipos de politicas de seguridad son esenciales?
 
@@ -32,7 +40,7 @@ Cada organizacion necesita un conjunto de politicas adaptado a su tamano, sector
 
 ### Politica de seguridad de la informacion
 
-Es la politica de nivel superior que establece el compromiso de la direccion con la seguridad de la informacion, los objetivos generales de seguridad, el alcance del programa de seguridad, los roles y responsabilidades de alto nivel y los principios fundamentales que guian todas las demas politicas. Es un requisito explicito de ISO 27001 (clausula 5.2) y del ENS.
+Es la politica de nivel superior que establece el compromiso de la direccion con la seguridad de la informacion, los objetivos generales de seguridad, el alcance del programa de seguridad, los roles y responsabilidades de alto nivel y los principios fundamentales que guian todas las demas politicas. Es un requisito explicito de ISO 27001 (clausula 5.2) y del [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311).
 
 Esta politica debe ser breve (dos a cuatro paginas), aprobada por la alta direccion y comunicada a todo el personal. No debe contener detalles tecnicos sino principios y compromisos de nivel estrategico.
 
@@ -58,9 +66,9 @@ La politica debe cubrir la gestion del ciclo de vida de las cuentas (alta, modif
 
 ### Politica de respuesta a incidentes
 
-Define el marco para la gestion de incidentes de seguridad: como se detectan, clasifican, comunican, investigan, resuelven y documentan. Establece los roles del equipo de respuesta, los canales de comunicacion, los criterios de escalado, los tiempos de respuesta objetivo y las obligaciones de notificacion a reguladores (RGPD exige la notificacion de brechas de datos personales a la autoridad de control en un plazo maximo de 72 horas).
+Define el marco para la gestion de incidentes de seguridad: como se detectan, clasifican, comunican, investigan, resuelven y documentan. Establece los roles del equipo de respuesta, los canales de comunicacion, los criterios de escalado, los tiempos de respuesta objetivo y las obligaciones de notificacion a reguladores ([RGPD](https://eur-lex.europa.eu/eli/reg/2016/679) exige la notificacion de brechas de datos personales a la autoridad de control en un plazo maximo de 72 horas).
 
-Esta politica es critica no solo para la operativa diaria sino para el cumplimiento normativo. NIS2, DORA y el ENS tienen requisitos especificos sobre la gestion y notificacion de incidentes que la politica debe reflejar.
+Esta politica es critica no solo para la operativa diaria sino para el cumplimiento normativo. [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555), [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) y el ENS tienen requisitos especificos sobre la gestion y notificacion de incidentes que la politica debe reflejar.
 
 ### Politica de BYOD (Bring Your Own Device)
 
@@ -198,7 +206,7 @@ Para organizaciones que crean politicas por primera vez, las plantillas proporci
 
 ### Fuentes de plantillas
 
-**INCIBE** publica plantillas y guias para la elaboracion de politicas de seguridad orientadas a pymes, disponibles gratuitamente en su portal web.
+**[INCIBE](https://www.incibe.es/)** publica plantillas y guias para la elaboracion de politicas de seguridad orientadas a pymes, disponibles gratuitamente en su portal web.
 
 **CCN-CERT** proporciona modelos documentales para el cumplimiento del ENS, incluyendo la politica de seguridad y documentos asociados, a traves de las guias CCN-STIC de la serie 800.
 

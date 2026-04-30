@@ -8,7 +8,7 @@ lastmod: 2026-10-19
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Avila"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Avila"
 funnel: "mofu"
 geo_target: "Avila"

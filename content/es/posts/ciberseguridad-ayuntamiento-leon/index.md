@@ -8,7 +8,7 @@ lastmod: 2026-10-08
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Leon"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Leon"
 funnel: "mofu"
 geo_target: "Leon"

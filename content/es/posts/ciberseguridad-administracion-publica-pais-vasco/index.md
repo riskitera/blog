@@ -8,7 +8,7 @@ lastmod: 2026-08-26
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Pais Vasco"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Pais Vasco"
 funnel: "mofu"
 geo_target: "Pais Vasco"

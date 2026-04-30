@@ -8,7 +8,7 @@ lastmod: 2026-10-20
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Soria"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Soria"
 funnel: "mofu"
 geo_target: "Soria"

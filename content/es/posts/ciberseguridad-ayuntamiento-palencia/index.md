@@ -8,7 +8,7 @@ lastmod: 2026-10-16
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Palencia"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Palencia"
 funnel: "mofu"
 geo_target: "Palencia"

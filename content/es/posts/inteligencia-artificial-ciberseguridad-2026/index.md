@@ -8,7 +8,7 @@ lastmod: 2026-05-12
 draft: false
 tags: ["IA", "Ciberseguridad", "Tendencias"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "inteligencia artificial ciberseguridad"
 funnel: "tofu"
 ---

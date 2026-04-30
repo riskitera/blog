@@ -8,7 +8,7 @@ lastmod: 2026-06-25
 draft: false
 tags: ["Ciberseguridad", "Operaciones", "SOC"]
 categories: ["SOC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "incidentes ciberseguridad Espana"
 funnel: "tofu"
 ---

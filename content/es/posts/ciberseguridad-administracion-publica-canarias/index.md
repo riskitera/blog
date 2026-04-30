@@ -8,7 +8,7 @@ lastmod: 2026-08-04
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Canarias"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad administracion publica Canarias"
 funnel: "mofu"
 geo_target: "Canarias"

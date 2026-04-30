@@ -3,18 +3,26 @@ title: "Threat Hunting: como cazar amenazas antes de que ataquen"
 image: "cover.png"
 description: "Guia practica de threat hunting: metodologias PEAK y TaHiTI, herramientas SIEM y EDR, reglas Sigma, integracion con MITRE ATT&CK y como construir un programa de caza de amenazas eficaz."
 slug: "threat-hunting-guia-practica"
-date: 2026-04-06
-lastmod: 2026-04-06
+date: 2026-04-24
+lastmod: 2026-04-24
 draft: false
 tags: ["Threat Hunting", "CTI", "SOC"]
 categories: ["CTI"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "threat-hunting-guide"
 ---
 
 El threat hunting, o caza proactiva de amenazas, es la disciplina de buscar activamente indicios de actividad maliciosa en los sistemas y redes de una organizacion sin esperar a que una alerta automatizada lo senale. En un entorno donde el tiempo medio de permanencia de un atacante en una red comprometida supera los 200 dias segun diversos estudios del sector, la capacidad de detectar amenazas antes de que causen dano real se ha convertido en un diferenciador critico. Esta guia explica que es el threat hunting, que metodologias existen, que herramientas se necesitan y como construir un programa eficaz desde cero.
 
 <!--more-->
+
+{{< key-takeaways >}}
+- Threat hunting es la busqueda proactiva de amenazas que han eludido las defensas automatizadas
+- Metodologias principales: PEAK (Splunk) y TaHiTI (Trusted Automated Hunting Intelligence)
+- Requiere hipotesis basadas en inteligencia de amenazas y conocimiento del entorno
+- Herramientas clave: SIEM para consultas, EDR para telemetria de endpoints y reglas Sigma para deteccion portable
+- Los hallazgos del hunting deben convertirse en nuevas reglas de deteccion automatizada
+{{< /key-takeaways >}}
 
 ## Que es el threat hunting y por que es necesario?
 
@@ -66,7 +74,7 @@ Independientemente del resultado, cada campana de hunting debe documentarse: hip
 
 Existen varios marcos metodologicos que proporcionan estructura y repetibilidad al proceso de hunting.
 
-### PEAK (Prepare, Execute, and Act with Knowledge)
+### [PEAK](https://www.splunk.com/en_us/blog/security/peak-threat-hunting-framework.html) (Prepare, Execute, and Act with Knowledge)
 
 Desarrollado por SANS, el framework PEAK estructura el hunting en tres fases. La fase de preparacion incluye la seleccion de hipotesis, la identificacion de fuentes de datos y la verificacion de que los datos necesarios estan disponibles y son accesibles. La fase de ejecucion comprende la busqueda activa, el analisis de datos y la documentacion de hallazgos. La fase de actuacion transforma los resultados en acciones: nuevas detecciones, mejoras en la visibilidad de datos, recomendaciones de hardenening o informes de incidentes.
 
@@ -98,7 +106,7 @@ Las soluciones EDR proporcionan visibilidad granular sobre la actividad de los e
 
 ### Reglas Sigma
 
-Sigma es un formato abierto para describir detecciones de forma generica, independiente del SIEM. Las reglas Sigma se escriben en YAML y pueden convertirse automaticamente en consultas para Splunk, Elasticsearch, Microsoft Sentinel y otras plataformas. El repositorio oficial de reglas Sigma en GitHub contiene mas de 3.000 reglas, muchas de ellas mapeadas contra tecnicas de MITRE ATT&CK.
+[Sigma](https://github.com/SigmaHQ/sigma) es un formato abierto para describir detecciones de forma generica, independiente del SIEM. Las reglas Sigma se escriben en YAML y pueden convertirse automaticamente en consultas para Splunk, Elasticsearch, Microsoft Sentinel y otras plataformas. El repositorio oficial de reglas Sigma en GitHub contiene mas de 3.000 reglas, muchas de ellas mapeadas contra tecnicas de MITRE ATT&CK.
 
 Para hunting, las reglas Sigma proporcionan un punto de partida valioso: el hunter puede seleccionar reglas relevantes para su hipotesis, convertirlas al formato de su SIEM y ejecutarlas como consultas exploratorias.
 
@@ -208,4 +216,4 @@ La frecuencia depende de los recursos disponibles y la madurez del programa. Un 
 
 ### Como elijo las hipotesis de hunting mas relevantes
 
-La priorizacion de hipotesis debe basarse en tres factores: la inteligencia de amenazas (que grupos atacan tu sector y que tecnicas utilizan), la evaluacion de riesgos (que activos son mas criticos y cuales tienen menor cobertura de deteccion) y los puntos ciegos conocidos (tecnicas de MITRE ATT&CK que la organizacion no puede detectar actualmente). Las guias del CCN-CERT sobre amenazas relevantes para el sector publico espanol y los informes de ENISA Threat Landscape son recursos valiosos para contextualizar las hipotesis en el ambito europeo.
+La priorizacion de hipotesis debe basarse en tres factores: la inteligencia de amenazas (que grupos atacan tu sector y que tecnicas utilizan), la evaluacion de riesgos (que activos son mas criticos y cuales tienen menor cobertura de deteccion) y los puntos ciegos conocidos (tecnicas de MITRE ATT&CK que la organizacion no puede detectar actualmente). Las guias del [CCN-CERT](https://www.ccn-cert.cni.es/) sobre amenazas relevantes para el sector publico espanol y los informes de [ENISA](https://www.enisa.europa.eu/) Threat Landscape son recursos valiosos para contextualizar las hipotesis en el ambito europeo.

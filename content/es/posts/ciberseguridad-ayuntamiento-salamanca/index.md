@@ -8,7 +8,7 @@ lastmod: 2026-09-28
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Salamanca"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Salamanca"
 funnel: "mofu"
 geo_target: "Salamanca"

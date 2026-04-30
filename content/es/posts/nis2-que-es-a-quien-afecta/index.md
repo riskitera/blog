@@ -3,24 +3,32 @@ title: "NIS2: que es, a quien afecta y plazos de cumplimiento en Espana"
 image: "cover.png"
 description: "Guia completa sobre la Directiva NIS2: que empresas deben cumplirla, requisitos principales, plazos de transposicion en Espana, sanciones y pasos para prepararse."
 slug: "nis2-que-es-a-quien-afecta"
-date: 2026-04-05
-lastmod: 2026-04-05
+date: 2026-03-05
+lastmod: 2026-03-05
 draft: false
 tags: ["NIS2", "Compliance", "Europa"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "nis2-guide"
 ---
 
-La Directiva NIS2 (Directiva (UE) 2022/2555) es la legislacion europea mas ambiciosa en materia de ciberseguridad hasta la fecha. Entro en vigor en enero de 2023 y obliga a los Estados miembros a transponerla a su legislacion nacional. Con un ambito de aplicacion que abarca a mas de 160.000 entidades en toda Europa, NIS2 marca un antes y un despues en las obligaciones de ciberseguridad para empresas de sectores criticos y relevantes.
+La [Directiva NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) (Directiva (UE) 2022/2555) es la legislacion europea mas ambiciosa en materia de ciberseguridad hasta la fecha. Entro en vigor en enero de 2023 y obliga a los Estados miembros a transponerla a su legislacion nacional. Con un ambito de aplicacion que abarca a mas de 160.000 entidades en toda Europa, NIS2 marca un antes y un despues en las obligaciones de ciberseguridad para empresas de sectores criticos y relevantes.
 
 <!--more-->
+
+{{< key-takeaways >}}
+- NIS2 afecta a mas de 160.000 entidades en Europa, multiplicando por 20 el alcance de NIS1
+- Sanciones de hasta 10 millones EUR o 2% de la facturacion global para entidades esenciales
+- Diez medidas minimas obligatorias de gestion de riesgos de ciberseguridad
+- Notificacion de incidentes en 24 horas (alerta temprana) y 72 horas (evaluacion inicial)
+- En Espana, el ENS cubre parte de los requisitos de NIS2 para el sector publico
+{{< /key-takeaways >}}
 
 ## Que es la Directiva NIS2 y por que es importante?
 
 La Directiva NIS2 (Network and Information Security 2) es la actualizacion de la Directiva NIS original de 2016, que fue la primera legislacion europea centrada exclusivamente en ciberseguridad. NIS2 fue adoptada por el Parlamento Europeo y el Consejo en diciembre de 2022 y publicada en el Diario Oficial de la Union Europea el 27 de diciembre de 2022.
 
-Su objetivo principal es alcanzar un nivel comun elevado de ciberseguridad en toda la Union Europea, armonizando las obligaciones entre Estados miembros y eliminando las disparidades que existian con la primera directiva. Segun la Agencia de la Union Europea para la Ciberseguridad (ENISA), los ciberataques a infraestructuras criticas europeas aumentaron un 68 por ciento entre 2021 y 2024, lo que justifico plenamente la necesidad de endurecer el marco regulatorio.
+Su objetivo principal es alcanzar un nivel comun elevado de ciberseguridad en toda la Union Europea, armonizando las obligaciones entre Estados miembros y eliminando las disparidades que existian con la primera directiva. Segun la Agencia de la Union Europea para la Ciberseguridad ([ENISA](https://www.enisa.europa.eu/)), los ciberataques a infraestructuras criticas europeas aumentaron un 68 por ciento entre 2021 y 2024, lo que justifico plenamente la necesidad de endurecer el marco regulatorio.
 
 ## Cuales son las diferencias entre NIS1 y NIS2?
 
@@ -113,7 +121,7 @@ NIS2 endurece significativamente los plazos de notificacion de incidentes signif
 - **Notificacion del incidente**: dentro de las 72 horas, con una evaluacion inicial de la gravedad y el impacto.
 - **Informe final**: en el plazo de un mes desde la notificacion, incluyendo una descripcion detallada del incidente, las medidas aplicadas y las lecciones aprendidas.
 
-En Espana, estas notificaciones se canalizan a traves del CSIRT de referencia, que para muchos sectores sera el CCN-CERT o el INCIBE-CERT.
+En Espana, estas notificaciones se canalizan a traves del CSIRT de referencia, que para muchos sectores sera el [CCN-CERT](https://www.ccn-cert.cni.es/) o el [INCIBE](https://www.incibe.es/)-CERT.
 
 ## Cuando entra en vigor NIS2 en Espana?
 
@@ -155,7 +163,7 @@ Analiza el sector de actividad de tu empresa, su tamano (empleados y facturacion
 
 ### 2. Realizar un analisis de brechas (gap analysis)
 
-Compara tu postura actual de ciberseguridad con los diez requisitos minimos de NIS2. Identifica las areas donde ya cumples y aquellas donde necesitas mejorar. Si tu organizacion ya tiene la certificacion ISO 27001 o cumple con el ENS, tendras una base solida. Nuestra [guia de ISO 27001 para startups](/es/posts/2026/02/guia-iso-27001-startups/) es un buen punto de partida si aun no has implementado un sistema de gestion de seguridad.
+Compara tu postura actual de ciberseguridad con los diez requisitos minimos de NIS2. Identifica las areas donde ya cumples y aquellas donde necesitas mejorar. Si tu organizacion ya tiene la certificacion [ISO 27001](https://www.iso.org/standard/27001) o cumple con el [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311), tendras una base solida. Nuestra [guia de ISO 27001 para startups](/es/posts/2026/02/guia-iso-27001-startups/) es un buen punto de partida si aun no has implementado un sistema de gestion de seguridad.
 
 ### 3. Involucrar a la alta direccion
 
@@ -186,8 +194,8 @@ Realiza auditorias internas periodicas para verificar que las medidas implementa
 NIS2 no existe de forma aislada. Se interrelaciona con multiples marcos regulatorios:
 
 - **ENS**: en Espana, el cumplimiento del ENS cubre parte sustancial de los requisitos de NIS2 para entidades del sector publico.
-- **DORA**: para el sector financiero, el Reglamento DORA (Digital Operational Resilience Act) es lex specialis respecto a NIS2, lo que significa que prevalece en su ambito de aplicacion. Las entidades financieras deben cumplir DORA en lugar de NIS2 para los aspectos cubiertos por aquel.
-- **RGPD**: NIS2 complementa al RGPD. Mientras que el RGPD protege los datos personales, NIS2 protege las redes y sistemas de informacion. Un incidente puede activar obligaciones bajo ambas normativas.
+- **[DORA](https://eur-lex.europa.eu/eli/reg/2022/2554)**: para el sector financiero, el Reglamento DORA (Digital Operational Resilience Act) es lex specialis respecto a NIS2, lo que significa que prevalece en su ambito de aplicacion. Las entidades financieras deben cumplir DORA en lugar de NIS2 para los aspectos cubiertos por aquel.
+- **[RGPD](https://eur-lex.europa.eu/eli/reg/2016/679)**: NIS2 complementa al RGPD. Mientras que el RGPD protege los datos personales, NIS2 protege las redes y sistemas de informacion. Un incidente puede activar obligaciones bajo ambas normativas.
 - **CER (Directiva de Resiliencia de Entidades Criticas)**: centrada en la resiliencia fisica de infraestructuras criticas, complementa a NIS2 en el ambito de la ciberseguridad.
 
 {{< cta type="mofu" text="¿Tu empresa debe cumplir NIS2? Solicita una evaluacion gratuita de tu nivel de preparacion." >}}

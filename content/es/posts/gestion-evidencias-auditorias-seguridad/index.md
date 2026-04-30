@@ -8,7 +8,7 @@ lastmod: 2026-06-09
 draft: false
 tags: ["GRC", "Auditoria", "Compliance"]
 categories: ["GRC"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "gestion evidencias auditoria"
 funnel: "mofu"
 ---

@@ -8,7 +8,7 @@ lastmod: 2026-10-14
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Guadalajara"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Guadalajara"
 funnel: "mofu"
 geo_target: "Guadalajara"

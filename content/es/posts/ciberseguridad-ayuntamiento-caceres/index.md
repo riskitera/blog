@@ -8,7 +8,7 @@ lastmod: 2026-10-10
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Caceres"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Caceres"
 funnel: "mofu"
 geo_target: "Caceres"

@@ -8,7 +8,7 @@ lastmod: 2026-10-15
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Toledo"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Toledo"
 funnel: "mofu"
 geo_target: "Toledo"

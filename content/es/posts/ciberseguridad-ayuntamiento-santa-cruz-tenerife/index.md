@@ -8,7 +8,7 @@ lastmod: 2026-09-22
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Santa Cruz de Tenerife"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Santa Cruz de Tenerife"
 funnel: "mofu"
 geo_target: "Santa Cruz de Tenerife"

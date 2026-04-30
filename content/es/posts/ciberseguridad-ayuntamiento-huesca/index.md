@@ -8,7 +8,7 @@ lastmod: 2026-10-22
 draft: false
 tags: ["ENS", "Administracion Publica", "NIS2", "Huesca"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "ciberseguridad ayuntamiento Huesca"
 funnel: "mofu"
 geo_target: "Huesca"

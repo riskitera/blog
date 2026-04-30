@@ -8,7 +8,7 @@ lastmod: 2026-07-16
 draft: false
 tags: ["DORA", "Banca", "Compliance"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 keyword: "guia DORA entidades financieras"
 funnel: "mofu"
 ---

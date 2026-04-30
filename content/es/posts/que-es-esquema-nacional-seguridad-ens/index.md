@@ -3,18 +3,26 @@ title: "Que es el Esquema Nacional de Seguridad (ENS): guia completa 2026"
 image: "cover.png"
 description: "Todo lo que necesitas saber sobre el Esquema Nacional de Seguridad (ENS): niveles de seguridad, quien debe cumplirlo, medidas clave y pasos para implementarlo en tu organizacion."
 slug: "que-es-esquema-nacional-seguridad-ens"
-date: 2026-04-05
-lastmod: 2026-04-05
+date: 2026-02-28
+lastmod: 2026-02-28
 draft: false
 tags: ["ENS", "Compliance", "Seguridad"]
 categories: ["Compliance"]
-author: "Riskitera Team"
+author: "David Moya"
 translationKey: "ens-guide"
 ---
 
-El Esquema Nacional de Seguridad (ENS) es el marco normativo que establece los principios y requisitos minimos de seguridad de la informacion para el sector publico espanol y para cualquier entidad que preste servicios o gestione soluciones tecnologicas para la Administracion. Regulado por el Real Decreto 311/2022, su cumplimiento no es opcional: es una obligacion legal que afecta a miles de organizaciones en Espana.
+El Esquema Nacional de Seguridad (ENS) es el marco normativo que establece los principios y requisitos minimos de seguridad de la informacion para el sector publico espanol y para cualquier entidad que preste servicios o gestione soluciones tecnologicas para la Administracion. Regulado por el [Real Decreto 311/2022](https://www.boe.es/eli/es/rd/2022/05/03/311), su cumplimiento no es opcional: es una obligacion legal que afecta a miles de organizaciones en Espana.
 
 <!--more-->
+
+{{< key-takeaways >}}
+- El ENS es obligatorio para el sector publico espanol y sus proveedores tecnologicos (RD 311/2022)
+- Tres niveles de seguridad (bajo, medio, alto) con 36, 58 y 73 medidas respectivamente
+- La certificacion se renueva cada 2 anos mediante auditoria externa acreditada
+- El CCN-CERT proporciona herramientas oficiales (PILAR) y guias CCN-STIC para la implementacion
+- El ENS se alinea con ISO 27001, NIS2 y DORA, facilitando el cumplimiento cruzado
+{{< /key-takeaways >}}
 
 ## Que es el Esquema Nacional de Seguridad (ENS)?
 
@@ -22,7 +30,7 @@ El ENS es una normativa espanola que define la politica de seguridad en la utili
 
 Publicado originalmente en 2010 mediante el Real Decreto 3/2010, el ENS ha evolucionado significativamente. La version vigente, aprobada por el Real Decreto 311/2022, incorpora lecciones aprendidas de mas de una decada de aplicacion y adapta el marco a las amenazas actuales del panorama de ciberseguridad.
 
-El Centro Criptologico Nacional (CCN), adscrito al Centro Nacional de Inteligencia (CNI), es el organismo encargado de velar por el cumplimiento del ENS y de publicar las guias tecnicas CCN-STIC que detallan como implementar cada medida de seguridad.
+El Centro Criptologico Nacional ([CCN-CERT](https://www.ccn-cert.cni.es/)), adscrito al Centro Nacional de Inteligencia (CNI), es el organismo encargado de velar por el cumplimiento del ENS y de publicar las guias tecnicas [CCN-STIC](https://www.ccn-cert.cni.es/series-ccn-stic.html) que detallan como implementar cada medida de seguridad.
 
 ## Como ha evolucionado el ENS desde 2010?
 
@@ -34,7 +42,7 @@ Las principales novedades del ENS 2022 incluyen:
 
 - **Perfiles de cumplimiento especificos**: el CCN ha definido perfiles de cumplimiento que simplifican la adopcion del ENS para tipos concretos de organizaciones, como ayuntamientos, universidades o proveedores tecnologicos.
 - **Vigilancia continua y respuesta a incidentes**: se refuerza la obligacion de monitorizar los sistemas de forma permanente y de notificar incidentes al CCN-CERT.
-- **Interconexion con marcos europeos**: se alinea el ENS con normativas europeas como el Reglamento eIDAS y la Directiva NIS2.
+- **Interconexion con marcos europeos**: se alinea el ENS con normativas europeas como el Reglamento eIDAS y la Directiva [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555).
 - **Gestion de la cadena de suministro**: se exige a las Administraciones que sus proveedores tecnologicos tambien cumplan con el ENS.
 
 ## Cuales son los niveles de seguridad del ENS: alto, medio y bajo?
@@ -124,7 +132,7 @@ Identifica los servicios y sistemas de informacion que entran en el ambito del E
 
 ### 3. Analisis de riesgos
 
-Realiza un analisis de riesgos formal siguiendo una metodologia reconocida. MAGERIT es la metodologia de referencia en el contexto espanol y esta plenamente alineada con el ENS. Identifica activos, amenazas, vulnerabilidades y calcula el riesgo residual.
+Realiza un analisis de riesgos formal siguiendo una metodologia reconocida. [MAGERIT](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html) es la metodologia de referencia en el contexto espanol y esta plenamente alineada con el ENS. Identifica activos, amenazas, vulnerabilidades y calcula el riesgo residual.
 
 ### 4. Declaracion de aplicabilidad
 
@@ -150,17 +158,17 @@ Si tu organizacion busca optimizar este proceso, plataformas como Riskitera auto
 
 El ENS no existe de forma aislada. Forma parte de un ecosistema normativo cada vez mas interconectado:
 
-- **ISO 27001**: el ENS y la ISO 27001 comparten muchos conceptos y controles. Una organizacion certificada en ISO 27001 tiene gran parte del camino recorrido para el ENS, aunque hay medidas especificas del ENS que la ISO no cubre. Si estas valorando implementar ISO 27001 en tu organizacion, te recomendamos nuestra [guia practica de ISO 27001 para startups](/es/posts/2026/02/guia-iso-27001-startups/).
-- **NIS2**: la Directiva europea NIS2 afecta a entidades esenciales e importantes en toda la Union Europea. En Espana, el ENS actuara como vehiculo para implementar parte de los requisitos de NIS2 en el sector publico. En proximos articulos analizaremos en detalle [que es la NIS2 y a quien afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/).
-- **DORA**: el Reglamento de Resiliencia Operativa Digital afecta al sector financiero europeo. Las entidades financieras sujetas a DORA que tambien trabajan con la Administracion publica podrian necesitar cumplir con ambos marcos. Publicaremos proximamente una guia completa sobre [DORA y la ciberseguridad financiera](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/).
-- **RGPD**: el cumplimiento del ENS contribuye a satisfacer los requisitos de seguridad del Reglamento General de Proteccion de Datos, aunque no lo sustituye.
+- **[ISO 27001](https://www.iso.org/standard/27001)**: el ENS y la ISO 27001 comparten muchos conceptos y controles. Una organizacion certificada en ISO 27001 tiene gran parte del camino recorrido para el ENS, aunque hay medidas especificas del ENS que la ISO no cubre. Si estas valorando implementar ISO 27001 en tu organizacion, te recomendamos nuestra [guia practica de ISO 27001 para startups](/es/posts/2026/02/guia-iso-27001-startups/).
+- **[NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555)**: la Directiva europea NIS2 afecta a entidades esenciales e importantes en toda la Union Europea. En Espana, el ENS actuara como vehiculo para implementar parte de los requisitos de NIS2 en el sector publico. En proximos articulos analizaremos en detalle [que es la NIS2 y a quien afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/).
+- **[DORA](https://eur-lex.europa.eu/eli/reg/2022/2554)**: el Reglamento de Resiliencia Operativa Digital afecta al sector financiero europeo. Las entidades financieras sujetas a DORA que tambien trabajan con la Administracion publica podrian necesitar cumplir con ambos marcos. Publicaremos proximamente una guia completa sobre [DORA y la ciberseguridad financiera](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/).
+- **[RGPD](https://eur-lex.europa.eu/eli/reg/2016/679)**: el cumplimiento del ENS contribuye a satisfacer los requisitos de seguridad del Reglamento General de Proteccion de Datos, aunque no lo sustituye.
 
 ## Que beneficios aporta la certificacion ENS?
 
 Mas alla del cumplimiento legal, la certificacion ENS aporta ventajas tangibles:
 
 - **Acceso a contratos publicos**: cada vez mas licitaciones exigen la certificacion ENS como requisito de solvencia tecnica.
-- **Reduccion del riesgo de incidentes**: las organizaciones certificadas reportan un 43 por ciento menos de incidentes graves, segun datos de INCIBE correspondientes a 2024.
+- **Reduccion del riesgo de incidentes**: las organizaciones certificadas reportan un 43 por ciento menos de incidentes graves, segun datos de [INCIBE](https://www.incibe.es/) correspondientes a 2024.
 - **Confianza institucional**: la certificacion es una senal clara de madurez en seguridad ante organismos publicos y socios comerciales.
 - **Mejora operativa**: el proceso de implementacion obliga a documentar, racionalizar y optimizar los procesos de gestion de la seguridad.
 - **Preparacion para otras normativas**: facilita la adaptacion a NIS2, DORA y otros marcos regulatorios europeos.
