@@ -5,7 +5,7 @@ slug: "reducir-falsos-positivos-soc"
 date: 2026-06-16
 publishDate: 2026-06-16
 lastmod: 2026-06-16
-draft: false
+draft: true
 tags: ["SOC", "Operaciones", "Detection Engineering"]
 categories: ["SOC"]
 author: "David Moya"

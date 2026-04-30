@@ -5,7 +5,7 @@ slug: "respuesta-incidentes-seguridad-playbook"
 date: 2026-07-02
 publishDate: 2026-07-02
 lastmod: 2026-07-02
-draft: false
+draft: true
 tags: ["SOC", "Operaciones", "Seguridad"]
 categories: ["SOC"]
 author: "David Moya"

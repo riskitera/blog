@@ -5,7 +5,7 @@ slug: "incidentes-ciberseguridad-espana-graves"
 date: 2026-06-25
 publishDate: 2026-06-25
 lastmod: 2026-06-25
-draft: false
+draft: true
 tags: ["Ciberseguridad", "Operaciones", "SOC"]
 categories: ["SOC"]
 author: "David Moya"

@@ -5,7 +5,7 @@ slug: "mitre-attack-soc-mapping-detecciones"
 date: 2026-06-06
 publishDate: 2026-06-06
 lastmod: 2026-06-06
-draft: false
+draft: true
 tags: ["MITRE", "SOC", "Detection Engineering"]
 categories: ["SOC"]
 author: "David Moya"

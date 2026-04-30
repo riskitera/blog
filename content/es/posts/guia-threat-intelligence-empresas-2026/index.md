@@ -5,7 +5,7 @@ slug: "guia-threat-intelligence-empresas-2026"
 date: 2026-07-21
 publishDate: 2026-07-21
 lastmod: 2026-07-21
-draft: false
+draft: true
 tags: ["CTI", "Threat Intelligence", "Herramientas"]
 categories: ["CTI"]
 author: "David Moya"

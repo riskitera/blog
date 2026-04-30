@@ -5,7 +5,7 @@ slug: "guia-dora-entidades-financieras-requisitos"
 date: 2026-07-16
 publishDate: 2026-07-16
 lastmod: 2026-07-16
-draft: false
+draft: true
 tags: ["DORA", "Banca", "Compliance"]
 categories: ["Compliance"]
 author: "David Moya"

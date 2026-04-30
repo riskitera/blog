@@ -5,7 +5,7 @@ slug: "multas-rgpd-espana-coste-real"
 date: 2026-06-27
 publishDate: 2026-06-27
 lastmod: 2026-06-27
-draft: false
+draft: true
 tags: ["RGPD", "Compliance", "Seguridad"]
 categories: ["Compliance"]
 author: "David Moya"

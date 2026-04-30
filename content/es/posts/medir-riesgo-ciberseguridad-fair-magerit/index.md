@@ -5,7 +5,7 @@ slug: "medir-riesgo-ciberseguridad-fair-magerit"
 date: 2026-06-11
 publishDate: 2026-06-11
 lastmod: 2026-06-11
-draft: false
+draft: true
 tags: ["GRC", "Riesgos", "Metodologia"]
 categories: ["GRC"]
 author: "David Moya"

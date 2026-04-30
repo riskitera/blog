@@ -5,7 +5,7 @@ slug: "software-compliance-espana-coste"
 date: 2026-07-09
 publishDate: 2026-07-09
 lastmod: 2026-07-09
-draft: false
+draft: true
 tags: ["Compliance", "Herramientas", "GRC"]
 categories: ["GRC"]
 author: "David Moya"

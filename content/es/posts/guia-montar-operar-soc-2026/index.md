@@ -5,7 +5,7 @@ slug: "guia-montar-operar-soc-2026"
 date: 2026-06-30
 publishDate: 2026-06-30
 lastmod: 2026-06-30
-draft: false
+draft: true
 tags: ["SOC", "Operaciones", "Herramientas"]
 categories: ["SOC"]
 author: "David Moya"

@@ -5,7 +5,7 @@ slug: "roi-plataforma-grc-calcular"
 date: 2026-07-11
 publishDate: 2026-07-11
 lastmod: 2026-07-11
-draft: false
+draft: true
 tags: ["GRC", "Compliance", "Herramientas"]
 categories: ["GRC"]
 author: "David Moya"

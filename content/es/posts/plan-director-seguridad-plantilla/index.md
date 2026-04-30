@@ -5,7 +5,7 @@ slug: "plan-director-seguridad-plantilla"
 date: 2026-06-13
 publishDate: 2026-06-13
 lastmod: 2026-06-13
-draft: false
+draft: true
 tags: ["GRC", "Seguridad", "Compliance"]
 categories: ["GRC"]
 author: "David Moya"

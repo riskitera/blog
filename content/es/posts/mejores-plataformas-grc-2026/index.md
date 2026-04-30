@@ -5,7 +5,7 @@ slug: "mejores-plataformas-grc-2026"
 date: 2026-07-07
 publishDate: 2026-07-07
 lastmod: 2026-07-07
-draft: false
+draft: true
 tags: ["GRC", "Herramientas", "Compliance"]
 categories: ["GRC"]
 author: "David Moya"

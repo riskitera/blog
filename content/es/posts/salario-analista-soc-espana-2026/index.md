@@ -5,7 +5,7 @@ slug: "salario-analista-soc-espana-2026"
 date: 2026-06-23
 publishDate: 2026-06-23
 lastmod: 2026-06-23
-draft: false
+draft: true
 tags: ["SOC", "Carreras", "Operaciones"]
 categories: ["SOC"]
 author: "David Moya"

@@ -5,7 +5,7 @@ slug: "sla-ciberseguridad-mttr-mttd"
 date: 2026-06-20
 publishDate: 2026-06-20
 lastmod: 2026-06-20
-draft: false
+draft: true
 tags: ["SOC", "GRC", "Operaciones"]
 categories: ["SOC"]
 author: "David Moya"

@@ -5,7 +5,7 @@ slug: "detection-engineering-reglas-deteccion"
 date: 2026-06-02
 publishDate: 2026-06-02
 lastmod: 2026-06-02
-draft: false
+draft: true
 tags: ["SOC", "Detection Engineering", "Operaciones"]
 categories: ["SOC"]
 author: "David Moya"

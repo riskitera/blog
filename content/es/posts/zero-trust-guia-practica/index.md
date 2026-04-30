@@ -5,7 +5,7 @@ slug: "zero-trust-guia-practica"
 date: 2026-07-18
 publishDate: 2026-07-18
 lastmod: 2026-07-18
-draft: false
+draft: true
 tags: ["Seguridad", "Operaciones", "GRC"]
 categories: ["GRC"]
 author: "David Moya"

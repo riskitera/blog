@@ -5,7 +5,7 @@ slug: "soar-vs-siem-diferencias"
 date: 2026-06-18
 publishDate: 2026-06-18
 lastmod: 2026-06-18
-draft: false
+draft: true
 tags: ["SOC", "SIEM", "SOAR", "Herramientas"]
 categories: ["SOC"]
 author: "David Moya"

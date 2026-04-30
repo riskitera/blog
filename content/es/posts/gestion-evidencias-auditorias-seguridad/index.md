@@ -5,7 +5,7 @@ slug: "gestion-evidencias-auditorias-seguridad"
 date: 2026-06-09
 publishDate: 2026-06-09
 lastmod: 2026-06-09
-draft: false
+draft: true
 tags: ["GRC", "Auditoria", "Compliance"]
 categories: ["GRC"]
 author: "David Moya"

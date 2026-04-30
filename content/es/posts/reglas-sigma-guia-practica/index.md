@@ -5,7 +5,7 @@ slug: "reglas-sigma-guia-practica"
 date: 2026-06-04
 publishDate: 2026-06-04
 lastmod: 2026-06-04
-draft: false
+draft: true
 tags: ["SOC", "SIEM", "Detection Engineering"]
 categories: ["SOC"]
 author: "David Moya"

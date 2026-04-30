@@ -5,7 +5,7 @@ slug: "eu-ai-act-ciberseguridad"
 date: 2026-07-14
 publishDate: 2026-07-14
 lastmod: 2026-07-14
-draft: false
+draft: true
 tags: ["IA", "Compliance", "Europa"]
 categories: ["Compliance"]
 author: "David Moya"
