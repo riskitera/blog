@@ -1,6 +1,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+{{/* ---- Noindex for EN pages until content is sufficient ---- */}}
+{{- if and (eq .Lang "en") (not (.Params.index | default false)) }}
+<meta name="robots" content="noindex, follow">
+{{- end }}
+
 {{/* ---- Title ---- */}}
 {{- if .IsHome -}}
   <title>{{ .Site.Title }}</title>
