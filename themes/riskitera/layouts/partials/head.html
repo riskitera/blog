@@ -137,10 +137,12 @@
     "name": "{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author }}{{ end }}",
     "url": "{{ .Site.Params.authorLinkedIn }}",
     "jobTitle": "{{ .Site.Params.authorTitle }}",
+    "description": "{{ .Site.Params.authorBio }}",
     "sameAs": ["{{ .Site.Params.authorLinkedIn }}"],
     "worksFor": {
       "@type": "Organization",
-      "name": "Riskitera"
+      "name": "Riskitera",
+      "url": "https://riskitera.com"
     }
   },
   "publisher": {
