@@ -1,5 +1,5 @@
 ---
-title: "Guía práctica: Implementar ISO 27001 en tu Startup paso a paso"
+title: "Guía práctica: Implementar ISO 27001 en tu Startup pasó a pasó"
 description: "Cómo una startup puede lograr la certificación ISO 27001 sin morir en el intento. Pasos concretos, errores comunes y consejos prácticos."
 slug: "guia-iso-27001-startups"
 date: 2026-02-22
@@ -17,11 +17,11 @@ Muchas startups ven [ISO 27001](https://www.iso.org/standard/27001) como algo in
 <!--more-->
 
 {{< key-takeaways >}}
-- ISO 27001 es el estandar internacional de referencia para sistemas de gestion de seguridad de la informacion (SGSI)
-- La certificacion demuestra a clientes y socios un compromiso verificable con la seguridad
+- ISO 27001 es el estándar internacional de referencia para sistemas de gestión de seguridad de la información (SGSI)
+- La certificación demuestra a clientes y socios un compromiso verificable con la seguridad
 - Para startups, el enfoque pragmatico es priorizar los controles del Anexo A que aplican a su contexto
-- El coste de certificacion para una pyme oscila entre 15.000 y 50.000 EUR (consultoria + auditoria)
-- El ENS espanol comparte muchos controles con ISO 27001, facilitando el cumplimiento cruzado
+- El coste de certificación para una pyme oscila entre 15.000 y 50.000 EUR (consultoría + auditoría)
+- El ENS español comparte muchos controles con ISO 27001, facilitando el cumplimiento cruzado
 {{< /key-takeaways >}}
 
 ## ¿Por qué ISO 27001?
@@ -68,7 +68,7 @@ Documentos mínimos obligatorios:
 - Procedimientos operativos clave
 - Registros de formación y concienciación
 
-{{< cta type="tofu" text="Riskitera simplifica la implementacion de ISO 27001 automatizando el registro de riesgos y la gestion de evidencias." label="Saber mas" >}}
+{{< cta type="tofu" text="Riskitera simplifica la implementación de ISO 27001 automatizando el registro de riesgos y la gestión de evidencias." label="Saber más" >}}
 
 ## Errores comunes
 
@@ -78,7 +78,7 @@ Documentos mínimos obligatorios:
 4. **Subestimar el tiempo necesario**: planifica entre 6 y 12 meses, dependiendo del alcance.
 5. **Olvidar la mejora continua**: la certificación no es el final, es el principio de un ciclo PDCA permanente.
 
-{{< cta type="mofu" text="¿Tu startup necesita ISO 27001? Descubre como Riskitera te lleva de cero a certificacion sin consultores externos." >}}
+{{< cta type="mofu" text="¿Tu startup necesita ISO 27001? Descubre cómo Riskitera te lleva de cero a certificación sin consultores externos." >}}
 
 ## Conclusión
 

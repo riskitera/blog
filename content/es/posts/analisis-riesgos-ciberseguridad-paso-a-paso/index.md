@@ -1,238 +1,238 @@
 ---
-title: "Como hacer un analisis de riesgos en ciberseguridad paso a paso"
+title: "Como hacer un análisis de riesgos en ciberseguridad pasó a pasó"
 image: "cover.png"
-description: "Guia paso a paso para realizar un analisis de riesgos en ciberseguridad: metodologias MAGERIT, FAIR, ISO 27005 y NIST RMF, inventario de activos, evaluacion de amenazas, calculo y tratamiento de riesgos."
+description: "Guía pasó a pasó para realizar un análisis de riesgos en ciberseguridad: metodologías MAGERIT, FAIR, ISO 27005 y NIST RMF, inventario de activos, evaluación de amenazas, calculo y tratamiento de riesgos."
 slug: "analisis-riesgos-ciberseguridad-paso-a-paso"
 date: 2026-03-15
 lastmod: 2026-03-15
 draft: false
-tags: ["GRC", "Riesgos", "Metodologia"]
+tags: ["GRC", "Riesgos", "Metodología"]
 categories: ["GRC"]
 author: "David Moya"
 translationKey: "risk-analysis-guide"
 ---
 
-El analisis de riesgos es el proceso fundamental que permite a una organizacion identificar, evaluar y priorizar las amenazas a las que estan expuestos sus activos de informacion. Sin un analisis de riesgos riguroso, las decisiones de seguridad se toman por intuicion, lo que inevitablemente conduce a inversiones desproporcionadas en areas de bajo riesgo y proteccion insuficiente donde realmente importa. Segun datos del Informe de Amenazas de [ENISA](https://www.enisa.europa.eu/), mas del 60 por ciento de las pymes europeas que sufrieron un ciberataque grave no habian realizado un analisis de riesgos formal previo. Esta guia detalla el proceso completo, las metodologias disponibles y los errores que conviene evitar.
+El análisis de riesgos es el proceso fundamental que permite a una organización identificar, evaluar y priorizar las amenazas a las que están expuestos sus activos de información. Sin un análisis de riesgos riguroso, las decisiones de seguridad se toman por intuición, lo que inevitablemente conduce a inversiones desproporcionadas en areas de bajo riesgo y protección insuficiente donde realmente importa. Según datos del Informe de Amenazas de [ENISA](https://www.enisa.europa.eu/), más del 60 por ciento de las pymes europeas que sufrieron un ciberataque grave no habian realizado un análisis de riesgos formal previo. Esta guía detalla el proceso completo, las metodologías disponibles y los errores que conviene evitar.
 
 <!--more-->
 
 {{< key-takeaways >}}
-- El analisis de riesgos es obligatorio por ENS, RGPD, NIS2, DORA e ISO 27001
-- Principales metodologias: MAGERIT (referencia en Espana), FAIR (cuantitativa), ISO 27005 y NIST RMF
-- Proceso en 7 pasos: alcance, inventario de activos, amenazas, vulnerabilidades, calculo, priorizacion y tratamiento
+- El análisis de riesgos es obligatorio por ENS, RGPD, NIS2, DORA e ISO 27001
+- Principales metodologías: MAGERIT (referencia en España), FAIR (cuantitativa), ISO 27005 y NIST RMF
+- Proceso en 7 pasos: alcance, inventario de activos, amenazas, vulnerabilidades, calculo, priorización y tratamiento
 - Debe revisarse al menos anualmente y actualizarse ante cambios significativos
-- La herramienta PILAR del CCN facilita el analisis siguiendo MAGERIT
+- La herramienta PILAR del CCN facilita el análisis siguiendo MAGERIT
 {{< /key-takeaways >}}
 
-## Por que es imprescindible el analisis de riesgos en ciberseguridad?
+## Por que es imprescindible el análisis de riesgos en ciberseguridad?
 
-El analisis de riesgos en ciberseguridad no es un ejercicio academico ni un requisito burocratico: es la base sobre la que se construye toda la estrategia de seguridad de una organizacion. Sus beneficios son concretos y medibles.
+El análisis de riesgos en ciberseguridad no es un ejercicio academico ni un requisito burocrático: es la base sobre la que se construye toda la estrategia de seguridad de una organización. Sus beneficios son concretos y medibles.
 
-En primer lugar, permite asignar recursos de forma racional. Los presupuestos de seguridad son siempre limitados, y el analisis de riesgos identifica donde cada euro invertido genera mayor reduccion de riesgo. Sin esta informacion, las organizaciones tienden a invertir en tecnologia de moda en lugar de abordar los riesgos reales.
+En primer lugar, permite asignar recursos de forma racional. Los presupuestos de seguridad son siempre limitados, y el análisis de riesgos identifica donde cada euro invertido genera mayor reducción de riesgo. Sin esta información, las organizaciones tienden a invertir en tecnología de moda en lugar de abordar los riesgos reales.
 
-En segundo lugar, es un requisito normativo. Regulaciones como el Esquema Nacional de Seguridad (ENS), el [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679), la Directiva [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555), [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) y el estandar [ISO 27001](/es/posts/guia-iso-27001-startups/) exigen la realizacion de analisis de riesgos como requisito fundamental. El articulo 32 del RGPD establece explicitamente que las medidas de seguridad deben ser proporcionales al riesgo, lo que presupone que se ha realizado una evaluacion formal.
+En segundo lugar, es un requisito normativo. Regulaciones como el Esquema Nacional de Seguridad (ENS), el [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679), la Directiva [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555), [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) y el estándar [ISO 27001](/es/posts/guia-iso-27001-startups/) exigen la realización de análisis de riesgos como requisito fundamental. El artículo 32 del RGPD establece explicitamente que las medidas de seguridad deben ser proporcionales al riesgo, lo que presupone que se ha realizado una evaluación formal.
 
-En tercer lugar, facilita la comunicacion con la direccion. Un registro de riesgos bien elaborado traduce amenazas tecnicas a terminos de impacto empresarial (perdida economica, interrupcion del servicio, dano reputacional), permitiendo que los responsables de negocio tomen decisiones informadas.
+En tercer lugar, facilita la comunicación con la dirección. Un registro de riesgos bien elaborado traduce amenazas técnicas a términos de impacto empresarial (perdida económica, interrupción del servicio, daño reputacional), permitiendo que los responsables de negocio tomen decisiones informadas.
 
-Finalmente, proporciona un marco para la mejora continua. El analisis de riesgos no es un documento estatico sino un proceso ciclico que se actualiza ante cambios en el entorno de amenazas, la infraestructura tecnologica o los requisitos de negocio.
+Finalmente, proporciona un marco para la mejora continua. El análisis de riesgos no es un documento estático sino un proceso ciclico que se actualiza ante cambios en el entorno de amenazas, la infraestructura tecnologica o los requisitos de negocio.
 
-## Que metodologias de analisis de riesgos existen?
+## Qué metodologías de análisis de riesgos existen?
 
-Existen diversas metodologias reconocidas internacionalmente. La eleccion depende del contexto normativo, el sector y la madurez de la organizacion.
+Existen diversas metodologías reconocidas internacionalmente. La elección depende del contexto normativo, el sector y la madurez de la organización.
 
 ### MAGERIT
 
-MAGERIT (Metodologia de Analisis y Gestion de Riesgos de los Sistemas de Informacion) es la metodologia oficial del gobierno espanol, desarrollada por el Consejo Superior de Administracion Electronica y mantenida por el [CCN](https://www.ccn-cert.cni.es/). Es la metodologia de referencia para el cumplimiento del [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) y es ampliamente utilizada en el sector publico espanol y en empresas que trabajan con la administracion.
+MAGERIT (Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información) es la metodología oficial del gobierno español, desarrollada por el Consejo Superior de Administración Electronica y mantenida por el [CCN](https://www.ccn-cert.cni.es/). Es la metodología de referencia para el cumplimiento del [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) y es ampliamente utilizada en el sector público español y en empresas que trabajan con la administración.
 
-MAGERIT se estructura en tres libros: el metodo (que describe el proceso), el catalogo de elementos (que proporciona inventarios tipificados de activos, amenazas y salvaguardas) y la guia de tecnicas (que detalla tecnicas complementarias como analisis de impacto o arboles de ataque).
+MAGERIT se estructura en tres libros: el metodo (que describe el proceso), el catálogo de elementos (que proporciona inventarios tipificados de activos, amenazas y salvaguardas) y la guía de técnicas (que detalla técnicas complementarias como análisis de impacto o arboles de ataque).
 
-Su enfoque es cualitativo-cuantitativo, permitiendo valorar activos y riesgos tanto en escalas numericas como en categorias. El CCN proporciona la herramienta [PILAR](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html) como soporte oficial para la realizacion de analisis MAGERIT, facilitando significativamente el proceso.
+Su enfoque es cualitativo-cuantitativo, permitiendo valorar activos y riesgos tanto en escalas numericas como en categorías. El CCN proporciona la herramienta [PILAR](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html) como soporte oficial para la realización de análisis MAGERIT, facilitando significativamente el proceso.
 
 ### [FAIR](https://www.fairinstitute.org/) (Factor Analysis of Information Risk)
 
-FAIR es el unico modelo cuantitativo estandarizado (por The Open Group) para medir el riesgo en terminos financieros. A diferencia de las metodologias cualitativas que clasifican riesgos como "alto", "medio" o "bajo", FAIR calcula la perdida esperada en unidades monetarias, utilizando distribuciones de probabilidad.
+FAIR es el único modelo cuantitativo estandarizado (por The Open Group) para medir el riesgo en términos financieros. A diferencia de las metodologías cualitativas que clasifican riesgos como "alto", "medio" o "bajo", FAIR calcula la perdida esperada en unidades monetarias, utilizando distribuciones de probabilidad.
 
-El modelo descompone el riesgo en factores como la frecuencia de eventos de amenaza, la probabilidad de que el evento resulte en perdida, la magnitud de la perdida primaria y la magnitud de las perdidas secundarias (regulatorias, reputacionales). Esta descomposicion permite identificar con precision que factores contribuyen mas al riesgo total.
+El modelo descompone el riesgo en factores como la frecuencia de eventos de amenaza, la probabilidad de que el evento resulte en perdida, la magnitud de la perdida primaria y la magnitud de las perdidas secundarias (regulatorias, reputacionales). Esta descomposición permite identificar con precisión que factores contribuyen más al riesgo total.
 
-FAIR es especialmente util para comunicar riesgos a la direccion financiera y para priorizar inversiones con base en el retorno de reduccion de riesgo. Sin embargo, requiere datos historicos que no siempre estan disponibles, especialmente en organizaciones menos maduras.
+FAIR es especialmente útil para comunicar riesgos a la dirección financiera y para priorizar inversiones con base en el retorno de reducción de riesgo. Sin embargo, requiere datos históricos que no siempre están disponibles, especialmente en organizaciones menos maduras.
 
 ### [ISO 27005](https://www.iso.org/standard/80585.html)
 
-ISO 27005 es el estandar internacional que proporciona directrices para la gestion de riesgos de seguridad de la informacion en el contexto de un sistema de gestion basado en ISO 27001. No prescribe una metodologia concreta sino que establece un marco de proceso: establecimiento del contexto, identificacion de riesgos, analisis de riesgos, evaluacion de riesgos, tratamiento de riesgos y comunicacion.
+ISO 27005 es el estándar internacional que proporciona directrices para la gestión de riesgos de seguridad de la información en el contexto de un sistema de gestión basado en ISO 27001. No prescribe una metodología concreta sino que establece un marco de proceso: establecimiento del contexto, identificación de riesgos, análisis de riesgos, evaluación de riesgos, tratamiento de riesgos y comunicación.
 
-Su principal ventaja es la alineacion directa con ISO 27001, lo que facilita la certificacion. Es suficientemente flexible para adaptarse a organizaciones de cualquier tamano y sector, permitiendo enfoques tanto cualitativos como cuantitativos.
+Su principal ventaja es la alineación directa con ISO 27001, lo que facilita la certificación. Es suficientemente flexible para adaptarse a organizaciones de cualquier tamaño y sector, permitiendo enfoques tanto cualitativos como cuantitativos.
 
 ### NIST Risk Management Framework (RMF)
 
-El NIST RMF, descrito en la publicacion especial [SP 800-37](https://csrc.nist.gov/pubs/sp/800/37/r2/final), define un proceso de gestion de riesgos en siete pasos: preparar, categorizar, seleccionar controles, implementar controles, evaluar controles, autorizar y monitorizar. Complementado con la guia [SP 800-30](https://csrc.nist.gov/pubs/sp/800/30/r1/final) para evaluacion de riesgos, proporciona un marco completo y detallado.
+El NIST RMF, descrito en la publicación especial [SP 800-37](https://csrc.nist.gov/pubs/sp/800/37/r2/final), define un proceso de gestión de riesgos en siete pasos: preparar, categorizar, seleccionar controles, implementar controles, evaluar controles, autorizar y monitorizar. Complementado con la guía [SP 800-30](https://csrc.nist.gov/pubs/sp/800/30/r1/final) para evaluación de riesgos, proporciona un marco completo y detallado.
 
-Aunque es de origen estadounidense, el NIST RMF es ampliamente utilizado internacionalmente debido a la calidad de su documentacion y la disponibilidad gratuita de todas sus publicaciones. ENISA lo referencia como uno de los marcos de referencia en sus guias de gestion de riesgos.
+Aunque es de origen estadounidense, el NIST RMF es ampliamente utilizado internacionalmente debido a la calidad de su documentación y la disponibilidad gratuita de todas sus publicaciones. ENISA lo referencia como uno de los marcos de referencia en sus guías de gestión de riesgos.
 
-## Como hacer un analisis de riesgos paso a paso?
+## Cómo hacer un análisis de riesgos paso a paso?
 
-Independientemente de la metodologia elegida, el proceso de analisis de riesgos sigue una secuencia logica comun.
+Independientemente de la metodología elegida, el proceso de análisis de riesgos sigue una secuencia lógica común.
 
-### Paso 1: Definicion del alcance y contexto
+### Paso 1: Definición del alcance y contexto
 
-Antes de comenzar el analisis, es imprescindible definir con claridad que se va a analizar. El alcance puede abarcar toda la organizacion, un departamento, un sistema de informacion concreto o un proceso de negocio.
+Antes de comenzar el análisis, es imprescindible definir con claridad que se va a analizar. El alcance puede abarcar toda la organización, un departamento, un sistema de información concreto o un proceso de negocio.
 
-La definicion del contexto incluye identificar los requisitos legales y normativos aplicables (ENS, RGPD, NIS2, ISO 27001), comprender los objetivos de negocio y la tolerancia al riesgo de la direccion, identificar las partes interesadas y sus expectativas y delimitar las fronteras tecnologicas y organizativas del analisis.
+La definición del contexto incluye identificar los requisitos legales y normativos aplicables (ENS, RGPD, NIS2, ISO 27001), comprender los objetivos de negocio y la tolerancia al riesgo de la dirección, identificar las partes interesadas y sus expectativas y delimitar las fronteras tecnológicas y organizativas del análisis.
 
-Un error frecuente es definir un alcance demasiado amplio para los recursos disponibles. Es preferible un analisis exhaustivo de un alcance reducido que un analisis superficial de toda la organizacion.
+Un error frecuente es definir un alcance demasiado amplio para los recursos disponibles. Es preferible un análisis exhaustivo de un alcance reducido que un análisis superficial de toda la organización.
 
 ### Paso 2: Inventario de activos
 
-Los activos son los elementos que tienen valor para la organizacion y que, por tanto, necesitan proteccion. El inventario debe ser exhaustivo dentro del alcance definido e incluir:
+Los activos son los elementos que tienen valor para la organización y que, por tanto, necesitan protección. El inventario debe ser exhaustivo dentro del alcance definido e incluir:
 
-**Activos de informacion:** bases de datos de clientes, propiedad intelectual, documentacion financiera, registros de empleados, planes estrategicos.
+**Activos de información:** bases de datos de clientes, propiedad intelectual, documentación financiera, registros de empleados, planes estratégicos.
 
-**Activos tecnologicos:** servidores, estaciones de trabajo, dispositivos de red, aplicaciones, servicios cloud, dispositivos moviles.
+**Activos tecnológicos:** servidores, estaciones de trabajo, dispositivos de red, aplicaciones, servicios cloud, dispositivos móviles.
 
-**Activos de soporte:** instalaciones fisicas, suministro electrico, climatizacion, enlaces de comunicaciones.
+**Activos de soporte:** instalaciones físicas, suministro electrico, climatización, enlaces de comunicaciones.
 
 **Activos humanos:** personal clave, conocimiento especializado no documentado.
 
-Cada activo debe valorarse en funcion de su importancia para la organizacion, considerando las dimensiones de confidencialidad, integridad y disponibilidad. Un servidor de base de datos con informacion de clientes tendra una valoracion alta en confidencialidad, mientras que un servidor web publico priorizara la disponibilidad.
+Cada activo debe valorarse en función de su importancia para la organización, considerando las dimensiones de confidencialidad, integridad y disponibilidad. Un servidor de base de datos con información de clientes tendrá una valoración alta en confidencialidad, mientras que un servidor web público priorizara la disponibilidad.
 
-MAGERIT proporciona un catalogo completo de tipos de activos que facilita este proceso. La herramienta PILAR del CCN permite gestionar inventarios de activos siguiendo esta clasificacion.
+MAGERIT proporciona un catálogo completo de tipos de activos que facilita este proceso. La herramienta PILAR del CCN permite gestionar inventarios de activos siguiendo está clasificación.
 
-### Paso 3: Identificacion de amenazas
+### Paso 3: Identificación de amenazas
 
-Para cada activo o grupo de activos, se identifican las amenazas que podrian causar un incidente de seguridad. Las amenazas se clasifican generalmente en:
+Para cada activo o grupo de activos, se identifican las amenazas que podrían causar un incidente de seguridad. Las amenazas se clasifican generalmente en:
 
 **Amenazas naturales:** inundaciones, terremotos, incendios naturales, tormentas electricas.
 
-**Amenazas industriales:** fallos electricos, fallos de climatizacion, fugas de agua, fallos de hardware.
+**Amenazas industriales:** fallos electricos, fallos de climatización, fugas de agua, fallos de hardware.
 
-**Amenazas humanas no intencionadas:** errores de configuracion, eliminacion accidental de datos, envio de informacion al destinatario equivocado.
+**Amenazas humanas no intencionadas:** errores de configuración, eliminación accidental de datos, envio de información al destinatario equivocado.
 
 **Amenazas humanas intencionadas:** ataques externos (ransomware, phishing, DDoS, APT), amenazas internas (empleados descontentos, espionaje industrial), ataques de ingenieria social.
 
-Los catalogos de amenazas de MAGERIT y la taxonomia de amenazas de ENISA proporcionan listas completas que ayudan a no omitir amenazas relevantes. Los informes periodicos de [INCIBE](https://www.incibe.es/) sobre incidentes en Espana y el ENISA Threat Landscape ofrecen datos actualizados sobre la prevalencia de cada tipo de amenaza.
+Los catálogos de amenazas de MAGERIT y la taxonomia de amenazas de ENISA proporcionan listas completas que ayudan a no omitir amenazas relevantes. Los informes periódicos de [INCIBE](https://www.incibe.es/) sobre incidentes en España y el ENISA Threat Landscape ofrecen datos actualizados sobre la prevalencia de cada tipo de amenaza.
 
-### Paso 4: Identificacion de vulnerabilidades
+### Paso 4: Identificación de vulnerabilidades
 
-Las vulnerabilidades son debilidades en los activos o en sus controles de seguridad que podrian ser explotadas por las amenazas identificadas. La identificacion de vulnerabilidades se realiza mediante:
+Las vulnerabilidades son debilidades en los activos o en sus controles de seguridad que podrían ser explotadas por las amenazas identificadas. La identificación de vulnerabilidades se realiza mediante:
 
-**Analisis tecnico:** escaneos de vulnerabilidades, tests de penetracion, revisiones de configuracion, analisis de codigo fuente.
+**Análisis técnico:** escaneos de vulnerabilidades, tests de penetración, revisiones de configuración, análisis de código fuente.
 
-**Analisis organizativo:** revision de politicas de seguridad, evaluacion de procesos de gestion de accesos, verificacion de procedimientos de backup y recuperacion.
+**Análisis organizativo:** revisión de políticas de seguridad, evaluación de procesos de gestión de accesos, verificación de procedimientos de backup y recuperación.
 
-**Analisis del factor humano:** evaluacion de la concienciacion en seguridad, revision de programas de formacion, pruebas de phishing simulado.
+**Análisis del factor humano:** evaluación de la concienciación en seguridad, revisión de programas de formación, pruebas de phishing simulado.
 
-Cada vulnerabilidad se valora en terminos de facilidad de explotacion y grado de exposicion del activo afectado.
+Cada vulnerabilidad se valora en términos de facilidad de explotación y grado de exposición del activo afectado.
 
 ### Paso 5: Calculo del riesgo
 
-El riesgo se calcula combinando la probabilidad de que una amenaza explote una vulnerabilidad con el impacto que tendria para la organizacion. La formula basica es:
+El riesgo se calcula combinando la probabilidad de que una amenaza explote una vulnerabilidad con el impacto que tendría para la organización. La formula básica es:
 
 **Riesgo = Probabilidad x Impacto**
 
 En enfoques cualitativos, tanto la probabilidad como el impacto se expresan en escalas categoricas (muy bajo, bajo, medio, alto, muy alto) y se combinan mediante matrices de riesgo predefinidas. En enfoques cuantitativos como FAIR, ambos factores se expresan en valores numericos (frecuencia anual y perdida monetaria estimada).
 
-La probabilidad se estima considerando la frecuencia historica de la amenaza, la motivacion y capacidad de los potenciales atacantes, la facilidad de explotacion de las vulnerabilidades y la eficacia de los controles existentes.
+La probabilidad se estima considerando la frecuencia histórica de la amenaza, la motivación y capacidad de los potenciales atacantes, la facilidad de explotación de las vulnerabilidades y la eficacia de los controles existentes.
 
-El impacto se evalua en multiples dimensiones: impacto financiero directo (coste de recuperacion, perdida de ingresos), impacto regulatorio (sanciones, multas), impacto reputacional (perdida de confianza de clientes), impacto operativo (interrupcion de servicios) e impacto legal (litigios, responsabilidades).
+El impacto se evalúa en múltiples dimensiones: impacto financiero directo (coste de recuperación, perdida de ingresos), impacto regulatorio (sanciones, multas), impacto reputacional (perdida de confianza de clientes), impacto operativo (interrupción de servicios) e impacto legal (litigios, responsabilidades).
 
-### Paso 6: Evaluacion y priorizacion
+### Paso 6: Evaluación y priorización
 
-Una vez calculado el riesgo de cada escenario, se evalua comparandolo con los criterios de aceptacion de riesgo definidos por la organizacion. Los riesgos que superan el umbral de aceptacion requieren tratamiento; los que se situan por debajo pueden aceptarse formalmente.
+Una vez calculado el riesgo de cada escenario, se evalúa comparandolo con los criterios de aceptación de riesgo definidos por la organización. Los riesgos que superan el umbral de aceptación requieren tratamiento; los que se sitúan por debajo pueden aceptarse formalmente.
 
-La priorizacion ordena los riesgos de mayor a menor, permitiendo asignar recursos a los riesgos mas criticos primero. Una representacion visual mediante mapas de calor (heat maps) facilita la comunicacion de los resultados a la direccion.
+La priorización ordena los riesgos de mayor a menor, permitiendo asignar recursos a los riesgos más críticos primero. Una representación visual mediante mapas de calor (heat maps) facilita la comunicación de los resultados a la dirección.
 
 ### Paso 7: Tratamiento de riesgos
 
-Para cada riesgo que supera el umbral de aceptacion, se selecciona una estrategia de tratamiento:
+Para cada riesgo que supera el umbral de aceptación, se selecciona una estrategia de tratamiento:
 
-**Mitigar:** implementar controles de seguridad que reduzcan la probabilidad o el impacto. Es la opcion mas comun. Ejemplos: instalar un EDR, implementar MFA, realizar copias de seguridad cifradas.
+**Mitigar:** implementar controles de seguridad que reduzcan la probabilidad o el impacto. Es la opción más común. Ejemplos: instalar un EDR, implementar MFA, realizar copias de seguridad cifradas.
 
-**Transferir:** trasladar el riesgo a un tercero, tipicamente mediante un seguro cibernetico o la externalizacion del servicio a un proveedor especializado con SLAs definidos.
+**Transferir:** trasladar el riesgo a un tercero, tipicamente mediante un seguro cibernetico o la externalización del servicio a un proveedor especializado con SLAs definidos.
 
 **Evitar:** eliminar la actividad o el activo que genera el riesgo. Por ejemplo, dejar de almacenar datos que no son necesarios para el negocio.
 
-**Aceptar:** reconocer formalmente el riesgo sin tomar medidas adicionales. Solo es apropiado para riesgos que se situan dentro de la tolerancia definida por la direccion. La aceptacion debe documentarse con la aprobacion explicita de un responsable autorizado.
+**Aceptar:** reconocer formalmente el riesgo sin tomar medidas adicionales. Solo es apropiado para riesgos que se sitúan dentro de la tolerancia definida por la dirección. La aceptación debe documentarse con la aprobación explicita de un responsable autorizado.
 
-Para cada medida de mitigacion, se define un plan de implementacion con responsables, plazos, recursos necesarios y metricas de eficacia.
+Para cada medida de mitigación, se define un plan de implementación con responsables, plazos, recursos necesarios y métricas de eficacia.
 
-{{< cta type="tofu" text="Riskitera automatiza el analisis de riesgos con IA, mapeando amenazas a controles ENS e ISO 27001." label="Ver como funciona" >}}
+{{< cta type="tofu" text="Riskitera automatiza el análisis de riesgos con IA, mapeando amenazas a controles ENS e ISO 27001." label="Ver cómo funciona" >}}
 
-## Que herramientas se usan para el analisis de riesgos?
+## Qué herramientas se usan para el análisis de riesgos?
 
 ### PILAR
 
-Desarrollada por el CCN, PILAR es la herramienta de referencia para analisis MAGERIT. Soporta todo el proceso de analisis de riesgos, desde el inventario de activos hasta la generacion de informes, incluyendo los catalogos oficiales de amenazas y salvaguardas. Existe una version simplificada (microPILAR) para organizaciones pequenas.
+Desarrollada por el CCN, PILAR es la herramienta de referencia para análisis MAGERIT. Soporta todo el proceso de análisis de riesgos, desde el inventario de activos hasta la generación de informes, incluyendo los catálogos oficiales de amenazas y salvaguardas. Existe una versión simplificada (microPILAR) para organizaciones pequeñas.
 
 ### Herramientas comerciales
 
-Plataformas como Archer (RSA), ServiceNow GRC y OneTrust proporcionan modulos completos de gestion de riesgos con workflows automatizados, dashboards en tiempo real e integracion con otras funciones GRC. Riskitera automatiza el proceso de analisis de riesgos con inteligencia artificial, facilitando la identificacion de activos, la evaluacion de amenazas y la generacion de planes de tratamiento alineados con los requisitos normativos aplicables.
+Plataformas como Archer (RSA), ServiceNow GRC y OneTrust proporcionan modulos completos de gestión de riesgos con workflows automatizados, dashboards en tiempo real e integración con otras funciones GRC. Riskitera automatiza el proceso de análisis de riesgos con inteligencia artificial, facilitando la identificación de activos, la evaluación de amenazas y la generación de planes de tratamiento alineados con los requisitos normativos aplicables.
 
 ### Hojas de calculo
 
-Aunque no son ideales para analisis complejos, las hojas de calculo siguen siendo una herramienta valida para organizaciones pequenas que realizan su primer analisis de riesgos. Lo importante es que la herramienta no se convierta en un obstaculo para iniciar el proceso.
+Aunque no son ideales para análisis complejos, las hojas de calculo siguen siendo una herramienta válida para organizaciones pequeñas que realizan su primer análisis de riesgos. Lo importante es que la herramienta no se convierta en un obstáculo para iniciar el proceso.
 
-## Como se elabora un registro de riesgos?
+## Cómo se elabora un registro de riesgos?
 
-El registro de riesgos es el documento central que consolida los resultados del analisis. Cada entrada del registro debe incluir:
+El registro de riesgos es el documento central que consolida los resultados del análisis. Cada entrada del registro debe incluir:
 
-- Identificador unico del riesgo
-- Descripcion del escenario de riesgo
+- Identificador único del riesgo
+- Descripción del escenario de riesgo
 - Activos afectados
 - Amenaza y vulnerabilidad asociadas
-- Valoracion de probabilidad e impacto
+- Valoración de probabilidad e impacto
 - Nivel de riesgo inherente (antes de controles)
 - Controles existentes y su eficacia
-- Nivel de riesgo residual (despues de controles)
+- Nivel de riesgo residual (después de controles)
 - Estrategia de tratamiento seleccionada
 - Responsable del riesgo (risk owner)
 - Estado del plan de tratamiento
-- Fecha de la ultima revision
+- Fecha de la última revisión
 
 El registro de riesgos debe revisarse al menos trimestralmente y actualizarse ante cualquier cambio significativo en el entorno de amenazas, la infraestructura o los requisitos de negocio.
 
-## Cuales son los errores comunes en el analisis de riesgos?
+## Cuáles son los errores comunes en el análisis de riesgos?
 
-**Realizar el analisis una unica vez.** El analisis de riesgos es un proceso continuo, no un proyecto puntual. Los riesgos evolucionan constantemente y un analisis de hace dos anos puede estar completamente desactualizado.
+**Realizar el análisis una única vez.** El análisis de riesgos es un proceso continuo, no un proyecto puntual. Los riesgos evolucionan constantemente y un análisis de hace dos años puede estar completamente desactualizado.
 
-**Sobrevalorar los riesgos tecnologicos e infravalorar los organizativos.** Muchas organizaciones se centran en vulnerabilidades tecnicas y descuidan riesgos como la falta de concienciacion del personal, la ausencia de procedimientos de respuesta a incidentes o la dependencia de proveedores criticos sin controles contractuales.
+**Sobrevalorar los riesgos tecnológicos e infravalorar los organizativos.** Muchas organizaciones se centran en vulnerabilidades técnicas y descuidan riesgos como la falta de concienciación del personal, la ausencia de procedimientos de respuesta a incidentes o la dependencia de proveedores críticos sin controles contractuales.
 
-**No involucrar a los responsables de negocio.** El analisis de riesgos no es responsabilidad exclusiva del departamento de TI o seguridad. Los responsables de negocio deben participar en la valoracion de activos y en la definicion de la tolerancia al riesgo, ya que son quienes mejor comprenden el impacto real de un incidente en las operaciones.
+**No involucrar a los responsables de negocio.** El análisis de riesgos no es responsabilidad exclusiva del departamento de TI o seguridad. Los responsables de negocio deben participar en la valoración de activos y en la definición de la tolerancia al riesgo, ya que son quienes mejor comprenden el impacto real de un incidente en las operaciones.
 
-**Utilizar escalas de valoracion ambiguas.** Las escalas cualitativas deben estar claramente definidas con criterios objetivos. Si "probabilidad alta" significa cosas diferentes para cada evaluador, los resultados seran inconsistentes y poco fiables.
+**Utilizar escalas de valoración ambiguas.** Las escalas cualitativas deben estar claramente definidas con criterios objetivos. Si "probabilidad alta" significa cosas diferentes para cada evaluador, los resultados serán inconsistentes y poco fiables.
 
-**Ignorar el riesgo residual.** Tras implementar controles, siempre queda un riesgo residual que debe evaluarse y compararse con el umbral de aceptacion. Asumir que los controles eliminan el riesgo completamente es un error peligroso.
+**Ignorar el riesgo residual.** Tras implementar controles, siempre queda un riesgo residual que debe evaluarse y compararse con el umbral de aceptación. Asumir que los controles eliminan el riesgo completamente es un error peligroso.
 
-## Como hacer un analisis de riesgos eficaz?
+## Cómo hacer un análisis de riesgos eficaz?
 
-Empezar con lo critico. No intentes analizar todo a la vez. Identifica los 10 o 20 activos mas criticos y comienza por ellos. Un analisis profundo de los activos esenciales aporta mas valor que un analisis superficial de todo el inventario.
+Empezar con lo crítico. No intentes analizar todo a la vez. Identifica los 10 o 20 activos más críticos y comienza por ellos. Un análisis profundo de los activos esenciales aporta más valor que un análisis superficial de todo el inventario.
 
-Utilizar multiples fuentes de informacion. No te limites a entrevistas: complementa con escaneos tecnicos, revision de incidentes historicos, informes del sector y estadisticas de organismos como INCIBE y ENISA.
+Utilizar múltiples fuentes de información. No te límites a entrevistas: complementa con escaneos técnicos, revisión de incidentes históricos, informes del sector y estadisticas de organismos como INCIBE y ENISA.
 
-Documentar las asunciones. Toda valoracion de probabilidad e impacto implica asunciones. Documentarlas permite revisar y actualizar el analisis cuando la informacion disponible cambia.
+Documentar las asunciones. Toda valoración de probabilidad e impacto implica asunciones. Documentarlas permite revisar y actualizar el análisis cuando la información disponible cambia.
 
-Vincular riesgos con objetivos de negocio. Los riesgos que amenazan directamente los objetivos estrategicos de la organizacion deben recibir maxima atencion, independientemente de su naturaleza tecnica.
+Vincular riesgos con objetivos de negocio. Los riesgos que amenazan directamente los objetivos estratégicos de la organización deben recibir máxima atención, independientemente de su naturaleza técnica.
 
-Automatizar donde sea posible. El inventario de activos tecnologicos, el escaneo de vulnerabilidades y la monitorizacion de controles pueden automatizarse para mantener el analisis actualizado de forma continua.
+Automatizar donde sea posible. El inventario de activos tecnológicos, el escaneo de vulnerabilidades y la monitorización de controles pueden automatizarse para mantener el análisis actualizado de forma continua.
 
-{{< cta type="mofu" text="Simplifica tu proximo analisis de riesgos con una plataforma que integra MAGERIT, FAIR y registro de riesgos automatizado." >}}
+{{< cta type="mofu" text="Simplifica tu proximo análisis de riesgos con una plataforma que integra MAGERIT, FAIR y registro de riesgos automatizado." >}}
 
 ## Preguntas frecuentes
 
-### Cada cuanto debo actualizar el analisis de riesgos
+### Cada cuanto debo actualizar el análisis de riesgos
 
-El analisis de riesgos debe revisarse como minimo anualmente de forma completa. Ademas, debe actualizarse ante cambios significativos: incorporacion de nuevos sistemas o servicios, cambios en la normativa aplicable, incidentes de seguridad relevantes (propios o del sector), cambios organizativos importantes o resultados de auditorias. Las normas ISO 27001 y el ENS exigen la revision periodica del analisis de riesgos como requisito de cumplimiento.
+El análisis de riesgos debe revisarse como mínimo anualmente de forma completa. Además, debe actualizarse ante cambios significativos: incorporación de nuevos sistemas o servicios, cambios en la normativa aplicable, incidentes de seguridad relevantes (propios o del sector), cambios organizativos importantes o resultados de auditorías. Las normas ISO 27001 y el ENS exigen la revisión periódica del análisis de riesgos como requisito de cumplimiento.
 
-### Que metodologia es mejor para una pyme
+### Qué metodología es mejor para una pyme
 
-Para una pyme espanola, MAGERIT con la herramienta microPILAR es una opcion solida que facilita el cumplimiento del ENS si aplica. ISO 27005 es adecuada si la organizacion aspira a la certificacion ISO 27001. Para pymes que quieren un enfoque practico sin formalismos excesivos, el marco [NIST CSF](https://www.nist.gov/cyberframework) incluye una funcion de evaluacion de riesgos accesible. Lo importante no es elegir la metodologia perfecta sino comenzar el proceso con la que mejor se adapte a los recursos disponibles.
+Para una pyme española, MAGERIT con la herramienta microPILAR es una opción sólida que facilita el cumplimiento del ENS si aplica. ISO 27005 es adecuada si la organización aspira a la certificación ISO 27001. Para pymes que quieren un enfoque práctico sin formalismos excesivos, el marco [NIST CSF](https://www.nist.gov/cyberframework) incluye una función de evaluación de riesgos accesible. Lo importante no es elegir la metodología perfecta sino comenzar el proceso con la que mejor se adapte a los recursos disponibles.
 
-### Necesito un consultor externo para hacer el analisis de riesgos
+### Necesito un consultor externo para hacer el análisis de riesgos
 
-No es estrictamente necesario, pero es recomendable para organizaciones que realizan el analisis por primera vez o que carecen de personal con experiencia en gestion de riesgos. Un consultor externo aporta perspectiva independiente, conocimiento de mejores practicas y experiencia de otros sectores. En cualquier caso, el conocimiento interno de la organizacion es insustituible: el consultor facilita el proceso, pero los responsables de negocio y TI deben participar activamente.
+No es estrictamente necesario, pero es recomendable para organizaciones que realizan el análisis por primera vez o que carecen de personal con experiencia en gestión de riesgos. Un consultor externo aporta perspectiva independiente, conocimiento de mejores prácticas y experiencia de otros sectores. En cualquier caso, el conocimiento interno de la organización es insustituible: el consultor facilita el proceso, pero los responsables de negocio y TI deben participar activamente.
 
-### Como integro el analisis de riesgos con el cumplimiento normativo
+### Cómo integro el análisis de riesgos con el cumplimiento normativo
 
-El analisis de riesgos es el eje central que conecta todos los requisitos normativos. Las medidas de seguridad exigidas por el ENS, ISO 27001, NIS2 o RGPD deben ser proporcionales al riesgo identificado. Un analisis de riesgos bien realizado justifica las medidas implementadas, identifica las brechas de cumplimiento y prioriza las acciones correctivas. Es recomendable mapear los riesgos contra los requisitos de cada normativa aplicable para asegurar la cobertura completa.
+El análisis de riesgos es el eje central que conecta todos los requisitos normativos. Las medidas de seguridad exigidas por el ENS, ISO 27001, NIS2 o RGPD deben ser proporcionales al riesgo identificado. Un análisis de riesgos bien realizado justifica las medidas implementadas, identifica las brechas de cumplimiento y prioriza las acciones correctivas. Es recomendable mapear los riesgos contra los requisitos de cada normativa aplicable para asegurar la cobertura completa.
 
-### Que hago si la direccion no apoya el proceso de analisis de riesgos
+### Qué hago si la dirección no apoya el proceso de análisis de riesgos
 
-La clave es comunicar el valor en terminos de negocio, no en terminos tecnicos. Presenta datos concretos: el coste medio de una brecha de datos en el sector, las sanciones regulatorias aplicables, ejemplos de incidentes en organizaciones comparables y el coste de no actuar frente al coste de realizar el analisis. Los informes de INCIBE y ENISA proporcionan estadisticas que pueden utilizarse para este proposito. Si la organizacion esta sujeta a normativas que exigen el analisis de riesgos, el argumento regulatorio es adicional e ineludible.
+La clave es comunicar el valor en términos de negocio, no en términos técnicos. Presenta datos concretos: el coste medio de una brecha de datos en el sector, las sanciones regulatorias aplicables, ejemplos de incidentes en organizaciones comparables y el coste de no actuar frente al coste de realizar el análisis. Los informes de INCIBE y ENISA proporcionan estadisticas que pueden utilizarse para este propósito. Si la organización está sujeta a normativas que exigen el análisis de riesgos, el argumento regulatorio es adicional e ineludible.
