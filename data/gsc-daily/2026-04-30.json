@@ -1,0 +1,107 @@
+{
+  "fetched_at": "2026-04-30T12:34:36.129316",
+  "site_url": "sc-domain:riskitera.com",
+  "period": {
+    "start": "2026-04-20",
+    "end": "2026-04-27",
+    "days": 7
+  },
+  "top_queries": [],
+  "top_pages": [
+    {
+      "keys": [
+        "https://riskitera.com/"
+      ],
+      "clicks": 2,
+      "impressions": 2,
+      "ctr": 100,
+      "position": 1
+    },
+    {
+      "keys": [
+        "https://riskitera.com/en/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    }
+  ],
+  "daily_totals": {
+    "rows": [
+      {
+        "keys": [
+          "2026-04-20"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-04-21"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-04-22"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-04-23"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-04-24"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-04-25"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-04-26"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-04-27"
+        ],
+        "clicks": 2,
+        "impressions": 2,
+        "ctr": 100,
+        "position": 1
+      }
+    ]
+  },
+  "queries_by_page": []
+}
