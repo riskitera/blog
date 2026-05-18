@@ -63,7 +63,7 @@ El CCN-CERT pone a disposición de las administraciones públicas un ecosistema 
 
 **ANA (Análisis de Red Automatizado).** Herramienta de análisis de vulnerabilidades de red que el CCN ofrece como servicio a las administraciones públicas.
 
-{{< cta type="tofu" text="Riskitera mapea automaticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
+{{< cta type="tofu" text="Riskitera mapea automáticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
 
 ## Cómo categorizan los sistemas las administraciones públicas?
 
@@ -127,7 +127,7 @@ Los proveedores de servicios TIC de la administración pública tienen un papel 
 
 **Responsabilidad compartida.** El proveedor es responsable de la seguridad "del" servicio (infraestructura, plataforma) y la administración pública es responsable de la seguridad "en" el servicio (configuración, datos, accesos). Esta distinción es fuente frecuente de gaps de seguridad.
 
-**Auditorias a proveedores.** Las administraciones públicas tienen derecho a auditar a sus proveedores TIC en materia de seguridad. En la práctica, pocas lo ejercen por falta de recursos. DORA (para sector financiero) y NIS2 están elevando este estándar y es previsible que el ENS lo refuerce en futuras revisiones.
+**Auditorías a proveedores.** Las administraciones públicas tienen derecho a auditar a sus proveedores TIC en materia de seguridad. En la práctica, pocas lo ejercen por falta de recursos. DORA (para sector financiero) y NIS2 están elevando este estándar y es previsible que el ENS lo refuerce en futuras revisiones.
 
 ## Cómo afecta NIS2 a las administraciones públicas españolas?
 

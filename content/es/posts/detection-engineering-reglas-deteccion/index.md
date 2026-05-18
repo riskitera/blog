@@ -1,7 +1,7 @@
 ---
 title: "Detection Engineering: como construir reglas de detección que realmente funcionen"
-description: "Guía práctica de detection engineering: como disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciones."
-slug: "detection-engineering-reglas-deteccion"
+description: "Guía práctica de detection engineering: como disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciónes."
+slug: "detection-engineering-reglas-detección"
 date: 2026-06-02
 publishDate: 2026-06-02
 lastmod: 2026-06-02
@@ -13,21 +13,21 @@ keyword: "detection engineering"
 funnel: "mofu"
 ---
 
-Guía práctica de detection engineering: como disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciones.
+Guía práctica de detection engineering: como disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciónes.
 
 <!--more-->
 
 {{< key-takeaways >}}
-- Detection engineering aplica principios de ingenieria de software (versionado, testing, CI/CD) al ciclo de vida completo de las reglas de detección.
-- El ciclo de vida de una detección tiene cinco fases: hipotesis, escritura de regla, testing, despliegue y tuning continuo.
+- Detection engineering aplica principios de ingeniería de software (versionado, testing, CI/CD) al ciclo de vida completo de las reglas de detección.
+- El ciclo de vida de una detección tiene cinco fases: hipótesis, escritura de regla, testing, despliegue y tuning continuo.
 - La matriz de cobertura MITRE ATT&CK permite identificar gaps de visibilidad y priorizar donde invertir esfuerzo.
-- Atomic Red Team y DeTT&CT son herramientas clave para validar que las detecciones funcionan antes de llegar a producción.
+- Atomic Red Team y DeTT&CT son herramientas clave para validar que las detecciónes funcionan antes de llegar a producción.
 - Reducir falsos positivos no es opcional: un SOC saturado de ruido pierde la capacidad de detectar amenazas reales.
 {{< /key-takeaways >}}
 
 ## Qué es detection engineering
 
-Detection engineering es la disciplina que aplica principios de ingenieria de software al proceso de crear, mantener y mejorar reglas de detección en un centro de operaciones de seguridad (SOC). No se trata solo de escribir queries en un SIEM. Se trata de tratar las detecciones como código: versionado, testeado, desplegado de forma controlada y medido en producción.
+Detection engineering es la disciplina que aplica principios de ingeniería de software al proceso de crear, mantener y mejorar reglas de detección en un centro de operaciones de seguridad (SOC). No se trata solo de escribir queries en un SIEM. Se trata de tratar las detecciónes como código: versionado, testeado, desplegado de forma controlada y medido en producción.
 
 El término fue popularizado por [Jared Atkinson](https://posts.specterops.io/detection-spectrum-198a0bfb9302) y la comunidad de SpecterOps, aunque la práctica existe desde que los primeros equipos de seguridad se dieron cuenta de que copiar reglas de un foro y pegarlas en el SIEM no escalaba.
 
@@ -74,7 +74,7 @@ detections/
 
 ### Por que importa en 2026
 
-El volumen de telemetria que genera una organización media ha crecido exponencialmente. Un endpoint con EDR genera decenas de miles de eventos por día. Multiplicado por cientos o miles de endpoints, más logs de red, cloud, identidad y aplicaciones, el resultado es un flujo de datos que ningun equipo puede revisar manualmente.
+El volumen de telemetría que genera una organización media ha crecido exponencialmente. Un endpoint con EDR genera decenas de miles de eventos por día. Multiplicado por cientos o miles de endpoints, más logs de red, cloud, identidad y aplicaciones, el resultado es un flujo de datos que ningún equipo puede revisar manualmente.
 
 Sin detection engineering, los SOC caen en una de dos trampas: o tienen muy pocas reglas y dejan pasar amenazas reales, o tienen demasiadas reglas mal calibradas y ahogan a los analistas en falsos positivos. Ambas situaciones son peligrosas.
 
@@ -84,24 +84,24 @@ Cada regla de detección pasa por un ciclo de vida con cinco fases. Saltarse cua
 
 ### Fase 1: Hipotesis
 
-Todo empieza con una pregunta: "que comportamiento malicioso queremos detectar?". La hipotesis debe ser específica y basada en inteligencia de amenazas real.
+Todo empieza con una pregunta: "que comportamiento malicioso queremos detectar?". La hipótesis debe ser específica y basada en inteligencia de amenazas real.
 
-Ejemplos de hipotesis bien formuladas:
+Ejemplos de hipótesis bien formuladas:
 
 - "Un atacante que obtiene credenciales validas intentara acceder a múltiples sistemas en un periodo corto de tiempo usando RDP."
 - "Un atacante que establece persistencia en Windows creara una tarea programada con `schtasks.exe` apuntando a un ejecutable en una ruta no estándar."
 - "Un atacante que realiza movimiento lateral usara WMI para ejecutar comandos de forma remota."
 
-Ejemplos de hipotesis mal formuladas:
+Ejemplos de hipótesis mal formuladas:
 
 - "Detectar hackers." (demasiado vago)
 - "Alertar cuando haya actividad sospechosa." (sin criterio operativo)
 
-La hipotesis debe vincularse a una técnica de [MITRE ATT&CK](https://attack.mitre.org/) siempre que sea posible. Esto facilita medir la cobertura y comunicar el valor de la detección al resto de la organización.
+La hipótesis debe vincularse a una técnica de [MITRE ATT&CK](https://attack.mitre.org/) siempre que sea posible. Esto facilita medir la cobertura y comunicar el valor de la detección al resto de la organización.
 
 ### Fase 2: Escritura de la regla
 
-Con la hipotesis clara, el siguiente paso es escribir la regla. Esto implica definir:
+Con la hipótesis clara, el siguiente paso es escribir la regla. Esto implica definir:
 
 1. **Fuente de datos**: que logs necesitas (Windows Security Events, Sysmon, EDR telemetry, network flow, etc.).
 2. **Logica de detección**: las condiciones que deben cumplirse para que salte la alerta.
@@ -143,7 +143,7 @@ runbook: docs/runbooks/kerberoasting.md
 
 ### Fase 3: Testing
 
-Aqui es donde muchos equipos fallan. Escribir una regla sin testearla es como escribir código sin ejecutarlo. El testing de detecciones tiene dos dimensiones:
+Aquí es donde muchos equipos fallan. Escribir una regla sin testearla es como escribir código sin ejecutarlo. El testing de detecciónes tiene dos dimensiones:
 
 **Testing positivo**: verificar que la regla detecta el comportamiento malicioso. Para esto se usan herramientas como [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) que simulan técnicas de ataque de forma segura.
 
@@ -216,7 +216,7 @@ Una regla desplegada no es una regla terminada. El tuning es un proceso continuo
 
 - **Monitorizar la tasa de falsos positivos**: si supera un umbral (por ejemplo, 80%), la regla necesita ajuste.
 - **Revisar falsos negativos**: usar threat hunting y purple team exercises para descubrir qué se está escapando.
-- **Actualizar exclusiones**: anadir excepciones legitimas documentadas.
+- **Actualizar exclusiones**: añadir excepciones legitimas documentadas.
 - **Ajustar umbrales**: modificar conteos, ventanas temporales y condiciones según el entorno.
 
 ```yaml
@@ -235,7 +235,7 @@ La matriz de [MITRE ATT&CK](https://attack.mitre.org/) es el framework de refere
 
 ### Construir una matriz de cobertura
 
-Una matriz de cobertura es un documento que cruza las técnicas de ATT&CK con el estado actual de tus detecciones. Para cada técnica, se registra:
+Una matriz de cobertura es un documento que cruza las técnicas de ATT&CK con el estado actual de tus detecciónes. Para cada técnica, se registra:
 
 | Campo | Descripción |
 |-------|-------------|
@@ -252,7 +252,7 @@ Una matriz de cobertura es un documento que cruza las técnicas de ATT&CK con el
 [DeTT&CT](https://github.com/rabobank-cdc/DeTTECT) (Detect Tactics, Techniques & Combat Threats) es un framework open source creado por Rabobank que automatiza la creación de matrices de cobertura. Permite:
 
 - Definir la visibilidad de datos (que fuentes de logs tienes y con que calidad).
-- Mapear las detecciones existentes a técnicas ATT&CK.
+- Mapear las detecciónes existentes a técnicas ATT&CK.
 - Generar heatmaps visuales que muestran donde tienes cobertura y donde hay gaps.
 - Comparar tu cobertura contra grupos de amenazas específicos.
 
@@ -297,13 +297,13 @@ No tiene sentido intentar cubrir las 200+ técnicas de ATT&CK de golpe. La prior
 3. **Impacto potencial**: técnicas de exfiltración y ransomware suelen tener prioridad sobre técnicas de reconocimiento.
 4. **Viabilidad de detección**: algunas técnicas son inherentemente dificiles de detectar (ej. living-off-the-land). Empieza por las que puedes detectar con confianza.
 
-## Testing de detecciones con Atomic Red Team
+## Testing de detecciónes con Atomic Red Team
 
 [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) es un proyecto de Red Canary que proporciona tests atomicos mapeados a técnicas MITRE ATT&CK. Cada test es una simulación pequeña y autocontenida de una técnica de ataque que se puede ejecutar de forma segura en un entorno controlado.
 
 ### Por que Atomic Red Team
 
-La alternativa a Atomic Red Team es testear detecciones de forma manual, lo cual no escala. Con Atomic Red Team:
+La alternativa a Atomic Red Team es testear detecciónes de forma manual, lo cual no escala. Con Atomic Red Team:
 
 - Cada test esta mapeado a una técnica ATT&CK específica.
 - Los tests son reproducibles y automatizables.
@@ -372,7 +372,7 @@ def validate_detection(rule_name, siem_url, api_key, timeout=300):
 
 ### Limitaciones de Atomic Red Team
 
-Atomic Red Team es excelente para validaciones rapidas, pero tiene limitaciones:
+Atomic Red Team es excelente para validaciones rápidas, pero tiene limitaciones:
 
 - Los tests son atomicos (acciones individuales), no simulan cadenas de ataque completas.
 - Algunos tests requieren privilegios elevados o infraestructura específica.
@@ -424,7 +424,7 @@ exclusions:
 
 **3. Correlación temporal y por entidad**
 
-En lugar de alertar por un solo evento, correlaciona múltiples eventos en una ventana temporal agrupados por entidad (usuario, IP, hostname).
+En lugar de alertar por un solo evento, correlacióna múltiples eventos en una ventana temporal agrupados por entidad (usuario, IP, hostname).
 
 ```yaml
 # En lugar de alertar por cada login fallido...
@@ -458,7 +458,7 @@ alert_threshold: 70  # Solo alerta si score >= 70
 
 Implementa un sistema donde los analistas puedan marcar alertas como falsos positivos con un motivo estructurado. Usa esa información para ajustar las reglas automáticamente.
 
-### Metricas de falsos positivos
+### Métricas de falsos positivos
 
 Las métricas que debes monitorizar:
 
@@ -472,7 +472,7 @@ El Detection Maturity Model (DMM) es un framework para evaluar la madurez del pr
 
 ### Nivel 0: Reactivo
 
-- Las detecciones se crean solo después de un incidente.
+- Las detecciónes se crean solo después de un incidente.
 - No hay proceso formal de desarrollo de reglas.
 - Las reglas viven exclusivamente dentro del SIEM.
 - No hay testing ni validación.
@@ -486,7 +486,7 @@ El Detection Maturity Model (DMM) es un framework para evaluar la madurez del pr
 
 ### Nivel 2: Procedural
 
-- Las detecciones se gestionan como un proceso formal.
+- Las detecciónes se gestionan como un proceso formal.
 - Las reglas se almacenan en un repositorio centralizado.
 - Existe un proceso de review antes de desplegar.
 - Se mide la tasa de falsos positivos.
@@ -503,40 +503,40 @@ El Detection Maturity Model (DMM) es un framework para evaluar la madurez del pr
 
 ### Nivel 4: Proactivo y medido
 
-- Threat hunting continuo alimenta nuevas hipotesis de detección.
-- Metricas de calidad (FPR, MTTD, cobertura) en dashboards en tiempo real.
+- Threat hunting continuo alimenta nuevas hipótesis de detección.
+- Métricas de calidad (FPR, MTTD, cobertura) en dashboards en tiempo real.
 - Purple team exercises regulares para validar la efectividad.
-- Las detecciones se priorizan según threat intelligence del sector.
+- Las detecciónes se priorizan según threat intelligence del sector.
 - El programa de detección se reporta a nivel directivo con métricas de negocio.
 
 La mayoría de organizaciones están entre el nivel 0 y el nivel 2. Llegar al nivel 3 requiere inversión en tooling y procesos, pero el retorno es enorme en términos de eficacia del SOC.
 
-## Cómo medir la calidad de las detecciones
+## Cómo medir la calidad de las detecciónes
 
 No se puede mejorar lo que no se mide. Estas son las métricas clave para un programa de detection engineering:
 
-### Metricas de eficacia
+### Métricas de eficacia
 
-| Metrica | Descripción | Objetivo típico |
+| Métrica | Descripción | Objetivo típico |
 |---------|-------------|-----------------|
 | Mean Time to Detect (MTTD) | Tiempo desde el evento malicioso hasta la alerta | < 15 minutos |
-| Detection Coverage | Porcentaje de técnicas ATT&CK cubiertas | > 60% para tacticas críticas |
+| Detection Coverage | Porcentaje de técnicas ATT&CK cubiertas | > 60% para tácticas críticas |
 | True Positive Rate | Porcentaje de alertas que son verdaderos positivos | > 80% |
 | False Positive Rate | Porcentaje de alertas que son falsos positivos | < 20% |
 
-### Metricas operativas
+### Métricas operativas
 
-| Metrica | Descripción | Objetivo típico |
+| Métrica | Descripción | Objetivo típico |
 |---------|-------------|-----------------|
-| Rules in production | Numero total de reglas activas | Depende del entorno |
+| Rules in production | Número total de reglas activas | Depende del entorno |
 | Rules added per month | Velocidad de desarrollo | 5-15 por mes |
 | Rules tuned per month | Velocidad de mantenimiento | 10-20% del total/trimestre |
 | Alert volume per analyst | Carga de trabajo | < 50 por turno de 8h |
 | Stale rules | Reglas sin revisión en > 6 meses | 0 |
 
-### Metricas de proceso
+### Métricas de proceso
 
-| Metrica | Descripción | Objetivo típico |
+| Métrica | Descripción | Objetivo típico |
 |---------|-------------|-----------------|
 | Time from hypothesis to production | Velocidad del ciclo completo | < 2 semanas |
 | Code review turnaround | Tiempo de revisión de PRs | < 48 horas |
@@ -557,11 +557,11 @@ Un dashboard útil incluye:
 
 ### Para escribir y gestionar reglas
 
-- **[Sigma](https://github.com/SigmaHQ/sigma)**: formato portable de detecciones. Escribe una vez, convierte a cualquier SIEM.
-- **[Splunk Security Content](https://github.com/splunk/security_content)**: biblioteca de detecciones pre-escritas para Splunk.
+- **[Sigma](https://github.com/SigmaHQ/sigma)**: formato portable de detecciónes. Escribe una vez, convierte a cualquier SIEM.
+- **[Splunk Security Content](https://github.com/splunk/security_content)**: biblioteca de detecciónes pre-escritas para Splunk.
 - **[Elastic Detection Rules](https://github.com/elastic/detection-rules)**: repositorio oficial de reglas para Elastic Security.
 
-### Para testear detecciones
+### Para testear detecciónes
 
 - **[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)**: tests atomicos mapeados a ATT&CK.
 - **[MITRE Caldera](https://caldera.mitre.org/)**: plataforma de emulación de adversarios automatizada.
@@ -574,15 +574,15 @@ Un dashboard útil incluye:
 
 ### Para automatizar el pipeline
 
-- **GitHub Actions / GitLab CI**: para pipelines de CI/CD de detecciones.
+- **GitHub Actions / GitLab CI**: para pipelines de CI/CD de detecciónes.
 - **sigma-cli**: herramienta de línea de comandos para convertir y validar reglas Sigma.
 - **SOAR platforms**: para orquestar la respuesta automatizada cuando se activa una detección.
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana." label="Ver demo SOC" >}}
 
-## Ejemplo práctico: de hipotesis a producción
+## Ejemplo práctico: de hipótesis a producción
 
-Para aterrizar toda la teoria, veamos un ejemplo completo del ciclo de vida de una detección.
+Para aterrizar toda la teoría, veamos un ejemplo completo del ciclo de vida de una detección.
 
 ### Hipotesis
 
@@ -646,7 +646,7 @@ Get-WinEvent -FilterHashtable @{
 
 ### Resultado
 
-La regla se despliega en staging, se válida durante 48 horas (0 falsos positivos porque PsExec no se usa en el entorno controlado), y se promueve a producción. Se anade una exclusión documentada para el equipo de IT que usa PsExec para despliegues de software los martes y jueves entre las 10:00 y las 12:00.
+La regla se despliega en staging, se válida durante 48 horas (0 falsos positivos porque PsExec no se usa en el entorno controlado), y se promueve a producción. Se añade una exclusión documentada para el equipo de IT que usa PsExec para despliegues de software los martes y jueves entre las 10:00 y las 12:00.
 
 {{< cta type="bofu" text="Solicita una demo personalizada para tu SOC y descubre cómo Riskitera optimiza tus operaciones de detección con IA." label="Solicitar demo" >}}
 
@@ -659,7 +659,7 @@ La regla se despliega en staging, se válida durante 48 horas (0 falsos positivo
 
 ### Qué diferencia hay entre detection engineering y threat hunting?
 
-Detection engineering se centra en crear reglas automatizadas que alertan de comportamientos maliciosos conocidos o esperados. Threat hunting es una actividad proactiva donde un analista busca manualmente evidencia de amenazas que las reglas existentes no cubren. Son disciplinas complementarias: los hallazgos del threat hunting alimentan nuevas hipotesis de detección, y las reglas de detección liberan tiempo para que los hunters se centren en lo desconocido.
+Detection engineering se centra en crear reglas automatizadas que alertan de comportamientos maliciosos conocidos o esperados. Threat hunting es una actividad proactiva donde un analista busca manualmente evidencia de amenazas que las reglas existentes no cubren. Son disciplinas complementarias: los hallazgos del threat hunting alimentan nuevas hipótesis de detección, y las reglas de detección liberan tiempo para que los hunters se centren en lo desconocido.
 
 ### Cuánto tiempo se tarda en implementar un programa de detection engineering?
 
@@ -667,11 +667,11 @@ Depende del punto de partida. Un SOC que ya tiene reglas en un SIEM puede empeza
 
 ### Se puede hacer detection engineering sin un SIEM caro?
 
-Sí. El formato Sigma permite escribir detecciones portables que se pueden convertir a cualquier SIEM, incluyendo opciones open source como Wazuh, Graylog o OpenSearch. El repositorio Git, el pipeline de CI y herramientas como Atomic Red Team y DeTT&CT son gratuitas. Lo que necesitas es un equipo con conocimiento técnico y tiempo dedicado, no necesariamente un SIEM enterprise.
+Sí. El formato Sigma permite escribir detecciónes portables que se pueden convertir a cualquier SIEM, incluyendo opciones open source como Wazuh, Graylog o OpenSearch. El repositorio Git, el pipeline de CI y herramientas como Atomic Red Team y DeTT&CT son gratuitas. Lo que necesitas es un equipo con conocimiento técnico y tiempo dedicado, no necesariamente un SIEM enterprise.
 
 ### Cuantas reglas de detección debería tener un SOC?
 
-No hay un número magico. Más reglas no significa mejor detección. Un SOC con 50 reglas bien calibradas, testeadas y mantenidas es más efectivo que uno con 500 reglas sin mantener. Como referencia, un SOC maduro que cubre las tacticas críticas de ATT&CK (initial access, execution, persistence, credential access, lateral movement, exfiltration) suele tener entre 100 y 300 reglas activas en producción.
+No hay un número mágico. Más reglas no significa mejor detección. Un SOC con 50 reglas bien calibradas, testeadas y mantenidas es más efectivo que uno con 500 reglas sin mantener. Como referencia, un SOC maduro que cubre las tácticas críticas de ATT&CK (initial access, execution, persistence, credential access, lateral movement, exfiltration) suele tener entre 100 y 300 reglas activas en producción.
 
 ### Cómo convencer a la dirección de invertir en detection engineering?
 

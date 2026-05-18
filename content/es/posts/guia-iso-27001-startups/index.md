@@ -19,7 +19,7 @@ Muchas startups ven [ISO 27001](https://www.iso.org/standard/27001) como algo in
 {{< key-takeaways >}}
 - ISO 27001 es el estándar internacional de referencia para sistemas de gestión de seguridad de la información (SGSI)
 - La certificación demuestra a clientes y socios un compromiso verificable con la seguridad
-- Para startups, el enfoque pragmatico es priorizar los controles del Anexo A que aplican a su contexto
+- Para startups, el enfoque pragmático es priorizar los controles del Anexo A que aplican a su contexto
 - El coste de certificación para una pyme oscila entre 15.000 y 50.000 EUR (consultoría + auditoría)
 - El ENS español comparte muchos controles con ISO 27001, facilitando el cumplimiento cruzado
 {{< /key-takeaways >}}

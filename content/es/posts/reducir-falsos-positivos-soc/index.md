@@ -1,6 +1,6 @@
 ---
 title: "Como reducir falsos positivos en el SOC: técnicas reales que funcionan"
-description: "Tecnicas probadas para reducir falsos positivos en el SOC: tuning de reglas, enrichment automático, whitelisting inteligente, ML para clasificación y métricas de calidad."
+description: "Técnicas probadas para reducir falsos positivos en el SOC: tuning de reglas, enrichment automático, whitelisting inteligente, ML para clasificación y métricas de calidad."
 slug: "reducir-falsos-positivos-soc"
 date: 2026-06-16
 publishDate: 2026-06-16
@@ -13,13 +13,13 @@ keyword: "reducir falsos positivos SOC"
 funnel: "mofu"
 ---
 
-Tecnicas probadas para reducir falsos positivos en el SOC: tuning de reglas, enrichment automático, whitelisting inteligente, ML para clasificación y métricas de calidad.
+Técnicas probadas para reducir falsos positivos en el SOC: tuning de reglas, enrichment automático, whitelisting inteligente, ML para clasificación y métricas de calidad.
 
 <!--more-->
 
 {{< key-takeaways >}}
 - Los falsos positivos no son solo ruido: generan fatiga en los analistas, retrasan la detección de amenazas reales y aumentan el coste operativo del SOC.
-- Las causas raiz más comunes son reglas genericas sin contexto, falta de enrichment y umbrales estaticos que no reflejan el comportamiento normal del entorno.
+- Las causas raíz más comunes son reglas genéricas sin contexto, falta de enrichment y umbrales estáticos que no reflejan el comportamiento normal del entorno.
 - Un workflow sistemático de tuning (medir, priorizar, ajustar, validar, monitorizar) reduce el ratio de FP de forma sostenible sin crear puntos ciegos.
 - UEBA y machine learning complementan las reglas manuales al detectar anomalías basadas en líneas base de comportamiento real.
 - La métrica clave no es solo el ratio de falsos positivos, sino el Alert Fatigue Index y el tiempo medio de triage por alerta.
@@ -29,7 +29,7 @@ Tecnicas probadas para reducir falsos positivos en el SOC: tuning de reglas, enr
 
 Un falso positivo (FP) es una alerta que indica actividad maliciosa donde no la hay. Un login legítimo que se marca como sospechoso. Un escaneo de vulnerabilidades interno que dispara reglas de detección de intrusiones. Un backup nocturno que genera alertas de exfiltración de datos.
 
-En teoria, un falso positivo es solo una molestia menor: el analista lo revisa, lo descarta y sigue con su trabajo. En la práctica, el problema es de escala. Un SOC típico recibe entre 5.000 y 50.000 alertas diarias. Si el ratio de falsos positivos es del 80% (algo habitual en entornos mal tuneados), el analista esta dedicando la mayor parte de su jornada a descartar ruido.
+En teoría, un falso positivo es solo una molestia menor: el analista lo revisa, lo descarta y sigue con su trabajo. En la práctica, el problema es de escala. Un SOC típico recibe entre 5.000 y 50.000 alertas diarias. Si el ratio de falsos positivos es del 80% (algo habitual en entornos mal tuneados), el analista esta dedicando la mayor parte de su jornada a descartar ruido.
 
 ### El coste real de los falsos positivos
 
@@ -43,27 +43,27 @@ En teoria, un falso positivo es solo una molestia menor: el analista lo revisa, 
 
 ### El circulo vicioso
 
-Los falsos positivos generan un circulo vicioso: más FPs producen más fatiga, la fatiga produce menos investigación, menos investigación produce más alertas ignoradas, y alertas ignoradas producen brechas que retroalimentan la presión sobre el SOC. Romper este circulo es una de las tareas más importantes del equipo de detection engineering.
+Los falsos positivos generan un circulo vicioso: más FPs producen más fatiga, la fatiga produce menos investigación, menos investigación produce más alertas ignoradas, y alertas ignoradas producen brechas que retroalimentan la presión sobre el SOC. Romper este circulo es una de las táreas más importantes del equipo de detection engineering.
 
 ## Cuantos falsos positivos son normales?
 
 Antes de reducir falsos positivos, necesitas medirlos. Sin métricas, no sabes si estas mejorando ni donde enfocar el esfuerzo.
 
-### Metricas fundamentales
+### Métricas fundamentales
 
 **Ratio de falsos positivos (FP Rate).** Porcentaje de alertas que resultan ser falsas sobre el total de alertas generadas en un periodo. Formula: (Alertas FP / Total alertas) x 100. Un SOC maduro busca ratios por debajo del 50%. Los mejores equipos de detection engineering consiguen ratios del 20% al 30%.
 
-**Alert Fatigue Index (AFI).** Metrica compuesta que considera el volumen de alertas, el ratio de FP y el tiempo medio de triage. Un AFI alto indica que los analistas están sobrecargados de ruido. No existe un estándar universal, pero cualquier SOC debería definir su propio AFI y monitorizarlo semanalmente.
+**Alert Fatigue Index (AFI).** Métrica compuesta que considera el volumen de alertas, el ratio de FP y el tiempo medio de triage. Un AFI alto indica que los analistas están sobrecargados de ruido. No existe un estándar universal, pero cualquier SOC debería definir su propio AFI y monitorizarlo semanalmente.
 
 **Tiempo medio de triage por alerta.** Cuanto tarda un analista en determinar si una alerta es verdadera o falsa. Si el tiempo medio es inferior a 30 segundos, los analistas probablemente están cerrando alertas sin investigar. Si supera los 15 minutos, el enriquecimiento automático es insuficiente.
 
-**Ratio de alertas cerradas sin acción.** Porcentaje de alertas que se cierran como "no procede" o "informativo" sin generar un incidente. Este ratio correlaciona directamente con el volumen de FP.
+**Ratio de alertas cerradas sin acción.** Porcentaje de alertas que se cierran como "no procede" o "informativo" sin generar un incidente. Este ratio correlacióna directamente con el volumen de FP.
 
 **True Positive Rate por regla.** Desglosar el ratio de verdaderos positivos por cada regla de detección. Esto identifica las reglas que generan más ruido y permite priorizar el tuning.
 
 ### Benchmarks de referencia
 
-| Metrica | SOC inmaduro | SOC en mejora | SOC maduro |
+| Métrica | SOC inmaduro | SOC en mejora | SOC maduro |
 |---|---|---|---|
 | FP Rate | 70% a 90% | 40% a 60% | 20% a 35% |
 | Tiempo medio triage | <30s o >20min | 3 a 10 min | 2 a 5 min |
@@ -72,11 +72,11 @@ Antes de reducir falsos positivos, necesitas medirlos. Sin métricas, no sabes s
 
 Estos números son orientativos. Lo importante es establecer tu propia baseline y medir la tendencia.
 
-## Por que se generan falsos positivos: causas raiz
+## Por que se generan falsos positivos: causas raíz
 
 Entender por que se generan FPs es prerequisito para reducirlos. Las causas se agrupan en cuatro categorías.
 
-### 1. Reglas genericas sin contexto
+### 1. Reglas genéricas sin contexto
 
 La mayoría de las reglas de detección (Sigma, SIEM nativas, feeds de amenazas) se escriben para ser universales. Una regla que detecta "ejecución de PowerShell con parametro -EncodedCommand" es válida en general, pero en un entorno donde el equipo de IT usa scripts con parametros codificados como práctica habitual, generara FPs constantes.
 
@@ -86,13 +86,13 @@ El marco [MITRE ATT&CK](https://attack.mitre.org/) cataloga técnicas de ataque,
 
 Una alerta que dice "conexión a IP sospechosa desde host X" obliga al analista a investigar manualmente: que IP es, quien es el usuario de host X, que proceso genero la conexión, es un comportamiento habitual para ese usuario. Si este enrichment se hiciera automáticamente, muchas alertas se descartarian (o priorizarian) sin intervención humana.
 
-### 3. Umbrales estaticos
+### 3. Umbrales estáticos
 
-Reglas con umbrales fijos ("más de 5 intentos de login fallidos en 10 minutos") no se adaptan al comportamiento real. Un usuario que cambia de contrasena puede generar 5 fallos en un minuto. Un servidor de autenticación con cientos de usuarios puede recibir 5 fallos en 10 minutos como comportamiento normal. El umbral debería ser dinámico, basado en la línea base de cada entidad.
+Reglas con umbrales fijos ("más de 5 intentos de login fallidos en 10 minutos") no se adaptan al comportamiento real. Un usuario que cambia de contraseña puede generar 5 fallos en un minuto. Un servidor de autenticación con cientos de usuarios puede recibir 5 fallos en 10 minutos como comportamiento normal. El umbral debería ser dinámico, basado en la línea base de cada entidad.
 
 ### 4. Falta de correlación
 
-Una alerta aislada tiene menos valor que un patrón de alertas correlacionadas. "Login desde país inusual" por si solo puede ser un falso positivo (el usuario esta de viaje). "Login desde país inusual + acceso a datos sensibles + descarga masiva en 30 minutos" es un patrón que merece investigación inmediata. Sin correlación, cada alerta se evalúa en aislamiento, multiplicando los FPs.
+Una alerta aislada tiene menos valor que un patrón de alertas correlaciónadas. "Login desde país inusual" por si solo puede ser un falso positivo (el usuario esta de viaje). "Login desde país inusual + acceso a datos sensibles + descarga masiva en 30 minutos" es un patrón que merece investigación inmediata. Sin correlación, cada alerta se evalúa en aislamiento, multiplicando los FPs.
 
 ## Cómo hacer tuning de reglas de detección?
 
@@ -102,13 +102,13 @@ El tuning de reglas es el mecanismo principal para reducir falsos positivos. No 
 
 **Paso 1: Medir.** Exportar las alertas del último mes. Clasificarlas por regla, por severidad y por resultado (TP, FP, indeterminado). Ordenar por volumen de FP. Las 10 reglas con más FPs son tu punto de partida.
 
-**Paso 2: Analizar causa raiz.** Para cada regla problemática, revisar las alertas FP y determinar por que fallaron. Preguntas clave: el comportamiento detectado es legítimo en este entorno? Qué contexto falta para diferenciar uso legítimo de malicioso? El umbral es adecuado para la escala de este entorno?
+**Paso 2: Analizar causa raíz.** Para cada regla problemática, revisar las alertas FP y determinar por que fallaron. Preguntas clave: el comportamiento detectado es legítimo en este entorno? Qué contexto falta para diferenciar uso legítimo de malicioso? El umbral es adecuado para la escala de este entorno?
 
-**Paso 3: Disenar el ajuste.** Opciones disponibles:
+**Paso 3: Diseñar el ajuste.** Opciones disponibles:
 
-- **Anadir exclusiones específicas:** Excluir cuentas de servicio conocidas, IPs de infraestructura interna, procesos de mantenimiento programado.
+- **Añadir exclusiones específicas:** Excluir cuentas de servicio conocidas, IPs de infraestructura interna, procesos de mantenimiento programado.
 - **Ajustar umbrales:** Cambiar de valores fijos a valores basados en la línea base del entorno.
-- **Anadir condiciones de correlación:** En lugar de disparar con un evento aislado, requerir dos o más eventos correlacionados.
+- **Añadir condiciones de correlación:** En lugar de disparar con un evento aislado, requerir dos o más eventos correlaciónados.
 - **Cambiar severidad:** Si una regla genera muchos FPs pero los TPs son de bajo impacto, reducir la severidad para que no consuma atención de N1.
 - **Desactivar la regla:** Si una regla genera más ruido que valor y no se puede tunear de forma práctica, desactivarla es mejor que dejarla generando fatiga. Documentar la decisión y el riesgo aceptado.
 
@@ -120,14 +120,14 @@ El tuning de reglas es el mecanismo principal para reducir falsos positivos. No 
 
 **Regla original:** "Más de 5 intentos de login fallidos en 10 minutos para un mismo usuario."
 
-**Problema:** Genera 40 FPs diarios. Los usuarios olvidan contrasenas, las aplicaciones móviles reintentan con credenciales caducadas, los scripts automatizados usan tokens expirados.
+**Problema:** Genera 40 FPs diarios. Los usuarios olvidan contraseñas, las aplicaciones móviles reintentan con credenciales caducadas, los scripts automatizados usan tokens expirados.
 
-**Análisis:** Los FPs provienen de tres fuentes: cuentas de servicio (50%), usuarios con apps móviles desactualizadas (30%), usuarios legitimos que olvidan contrasenas (20%).
+**Análisis:** Los FPs provienen de tres fuentes: cuentas de servicio (50%), usuarios con apps móviles desactualizadas (30%), usuarios legitimos que olvidan contraseñas (20%).
 
 **Ajuste aplicado:**
 1. Excluir cuentas de servicio conocidas (lista mantenida en CMDB).
 2. Elevar el umbral a 15 intentos en 5 minutos para cuentas de usuario normales.
-3. Anadir correlación: disparar solo si los intentos fallidos van seguidos de un login exitoso desde una IP diferente (patrón real de brute force exitoso).
+3. Añadir correlación: disparar solo si los intentos fallidos van seguidos de un login exitoso desde una IP diferente (patrón real de brute force exitoso).
 4. Mantener el umbral original de 5 intentos para cuentas privilegiadas.
 
 **Resultado:** FPs reducidos de 40 a 3 diarios. TPs detectados: los mismos que antes.
@@ -136,7 +136,7 @@ El tuning de reglas es el mecanismo principal para reducir falsos positivos. No 
 
 ## Cómo usar enrichment automático para reducir ruido?
 
-El enrichment automático anade contexto a cada alerta antes de que llegue al analista. El objetivo es que el analista reciba una alerta con suficiente información para tomar una decisión rápida sin necesidad de investigación manual adicional.
+El enrichment automático añade contexto a cada alerta antes de que llegue al analista. El objetivo es que el analista reciba una alerta con suficiente información para tomar una decisión rápida sin necesidad de investigación manual adicional.
 
 ### Fuentes de enrichment
 
@@ -152,7 +152,7 @@ El enrichment automático anade contexto a cada alerta antes de que llegue al an
 
 **Contexto de usuario.**
 - Directorio activo: departamento, rol, grupo de permisos, manager.
-- Historico de comportamiento: horarios habituales de acceso, ubicaciones frecuentes, aplicaciones tipicas.
+- Historico de comportamiento: horarios habituales de acceso, ubicaciones frecuentes, aplicaciones típicas.
 - Estado de la cuenta: activa, suspendida, en proceso de offboarding.
 
 **Contexto de red.**
@@ -164,15 +164,15 @@ El enrichment automático anade contexto a cada alerta antes de que llegue al an
 
 El enrichment debe ejecutarse de forma automática entre el SIEM y el analista. Las dos arquitecturas más comunes:
 
-**Enrichment en ingesta:** El SIEM enriquece los eventos al recibirlos, antes de aplicar reglas. Ventaja: las reglas pueden usar campos enriquecidos en su lógica. Desventaja: anade latencia a la ingesta y coste de procesamiento para todos los eventos (incluyendo los que nunca generaran alertas).
+**Enrichment en ingesta:** El SIEM enriquece los eventos al recibirlos, antes de aplicar reglas. Ventaja: las reglas pueden usar campos enriquecidos en su lógica. Desventaja: añade latencia a la ingesta y coste de procesamiento para todos los eventos (incluyendo los que nunca generaran alertas).
 
-**Enrichment en alerta:** Un SOAR o pipeline de enrichment procesa solo las alertas generadas, anadiendo contexto antes de presentarlas al analista. Ventaja: procesa menos volumen. Desventaja: las reglas no pueden usar campos enriquecidos.
+**Enrichment en alerta:** Un SOAR o pipeline de enrichment procesa solo las alertas generadas, añadiendo contexto antes de presentarlas al analista. Ventaja: procesa menos volumen. Desventaja: las reglas no pueden usar campos enriquecidos.
 
 **Enfoque híbrido:** Enriquecer en ingesta los campos de bajo coste (GeoIP, CMDB lookup) y en alerta los de alto coste (consultas a APIs externas de CTI).
 
 ### Impacto medible
 
-Un SOC que implementa enrichment automático tipicamente reduce el tiempo medio de triage por alerta de 10 a 15 minutos a 2 a 4 minutos. No reduce directamente el número de FPs, pero permite descartarlos mucho más rápido y libera tiempo de analista para trabajar en mejora de reglas.
+Un SOC que implementa enrichment automático típicamente reduce el tiempo medio de triage por alerta de 10 a 15 minutos a 2 a 4 minutos. No reduce directamente el número de FPs, pero permite descartarlos mucho más rápido y libera tiempo de analista para trabajar en mejora de reglas.
 
 ## Qué es el whitelisting inteligente?
 
@@ -203,11 +203,11 @@ El whitelisting (listas de exclusión) es la herramienta más directa para reduc
 
 ## UEBA: líneas base de comportamiento para reducir falsos positivos
 
-UEBA (User and Entity Behavior Analytics) complementa las reglas estaticas con modelos de comportamiento que aprenden lo que es "normal" para cada usuario, dispositivo o servicio.
+UEBA (User and Entity Behavior Analytics) complementa las reglas estáticas con modelos de comportamiento que aprenden lo que es "normal" para cada usuario, dispositivo o servicio.
 
 ### Cómo funciona UEBA
 
-1. **Fase de aprendizaje (baselining).** Durante 2 a 4 semanas, el sistema observa el comportamiento de cada entidad: horarios de acceso, volumenes de datos transferidos, aplicaciones usadas, ubicaciones de conexión, patrones de autenticación.
+1. **Fase de aprendizaje (baselining).** Durante 2 a 4 semanas, el sistema observa el comportamiento de cada entidad: horarios de acceso, volúmenes de datos transferidos, aplicaciones usadas, ubicaciones de conexión, patrones de autenticación.
 
 2. **Fase de detección.** Una vez establecida la línea base, el sistema detecta desviaciones significativas. No busca patrones de ataque predefinidos, sino anomalías respecto al comportamiento histórico de esa entidad específica.
 
@@ -215,7 +215,7 @@ UEBA (User and Entity Behavior Analytics) complementa las reglas estaticas con m
 
 ### Ventaja para reducir FPs
 
-Las reglas estaticas generan FPs porque no distinguen contexto. "Login a las 3AM" es sospechoso para un empleado de oficina pero normal para un analista SOC de turno nocturno. Una regla estática necesita excepciones manuales. UEBA aprende automáticamente que el analista SOC accede a las 3AM y no genera alerta.
+Las reglas estáticas generan FPs porque no distinguen contexto. "Login a las 3AM" es sospechoso para un empleado de oficina pero normal para un analista SOC de turno nocturno. Una regla estática necesita excepciones manuales. UEBA aprende automáticamente que el analista SOC accede a las 3AM y no genera alerta.
 
 ### Limitaciones
 
@@ -226,21 +226,21 @@ Las reglas estaticas generan FPs porque no distinguen contexto. "Login a las 3AM
 
 ### UEBA y MITRE ATT&CK
 
-UEBA es especialmente efectivo para detectar técnicas de MITRE ATT&CK que son dificiles de detectar con reglas estaticas:
+UEBA es especialmente efectivo para detectar técnicas de MITRE ATT&CK que son dificiles de detectar con reglas estáticas:
 
-- **T1078 (Valid Accounts):** Uso de credenciales legitimas robadas. Las reglas estaticas no lo detectan porque el login es válido. UEBA detecta que el comportamiento post-login no coincide con el del usuario legítimo.
-- **T1071 (Application Layer Protocol):** Exfiltración por canales legitimos (HTTPS, DNS). Las reglas no pueden bloquear HTTPS. UEBA detecta volumenes o destinos anomalos.
+- **T1078 (Valid Accounts):** Uso de credenciales legitimas robadas. Las reglas estáticas no lo detectan porque el login es válido. UEBA detecta que el comportamiento post-login no coincide con el del usuario legítimo.
+- **T1071 (Application Layer Protocol):** Exfiltración por canales legitimos (HTTPS, DNS). Las reglas no pueden bloquear HTTPS. UEBA detecta volúmenes o destinos anómalos.
 - **T1560 (Archive Collected Data):** Compresión de datos antes de exfiltración. Regla estática: "alerta si se ejecuta 7zip". UEBA: "alerta si este usuario nunca usa 7zip y comprime 2GB en un directorio sensible".
 
 ## Cómo aplicar machine learning para clasificar alertas?
 
-Machine learning (ML) va un paso más allá de UEBA. En lugar de solo detectar anomalías, ML puede clasificar alertas como TP o FP basandose en patrones históricos, reduciendo la carga del analista.
+Machine learning (ML) va un paso más allá de UEBA. En lugar de solo detectar anomalías, ML puede clasificar alertas como TP o FP basándose en patrones históricos, reduciendo la carga del analista.
 
 ### Enfoques de ML para clasificación de alertas
 
-**Clasificación supervisada.** Se entrena un modelo con alertas históricas etiquetadas como TP o FP. El modelo aprende que combinaciones de features (tipo de alerta, criticidad del activo, hora, usuario, enrichment) predicen si una alerta es verdadera o falsa.
+**Clasificación supervisada.** Se entrena un modelo con alertas históricas etiquetadas como TP o FP. El modelo aprende que combinaciones de features (tipo de alerta, criticidad del activo, hora, usuario, enrichment) predicen sí una alerta es verdadera o falsa.
 
-Algoritmos tipicos: Random Forest, XGBoost, redes neuronales. El rendimiento depende más de la calidad de las features y el etiquetado que del algoritmo.
+Algoritmos típicos: Random Forest, XGBoost, redes neuronales. El rendimiento depende más de la calidad de las features y el etiquetado que del algoritmo.
 
 **Features relevantes para la clasificación:**
 - Tipo de regla que genero la alerta.
@@ -256,8 +256,8 @@ Algoritmos tipicos: Random Forest, XGBoost, redes neuronales. El rendimiento dep
 ### Workflow de ML en el SOC
 
 1. **Recolección de datos.** Exportar alertas de los últimos 6 a 12 meses con su clasificación final (TP/FP).
-2. **Ingenieria de features.** Construir las features relevantes a partir de los datos de la alerta, enrichment y contexto.
-3. **Entrenamiento y validación.** Entrenar el modelo con 70% de los datos, validar con 30%. Metrica clave: precisión en la clase FP (no queremos clasificar TPs como FPs).
+2. **Ingeniería de features.** Construir las features relevantes a partir de los datos de la alerta, enrichment y contexto.
+3. **Entrenamiento y validación.** Entrenar el modelo con 70% de los datos, validar con 30%. Métrica clave: precisión en la clase FP (no queremos clasificar TPs como FPs).
 4. **Despliegue.** El modelo clasifica nuevas alertas con una puntuación de probabilidad FP/TP.
 5. **Triage asistido.** Las alertas con alta probabilidad de FP se marcan para revisión rápida. Las de alta probabilidad de TP se priorizan. El analista sigue tomando la decisión final.
 6. **Retroalimentación.** Cada decisión del analista alimenta el modelo para mejorar iterativamente.
@@ -266,7 +266,7 @@ Algoritmos tipicos: Random Forest, XGBoost, redes neuronales. El rendimiento dep
 
 **Nunca automatizar el descarte de alertas.** El modelo asiste, no decide. Un FP clasificado incorrectamente como TP solo genera una investigación innecesaria. Un TP clasificado incorrectamente como FP puede ser una brecha que pasa desapercibida.
 
-**Monitorización de drift.** El comportamiento del entorno cambia (nuevas aplicaciones, nuevos usuarios, cambios de infraestructura). El modelo se degrada si no se reentrena periodicamente.
+**Monitorización de drift.** El comportamiento del entorno cambia (nuevas aplicaciones, nuevos usuarios, cambios de infraestructura). El modelo se degrada si no se reentrena periódicamente.
 
 **Transparencia.** El analista debe entender por que el modelo clasifica una alerta de cierta forma. Modelos de caja negra generan desconfianza. Usar modelos interpretables (Random Forest, SHAP explanations) cuando sea posible.
 
@@ -274,9 +274,9 @@ Algoritmos tipicos: Random Forest, XGBoost, redes neuronales. El rendimiento dep
 
 Sin métricas, no sabes si estas mejorando. Estas son las métricas que todo SOC debería trackear semanalmente.
 
-### Metricas de calidad de detección
+### Métricas de calidad de detección
 
-| Metrica | Descripción | Objetivo |
+| Métrica | Descripción | Objetivo |
 |---|---|---|
 | FP Rate global | % alertas falsas sobre total | <40% |
 | FP Rate por regla | % FPs de cada regla individual | Identificar top-10 peores |
@@ -286,9 +286,9 @@ Sin métricas, no sabes si estas mejorando. Estas son las métricas que todo SOC
 | Alertas/analista/turno | Carga de trabajo por analista | 30 a 80 |
 | Reglas sin tuning en 90d | % reglas que no han sido revisadas | <20% |
 
-### Metricas de impacto en operaciones
+### Métricas de impacto en operaciones
 
-| Metrica | Descripción | Objetivo |
+| Métrica | Descripción | Objetivo |
 |---|---|---|
 | MTTD (Mean Time to Detect) | Tiempo desde intrusión hasta primera alerta | <1 hora |
 | MTTR (Mean Time to Respond) | Tiempo desde alerta hasta contención | <4 horas |
@@ -326,7 +326,7 @@ Reuniendo todas las técnicas anteriores, este es el workflow que recomendamos p
 
 ### Mes 2: Correlación y UEBA
 
-- Convertir reglas de evento único en reglas correlacionadas donde sea posible.
+- Convertir reglas de evento único en reglas correlaciónadas donde sea posible.
 - Activar UEBA con periodo de aprendizaje de 4 semanas.
 - Continuar con las siguientes 10 reglas del ranking de FPs.
 
@@ -367,8 +367,8 @@ No. ML complementa el tuning manual, no lo reemplaza. El tuning manual corrige d
 
 ### Cómo evitar que el whitelisting cree puntos ciegos de seguridad?
 
-Tres medidas concretas. Primera: especificidad máxima en cada entrada (nunca "excluir todo el tráfico de IP X", sino condiciones combinadas de IP + puerto + proceso + ventana temporal). Segunda: expiración automática de cada entrada (30 a 90 días según el riesgo) con revisión obligatoria para renovar. Tercera: registro de auditoría inmutable de cada cambio en el whitelist (quien, cuando, por que, que riesgo acepta). Además, ejecutar ejercicios de red team periodicamente que incluyan escenarios que deberían ser detectados a pesar de los whitelists. Si el red team pasa desapercibido por una exclusión demasiado amplia, ajustar inmediatamente.
+Tres medidas concretas. Primera: especificidad máxima en cada entrada (nunca "excluir todo el tráfico de IP X", sino condiciones combinadas de IP + puerto + proceso + ventana temporal). Segunda: expiración automática de cada entrada (30 a 90 días según el riesgo) con revisión obligatoria para renovar. Tercera: registro de auditoría inmutable de cada cambio en el whitelist (quien, cuando, por que, que riesgo acepta). Además, ejecutar ejercicios de red team periódicamente que incluyan escenarios que deberían ser detectados a pesar de los whitelists. Si el red team pasa desapercibido por una exclusión demasiado amplia, ajustar inmediatamente.
 
 ### Qué herramientas open-source ayudan a reducir falsos positivos?
 
-Varias opciones cubren diferentes aspectos. Para detection engineering y reglas: Sigma (formato estándar de reglas) permite compartir y reutilizar reglas tuneadas por la comunidad. Para SIEM con capacidades de correlación: Wazuh (open-source, incluye HIDS, correlación básica y enrichment). Para enrichment de CTI: MISP (plataforma de inteligencia de amenazas) y OpenCTI (gestión de CTI con integraciones a MITRE ATT&CK). Para UEBA básico: Apache Spot o soluciones custom con Elasticsearch ML. Para orquestación y automatización: Shuffle SOAR (open-source, integrable con SIEM y fuentes de enrichment). El ecosistema open-source es sólido para SOCs que tienen equipo técnico para operar y mantener estas herramientas.
+Varias opciones cubren diferentes aspectos. Para detection engineering y reglas: Sigma (formato estándar de reglas) permite compartir y reutilizar reglas tuneadas por la comunidad. Para SIEM con capacidades de correlación: Wazuh (open-source, incluye HIDS, correlación básica y enrichment). Para enrichment de CTI: MISP (plataforma de inteligencia de amenazas) y OpenCTI (gestión de CTI con integraciónes a MITRE ATT&CK). Para UEBA básico: Apache Spot o soluciones custom con Elasticsearch ML. Para orquestación y automatización: Shuffle SOAR (open-source, integrable con SIEM y fuentes de enrichment). El ecosistema open-source es sólido para SOCs que tienen equipo técnico para operar y mantener estas herramientas.

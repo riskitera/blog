@@ -1,7 +1,7 @@
 ---
-title: "MITRE ATT&CK en el SOC: mapping de técnicas a detecciones reales"
-description: "Como mapear técnicas MITRE ATT&CK a detecciones operativas en el SOC: cobertura de la matriz, priorizar técnicas, crear dashboards y medir gaps de detección en tiempo real."
-slug: "mitre-attack-soc-mapping-detecciones"
+title: "MITRE ATT&CK en el SOC: mapping de técnicas a detecciónes reales"
+description: "Como mapear técnicas MITRE ATT&CK a detecciónes operativas en el SOC: cobertura de la matriz, priorizar técnicas, crear dashboards y medir gaps de detección en tiempo real."
+slug: "mitre-attack-soc-mapping-detecciónes"
 date: 2026-06-06
 publishDate: 2026-06-06
 lastmod: 2026-06-06
@@ -13,38 +13,38 @@ keyword: "MITRE ATT&CK SOC"
 funnel: "mofu"
 ---
 
-Como mapear técnicas MITRE ATT&CK a detecciones operativas en el SOC: cobertura de la matriz, priorizar técnicas, crear dashboards y medir gaps de detección en tiempo real.
+Como mapear técnicas MITRE ATT&CK a detecciónes operativas en el SOC: cobertura de la matriz, priorizar técnicas, crear dashboards y medir gaps de detección en tiempo real.
 
 <!--more-->
 
 {{< key-takeaways >}}
-- El mapping de técnicas ATT&CK a detecciones reales permite medir objetivamente la cobertura defensiva del SOC y justificar inversiones ante dirección.
+- El mapping de técnicas ATT&CK a detecciónes reales permite medir objetivamente la cobertura defensiva del SOC y justificar inversiones ante dirección.
 - ATT&CK Navigator genera heatmaps visuales que identifican gaps críticos en segundos, priorizando donde invertir esfuerzo en detection engineering.
 - Las técnicas T1078 (Valid Accounts), T1059 (Command and Scripting Interpreter), T1021 (Remote Services) y T1110 (Brute Force) son prioridad absoluta para SOCs en España por su uso frecuente en campañas APT dirigidas.
 - La metodología DeTT&CT estructura todo el proceso: desde inventariar fuentes de datos hasta puntuar la calidad de cada detección por técnica.
-- Las reglas Sigma permiten escribir detecciones una sola vez y desplegarlas en cualquier SIEM, acelerando el time-to-detect de semanas a horas.
+- Las reglas Sigma permiten escribir detecciónes una sola vez y desplegarlas en cualquier SIEM, acelerando el time-to-detect de semanas a horas.
 {{< /key-takeaways >}}
 
-## Por que mapear detecciones a MITRE ATT&CK cambia las reglas del juego
+## Por que mapear detecciónes a MITRE ATT&CK cambia las reglas del juego
 
-La mayoría de los SOC operan con un conjunto de reglas de detección heredadas que nadie sabe exactamente que cubren. Se anaden alertas cuando ocurre un incidente, se copian reglas de repositorios públicos y, con el tiempo, se acumula un inventario de detecciones sin estructura ni priorización. El resultado: falsa sensación de seguridad.
+La mayoría de los SOC operan con un conjunto de reglas de detección heredadas que nadie sabe exactamente que cubren. Se añaden alertas cuando ocurre un incidente, se copian reglas de repositorios públicos y, con el tiempo, se acumula un inventario de detecciónes sin estructura ni priorización. El resultado: falsa sensación de seguridad.
 
-[MITRE ATT&CK](https://attack.mitre.org/) resuelve este problema proporcionando un lenguaje común para catalogar comportamientos adversarios. No es una lista de vulnerabilidades ni un framework de compliance. Es un catálogo de tacticas, técnicas y procedimientos (TTPs) observados en ataques reales, organizado en una matriz que cubre desde el acceso inicial hasta la exfiltración de datos.
+[MITRE ATT&CK](https://attack.mitre.org/) resuelve este problema proporcionando un lenguaje común para catalogar comportamientos adversarios. No es una lista de vulnerabilidades ni un framework de compliance. Es un catálogo de tácticas, técnicas y procedimientos (TTPs) observados en ataques reales, organizado en una matriz que cubre desde el acceso inicial hasta la exfiltración de datos.
 
-Cuando mapeas tus detecciones existentes a técnicas ATT&CK, obtienes algo que antes no tenias: **una foto objetiva de lo que detectas y lo que no**. Esa visibilidad transforma la forma de operar del SOC:
+Cuando mapeas tus detecciónes existentes a técnicas ATT&CK, obtienes algo que antes no tenias: **una foto objetiva de lo que detectas y lo que no**. Esa visibilidad transforma la forma de operar del SOC:
 
 - **Priorización basada en evidencia.** En lugar de decidir qué regla escribir a continuación por intuición, priorizas las técnicas que usan los actores de amenaza relevantes para tu sector y geografia.
-- **Comunicación con dirección.** Un heatmap de ATT&CK Navigator es mucho más convincente que una hoja de calculo con 500 reglas de correlación. Dirección entiende rojo (gap) y verde (cubierto).
+- **Comunicación con dirección.** Un heatmap de ATT&CK Navigator es mucho más convincente que una hoja de cálculo con 500 reglas de correlación. Dirección entiende rojo (gap) y verde (cubierto).
 - **Medición de progreso.** Puedes medir trimestralmente como evoluciona tu cobertura. Si en Q1 cubrias el 35% de las técnicas de Initial Access y en Q3 llegas al 70%, tienes una métrica tangible.
 - **Detección de redundancias.** Muchos SOC tienen 15 reglas para detectar port scanning y cero reglas para lateral movement vía WMI. El mapping revela esos desequilibrios.
 
-El mapping no es un ejercicio teorico ni un proyecto de un mes. Es un proceso continuo que se integra en el flujo de trabajo diario del equipo de detection engineering.
+El mapping no es un ejercicio teórico ni un proyecto de un mes. Es un proceso continuo que se integra en el flujo de trabajo diario del equipo de detection engineering.
 
-## Cómo se mapean detecciones a MITRE ATT&CK paso a paso
+## Cómo se mapean detecciónes a MITRE ATT&CK paso a paso
 
 El proceso de mapping tiene cinco fases. Cada una genera un artefacto que alimenta la siguiente.
 
-### Fase 1: Inventariar detecciones existentes
+### Fase 1: Inventariar detecciónes existentes
 
 Antes de mapear necesitas saber qué tienes. Exporta todas las reglas activas de tu SIEM (Splunk, Elastic, Sentinel, QRadar) y clasifica cada una con estos campos mínimos:
 
@@ -58,7 +58,7 @@ Un SOC típico de tamaño medio tiene entre 200 y 800 reglas activas. No te preo
 
 ### Fase 2: Asignar técnicas ATT&CK
 
-Para cada regla, identifica la técnica o sub-técnica ATT&CK que mejor describe el comportamiento detectado. Algunas reglas mapearan directamente a una técnica (una regla que detecta `mimikatz` mapea a T1003.001, OS Credential Dumping: LSASS Memory). Otras serán ambiguas o cubriran múltiples técnicas.
+Para cada regla, identifica la técnica o sub-técnica ATT&CK que mejor describe el comportamiento detectado. Algunas reglas mapearán directamente a una técnica (una regla que detecta `mimikatz` mapea a T1003.001, OS Credential Dumping: LSASS Memory). Otras serán ambiguas o cubriran múltiples técnicas.
 
 Reglas prácticas para el mapping:
 
@@ -68,12 +68,12 @@ Reglas prácticas para el mapping:
 
 ### Fase 3: Evaluar calidad de la detección
 
-No todas las detecciones son iguales. Una regla que busca el string "mimikatz" en la línea de comandos es trivial de evadir. Una regla que detecta accesos sospechosos a LSASS basandose en la secuencia de API calls es mucho más robusta. La metodología DeTT&CT (que veremos en detalle más adelante) propone una escala del 0 al 5:
+No todas las detecciónes son iguales. Una regla que busca el string "mimikatz" en la línea de comandos es trivial de evadir. Una regla que detecta accesos sospechosos a LSASS basándose en la secuencia de API calls es mucho más robusta. La metodología DeTT&CT (que veremos en detalle más adelante) propone una escala del 0 al 5:
 
 | Puntuación | Significado |
 |---|---|
 | 0 | Sin detección |
-| 1 | Básica: busqueda de strings o hashes conocidos |
+| 1 | Básica: búsqueda de strings o hashes conocidos |
 | 2 | Justa: correlación simple de eventos |
 | 3 | Buena: lógica multi-evento con contexto |
 | 4 | Muy buena: detección de comportamiento resiliente a evasión básica |
@@ -81,14 +81,14 @@ No todas las detecciones son iguales. Una regla que busca el string "mimikatz" e
 
 ### Fase 4: Cargar en ATT&CK Navigator
 
-[ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/) es la herramienta visual oficial de MITRE para trabajar con la matriz. Permite crear capas (layers) que colorean cada técnica según un valor numerico. El flujo es:
+[ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/) es la herramienta visual oficial de MITRE para trabajar con la matriz. Permite crear capas (layers) que colorean cada técnica según un valor numérico. El flujo es:
 
 1. **Crear una nueva capa** seleccionando la versión de ATT&CK y la plataforma (Enterprise, Mobile, ICS).
-2. **Asignar scores** a cada técnica basandote en tu inventario. Score 0 para técnicas sin cobertura, 1-5 según la calidad de la detección.
+2. **Asignar scores** a cada técnica basándote en tu inventario. Score 0 para técnicas sin cobertura, 1-5 según la calidad de la detección.
 3. **Configurar gradiente de colores.** Rojo para scores bajos, amarillo para medios, verde para altos. El resultado es un heatmap inmediato de tu postura defensiva.
 4. **Exportar como JSON.** El formato JSON permite versionar las capas en Git, comparar entre trimestres y automatizar la actualización.
 
-Un ejemplo práctico: si tu SOC tiene 50 reglas mapeadas y cubren 35 de las 201 técnicas de Enterprise ATT&CK v16, el heatmap mostrara un 83% de la matriz en rojo. Esa imagen vale más que cualquier informe de 50 páginas.
+Un ejemplo práctico: si tu SOC tiene 50 reglas mapeadas y cubren 35 de las 201 técnicas de Enterprise ATT&CK v16, el heatmap mostrará un 83% de la matriz en rojo. Esa imagen vale más que cualquier informe de 50 páginas.
 
 ### Fase 5: Iterar y mantener
 
@@ -102,10 +102,10 @@ La matriz ATT&CK Enterprise v16 tiene más de 200 técnicas y 680 sub-técnicas.
 
 Los grupos APT que han dirigido campañas contra organizaciones españolas en los últimos años incluyen:
 
-- **APT28 (Fancy Bear / Sofacy).** Activo contra gobiernos europeos, defensa y think tanks. Tecnicas prioritarias: T1566.001 (Spearphishing Attachment), T1059.001 (PowerShell), T1078 (Valid Accounts), T1071.001 (Web Protocols para C2).
+- **APT28 (Fancy Bear / Sofacy).** Activo contra gobiernos europeos, defensa y think tanks. Técnicas prioritarias: T1566.001 (Spearphishing Attachment), T1059.001 (PowerShell), T1078 (Valid Accounts), T1071.001 (Web Protocols para C2).
 - **APT29 (Cozy Bear).** Enfocado en sectores gubernamentales y diplomaticos. Destaca por T1195.002 (Supply Chain Compromise vía software), T1036 (Masquerading) y T1070 (Indicator Removal).
-- **Grupos de ransomware (Lockbit, BlackCat/ALPHV, Cl0p).** Afectan a empresas españolas de todos los tamaños. Tecnicas críticas: T1486 (Data Encrypted for Impact), T1021.002 (SMB/Windows Admin Shares), T1110 (Brute Force), T1078 (Valid Accounts).
-- **Actores de ciberespionaje vinculados a China (APT31, Mustang Panda).** Con interes en propiedad intelectual europea. Usan T1059.005 (Visual Basic), T1547.001 (Registry Run Keys) y T1041 (Exfiltration Over C2 Channel).
+- **Grupos de ransomware (Lockbit, BlackCat/ALPHV, Cl0p).** Afectan a empresas españolas de todos los tamaños. Técnicas críticas: T1486 (Data Encrypted for Impact), T1021.002 (SMB/Windows Admin Shares), T1110 (Brute Force), T1078 (Valid Accounts).
+- **Actores de ciberespionaje vinculados a China (APT31, Mustang Panda).** Con interés en propiedad intelectual europea. Usan T1059.005 (Visual Basic), T1547.001 (Registry Run Keys) y T1041 (Exfiltration Over C2 Channel).
 
 La recomendación práctica: cruza los reportes de [CCN-CERT](https://www.ccn-cert.cni.es/) sobre amenazas nacionales con los perfiles de grupos en ATT&CK para obtener tu lista priorizada de técnicas.
 
@@ -113,7 +113,7 @@ La recomendación práctica: cruza los reportes de [CCN-CERT](https://www.ccn-ce
 
 Independientemente de tu sector, estas cuatro técnicas aparecen en la gran mayoría de intrusiones reales reportadas en España:
 
-**T1078: Valid Accounts.** El uso de credenciales legitimas robadas es la vía de entrada más común. No genera alertas de exploit ni tráfico anomalo porque el atacante "es" un usuario válido. Detecciones clave:
+**T1078: Valid Accounts.** El uso de credenciales legitimas robadas es la vía de entrada más común. No genera alertas de exploit ni tráfico anómalo porque el atacante "es" un usuario válido. Detecciones clave:
 
 - Login desde geolocalizaciones imposibles (impossible travel).
 - Login fuera de horario habitual del usuario.
@@ -135,8 +135,8 @@ Independientemente de tu sector, estas cuatro técnicas aparecen en la gran mayo
 **T1110: Brute Force.** Los ataques de fuerza bruta contra servicios expuestos (RDP, VPN, OWA, SSH) siguen siendo efectivos porque muchas organizaciones no implementan bloqueo de cuentas o MFA. Detecciones:
 
 - Más de N intentos fallidos en ventana de M minutos desde una misma IP.
-- Patron de password spraying: un intento por cuenta con la misma contrasena.
-- Incremento anomalo de eventos 4625 (Windows) o auth failures en VPN.
+- Patron de password spraying: un intento por cuenta con la misma contraseña.
+- Incremento anómalo de eventos 4625 (Windows) o auth failures en VPN.
 
 ## Cómo escribir reglas de detección por técnica con Sigma
 
@@ -176,7 +176,7 @@ falsepositives:
 level: high
 ```
 
-Los campos clave para el mapping ATT&CK son los **tags**. El prefijo `attack.` seguido de la tactica (execution) y la técnica (t1059.001) vincula la regla directamente con la matriz.
+Los campos clave para el mapping ATT&CK son los **tags**. El prefijo `attack.` seguido de la táctica (execution) y la técnica (t1059.001) vincula la regla directamente con la matriz.
 
 ### Ejemplo: regla para T1078 (Valid Accounts, impossible travel)
 
@@ -203,7 +203,7 @@ detection:
 level: high
 ```
 
-Esta regla es conceptual (la lógica real de impossible travel requiere calculo de distancia y velocidad), pero ilustra como vincular una detección operativa con una técnica ATT&CK específica.
+Esta regla es conceptual (la lógica real de impossible travel requiere cálculo de distancia y velocidad), pero ilustra como vincular una detección operativa con una técnica ATT&CK específica.
 
 ### Ejemplo: regla para T1110 (Brute Force)
 
@@ -212,7 +212,7 @@ title: Password Spraying contra Active Directory
 id: b2c3d4e5-6789-01ab-cdef-234567890abc
 status: experimental
 description: >
-  Detecta intentos de password spraying: misma contrasena
+  Detecta intentos de password spraying: misma contraseña
   probada contra múltiples cuentas en ventana corta.
 tags:
   - attack.credential_access
@@ -248,11 +248,11 @@ sigma convert -t microsoft365defender regla.yml
 
 ## La metodología DeTT&CT: estructura profesional para el mapping
 
-DeTT&CT (Detect Tactics, Techniques & Combat Threats) es una metodología creada por Marcus Bakker y Ruben Bouman que formaliza todo el proceso de mapping de detecciones a ATT&CK. Se compone de dos pilares:
+DeTT&CT (Detect Tactics, Techniques & Combat Threats) es una metodología creada por Marcus Bakker y Ruben Bouman que formaliza todo el proceso de mapping de detecciónes a ATT&CK. Se compone de dos pilares:
 
 ### Pilar 1: Data Source Assessment
 
-Antes de hablar de detecciones, DeTT&CT te obliga a responder: **que datos tienes realmente disponibles?** Porque no puedes detectar ejecución de PowerShell si no recoges los Event IDs adecuados (4103, 4104 para Script Block Logging).
+Antes de hablar de detecciónes, DeTT&CT te obliga a responder: **que datos tienes realmente disponibles?** Porque no puedes detectar ejecución de PowerShell si no recoges los Event IDs adecuados (4103, 4104 para Script Block Logging).
 
 El data source assessment asigna a cada fuente de datos una puntuación de calidad:
 
@@ -269,23 +269,23 @@ Ejemplo: si recoges Windows Security Event Logs pero solo tienes habilitados los
 
 ### Pilar 2: Detection Assessment
 
-Una vez sabes que datos tienes, evaluas la calidad de las detecciones que has construido sobre esos datos. DeTT&CT usa la misma escala del 0 al 5 descrita anteriormente, pero anade dos dimensiones:
+Una vez sabes que datos tienes, evalúas la calidad de las detecciónes que has construido sobre esos datos. DeTT&CT usa la misma escala del 0 al 5 descrita anteriormente, pero añade dos dimensiones:
 
 - **Detection score.** Calidad técnica de la regla (de string matching básico a detección comportamental).
 - **Detection applicability.** Cobertura dentro de la técnica. Una técnica como T1059 tiene 8 sub-técnicas. Si solo detectas T1059.001 (PowerShell), tu applicability es parcial.
 
 ### Workflow DeTT&CT completo
 
-1. **Crear el fichero YAML de data sources.** Lista todas tus fuentes de telemetria con su score de calidad.
-2. **Crear el fichero YAML de detecciones.** Lista todas tus reglas con su score de calidad y las técnicas mapeadas.
+1. **Crear el fichero YAML de data sources.** Lista todas tus fuentes de telemetría con su score de calidad.
+2. **Crear el fichero YAML de detecciónes.** Lista todas tus reglas con su score de calidad y las técnicas mapeadas.
 3. **Ejecutar las herramientas DeTT&CT.** El framework genera automáticamente las capas de ATT&CK Navigator combinando ambos ficheros.
-4. **Generar el gap analysis.** La superposición de la capa de data sources y la capa de detecciones revela donde tienes datos pero no detecciones (oportunidad rápida) y donde no tienes ni datos (requiere despliegue de nueva telemetria).
+4. **Generar el gap analysis.** La superposición de la capa de data sources y la capa de detecciónes revela donde tienes datos pero no detecciónes (oportunidad rápida) y donde no tienes ni datos (requiere despliegue de nueva telemetría).
 
 El resultado son tres capas de Navigator:
 
 - **Capa de visibilidad (data sources).** Que técnicas podrias detectar con los datos que ya tienes.
 - **Capa de detección.** Que técnicas detectas realmente con tus reglas actuales.
-- **Capa de gap.** La diferencia entre ambas. Esta es la capa más valiosa: muestra el "low hanging fruit" (técnicas donde tienes datos pero no has escrito detecciones).
+- **Capa de gap.** La diferencia entre ambas. Esta es la capa más valiosa: muestra el "low hanging fruit" (técnicas donde tienes datos pero no has escrito detecciónes).
 
 ## Cómo crear un dashboard de cobertura ATT&CK
 
@@ -299,11 +299,11 @@ El dashboard necesita tres componentes:
 2. **Script de sincronización.** Un proceso automático que lee las reglas activas del SIEM vía API, cruza con la base de datos de mapping y calcula los scores actuales.
 3. **Visualización.** Grafana, Kibana o cualquier herramienta de dashboarding que consuma los datos calculados.
 
-### Metricas esenciales del dashboard
+### Métricas esenciales del dashboard
 
 El dashboard debe responder a estas preguntas con un vistazo:
 
-- **Cobertura por tactica.** Porcentaje de técnicas cubiertas en cada tactica (Initial Access, Execution, Persistence, etc.). Grafico de barras horizontal.
+- **Cobertura por tactica.** Porcentaje de técnicas cubiertas en cada táctica (Initial Access, Execution, Persistence, etc.). Grafico de barras horizontal.
 - **Cobertura por actor.** Si tu threat profile incluye APT28 y Lockbit, muestra el porcentaje de sus técnicas favoritas que cubres. Grafico radar.
 - **Evolución temporal.** Como ha cambiado la cobertura en los últimos 6-12 meses. Linea temporal por tactica.
 - **Top gaps.** Las 10 técnicas con score 0 que más actores relevantes usan. Tabla priorizada.
@@ -337,21 +337,21 @@ No todos los gaps son iguales. Un gap en T1486 (Data Encrypted for Impact, ranso
 
 1. **Prevalencia en actores relevantes.** Cuantos de tus threat actors priorizados usan esta técnica? Si la usan 3 de 4, prioridad alta.
 2. **Impacto potencial.** Que pasa si esta técnica se ejecuta sin detectar? Un T1486 sin detectar significa ransomware desplegado. Un T1087 (Account Discovery) sin detectar es grave pero no catastrófico por si solo.
-3. **Disponibilidad de datos.** Tienes la telemetria necesaria? Si necesitas Sysmon y no lo tienes desplegado, el gap es más costoso de cerrar.
-4. **Existencia de reglas públicas.** Hay reglas Sigma o detecciones de tu vendor que puedas adaptar? Si si, el coste de cierre es bajo.
+3. **Disponibilidad de datos.** Tienes la telemetría necesaria? Si necesitas Sysmon y no lo tienes desplegado, el gap es más costoso de cerrar.
+4. **Existencia de reglas públicas.** Hay reglas Sigma o detecciónes de tu vendor que puedas adaptar? Si si, el coste de cierre es bajo.
 
 ### Proceso de cierre de un gap
 
 Para cada gap priorizado:
 
-1. **Verificar data sources.** Confirmar que la telemetria llega al SIEM, esta parseada y es de calidad suficiente.
-2. **Buscar reglas existentes.** Revisar el repositorio Sigma, las detecciones del vendor de tu SIEM y los repositorios de la comunidad (Elastic Detection Rules, Splunk Security Content).
+1. **Verificar data sources.** Confirmar que la telemetría llega al SIEM, esta parseada y es de calidad suficiente.
+2. **Buscar reglas existentes.** Revisar el repositorio Sigma, las detecciónes del vendor de tu SIEM y los repositorios de la comunidad (Elastic Detection Rules, Splunk Security Content).
 3. **Adaptar o escribir la regla.** Si existe una regla pública, adaptarla a tu entorno (ajustar exclusiones, umbrales, campos). Si no existe, escribirla desde cero.
 4. **Testear con emulación.** Ejecutar la técnica en un entorno de laboratorio (Atomic Red Team, Caldera) y verificar que la regla genera la alerta esperada.
 5. **Desplegar en modo monitor.** Activar la regla sin generar tickets durante 1-2 semanas para calibrar falsos positivos.
 6. **Activar en producción.** Mover la regla a producción y actualizar el mapping en la base de datos.
 
-### Herramientas de emulación para validar detecciones
+### Herramientas de emulación para validar detecciónes
 
 La emulación de adversarios es el complemento indispensable del detection engineering. Las herramientas principales:
 
@@ -359,9 +359,9 @@ La emulación de adversarios es el complemento indispensable del detection engin
 - **MITRE Caldera.** Plataforma de emulación automatizada. Permite encadenar múltiples técnicas en una operación completa (kill chain) y evaluar la detección end-to-end.
 - **Red Canary.** Proporciona tests validados con buena documentación de los artefactos que debería generar cada técnica.
 
-## Qué fuentes de telemetria necesitas por tactica
+## Qué fuentes de telemetría necesitas por tactica
 
-La telemetria es el combustible del detection engineering. Sin los datos adecuados, las mejores reglas no pueden funcionar. Esta tabla resume las fuentes críticas por tactica:
+La telemetría es el combustible del detection engineering. Sin los datos adecuados, las mejores reglas no pueden funcionar. Esta tabla resume las fuentes críticas por tactica:
 
 | Tactica | Fuentes de datos críticas |
 |---|---|
@@ -375,12 +375,12 @@ La telemetria es el combustible del detection engineering. Sin los datos adecuad
 | Lateral Movement | RDP connections (EID 4624 type 10), SMB access, WinRM sessions, PsExec artifacts |
 | Collection | Clipboard access, screen capture, staging in temp directories |
 | Command and Control | DNS anomalies, beaconing patterns en proxy logs, connections a IPs sospechosas |
-| Exfiltration | DLP alerts, volumen anomalo de upload, conexiones a servicios cloud no corporativos |
+| Exfiltration | DLP alerts, volumen anómalo de upload, conexiones a servicios cloud no corporativos |
 | Impact | Volume Shadow Copy deletion, mass file encryption, service stops |
 
 ### La importancia de Sysmon
 
-Si solo pudieras desplegar una herramienta adicional de telemetria, debería ser Sysmon. Con una configuración adecuada (la config de SwiftOnSecurity o la de Olaf Hartong son buenos puntos de partida), Sysmon proporciona:
+Si solo pudieras desplegar una herramienta adicional de telemetría, debería ser Sysmon. Con una configuración adecuada (la config de SwiftOnSecurity o la de Olaf Hartong son buenos puntos de partida), Sysmon proporciona:
 
 - Creación de procesos con línea de comandos completa y hash.
 - Conexiones de red por proceso.
@@ -391,15 +391,15 @@ Si solo pudieras desplegar una herramienta adicional de telemetria, debería ser
 
 Estos eventos cubren directamente más de 80 técnicas ATT&CK. Sin Sysmon (o un EDR equivalente), la mayoría de técnicas de Execution, Defense Evasión y Credential Access son invisibles.
 
-## Cómo automatizar el mapping de detecciones
+## Cómo automatizar el mapping de detecciónes
 
 El mapping manual es necesario al principio, pero no escala. Un SOC maduro automatiza la mayor parte del proceso.
 
 ### Automatización con CI/CD para reglas de detección
 
-El concepto de "Detection as Code" aplica las prácticas de ingenieria de software al detection engineering:
+El concepto de "Detection as Code" aplica las prácticas de ingeniería de software al detection engineering:
 
-1. **Repositorio Git de reglas.** Todas las reglas Sigma viven en un repositorio con estructura de directorios por tactica ATT&CK.
+1. **Repositorio Git de reglas.** Todas las reglas Sigma viven en un repositorio con estructura de directorios por táctica ATT&CK.
 2. **Validación automática en CI.** Cada pull request ejecuta tests: sintaxis YAML válida, técnica ATT&CK existente, campos obligatorios presentes (tags, falsepositives, level).
 3. **Conversión automática.** El pipeline convierte las reglas Sigma al formato del SIEM de destino y las despliega vía API.
 4. **Actualización del mapping.** Al mergear una regla nueva, el pipeline actualiza automáticamente la base de datos de mapping y regenera la capa de Navigator.
@@ -438,43 +438,43 @@ Cuando tu equipo de CTI pública un informe sobre un nuevo actor de amenaza, el 
 
 Este ciclo cierra el loop entre inteligencia y operaciones, que es donde la mayoría de los SOC fallan.
 
-{{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana. Conecta tu MITRE ATT&CK mapping con detecciones operativas en minutos." label="Ver demo SOC" >}}
+{{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana. Conecta tu MITRE ATT&CK mapping con detecciónes operativas en minutos." label="Ver demo SOC" >}}
 
 ## Qué métricas de cobertura ATT&CK debes medir
 
-Las métricas transforman el mapping de un ejercicio academico en una herramienta de gestión. Estas son las métricas que recomendamos medir mensualmente:
+Las métricas transforman el mapping de un ejercicio académico en una herramienta de gestión. Estas son las métricas que recomendamos medir mensualmente:
 
-### Metricas de cobertura
+### Métricas de cobertura
 
 - **Cobertura global.** Porcentaje de técnicas de la matriz con al menos una detección (score >= 1). Meta razonable: 40-60% para un SOC maduro.
-- **Cobertura por tactica.** Desglose por las 14 tacticas. Las tacticas de Initial Access, Execution y Lateral Movement deberían tener mayor cobertura.
+- **Cobertura por tactica.** Desglose por las 14 tácticas. Las tácticas de Initial Access, Execution y Lateral Movement deberían tener mayor cobertura.
 - **Cobertura ponderada por amenaza.** Porcentaje de las técnicas de tus top 5 actores que cubres. Esta es la métrica más relevante para el negocio.
 - **Profundidad de cobertura.** Distribución de scores (cuantas técnicas en score 1, cuantas en 2, etc.). Más útil que el simple binario cubierto/no cubierto.
 
-### Metricas de operación
+### Métricas de operación
 
 - **Mean Time to Detect (MTTD) por técnica.** Cuanto tarda tu SOC en detectar cada técnica cuando se emula. Medido con ejercicios de purple team.
 - **Tasa de falsos positivos por regla.** Reglas con más del 80% de falsos positivos son candidatas a reescritura o desactivación.
 - **Reglas desactivadas.** Porcentaje de reglas mapeadas que están deshabilitadas. Si es alto (>20%), tienes un problema de calidad.
 - **Tiempo medio de cierre de gap.** Desde que se identifica un gap hasta que la regla está en producción. Meta: menos de 2 semanas para gaps con datos disponibles.
 
-### Metricas de madurez
+### Métricas de madurez
 
-- **Porcentaje de reglas en formato estándar (Sigma).** Mide la portabilidad de tus detecciones.
-- **Porcentaje de reglas con test de emulación.** Mide la validación de tus detecciones.
+- **Porcentaje de reglas en formato estándar (Sigma).** Mide la portabilidad de tus detecciónes.
+- **Porcentaje de reglas con test de emulación.** Mide la validación de tus detecciónes.
 - **Frecuencia de actualización del mapping.** Si se actualiza solo una vez al año, no es útil operativamente.
 
-## Errores comunes al mapear detecciones a ATT&CK
+## Errores comunes al mapear detecciónes a ATT&CK
 
 Después de trabajar con múltiples SOC, estos son los errores que vemos con más frecuencia:
 
 1. **Mapear por obligación, no por utilidad.** Si el mapping es un checkbox de compliance que nadie consulta, no aporta valor. El mapping debe alimentar decisiones operativas semanales.
 2. **Inflar los scores de detección.** Poner score 4 a una regla que busca un hash específico de mimikatz es autoengano. Se honesto con la calidad.
 3. **Ignorar la calidad de los datos.** Una regla perfecta sobre datos incompletos o mal parseados genera más problemas que soluciones.
-4. **No incluir al equipo de threat intelligence.** El mapping sin contexto de amenaza es un ejercicio academico. El equipo de CTI aporta la priorización basada en actores reales.
+4. **No incluir al equipo de threat intelligence.** El mapping sin contexto de amenaza es un ejercicio académico. El equipo de CTI aporta la priorización basada en actores reales.
 5. **Tratar el mapping como un proyecto con fin.** Es un proceso continuo. Si se abandona después de la foto inicial, pierde todo su valor en 6 meses.
 
-{{< cta type="bofu" text="Solicita una demo personalizada para tu SOC y descubre cómo Riskitera conecta ATT&CK mapping con detecciones operativas, priorización por amenaza y metricas en tiempo real." label="Solicitar demo" >}}
+{{< cta type="bofu" text="Solicita una demo personalizada para tu SOC y descubre cómo Riskitera conecta ATT&CK mapping con detecciónes operativas, priorización por amenaza y métricas en tiempo real." label="Solicitar demo" >}}
 
 
 **Artículos relacionados:**
@@ -483,22 +483,22 @@ Después de trabajar con múltiples SOC, estos son los errores que vemos con má
 
 ## Preguntas frecuentes
 
-### Cuánto tiempo se tarda en hacer el primer mapping completo de detecciones a ATT&CK?
+### Cuánto tiempo se tarda en hacer el primer mapping completo de detecciónes a ATT&CK?
 
-Depende del tamaño del SOC. Para un equipo con 200-500 reglas activas, el inventario y mapping inicial requiere entre 2 y 4 semanas dedicando unas 4 horas diarias. La mayor parte del tiempo se invierte en las primeras 100 reglas, porque el equipo todavia esta aprendiendo las técnicas. Después el ritmo se acelera. Lo importante es no intentar hacerlo perfecto a la primera: un mapping al 80% de precisión que se completa en 3 semanas es más útil que uno perfecto que tarda 3 meses.
+Depende del tamaño del SOC. Para un equipo con 200-500 reglas activas, el inventario y mapping inicial requiere entre 2 y 4 semanas dedicando unas 4 horas diarias. La mayor parte del tiempo se invierte en las primeras 100 reglas, porque el equipo todavía esta aprendiendo las técnicas. Después el ritmo se acelera. Lo importante es no intentar hacerlo perfecto a la primera: un mapping al 80% de precisión que se completa en 3 semanas es más útil que uno perfecto que tarda 3 meses.
 
 ### Necesito un SIEM comercial para implementar detection engineering basada en ATT&CK?
 
-No es imprescindible. Puedes implementar el mapping con herramientas open source. Elastic Security (con licencia básica gratuita) soporta reglas con tags ATT&CK. Wazuh incluye decoders y reglas mapeadas. Sigma te permite escribir reglas portables. Lo que si necesitas es telemetria de calidad: sin Sysmon o un EDR que recoja eventos de proceso, red y registro, el mapping será superficial independientemente del SIEM.
+No es imprescindible. Puedes implementar el mapping con herramientas open source. Elastic Security (con licencia básica gratuita) soporta reglas con tags ATT&CK. Wazuh incluye decoders y reglas mapeadas. Sigma te permite escribir reglas portables. Lo que si necesitas es telemetría de calidad: sin Sysmon o un EDR que recoja eventos de proceso, red y registro, el mapping será superficial independientemente del SIEM.
 
 ### Cómo convenzo a dirección de que el mapping ATT&CK merece recursos dedicados?
 
-El argumento más efectivo es visual. Genera un heatmap de Navigator con la cobertura actual (la mayoría será roja) y superpone las técnicas usadas por los actores que han atacado a empresas de tu sector en España (datos de CCN-CERT e INCIBE). La intersección entre "técnicas que nos atacan" y "técnicas que no detectamos" es el argumento de negocio. Complementa con un calculo de coste: si un incidente de ransomware cuesta de media 1.5M EUR (dato de INCIBE para PYMES), invertir 50-100 horas de equipo en cerrar los gaps críticos es trivial en comparación.
+El argumento más efectivo es visual. Genera un heatmap de Navigator con la cobertura actual (la mayoría será roja) y superpone las técnicas usadas por los actores que han atacado a empresas de tu sector en España (datos de CCN-CERT e INCIBE). La intersección entre "técnicas que nos atacan" y "técnicas que no detectamos" es el argumento de negocio. Complementa con un cálculo de coste: si un incidente de ransomware cuesta de media 1.5M EUR (dato de INCIBE para PYMES), invertir 50-100 horas de equipo en cerrar los gaps críticos es trivial en comparación.
 
-### Con que frecuencia debo actualizar el mapping de detecciones?
+### Con que frecuencia debo actualizar el mapping de detecciónes?
 
-El mapping debe actualizarse en tres momentos: (1) cuando se anade o modifica una regla de detección, como parte del proceso estándar; (2) cuando MITRE pública una nueva versión de la matriz (normalmente abril y octubre), para verificar cambios en IDs de técnicas; y (3) trimestralmente, con una revisión completa de scores de detección que incluya tests de emulación con Atomic Red Team o Caldera.
+El mapping debe actualizarse en tres momentos: (1) cuando se añade o modifica una regla de detección, como parte del proceso estándar; (2) cuando MITRE pública una nueva versión de la matriz (normalmente abril y octubre), para verificar cambios en IDs de técnicas; y (3) trimestralmente, con una revisión completa de scores de detección que incluya tests de emulación con Atomic Red Team o Caldera.
 
 ### Cuál es la diferencia entre ATT&CK Navigator y DeTT&CT?
 
-ATT&CK Navigator es una herramienta de visualización: crea capas de colores sobre la matriz ATT&CK. DeTT&CT es una metodología y conjunto de herramientas que va más allá: estructura la evaluación de data sources (que telemetria tienes y con que calidad) y detecciones (que reglas tienes y como de robustas son), generando automáticamente las capas de Navigator. En resumen, Navigator es el lienzo; DeTT&CT es el proceso completo para pintarlo con datos reales.
+ATT&CK Navigator es una herramienta de visualización: crea capas de colores sobre la matriz ATT&CK. DeTT&CT es una metodología y conjunto de herramientas que va más allá: estructura la evaluación de data sources (que telemetría tienes y con que calidad) y detecciónes (que reglas tienes y como de robustas son), generando automáticamente las capas de Navigator. En resumen, Navigator es el lienzo; DeTT&CT es el proceso completo para pintarlo con datos reales.

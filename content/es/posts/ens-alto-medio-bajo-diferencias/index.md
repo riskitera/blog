@@ -42,7 +42,7 @@ La categorización se realiza evaluando cada sistema de información en las cinc
 El CCN proporciona la herramienta PILAR para realizar esta categorización de forma sistemática. El proceso implica:
 
 1. **Identificar los activos de información** que gestiona el sistema
-2. **Evaluar el impacto** de una perdida de confidencialidad, integridad, disponibilidad, autenticidad o trazabilidad para cada activo
+2. **Evaluar el impacto** de una pérdida de confidencialidad, integridad, disponibilidad, autenticidad o trazabilidad para cada activo
 3. **Asignar el nivel** correspondiente a cada dimensión
 4. **Determinar el nivel global** como el máximo de todas las dimensiones
 
@@ -62,13 +62,13 @@ El ENS define 36 familias de medidas de seguridad organizadas en tres marcos: or
 
 **Diferencias clave por nivel:**
 
-Para **nivel bajo**, las medidas se implementan en su versión básica. El control de acceso puede ser simple (usuario y contrasena), los registros de actividad son básicos y la gestión de incidentes es reactiva.
+Para **nivel bajo**, las medidas se implementan en su versión básica. El control de acceso puede ser simple (usuario y contraseña), los registros de actividad son básicos y la gestión de incidentes es reactiva.
 
-Para **nivel medio**, se exigen refuerzos significativos: autenticación de doble factor en accesos remotos, registros de actividad detallados con retención mínima de un año, gestión de incidentes con procedimientos formalizados, cifrado de datos en tránsito y copias de seguridad verificadas periodicamente.
+Para **nivel medio**, se exigen refuerzos significativos: autenticación de doble factor en accesos remotos, registros de actividad detallados con retención mínima de un año, gestión de incidentes con procedimientos formalizados, cifrado de datos en tránsito y copias de seguridad verificadas periódicamente.
 
-Para **nivel alto**, se anaden medidas avanzadas: autenticación multifactor para todos los accesos, monitorización continua de la seguridad (SOC o equivalente), pruebas de penetración periódicas, segregación de redes, cifrado de datos en reposo, y auditoría de trazas con integridad garantizada.
+Para **nivel alto**, se añaden medidas avanzadas: autenticación multifactor para todos los accesos, monitorización continua de la seguridad (SOC o equivalente), pruebas de penetración periódicas, segregación de redes, cifrado de datos en reposo, y auditoría de trazas con integridad garantizada.
 
-{{< cta type="tofu" text="Riskitera mapea automaticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
+{{< cta type="tofu" text="Riskitera mapea automáticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
 
 ## Cómo elegir la categoría ENS correcta para tu organización?
 
@@ -118,7 +118,7 @@ Los costes varían enormemente según el tamaño de la organización, el estado 
 
 | Concepto | Nivel Bajo | Nivel Medio | Nivel Alto |
 |----------|-----------|-------------|------------|
-| Consultoria y gap analysis | 5.000 - 15.000 EUR | 15.000 - 40.000 EUR | 30.000 - 80.000 EUR |
+| Consultoría y gap analysis | 5.000 - 15.000 EUR | 15.000 - 40.000 EUR | 30.000 - 80.000 EUR |
 | Implementación de medidas | 3.000 - 10.000 EUR | 20.000 - 60.000 EUR | 50.000 - 200.000 EUR |
 | Auditoría | Autoevaluación (interno) | 8.000 - 15.000 EUR | 12.000 - 25.000 EUR |
 | Mantenimiento anual | 2.000 - 5.000 EUR | 10.000 - 25.000 EUR | 25.000 - 60.000 EUR |
@@ -138,7 +138,7 @@ Las principales diferencias:
 
 Para organizaciones que deben cumplir ambos marcos, la recomendación es implementarlos de forma coordinada: usar el análisis de riesgos de ISO 27001 como base para la categorización ENS, y mapear los controles del Anexo A de ISO 27001 a las medidas del ENS para evitar duplicar esfuerzos.
 
-{{< cta type="mofu" text="Automatiza la recopilacion de evidencias y el seguimiento de controles con Riskitera." >}}
+{{< cta type="mofu" text="Automatiza la recopilación de evidencias y el seguimiento de controles con Riskitera." >}}
 
 **Artículos relacionados:**
 - [Qué es el Esquema Nacional de Seguridad (ENS)](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)

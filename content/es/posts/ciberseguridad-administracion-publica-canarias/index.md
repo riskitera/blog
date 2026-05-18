@@ -1,6 +1,6 @@
 ---
 title: "Ciberseguridad para la administración pública en Canarias: ENS, NIS2 y cumplimiento obligatorio"
-description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Canarias: requisitos ENS, NIS2, plazos, herramientas del CCN y como cumplir la normativa de seguridad obligatoria."
+description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Canarias: requisitos ENS, NIS2, plazos, herramientas del CCN y cómo cumplir la normativa de seguridad obligatoria."
 slug: "ciberseguridad-administracion-publica-canarias"
 date: 2026-08-04
 publishDate: 2026-08-04
@@ -20,7 +20,7 @@ La administración pública de Canarias gestiona más de 200 organismos público
 
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Canarias?
 
-Todos los organismos públicos de Canarias, incluyendo el Gobierno autonomico, los 88 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.
+Todos los organismos públicos de Canarias, incluyendo el Gobierno autonómico, los 88 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.
 
 El Real Decreto 311/2022 establece que todas las administraciones públicas deben categorizar sus sistemas, implementar las medidas de seguridad correspondientes y someterse a auditorías periódicas. Para los organismos de Canarias, esto implica adaptar sus infraestructuras tecnológicas a los requisitos del ENS según el nivel de seguridad (alto, medio o bajo) que corresponda a cada sistema.
 
@@ -32,7 +32,7 @@ La categorización depende del impacto que un incidente de seguridad tendría so
 
 ## Cómo afecta NIS2 a los organismos públicos de Canarias?
 
-La Directiva NIS2, que España esta transponiendo a su legislación nacional, amplía las obligaciones de ciberseguridad a las administraciones públicas. Los organismos de Canarias que gestionen servicios esenciales (sanidad, transporte, agua, energía) estarán directamente afectados.
+La Directiva NIS2, que España está transponiendo a su legislación nacional, amplía las obligaciones de ciberseguridad a las administraciones públicas. Los organismos de Canarias que gestionen servicios esenciales (sanidad, transporte, agua, energía) estarán directamente afectados.
 
 NIS2 exige gestión de riesgos, notificación de incidentes en menos de 24 horas y gobernanza de la ciberseguridad a nivel de dirección. Esto complementa y refuerza las obligaciones del ENS.
 
@@ -44,7 +44,7 @@ Estas herramientas son gratuitas para la administración pública y permiten a l
 
 ## Cuáles son los principales riesgos de ciberseguridad en Canarias?
 
-Los sectores de turismo, energía, portuaria que caracterizan la economia de Canarias presentan riesgos específicos. Los ataques de ransomware a ayuntamientos españoles han crecido un 35% entre 2024 y 2025 según datos del CCN-CERT. Los organismos públicos de Canarias son objetivo por la cantidad de datos personales que gestionan y, en muchos casos, por la falta de recursos dedicados a ciberseguridad.
+Los sectores de turismo, energía, portuaria que caracterizan la economía de Canarias presentan riesgos específicos. Los ataques de ransomware a ayuntamientos españoles han crecido un 35% entre 2024 y 2025 según datos del CCN-CERT. Los organismos públicos de Canarias son objetivo por la cantidad de datos personales que gestionan y, en muchos casos, por la falta de recursos dedicados a ciberseguridad.
 
 Los incidentes más frecuentes en administraciones públicas incluyen: phishing dirigido a empleados públicos, ransomware contra servidores de gestión, y exfiltración de datos del padrón o servicios sociales.
 
@@ -59,7 +59,7 @@ Los incidentes más frecuentes en administraciones públicas incluyen: phishing 
 7. **Realizar la auditoría** de cumplimiento (bienal para nivel medio y alto)
 8. **Reportar el estado de cumplimiento** a través de la plataforma INES del CCN
 
-{{< cta type="mofu" text="Riskitera automatiza el cumplimiento ENS para administraciones públicas: categorización, análisis de riesgos, seguimiento de controles y generacion de informes para auditoría." label="Ver demo para AA.PP." >}}
+{{< cta type="mofu" text="Riskitera automatiza el cumplimiento ENS para administraciones públicas: categorización, análisis de riesgos, seguimiento de controles y generación de informes para auditoría." label="Ver demo para AA.PP." >}}
 
 ## Preguntas frecuentes
 
@@ -77,5 +77,5 @@ La transposición de NIS2 a la legislación española se espera completada en 20
 
 **Artículos relacionados:**
 - [Qué es el Esquema Nacional de Seguridad (ENS)](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
-- [NIS2: qué es, a quien afecta y plazos](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
+- [NIS2: qué es, a quién afecta y plazos](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
 - [ENS en la administración pública](/es/posts/2026/05/ens-administracion-publica/)

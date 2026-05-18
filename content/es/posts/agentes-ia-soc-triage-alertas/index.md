@@ -19,12 +19,12 @@ Un SOC medio recibe entre 5.000 y 15.000 alertas diarias, de las cuales el 85% s
 
 ## Qué son los agentes de IA para SOC?
 
-Un agente de IA para SOC es un sistema autónomo que ejecuta tareas operativas de seguridad siguiendo instrucciones predefinidas y adaptandose al contexto. A diferencia de un script o una regla SOAR estática, un agente puede:
+Un agente de IA para SOC es un sistema autónomo que ejecuta táreas operativas de seguridad siguiendo instrucciones predefinidas y adaptandose al contexto. A diferencia de un script o una regla SOAR estática, un agente puede:
 
 - **Razonar sobre la alerta**: analizar el contexto (que usuario, que endpoint, que hora, que patrón) antes de decidir la acción
 - **Consultar múltiples fuentes**: enriquecer la alerta con datos de CTI, CMDB, Active Directory y histórico de incidentes
 - **Tomar decisiones graduadas**: clasificar como falso positivo, escalar a N2, o ejecutar una acción de contención automática según la gravedad
-- **Aprender del feedback**: ajustar sus decisiones basandose en las correcciones de los analistas
+- **Aprender del feedback**: ajustar sus decisiones basándose en las correcciones de los analistas
 
 Los agentes actuales operan en un espectro de autonomía: desde los que solo sugieren (el analista decide) hasta los que ejecutan acciones de bajo riesgo automáticamente (bloquear una IP conocida como maliciosa) y escalan las de alto riesgo.
 
@@ -46,7 +46,7 @@ El flujo típico de un agente de triage:
 - **Baja prioridad**: actividad sospechosa pero sin indicadores de compromiso. Se documenta y se revisa en batch.
 - **Media prioridad**: requiere investigación por N1/N2. Se asigna con el contexto enriquecido ya preparado.
 - **Alta prioridad**: indicadores claros de compromiso. Se escala a N2/N3 inmediatamente con recomendación de acción.
-- **Critica**: amenaza activa confirmada. Se ejecutan acciones de contención automáticas (aislar endpoint, bloquear cuenta) y se notifica al equipo.
+- **Crítica**: amenaza activa confirmada. Se ejecutan acciones de contención automáticas (aislar endpoint, bloquear cuenta) y se notifica al equipo.
 
 **4. Acción.** Según la clasificación, el agente ejecuta la acción correspondiente o la asigna al analista con todo el contexto pre-preparado.
 
@@ -54,7 +54,7 @@ El flujo típico de un agente de triage:
 
 Los datos de organizaciones que han implementado agentes de triage muestran resultados consistentes:
 
-| Metrica | Sin agente IA | Con agente IA | Mejora |
+| Métrica | Sin agente IA | Con agente IA | Mejora |
 |---------|--------------|---------------|--------|
 | Alertas procesadas por analista/día | 50-80 | 200-400 | 4-5x |
 | Tiempo medio de triage por alerta | 15-25 min | 2-5 min | 80% |
@@ -70,9 +70,9 @@ El riesgo principal de automatizar el triage es perder el "olfato" del analista 
 
 **Transparencia en las decisiones.** El agente debe explicar por que clasifica cada alerta de una determinada forma. No basta con "falso positivo": debe decir "clasificado como FP porque la IP 10.0.1.50 es el servidor de backup y esta acción se repite diariamente a las 03:00 según el histórico de 90 días".
 
-**Revisión por muestreo.** Un analista senior revisa aleatoriamente un 5-10% de las alertas cerradas automáticamente por el agente. Esto detecta drift en la calidad de las clasificaciones y patrones que el agente no reconoce.
+**Revisión por muestreo.** Un analista senior revisa aleatoriamente un 5-10% de las alertas cerradas automáticamente por el agente. Esto detecta drift en la calidad de las clasificaciónes y patrones que el agente no reconoce.
 
-**Feedback loop continuo.** Cuando un analista cambia la clasificación del agente (de FP a verdadero positivo, o viceversa), esa corrección se alimenta al modelo para mejorar futuras clasificaciones.
+**Feedback loop continuo.** Cuando un analista cambia la clasificación del agente (de FP a verdadero positivo, o viceversa), esa corrección se alimenta al modelo para mejorar futuras clasificaciónes.
 
 **Escalado por incertidumbre.** El agente debe tener un umbral de confianza: si no está seguro de la clasificación (confianza menor al 80%), escala al analista en lugar de decidir automáticamente.
 
@@ -97,7 +97,7 @@ La integración de agentes de IA requiere una arquitectura que conecte el SIEM, 
 
 **Capa de inteligencia:**
 - Modelo de clasificación de alertas (entrenado con histórico del SOC)
-- LLM para análisis contextual y generación de informes (self-hosted para soberania)
+- LLM para análisis contextual y generación de informes (self-hosted para soberanía)
 - Motor de reglas para acciones automáticas de bajo riesgo
 
 **Capa de supervisión:**

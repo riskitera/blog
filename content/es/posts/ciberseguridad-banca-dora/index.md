@@ -1,6 +1,6 @@
 ---
-title: "Ciberseguridad en banca: como cumplir DORA pasó a pasó"
-description: "Guía práctica para entidades bancarias y fintech sobre como cumplir el reglamento DORA: requisitos técnicos, gestión de riesgos TIC, pruebas de resiliencia y plazos de implementación."
+title: "Ciberseguridad en banca: cómo cumplir DORA pasó a pasó"
+description: "Guía práctica para entidades bancarias y fintech sobre cómo cumplir el reglamento DORA: requisitos técnicos, gestión de riesgos TIC, pruebas de resiliencia y plazos de implementación."
 slug: "ciberseguridad-banca-dora"
 date: 2026-05-19
 publishDate: 2026-05-19
@@ -13,7 +13,7 @@ keyword: "DORA bancos"
 funnel: "mofu"
 ---
 
-Guía práctica para entidades bancarias y fintech sobre como cumplir el reglamento DORA: requisitos técnicos, gestión de riesgos TIC, pruebas de resiliencia y plazos de implementación.
+Guía práctica para entidades bancarias y fintech sobre cómo cumplir el reglamento DORA: requisitos técnicos, gestión de riesgos TIC, pruebas de resiliencia y plazos de implementación.
 
 <!--more-->
 
@@ -23,7 +23,7 @@ El Reglamento DORA (Digital Operational Resilience Act, Reglamento UE 2022/2554)
 
 El cambio fundamental que introduce DORA es que la resiliencia digital deja de ser una recomendación y se convierte en una obligación legal supervisada. Las autoridades competentes (en España, el Banco de España y la CNMV) tienen potestad para inspeccionar, exigir correcciones y sancionar.
 
-Para los bancos españoles, DORA se superpone al marco de supervisión existente (EBA Guidelines on ICT and Security Risk Management) pero eleva el nivel de exigencia en cinco areas clave: gestión de riesgos TIC, notificación de incidentes, pruebas de resiliencia, gestión de proveedores y compartición de información.
+Para los bancos españoles, DORA se superpone al marco de supervisión existente (EBA Guidelines on ICT and Security Risk Management) pero eleva el nivel de exigencia en cinco áreas clave: gestión de riesgos TIC, notificación de incidentes, pruebas de resiliencia, gestión de proveedores y compartición de información.
 
 El impacto operativo es significativo. Según un estudio de McKinsey de 2025, el 68% de las entidades financieras europeas necesitaron reorganizar sus funciones de IT y riesgo para cumplir con DORA. El coste medio de adaptación para un banco mediano europeo se estima entre 2 y 5 millones de euros, dependiendo del nivel de madurez previo.
 
@@ -33,7 +33,7 @@ DORA estructura sus requisitos en cinco pilares. Cada uno tiene implicaciones t�
 
 **Pilar 1: Gestión de riesgos TIC.** Las entidades deben mantener un marco de gestión de riesgos TIC documentado, aprobado por el órgano de dirección y revisado al menos anualmente. Esto incluye: inventario actualizado de activos TIC, análisis de riesgos con metodología formal, políticas de seguridad de la información, gestión de identidades y accesos, cifrado de datos en reposo y en tránsito, y planes de continuidad y recuperación.
 
-**Pilar 2: Notificación de incidentes.** Las entidades deben clasificar los incidentes TIC según criterios definidos por las ESAs (European Supervisory Authorities). Los incidentes graves requieren tres notificaciones: inicial (dentro de 4 horas desde la clasificación), intermedia (dentro de 72 horas) y final (dentro de 1 mes). La clasificación se basa en: clientes afectados, duración, perdida de datos, impacto económico, criticidad de los servicios y extensión geográfica.
+**Pilar 2: Notificación de incidentes.** Las entidades deben clasificar los incidentes TIC según criterios definidos por las ESAs (European Supervisory Authorities). Los incidentes graves requieren tres notificaciones: inicial (dentro de 4 horas desde la clasificación), intermedia (dentro de 72 horas) y final (dentro de 1 mes). La clasificación se basa en: clientes afectados, duración, pérdida de datos, impacto económico, criticidad de los servicios y extensión geográfica.
 
 **Pilar 3: Pruebas de resiliencia operativa digital.** Todas las entidades deben realizar pruebas básicas (análisis de vulnerabilidades, escaneos de red, revisiones de código) al menos anualmente. Las entidades significativas deben realizar pruebas TLPT (Threat-Led Penetration Testing) al menos cada tres años, bajo el marco TIBER-EU.
 
@@ -65,7 +65,7 @@ DORA establece dos niveles de pruebas:
 
 **Pruebas básicas (todas las entidades).** Deben realizarse al menos anualmente sobre los sistemas y aplicaciones TIC críticos:
 - Análisis de vulnerabilidades (escaneos automatizados + validación manual)
-- Pruebas de seguridad de red y de perimetro
+- Pruebas de seguridad de red y de perímetro
 - Análisis de gaps de seguridad
 - Revisiones de código fuente (para sistemas desarrollados internamente)
 - Pruebas de rendimiento y capacidad
@@ -74,7 +74,7 @@ DORA establece dos niveles de pruebas:
 
 **Pruebas TLPT (entidades significativas).** Las entidades identificadas como significativas por su autoridad supervisora deben realizar pruebas TLPT al menos cada tres años. Estas pruebas siguen el marco TIBER-EU (adaptado en España como TIBER-ES por el Banco de España) y consisten en:
 1. Fase de Threat Intelligence: un equipo externo analiza las amenazas reales que enfrenta la entidad
-2. Fase de Red Team: un equipo de ataque externo simula las tacticas, técnicas y procedimientos de los actores de amenaza identificados
+2. Fase de Red Team: un equipo de ataque externo simula las tácticas, técnicas y procedimientos de los actores de amenaza identificados
 3. Fase de Blue Team: se evalúa la capacidad de detección y respuesta del equipo interno
 4. Informe y remediación: documentación de hallazgos, plan de remediación con plazos y seguimiento
 
@@ -144,7 +144,7 @@ En España, el régimen sancionador se integra en la Ley del Mercado de Valores,
 - Responsabilidad personal por incumplimiento de sus obligaciones de gobernanza TIC
 - Posibles sanciones administrativas individuales
 
-El impacto reputacional de una sanción pública por incumplimiento de DORA puede ser más danino que la multa económica, especialmente en un sector donde la confianza es el activo fundamental.
+El impacto reputacional de una sanción pública por incumplimiento de DORA puede ser más dañino que la multa económica, especialmente en un sector donde la confianza es el activo fundamental.
 
 
 {{< cta type="bofu" text="Agenda una demo técnica para tu sector y valida la integración con tu infraestructura." label="Agenda demo" >}}
@@ -159,7 +159,7 @@ El impacto reputacional de una sanción pública por incumplimiento de DORA pued
 Sí. DORA aplica a todas las entidades financieras reguladas en la UE, incluyendo entidades de pago, entidades de dinero electrónico y proveedores de servicios de criptoactivos autorizados bajo MiCA. Las fintech con licencia bancaria o de servicios de pago están sujetas a los mismos requisitos que los bancos tradicionales.
 
 **Que diferencia hay entre DORA y las guías EBA de riesgos TIC?**
-Las guías EBA (EBA/GL/2019/04) eran recomendaciones de "cumplir o explicar" (comply or explain). DORA es un reglamento de aplicación directa con capacidad sancionadora. DORA absorbe y eleva el nivel de las guías EBA, anadiendo requisitos nuevos como las pruebas TLPT obligatorias y la supervisión directa de proveedores críticos.
+Las guías EBA (EBA/GL/2019/04) eran recomendaciones de "cumplir o explicar" (comply or explain). DORA es un reglamento de aplicación directa con capacidad sancionadora. DORA absorbe y eleva el nivel de las guías EBA, añadiendo requisitos nuevos como las pruebas TLPT obligatorias y la supervisión directa de proveedores críticos.
 
 **Si mi banco ya cumple ENS Alto, cumple también DORA?**
 No automáticamente. ENS Alto y DORA tienen solapamientos significativos (gestión de riesgos, continuidad, control de accesos), pero DORA introduce requisitos específicos que el ENS no cubre: notificación de incidentes con plazos determinados, pruebas TLPT, requisitos contractuales detallados para proveedores TIC y registro centralizado de contratos. Un banco que cumple ENS Alto tiene buena base, pero necesita un análisis de gaps específico para DORA.

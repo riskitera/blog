@@ -20,37 +20,37 @@ Guía práctica para que empresas españolas comiencen con threat intelligence s
 {{< key-takeaways >}}
 - La threat intelligence no requiere presupuesto inicial: las fuentes públicas españolas (CCN-CERT, INCIBE-CERT) y las plataformas gratuitas (AlienVault OTX, Abuse.ch) cubren el 80% de las necesidades de una PYME.
 - Un programa de CTI efectivo sigue el ciclo de inteligencia: requisitos de los stakeholders, recolección, procesamiento, análisis y diseminación.
-- MISP open source permite gestionar, correlacionar y compartir indicadores de compromiso sin coste de licencia, integrando con cualquier SIEM.
+- MISP open source permite gestionar, correlaciónar y compartir indicadores de compromiso sin coste de licencia, integrando con cualquier SIEM.
 - El error más común es confundir feeds de IOCs con threat intelligence. Los indicadores sin contexto son datos, no inteligencia.
 - La operacionalización de la inteligencia (convertirla en reglas SIEM, políticas de bloqueo y decisiones de negocio) es lo que diferencia un programa funcional de uno decorativo.
 {{< /key-takeaways >}}
 
 ## Qué es la threat intelligence y por que la necesita tu empresa
 
-La Threat Intelligence (CTI, Cyber Threat Intelligence) es el proceso de recopilar, procesar y analizar información sobre amenazas ciberneticas para tomar decisiones informadas. No es una herramienta ni un producto. Es una función que transforma datos en bruto (IPs maliciosas, hashes de malware, reportes de vulnerabilidades) en conocimiento accionable para proteger tu organización.
+La Threat Intelligence (CTI, Cyber Threat Intelligence) es el proceso de recopilar, procesar y analizar información sobre amenazas cibernéticas para tomar decisiones informadas. No es una herramienta ni un producto. Es una función que transforma datos en bruto (IPs maliciosas, hashes de malware, reportes de vulnerabilidades) en conocimiento accionable para proteger tu organización.
 
 La distinción clave es entre **datos**, **información** e **inteligencia**:
 
 - **Dato.** Una IP aparece en una lista de comando y control: `185.220.101.42`.
 - **Información.** Esa IP está asociada al malware Emotet y se usa como servidor C2 desde hace 3 días.
-- **Inteligencia.** Emotet esta distribuyendo phishing masivo contra el sector financiero español esta semana, usando adjuntos de Excel con macros. Tu empresa es del sector financiero, tus usuarios usan Excel y no tienes bloqueadas las macros en adjuntos externos. Acción recomendada: bloquear macros en documentos de origen externo y anadir la IP al blocklist del firewall.
+- **Inteligencia.** Emotet está distribuyendo phishing masivo contra el sector financiero español esta semana, usando adjuntos de Excel con macros. Tu empresa es del sector financiero, tus usuarios usan Excel y no tienes bloqueadas las macros en adjuntos externos. Acción recomendada: bloquear macros en documentos de origen externo y añadir la IP al blocklist del firewall.
 
 ### Por que las empresas españolas la necesitan especialmente
 
-España ocupa posiciones destacadas en los rankings europeos de ciberataques recibidos. Según los datos del [CCN-CERT](https://www.ccn-cert.cni.es/), el organismo de respuesta a incidentes del Centro Criptologico Nacional, los incidentes gestionados han crecido un 25% interanual de media en los últimos cinco años. [INCIBE-CERT](https://www.incibe.es/incibe-cert), el CERT de referencia para empresas y ciudadanos, gestión más de 118.000 incidentes en su último informe anual.
+España ocupa posiciones destacadas en los rankings europeos de ciberataques recibidos. Según los datos del [CCN-CERT](https://www.ccn-cert.cni.es/), el organismo de respuesta a incidentes del Centro Criptológico Nacional, los incidentes gestionados han crecido un 25% interanual de media en los últimos cinco años. [INCIBE-CERT](https://www.incibe.es/incibe-cert), el CERT de referencia para empresas y ciudadanos, gestión más de 118.000 incidentes en su último informe anual.
 
 Las empresas españolas enfrentan amenazas específicas:
 
 - **Ransomware dirigido.** Grupos como Lockbit y Cl0p han atacado activamente a empresas españolas de infraestructura, sanidad y administración pública.
 - **Phishing localizado.** Campañas en español que suplantan a Correos, la Agencia Tributaria, bancos locales (CaixaBank, BBVA, Santander) y la Seguridad Social.
-- **Ciberespionaje.** Actores estatales con interes en sectores estratégicos españoles: defensa, energía, telecomunicaciones y diplomacia.
+- **Ciberespionaje.** Actores estatales con interés en sectores estratégicos españoles: defensa, energía, telecomunicaciones y diplomacia.
 - **Fraude al CEO (BEC).** Especialmente dirigido a PYMES con procesos de pago poco formalizados.
 
 Un programa de threat intelligence, incluso básico, permite a tu empresa pasar de una postura reactiva ("nos han atacado, que hacemos") a una proactiva ("sabemos que este tipo de ataque está activo contra nuestro sector, ya hemos implementado las contramedidas").
 
 ## El ciclo de inteligencia: estructura de un programa CTI
 
-La threat intelligence no es suscribirse a feeds y olvidarse. Es un proceso ciclico con fases bien definidas. El modelo clásico de inteligencia (usado por agencias de inteligencia y adaptado a ciberseguridad) tiene cinco fases:
+La threat intelligence no es suscribirse a feeds y olvidarse. Es un proceso cíclico con fases bien definidas. El modelo clásico de inteligencia (usado por agencias de inteligencia y adaptado a ciberseguridad) tiene cinco fases:
 
 ### Fase 1: Requisitos de inteligencia (Planning and Direction)
 
@@ -68,7 +68,7 @@ Los requisitos se formalizan como **Intelligence Requirements (IRs)**. Ejemplo:
 | IR-01 | Actores de amenaza activos contra sector financiero en España | CISO | Mensual |
 | IR-02 | IOCs asociados a campañas de phishing en español | SOC | Diaria |
 | IR-03 | Vulnerabilidades críticas explotadas in-the-wild en software de nuestro stack | IT | Semanal |
-| IR-04 | Tendencias de riesgo ciber para informe trimestral a comite | Dirección | Trimestral |
+| IR-04 | Tendencias de riesgo ciber para informe trimestral a comité | Dirección | Trimestral |
 
 Sin requisitos claros, el programa de CTI se convierte en una actividad de "recopilar todo" que no aporta valor a nadie.
 
@@ -77,31 +77,31 @@ Sin requisitos claros, el programa de CTI se convierte en una actividad de "reco
 Con los requisitos definidos, sabes que buscar. Las fuentes de recolección se clasifican en:
 
 - **OSINT (Open Source Intelligence).** Fuentes públicas: feeds de IOCs, blogs de investigadores, reportes de vendors, foros de seguridad, redes sociales. Es el 80% de la inteligencia para una empresa con presupuesto cero.
-- **SIGINT/TECHINT (Technical Intelligence).** Telemetria interna: logs del SIEM, alertas del EDR, sandbox de malware, honeypots. Datos que generas tu.
+- **SIGINT/TECHINT (Technical Intelligence).** Telemetría interna: logs del SIEM, alertas del EDR, sandbox de malware, honeypots. Datos que generas tu.
 - **HUMINT (Human Intelligence).** Relaciones con otros CERTs, grupos de compartición sectorial (ISACs), contactos en la comunidad de seguridad.
 - **Comercial.** Feeds y plataformas de pago: Recorded Future, Mandiant, CrowdStrike Intel. Solo cuando el presupuesto lo permita.
 
 ### Fase 3: Procesamiento (Processing)
 
-Los datos en bruto no son utiles directamente. El procesamiento incluye:
+Los datos en bruto no son útiles directamente. El procesamiento incluye:
 
 - **Normalización.** Convertir datos de múltiples fuentes a un formato común (STIX 2.1 es el estándar).
 - **Deduplicación.** Eliminar IOCs duplicados entre fuentes.
-- **Enriquecimiento.** Anadir contexto a los IOCs: geolocalización de IPs, resolución DNS histórica, asociación con malware familias, score de confianza.
+- **Enriquecimiento.** Añadir contexto a los IOCs: geolocalización de IPs, resolución DNS histórica, asociación con malware familias, score de confianza.
 - **Validación.** Verificar que los IOCs son relevantes (no caducados, no falsos positivos conocidos).
 
 ### Fase 4: Análisis (Analysis)
 
-El análisis transforma información procesada en inteligencia accionable. Aqui es donde el analista de CTI aporta valor:
+El análisis transforma información procesada en inteligencia accionable. Aquí es donde el analista de CTI aporta valor:
 
 - **Correlación.** Conectar IOCs individuales en campañas coherentes. Esas 15 IPs no son 15 amenazas separadas: son la infraestructura C2 de una campaña de Emotet.
 - **Atribución (cuando es posible).** Vincular actividad con actores conocidos. No siempre es posible ni necesario para una empresa.
 - **Evaluación de relevancia.** De toda la información disponible, que es relevante para tu organización específica?
-- **Recomendaciones.** El producto de inteligencia siempre debe incluir acciones recomendadas. Un informe sin recomendaciones es un paper academico, no inteligencia.
+- **Recomendaciones.** El producto de inteligencia siempre debe incluir acciones recomendadas. Un informe sin recomendaciones es un paper académico, no inteligencia.
 
 ### Fase 5: Diseminación (Dissemination)
 
-La inteligencia que no llega al consumidor adecuado en el momento adecuado no sirve. Los productos de inteligencia tipicos son:
+La inteligencia que no llega al consumidor adecuado en el momento adecuado no sirve. Los productos de inteligencia típicos son:
 
 - **Tactical.** IOCs para el SOC (diario): IPs, dominios, hashes para reglas de detección.
 - **Operational.** Informes de campaña para el equipo de respuesta (semanal): TTPs, infraestructura, kill chain del atacante.
@@ -113,7 +113,7 @@ El ecosistema de fuentes gratuitas es sorprendentemente completo. Una empresa pu
 
 ### Fuentes institucionales españolas
 
-**CCN-CERT (Centro Criptologico Nacional).** El CERT gubernamental español pública:
+**CCN-CERT (Centro Criptológico Nacional).** El CERT gubernamental español pública:
 
 - Alertas y avisos sobre amenazas activas contra España.
 - La herramienta LUCIA para gestión de incidentes (disponible para administraciones públicas y operadores de servicios esenciales).
@@ -166,7 +166,7 @@ La cuenta gratuita tiene limitaciones de API (500 peticiones/día), pero es sufi
 
 - **ENISA Threat Landscape.** Informe anual de la agencia europea de ciberseguridad. Panorama de amenazas europeo con datos cuantitativos.
 - **Reportes de vendors.** CrowdStrike, Mandiant, Palo Alto Unit42, Cisco Talos, ESET, Kaspersky. Publican reportes gratuitos sobre campañas y actores de amenaza. Sesgo hacia sus clientes, pero son información valiosa.
-- **Blogs de investigadores.** The DFIR Report (análisis detallados de intrusiones reales), BleepingComputer (noticias), KrebsOnSecurity (investigaciones).
+- **Blogs de investigadores.** The DFIR Report (análisis detallados de intrusiones reales), BleepingComputer (noticias), KrebsOnSecurity (investigaciónes).
 
 ## Herramientas open source para CTI
 
@@ -179,8 +179,8 @@ Las herramientas son el esqueleto operativo del programa. Estas cuatro cubren la
 Funcionalidades clave:
 
 - **Gestión de eventos y atributos.** Cada amenaza se modela como un evento con atributos (IPs, dominios, hashes, emails, etc.) tipados y categorizados.
-- **Taxonomias y galaxias.** Sistema de etiquetado estandarizado que incluye MITRE ATT&CK, TLP (Traffic Light Protocol), sectores afectados y tipos de amenaza.
-- **Correlación automática.** MISP correlaciona automáticamente atributos entre eventos, revelando conexiones entre campañas aparentemente independientes.
+- **Taxonomías y galaxias.** Sistema de etiquetado estandarizado que incluye MITRE ATT&CK, TLP (Traffic Light Protocol), sectores afectados y tipos de amenaza.
+- **Correlación automática.** MISP correlacióna automáticamente atributos entre eventos, revelando conexiones entre campañas aparentemente independientes.
 - **Compartición.** Diseñado para compartir inteligencia entre organizaciones de confianza. Soporta comunidades de compartición (sharing groups) con control granular de visibilidad.
 - **Integración.** API REST completa. Modulos de exportación a formatos STIX, CSV, IDS (Snort/Suricata), OpenIOC. Integración nativa con SIEMs vía syslog o API.
 - **Feeds integrados.** Permite suscribirse a feeds externos (Abuse.ch, CIRCL, AlienVault OTX) directamente desde la interfaz.
@@ -270,14 +270,14 @@ Reglas prácticas para la ingesta de IOCs:
 
 ### Nivel 2: Reglas de detección basadas en TTPs
 
-Los IOCs son utiles pero efimeros. Los atacantes cambian de infraestructura constantemente. Las detecciones basadas en TTPs (tacticas, técnicas y procedimientos) son más duraderas porque detectan el comportamiento, no el indicador.
+Los IOCs son útiles pero efimeros. Los atacantes cambian de infraestructura constantemente. Las detecciónes basadas en TTPs (tácticas, técnicas y procedimientos) son más duraderas porque detectan el comportamiento, no el indicador.
 
 Ejemplo: en lugar de bloquear las 50 IPs de la infraestructura C2 de Emotet (que cambian cada semana), detecta el patrón de comportamiento de Emotet:
 
 - Documento Office con macro que ejecuta PowerShell.
 - PowerShell descarga un payload de una URL con patrón `/wp-content/` o `/wp-admin/`.
 - El payload se escribe en `%APPDATA%` o `%TEMP%`.
-- El proceso se comunica periodicamente (beaconing) con intervalos regulares.
+- El proceso se comunica periódicamente (beaconing) con intervalos regulares.
 
 Esa detección basada en comportamiento funciona independientemente de que IPs o dominios use el atacante esta semana.
 
@@ -286,19 +286,19 @@ Esa detección basada en comportamiento funciona independientemente de que IPs o
 Cuando el SOC recibe una alerta, el analista necesita contexto para decidir si es un verdadero positivo. El enriquecimiento automático con CTI reduce drasticamente el tiempo de triaje:
 
 1. **Alerta del SIEM.** "Conexión saliente a IP 185.220.101.42 desde servidor de contabilidad."
-2. **Enriquecimiento automático.** La IP está en MISP como C2 de Emotet (confianza alta, reportado hace 2 días por Abuse.ch). Asociada a tactica T1071.001 (Application Layer Protocol: Web Protocols).
+2. **Enriquecimiento automático.** La IP está en MISP como C2 de Emotet (confianza alta, reportado hace 2 días por Abuse.ch). Asociada a táctica T1071.001 (Application Layer Protocol: Web Protocols).
 3. **Decisión del analista.** Con ese contexto, el analista escala inmediatamente en lugar de perder 30 minutos investigando la IP manualmente.
 
-Herramientas como Cortex (asociado a TheHive) o los modulos de enriquecimiento de MISP automatizan este proceso.
+Herramientas como Cortex (asociado a TheHive) o los módulos de enriquecimiento de MISP automatizan este proceso.
 
 ### Nivel 4: Threat hunting proactivo
 
-La inteligencia alimenta las hipotesis de threat hunting. El proceso:
+La inteligencia alimenta las hipótesis de threat hunting. El proceso:
 
-1. El equipo de CTI pública un informe: "APT28 esta usando la técnica T1218.011 (Signed Binary Proxy Execution: Rundll32) para evadir detecciones en campañas contra gobierno europeo."
-2. El threat hunter formula la hipotesis: "Es posible que APT28 haya comprometido nuestro entorno usando rundll32 para ejecutar DLLs maliciosas."
-3. El hunter busca en la telemetria histórica: ejecuciones de rundll32 con argumentos inusuales, rundll32 cargando DLLs desde ubicaciones temporales, rundll32 estableciendo conexiones de red.
-4. Si encuentra actividad sospechosa, escala. Si no, documenta la busqueda y la convierte en una regla de detección permanente.
+1. El equipo de CTI pública un informe: "APT28 está usando la técnica T1218.011 (Signed Binary Proxy Execution: Rundll32) para evadir detecciónes en campañas contra gobierno europeo."
+2. El threat hunter fórmula la hipótesis: "Es posible que APT28 haya comprometido nuestro entorno usando rundll32 para ejecutar DLLs maliciosas."
+3. El hunter busca en la telemetría histórica: ejecuciones de rundll32 con argumentos inusuales, rundll32 cargando DLLs desde ubicaciones temporales, rundll32 estableciendo conexiones de red.
+4. Si encuentra actividad sospechosa, escala. Si no, documenta la búsqueda y la convierte en una regla de detección permanente.
 
 {{< cta type="tofu" text="Riskitera integra threat intelligence con detección y respuesta automatizada. IA soberana que operacionaliza tu inteligencia sin que los datos salgan de tu infraestructura." label="Ver demo CTI" >}}
 
@@ -306,13 +306,13 @@ La inteligencia alimenta las hipotesis de threat hunting. El proceso:
 
 Si empiezas sin nada, este es un roadmap realista para 90 días con un equipo de 1-2 personas dedicando parcialmente su tiempo.
 
-### Dias 1-30: Fundamentos
+### Días 1-30: Fundamentos
 
 **Semana 1-2: Requisitos y fuentes.**
 
-- Reune a los stakeholders (CISO, SOC lead, IT manager) y documenta 5-8 Intelligence Requirements.
+- Reúne a los stakeholders (CISO, SOC lead, IT manager) y documenta 5-8 Intelligence Requirements.
 - Registrate en AlienVault OTX, Abuse.ch y VirusTotal. Configura alertas email.
-- Suscribete a las listas de CCN-CERT e INCIBE-CERT.
+- Suscríbete a las listas de CCN-CERT e INCIBE-CERT.
 
 **Semana 3-4: Primera herramienta.**
 
@@ -320,7 +320,7 @@ Si empiezas sin nada, este es un roadmap realista para 90 días con un equipo de
 - Configura los feeds integrados: CIRCL OSINT Feed, Abuse.ch URLhaus y MalwareBazaar, Botvrij.eu.
 - Habilita la sincronización automática de feeds (cada 6 horas es suficiente para empezar).
 
-### Dias 31-60: Integración
+### Días 31-60: Integración
 
 **Semana 5-6: Conexión con el SIEM.**
 
@@ -337,11 +337,11 @@ Si empiezas sin nada, este es un roadmap realista para 90 días con un equipo de
   - Recomendaciones de acción.
 - Distribuye a los stakeholders definidos en los Intelligence Requirements.
 
-### Dias 61-90: Maduración
+### Días 61-90: Maduración
 
 **Semana 9-10: Enriquecimiento y automatización.**
 
-- Configura Cortex o los modulos de enriquecimiento de MISP para automatizar el contexto de IOCs.
+- Configura Cortex o los módulos de enriquecimiento de MISP para automatizar el contexto de IOCs.
 - Implementa un workflow: alerta SIEM con match de IOC -> enriquecimiento automático -> ticket con contexto al analista.
 
 **Semana 11-12: Revisión y ajuste.**
@@ -360,7 +360,7 @@ Estos errores los cometemos casi todos al principio. Reconocerlos te ahorra mese
 
 Suscribirse a 20 feeds de IOCs y volcarlos en el SIEM no es threat intelligence. Es datos sin procesar generando alertas. La inteligencia requiere análisis, contexto y relevancia para tu organización. Un analista que recibe 500 alertas diarias de "match de IOC" sin contexto abandona el programa en dos semanas.
 
-**Solución.** Menos feeds, mejor curados. Empieza con 3-4 fuentes de alta calidad (Abuse.ch, AlienVault OTX, CIRCL) y anade contexto a cada IOC antes de ingesta.
+**Solución.** Menos feeds, mejor curados. Empieza con 3-4 fuentes de alta calidad (Abuse.ch, AlienVault OTX, CIRCL) y añade contexto a cada IOC antes de ingesta.
 
 ### Error 2: No definir requisitos de inteligencia
 
@@ -384,16 +384,16 @@ Intentar monitorizar la dark web, analizar malware en sandbox, hacer atribución
 
 Si no puedes demostrar que el programa CTI aporta valor, será el primero en perder presupuesto (o tiempo de personal). Las métricas mínimas:
 
-- Numero de IOCs que generaron verdaderos positivos en el SIEM.
+- Número de IOCs que generaron verdaderos positivos en el SIEM.
 - Tiempo medio de detección antes y después del programa CTI.
-- Numero de acciones preventivas implementadas gracias a inteligencia (parches priorizados, reglas creadas, bloqueos aplicados).
+- Número de acciones preventivas implementadas gracias a inteligencia (parches priorizados, reglas creadas, bloqueos aplicados).
 - Feedback cualitativo de los stakeholders.
 
 ## Cuándo invertir en threat intelligence de pago
 
 La pregunta no es "debería pagar por CTI?" sino "en que momento mi programa necesita fuentes comerciales?"
 
-### Senales de que necesitas fuentes comerciales
+### Señales de que necesitas fuentes comerciales
 
 - **Los feeds gratuitos ya no cubren tus requisitos.** Necesitas inteligencia específica de tu sector (financiero, energético, sanitario) que no está disponible en fuentes públicas.
 - **Necesitas atribución y análisis de actores.** Los feeds gratuitos proporcionan IOCs. Los servicios comerciales (Recorded Future, Mandiant, CrowdStrike) proporcionan análisis de actores, campañas y predicciones.
@@ -412,7 +412,7 @@ Si decides invertir, evalúa:
 
 ### Opciones intermedias
 
-Antes de contratar un servicio premium (que puede costar desde 15.000 EUR/año hasta cifras de seis digitos), considera opciones intermedias:
+Antes de contratar un servicio premium (que puede costar desde 15.000 EUR/año hasta cifras de seis dígitos), considera opciones intermedias:
 
 - **ISACs sectoriales.** Los centros de compartición sectorial (financiero, energético, sanitario) proporcionan inteligencia relevante y específica. En España, el CCN coordina algunos de estos grupos.
 - **FIRST y TF-CSIRT.** Comunidades de CERTs donde se comparte inteligencia entre miembros.
@@ -448,7 +448,7 @@ Una persona dedicando el 50% de su tiempo puede mantener un programa de nivel 2 
 
 ### Es legal monitorizar la dark web para obtener threat intelligence?
 
-La observación pasiva de foros y mercados dark web accesibles (sin registrarse ni interactuar) es generalmente legal en España. Sin embargo, hay líneas que no debes cruzar: comprar credenciales robadas (aunque sean de tu propia empresa), interactuar con actores de amenaza haciendote pasar por comprador, o acceder a sistemas cerrados sin autorización. La recomendación es limitar la monitorización dark web a servicios especializados que operan dentro del marco legal y dejar la investigación activa a las FCSE (Fuerzas y Cuerpos de Seguridad del Estado).
+La observación pasiva de foros y mercados dark web accesibles (sin registrarse ni interactuar) es generalmente legal en España. Sin embargo, hay líneas que no debes cruzar: comprar credenciales robadas (aunque sean de tu propia empresa), interactuar con actores de amenaza haciéndote pasar por comprador, o acceder a sistemas cerrados sin autorización. La recomendación es limitar la monitorización dark web a servicios especializados que operan dentro del marco legal y dejar la investigación activa a las FCSE (Fuerzas y Cuerpos de Seguridad del Estado).
 
 ### Cómo priorizo entre tantas fuentes de IOCs gratuitas?
 
@@ -456,8 +456,8 @@ Empieza por calidad, no por cantidad. Tres fuentes bien integradas aportan más 
 
 ### Qué diferencia hay entre MISP y OpenCTI? Cuál debería usar?
 
-MISP es mejor para la gestión operativa de IOCs: recopilar, normalizar, compartir y exportar indicadores al SIEM. OpenCTI es mejor para análisis y visualización: grafos de relaciones, dashboards y modelado de actores de amenaza. Para empezar, MISP es la opción recomendada porque es más ligero, tiene más documentación y cubre el caso de uso más básico (feeds a SIEM). Cuando tu programa madure al nivel 3-4 y necesites capacidades analiticas avanzadas, anade OpenCTI como capa de análisis encima de MISP (ambos se integran nativamente).
+MISP es mejor para la gestión operativa de IOCs: recopilar, normalizar, compartir y exportar indicadores al SIEM. OpenCTI es mejor para análisis y visualización: grafos de relaciones, dashboards y modelado de actores de amenaza. Para empezar, MISP es la opción recomendada porque es más ligero, tiene más documentación y cubre el caso de uso más básico (feeds a SIEM). Cuando tu programa madure al nivel 3-4 y necesites capacidades analiticas avanzadas, añade OpenCTI como capa de análisis encima de MISP (ambos se integran nativamente).
 
-### Cómo justifico el tiempo invertido en CTI ante dirección?
+### Cómo justificó el tiempo invertido en CTI ante dirección?
 
 El argumento más efectivo son las acciones preventivas documentadas. Lleva un registro de cada vez que la inteligencia genero una acción: "El 15 de marzo, un IOC de MISP detecto una conexión a infraestructura C2 de Emotet desde un puesto de contabilidad. Se aisle el equipo en 4 minutos y se evite la propagación." Ese tipo de ejemplos concretos, con impacto estimado (coste medio de un incidente de ransomware en España según INCIBE: entre 100.000 y 2M EUR para PYMES), son mucho más convincentes que métricas abstractas como "número de IOCs procesados".

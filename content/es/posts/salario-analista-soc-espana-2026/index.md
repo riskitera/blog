@@ -19,10 +19,10 @@ Salarios reales de analistas SOC en España en 2026: rangos por nivel (N1, N2, N
 
 {{< key-takeaways >}}
 - Un analista SOC N1 en España cobra entre 25.000 y 35.000 euros brutos anuales en 2026, mientras que un SOC Manager puede alcanzar los 95.000 euros en entornos enterprise.
-- Madrid y Barcelona concentran el 65% de las ofertas SOC, pero el teletrabajo esta equilibrando los salarios con otras ciudades como Valencia, Bilbao y Málaga.
+- Madrid y Barcelona concentran el 65% de las ofertas SOC, pero el teletrabajo está equilibrando los salarios con otras ciudades como Valencia, Bilbao y Málaga.
 - Las certificaciones tienen un impacto medible en el salario: OSCP suma hasta un 20% y CISSP hasta un 15% sobre la media de cada nivel.
 - España sigue un 25-40% por debajo de Alemania, Países Bajos y Reino Unido en salarios SOC equivalentes, aunque el coste de vida compensa parcialmente la diferencia.
-- La demanda de perfiles SOC con competencias en IA (automatización de triage, ingenieria de prompts para CTI, integración de LLMs) esta creando una nueva franja salarial premium.
+- La demanda de perfiles SOC con competencias en IA (automatización de triage, ingeniería de prompts para CTI, integración de LLMs) esta creando una nueva franja salarial premium.
 {{< /key-takeaways >}}
 
 ## Panorama salarial SOC en España en 2026
@@ -37,7 +37,7 @@ Pero los números medios esconden una realidad mucho más matizada. El salario d
 
 ### Analista SOC N1 (Tier 1): 25.000 - 35.000 euros
 
-El analista N1 es el primer punto de contacto con las alertas de seguridad. Su trabajo consiste en monitorizar consolas SIEM, realizar el triage inicial de alertas, escalar incidentes según los playbooks definidos y documentar los eventos gestionados. Es el perfil de entrada al SOC y, tipicamente, el que acumula más horas de turno nocturno y fin de semana.
+El analista N1 es el primer punto de contacto con las alertas de seguridad. Su trabajo consiste en monitorizar consolas SIEM, realizar el triage inicial de alertas, escalar incidentes según los playbooks definidos y documentar los eventos gestionados. Es el perfil de entrada al SOC y, típicamente, el que acumula más horas de turno nocturno y fin de semana.
 
 **Rango salarial 2026:**
 - Junior (0-1 año de experiencia): 25.000 - 28.000 euros brutos anuales.
@@ -56,7 +56,7 @@ El analista N1 es el primer punto de contacto con las alertas de seguridad. Su t
 - Ausencia de certificaciones.
 - Contratas y subcontratas para administración pública.
 
-El perfil N1 es el que más rotación sufre. La media de permanencia en un puesto N1 en España es de 14-18 meses. La razón principal no es solo salarial: la monotonia del triage repetitivo, los turnos rotativos y la presión por volumenes de alertas contribuyen al burnout. Los SOC que automatizan el triage básico con IA están consiguiendo retener mejor a sus N1, ya que estos pasan menos tiempo en tareas repetitivas y más en investigación real.
+El perfil N1 es el que más rotación sufre. La media de permanencia en un puesto N1 en España es de 14-18 meses. La razón principal no es solo salarial: la monotonia del triage repetitivo, los turnos rotativos y la presión por volúmenes de alertas contribuyen al burnout. Los SOC que automatizan el triage básico con IA están consiguiendo retener mejor a sus N1, ya que estos pasan menos tiempo en táreas repetitivas y más en investigación real.
 
 ### Analista SOC N2 (Tier 2): 38.000 - 55.000 euros
 
@@ -78,7 +78,7 @@ El N2 es el nivel donde las diferencias salariales entre sectores se hacen más 
 
 ### Analista SOC N3 (Tier 3): 55.000 - 80.000 euros
 
-El N3 es el nivel experto. Se encarga de la investigación avanzada de incidentes complejos, el desarrollo de capacidades de detección, la ingenieria inversa de malware sofisticado, el threat intelligence avanzado y la mejora continua de las operaciones del SOC. Muchos N3 también actuan como mentores de los niveles inferiores y como interfaz técnica con la dirección.
+El N3 es el nivel experto. Se encarga de la investigación avanzada de incidentes complejos, el desarrollo de capacidades de detección, la ingeniería inversa de malware sofisticado, el threat intelligence avanzado y la mejora continua de las operaciones del SOC. Muchos N3 también actuan como mentores de los niveles inferiores y como interfaz técnica con la dirección.
 
 **Rango salarial 2026:**
 - N3 (7-10 años de experiencia): 55.000 - 65.000 euros.
@@ -100,7 +100,7 @@ El SOC Manager dirige el equipo, define procesos, gestiona métricas, interactua
 - SOC Manager en enterprise o sector regulado (equipo de 15-50 personas): 78.000 - 95.000 euros.
 
 **Factores diferenciadores:**
-- Tamano del equipo gestionado.
+- Tamaño del equipo gestionado.
 - Presupuesto bajo gestión.
 - Complejidad del entorno (multi-cloud, multi-regulación, operaciones internacionales).
 - Certificaciones de gestión como CISM (Certified Information Security Manager) o GSLC (GIAC Security Leadership Certification).
@@ -136,7 +136,7 @@ Barcelona tiene la ventaja de un ecosistema internacional: varias empresas de ci
 
 ### Valencia
 
-Valencia se ha posicionado como el tercer hub de ciberseguridad en España, impulsada por un coste de vida significativamente menor y un ecosistema tecnologico en crecimiento. Varias empresas de ciberseguridad han abierto oficinas o operan completamente en remoto desde Valencia.
+Valencia se ha posicionado como el tercer hub de ciberseguridad en España, impulsada por un coste de vida significativamente menor y un ecosistema tecnológico en crecimiento. Varias empresas de ciberseguridad han abierto oficinas o operan completamente en remoto desde Valencia.
 
 - N1: 24.000 - 30.000 euros.
 - N2: 36.000 - 47.000 euros.
@@ -158,14 +158,14 @@ El plus de Bilbao es la especialización OT/ICS: los analistas con experiencia e
 
 ### Teletrabajo
 
-El modelo de teletrabajo completo se ha consolidado para roles SOC fuera de turno presencial. Aproximadamente el 30-35% de las ofertas SOC en 2026 aceptan teletrabajo total (excluyendo N1 en turnos 24/7, que frecuentemente requieren presencia en el centro de operaciones). Los salarios en remoto total tipicamente se sitúan en:
+El modelo de teletrabajo completo se ha consolidado para roles SOC fuera de turno presencial. Aproximadamente el 30-35% de las ofertas SOC en 2026 aceptan teletrabajo total (excluyendo N1 en turnos 24/7, que frecuentemente requieren presencia en el centro de operaciones). Los salarios en remoto total típicamente se sitúan en:
 
 - El rango de la sede fiscal de la empresa (si está en Madrid, pagan "precios de Madrid").
 - O un 5-10% menos que la oficina equivalente si la empresa aplica ajuste por ubicación.
 
 La tendencia es que cada vez menos empresas aplican ajuste por ubicación. La escasez de talento les obliga a competir por salario absoluto, independientemente de donde viva el profesional.
 
-{{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana. Libera a tu equipo de tareas repetitivas." label="Ver demo SOC" >}}
+{{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana. Libera a tu equipo de táreas repetitivas." label="Ver demo SOC" >}}
 
 ## Sectores que mejor pagan
 
@@ -193,7 +193,7 @@ Las consultoras especializadas en ciberseguridad (S21sec, Telefónica Tech, Bida
 
 ### Administración pública
 
-El sector público español paga por debajo del mercado privado para perfiles SOC. Un analista N1 en un organismo público puede cobrar 22.000-28.000 euros, y la progresión salarial es lenta. Sin embargo, la estabilidad laboral, los horarios más predecibles y las condiciones de conciliación compensan para algunos profesionales. El CCN-CERT y los CSIRT autonomicos ofrecen roles tecnicamente interesantes, aunque los salarios no son competitivos con el sector privado.
+El sector público español paga por debajo del mercado privado para perfiles SOC. Un analista N1 en un organismo público puede cobrar 22.000-28.000 euros, y la progresión salarial es lenta. Sin embargo, la estabilidad laboral, los horarios más predecibles y las condiciones de conciliación compensan para algunos profesionales. El CCN-CERT y los CSIRT autonómicos ofrecen roles técnicamente interesantes, aunque los salarios no son competitivos con el sector privado.
 
 ### Startups de ciberseguridad
 
@@ -250,7 +250,7 @@ Londres es el mercado europeo con salarios SOC más altos. El coste de vida (esp
 - N3: 68.000 - 95.000 euros.
 - SOC Manager: 80.000 - 110.000 euros.
 
-Alemania paga un 30-40% más que España en perfiles SOC equivalentes. Munich, Frankfurt y Berlin son los hubs principales. El aleman es un requisito frecuente, aunque los SOC de empresas internacionales operan en ingles.
+Alemania paga un 30-40% más que España en perfiles SOC equivalentes. Munich, Frankfurt y Berlin son los hubs principales. El alemán es un requisito frecuente, aunque los SOC de empresas internacionales operan en ingles.
 
 ### Francia
 
@@ -268,7 +268,7 @@ Francia se sitúa entre España y Alemania. Paris concentra la mayor parte de la
 - N3: 65.000 - 90.000 euros.
 - SOC Manager: 75.000 - 105.000 euros.
 
-Los Países Bajos ofrecen un mercado interesante: salarios altos, fiscalidad favorable para expatriados (30% ruling) y un ecosistema de ciberseguridad maduro con empresas como ATOS, Fox-IT y numerosas startups. El ingles es suficiente para la mayoría de posiciones.
+Los Países Bajos ofrecen un mercado interesante: salarios altos, fiscalidad favorable para expatriados (30% ruling) y un ecosistema de ciberseguridad maduro con empresas como ATOS, Fox-IT y numerosas startups. El inglés es suficiente para la mayoría de posiciones.
 
 ### Conclusión de la comparativa
 
@@ -284,10 +284,10 @@ En 2026, esta emergiendo una nueva franja salarial para profesionales SOC con co
 
 - **Automatización de triage con LLMs**: analistas que saben integrar modelos de lenguaje en playbooks SOAR para automatizar el triage de alertas de baja prioridad.
 - **Detection Engineering con ML**: profesionales que crean reglas de detección combinando lógica tradicional (Sigma, YARA) con modelos de machine learning.
-- **Prompt engineering para CTI**: analistas que utilizan LLMs para acelerar el análisis de inteligencia de amenazas, automatizar la producción de informes y correlacionar fuentes.
+- **Prompt engineering para CTI**: analistas que utilizan LLMs para acelerar el análisis de inteligencia de amenazas, automatizar la producción de informes y correlaciónar fuentes.
 - **Integración de IA soberana**: profesionales que despliegan y gestionan modelos de IA self-hosted para operaciones de seguridad en entornos regulados.
 
-Estos perfiles están cobrando un premium del 15-25% sobre los rangos salariales estándar de su nivel. Un N2 con experiencia real en automatización SOC con IA puede superar los 55.000 euros, y un N3 con estas competencias se sitúa facilmente en los 80.000-90.000 euros.
+Estos perfiles están cobrando un premium del 15-25% sobre los rangos salariales estándar de su nivel. Un N2 con experiencia real en automatización SOC con IA puede superar los 55.000 euros, y un N3 con estas competencias se sitúa fácilmente en los 80.000-90.000 euros.
 
 ## Progresión profesional: rutas desde el SOC
 
@@ -319,9 +319,9 @@ El SOC no es un destino final. Es un trampolín hacia múltiples trayectorias pr
 
 ### Ruta freelance / consultoría independiente
 
-Algunos profesionales SOC con 8-10+ años de experiencia y reputación en el sector optan por la consultoría independiente. Las tarifas tipicas en España en 2026:
+Algunos profesionales SOC con 8-10+ años de experiencia y reputación en el sector optan por la consultoría independiente. Las tarifas típicas en España en 2026:
 
-- Consultoria estratégica SOC: 600-1.000 euros/día.
+- Consultoría estratégica SOC: 600-1.000 euros/día.
 - Incident Response retainer: 800-1.500 euros/día.
 - Forensics especializado: 900-1.500 euros/día.
 - Formación y mentoring: 500-800 euros/día.
@@ -356,11 +356,11 @@ Según las ofertas de empleo publicadas en los principales portales (LinkedIn, I
 
 ### Competencias técnicas tier 1 (impacto alto)
 
-- **SIEM avanzado**: no solo usar Splunk o Sentinel, sino crear dashboards, queries optimizadas, correlaciones personalizadas y pipelines de datos.
+- **SIEM avanzado**: no solo usar Splunk o Sentinel, sino crear dashboards, queries optimizadas, correlaciónes personalizadas y pipelines de datos.
 - **Detection engineering**: escritura de reglas Sigma, YARA y Suricata. Mapeo a [MITRE ATT&CK](https://attack.mitre.org/). Medición de cobertura de detección.
 - **Cloud security**: AWS Security Hub, Azure Sentinel, GCP Chronicle. Las organizaciones migran sus SOC a cloud y necesitan analistas que operen ahí.
 - **Automatización**: Python para scripting de seguridad, integración con APIs de herramientas, desarrollo de playbooks SOAR.
-- **Threat hunting**: capacidad de buscar amenazas proactivamente sin depender de alertas. Metodologias como PEAK o TaHiTI.
+- **Threat hunting**: capacidad de buscar amenazas proactivamente sin depender de alertas. Metodologías como PEAK o TaHiTI.
 
 ### Competencias técnicas tier 2 (impacto medio-alto)
 
@@ -372,7 +372,7 @@ Según las ofertas de empleo publicadas en los principales portales (LinkedIn, I
 ### Competencias transversales
 
 - **Comunicación escrita**: capacidad de redactar informes de incidentes claros, documentación de procesos y presentaciones para dirección.
-- **Ingles técnico**: imprescindible para roles con responsabilidad internacional o en MSSPs con clientes globales.
+- **Inglés técnico**: imprescindible para roles con responsabilidad internacional o en MSSPs con clientes globales.
 - **Trabajo en equipo y mentoring**: especialmente valorado a partir de N2.
 - **Gestión del estres**: los turnos 24/7 y los incidentes críticos requieren templanza.
 
@@ -396,8 +396,8 @@ Para N1 que quiere llegar a N2: CySA+ o BTL1 son buenas opciones de coste-benefi
 
 ### El salario SOC seguira subiendo en los próximos años?
 
-Todo indica que si, al menos hasta 2028-2029. Los factores estructurales (deficit de talento, presión regulatoria de NIS2 y AI Act, incremento de ciberataques) no van a desaparecer a corto plazo. La automatización con IA eliminara parte de las tareas repetitivas de N1, pero no eliminara los puestos: los transformara. Los analistas N1 de 2028 harán el trabajo que hoy hacen los N2. Esto implica una presión al alza en competencias y, por extensión, en salarios. El riesgo a la baja es una recesión económica prolongada que congele contrataciones, pero incluso en ese escenario, la ciberseguridad es de las últimas areas en recibir recortes.
+Todo indica que si, al menos hasta 2028-2029. Los factores estructurales (deficit de talento, presión regulatoria de NIS2 y AI Act, incremento de ciberataques) no van a desaparecer a corto plazo. La automatización con IA eliminará parte de las táreas repetitivas de N1, pero no eliminará los puestos: los transformara. Los analistas N1 de 2028 harán el trabajo que hoy hacen los N2. Esto implica una presión al alza en competencias y, por extensión, en salarios. El riesgo a la baja es una recesión económica prolongada que congele contrataciones, pero incluso en ese escenario, la ciberseguridad es de las últimas áreas en recibir recortes.
 
 ### Cuánto tarda un N1 en llegar a N2 de media en España?
 
-La media está entre 2 y 3 años, pero la variabilidad es enorme. Un N1 en un SOC bien estructurado con mentoring activo, exposición a incidentes reales y apoyo para certificaciones puede hacer la transición en 18-24 meses. Un N1 en un SOC de volumen con rotación alta y sin plan de carrera puede tardar 4-5 años o estancarse indefinidamente. La clave está en buscar activamente la exposición a tareas de N2 (investigación de incidentes, threat hunting básico, creación de playbooks) incluso antes de la promoción formal.
+La media está entre 2 y 3 años, pero la variabilidad es enorme. Un N1 en un SOC bien estructurado con mentoring activo, exposición a incidentes reales y apoyo para certificaciones puede hacer la transición en 18-24 meses. Un N1 en un SOC de volumen con rotación alta y sin plan de carrera puede tardar 4-5 años o estancarse indefinidamente. La clave está en buscar activamente la exposición a táreas de N2 (investigación de incidentes, threat hunting básico, creación de playbooks) incluso antes de la promoción formal.

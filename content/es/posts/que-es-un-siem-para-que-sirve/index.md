@@ -12,12 +12,12 @@ author: "David Moya"
 translationKey: "siem-guide"
 ---
 
-Un SIEM (Security Information and Event Management) es la herramienta central de cualquier operación de ciberseguridad moderna. Recopila, normaliza y correlaciona los eventos de seguridad de toda la infraestructura tecnologica de una organización, detectando amenazas que sería imposible identificar analizando cada sistema de forma aislada. Según [Gartner](https://www.gartner.com/), el 72 por ciento de las organizaciones con más de 500 empleados utilizan alguna forma de SIEM, y la tendencia es claramente creciente en el segmento de empresas medianas.
+Un SIEM (Security Information and Event Management) es la herramienta central de cualquier operación de ciberseguridad moderna. Recopila, normaliza y correlacióna los eventos de seguridad de toda la infraestructura tecnológica de una organización, detectando amenazas que sería imposible identificar analizando cada sistema de forma aislada. Según [Gartner](https://www.gartner.com/), el 72 por ciento de las organizaciones con más de 500 empleados utilizan alguna forma de SIEM, y la tendencia es claramente creciente en el segmento de empresas medianas.
 
 <!--more-->
 
 {{< key-takeaways >}}
-- Un SIEM recopila, normaliza y correlaciona eventos de seguridad de toda la infraestructura para detectar amenazas
+- Un SIEM recopila, normaliza y correlacióna eventos de seguridad de toda la infraestructura para detectar amenazas
 - Principales soluciones: Splunk, Microsoft Sentinel, IBM QRadar, Elastic Security y Google Chronicle
 - El coste para una empresa mediana oscila entre 30.000 y 200.000 EUR anuales según la solución
 - Alternativas open source viables: Wazuh (SIEM+EDR), Elastic Security (Basic) y OSSIM
@@ -26,17 +26,17 @@ Un SIEM (Security Information and Event Management) es la herramienta central de
 
 ## Qué es un SIEM y para que sirve?
 
-SIEM es el acronimo de Security Information and Event Management. El término fue acunado por Gartner en 2005 para describir la convergencia de dos categorías de productos que hasta entonces existian por separado:
+SIEM es el acronimo de Security Information and Event Management. El término fue acuñado por Gartner en 2005 para describir la convergencia de dos categorías de productos que hasta entonces existian por separado:
 
 - **SIM (Security Information Management)**: enfocado en la recopilación, almacenamiento a largo plazo y análisis de logs con fines de cumplimiento normativo y auditoría.
 - **SEM (Security Event Management)**: centrado en la monitorización en tiempo real de eventos de seguridad, la correlación y la generación de alertas.
 
-Un SIEM moderno combina ambas funciones y anade capacidades avanzadas como análisis de comportamiento (UEBA), inteligencia de amenazas integrada, automatización de respuesta y, cada vez más, inteligencia artificial para la detección de anomalías.
+Un SIEM moderno combina ambas funciones y añade capacidades avanzadas como análisis de comportamiento (UEBA), inteligencia de amenazas integrada, automatización de respuesta y, cada vez más, inteligencia artificial para la detección de anomalías.
 
 En términos simples, un SIEM hace tres cosas fundamentales:
 
 1. **Recopila datos** de toda tu infraestructura: servidores, estaciones de trabajo, firewalls, aplicaciones, servicios cloud, bases de datos, sistemas de autenticación y cualquier otra fuente relevante.
-2. **Analiza y correlaciona** esos datos en tiempo real, aplicando reglas de detección para identificar patrones que indiquen una amenaza.
+2. **Analiza y correlacióna** esos datos en tiempo real, aplicando reglas de detección para identificar patrones que indiquen una amenaza.
 3. **Genera alertas** cuando detecta actividad sospechosa, proporcionando al equipo de seguridad la información necesaria para investigar y responder.
 
 ## Cómo funciona un SIEM?
@@ -56,7 +56,7 @@ El primer paso es la ingesta de datos. Un SIEM necesita recibir logs y eventos d
 
 La ingesta se realiza mediante diferentes mecanismos: agentes instalados en los endpoints, reenvio de syslog, APIs de integración, conectores nativos y protocolos estándar como CEF (Common Event Format) o LEEF (Log Event Extended Format).
 
-El volumen de datos es un factor crítico. Una organización mediana puede generar facilmente entre 5 y 20 GB de logs diarios. Organizaciones grandes superan los 100 GB diarios. Este volumen tiene implicaciones directas en el coste y el rendimiento del SIEM.
+El volumen de datos es un factor crítico. Una organización mediana puede generar fácilmente entre 5 y 20 GB de logs diarios. Organizaciones grandes superan los 100 GB diarios. Este volumen tiene implicaciones directas en el coste y el rendimiento del SIEM.
 
 ### Normalización y enriquecimiento (parsing)
 
@@ -64,19 +64,19 @@ Los logs llegan al SIEM en formatos muy diversos: cada fabricante y cada aplicac
 
 Este proceso incluye:
 - **Parsing**: extracción de campos relevantes de cada evento (IP origen, IP destino, usuario, acción, timestamp, etc.).
-- **Normalización**: mapeo de campos a una taxonomia común. Por ejemplo, el campo "src_ip" de un firewall y el campo "SourceAddress" de Windows se mapean al mismo campo normalizado.
+- **Normalización**: mapeo de campos a una taxonomía común. Por ejemplo, el campo "src_ip" de un firewall y el campo "SourceAddress" de Windows se mapean al mismo campo normalizado.
 - **Enriquecimiento**: adición de contexto externo a los eventos. Por ejemplo, geolocalizar una dirección IP, resolver un nombre de host, consultar una base de datos de reputación o asociar un usuario a su departamento y rol.
 
 ### Correlación y detección (analytics)
 
-La correlación es el corazon del SIEM. Es donde los eventos individuales, que por si solos pueden parecer inocuos, se combinan para revelar patrones de ataque.
+La correlación es el corazón del SIEM. Es donde los eventos individuales, que por sí solos pueden parecer inocuos, se combinan para revelar patrones de ataque.
 
 **Tipos de correlación:**
 
 - **Basada en reglas**: la forma más tradicional. Se definen reglas que especifican condiciones que, cuando se cumplen, generan una alerta. Ejemplo: "Si un usuario falla la autenticación más de 5 veces en 10 minutos desde una IP externa y luego accede exitosamente, genera una alerta de posible fuerza bruta exitosa."
 - **Estadistica**: detecta desviaciones respecto a una línea base. Ejemplo: "Si el volumen de tráfico DNS de un host supera en más de 3 desviaciones estándar su media histórica, alerta de posible exfiltración por DNS tunneling."
-- **Basada en amenazas**: correlaciona los eventos con indicadores de compromiso (IoC) procedentes de feeds de inteligencia de amenazas. Ejemplo: "Si un host se comunica con una IP que está en la lista de servidores C2 de Cobalt Strike, genera una alerta crítica."
-- **UEBA (User and Entity Behavior Analytics)**: analiza el comportamiento de usuarios y entidades para detectar anomalías. Ejemplo: "El usuario jgarcia normalmente accede desde Madrid en horario de oficina. Hoy ha accedido desde Rusia a las 3:00 AM. Alerta de comportamiento anomalo."
+- **Basada en amenazas**: correlacióna los eventos con indicadores de compromiso (IoC) procedentes de feeds de inteligencia de amenazas. Ejemplo: "Si un host se comunica con una IP que está en la lista de servidores C2 de Cobalt Strike, genera una alerta crítica."
+- **UEBA (User and Entity Behavior Analytics)**: analiza el comportamiento de usuarios y entidades para detectar anomalías. Ejemplo: "El usuario jgarcia normalmente accede desde Madrid en horario de oficina. Hoy ha accedido desde Rusia a las 3:00 AM. Alerta de comportamiento anómalo."
 
 Las reglas de correlación se organizan en casos de uso que, idealmente, se mapean al framework [MITRE ATT&CK](https://attack.mitre.org/) para garantizar una cobertura sistemática de las técnicas de ataque conocidas.
 
@@ -94,7 +94,7 @@ La calidad del tuning de las reglas determina la utilidad práctica del SIEM. Un
 
 El SIEM almacena los logs durante un periodo configurable que depende de los requisitos normativos y operativos:
 
-- **Requisitos operativos**: generalmente entre 30 y 90 días de datos en caliente (busqueda rápida).
+- **Requisitos operativos**: generalmente entre 30 y 90 días de datos en caliente (búsqueda rápida).
 - **Requisitos normativos**: el [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311) exige la conservación de logs de auditoría durante 5 años para nivel alto. [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) y [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) también imponen requisitos de retención. El RGPD limita la retención de datos personales al tiempo estrictamente necesario.
 - **Almacenamiento en frio**: los datos que superan el periodo operativo se archivan en almacenamiento más económico pero con tiempos de acceso mayores.
 
@@ -106,18 +106,18 @@ El mercado de SIEM es competitivo y diverso. Estas son las principales opciones 
 
 ### [Splunk](https://www.splunk.com/) Enterprise Security
 
-Splunk es la solución SIEM más reconocida del mercado. Adquirida por Cisco en 2024, destaca por su potente lenguaje de busqueda (SPL), su flexibilidad para ingerir cualquier tipo de dato y su amplio ecosistema de aplicaciones e integraciones.
+Splunk es la solución SIEM más reconocida del mercado. Adquirida por Cisco en 2024, destaca por su potente lenguaje de búsqueda (SPL), su flexibilidad para ingerir cualquier tipo de dato y su amplio ecosistema de aplicaciones e integraciónes.
 
-**Fortalezas:** potencia de busqueda y análisis, ecosistema maduro, gran comunidad, capacidad de manejar volumenes masivos de datos.
+**Fortalezas:** potencia de búsqueda y análisis, ecosistema maduro, gran comunidad, capacidad de manejar volúmenes masivos de datos.
 **Limitaciones:** coste elevado (especialmente en modelos de licenciamiento por volumen de ingesta), curva de aprendizaje del SPL, complejidad de administración en despliegues grandes.
-**Modelo de licenciamiento:** por volumen de datos ingestados (GB/día) o por entidades (workload pricing). Los precios tipicos oscilan entre 50 y 150 euros por GB/día ingestado.
+**Modelo de licenciamiento:** por volumen de datos ingestados (GB/día) o por entidades (workload pricing). Los precios típicos oscilan entre 50 y 150 euros por GB/día ingestado.
 
 ### [Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel)
 
 Sentinel es la solución SIEM nativa de la nube de Microsoft, integrada en el ecosistema Azure. Su adopción ha crecido enormemente gracias a su integración nativa con Microsoft 365, Azure AD y Defender.
 
 **Fortalezas:** integración nativa con el ecosistema Microsoft, modelo de precios pay-as-you-go, buenas capacidades de automatización con Logic Apps, actualización continua sin gestión de infraestructura.
-**Limitaciones:** dependencia del ecosistema Azure, curva de aprendizaje del lenguaje KQL, coste puede escalar rapidamente si no se controla el volumen de ingesta, menor flexibilidad para fuentes no-Microsoft.
+**Limitaciones:** dependencia del ecosistema Azure, curva de aprendizaje del lenguaje KQL, coste puede escalar rápidamente si no se controla el volumen de ingesta, menor flexibilidad para fuentes no-Microsoft.
 **Modelo de licenciamiento:** pago por uso basado en GB ingestados en Log Analytics. El coste típico es de 2,5 a 5 euros por GB/día, pero puede reducirse significativamente con compromisos de volumen.
 
 ### IBM QRadar
@@ -132,7 +132,7 @@ QRadar es una de las soluciones SIEM más veteranas y respetadas del mercado, co
 
 Basada en el Elastic Stack (Elasticsearch, Logstash, Kibana), Elastic Security ha evolucionado de una herramienta de análisis de logs a una solución SIEM completa con capacidades de detección, respuesta y threat hunting.
 
-**Fortalezas:** nucleo open source (licencia Elastic), escalabilidad excepcional, potencia de busqueda sobre grandes volumenes de datos, comunidad activa, reglas de detección alineadas con MITRE ATT&CK, agente unificado que integra SIEM y EDR.
+**Fortalezas:** núcleo open source (licencia Elastic), escalabilidad excepcional, potencia de búsqueda sobre grandes volúmenes de datos, comunidad activa, reglas de detección alineadas con MITRE ATT&CK, agente unificado que integra SIEM y EDR.
 **Limitaciones:** requiere conocimiento técnico significativo para desplegar y operar, las capacidades SIEM más avanzadas requieren licencia de pago (Platinum o Enterprise), no es plug-and-play.
 **Modelo de licenciamiento:** licencia gratuita (básica) con funcionalidades SIEM limitadas. Licencias Platinum y Enterprise para funcionalidades avanzadas: entre 20.000 y 80.000 euros anuales para una empresa mediana, o Elastic Cloud con pago por uso.
 
@@ -140,9 +140,9 @@ Basada en el Elastic Stack (Elasticsearch, Logstash, Kibana), Elastic Security h
 
 Chronicle, la solución de seguridad de Google Cloud, destaca por su capacidad de análisis a escala masiva, almacenando un año de datos de seguridad a coste fijo sin penalizar por volumen de ingesta.
 
-**Fortalezas:** almacenamiento a coste fijo (no penaliza por volumen), velocidad de busqueda sobre petabytes de datos, integración con el ecosistema de inteligencia de amenazas de Mandiant/Google, modelo de precios predecible.
-**Limitaciones:** menor ecosistema de integraciones nativas comparado con Splunk o Sentinel, requiere presencia en Google Cloud, madurez relativa como producto, menor presencia en el mercado europeo.
-**Modelo de licenciamiento:** precio fijo por empleado, independientemente del volumen de datos. Esto es una ventaja diferencial significativa para organizaciones con altos volumenes de logs.
+**Fortalezas:** almacenamiento a coste fijo (no penaliza por volumen), velocidad de búsqueda sobre petabytes de datos, integración con el ecosistema de inteligencia de amenazas de Mandiant/Google, modelo de precios predecible.
+**Limitaciones:** menor ecosistema de integraciónes nativas comparado con Splunk o Sentinel, requiere presencia en Google Cloud, madurez relativa como producto, menor presencia en el mercado europeo.
+**Modelo de licenciamiento:** precio fijo por empleado, independientemente del volumen de datos. Esto es una ventaja diferencial significativa para organizaciones con altos volúmenes de logs.
 
 ## SIEM open source o comercial: cual elegir?
 
@@ -168,7 +168,7 @@ La elección entre un SIEM open source y uno comercial depende de los recursos d
 - Equipo de seguridad que necesita enfocarse en la operación, no en la administración de la plataforma.
 - Requisitos de certificación o auditoría que valoran el respaldo de un fabricante.
 - Volumenes de datos muy elevados que requieren optimizaciones de rendimiento garantizadas.
-- Integraciones nativas con herramientas ya existentes en la organización.
+- Integraciónes nativas con herramientas ya existentes en la organización.
 
 En la práctica, muchas organizaciones adoptan un enfoque mixto: utilizan componentes open source para funciones específicas (por ejemplo, Wazuh como agente en endpoints o MISP para inteligencia de amenazas) combinados con un SIEM comercial como plataforma central de correlación.
 
@@ -182,9 +182,9 @@ No todas las organizaciones necesitan un SIEM completo. Estas son las señales c
 
 - **Volumen de infraestructura**: gestionas más de 50-100 servidores, múltiples aplicaciones y servicios cloud. La monitorización manual o con herramientas aisladas ya no es viable.
 - **Requisitos regulatorios**: tu organización está sujeta a ENS, NIS2, DORA, PCI DSS u otras normativas que exigen capacidades de monitorización continua, detección de incidentes y retención de logs.
-- **Incidentes previos**: has sufrido incidentes de seguridad y no pudiste determinar el alcance, la causa raiz o el impacto porque no tenias visibilidad suficiente.
+- **Incidentes previos**: has sufrido incidentes de seguridad y no pudiste determinar el alcance, la causa raíz o el impacto porque no tenias visibilidad suficiente.
 - **Equipo de seguridad en crecimiento**: tienes al menos una persona dedicada a ciberseguridad y necesitas darle herramientas para ser efectiva.
-- **Datos sensibles**: manejas datos personales, financieros, sanitarios o de propiedad intelectual cuya perdida o compromiso tendría un impacto significativo.
+- **Datos sensibles**: manejas datos personales, financieros, sanitarios o de propiedad intelectual cuya pérdida o compromiso tendría un impacto significativo.
 
 ### Alternativas al SIEM completo
 
@@ -200,12 +200,12 @@ El SIEM es la herramienta principal de un SOC, pero no la única. Su valor se mu
 ### Flujo típico SIEM-SOC
 
 1. Las fuentes de logs envían eventos al SIEM.
-2. El SIEM normaliza, correlaciona y genera alertas.
+2. El SIEM normaliza, correlacióna y genera alertas.
 3. Las alertas se presentan a los analistas N1, que realizan el triaje.
-4. Las alertas que requieren investigación se escalan a N2, que utiliza el SIEM para busquedas avanzadas y correlación manual.
+4. Las alertas que requieren investigación se escalan a N2, que utiliza el SIEM para búsquedas avanzadas y correlación manual.
 5. Los analistas N3 utilizan el SIEM para threat hunting proactivo.
 6. El SOAR recibe las alertas del SIEM y ejecuta playbooks automatizados para acciones de respuesta.
-7. Los ingenieros de detección crean y afinan reglas de correlación en el SIEM basandose en las lecciones aprendidas.
+7. Los ingenieros de detección crean y afinan reglas de correlación en el SIEM basándose en las lecciones aprendidas.
 
 ### Integración con SOAR
 
@@ -225,7 +225,7 @@ Es tentador querer tener visibilidad completa desde el inicio, pero conectar dec
 
 ### No dedicar recursos al tuning
 
-Un SIEM recien desplegado genera una cantidad enorme de falsos positivos. Sin una dedicación continúa al ajuste de reglas (tuning), los analistas sufriran fatiga de alertas y el SIEM perdera su valor. Planifica al menos un 20 por ciento del tiempo del equipo para tuning durante los primeros 6 meses.
+Un SIEM recien desplegado genera una cantidad enorme de falsos positivos. Sin una dedicación continua al ajuste de reglas (tuning), los analistas sufriran fatiga de alertas y el SIEM perdera su valor. Planifica al menos un 20 por ciento del tiempo del equipo para tuning durante los primeros 6 meses.
 
 ### Usar solo reglas del fabricante
 
@@ -253,8 +253,8 @@ Un despliegue básico (instalación, conexión de fuentes críticas, reglas inic
 
 ### SIEM, XDR o MDR: que necesito?
 
-Depende de tu situación. Si tienes equipo de seguridad y quieres control total sobre la detección, un SIEM es la opción. Si buscas simplicidad y tienes un entorno tecnologico homogeneo (por ejemplo, mayoritariamente Microsoft), un XDR puede ser suficiente. Si no tienes equipo interno de seguridad, un servicio MDR (que incluye tecnología y personas) es probablemente la mejor opción. Muchas organizaciones combinan SIEM con MDR: el proveedor MDR opera el SIEM y complementa con analistas las capacidades del equipo interno.
+Depende de tu situación. Si tienes equipo de seguridad y quieres control total sobre la detección, un SIEM es la opción. Si buscas simplicidad y tienes un entorno tecnológico homogeneo (por ejemplo, mayoritariamente Microsoft), un XDR puede ser suficiente. Si no tienes equipo interno de seguridad, un servicio MDR (que incluye tecnología y personas) es probablemente la mejor opción. Muchas organizaciones combinan SIEM con MDR: el proveedor MDR opera el SIEM y complementa con analistas las capacidades del equipo interno.
 
 ### Es obligatorio tener un SIEM por normativa?
 
-Ninguna normativa menciona explicitamente la obligación de tener un SIEM. Sin embargo, regulaciones como el ENS (especialmente en niveles medio y alto), NIS2 y DORA exigen capacidades de monitorización continua, detección de incidentes, gestión de logs y respuesta a amenazas que, en la práctica, son muy dificiles de satisfacer sin un SIEM o una solución equivalente. Los auditores de cumplimiento esperan encontrar un sistema centralizado de gestión de eventos de seguridad como parte de la infraestructura de control.
+Ninguna normativa menciona explícitamente la obligación de tener un SIEM. Sin embargo, regulaciones como el ENS (especialmente en niveles medio y alto), NIS2 y DORA exigen capacidades de monitorización continua, detección de incidentes, gestión de logs y respuesta a amenazas que, en la práctica, son muy dificiles de satisfacer sin un SIEM o una solución equivalente. Los auditores de cumplimiento esperan encontrar un sistema centralizado de gestión de eventos de seguridad como parte de la infraestructura de control.

@@ -24,7 +24,7 @@ El compliance en ciberseguridad es el conjunto de procesos, controles y práctic
 
 La diferencia entre "seguridad" y "compliance" es importante. La seguridad busca proteger los activos de información de la organización frente a amenazas reales. El compliance busca demostrar que se cumplen los requisitos legales y regulatorios. Lo ideal es que ambos esten alineados, pero en la práctica muchas organizaciones "cumplen" sin estar realmente seguras (checkbox compliance) o están razonablemente seguras pero no pueden demostrarlo ante un auditor.
 
-En 2026, el panorama regulatorio europeo es el más exigente del mundo. Una empresa española de sector regulado puede estar sujeta simultaneamente a ENS, NIS2, DORA, RGPD, ISO 27001 y EU AI Act. Cada normativa tiene su propio conjunto de requisitos, plazos, autoridades supervisoras y regimenes sancionadores. Gestionar este cumplimiento sin una estrategia integrada es insostenible.
+En 2026, el panorama regulatorio europeo es el más exigente del mundo. Una empresa española de sector regulado puede estar sujeta simultáneamente a ENS, NIS2, DORA, RGPD, ISO 27001 y EU AI Act. Cada normativa tiene su propio conjunto de requisitos, plazos, autoridades supervisoras y regimenes sancionadores. Gestionar este cumplimiento sin una estrategia integrada es insostenible.
 
 El coste del incumplimiento ha crecido exponencialmente. La AEPD impuso multas por valor de 45 millones de euros en 2025. Las sanciones de NIS2 alcanzan los 10 millones de euros o el 2% del volumen de negocio global. DORA permite multas diarias del 1% del volumen de negocio medio diario. El compliance ya no es una cuestion de reputación: es una cuestion de supervivencia económica.
 
@@ -44,7 +44,7 @@ El mapa regulatorio de ciberseguridad para empresas españolas y europeas en 202
 
 **EU AI Act (Reglamento UE 2024/1689).** Aplica a organizaciones que desarrollen o utilicen sistemas de IA. Clasifica los sistemas de IA por riesgo (inaceptable, alto, limitado, mínimo). Los sistemas de alto riesgo (incluidos los usados en infraestructuras críticas, salud, empleo y seguridad) requieren evaluación de conformidad, documentación técnica, supervisión humana y gestión de riesgos. Entrada en vigor escalonada entre 2025 y 2027.
 
-**LOPDGDD (Ley Organica 3/2018).** Complementa el RGPD en España con disposiciones sobre DPO, derechos digitales, videovigilancia y tratamientos específicos.
+**LOPDGDD (Ley Orgánica 3/2018).** Complementa el RGPD en España con disposiciones sobre DPO, derechos digitales, videovigilancia y tratamientos específicos.
 
 ## Cómo se relacionan ENS, NIS2, DORA e ISO 27001?
 
@@ -58,7 +58,7 @@ Estas normativas no son compartimentos estancos. Se solapan, se complementan y e
 
 **RGPD y todo lo demás.** El RGPD se centra en datos personales, mientras que ENS/NIS2/DORA/ISO 27001 cubren seguridad de la información de forma más amplia. Los controles de seguridad que se implementan para ENS o ISO 27001 (cifrado, control de accesos, logs) son medidas técnicas y organizativas validas para RGPD. El enfoque óptimo es tratar la protección de datos personales como un subconjunto de la seguridad de la información, no como un silo independiente.
 
-**Mapeo práctico.** Una empresa regulada española puede construir un marco unificado con un nucleo común de controles (gestión de riesgos, control de accesos, cifrado, continuidad, gestión de incidentes, auditorías) y capas específicas para cada normativa (notificación de incidentes NIS2/DORA, categorización ENS, DPO RGPD, TLPT DORA). Este enfoque reduce el esfuerzo total entre un 40% y un 60% frente a cumplir cada normativa por separado.
+**Mapeo práctico.** Una empresa regulada española puede construir un marco unificado con un núcleo común de controles (gestión de riesgos, control de accesos, cifrado, continuidad, gestión de incidentes, auditorías) y capas específicas para cada normativa (notificación de incidentes NIS2/DORA, categorización ENS, DPO RGPD, TLPT DORA). Este enfoque reduce el esfuerzo total entre un 40% y un 60% frente a cumplir cada normativa por separado.
 
 ## Qué pasos seguir para implementar un programa de compliance?
 
@@ -70,7 +70,7 @@ Un programa de compliance en ciberseguridad efectivo sigue estas fases:
 
 **Fase 3: Plan de remediación (2-4 semanas de planificación).** Transformar los gaps en proyectos concretos con responsables, plazos y presupuesto. Priorizar por: riesgo de sanción (proximidad de plazos regulatorios), riesgo de seguridad (gaps que exponen a amenazas reales) y esfuerzo (quick wins primero para generar tracción).
 
-**Fase 4: Implementación (3-12 meses según alcance).** Desplegar controles técnicos (SIEM, EDR, cifrado, MFA, backups), documentar políticas y procedimientos, formar al personal, configurar procesos de gestión de incidentes y continuidad, establecer la gobernanza (comite de seguridad, roles y responsabilidades).
+**Fase 4: Implementación (3-12 meses según alcance).** Desplegar controles técnicos (SIEM, EDR, cifrado, MFA, backups), documentar políticas y procedimientos, formar al personal, configurar procesos de gestión de incidentes y continuidad, establecer la gobernanza (comité de seguridad, roles y responsabilidades).
 
 **Fase 5: Auditoría y certificación (1-3 meses).** Auditoría interna primero para validar que todo está en orden. Después, auditoría externa por organismo acreditado (para ENS o ISO 27001). Para NIS2 y DORA, el regulador puede realizar inspecciones directas.
 
@@ -88,7 +88,7 @@ La automatización es la única forma viable de gestionar el compliance multi-no
 
 **Monitorización continúa de controles.** En lugar de verificar el cumplimiento una vez al año (en la auditoría), monitorizarlo en tiempo real. Si un control se degrada (por ejemplo, un servidor deja de enviar logs al SIEM), se genera una alerta automática antes de que el gap se convierta en un hallazgo de auditoría.
 
-**IA para compliance.** Los modelos de lenguaje están transformando tareas que antes eran exclusivamente manuales: análisis de gaps contra normativas (el modelo compara la documentación de la organización con los requisitos regulatorios), generación de borradores de políticas y procedimientos, respuesta a cuestionarios de seguridad de clientes, y mapeo automático de controles entre marcos.
+**IA para compliance.** Los modelos de lenguaje están transformando táreas que antes eran exclusivamente manuales: análisis de gaps contra normativas (el modelo compara la documentación de la organización con los requisitos regulatorios), generación de borradores de políticas y procedimientos, respuesta a cuestionarios de seguridad de clientes, y mapeo automático de controles entre marcos.
 
 **Integración con el ecosistema de seguridad.** La plataforma GRC debe integrarse con las herramientas de seguridad operativa (SIEM, EDR, IAM, vulnerability scanner, ticketing) para que el compliance refleje el estado real de seguridad, no una foto fija del último audit.
 
@@ -98,7 +98,7 @@ El CISO (Chief Information Security Officer) es el responsable natural del compl
 
 **Responsabilidad regulatoria directa.** NIS2 y DORA exigen que la responsabilidad de la gestión de riesgos de ciberseguridad recaiga en el órgano de dirección. Esto no desplaza al CISO, sino que lo convierte en el interlocutor técnico entre la dirección y la operativa de seguridad. El CISO debe ser capaz de comunicar riesgos, gaps y estado de cumplimiento en lenguaje de negocio.
 
-**Doble sombrero: seguridad y compliance.** En muchas organizaciones, el CISO gestiona tanto la seguridad operativa (SOC, respuesta a incidentes, vulnerability management) como el compliance regulatorio. Esto genera tensión: los recursos dedicados a preparar una auditoría son recursos que no se dedican a detectar amenazas. La solución es automatizar el compliance para liberar al equipo de seguridad para tareas de valor.
+**Doble sombrero: seguridad y compliance.** En muchas organizaciones, el CISO gestiona tanto la seguridad operativa (SOC, respuesta a incidentes, vulnerability management) como el compliance regulatorio. Esto genera tensión: los recursos dedicados a preparar una auditoría son recursos que no se dedican a detectar amenazas. La solución es automatizar el compliance para liberar al equipo de seguridad para táreas de valor.
 
 **Reporting a dirección.** NIS2 obliga a que el órgano de dirección apruebe las medidas de gestión de riesgos y reciba formación periódica. El CISO debe preparar reportes periódicos que reflejen: estado de cumplimiento por normativa, riesgos principales, incidentes relevantes, estado de los planes de remediación y métricas clave (MTTD, MTTR, cobertura de controles).
 
@@ -132,7 +132,7 @@ El coste del compliance depende del tamaño de la organización, los marcos apli
 **Factores que reducen el coste:**
 - Mapeo cruzado de controles entre marcos (ahorro del 40-60% en controles duplicados)
 - Automatización de recopilación de evidencias (reduce horas de personal dedicado)
-- Plataforma GRC que centralice la gestión (elimina hojas de calculo y silos)
+- Plataforma GRC que centralice la gestión (elimina hojas de cálculo y silos)
 - Enfoque risk-based: priorizar los controles que realmente reducen riesgo
 
 **El coste del incumplimiento siempre supera al del compliance.** Una sanción de la AEPD por brecha de datos (media de 100.000 EUR para PYMES) más el coste de gestión del incidente (50.000 a 500.000 EUR) supera el coste de un programa de compliance básico.
@@ -147,15 +147,15 @@ El régimen sancionador europeo en ciberseguridad se ha endurecido drasticamente
 
 **DORA.** Multas del 1% del volumen de negocio medio diario del año anterior, impuestas de forma diaria hasta que se corrija el incumplimiento. Para proveedores TIC críticos, multas de hasta el 1% del volumen de negocio medio diario mundial.
 
-**ENS.** No tiene un régimen sancionador directo comparable, pero el incumplimiento puede generar: responsabilidad patrimonial de la administración, responsabilidad personal de funcionarios, perdida de certificaciones y exclusión de contrataciones públicas para proveedores.
+**ENS.** No tiene un régimen sancionador directo comparable, pero el incumplimiento puede generar: responsabilidad patrimonial de la administración, responsabilidad personal de funcionarios, pérdida de certificaciones y exclusión de contrataciones públicas para proveedores.
 
 **ISO 27001.** Al ser una certificación voluntaria, el incumplimiento no genera sanciones legales directas. Sin embargo, perder la certificación puede significar perder contratos con clientes que la exigen, exclusión de licitaciones y daño reputacional.
 
-**Consecuencias no económicas.** Las sanciones públicas tienen un impacto reputacional que a menudo supera el coste económico. La perdida de confianza de clientes, la cobertura mediatica negativa y la dificultad para captar talento afectan al negocio a largo plazo.
+**Consecuencias no económicas.** Las sanciones públicas tienen un impacto reputacional que a menudo supera el coste económico. La pérdida de confianza de clientes, la cobertura mediatica negativa y la dificultad para captar talento afectan al negocio a largo plazo.
 
 ## Tendencias en compliance para 2027
 
-**Compliance continuo.** La transición de auditorías periódicas (anuales o bianuales) a monitorización continua del cumplimiento. Las plataformas GRC con integraciones en tiempo real permiten detectar gaps antes de que se conviertan en hallazgos de auditoría. Los reguladores están empezando a valorar este enfoque frente al modelo clásico de auditoría puntual.
+**Compliance continuo.** La transición de auditorías periódicas (anuales o bianuales) a monitorización continua del cumplimiento. Las plataformas GRC con integraciónes en tiempo real permiten detectar gaps antes de que se conviertan en hallazgos de auditoría. Los reguladores están empezando a valorar este enfoque frente al modelo clásico de auditoría puntual.
 
 **IA regulada y compliance de IA.** El EU AI Act introduce una nueva capa de compliance que se solapara con la ciberseguridad. Los sistemas de IA usados en seguridad (detección de amenazas, análisis de riesgos automatizado) están clasificados como alto riesgo y requieren evaluación de conformidad, documentación técnica y supervisión humana.
 
@@ -168,7 +168,7 @@ El régimen sancionador europeo en ciberseguridad se ha endurecido drasticamente
 **Automatización total del ciclo de auditoría.** Desde la recopilación de evidencias hasta la generación del informe de auditoría, pasando por el análisis de gaps y la generación de planes de remediación. El auditor humano pasara de recopilar y verificar evidencias manualmente a supervisar y validar procesos automatizados.
 
 
-{{< cta type="bofu" text="Empieza tu PoC de 90 dias con Riskitera y automatiza el compliance desde el primer dia." label="Iniciar PoC" >}}
+{{< cta type="bofu" text="Empieza tu PoC de 90 días con Riskitera y automatiza el compliance desde el primer dia." label="Iniciar PoC" >}}
 
 
 **Artículos relacionados:**
@@ -180,7 +180,7 @@ El régimen sancionador europeo en ciberseguridad se ha endurecido drasticamente
 ## Preguntas frecuentes
 
 **Necesito cumplir todas las normativas a la vez?**
-No necesariamente. Primero identifica cuales te son aplicables. Una startup tecnologica de 30 empleados que no trata datos de salud ni opera en sector financiero probablemente solo necesite RGPD e ISO 27001 (si sus clientes lo exigen). Una empresa de servicios financieros de 500 empleados que presta servicios a la administración pública necesitará RGPD, DORA, ENS e ISO 27001. El primer paso siempre es el scope.
+No necesariamente. Primero identifica cuales te son aplicables. Una startup tecnológica de 30 empleados que no trata datos de salud ni opera en sector financiero probablemente solo necesite RGPD e ISO 27001 (si sus clientes lo exigen). Una empresa de servicios financieros de 500 empleados que presta servicios a la administración pública necesitará RGPD, DORA, ENS e ISO 27001. El primer paso siempre es el scope.
 
 **Puedo cumplir sin contratar una consultora?**
 Depende de tu equipo interno. Si tienes un CISO con experiencia regulatoria y un equipo de seguridad competente, puedes gestionar el compliance internamente usando herramientas GRC. Si no tienes ese perfil, la consultora te ahorra tiempo y errores, especialmente en el gap analysis inicial y la preparación de la primera auditoría. A medio plazo, el objetivo debería ser internalizar la capacidad.
@@ -192,4 +192,4 @@ Prioriza por riesgo de sanción y plazo. En 2026: RGPD (ya en vigor, sanciones a
 Tres años, con auditorías de seguimiento anuales. El ciclo típico: auditoría de certificación (etapa 1 documental + etapa 2 in situ), auditoría de seguimiento al final del primer año, auditoría de seguimiento al final del segundo año, y auditoría de recertificación al final del tercer año.
 
 **El compliance garantiza que no sufra un ciberataque?**
-No. El compliance reduce el riesgo y demuestra diligencia, pero ningun programa de seguridad elimina completamente el riesgo de ataque. Lo que si garantiza el compliance es que, en caso de incidente, la organización pueda demostrar ante el regulador que habia adoptado medidas razonables y proporcionadas. Esto puede ser la diferencia entre una sanción mínima y una multa millonaria.
+No. El compliance reduce el riesgo y demuestra diligencia, pero ningún programa de seguridad elimina completamente el riesgo de ataque. Lo que si garantiza el compliance es que, en caso de incidente, la organización pueda demostrar ante el regulador que habia adoptado medidas razonables y proporcionadas. Esto puede ser la diferencia entre una sanción mínima y una multa millonaria.

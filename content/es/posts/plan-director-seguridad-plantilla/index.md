@@ -44,9 +44,9 @@ El [Esquema Nacional de Seguridad (ENS)](https://www.boe.es/eli/es/rd/2022/05/03
 - Un análisis de riesgos proporcional a la categoría del sistema.
 - Medidas de seguridad organizativas, operacionales y de protección.
 - Un proceso de mejora continua documentado.
-- Auditorias periódicas (al menos cada dos años para categoría Alta).
+- Auditorías periódicas (al menos cada dos años para categoría Alta).
 
-El [Centro Criptologico Nacional (CCN-CERT)](https://www.ccn-cert.cni.es/) pública la serie de guías CCN-STIC 800 que detalla cómo elaborar e implementar estos planes. En particular, la guía CCN-STIC 825 proporciona un marco de referencia para la gestión de la seguridad de la información qué es directamente aplicable al PDS.
+El [Centro Criptológico Nacional (CCN-CERT)](https://www.ccn-cert.cni.es/) pública la serie de guías CCN-STIC 800 que detalla cómo elaborar e implementar estos planes. En particular, la guía CCN-STIC 825 proporciona un marco de referencia para la gestión de la seguridad de la información qué es directamente aplicable al PDS.
 
 Más allá del ámbito público, normativas como [ISO 27001](https://www.iso.org/standard/27001) (cláusula 6.2, objetivos de seguridad y planificación para conseguirlos), la directiva [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) y el reglamento [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) para el sector financiero exigen planificación estratégica equivalente. Cualquier empresa que quiera certificarse o demostrar cumplimiento normativo necesita un PDS formal.
 
@@ -83,16 +83,16 @@ No debe superar las dos páginas. Si la dirección no entiende el resumen, no ap
 Define los límites del plan:
 
 - **Alcance organizativo**: que unidades de negocio, filiales o departamentos cubre.
-- **Alcance tecnologico**: que sistemas, redes, aplicaciones y servicios cloud están incluidos.
+- **Alcance tecnológico**: que sistemas, redes, aplicaciones y servicios cloud están incluidos.
 - **Alcance geográfico**: ubicaciones físicas, centros de datos, teletrabajo.
-- **Exclusiones explicitas**: que queda fuera y por que (ej. "se excluye la filial en proceso de desinversión").
+- **Exclusiones explícitas**: que queda fuera y por que (ej. "se excluye la filial en proceso de desinversión").
 
 El contexto incluye:
 
 - Marco normativo aplicable (ENS, NIS2, DORA, RGPD, sectorial).
 - Estructura organizativa del area de seguridad.
 - Estado de madurez actual (resultado del análisis previo).
-- Dependencias con otros planes corporativos (plan de continuidad, plan tecnologico).
+- Dependencias con otros planes corporativos (plan de continuidad, plan tecnológico).
 
 ### Sección 3: Análisis de la situación actual
 
@@ -100,7 +100,7 @@ Esta sección documenta el punto de partida. Es el diagnóstico que justifica to
 
 **Inventario de activos**: catalogación de los activos de información críticos, agrupados por tipo (información, servicios, aplicaciones, equipamiento, instalaciones, personas). El [CCN-CERT](https://www.ccn-cert.cni.es/) recomienda usar la herramienta PILAR o la metodología MAGERIT para esta tarea.
 
-**Análisis de riesgos**: identificación de amenazas, vulnerabilidades y calculo del riesgo residual. El ENS exige que el análisis sea proporcional a la categoría del sistema. Para categoría Alta, se necesita un análisis formal con metodología reconocida (MAGERIT, NIST SP 800-30, ISO 27005).
+**Análisis de riesgos**: identificación de amenazas, vulnerabilidades y cálculo del riesgo residual. El ENS exige que el análisis sea proporcional a la categoría del sistema. Para categoría Alta, se necesita un análisis formal con metodología reconocida (MAGERIT, NIST SP 800-30, ISO 27005).
 
 **Evaluación de madurez**: comparación del estado actual con un marco de referencia. Las opciones más habituales son:
 
@@ -126,9 +126,9 @@ Cada objetivo debe tener un responsable, un indicador de medida y una fecha lím
 
 ### Sección 5: Plan de acción (proyectos de seguridad)
 
-El nucleo del PDS. Cada proyecto se documenta con una ficha que incluye:
+El núcleo del PDS. Cada proyecto se documenta con una ficha que incluye:
 
-- **Codigo y nombre**: ej. PDS-2026-001: Despliegue de SIEM.
+- **Código y nombre**: ej. PDS-2026-001: Despliegue de SIEM.
 - **Objetivo**: que gap o riesgo aborda.
 - **Alcance**: sistemas o procesos afectados.
 - **Responsable**: persona o equipo.
@@ -138,7 +138,7 @@ El nucleo del PDS. Cada proyecto se documenta con una ficha que incluye:
 - **Prioridad**: resultado de la priorización (ver sección correspondiente).
 - **KPI asociado**: como se medira el éxito.
 
-Ejemplos tipicos de proyectos en un PDS:
+Ejemplos típicos de proyectos en un PDS:
 
 1. Implantación o mejora del SIEM.
 2. Programa de concienciación y formación.
@@ -171,7 +171,7 @@ Un diagrama de Gantt o timeline que muestre:
 
 ### Sección 8: Gobernanza y seguimiento
 
-- Comite de seguridad: composición, frecuencia de reuniones, competencias.
+- Comité de seguridad: composición, frecuencia de reuniones, competencias.
 - Cuadro de mando con KPIs (ver sección dedicada).
 - Frecuencia de revisión del plan (trimestral recomendado).
 - Procedimiento de cambios al plan (quien aprueba modificaciones de alcance o presupuesto).
@@ -182,20 +182,20 @@ Un diagrama de Gantt o timeline que muestre:
 Los indicadores clave deben cubrir las cuatro perspectivas:
 
 **Riesgo**:
-- Numero de riesgos críticos sin tratar.
+- Número de riesgos críticos sin tratar.
 - Porcentaje de reducción de riesgo respecto al baseline.
 - Cobertura de controles sobre activos críticos.
 
 **Operaciones**:
 - MTTD (tiempo medio de detección).
 - MTTR (tiempo medio de respuesta/resolución).
-- Numero de incidentes por severidad y mes.
+- Número de incidentes por severidad y mes.
 - Porcentaje de vulnerabilidades críticas parcheadas en SLA.
 
 **Cumplimiento**:
 - Porcentaje de controles ENS/NIS2/ISO implementados.
 - Hallazgos de auditoría abiertos vs cerrados.
-- Dias de retraso en acciones correctivas.
+- Días de retraso en acciones correctivas.
 
 **Personas**:
 - Porcentaje de empleados que completaron la formación.
@@ -206,18 +206,18 @@ Los indicadores clave deben cubrir las cuatro perspectivas:
 
 El proceso de elaboración sigue una secuencia lógica que no conviene alterar. Saltarse pasos (especialmente el análisis de situación) es el error más frecuente y el más costoso.
 
-### Paso 1: Obten el compromiso de la dirección
+### Paso 1: Obtén el compromiso de la dirección
 
 Antes de empezar a trabajar, necesitas dos cosas de la alta dirección:
 
 1. **Mandato formal**: un documento (puede ser un acta de comite) que encargue la elaboración del PDS, nombre al responsable y asigne recursos para el proyecto.
-2. **Sponsor ejecutivo**: un miembro del comite de dirección que respalda el proyecto y facilite el acceso a las distintas areas.
+2. **Sponsor ejecutivo**: un miembro del comité de dirección que respalda el proyecto y facilite el acceso a las distintas areas.
 
-Sin este pasó, el PDS será un ejercicio academico que nadie implementara.
+Sin este pasó, el PDS será un ejercicio académico que nadie implementara.
 
 ### Paso 2: Define el alcance
 
-Reune al sponsor, al CISO (o responsable de seguridad), al CIO y a los responsables de las areas principales. En una sesión de 2 a 4 horas, acuerda:
+Reúne al sponsor, al CISO (o responsable de seguridad), al CIO y a los responsables de las áreas principales. En una sesión de 2 a 4 horas, acuerda:
 
 - Que unidades de negocio entran.
 - Que marco normativo aplica.
@@ -265,13 +265,13 @@ Redacta el documento completo. Prepara una presentación ejecutiva de 15 a 20 di
 
 ### Paso 9: Aprueba y ejecuta
 
-Presenta al comite de dirección. Incorpora feedback. Obtiene la aprobación formal. Comunica el plan a toda la organización (al menos el resumen ejecutivo y los hitos que afectan a cada area).
+Presenta al comité de dirección. Incorpora feedback. Obtiene la aprobación formal. Comunica el plan a toda la organización (al menos el resumen ejecutivo y los hitos que afectan a cada area).
 
 ### Paso 10: Monitoriza y revisa
 
 El plan no es un documento estático. Establece:
 
-- Reuniones trimestrales de seguimiento con el comite de seguridad.
+- Reuniónes trimestrales de seguimiento con el comité de seguridad.
 - Revisión anual completa del plan (o antes si hay cambios significativos en el contexto).
 - Actualización del análisis de riesgos ante nuevas amenazas o cambios organizativos.
 
@@ -283,7 +283,7 @@ No todos los proyectos pueden ejecutarse a la vez. La priorización es crítica 
 
 ### Matriz de priorización
 
-El metodo más práctico combina dos ejes:
+El método más práctico combina dos ejes:
 
 | | Impacto Alto | Impacto Bajo |
 |---|---|---|
@@ -329,7 +329,7 @@ Cada proyecto del PDS genera costes en estas categorías:
 - Hardware (firewalls, servidores, appliances).
 - Licencias de software (perpetuas).
 - Infraestructura (cableado, CPD, obra civil).
-- Consultoria de implementación.
+- Consultoría de implementación.
 
 **OPEX (gasto recurrente anual)**:
 - Suscripciones SaaS (SIEM cloud, EDR, IAM).
@@ -363,7 +363,7 @@ Un PDS de 12 meses para una organización mediana (200 a 500 empleados) podría 
 
 ### Trimestre 1 (meses 1 a 3): Fundamentos
 
-- **Mes 1**: Constituir comite de seguridad. Aprobar política de seguridad. Inventario de activos críticos.
+- **Mes 1**: Constituir comité de seguridad. Aprobar política de seguridad. Inventario de activos críticos.
 - **Mes 2**: Análisis de riesgos inicial. Evaluación de madurez baseline.
 - **Mes 3**: Despliegue de MFA en accesos remotos (quick win). Inicio del programa de concienciación (primer modulo).
 
@@ -385,7 +385,7 @@ Un PDS de 12 meses para una organización mediana (200 a 500 empleados) podría 
 - **Mes 11**: Auditoría interna del PDS. Medición de KPIs vs baseline.
 - **Mes 12**: Informe de cierre del primer ciclo. Presentación de resultados a la dirección. Planificación del segundo año.
 
-Este cronograma es una referencia. Cada organización debe adaptarlo a su contexto, pero el principio es siempre el mismo: fundamentos primero, protección después, madurez continúa.
+Este cronograma es una referencia. Cada organización debe adaptarlo a su contexto, pero el principio es siempre el mismo: fundamentos primero, protección después, madurez continua.
 
 ## Cómo conseguir la aprobación de la dirección
 
@@ -399,7 +399,7 @@ La dirección no entiende (ni necesita entender) que es un exploit de día cero.
 - "Si sufrimos una brecha de datos personales, la multa RGPD puede llegar al 4% de la facturación anual."
 - "Tres de nuestros clientes principales exigen certificación ENS/ISO 27001 para renovar contrato. Sin ella, perdemos 1.5M EUR en renovaciones."
 
-### Usa el lenguaje del comite de dirección
+### Usa el lenguaje del comité de dirección
 
 | En lugar de... | Di... |
 |---|---|
@@ -439,7 +439,7 @@ A continuación se describe la plantilla completa que puedes usar como base para
 
 ### 3. Alcance y contexto (2 a 3 páginas)
 
-- Alcance organizativo, tecnologico, geográfico.
+- Alcance organizativo, tecnológico, geográfico.
 - Marco normativo aplicable.
 - Estructura de gobernanza de seguridad.
 - Relación con otros planes corporativos.
@@ -477,7 +477,7 @@ A continuación se describe la plantilla completa que puedes usar como base para
 
 ### 9. Gobernanza y seguimiento (2 a 3 páginas)
 
-- Comite de seguridad: composición y funcionamiento.
+- Comité de seguridad: composición y funcionamiento.
 - Cuadro de mando (KPIs).
 - Procedimiento de revisión y actualización.
 - Reporting a la dirección.
@@ -522,22 +522,22 @@ Muchos PDS incluyen el coste de implementar una solución pero olvidan el coste 
 
 El PDS debe revisarse trimestralmente como mínimo. Las amenazas cambian, la organización cambia, el presupuesto cambia. Un plan de 2024 ejecutado sin modificaciones en 2026 probablemente no cubra los riesgos actuales.
 
-### Error 8: Copiar plantillas genericas sin adaptar
+### Error 8: Copiar plantillas genéricas sin adaptar
 
 Internet esta lleno de plantillas de PDS. Usarlas como punto de partida está bien; copiarlas tal cual sin adaptar al contexto de la organización es un error que los auditores detectan en cinco minutos.
 
-{{< cta type="bofu" text="Empieza tu PoC de 90 dias con Riskitera y automatiza el compliance desde el primer dia." label="Iniciar PoC" >}}
+{{< cta type="bofu" text="Empieza tu PoC de 90 días con Riskitera y automatiza el compliance desde el primer dia." label="Iniciar PoC" >}}
 
 
 **Artículos relacionados:**
-- [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/04/analisis-riesgos-ciberseguridad-paso-a-paso/)
+- [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/04/análisis-riesgos-ciberseguridad-paso-a-paso/)
 - [Políticas Seguridad Informatica Como Crearlas](/es/posts/2026/04/politicas-seguridad-informatica-como-crearlas/)
 
 ## Preguntas frecuentes
 
 ### Cuánto tiempo se tarda en elaborar un plan director de seguridad?
 
-Depende del tamaño y complejidad de la organización. Para una pyme de 100 a 300 empleados, entre 6 y 10 semanas es un plazo realista. Para una organización grande (más de 1.000 empleados, múltiples sedes, regulación sectorial), puede llevar de 3 a 6 meses. La fase que más tiempo consume es el análisis de riesgos y la evaluación de madurez, que requiere entrevistas con múltiples areas y recopilación de evidencias. No conviene acortar esta fase: un diagnóstico superficial produce un plan superficial.
+Depende del tamaño y complejidad de la organización. Para una pyme de 100 a 300 empleados, entre 6 y 10 semanas es un plazo realista. Para una organización grande (más de 1.000 empleados, múltiples sedes, regulación sectorial), puede llevar de 3 a 6 meses. La fase que más tiempo consume es el análisis de riesgos y la evaluación de madurez, que requiere entrevistas con múltiples áreas y recopilación de evidencias. No conviene acortar esta fase: un diagnóstico superficial produce un plan superficial.
 
 ### Es obligatorio tener un plan director de seguridad?
 
@@ -545,7 +545,7 @@ Depende del sector y la normativa aplicable. Para administraciones públicas esp
 
 ### Cuál es la diferencia entre un plan director y una política de seguridad?
 
-La política de seguridad es un documento de alto nivel que establece los principios, compromisos y directrices generales de la organización en materia de seguridad. Es relativamente corta (5 a 15 páginas), rara vez cambia y aplica a toda la organización. El plan director, en cambio, es el documento operativo que traduce esos principios en proyectos concretos con plazos, responsables y presupuesto. Tiene vigencia temporal (1 a 3 años) y se revisa periodicamente. La política dice "que queremos conseguir"; el PDS dice "como, cuando y con que recursos".
+La política de seguridad es un documento de alto nivel que establece los principios, compromisos y directrices generales de la organización en materia de seguridad. Es relativamente corta (5 a 15 páginas), rara vez cambia y aplica a toda la organización. El plan director, en cambio, es el documento operativo que traduce esos principios en proyectos concretos con plazos, responsables y presupuesto. Tiene vigencia temporal (1 a 3 años) y se revisa periódicamente. La política dice "que queremos conseguir"; el PDS dice "como, cuando y con que recursos".
 
 ### Puedo usar herramientas automatizadas para elaborar el plan director?
 
@@ -553,4 +553,4 @@ Sí, y cada vez es más recomendable. Herramientas de GRC como las que ofrece Ri
 
 ### Con que frecuencia hay que actualizar el plan director?
 
-El PDS debe revisarse formalmente al menos una vez al año, con seguimiento trimestral de avance. Además, debe actualizarse de forma extraordinaria cuando se produzcan cambios significativos: una nueva normativa aplicable, un incidente grave, una fusión o adquisición, un cambio importante en la infraestructura tecnologica o una modificación sustancial del presupuesto. El ENS exige que el análisis de riesgos se revise cuando cambian las condiciones que lo motivaron. En la práctica, un PDS que no se ha tocado en más de 18 meses probablemente no refleje la situación real de la organización.
+El PDS debe revisarse formalmente al menos una vez al año, con seguimiento trimestral de avance. Además, debe actualizarse de forma extraordinaria cuando se produzcan cambios significativos: una nueva normativa aplicable, un incidente grave, una fusión o adquisición, un cambio importante en la infraestructura tecnológica o una modificación sustancial del presupuesto. El ENS exige que el análisis de riesgos se revise cuando cambian las condiciones que lo motivaron. En la práctica, un PDS que no se ha tocado en más de 18 meses probablemente no refleje la situación real de la organización.

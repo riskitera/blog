@@ -22,7 +22,7 @@ Guía definitiva de threat intelligence para empresas en 2026: tipos, ciclo de i
 - La threat intelligence (TI) no es un feed de IoCs. Es un proceso sistemático que transforma datos en bruto sobre amenazas en inteligencia accionable para la toma de decisiones a nivel técnico, operativo y estratégico.
 - Existen cuatro niveles de inteligencia (estratégica, tactica, operativa y técnica) y cada uno responde a audiencias y necesidades distintas dentro de la organización.
 - El modelo de madurez de TI tiene cuatro etapas (ad-hoc, reactiva, proactiva, predictiva). La mayoría de empresas españolas se encuentran entre las dos primeras.
-- NIS2 y DORA exigen explicitamente capacidades de inteligencia sobre amenazas. No es opcional para entidades esenciales, importantes o del sector financiero.
+- NIS2 y DORA exigen explícitamente capacidades de inteligencia sobre amenazas. No es opcional para entidades esenciales, importantes o del sector financiero.
 - El ROI de un programa de TI se mide en reducción de tiempo de detección, reducción de falsos positivos, mejora de la postura de seguridad y cumplimiento regulatorio demostrable.
 {{< /key-takeaways >}}
 
@@ -34,9 +34,9 @@ La definición de [MITRE ATT&CK](https://attack.mitre.org/) lo resume bien: thre
 
 En 2026, la TI ha dejado de ser un lujo reservado a grandes corporaciones. Tres factores han democratizado su adopción:
 
-1. **Regulación obligatoria.** La Directiva [NIS2](https://www.enisa.europa.eu/) exige a entidades esenciales e importantes la implementación de medidas de gestión de riesgos que incluyan "políticas sobre análisis de riesgos y seguridad de los sistemas de información". [DORA](https://www.eiopa.europa.eu/browse/regulation-and-policy/digital-operational-resilience-act-dora_en) va más lejos para el sector financiero, requiriendo explicitamente capacidades de threat intelligence compartida.
+1. **Regulación obligatoria.** La Directiva [NIS2](https://www.enisa.europa.eu/) exige a entidades esenciales e importantes la implementación de medidas de gestión de riesgos que incluyan "políticas sobre análisis de riesgos y seguridad de los sistemas de información". [DORA](https://www.eiopa.europa.eu/browse/regulation-and-policy/digital-operational-resilience-act-dora_en) va más lejos para el sector financiero, requiriendo explícitamente capacidades de threat intelligence compartida.
 
-2. **Sofisticación de las amenazas.** Los actores de amenaza utilizan IA generativa para crear campañas de phishing más convincentes, malware polimorfico que evade detecciones y ataques a la cadena de suministro cada vez más complejos. Defenderse solo con reglas estaticas ya no es viable.
+2. **Sofisticación de las amenazas.** Los actores de amenaza utilizan IA generativa para crear campañas de phishing más convincentes, malware polimorfico que evade detecciónes y ataques a la cadena de suministro cada vez más complejos. Defenderse solo con reglas estáticas ya no es viable.
 
 3. **Herramientas accesibles.** Plataformas open source como [MISP](https://www.misp-project.org/) y frameworks como MITRE ATT&CK han reducido drasticamente la barrera de entrada. Una empresa mediana puede montar un programa básico de TI con herramientas gratuitas.
 
@@ -56,7 +56,7 @@ No toda la inteligencia sirve para la misma audiencia ni tiene el mismo horizont
 
 ### Inteligencia estratégica
 
-**Audiencia:** C-level, consejo de administración, comite de riesgos.
+**Audiencia:** C-level, consejo de administración, comité de riesgos.
 **Horizonte temporal:** 6-24 meses.
 **Formato:** informes ejecutivos, briefings, dashboards de tendencias.
 
@@ -73,15 +73,15 @@ La inteligencia estratégica responde a preguntas como:
 
 **Audiencia:** arquitectos de seguridad, responsables de infraestructura.
 **Horizonte temporal:** semanas a meses.
-**Formato:** TTPs (tacticas, técnicas y procedimientos), informes de adversarios, mapeos MITRE ATT&CK.
+**Formato:** TTPs (tácticas, técnicas y procedimientos), informes de adversarios, mapeos MITRE ATT&CK.
 
-La inteligencia tactica responde a:
+La inteligencia táctica responde a:
 
 - Qué TTPs utilizan los grupos de amenaza que apuntan a nuestro sector?
 - Nuestros controles actuales detectan esas técnicas?
 - Qué gaps existen entre las técnicas del adversario y nuestras capacidades de detección?
 
-**Ejemplo práctico:** un mapeo MITRE ATT&CK que muestra que el grupo Volt Typhoon utiliza living-off-the-land binaries (LOLBins) para moverse lateralmente. El equipo de seguridad descubre que no tiene detecciones para T1218 (Signed Binary Proxy Execution) ni T1059.001 (PowerShell). Se priorizan esas reglas de detección.
+**Ejemplo práctico:** un mapeo MITRE ATT&CK que muestra que el grupo Volt Typhoon utiliza living-off-the-land binaries (LOLBins) para moverse lateralmente. El equipo de seguridad descubre que no tiene detecciónes para T1218 (Signed Binary Proxy Execution) ni T1059.001 (PowerShell). Se priorizan esas reglas de detección.
 
 ### Inteligencia operativa
 
@@ -95,7 +95,7 @@ La inteligencia operativa responde a:
 - Qué infraestructura utilizan los atacantes en estas campañas?
 - Qué indicadores tempranos debemos buscar?
 
-**Ejemplo práctico:** una alerta del CERT sectorial informa que se ha detectado una campaña de spear phishing contra empresas energeticas españolas utilizando documentos Word con macros que descargan Cobalt Strike desde dominios recien registrados. Se comparten los dominios, hashes y patrones de email para busqueda proactiva.
+**Ejemplo práctico:** una alerta del CERT sectorial informa que se ha detectado una campaña de spear phishing contra empresas energeticas españolas utilizando documentos Word con macros que descargan Cobalt Strike desde dominios recien registrados. Se comparten los dominios, hashes y patrones de email para búsqueda proactiva.
 
 ### Inteligencia técnica
 
@@ -122,11 +122,11 @@ Estrategica (tendencias macro)
             → Técnica (IoCs específicos)
 ```
 
-Un programa maduro produce inteligencia en los cuatro niveles. Un programa que solo consume IoCs técnicos sin contexto estratégico ni tactico esta funcionando a ciegas.
+Un programa maduro produce inteligencia en los cuatro niveles. Un programa que solo consume IoCs técnicos sin contexto estratégico ni táctico esta funcionando a ciegas.
 
 ## El ciclo de inteligencia de amenazas
 
-La TI no es un producto estático. Es un proceso ciclico con seis fases que se retroalimenta continuamente.
+La TI no es un producto estático. Es un proceso cíclico con seis fases que se retroalimenta continuamente.
 
 ### Fase 1: Dirección y planificación
 
@@ -139,7 +139,7 @@ Define que necesitas saber y por que. Esta fase establece los Priority Intellige
 - Se están comercializando credenciales o accesos a nuestra infraestructura en la dark web?
 - Qué vulnerabilidades están siendo explotadas activamente contra tecnologías que usamos?
 
-**Buena práctica:** los PIRs deben revisarse trimestralmente con el CISO y los responsables de negocio. No más de 5-10 PIRs activos simultaneamente.
+**Buena práctica:** los PIRs deben revisarse trimestralmente con el CISO y los responsables de negocio. No más de 5-10 PIRs activos simultáneamente.
 
 ### Fase 2: Recopilación
 
@@ -149,7 +149,7 @@ Recopila datos de múltiples fuentes para responder a los PIRs.
 
 - **OSINT (Open Source Intelligence):** feeds públicos de IoCs, informes de vendors, blogs de investigadores, CVE databases, redes sociales.
 - **HUMINT (Human Intelligence):** relaciones con otros equipos de seguridad, ISACs sectoriales, CERTs nacionales ([INCIBE-CERT](https://www.incibe.es/incibe-cert) en España).
-- **SIGINT/TECHINT:** telemetria de tus propios sistemas (SIEM, EDR, NDR, firewalls), sandboxing de muestras, honeypots.
+- **SIGINT/TECHINT:** telemetría de tus propios sistemas (SIEM, EDR, NDR, firewalls), sandboxing de muestras, honeypots.
 - **Dark web:** foros, mercados, canales de Telegram donde actores de amenaza comercian datos y accesos.
 - **Comercial:** plataformas de TI de pago (Recorded Future, Mandiant, Flashpoint).
 
@@ -164,12 +164,12 @@ Transforma los datos brutos en un formato estructurado y analizable.
 
 ### Fase 4: Análisis
 
-La fase más crítica y la que más valor anade. Aqui los datos procesados se convierten en inteligencia.
+La fase más crítica y la que más valor añade. Aqui los datos procesados se convierten en inteligencia.
 
 - Correlaciona indicadores con campañas conocidas
 - Atribuye actividad a actores de amenaza (cuando sea posible)
 - Evalua la relevancia para tu organización específica
-- Genera hipotesis sobre amenazas futuras basandote en tendencias
+- Genera hipótesis sobre amenazas futuras basándote en tendencias
 - Produce recomendaciones accionables
 
 **Error común:** muchas organizaciones se saltan esta fase y pasan directamente de la recopilación a la diseminación. Sin análisis, estas distribuyendo datos, no inteligencia.
@@ -181,7 +181,7 @@ Entrega la inteligencia a la audiencia correcta, en el formato correcto, en el m
 | Audiencia | Formato | Frecuencia |
 |---|---|---|
 | C-level / Consejo | Briefing ejecutivo (2-3 páginas) | Trimestral |
-| CISO / Comite seguridad | Informe de tendencias + métricas | Mensual |
+| CISO / Comité seguridad | Informe de tendencias + métricas | Mensual |
 | SOC / IR team | Alertas + IoCs + TTPs | Continuo |
 | IT / DevOps | Vulnerabilidades priorizadas + parches | Semanal |
 | Toda la organización | Alertas de phishing / awareness | Según necesidad |
@@ -197,7 +197,7 @@ Cierra el ciclo evaluando la utilidad de la inteligencia producida.
 
 El feedback alimenta la siguiente iteración del ciclo, ajustando PIRs, fuentes y prioridades.
 
-{{< cta type="tofu" text="Riskitera automatiza el ciclo de inteligencia con IA soberana: recopilacion, correlación, análisis y reporting sin datos saliendo de tu infraestructura." label="Ver demo CTI" >}}
+{{< cta type="tofu" text="Riskitera automatiza el ciclo de inteligencia con IA soberana: recopilación, correlación, análisis y reporting sin datos saliendo de tu infraestructura." label="Ver demo CTI" >}}
 
 ## El modelo de madurez de threat intelligence
 
@@ -210,7 +210,7 @@ No todas las organizaciones necesitan (ni pueden implementar) el mismo nivel de 
 - No existe un programa de TI definido
 - La "inteligencia" se reduce a reaccionar cuando aparece una noticia de ciberseguridad
 - Los IoCs se buscan manualmente y de forma puntual
-- No hay PIRs ni fuentes sistematicas
+- No hay PIRs ni fuentes sistemáticas
 - El equipo de seguridad opera en modo completamente reactivo
 
 **Prevalencia:** aproximadamente el 60% de las pymes españolas se encuentran en este nivel.
@@ -236,13 +236,13 @@ No todas las organizaciones necesitan (ni pueden implementar) el mismo nivel de 
 **Caracteristicas:**
 
 - Se produce inteligencia propia además de consumir fuentes externas
-- Threat hunting activo basado en hipotesis derivadas de inteligencia
-- Los PIRs están definidos y se revisan periodicamente
+- Threat hunting activo basado en hipótesis derivadas de inteligencia
+- Los PIRs están definidos y se revisan periódicamente
 - Se mapean TTPs de adversarios contra controles propios (gap analysis con MITRE ATT&CK)
 - Se participa en comunidades de intercambio (ISACs, CERTs sectoriales)
 - Hay métricas de efectividad del programa
 
-**Ventajas:** reducción significativa de falsos positivos, detección de amenazas antes de que generen incidentes, capacidad de anticipar ataques basandose en patrones.
+**Ventajas:** reducción significativa de falsos positivos, detección de amenazas antes de que generen incidentes, capacidad de anticipar ataques basándose en patrones.
 
 **Siguiente pasó:** implementar automatización avanzada, modelos predictivos y contribuir activamente a comunidades de TI.
 
@@ -250,7 +250,7 @@ No todas las organizaciones necesitan (ni pueden implementar) el mismo nivel de 
 
 **Caracteristicas:**
 
-- Modelos predictivos que anticipan campañas basandose en patrones históricos
+- Modelos predictivos que anticipan campañas basándose en patrones históricos
 - Automatización completa del ciclo de inteligencia (con supervisión humana)
 - Inteligencia integrada en todos los procesos de seguridad (DevSecOps, gestión de vulnerabilidades, respuesta a incidentes)
 - Contribución activa a la comunidad (feeds propios, informes publicados)
@@ -273,16 +273,16 @@ La elección de plataforma depende del nivel de madurez, presupuesto y necesidad
 
 ### MISP (Malware Information Sharing Platform)
 
-[MISP](https://www.misp-project.org/) es la plataforma open source de referencia para compartir, almacenar y correlacionar IoCs y threat intelligence.
+[MISP](https://www.misp-project.org/) es la plataforma open source de referencia para compartir, almacenar y correlaciónar IoCs y threat intelligence.
 
 **Fortalezas:**
 
 - Gratuita y open source (licencia AGPL)
-- Self-hosted: control total sobre los datos (ideal para soberania)
+- Self-hosted: control total sobre los datos (ideal para soberanía)
 - Estándares abiertos (STIX, TAXII, OpenIOC)
 - Comunidad activa con feeds compartidos
 - Integración con SIEM, SOAR y otras herramientas vía API
-- Galaxies y taxonomias para clasificación enriquecida
+- Galaxies y taxonomías para clasificación enriquecida
 
 **Debilidades:**
 
@@ -291,7 +291,7 @@ La elección de plataforma depende del nivel de madurez, presupuesto y necesidad
 - La interfaz de usuario es funcional pero no intuitiva
 - No ofrece análisis automatizado ni inteligencia sintetizada
 
-**Ideal para:** organizaciones con equipo técnico que priorizan soberania de datos y participan en comunidades de intercambio.
+**Ideal para:** organizaciones con equipo técnico que priorizan soberanía de datos y participan en comunidades de intercambio.
 
 ### Anomali ThreatStream
 
@@ -309,7 +309,7 @@ La elección de plataforma depende del nivel de madurez, presupuesto y necesidad
 
 - Coste significativo (50k-200k EUR anuales dependiendo del tamaño)
 - Dependencia del vendor para la cobertura de feeds
-- Funcionalidades avanzadas requieren modulos adicionales
+- Funcionalidades avanzadas requieren módulos adicionales
 
 **Ideal para:** empresas medianas-grandes con SOC establecido que necesitan consolidar múltiples fuentes de TI en una sola plataforma.
 
@@ -379,7 +379,7 @@ La tecnología sin personas que la operen no genera inteligencia. Estos son los 
 ### Programa mínimo (1-2 personas)
 
 - **Analista de TI (senior):** responsable de todo el ciclo de inteligencia. Debe tener experiencia en análisis de amenazas, conocimiento de MITRE ATT&CK, y capacidad de comunicar a audiencias técnicas y ejecutivas.
-- **Ingeniero de TI (junior/medio):** responsable de la infraestructura técnica: plataformas, feeds, integraciones, automatización.
+- **Ingeniero de TI (junior/medio):** responsable de la infraestructura técnica: plataformas, feeds, integraciónes, automatización.
 
 En una pyme, estos roles pueden ser compartidos con el SOC o el equipo de seguridad general.
 
@@ -388,7 +388,7 @@ En una pyme, estos roles pueden ser compartidos con el SOC o el equipo de seguri
 - **TI Manager:** define PIRs, coordina con negocio, gestiona relaciones con ISACs y CERTs
 - **Analista senior:** análisis profundo de campañas, atribución, producción de informes
 - **Analista junior (x2):** triaje de feeds, procesamiento de IoCs, hunting básico
-- **Ingeniero de TI:** infraestructura, automatización, integraciones
+- **Ingeniero de TI:** infraestructura, automatización, integraciónes
 
 ### Programa avanzado (6+ personas)
 
@@ -397,7 +397,7 @@ Anade roles especializados:
 - **Analista de dark web:** monitoring y análisis de fuentes de la dark web
 - **Reverse engineer / Malware analyst:** análisis de muestras de malware
 - **Data scientist:** modelos predictivos, correlación avanzada, NLP
-- **Threat hunter:** busqueda proactiva de amenazas en la telemetria interna
+- **Threat hunter:** búsqueda proactiva de amenazas en la telemetría interna
 
 ### Competencias clave del equipo
 
@@ -446,31 +446,31 @@ Para auditorías y verificaciones regulatorias, documenta:
 2. **Fuentes de TI** utilizadas (feeds, plataformas, comunidades)
 3. **Proceso de análisis** (como se transforma la información en inteligencia accionable)
 4. **Acciones derivadas** (reglas implementadas, vulnerabilidades priorizadas, incidentes prevenidos)
-5. **Metricas de efectividad** (tiempo de detección, falsos positivos reducidos, cobertura ATT&CK)
+5. **Métricas de efectividad** (tiempo de detección, falsos positivos reducidos, cobertura ATT&CK)
 6. **Participación en intercambio** (ISACs, CERTs, acuerdos bilaterales)
 
 ## Cómo medir el ROI de un programa de threat intelligence
 
 Uno de los retos más comunes es justificar la inversión en TI ante la dirección. Estas métricas permiten cuantificar el valor del programa.
 
-### Metricas operativas
+### Métricas operativas
 
-| Metrica | Como medirla | Objetivo |
+| Métrica | Como medirla | Objetivo |
 |---|---|---|
 | Tiempo medio de detección (MTTD) | Tiempo entre inicio del incidente y detección | Reducción > 30% |
 | Tiempo medio de respuesta (MTTR) | Tiempo entre detección y contención | Reducción > 25% |
 | Falsos positivos reducidos | Alertas descartadas vs total de alertas | Reducción > 40% |
-| Cobertura MITRE ATT&CK | Tecnicas con detección vs total relevantes | > 60% |
+| Cobertura MITRE ATT&CK | Técnicas con detección vs total relevantes | > 60% |
 | IoCs accionados antes de incidente | IoCs bloqueados preventivamente | > 70% de IoCs recibidos |
 
-### Metricas de negocio
+### Métricas de negocio
 
 - **Incidentes prevenidos:** cada incidente prevenido gracias a la TI tiene un valor estimable (coste medio de un incidente en tu sector).
 - **Reducción de exposición:** tiempo que una vulnerabilidad crítica permanece sin parchear antes y después de implementar TI para priorizar.
 - **Cumplimiento regulatorio:** multas evitadas por cumplir con NIS2/DORA. Las sanciones NIS2 pueden alcanzar el 2% de la facturación global.
 - **Eficiencia del SOC:** reducción de horas-analista dedicadas a investigar falsos positivos.
 
-### Formula de ROI simplificada
+### Fórmula de ROI simplificada
 
 ```
 ROI = (Valor de incidentes prevenidos + Ahorro en eficiencia SOC + Multas evitadas) 
@@ -507,8 +507,8 @@ La TI y el SOC son dos caras de la misma moneda. Sin integración, la TI produce
 
 **Nivel 3: Threat hunting dirigido**
 
-- El equipo de TI genera hipotesis de hunting basadas en campañas activas
-- El SOC ejecuta las busquedas en la telemetria interna
+- El equipo de TI genera hipótesis de hunting basadas en campañas activas
+- El SOC ejecuta las búsquedas en la telemetría interna
 - Los hallazgos alimentan el ciclo de inteligencia (nuevos IoCs, TTPs confirmados)
 
 **Nivel 4: Inteligencia proactiva**
@@ -525,7 +525,7 @@ La TI y el SOC son dos caras de la misma moneda. Sin integración, la TI produce
 
 ## Tendencias en CTI para 2027
 
-El campo de la threat intelligence evoluciona rapidamente. Estas son las tendencias que definiran el próximo año.
+El campo de la threat intelligence evoluciona rápidamente. Estas son las tendencias que definiran el próximo año.
 
 ### IA generativa aplicada a TI
 
@@ -534,7 +534,7 @@ La IA generativa esta transformando tanto el lado ofensivo como el defensivo:
 - **Análisis automatizado de informes:** LLMs que procesan informes de amenazas en múltiples idiomas y extraen TTPs, IoCs y recomendaciones automáticamente.
 - **Generación de reglas de detección:** modelos que traducen descripciones de TTPs en reglas Sigma, YARA o KQL.
 - **Resumenes ejecutivos:** generación automática de briefings adaptados a la audiencia (técnica vs ejecutiva).
-- **Riesgo:** los atacantes usan IA para phishing más convincente, malware que evade sandboxes y deepfakes para ingenieria social.
+- **Riesgo:** los atacantes usan IA para phishing más convincente, malware que evade sandboxes y deepfakes para ingeniería social.
 
 ### TI como servicio (TIaaS)
 
@@ -564,7 +564,7 @@ Los modelos de intercambio (ISACs, CERTs sectoriales, acuerdos bilaterales) est�
 
 ### Qué diferencia hay entre threat intelligence y un feed de IoCs?
 
-Un feed de IoCs es una fuente de datos técnicos (IPs, dominios, hashes) que puede alimentar un SIEM o firewall. La threat intelligence es un proceso más amplio que incluye recopilación, análisis, contextualización y producción de inteligencia accionable a múltiples niveles (estratégico, tactico, operativo, técnico). Los IoCs son un output del proceso de TI, pero la inteligencia incluye contexto sobre quien ataca, por que, como y que significa para tu organización. Un feed sin análisis es ruido. La inteligencia es señal.
+Un feed de IoCs es una fuente de datos técnicos (IPs, dominios, hashes) que puede alimentar un SIEM o firewall. La threat intelligence es un proceso más amplio que incluye recopilación, análisis, contextualización y producción de inteligencia accionable a múltiples niveles (estratégico, táctico, operativo, técnico). Los IoCs son un output del proceso de TI, pero la inteligencia incluye contexto sobre quien ataca, por que, como y que significa para tu organización. Un feed sin análisis es ruido. La inteligencia es señal.
 
 ### Cuánto cuesta implementar un programa de threat intelligence?
 
@@ -576,8 +576,8 @@ Sí. Un SOC sin TI opera en modo reactivo: responde a alertas sin contexto sobre
 
 ### Cómo empiezo si mi organización no tiene experiencia en TI?
 
-Empieza con tres pasos sencillos. Primero, define 3-5 PIRs básicos (que amenazas son relevantes para tu sector y organización). Segundo, configura MISP con feeds gratuitos (Abuse.ch, AlienVault OTX, CIRCL feeds) e integra los IoCs con tu SIEM. Tercero, designa un responsable que dedique al menos 8 horas semanales a revisar la inteligencia recibida, analizar su relevancia y producir un informe mensual para el CISO. En 3-6 meses tendras un programa básico funcional que podras ir madurando.
+Empieza con tres pasos sencillos. Primero, define 3-5 PIRs básicos (que amenazas son relevantes para tu sector y organización). Segundo, configura MISP con feeds gratuitos (Abuse.ch, AlienVault OTX, CIRCL feeds) e integra los IoCs con tu SIEM. Tercero, designa un responsable que dedique al menos 8 horas semanales a revisar la inteligencia recibida, analizar su relevancia y producir un informe mensual para el CISO. En 3-6 meses tendrás un programa básico funcional que podras ir madurando.
 
 ### La TI es obligatoria según NIS2?
 
-No se menciona la palabra "threat intelligence" explicitamente en NIS2, pero los requisitos del artículo 21 (gestión de riesgos, análisis de amenazas, gestión de incidentes, seguridad de la cadena de suministro) son practicamente imposibles de cumplir sin un programa de TI. ENISA recomienda explicitamente la monitorización de amenazas y el intercambio de información como prácticas esenciales. DORA si menciona explicitamente el intercambio de información sobre amenazas ciber para entidades financieras. En la práctica, cualquier organización sujeta a NIS2 o DORA necesita capacidades de TI documentadas.
+No se menciona la palabra "threat intelligence" explícitamente en NIS2, pero los requisitos del artículo 21 (gestión de riesgos, análisis de amenazas, gestión de incidentes, seguridad de la cadena de suministro) son practicamente imposibles de cumplir sin un programa de TI. ENISA recomienda explícitamente la monitorización de amenazas y el intercambio de información como prácticas esenciales. DORA si menciona explícitamente el intercambio de información sobre amenazas ciber para entidades financieras. En la práctica, cualquier organización sujeta a NIS2 o DORA necesita capacidades de TI documentadas.

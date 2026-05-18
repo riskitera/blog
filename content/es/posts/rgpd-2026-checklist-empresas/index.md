@@ -21,7 +21,7 @@ Checklist actualizado de cumplimiento RGPD para empresas españolas en 2026: obl
 
 El RGPD lleva en vigor desde mayo de 2018, pero ocho años después muchas empresas españolas siguen sin cumplirlo correctamente. La AEPD ha intensificado las inspecciones y las sanciones se han endurecido. Estas son las obligaciones principales del responsable del tratamiento en 2026:
 
-**Licitud del tratamiento.** Todo tratamiento de datos personales necesita una base jurídica válida: consentimiento, ejecución de contrato, obligación legal, interes vital, interes público o interes legítimo. El consentimiento debe ser libre, específico, informado e inequivoco. Los consentimientos genericos ("acepto todo") no son validos. Cada finalidad requiere un consentimiento separado.
+**Licitud del tratamiento.** Todo tratamiento de datos personales necesita una base jurídica válida: consentimiento, ejecución de contrato, obligación legal, interés vital, interés público o interés legítimo. El consentimiento debe ser libre, específico, informado e inequivoco. Los consentimientos genéricos ("acepto todo") no son validos. Cada finalidad requiere un consentimiento separado.
 
 **Información y transparencia.** Informar al interesado antes de recoger sus datos: quien es el responsable, con que finalidad se tratan, cual es la base jurídica, cuanto tiempo se conservaran, a quien se comunicaran, que derechos tiene y como ejercerlos. La información debe ser clara, concisa y accesible (no enterrada en un PDF de 40 páginas).
 
@@ -39,18 +39,18 @@ El Delegado de Protección de Datos (DPO) es obligatorio en tres supuestos bajo 
 
 **1. Autoridades y organismos públicos.** Todas las administraciones públicas, empresas públicas y entidades de derecho público deben designar DPO. Sin excepciones.
 
-**2. Tratamiento a gran escala de categorías especiales.** Organizaciones cuya actividad principal consiste en tratar a gran escala datos de salud, datos biometricos, datos geneticos, datos sobre convicciones religiosas, afiliación sindical, orientación sexual o datos relativos a condenas penales.
+**2. Tratamiento a gran escala de categorías especiales.** Organizaciones cuya actividad principal consiste en tratar a gran escala datos de salud, datos biométricos, datos geneticos, datos sobre convicciones religiosas, afiliación sindical, orientación sexual o datos relativos a condenas penales.
 
 **3. Observación sistemática a gran escala.** Organizaciones cuya actividad principal consiste en la observación habitual y sistemática de interesados a gran escala: videovigilancia masiva, tracking online, geolocalización, profiling.
 
-La LOPDGDD (Ley Organica 3/2018) amplica los supuestos. En España, también deben designar DPO:
+La LOPDGDD (Ley Orgánica 3/2018) amplica los supuestos. En España, también deben designar DPO:
 - Colegios profesionales
 - Centros docentes (públicos y privados)
 - Entidades que exploten redes y presten servicios de comunicaciones electrónicas
 - Prestadores de servicios de la sociedad de la información (cuando elaboren perfiles a gran escala)
-- Entidades de credito, aseguradoras, empresas de servicios de inversión
-- Distribuidores y comercializadores de energía electrica y gas
-- Entidades responsables de ficheros de solvencia patrimonial y credito
+- Entidades de crédito, aseguradoras, empresas de servicios de inversión
+- Distribuidores y comercializadores de energía eléctrica y gas
+- Entidades responsables de ficheros de solvencia patrimonial y crédito
 - Centros sanitarios
 - Empresas de seguridad privada
 
@@ -63,10 +63,10 @@ La LOPDGDD (Ley Organica 3/2018) amplica los supuestos. En España, también deb
 La Evaluación de Impacto en Protección de Datos (EIPD o DPIA) es obligatoria antes de iniciar un tratamiento que presente alto riesgo para los derechos y libertades de los interesados. El artículo 35 del RGPD define tres supuestos obligatorios y la AEPD ha publicado una lista adicional de tratamientos que requieren EIPD.
 
 **Cuando es obligatoria:**
-- Evaluación sistemática y exhaustiva de aspectos personales basada en tratamiento automatizado (profiling) con efectos juridicos o significativos
+- Evaluación sistemática y exhaustiva de aspectos personales basada en tratamiento automatizado (profiling) con efectos jurídicos o significativos
 - Tratamiento a gran escala de categorías especiales de datos o datos de condenas penales
 - Vigilancia sistemática a gran escala de una zona de acceso público (videovigilancia)
-- La lista de la AEPD anade: tratamientos que impliquen uso de tecnologías invasivas (reconocimiento facial, huella dactilar), geolocalización, tratamientos masivos de datos de menores, y tratamientos que combinen datos de múltiples fuentes
+- La lista de la AEPD añade: tratamientos que impliquen uso de tecnologías invasivas (reconocimiento facial, huella dactilar), geolocalización, tratamientos masivos de datos de menores, y tratamientos que combinen datos de múltiples fuentes
 
 **Metodología (fases):**
 
@@ -94,15 +94,15 @@ El RGPD reconoce ocho derechos que toda empresa debe facilitar:
 
 **Derecho de rectificación (art. 16).** Corregir datos personales inexactos o completar datos incompletos. Plazo: 1 mes.
 
-**Derecho de supresión / "derecho al olvido" (art. 17).** Obtener la eliminación de datos personales cuando: ya no son necesarios para la finalidad, se retira el consentimiento, se opone al tratamiento, el tratamiento es ilícito, o hay obligación legal de suprimirlos. No aplica cuando el tratamiento es necesario por obligación legal, interes público o ejercicio de derechos en procedimientos judiciales.
+**Derecho de supresión / "derecho al olvido" (art. 17).** Obtener la eliminación de datos personales cuando: ya no son necesarios para la finalidad, se retira el consentimiento, se opone al tratamiento, el tratamiento es ilícito, o hay obligación legal de suprimirlos. No aplica cuando el tratamiento es necesario por obligación legal, interés público o ejercicio de derechos en procedimientos judiciales.
 
 **Derecho de limitación del tratamiento (art. 18).** Solicitar que se restrinja el tratamiento en determinadas circunstancias: mientras se verifica la exactitud de los datos, cuando el tratamiento es ilícito pero el interesado se opone a la supresión, o cuando los datos ya no son necesarios pero el interesado los necesita para reclamaciones.
 
 **Derecho a la portabilidad (art. 20).** Recibir los datos personales en formato estructurado, de uso común y lectura mecánica (CSV, JSON, XML), y transmitirlos a otro responsable. Solo aplica cuando el tratamiento se basa en consentimiento o contrato y se realiza por medios automatizados.
 
-**Derecho de oposición (art. 21).** Oponerse al tratamiento basado en interes legítimo o interes público. Si se ejerce para marketing directo, el responsable debe cesar el tratamiento sin necesidad de justificación.
+**Derecho de oposición (art. 21).** Oponerse al tratamiento basado en interés legítimo o interés público. Si se ejerce para marketing directo, el responsable debe cesar el tratamiento sin necesidad de justificación.
 
-**Derecho a no ser objeto de decisiones automatizadas (art. 22).** No ser objeto de una decisión basada unicamente en el tratamiento automatizado (incluyendo profiling) que produzca efectos juridicos o significativos. Con excepciones: consentimiento explícito, necesidad contractual o autorización legal.
+**Derecho a no ser objeto de decisiones automatizadas (art. 22).** No ser objeto de una decisión basada únicamente en el tratamiento automatizado (incluyendo profiling) que produzca efectos jurídicos o significativos. Con excepciones: consentimiento explícito, necesidad contractual o autorización legal.
 
 **Derecho de información (arts. 13-14).** Derecho a ser informado de forma clara y accesible sobre el tratamiento de datos antes de que este se inicie.
 
@@ -117,9 +117,9 @@ El RGPD reconoce ocho derechos que toda empresa debe facilitar:
 
 El texto del RGPD no ha cambiado, pero su aplicación ha evolucionado significativamente:
 
-**Criterios de la AEPD más estrictos.** La AEPD ha publicado nuevas guías interpretativas que endurecen los requisitos en areas concretas: cookies y tracking (alineación con la guía del EDPB sobre consent banners), tratamientos con IA (exigencia de EIPD y transparencia algoritmica), y transferencias internacionales post-Schrems II.
+**Criterios de la AEPD más estrictos.** La AEPD ha publicado nuevas guías interpretativas que endurecen los requisitos en áreas concretas: cookies y tracking (alineación con la guía del EDPB sobre consent banners), tratamientos con IA (exigencia de EIPD y transparencia algoritmica), y transferencias internacionales post-Schrems II.
 
-**Impacto del EU AI Act.** Los sistemas de IA que tratan datos personales deben cumplir simultaneamente RGPD y EU AI Act. Esto afecta especialmente a: chatbots y asistentes virtuales (transparencia sobre el uso de IA), sistemas de scoring crediticio (decisiones automatizadas), sistemas de selección de personal (profiling), y sistemas de videovigilancia inteligente.
+**Impacto del EU AI Act.** Los sistemas de IA que tratan datos personales deben cumplir simultáneamente RGPD y EU AI Act. Esto afecta especialmente a: chatbots y asistentes virtuales (transparencia sobre el uso de IA), sistemas de scoring crediticio (decisiones automatizadas), sistemas de selección de personal (profiling), y sistemas de videovigilancia inteligente.
 
 **Transferencias internacionales.** Tras la anulación del Privacy Shield (Schrems II, 2020) y la adopción del EU-US Data Privacy Framework (2023), la situación sigue siendo inestable. Las empresas que transfieren datos a EEUU deben verificar que sus proveedores están certificados bajo el DPF. Para transferencias a otros países sin decisión de adecuación, las cláusulas contractuales tipo (SCCs) del 2021 son obligatorias, con TIA (Transfer Impact Assessment) complementario.
 
@@ -131,9 +131,9 @@ El texto del RGPD no ha cambiado, pero su aplicación ha evolucionado significat
 
 **1. Registro de actividades de tratamiento.** Inventario actualizado de todos los tratamientos de datos personales: finalidad, base jurídica, categorías de datos, destinatarios, plazos de conservación, medidas de seguridad.
 
-**2. Bases juridicas documentadas.** Para cada tratamiento, tener documentada la base jurídica: consentimiento (con evidencia de que se obtuvo de forma válida), contrato, obligación legal, interes legítimo (con ponderación documentada), etc.
+**2. Bases jurídicas documentadas.** Para cada tratamiento, tener documentada la base jurídica: consentimiento (con evidencia de que se obtuvo de forma válida), contrato, obligación legal, interés legítimo (con ponderación documentada), etc.
 
-**3. Política de privacidad actualizada.** Accesible desde el sitio web, con toda la información requerida por el artículo 13/14: identidad del responsable, finalidades, bases juridicas, destinatarios, plazos, derechos, datos del DPO.
+**3. Política de privacidad actualizada.** Accesible desde el sitio web, con toda la información requerida por el artículo 13/14: identidad del responsable, finalidades, bases jurídicas, destinatarios, plazos, derechos, datos del DPO.
 
 **4. Gestión de consentimientos.** Sistema que registre cuando, como y para que finalidad se obtuvo cada consentimiento. Capacidad de retirar el consentimiento de forma tan fácil como se otorgo. Consentimiento granular por finalidad (no generico).
 
@@ -143,7 +143,7 @@ El texto del RGPD no ha cambiado, pero su aplicación ha evolucionado significat
 
 **7. Contratos con encargados del tratamiento.** Contrato conforme al artículo 28 con todos los proveedores que tratan datos personales por cuenta de la empresa: hosting, email marketing, CRM, analytics, nominas externalizadas, etc.
 
-**8. Medidas de seguridad implementadas.** Cifrado, control de accesos, backups, gestión de vulnerabilidades, formación del personal. Documentadas y auditadas periodicamente.
+**8. Medidas de seguridad implementadas.** Cifrado, control de accesos, backups, gestión de vulnerabilidades, formación del personal. Documentadas y auditadas periódicamente.
 
 **9. Procedimiento de gestión de brechas.** Documentado, probado y con responsables asignados. Plantillas de notificación a la AEPD y a los afectados preparadas. Registro de brechas (incluso las que no se notifican).
 
@@ -165,13 +165,13 @@ La AEPD es una de las autoridades de protección de datos más activas de Europa
 - **Endesa (2023): 6.1 millones EUR.** Contrataciones fraudulentas y falta de medidas para verificar la identidad de los contratantes.
 
 **Sanciones a PYMES (patrón frecuente):**
-- Clinicas de salud: 10.000 a 100.000 EUR por acceso indebido a historias clinicas por personal no autorizado
+- Clínicas de salud: 10.000 a 100.000 EUR por acceso indebido a historias clínicas por personal no autorizado
 - Comunidades de propietarios: 2.000 a 10.000 EUR por publicar datos de morosos en el tablon de anuncios
-- Comercios: 5.000 a 30.000 EUR por camaras de videovigilancia sin cartel informativo o apuntando a la vía pública
+- Comercios: 5.000 a 30.000 EUR por cámaras de videovigilancia sin cartel informativo o apuntando a la vía pública
 - Empresas de marketing: 20.000 a 300.000 EUR por envio de comunicaciones comerciales sin consentimiento
 
 **Tendencias en las sanciones de la AEPD:**
-- Las multas están creciendo en cuantia año tras año
+- Las multas están creciendo en cuantía año tras año
 - La AEPD sanciona tanto a grandes empresas como a PYMES y autónomos
 - Las brechas de seguridad con medidas insuficientes son el supuesto más sancionado después del marketing sin consentimiento
 - Las apercibimientos (sin multa) se reservan para infracciones leves y primera vez: en reincidencia, siempre hay sanción económica
@@ -193,10 +193,10 @@ Sí. El RGPD aplica a toda organización que trate datos personales, independien
 Depende de la configuración. Google Analytics 4 permite configurar la residencia de datos en la UE, pero los datos siguen siendo procesados por Google (entidad estadounidense). Necesitas: consentimiento del usuario (banner de cookies conforme), contrato de encargado del tratamiento con Google, y verificar que Google está certificado bajo el EU-US DPF para las transferencias. Alternativas conformes por defecto: Matomo (self-hosted), Plausible o PostHog (con hosting EU).
 
 **Que pasa si no notifico una brecha a la AEPD?**
-La no notificación es una infracción independiente de la brecha en si. La AEPD puede sancionar tanto por la brecha (medidas de seguridad insuficientes) como por la falta de notificación. Las sanciones por no notificar oscilan entre 10.000 y 100.000 EUR. Además, si la brecha se descubre por otro medio (denuncia de un afectado, investigación periodistica), la falta de notificación agrava la sanción.
+La no notificación es una infracción independiente de la brecha en si. La AEPD puede sancionar tanto por la brecha (medidas de seguridad insuficientes) como por la falta de notificación. Las sanciones por no notificar oscilan entre 10.000 y 100.000 EUR. Además, si la brecha se descubre por otro medio (denuncia de un afectado, investigación periodística), la falta de notificación agrava la sanción.
 
 **Necesito un banner de cookies en mi web?**
 Si tu web usa cookies no esenciales (analytics, marketing, personalización), si. El banner debe: informar de que cookies se usan y con que finalidad, permitir aceptar o rechazar de forma granular, no preseleccionar casillas de cookies no esenciales, no usar dark patterns (el boton "rechazar" debe ser tan visible como "aceptar"), y registrar el consentimiento como evidencia. Solo las cookies estrictamente necesarias para el funcionamiento de la web están exentas de consentimiento.
 
 **Cuanto tarda la AEPD en resolver una reclamación?**
-La AEPD tiene un plazo legal de 12 meses para resolver un procedimiento sancionador, pero en la práctica los plazos varían: las reclamaciones simples se resuelven en 3 a 6 meses, los procedimientos sancionadores complejos pueden tardar 12 a 18 meses. Durante la tramitación, la empresa debe responder a los requerimientos de la AEPD en los plazos indicados (tipicamente 10 días habiles).
+La AEPD tiene un plazo legal de 12 meses para resolver un procedimiento sancionador, pero en la práctica los plazos varían: las reclamaciones simples se resuelven en 3 a 6 meses, los procedimientos sancionadores complejos pueden tardar 12 a 18 meses. Durante la tramitación, la empresa debe responder a los requerimientos de la AEPD en los plazos indicados (típicamente 10 días habiles).

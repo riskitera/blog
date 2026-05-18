@@ -67,5 +67,5 @@ NIS2 amplía las obligaciones de ciberseguridad a los servicios municipales esen
 
 **Artículos relacionados:**
 - [Qué es el ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
-- [NIS2: qué es y a quien afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
+- [NIS2: qué es y a quién afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
 - [Ciberseguridad en Asturias](/es/posts/ciberseguridad-administracion-publica-asturias/)

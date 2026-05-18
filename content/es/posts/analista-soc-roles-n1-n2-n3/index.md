@@ -50,7 +50,7 @@ El analista N1 (también llamado Tier 1 o analista de triaje) es el punto de ent
 - Fundamentos de redes: modelo TCP/IP, puertos y protocolos comunes (HTTP, HTTPS, DNS, SMTP, SSH, RDP), análisis básico de tráfico con Wireshark.
 - Sistemas operativos: conocimiento funcional de Windows y Linux, capacidad de navegar por el sistema de archivos, revisar logs del sistema y entender procesos.
 - Seguridad básica: tipos de amenazas (malware, phishing, denegación de servicio, fuerza bruta), vectores de ataque comunes, conceptos de autenticación y autorización.
-- Herramientas SIEM: capacidad de navegar por la interfaz, realizar busquedas básicas y entender la lógica de las alertas.
+- Herramientas SIEM: capacidad de navegar por la interfaz, realizar búsquedas básicas y entender la lógica de las alertas.
 
 **Habilidades blandas:**
 - Atención al detalle: la capacidad de distinguir una alerta real de un falso positivo depende de observar los detalles.
@@ -63,7 +63,7 @@ El analista N1 (también llamado Tier 1 o analista de triaje) es el punto de ent
 - SIEM ([Splunk](https://www.splunk.com/), QRadar, [Elastic Security](https://www.elastic.co/security), [Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel)) para monitorizar y buscar eventos.
 - EDR (CrowdStrike, Defender for Endpoint, SentinelOne) para validar alertas en endpoints.
 - Sistema de ticketing (ServiceNow, Jira, TheHive) para documentar y gestionar alertas.
-- Herramientas de busqueda de reputación: VirusTotal, AbuseIPDB, Shodan, OTX AlienVault.
+- Herramientas de búsqueda de reputación: VirusTotal, AbuseIPDB, Shodan, OTX AlienVault.
 - Playbooks y runbooks del SOC.
 
 ### Un día típico de un analista N1
@@ -76,21 +76,21 @@ El analista N2 (Tier 2 o analista de incidentes) es el investigador del SOC. Rec
 
 ### Responsabilidades del N2
 
-- **Investigación profunda de incidentes**: analiza las alertas escaladas, correlaciona eventos de múltiples fuentes (SIEM, EDR, logs de aplicaciones, tráfico de red) y determina la naturaleza y el alcance del incidente.
+- **Investigación profunda de incidentes**: analiza las alertas escaladas, correlacióna eventos de múltiples fuentes (SIEM, EDR, logs de aplicaciones, tráfico de red) y determina la naturaleza y el alcance del incidente.
 - **Análisis de malware básico**: realiza análisis estático y dinámico básico de muestras sospechosas en sandboxes, identifica indicadores de compromiso (IoC) y evalúa el impacto potencial.
 - **Forense preliminar**: recopila y preserva evidencias digitales, realiza análisis de memoria, disco y red cuando es necesario para entender la cadena de ataque.
 - **Coordinación de la respuesta**: dirige las acciones de contención (aislamiento de hosts, bloqueo de IPs, revocación de credenciales) y trabaja con los equipos de TI para la remediación.
-- **Desarrollo de reglas de detección**: basandose en los incidentes investigados, propone y desarrolla nuevas reglas de correlación para el SIEM y mejora los playbooks existentes.
+- **Desarrollo de reglas de detección**: basándose en los incidentes investigados, propone y desarrolla nuevas reglas de correlación para el SIEM y mejora los playbooks existentes.
 - **Generación de informes**: redacta informes detallados de incidentes que incluyen la cronologia, el análisis técnico, las acciones realizadas y las recomendaciones.
 
 ### Habilidades requeridas para N2
 
 **Conocimientos técnicos:**
-- Análisis avanzado de logs: capacidad de correlacionar eventos de múltiples fuentes para reconstruir la cadena de ataque completa.
-- Conocimiento del framework [MITRE ATT&CK](https://attack.mitre.org/): mapeo de técnicas y tacticas de los atacantes para entender y documentar los incidentes.
+- Análisis avanzado de logs: capacidad de correlaciónar eventos de múltiples fuentes para reconstruir la cadena de ataque completa.
+- Conocimiento del framework [MITRE ATT&CK](https://attack.mitre.org/): mapeo de técnicas y tácticas de los atacantes para entender y documentar los incidentes.
 - Análisis de malware: análisis estático (strings, hashes, imports, pe headers) y dinámico básico (ejecución en sandbox, análisis de comportamiento).
 - Forense digital: adquisición de evidencias, análisis de memoria (Volatility), análisis de disco (Autopsy), análisis de tráfico de red (Wireshark, Zeek).
-- Scripting: Python y/o PowerShell para automatizar tareas de investigación y análisis.
+- Scripting: Python y/o PowerShell para automatizar táreas de investigación y análisis.
 - Conocimiento profundo de ataques: técnicas de movimiento lateral, escalada de privilegios, persistencia, exfiltración de datos.
 
 **Habilidades blandas:**
@@ -115,36 +115,36 @@ El analista N3 (Tier 3, threat hunter o analista senior) representa el nivel má
 
 ### Responsabilidades del N3
 
-- **Threat hunting proactivo**: formula hipotesis de amenazas basadas en inteligencia de amenazas, tendencias del sector y conocimiento del entorno, y las investiga activamente buscando indicios de compromiso que hayan eludido las detecciones automatizadas.
-- **Ingenieria inversa de malware**: análisis avanzado de muestras de malware, incluyendo desempaquetado, debugging, análisis de código y extracción de configuraciones y comunicaciones con servidores de mando y control (C2).
-- **Forense digital avanzado**: investigaciones complejas que pueden implicar múltiples sistemas, periodos temporales extensos y técnicas sofisticadas de ocultación por parte del atacante.
+- **Threat hunting proactivo**: fórmula hipótesis de amenazas basadas en inteligencia de amenazas, tendencias del sector y conocimiento del entorno, y las investiga activamente buscando indicios de compromiso que hayan eludido las detecciónes automatizadas.
+- **Ingeniería inversa de malware**: análisis avanzado de muestras de malware, incluyendo desempaquetado, debugging, análisis de código y extracción de configuraciones y comunicaciones con servidores de mando y control (C2).
+- **Forense digital avanzado**: investigaciónes complejas que pueden implicar múltiples sistemas, periodos temporales extensos y técnicas sofisticadas de ocultación por parte del atacante.
 - **Desarrollo de inteligencia de amenazas**: analiza tendencias, genera informes estratégicos de amenazas y traduce la inteligencia en acciones concretas de mejora de la detección.
-- **Arquitectura de detección**: disena la estrategia de detección del SOC, define los casos de uso prioritarios basandose en MITRE ATT&CK y optimiza la eficacia global de las reglas.
+- **Arquitectura de detección**: diseña la estrategia de detección del SOC, define los casos de uso prioritarios basándose en MITRE ATT&CK y optimiza la eficacia global de las reglas.
 - **Red teaming y purple teaming**: colabora con equipos de red team para validar las capacidades de detección y participa en ejercicios conjuntos (purple team) para mejorar la cobertura.
 - **Mentorización y formación**: forma a los analistas N1 y N2, comparte conocimientos y eleva el nivel técnico global del equipo.
 
 ### Habilidades requeridas para N3
 
 **Conocimientos técnicos:**
-- Ingenieria inversa: uso fluido de herramientas como Ghidra, IDA Pro, x64dbg. Conocimiento de lenguaje ensamblador (x86/x64) y capacidad de analizar binarios complejos.
-- Threat hunting: metodologías estructuradas de caza de amenazas, capacidad de formular y probar hipotesis, conocimiento profundo de TTPs de grupos APT.
-- Desarrollo de detecciones: creación de reglas Sigma, YARA, Snort/Suricata, escritura de consultas avanzadas en el lenguaje del SIEM.
+- Ingeniería inversa: uso fluido de herramientas como Ghidra, IDA Pro, x64dbg. Conocimiento de lenguaje ensamblador (x86/x64) y capacidad de analizar binarios complejos.
+- Threat hunting: metodologías estructuradas de caza de amenazas, capacidad de formular y probar hipótesis, conocimiento profundo de TTPs de grupos APT.
+- Desarrollo de detecciónes: creación de reglas Sigma, YARA, Snort/Suricata, escritura de consultas avanzadas en el lenguaje del SIEM.
 - Programación: Python avanzado, capacidad de desarrollar herramientas propias para análisis, automatización e integración.
 - Conocimiento profundo de infraestructura: Active Directory, entornos cloud (AWS, Azure, GCP), contenedores, arquitecturas de microservicios.
 - Inteligencia de amenazas: modelos Diamond, Kill Chain, MITRE ATT&CK a nivel experto. Conocimiento de grupos APT relevantes para el sector.
 
 **Habilidades blandas:**
 - Pensamiento estratégico: capacidad de ver más allá del incidente individual y disenar mejoras sistemicas.
-- Autonomia: los N3 trabajan con poca supervisión directa y deben ser capaces de planificar y ejecutar investigaciones complejas de forma independiente.
+- Autonomia: los N3 trabajan con poca supervisión directa y deben ser capaces de planificar y ejecutar investigaciónes complejas de forma independiente.
 - Liderazgo técnico: capacidad de influir en la dirección técnica del SOC sin necesariamente tener autoridad jerárquica directa.
 - Comunicación ejecutiva: capacidad de traducir hallazgos técnicos complejos en riesgos de negocio comprensibles para la dirección.
 
 ### Herramientas que usa el N3
 
 Además de las herramientas de N1 y N2:
-- Ingenieria inversa: Ghidra, IDA Pro, x64dbg, Binary Ninja.
+- Ingeniería inversa: Ghidra, IDA Pro, x64dbg, Binary Ninja.
 - Análisis de malware: Remnux, FlareVM, PEStudio, dnSpy.
-- Desarrollo de detecciones: Sigma (reglas de detección genericas), YARA (detección de malware), Snort/Suricata (detección en red).
+- Desarrollo de detecciónes: Sigma (reglas de detección genéricas), YARA (detección de malware), Snort/Suricata (detección en red).
 - Threat intelligence avanzada: STIX/TAXII, OpenCTI, MITRE ATT&CK Navigator.
 - Entornos de laboratorio: máquinas virtuales dedicadas, redes aisladas para análisis de malware.
 - Herramientas de desarrollo: Git, Docker, entornos de CI/CD para automatización de pipelines de análisis.
@@ -157,7 +157,7 @@ La carrera de un analista SOC es una progresión natural que, con dedicación y 
 
 ### Ruta típica
 
-1. **Formación inicial** (0-1 año): grado en informática, ingenieria de telecomunicaciones o formación profesional en ciberseguridad. Certificaciones iniciales como CompTIA Security+ o CEH.
+1. **Formación inicial** (0-1 año): grado en informática, ingeniería de telecomunicaciones o formación profesional en ciberseguridad. Certificaciones iniciales como CompTIA Security+ o CEH.
 
 2. **Analista N1** (1-2 años): primer contacto con el SOC. Aprendizaje intensivo de herramientas, procesos y tipos de amenazas. Es la fase donde se construye la base práctica.
 
@@ -167,7 +167,7 @@ La carrera de un analista SOC es una progresión natural que, con dedicación y 
 
 5. **Roles avanzados** (7+ años): SOC Manager, responsable de threat intelligence, arquitecto de seguridad, CISO. La bifurcación entre la vía técnica y la vía de gestión se produce habitualmente entre los 5 y los 8 años de carrera.
 
-### Formación continúa
+### Formación continua
 
 El campo de la ciberseguridad evoluciona a una velocidad que hace imprescindible la formación permanente:
 - **Plataformas de práctica**: TryHackMe, HackTheBox, LetsDefend, CyberDefenders.
@@ -193,7 +193,7 @@ Los salarios en ciberseguridad en España han experimentado un crecimiento soste
 ### Analista N3 / Threat Hunter
 - **5-7 años de experiencia**: 50.000 - 65.000 euros brutos anuales.
 - **7+ años, altamente especializado**: 65.000 - 80.000 euros brutos anuales.
-- Los perfiles excepcionales con especialización en ingenieria inversa de malware o threat hunting avanzado pueden superar los 80.000 euros, especialmente si trabajan para empresas internacionales con oficinas en España.
+- Los perfiles excepcionales con especialización en ingeniería inversa de malware o threat hunting avanzado pueden superar los 80.000 euros, especialmente si trabajan para empresas internacionales con oficinas en España.
 
 ### SOC Manager
 - **Experiencia media**: 55.000 - 70.000 euros brutos anuales.
@@ -213,7 +213,7 @@ Un grado universitario en informática, telecomunicaciones o ciberseguridad prop
 
 ### Paso 2: Certificaciones iniciales
 
-[CompTIA Security+](https://www.comptia.org/certifications/security) es la certificación más recomendada como punto de partida. También son utiles CompTIA Network+ (si necesitas reforzar redes) y la certificación SC-900 de Microsoft como primera aproximación a la seguridad cloud.
+[CompTIA Security+](https://www.comptia.org/certifications/security) es la certificación más recomendada como punto de partida. También son útiles CompTIA Network+ (si necesitas reforzar redes) y la certificación SC-900 de Microsoft como primera aproximación a la seguridad cloud.
 
 ### Paso 3: Práctica en laboratorios
 
@@ -237,7 +237,7 @@ No es estrictamente necesario, aunque si es recomendable. Muchos analistas SOC e
 
 ### Cuánto tiempo se tarda en pasar de N1 a N2?
 
-La progresión típica de N1 a N2 es de 2 a 3 años, aunque depende de factores individuales como la capacidad de aprendizaje, la calidad de la mentorización recibida, el volumen y la complejidad de los incidentes gestionados, y la formación complementaria. Los analistas N1 que toman iniciativa para aprender fuera de su rol (participan en investigaciones N2, estudian malware, desarrollan scripts de automatización) suelen progresar más rápido.
+La progresión típica de N1 a N2 es de 2 a 3 años, aunque depende de factores individuales como la capacidad de aprendizaje, la calidad de la mentorización recibida, el volumen y la complejidad de los incidentes gestionados, y la formación complementaria. Los analistas N1 que toman iniciativa para aprender fuera de su rol (participan en investigaciónes N2, estudian malware, desarrollan scripts de automatización) suelen progresar más rápido.
 
 ### Qué diferencia hay entre un analista SOC y un pentester?
 
@@ -245,8 +245,8 @@ Son roles complementarios pero distintos. El analista SOC es un perfil defensivo
 
 ### Es sostenible trabajar en turnos de SOC a largo plazo?
 
-Los turnos rotativos (manana, tarde, noche) son una realidad del trabajo en SOC 24/7 y pueden generar desgaste si no se gestionan bien. La clave está en la organización del equipo: una rotación equilibrada con suficiente personal para cubrir vacaciones y descansos, políticas claras de compensación por nocturnidad y fines de semana, y una cultura que valore el bienestar del equipo. Muchos analistas trabajan en turnos durante los primeros años de su carrera (N1 y N2) y progresivamente migran a roles con horarios más regulares (N3, SOC Manager, ingenieria de detección) a medida que ganan experiencia.
+Los turnos rotativos (manana, tarde, noche) son una realidad del trabajo en SOC 24/7 y pueden generar desgaste si no se gestionan bien. La clave está en la organización del equipo: una rotación equilibrada con suficiente personal para cubrir vacaciones y descansos, políticas claras de compensación por nocturnidad y fines de semana, y una cultura que valore el bienestar del equipo. Muchos analistas trabajan en turnos durante los primeros años de su carrera (N1 y N2) y progresivamente migran a roles con horarios más regulares (N3, SOC Manager, ingeniería de detección) a medida que ganan experiencia.
 
 ### Qué idiomas necesita un analista SOC?
 
-El español es obviamente necesario para el mercado laboral español. El ingles es imprescindible: la documentación técnica, los informes de amenazas, las comunidades profesionales y la mayoría de las herramientas están en ingles. Un nivel B2 o superior de ingles técnico es un requisito de facto para cualquier posición SOC. Otros idiomas (portugues, aleman, frances) son un plus, especialmente en SOC que dan servicio a clientes internacionales.
+El español es obviamente necesario para el mercado laboral español. El inglés es imprescindible: la documentación técnica, los informes de amenazas, las comunidades profesionales y la mayoría de las herramientas están en ingles. Un nivel B2 o superior de inglés técnico es un requisito de facto para cualquier posición SOC. Otros idiomas (portugues, aleman, frances) son un plus, especialmente en SOC que dan servicio a clientes internacionales.

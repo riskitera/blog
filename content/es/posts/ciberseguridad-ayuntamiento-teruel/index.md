@@ -20,7 +20,7 @@ El Ayuntamiento de Teruel, con una población de 36.000 de habitantes, está obl
 
 ## Qué requisitos de ciberseguridad debe cumplir el Ayuntamiento de Teruel?
 
-El Ayuntamiento de Teruel debe cumplir el ENS (Real Decreto 311/2022) en todos los sistemas que soporten servicios públicos electrónicos. Dada la población de 36.000 y los sectores económicos de la ciudad (turismo, mineria, agroalimentaria), la mayoría de sus sistemas críticos requerirán nivel ENS medio o alto.
+El Ayuntamiento de Teruel debe cumplir el ENS (Real Decreto 311/2022) en todos los sistemas que soporten servicios públicos electrónicos. Dada la población de 36.000 y los sectores económicos de la ciudad (turismo, minería, agroalimentaria), la mayoría de sus sistemas críticos requerirán nivel ENS medio o alto.
 
 Además, con la transposición de NIS2, los servicios esenciales del municipio (abastecimiento de agua, transporte público, gestión de residuos) quedarán sujetos a requisitos adicionales de gestión de riesgos y notificación de incidentes.
 
@@ -67,5 +67,5 @@ NIS2 amplía las obligaciones de ciberseguridad a los servicios municipales esen
 
 **Artículos relacionados:**
 - [Qué es el ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
-- [NIS2: qué es y a quien afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
-- [Ciberseguridad en Aragon](/es/posts/ciberseguridad-administracion-publica-aragon/)
+- [NIS2: qué es y a quién afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
+- [Ciberseguridad en Aragón](/es/posts/ciberseguridad-administracion-publica-aragon/)

@@ -13,7 +13,7 @@ keyword: "automatizar auditorias seguridad"
 funnel: "mofu"
 ---
 
-Las auditorías de seguridad informática consumen entre 200 y 800 horas de trabajo manual por ciclo en una organización mediana, según datos de ISACA 2025. La mayor parte de ese tiempo se dedica a tareas repetitivas: recopilar evidencias de múltiples sistemas, verificar configuraciones, comparar controles con requisitos normativos y redactar informes. La inteligencia artificial permite reducir ese esfuerzo entre un 40% y un 70%, transformando la auditoría de un ejercicio periódico y reactivo en un proceso continuo y proactivo.
+Las auditorías de seguridad informática consumen entre 200 y 800 horas de trabajo manual por ciclo en una organización mediana, según datos de ISACA 2025. La mayor parte de ese tiempo se dedica a táreas repetitivas: recopilar evidencias de múltiples sistemas, verificar configuraciones, comparar controles con requisitos normativos y redactar informes. La inteligencia artificial permite reducir ese esfuerzo entre un 40% y un 70%, transformando la auditoría de un ejercicio periódico y reactivo en un proceso continuo y proactivo.
 
 <!--more-->
 
@@ -31,7 +31,7 @@ El modelo tradicional de auditoría tiene problemas estructurales que la automat
 
 ## Qué partes de una auditoría se pueden automatizar con IA?
 
-No todas las fases de una auditoría son automatizables. El juicio experto sigue siendo necesario para evaluar riesgos contextuales, validar excepciones y emitir opiniones profesionales. Pero las tareas mecanicas si:
+No todas las fases de una auditoría son automatizables. El juicio experto sigue siendo necesario para evaluar riesgos contextuales, validar excepciones y emitir opiniones profesionales. Pero las táreas mecanicas si:
 
 | Fase | Automatizable | Como |
 |------|--------------|------|
@@ -41,22 +41,22 @@ No todas las fases de una auditoría son automatizables. El juicio experto sigue
 | Análisis de gaps | Si | LLM compara documentación con requisitos normativos |
 | Evaluación de riesgos | Parcial | IA sugiere, auditor válida |
 | Generación de informes | Si (borrador) | LLM genera informe a partir de hallazgos estructurados |
-| Recomendaciones | Parcial | IA sugiere basandose en mejores prácticas, auditor prioriza |
+| Recomendaciones | Parcial | IA sugiere basándose en mejores prácticas, auditor prioriza |
 | Opinion profesional | No | Requiere juicio experto humano |
 
 ## Cómo funciona la recopilación automática de evidencias?
 
 La recopilación automática de evidencias se basa en agentes que se conectan a los sistemas de la organización y extraen la información necesaria para cada control:
 
-**Fuentes tipicas de evidencias:**
-- **Active Directory / LDAP**: políticas de contrasenas, cuentas inactivas, grupos privilegiados, MFA habilitado
+**Fuentes típicas de evidencias:**
+- **Active Directory / LDAP**: políticas de contraseñas, cuentas inactivas, grupos privilegiados, MFA habilitado
 - **Firewalls y proxies**: reglas activas, logs de acceso, segmentación de red
 - **SIEM**: reglas de correlación activas, cobertura de fuentes, retención de logs
 - **Sistemas de backup**: política de copias, última ejecución exitosa, pruebas de restauración
 - **Endpoint protection**: cobertura de agentes, firmas actualizadas, endpoints sin protección
 - **Cloud (AWS/Azure/GCP)**: configuraciones de seguridad, IAM policies, cifrado habilitado
 
-Cada evidencia se etiqueta automáticamente con el control al que corresponde (por ejemplo: la política de contrasenas de AD se vincula a ENS op.acc.5 y a ISO A.8.5). Esto elimina la tarea manual de mapear evidencias a controles.
+Cada evidencia se etiqueta automáticamente con el control al que corresponde (por ejemplo: la política de contraseñas de AD se vincula a ENS op.acc.5 y a ISO A.8.5). Esto elimina la tarea manual de mapear evidencias a controles.
 
 ## Cómo detecta la IA gaps de cumplimiento?
 
@@ -74,7 +74,7 @@ La combinación de ambos niveles proporciona una visión completa: no solo si lo
 
 Los datos del sector muestran ahorros consistentes:
 
-| Metrica | Auditoría manual | Auditoría con IA | Reducción |
+| Métrica | Auditoría manual | Auditoría con IA | Reducción |
 |---------|-----------------|-------------------|-----------|
 | Horas de preparación | 200-400h | 60-120h | 60-70% |
 | Tiempo de ciclo | 4-8 semanas | 1-2 semanas | 75% |
@@ -90,7 +90,7 @@ El mercado ofrece soluciones en diferentes categorías:
 
 **Plataformas GRC con IA integrada:**
 - Riskitera: mapeo automático de controles ENS/NIS2/ISO 27001, recopilación de evidencias, generación de informes. Soberania de datos en infraestructura europea.
-- Drata: enfocada en SOC 2 y ISO 27001, fuerte en integraciones cloud.
+- Drata: enfocada en SOC 2 y ISO 27001, fuerte en integraciónes cloud.
 - Vanta: similar a Drata, con automatización de evidencias para startups.
 - ServiceNow GRC: enterprise, con modulo de IA para análisis de riesgos.
 
@@ -117,7 +117,7 @@ El mercado ofrece soluciones en diferentes categorías:
 
 La implementación típica lleva 4-8 semanas para los controles críticos y 3-6 meses para cobertura completa.
 
-{{< cta type="mofu" text="Riskitera unifica GRC, SOC y CTI en una plataforma con soberania de datos europea." >}}
+{{< cta type="mofu" text="Riskitera unifica GRC, SOC y CTI en una plataforma con soberanía de datos europea." >}}
 
 **Artículos relacionados:**
 - [Guía práctica de auditoría de seguridad informática](/es/posts/2026/04/auditoria-seguridad-informatica-guia/)

@@ -30,9 +30,9 @@ Una política de seguridad informática es un documento formal que define la pos
 
 Las políticas se sitúan en la capa más alta del marco documental de seguridad. Por debajo se encuentran los procedimientos (como implementar la política paso a paso), las instrucciones técnicas (como configurar un sistema concreto para cumplir la política) y los registros (evidencias de que la política se esta cumpliendo).
 
-Esta jerarquia documental es fundamental para la gestión eficaz de la seguridad. Las políticas cambian con poca frecuencia porque expresan principios generales. Los procedimientos y las instrucciones técnicas cambian con más frecuencia para adaptarse a la evolución tecnologica, sin necesidad de modificar la política que los sustenta.
+Esta jerarquía documental es fundamental para la gestión eficaz de la seguridad. Las políticas cambian con poca frecuencia porque expresan principios generales. Los procedimientos y las instrucciones técnicas cambian con más frecuencia para adaptarse a la evolución tecnológica, sin necesidad de modificar la política que los sustenta.
 
-[ISO 27001](https://www.iso.org/standard/27001) exige una política de seguridad de la información de alto nivel como requisito del SGSI, además de políticas específicas para areas como el control de accesos, la clasificación de la información o el uso aceptable de los recursos. El [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) requiere una política de seguridad aprobada por el órgano competente que articule la gestión continuada de la seguridad.
+[ISO 27001](https://www.iso.org/standard/27001) exige una política de seguridad de la información de alto nivel como requisito del SGSI, además de políticas específicas para áreas como el control de accesos, la clasificación de la información o el uso aceptable de los recursos. El [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) requiere una política de seguridad aprobada por el órgano competente que articule la gestión continuada de la seguridad.
 
 ## Qué tipos de políticas de seguridad son esenciales?
 
@@ -40,7 +40,7 @@ Cada organización necesita un conjunto de políticas adaptado a su tamaño, sec
 
 ### Política de seguridad de la información
 
-Es la política de nivel superior que establece el compromiso de la dirección con la seguridad de la información, los objetivos generales de seguridad, el alcance del programa de seguridad, los roles y responsabilidades de alto nivel y los principios fundamentales que guian todas las demás políticas. Es un requisito explícito de ISO 27001 (cláusula 5.2) y del [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311).
+Es la política de nivel superior que establece el compromiso de la dirección con la seguridad de la información, los objetivos generales de seguridad, el alcance del programa de seguridad, los roles y responsabilidades de alto nivel y los principios fundamentales que guían todas las demás políticas. Es un requisito explícito de ISO 27001 (cláusula 5.2) y del [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311).
 
 Esta política debe ser breve (dos a cuatro páginas), aprobada por la alta dirección y comunicada a todo el personal. No debe contener detalles técnicos sino principios y compromisos de nivel estratégico.
 
@@ -54,7 +54,7 @@ Es una de las políticas más importantes desde el punto de vista legal, ya que 
 
 Establece los principios para la gestión de identidades y accesos a los sistemas de información. Los principios fundamentales que suele incluir son:
 
-**Mínimo privilegio:** cada usuario recibe unicamente los accesos estrictamente necesarios para realizar sus funciones.
+**Mínimo privilegio:** cada usuario recibe únicamente los accesos estrictamente necesarios para realizar sus funciones.
 
 **Necesidad de conocer:** el acceso a la información se concede solo a quien lo necesita para su trabajo.
 
@@ -62,7 +62,7 @@ Establece los principios para la gestión de identidades y accesos a los sistema
 
 **Revisión periódica:** los accesos se revisan regularmente para detectar y revocar permisos innecesarios.
 
-La política debe cubrir la gestión del ciclo de vida de las cuentas (alta, modificación, baja), los requisitos de autenticación (contrasenas, MFA), la gestión de cuentas privilegiadas y el acceso de terceros.
+La política debe cubrir la gestión del ciclo de vida de las cuentas (alta, modificación, baja), los requisitos de autenticación (contraseñas, MFA), la gestión de cuentas privilegiadas y el acceso de terceros.
 
 ### Política de respuesta a incidentes
 
@@ -72,7 +72,7 @@ Esta política es crítica no solo para la operativa diaria sino para el cumplim
 
 ### Política de BYOD (Bring Your Own Device)
 
-Regula el uso de dispositivos personales (portatiles, smartphones, tablets) para acceder a recursos corporativos. Debe abordar los requisitos de seguridad mínimos para los dispositivos (cifrado, antivirus, actualizaciones), las aplicaciones permitidas para acceso corporativo, la separación entre datos personales y corporativos, las capacidades de borrado remoto en caso de perdida o robo y las responsabilidades del empleado.
+Regula el uso de dispositivos personales (portátiles, smartphones, tablets) para acceder a recursos corporativos. Debe abordar los requisitos de seguridad mínimos para los dispositivos (cifrado, antivirus, actualizaciónes), las aplicaciones permitidas para acceso corporativo, la separación entre datos personales y corporativos, las capacidades de borrado remoto en caso de pérdida o robo y las responsabilidades del empleado.
 
 En el contexto del trabajo híbrido, esta política es cada vez más relevante. La ausencia de normas claras sobre BYOD genera riesgos significativos de fuga de información y acceso no autorizado.
 
@@ -82,13 +82,13 @@ Complementaria a la de BYOD, esta política establece las condiciones de segurid
 
 La normativa laboral española sobre teletrabajo (Ley 10/2021) exige que el acuerdo de trabajo a distancia incluya medios de protección de datos, lo que refuerza la necesidad de esta política.
 
-### Política de contrasenas y autenticación
+### Política de contraseñas y autenticación
 
-Establece los requisitos para la creación, uso y gestión de contrasenas. Las recomendaciones actuales, alineadas con las directrices del NIST (SP 800-63B) y el CCN, priorizan la longitud sobre la complejidad arbitraria:
+Establece los requisitos para la creación, uso y gestión de contraseñas. Las recomendaciones actuales, alineadas con las directrices del NIST (SP 800-63B) y el CCN, priorizan la longitud sobre la complejidad arbitraria:
 
-Contrasenas de al menos 12 caracteres para usuarios generales y 16 para cuentas privilegiadas. Uso obligatorio de autenticación multifactor (MFA) para accesos remotos, cuentas privilegiadas y sistemas críticos. Prohibición de reutilizar contrasenas entre servicios. Uso recomendado de gestores de contrasenas corporativos. Prohibición de compartir credenciales entre empleados.
+Contrasenas de al menos 12 caracteres para usuarios generales y 16 para cuentas privilegiadas. Uso obligatorio de autenticación multifactor (MFA) para accesos remotos, cuentas privilegiadas y sistemas críticos. Prohibición de reutilizar contraseñas entre servicios. Uso recomendado de gestores de contraseñas corporativos. Prohibición de compartir credenciales entre empleados.
 
-Esta política ha evolucionado significativamente en los últimos años. Las rotaciones obligatorias frecuentes (cada 30 o 90 días) ya no se recomiendan salvo tras incidentes, ya que estudios demuestran que llevan a los usuarios a crear contrasenas más debiles y predecibles.
+Esta política ha evolucionado significativamente en los últimos años. Las rotaciones obligatorias frecuentes (cada 30 o 90 días) ya no se recomiendan salvo tras incidentes, ya que estudios demuestran que llevan a los usuarios a crear contraseñas más debiles y predecibles.
 
 ### Política de clasificación de la información
 
@@ -100,7 +100,7 @@ Sin una clasificación de información operativa, es imposible aplicar controles
 
 ## Cómo redactar políticas de seguridad eficaces?
 
-La calidad de la redacción determina la utilidad práctica de las políticas. Una política mal escrita, aunque tecnicamente correcta, no será comprendida ni aplicada.
+La calidad de la redacción determina la utilidad práctica de las políticas. Una política mal escrita, aunque técnicamente correcta, no será comprendida ni aplicada.
 
 ### Estructura recomendada
 
@@ -114,7 +114,7 @@ Cada política debe seguir una estructura coherente que facilite su lectura y co
 
 **Definiciones:** términos técnicos o específicos que se utilizan en el documento.
 
-**Principios y directrices:** el cuerpo de la política, con las reglas y requisitos formulados de forma clara e inequivoca.
+**Principios y directrices:** el cuerpo de la política, con las reglas y requisitos formulados de forma clara e inequívoca.
 
 **Roles y responsabilidades:** quien es responsable de que en relación con la política.
 
@@ -128,11 +128,11 @@ Cada política debe seguir una estructura coherente que facilite su lectura y co
 
 **Claridad.** Utilizar un lenguaje comprensible para la audiencia a la que se dirige. Si la política aplica a todo el personal, debe evitar la jerga técnica innecesaria. Si se dirige a administradores de sistemas, puede utilizar terminologia técnica apropiada.
 
-**Precisión.** Las directrices deben ser específicas y medibles. En lugar de "las contrasenas deben ser seguras", escribir "las contrasenas deben tener un mínimo de 12 caracteres". En lugar de "los datos deben respaldarse regularmente", escribir "los datos críticos deben respaldarse diariamente con una retención mínima de 30 días".
+**Precisión.** Las directrices deben ser específicas y medibles. En lugar de "las contraseñas deben ser seguras", escribir "las contraseñas deben tener un mínimo de 12 caracteres". En lugar de "los datos deben respaldarse regularmente", escribir "los datos críticos deben respaldarse diariamente con una retención mínima de 30 días".
 
 **Brevedad.** Las políticas deben ser tan cortas como sea posible sin sacrificar la precisión. Los detalles de implementación pertenecen a los procedimientos, no a las políticas. Una política que supera las 10 páginas probablemente esta mezclando política y procedimiento.
 
-**Viabilidad.** Toda directriz debe ser realista y ejecutable. Establecer requisitos imposibles de cumplir (por ejemplo, exigir cambio de contrasena diario) no mejora la seguridad sino que genera incumplimiento generalizado y desacredita el programa de políticas.
+**Viabilidad.** Toda directriz debe ser realista y ejecutable. Establecer requisitos imposibles de cumplir (por ejemplo, exigir cambio de contraseña diario) no mejora la seguridad sino que genera incumplimiento generalizado y desacredita el programa de políticas.
 
 **Consistencia.** Las diferentes políticas deben utilizar terminologia, estructura y estilo coherentes. Las contradicciones entre políticas generan confusión y erosionan la confianza en el marco documental.
 
@@ -142,7 +142,7 @@ La aprobación formal es lo que transforma un documento de trabajo en una polít
 
 ### Flujo de aprobación recomendado
 
-1. **Borrador inicial** elaborado por el responsable de seguridad de la información o el equipo de seguridad, basandose en los requisitos normativos, las mejores prácticas y las necesidades de la organización.
+1. **Borrador inicial** elaborado por el responsable de seguridad de la información o el equipo de seguridad, basándose en los requisitos normativos, las mejores prácticas y las necesidades de la organización.
 
 2. **Revisión técnica** por los equipos de TI y operaciones para verificar la viabilidad técnica de las directrices.
 
@@ -150,21 +150,21 @@ La aprobación formal es lo que transforma un documento de trabajo en una polít
 
 4. **Revisión de recursos humanos** para validar que las directrices sobre comportamiento del personal y las consecuencias de incumplimiento son compatibles con la normativa laboral y los convenios colectivos.
 
-5. **Aprobación por la dirección.** La política de seguridad de la información de alto nivel debe ser aprobada por la alta dirección (CEO, comite de dirección). Las políticas específicas pueden ser aprobadas por el CISO o el responsable de seguridad, según el esquema de delegación de la organización.
+5. **Aprobación por la dirección.** La política de seguridad de la información de alto nivel debe ser aprobada por la alta dirección (CEO, comité de dirección). Las políticas específicas pueden ser aprobadas por el CISO o el responsable de seguridad, según el esquema de delegación de la organización.
 
 6. **Publicación y comunicación** a todo el personal afectado.
 
-El ENS establece explicitamente que la política de seguridad debe ser aprobada por el órgano superior competente. ISO 27001 requiere que la política sea apropiada al propósito de la organización y aprobada por la alta dirección.
+El ENS establece explícitamente que la política de seguridad debe ser aprobada por el órgano superior competente. ISO 27001 requiere que la política sea apropiada al propósito de la organización y aprobada por la alta dirección.
 
 ### Gestión de excepciones
 
-Toda política debe incluir un proceso formal para gestionar excepciones. Existiran situaciones en las que un requisito de la política no pueda cumplirse por razones técnicas, operativas o económicas justificadas. El proceso de excepciones debe definir quien puede solicitar una excepción, quien la aprueba, que información debe proporcionarse (justificación, riesgo residual, medidas compensatorias, duración de la excepción) y como se documenta y revisa periodicamente.
+Toda política debe incluir un proceso formal para gestionar excepciones. Existiran situaciones en las que un requisito de la política no pueda cumplirse por razones técnicas, operativas o económicas justificadas. El proceso de excepciones debe definir quien puede solicitar una excepción, quien la aprueba, que información debe proporcionarse (justificación, riesgo residual, medidas compensatorias, duración de la excepción) y como se documenta y revisa periódicamente.
 
 Las excepciones sin proceso formal son una fuente frecuente de riesgo y de hallazgos en [auditorías de seguridad](/es/posts/auditoria-seguridad-informatica-guia/).
 
 ## Cómo comunicar las políticas de seguridad a los empleados?
 
-Una política aprobada pero desconocida por el personal es tan inutil como la ausencia de política. La comunicación es una fase crítica que muchas organizaciones descuidan.
+Una política aprobada pero desconocida por el personal es tan inútil como la ausencia de política. La comunicación es una fase crítica que muchas organizaciones descuidan.
 
 ### Estrategias de comunicación eficaces
 
@@ -174,7 +174,7 @@ Una política aprobada pero desconocida por el personal es tan inutil como la au
 
 **Accesibilidad.** Las políticas deben estar publicadas en un lugar accesible para todo el personal: intranet, repositorio documental corporativo o plataforma de gestión documental. El personal debe poder consultarlas en cualquier momento.
 
-**Recordatorios periódicos.** Utilizar comunicaciones internas (newsletter, correos, carteles) para recordar periodicamente las políticas clave. Los recordatorios son especialmente importantes para políticas que afectan al comportamiento diario, como la política de uso aceptable o la de contrasenas.
+**Recordatorios periódicos.** Utilizar comunicaciones internas (newsletter, correos, carteles) para recordar periódicamente las políticas clave. Los recordatorios son especialmente importantes para políticas que afectan al comportamiento diario, como la política de uso aceptable o la de contraseñas.
 
 **Acuse de recibo.** Para políticas críticas, solicitar que cada empleado confirme que ha leido y comprendido el documento. Este acuse de recibo, además de reforzar la comunicación, constituye una evidencia de cumplimiento valiosa para auditorías.
 
@@ -182,15 +182,15 @@ Una política aprobada pero desconocida por el personal es tan inutil como la au
 
 ### Adaptación al público
 
-No todo el personal necesita conocer todas las políticas con el mismo nivel de detalle. La comunicación debe adaptarse a la audiencia: la dirección necesita comprender los principios y las implicaciones de negocio; el personal general necesita saber qué reglas le aplican directamente y como cumplirlas; el personal técnico necesita además los detalles que le permitan implementar y operar los controles.
+No todo el personal necesita conocer todas las políticas con el mismo nivel de detalle. La comunicación debe adaptarse a la audiencia: la dirección necesita comprender los principios y las implicaciones de negocio; el personal general necesita saber qué reglas le aplican directamente y cómo cumplirlas; el personal técnico necesita además los detalles que le permitan implementar y operar los controles.
 
 ## Con que frecuencia se deben revisar las políticas?
 
-Las políticas de seguridad no son documentos estaticos. Deben revisarse y actualizarse de forma periódica y ante eventos significativos.
+Las políticas de seguridad no son documentos estáticos. Deben revisarse y actualizarse de forma periódica y ante eventos significativos.
 
 ### Revisión periódica
 
-Se recomienda una revisión completa de cada política al menos una vez al año. La revisión debe evaluar si la política sigue siendo relevante y adecuada, si los requisitos normativos han cambiado, si la tecnología ha evolucionado de forma que afecte a la política, si se han producido incidentes que revelen deficiencias y si el feedback del personal indica areas de mejora.
+Se recomienda una revisión completa de cada política al menos una vez al año. La revisión debe evaluar si la política sigue siendo relevante y adecuada, si los requisitos normativos han cambiado, si la tecnología ha evolucionado de forma que afecte a la política, si se han producido incidentes que revelen deficiencias y si el feedback del personal indica áreas de mejora.
 
 ### Actualización ante eventos
 
@@ -212,17 +212,17 @@ Para organizaciones que crean políticas por primera vez, las plantillas proporc
 
 **ISO 27002** (versión 2022) proporciona orientación detallada para cada control del Anexo A de ISO 27001, que puede utilizarse como base para redactar políticas específicas.
 
-**SANS Institute** ofrece plantillas de políticas de seguridad en ingles que cubren la mayoría de los tipos necesarios y que pueden adaptarse al contexto de cada organización.
+**SANS Institute** ofrece plantillas de políticas de seguridad en inglés que cubren la mayoría de los tipos necesarios y que pueden adaptarse al contexto de cada organización.
 
 Riskitera incluye plantillas de políticas de seguridad alineadas con los requisitos del ENS e ISO 27001, personalizables según el sector y el tamaño de la organización, lo que permite a las empresas disponer de un marco documental de seguridad sólido sin partir de cero.
 
 ### Adaptación de plantillas
 
-Las plantillas son un punto de partida, no un producto final. Toda plantilla debe adaptarse al contexto específico de la organización: su sector, su tamaño, su estructura organizativa, su entorno tecnologico, sus requisitos normativos y su cultura corporativa. Una política copiada literalmente de una plantilla sin adaptación será generica, inadecuada y dificilmente aplicable.
+Las plantillas son un punto de partida, no un producto final. Toda plantilla debe adaptarse al contexto específico de la organización: su sector, su tamaño, su estructura organizativa, su entorno tecnológico, sus requisitos normativos y su cultura corporativa. Una política copiada literalmente de una plantilla sin adaptación será generica, inadecuada y dificilmente aplicable.
 
 ## Cuáles son los errores comunes al crear políticas de seguridad?
 
-**Redactar políticas que nadie lee ni conoce.** La política más perfecta tecnicamente es inutil si el personal no la conoce. La comunicación y la formación son tan importantes como la redacción.
+**Redactar políticas que nadie lee ni conoce.** La política más perfecta técnicamente es inútil si el personal no la conoce. La comunicación y la formación son tan importantes como la redacción.
 
 **Crear políticas inviables.** Establecer requisitos que el personal no puede cumplir razonablemente genera incumplimiento generalizado y cinismo hacia el programa de seguridad. Las políticas deben ser ambiciosas pero realistas.
 
@@ -232,7 +232,7 @@ Las plantillas son un punto de partida, no un producto final. Toda plantilla deb
 
 **No gestionar excepciones.** La rigidez absoluta no funciona en organizaciones reales. Un proceso formal de excepciones permite la flexibilidad necesaria sin comprometer la integridad del marco normativo.
 
-**No actualizar las políticas.** Una política de contrasenas que exige cambio cada 30 días o que prohibe el teletrabajo cuando toda la organización trabaja en remoto erosiona la credibilidad de todo el marco documental. Las políticas deben reflejar la realidad actual de la organización.
+**No actualizar las políticas.** Una política de contraseñas que exige cambio cada 30 días o que prohibe el teletrabajo cuando toda la organización trabaja en remoto erosiona la credibilidad de todo el marco documental. Las políticas deben reflejar la realidad actual de la organización.
 
 {{< cta type="mofu" text="Gestiona el ciclo de vida completo de tus políticas de seguridad: redaccion, aprobacion, difusion y revisión periodica." >}}
 
@@ -240,7 +240,7 @@ Las plantillas son un punto de partida, no un producto final. Toda plantilla deb
 
 ### Cuantas políticas de seguridad necesita mi organización
 
-No existe un número fijo. Una pyme puede funcionar con 5 a 8 políticas fundamentales: política de seguridad de la información, uso aceptable, control de accesos, gestión de incidentes, clasificación de información, contrasenas, copias de seguridad y gestión de cambios. Una organización grande o altamente regulada puede necesitar 15 a 25 políticas que cubran areas adicionales como seguridad en el desarrollo de software, gestión de proveedores, seguridad física o continuidad de negocio. Lo importante es que cada política responda a una necesidad real y se mantenga actualizada.
+No existe un número fijo. Una pyme puede funcionar con 5 a 8 políticas fundamentales: política de seguridad de la información, uso aceptable, control de accesos, gestión de incidentes, clasificación de información, contraseñas, copias de seguridad y gestión de cambios. Una organización grande o altamente regulada puede necesitar 15 a 25 políticas que cubran áreas adicionales como seguridad en el desarrollo de software, gestión de proveedores, seguridad física o continuidad de negocio. Lo importante es que cada política responda a una necesidad real y se mantenga actualizada.
 
 ### Quien debe redactar las políticas de seguridad
 
@@ -254,6 +254,6 @@ Varias normativas exigen directa o indirectamente la existencia de políticas de
 
 El cumplimiento requiere un enfoque múltiple: comunicación clara del contenido y el propósito de cada política, formación periódica con ejemplos prácticos, apoyo de la dirección visible y consistente, controles técnicos que faciliten el cumplimiento (por ejemplo, configurar el MFA obligatorio en lugar de confiarlo a la voluntad del usuario), consecuencias proporcionadas y conocidas ante el incumplimiento y un proceso de excepciones que evite la sensación de rigidez excesiva. La cultura de seguridad se construye gradualmente y requiere consistencia y liderazgo.
 
-### Puedo utilizar políticas genericas descargadas de internet
+### Puedo utilizar políticas genéricas descargadas de internet
 
-Las plantillas genericas son un punto de partida aceptable, pero nunca deben utilizarse sin adaptación. Una política que no refleja la realidad de tu organización (su tecnología, sus procesos, su sector, su normativa aplicable) será poco útil y potencialmente contraproducente. El valor de una política reside en su aplicabilidad al contexto concreto. Dedica tiempo a adaptar cada plantilla, validarla con los equipos relevantes y asegurar que las directrices son viables y pertinentes para tu organización.
+Las plantillas genéricas son un punto de partida aceptable, pero nunca deben utilizarse sin adaptación. Una política que no refleja la realidad de tu organización (su tecnología, sus procesos, su sector, su normativa aplicable) será poco útil y potencialmente contraproducente. El valor de una política reside en su aplicabilidad al contexto concreto. Dedica tiempo a adaptar cada plantilla, validarla con los equipos relevantes y asegurar que las directrices son viables y pertinentes para tu organización.

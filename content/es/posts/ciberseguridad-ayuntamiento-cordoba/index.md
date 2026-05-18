@@ -20,7 +20,7 @@ El Ayuntamiento de Córdoba, con una población de 325.000 de habitantes, está 
 
 ## Qué requisitos de ciberseguridad debe cumplir el Ayuntamiento de Córdoba?
 
-El Ayuntamiento de Córdoba debe cumplir el ENS (Real Decreto 311/2022) en todos los sistemas que soporten servicios públicos electrónicos. Dada la población de 325.000 y los sectores económicos de la ciudad (agroalimentaria, turismo, joyeria), la mayoría de sus sistemas críticos requerirán nivel ENS medio o alto.
+El Ayuntamiento de Córdoba debe cumplir el ENS (Real Decreto 311/2022) en todos los sistemas que soporten servicios públicos electrónicos. Dada la población de 325.000 y los sectores económicos de la ciudad (agroalimentaria, turismo, joyería), la mayoría de sus sistemas críticos requerirán nivel ENS medio o alto.
 
 Además, con la transposición de NIS2, los servicios esenciales del municipio (abastecimiento de agua, transporte público, gestión de residuos) quedarán sujetos a requisitos adicionales de gestión de riesgos y notificación de incidentes.
 
@@ -67,5 +67,5 @@ NIS2 amplía las obligaciones de ciberseguridad a los servicios municipales esen
 
 **Artículos relacionados:**
 - [Qué es el ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
-- [NIS2: qué es y a quien afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
+- [NIS2: qué es y a quién afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
 - [Ciberseguridad en Andalucía](/es/posts/ciberseguridad-administracion-publica-andalucia/)

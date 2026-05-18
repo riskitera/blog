@@ -18,16 +18,16 @@ Desglose técnico de los 12 requisitos principales de DORA para entidades financ
 <!--more-->
 
 {{< key-takeaways >}}
-- DORA establece 12 requisitos técnicos agrupados en 5 pilares que afectan a bancos, aseguradoras, gestoras de fondos y proveedores TIC críticos en la Union Europea.
+- DORA establece 12 requisitos técnicos agrupados en 5 pilares que afectan a bancos, aseguradoras, gestoras de fondos y proveedores TIC críticos en la Unión Europea.
 - La gestión de riesgos TIC (Artículos 6 a 16) exige un marco de gobernanza con responsabilidad directa del órgano de dirección y revisión anual obligatoria.
 - El reporting de incidentes (Artículos 17 a 23) obliga a clasificar y notificar incidentes graves a las autoridades competentes en plazos de 4 horas, 72 horas y 1 mes.
-- Las pruebas de resiliencia digital (Artículos 24 a 27) incluyen tests básicos anuales y pruebas TLPT avanzadas cada tres anios para entidades significativas.
+- Las pruebas de resiliencia digital (Artículos 24 a 27) incluyen tests básicos anuales y pruebas TLPT avanzadas cada tres años para entidades significativas.
 - La gestión de riesgo de terceros (Artículos 28 a 44) impone un marco de supervisión directa de la UE sobre proveedores TIC críticos, con poder sancionador.
 {{< /key-takeaways >}}
 
 ## Qué es DORA y por que importa a las entidades financieras
 
-El [Reglamento (UE) 2022/2554](https://eur-lex.europa.eu/eli/reg/2022/2554), conocido como DORA (Digital Operational Resilience Act), es la primera normativa europea que establece requisitos uniformes de resiliencia operativa digital para el sector financiero. Entro en vigor en enero de 2023 y su aplicación es obligatoria desde el 17 de enero de 2025.
+El [Reglamento (UE) 2022/2554](https://eur-lex.europa.eu/eli/reg/2022/2554), conocido como DORA (Digital Operational Resilience Act), es la primera normativa europea que establece requisitos uniformes de resiliencia operativa digital para el sector financiero. Entró en vigor en enero de 2023 y su aplicación es obligatoria desde el 17 de enero de 2025.
 
 A diferencia de directivas anteriores que dejaban margen de transposición a cada estado miembro, DORA es un reglamento de aplicación directa. Esto significa que todas las entidades financieras de la UE (bancos, aseguradoras, empresas de inversión, gestoras de fondos, entidades de pago, proveedores de servicios de criptoactivos y otros 20 tipos de entidades) deben cumplir exactamente los mismos requisitos.
 
@@ -37,7 +37,7 @@ El contexto es claro: la dependencia del sector financiero respecto a la tecnolo
 
 DORA no existe en el vacio. La [Directiva NIS2 (UE) 2022/2555](https://eur-lex.europa.eu/eli/dir/2022/2555) establece requisitos de ciberseguridad para sectores esenciales e importantes, incluido el financiero. Sin embargo, DORA prevalece como lex specialis para el sector financiero: cuando ambas normas cubren el mismo aspecto, se aplica DORA.
 
-[ISO 27001](https://www.iso.org/standard/27001) sigue siendo un marco de referencia válido para la implementación práctica, pero no sustituye el cumplimiento de DORA. Muchas entidades financieras que ya tienen certificación ISO 27001 descubren que necesitan reforzar areas específicas, como la gestión de riesgo de terceros TIC o las pruebas TLPT.
+[ISO 27001](https://www.iso.org/standard/27001) sigue siendo un marco de referencia válido para la implementación práctica, pero no sustituye el cumplimiento de DORA. Muchas entidades financieras que ya tienen certificación ISO 27001 descubren que necesitan reforzar áreas específicas, como la gestión de riesgo de terceros TIC o las pruebas TLPT.
 
 ### Los 5 pilares de DORA
 
@@ -62,7 +62,7 @@ El órgano de dirección de la entidad financiera tiene la responsabilidad últi
 - Defina, apruebe y supervise la implementación de la estrategia de resiliencia operativa digital.
 - Establezca funciones y responsabilidades claras para todas las cuestiones relacionadas con las TIC.
 - Asigne presupuesto suficiente para la formación en resiliencia digital, tanto para empleados como para los propios miembros del órgano de dirección.
-- Revise y apruebe la política de continuidad de negocio TIC al menos una vez al anio.
+- Revise y apruebe la política de continuidad de negocio TIC al menos una vez al año.
 
 En la práctica, esto implica que la ciberseguridad deja de ser un tema exclusivo del area técnica. Los directivos deben demostrar conocimiento y participación activa. Las actas del consejo deben reflejar que se han revisado los informes de riesgo TIC, los resultados de las pruebas de resiliencia y el estado de los proveedores críticos.
 
@@ -91,7 +91,7 @@ Esta estrategia no es un documento estático. Debe revisarse al menos anualmente
 
 ### Requisito 4: Políticas de seguridad TIC (Artículos 9 a 16)
 
-DORA detalla requisitos específicos para areas concretas de la seguridad:
+DORA detalla requisitos específicos para áreas concretas de la seguridad:
 
 - **Gestión de identidades y acceso** (Artículo 9.4b): principio de mínimo privilegio, revisión periódica de permisos, autenticación multifactor para sistemas críticos.
 - **Gestión de cambios TIC** (Artículo 9.4e): procedimientos formales para cambios en sistemas, con evaluación de impacto, pruebas previas y capacidad de rollback.
@@ -113,7 +113,7 @@ Las entidades financieras deben establecer un proceso de gestión de incidentes 
 - Roles y responsabilidades claros, incluida la activación de planes de respuesta.
 - Planes de comunicación interna (incluida escalación a alta dirección) y externa (incluidos clientes afectados).
 - Procedimientos para la preservación de evidencias forenses.
-- Análisis post-incidente obligatorio para incidentes graves, con identificación de causas raiz y acciones correctivas.
+- Análisis post-incidente obligatorio para incidentes graves, con identificación de causas raíz y acciones correctivas.
 
 ### Requisito 6: Clasificación de incidentes (Artículo 18)
 
@@ -121,9 +121,9 @@ DORA establece criterios armonizados para clasificar los incidentes TIC. Los cri
 
 | Criterio | Descripción |
 |---|---|
-| Numero de clientes afectados | Umbrales absolutos y relativos respecto a la base total |
+| Número de clientes afectados | Umbrales absolutos y relativos respecto a la base total |
 | Duración del incidente | Tiempo desde detección hasta resolución completa |
-| Extensión geográfica | Numero de estados miembros afectados |
+| Extensión geográfica | Número de estados miembros afectados |
 | Perdidas de datos | Volumen y criticidad de los datos comprometidos |
 | Criticidad de los servicios | Impacto en servicios críticos o funciones esenciales |
 | Impacto económico | Costes directos e indirectos estimados |
@@ -135,8 +135,8 @@ Un incidente se clasifica como **grave** cuando supera los umbrales establecidos
 El régimen de notificación es uno de los aspectos más operativos de DORA. Las entidades deben enviar tres tipos de notificaciones a su autoridad competente:
 
 1. **Notificación inicial**: dentro de las **4 horas** desde la clasificación del incidente como grave (y no más de 24 horas desde la detección). Debe incluir información básica sobre el incidente, el impacto estimado y las primeras medidas adoptadas.
-2. **Notificación intermedia**: dentro de las **72 horas** desde la notificación inicial. Actualiza la información con datos más concretos sobre el alcance, la causa raiz identificada y las acciones de remediación en curso.
-3. **Informe final**: dentro de **1 mes** desde el envio de la notificación intermedia. Incluye el análisis completo de causas raiz, el impacto real, las medidas correctivas implementadas y las lecciones aprendidas.
+2. **Notificación intermedia**: dentro de las **72 horas** desde la notificación inicial. Actualiza la información con datos más concretos sobre el alcance, la causa raíz identificada y las acciones de remediación en curso.
+3. **Informe final**: dentro de **1 mes** desde el envio de la notificación intermedia. Incluye el análisis completo de causas raíz, el impacto real, las medidas correctivas implementadas y las lecciones aprendidas.
 
 Para ilustrar el impacto operativo: si una entidad detecta un ataque de ransomware a las 10:00 del lunes, debe clasificarlo antes de las 10:00 del martes, enviar la notificación inicial antes de las 14:00 del martes (si clasifica a las 10:00), la notificación intermedia antes del jueves, y el informe final antes de un mes después. Estos plazos son exigentes y requieren procesos bien engrasados.
 
@@ -154,13 +154,13 @@ Todas las entidades financieras cubiertas por DORA deben establecer un programa 
 
 - Formar parte integral del marco de gestión de riesgos TIC.
 - Cubrir todos los sistemas, procesos y personal que soportan funciones críticas o importantes.
-- Ejecutarse al menos **una vez al anio** para los sistemas y aplicaciones críticos.
+- Ejecutarse al menos **una vez al año** para los sistemas y aplicaciones críticos.
 - Ser proporcional al tamaño de la entidad y a la naturaleza de sus servicios.
 
 Las pruebas básicas que DORA contempla incluyen:
 
 - **Evaluaciones de vulnerabilidades**: escaneos regulares de todos los sistemas TIC, con remediación priorizada según criticidad.
-- **Pruebas de rendimiento**: verificación de que los sistemas soportan los volumenes de operación esperados, incluidos picos de demanda.
+- **Pruebas de rendimiento**: verificación de que los sistemas soportan los volúmenes de operación esperados, incluidos picos de demanda.
 - **Pruebas de penetración**: tests ofensivos que simulan ataques reales contra la infraestructura, las aplicaciones y las interfaces.
 - **Pruebas de código fuente abierto**: revisión de componentes open source utilizados, incluyendo análisis de vulnerabilidades conocidas (CVE).
 - **Pruebas de compatibilidad**: verificación de que los cambios en sistemas no afectan la interoperabilidad.
@@ -175,7 +175,7 @@ Las TLPT son obligatorias para entidades **identificadas por las autoridades com
 
 Caracteristicas clave de las TLPT:
 
-- Se ejecutan al menos cada **3 anios**.
+- Se ejecutan al menos cada **3 años**.
 - Deben cubrir varias o todas las funciones críticas o importantes de la entidad.
 - Se realizan en el entorno de **producción en vivo**.
 - Deben ser ejecutadas por **testers externos** independientes, certificados y con experiencia demostrable.
@@ -218,7 +218,7 @@ Estas cláusulas no son negociables. Si un proveedor cloud se niega a incluir de
 
 ### Requisito 12: Marco de supervisión de proveedores TIC críticos (Artículos 31 a 44)
 
-Esta es la innovación más significativa de DORA: un marco de supervisión directa de la UE sobre proveedores TIC designados como críticos. Las ESAs (EBA, EIOPA y ESMA), junto con la Comisión Europea, designan que proveedores son críticos basandose en:
+Esta es la innovación más significativa de DORA: un marco de supervisión directa de la UE sobre proveedores TIC designados como críticos. Las ESAs (EBA, EIOPA y ESMA), junto con la Comisión Europea, designan que proveedores son críticos basándose en:
 
 - El carácter sistemico del proveedor para el sector financiero.
 - El grado de dependencia de las entidades financieras respecto a dicho proveedor.
@@ -242,7 +242,7 @@ DORA fomenta (sin obligar) el intercambio de información sobre ciberamenazas en
 - La participación sea voluntaria.
 - Se protejan los datos personales y la información confidencial de negocio.
 - Los acuerdos se notifiquen a las autoridades competentes.
-- Se compartan indicadores de compromiso (IoC), tacticas, técnicas y procedimientos (TTP), alertas de ciberseguridad e información sobre herramientas de análisis.
+- Se compartan indicadores de compromiso (IoC), tácticas, técnicas y procedimientos (TTP), alertas de ciberseguridad e información sobre herramientas de análisis.
 
 Aunque este pilar es voluntario, las autoridades supervisoras lo valoran positivamente. Las entidades que participan en ISACs (Information Sharing and Analysis Centers) sectoriales están mejor posicionadas para cumplir con DORA, ya que demuestran un enfoque proactivo hacia la resiliencia.
 
@@ -260,7 +260,7 @@ DORA establece un calendario claro, con la mayoría de obligaciones ya aplicable
 | Primera ronda de designación de proveedores críticos | 2025 |
 | Primera ronda de TLPT (entidades significativas) | Antes de enero 2028 |
 
-Las entidades que aún no han completado su adaptación deben priorizar las areas de mayor riesgo: la gestión de terceros TIC (por la complejidad contractual), el proceso de notificación de incidentes (por los plazos estrictos) y el marco de gobernanza (por la responsabilidad directa del órgano de dirección).
+Las entidades que aún no han completado su adaptación deben priorizar las áreas de mayor riesgo: la gestión de terceros TIC (por la complejidad contractual), el proceso de notificación de incidentes (por los plazos estrictos) y el marco de gobernanza (por la responsabilidad directa del órgano de dirección).
 
 ## Guía práctica de implementación: por donde empezar
 
@@ -276,7 +276,7 @@ Para las entidades que necesitan estructurar su programa de cumplimiento, esta e
 ### Fase 2: Diseno del marco (semanas 5 a 12)
 
 - Establecer la gobernanza: roles, responsabilidades, comites, líneas de reporte al órgano de dirección.
-- Disenar el marco de gestión de riesgos TIC alineado con los Artículos 6 a 16.
+- Diseñar el marco de gestión de riesgos TIC alineado con los Artículos 6 a 16.
 - Definir el proceso de clasificación y notificación de incidentes conforme a los Artículos 17 a 23.
 - Revisar y actualizar todos los contratos con proveedores TIC críticos.
 
@@ -298,7 +298,7 @@ Para las entidades que necesitan estructurar su programa de cumplimiento, esta e
 
 ## Sanciones por incumplimiento
 
-DORA no establece un régimen sancionador propio con cuantias fijas (a diferencia de GDPR). En su lugar, delega en las autoridades competentes nacionales la imposición de sanciones administrativas y medidas correctivas. Sin embargo, las multas coercitivas para proveedores TIC críticos si están definidas a nivel europeo: hasta el 1% de la facturación diaria global media del ejercicio anterior, por cada día de incumplimiento.
+DORA no establece un régimen sancionador propio con cuantías fijas (a diferencia de GDPR). En su lugar, delega en las autoridades competentes nacionales la imposición de sanciones administrativas y medidas correctivas. Sin embargo, las multas coercitivas para proveedores TIC críticos si están definidas a nivel europeo: hasta el 1% de la facturación diaria global media del ejercicio anterior, por cada día de incumplimiento.
 
 En la práctica, las autoridades nacionales (como el Banco de España o la CNMV) pueden imponer sanciones significativas bajo sus marcos regulatorios existentes, reforzados por DORA. Además, el incumplimiento de DORA puede ser un agravante en procedimientos sancionadores relacionados con otros marcos (como MiFID II o Solvencia II).
 
@@ -309,7 +309,7 @@ En la práctica, las autoridades nacionales (como el Banco de España o la CNMV)
 
 ### Qué entidades financieras están obligadas a cumplir DORA?
 
-DORA se aplica a más de 20 tipos de entidades financieras: entidades de credito, empresas de inversión, entidades de pago, entidades de dinero electrónico, empresas de seguros y reaseguros, fondos de pensiones de empleo, proveedores de servicios de criptoactivos, depositarios centrales de valores, sociedades de gestión, agencias de calificación crediticia y, de forma relevante, proveedores TIC terceros que prestan servicios a cualquiera de estos. Las microempresas tienen un régimen simplificado, pero no están exentas.
+DORA se aplica a más de 20 tipos de entidades financieras: entidades de crédito, empresas de inversión, entidades de pago, entidades de dinero electrónico, empresas de seguros y reaseguros, fondos de pensiones de empleo, proveedores de servicios de criptoactivos, depositarios centrales de valores, sociedades de gestión, agencias de calificación crediticia y, de forma relevante, proveedores TIC terceros que prestan servicios a cualquiera de estos. Las microempresas tienen un régimen simplificado, pero no están exentas.
 
 ### En que se diferencia DORA de NIS2 para el sector financiero?
 
@@ -325,4 +325,4 @@ No. Las pruebas TLPT solo son obligatorias para entidades que las autoridades co
 
 ### Cuánto tiempo lleva implementar el cumplimiento completo de DORA?
 
-El tiempo de implementación depende de la madurez de la entidad. Una entidad con certificación ISO 27001 y procesos de gestión de riesgos TIC consolidados puede necesitar entre 6 y 12 meses para cubrir los gaps específicos de DORA (especialmente en gestión de terceros y preparación para TLPT). Para entidades con menor madurez, el proceso puede extenderse a 12 o 18 meses. La clave es empezar con un gap analysis riguroso que permita priorizar las areas de mayor riesgo y mayor distancia respecto a los requisitos.
+El tiempo de implementación depende de la madurez de la entidad. Una entidad con certificación ISO 27001 y procesos de gestión de riesgos TIC consolidados puede necesitar entre 6 y 12 meses para cubrir los gaps específicos de DORA (especialmente en gestión de terceros y preparación para TLPT). Para entidades con menor madurez, el proceso puede extenderse a 12 o 18 meses. La clave es empezar con un gap analysis riguroso que permita priorizar las áreas de mayor riesgo y mayor distancia respecto a los requisitos.

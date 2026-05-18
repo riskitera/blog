@@ -47,9 +47,9 @@ No basta con "vigilar la dark web" de forma generica. Necesitas definir qué act
 
 Es el caso de uso más común y el que ofrece resultados más inmediatos. Debes buscar:
 
-- **Credenciales corporativas filtradas:** combinaciones de email/contrasena de tus dominios que aparecen en dumps o combolists. Un solo par de credenciales validas puede ser la puerta de entrada a tu red.
+- **Credenciales corporativas filtradas:** combinaciones de email/contraseña de tus dominios que aparecen en dumps o combolists. Un solo par de credenciales validas puede ser la puerta de entrada a tu red.
 - **Credenciales de servicios SaaS:** cuentas de empleados en plataformas como Slack, Jira, GitHub, Office 365. Los actores maliciosos saben que muchas organizaciones no implementan MFA en todas sus herramientas.
-- **Cookies de sesión y tokens:** los infostealers modernos no solo roban contrasenas. Extraen cookies de sesión activas que permiten bypass completo de MFA. Si un token de sesión de tu VPN corporativa aparece en un log de infostealer, tienes un problema crítico.
+- **Cookies de sesión y tokens:** los infostealers modernos no solo roban contraseñas. Extraen cookies de sesión activas que permiten bypass completo de MFA. Si un token de sesión de tu VPN corporativa aparece en un log de infostealer, tienes un problema crítico.
 - **Credenciales de acceso remoto:** VPN, RDP, Citrix, SSH. Los IABs las venden como paquetes de "acceso inicial" en foros especializados.
 
 ### 2. Data dumps y bases de datos filtradas
@@ -58,7 +58,7 @@ Más allá de credenciales individuales, debes vigilar la aparición de:
 
 - Bases de datos de clientes con información personal (PII)
 - Documentos internos, contratos, información financiera
-- Codigo fuente de aplicaciones propietarias
+- Código fuente de aplicaciones propietarias
 - Backups de servidores o bases de datos completas
 - Datos de tarjetas de pago si operas en ecommerce
 
@@ -79,8 +79,8 @@ Tu organización puede aparecer mencionada en la dark web en contextos como:
 Los ataques de spear phishing y business email compromise (BEC) frecuentemente comienzan con reconocimiento en la dark web. Debes vigilar:
 
 - Datos personales de ejecutivos C-level (CEO, CFO, CTO)
-- Información utilizada para ataques de ingenieria social (teléfonos, direcciones, rutinas)
-- Cuentas personales de correo de empleados que reutilizan contrasenas corporativas
+- Información utilizada para ataques de ingeniería social (teléfonos, direcciones, rutinas)
+- Cuentas personales de correo de empleados que reutilizan contraseñas corporativas
 - Perfiles en foros o redes sociales que puedan vincular a empleados con la organización
 
 ### 5. Domain typosquatting y phishing infrastructure
@@ -105,7 +105,7 @@ No necesitas un presupuesto de seis cifras para iniciar un programa básico de d
 1. Registra tu dominio en HIBP verificando propiedad vía DNS TXT record o email
 2. Activa las notificaciones para recibir alertas cuando aparezcan nuevas brechas
 3. Revisa el listado inicial de brechas que afectan a cuentas de tu dominio
-4. Para cada brecha, identifica que datos se expusieron (contrasenas, hashes, datos personales)
+4. Para cada brecha, identifica que datos se expusieron (contraseñas, hashes, datos personales)
 
 **Limitaciones:** HIBP solo cubre brechas que se hacen públicas y que Troy Hunt incorpora a la base de datos. No cubre datos vendidos en privado ni filtraciones recientes que aún no se hayan difundido ampliamente.
 
@@ -113,7 +113,7 @@ No necesitas un presupuesto de seis cifras para iniciar un programa básico de d
 
 ### IntelX (Intelligence X)
 
-[IntelX](https://intelx.io/) es un motor de busqueda que indexa contenido de la dark web, data leaks, dominios, emails, URLs y otros indicadores. Su tier gratuito permite realizar busquedas limitadas con resultados parciales.
+[IntelX](https://intelx.io/) es un motor de búsqueda que indexa contenido de la dark web, data leaks, dominios, emails, URLs y otros indicadores. Su tier gratuito permite realizar búsquedas limitadas con resultados parciales.
 
 **Como usarla:**
 
@@ -122,11 +122,11 @@ No necesitas un presupuesto de seis cifras para iniciar un programa básico de d
 3. Revisa los resultados por tipo de fuente (paste sites, leaks, dark web)
 4. Documenta hallazgos y prioriza por criticidad
 
-**Tier gratuito vs de pago:** la versión gratuita muestra resultados truncados y limita el número de busquedas diarias. Para un uso operativo serio necesitaras el plan profesional, pero la versión gratuita es suficiente para evaluaciones puntuales y para decidir si la herramienta aporta valor a tu organización.
+**Tier gratuito vs de pago:** la versión gratuita muestra resultados truncados y limita el número de búsquedas diarias. Para un uso operativo serio necesitaras el plan profesional, pero la versión gratuita es suficiente para evaluaciones puntuales y para decidir si la herramienta aporta valor a tu organización.
 
 ### Dehashed
 
-[Dehashed](https://www.dehashed.com/) permite buscar en bases de datos filtradas por email, nombre de usuario, IP, teléfono o nombre. Su tier gratuito ofrece busquedas básicas con resultados limitados.
+[Dehashed](https://www.dehashed.com/) permite buscar en bases de datos filtradas por email, nombre de usuario, IP, teléfono o nombre. Su tier gratuito ofrece búsquedas básicas con resultados limitados.
 
 **Como usarla:**
 
@@ -176,7 +176,7 @@ Cuando el volumen de activos a monitorizar crece o la organización opera en un 
 
 [SpiderFoot](https://www.spiderfoot.net/) es una plataforma de OSINT con una versión open source (SpiderFoot HX) y una versión cloud. Su enfoqué es la automatización del reconocimiento:
 
-- Más de 200 modulos de recopilación de datos
+- Más de 200 módulos de recopilación de datos
 - Correlación automática entre fuentes (dark web, DNS, redes sociales, brechas)
 - Visualización grafica de relaciones entre entidades
 - Versión open source desplegable en tu propia infraestructura
@@ -206,13 +206,13 @@ Uno de los temas que más dudas genera es la legalidad de acceder a la dark web 
 
 **[LSSI-CE](https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758):** la Ley de Servicios de la Sociedad de la Información establece obligaciones sobre comunicaciones electrónicas. Si detectas phishing que suplanta tu marca, tienes legitimidad para actuar (takedown requests).
 
-**[NIS2](https://www.enisa.europa.eu/):** la Directiva NIS2, aplicable desde octubre de 2024, exige a entidades esenciales e importantes medidas de gestión de riesgos de ciberseguridad. El dark web monitoring es una práctica razonable dentro de esas medidas. [ENISA](https://www.enisa.europa.eu/) recomienda explicitamente la monitorización de amenazas como parte de la postura de seguridad.
+**[NIS2](https://www.enisa.europa.eu/):** la Directiva NIS2, aplicable desde octubre de 2024, exige a entidades esenciales e importantes medidas de gestión de riesgos de ciberseguridad. El dark web monitoring es una práctica razonable dentro de esas medidas. [ENISA](https://www.enisa.europa.eu/) recomienda explícitamente la monitorización de amenazas como parte de la postura de seguridad.
 
 **[INCIBE](https://www.incibe.es/)** (Instituto Nacional de Ciberseguridad) proporciona guías y recursos para empresas españolas sobre como gestionar incidentes y implementar medidas de ciberseguridad, incluyendo la monitorización de amenazas.
 
 ### Buenas prácticas legales
 
-1. **Documenta el propósito:** mantén un registro escrito de por que monitorizas la dark web, que activos vigilas y quien autoriza las busquedas.
+1. **Documenta el propósito:** mantén un registro escrito de por que monitorizas la dark web, que activos vigilas y quien autoriza las búsquedas.
 2. **No interactues con actores maliciosos:** observa, documenta, pero no compres datos, no participes en foros simulando ser un ciberdelincuente, no contactes vendedores.
 3. **Notifica hallazgos relevantes:** si encuentras datos de otras organizaciones, valora notificarlas. Si encuentras evidencia de delitos graves, considera comunicarlo a las FCSE (Fuerzas y Cuerpos de Seguridad del Estado) o al INCIBE-CERT.
 4. **Consulta con asesoria jurídica:** si operas en sectores regulados (banca, salud, infraestructuras críticas), involucra al departamento legal antes de iniciar un programa de monitoring.
@@ -232,9 +232,9 @@ La información de la dark web solo tiene valor si se integra en los procesos op
 **Fase 2: Triaje (Triage)**
 
 - Clasifica cada alerta por criticidad:
-  - **Critica:** credenciales activas de cuentas con privilegios, accesos VPN/RDP a la venta, datos de clientes filtrados
+  - **Crítica:** credenciales activas de cuentas con privilegios, accesos VPN/RDP a la venta, datos de clientes filtrados
   - **Alta:** credenciales de empleados en brechas recientes, menciones de vulnerabilidades específicas
-  - **Media:** credenciales antiguas (más de 6 meses), menciones genericas de la marca
+  - **Media:** credenciales antiguas (más de 6 meses), menciones genéricas de la marca
   - **Baja:** datos ya conocidos de brechas históricas, falsos positivos
 - Asigna propietario para cada alerta crítica y alta
 
@@ -254,9 +254,9 @@ La información de la dark web solo tiene valor si se integra en los procesos op
 
 {{< cta type="tofu" text="Riskitera integra dark web monitoring con tu SOC y automatiza el triage de alertas con IA soberana. Sin datos saliendo de Europa." label="Ver cómo funciona" >}}
 
-### Metricas clave para medir la efectividad
+### Métricas clave para medir la efectividad
 
-| Metrica | Objetivo recomendado |
+| Métrica | Objetivo recomendado |
 |---|---|
 | Tiempo de detección (filtración a alerta) | < 24 horas |
 | Tiempo de respuesta (alerta a acción) | < 4 horas (críticas), < 24h (altas) |
@@ -273,7 +273,7 @@ Un sistema de alertas bien configurado es la diferencia entre un programa reacti
 1. **Registra tu dominio en Have I Been Pwned.** Verifica propiedad y activa notificaciones por email.
 2. **Configura Google Alerts** para tu nombre de dominio, nombre de empresa y variaciones comunes con errores tipograficos.
 3. **Revisa crt.sh semanalmente** buscando certificados nuevos emitidos para dominios similares al tuyo.
-4. **Crea una busqueda guardada en IntelX** (tier gratuito) para tu dominio principal.
+4. **Crea una búsqueda guardada en IntelX** (tier gratuito) para tu dominio principal.
 
 ### Nivel 2: Alertas intermedias (semana 2-4)
 
@@ -285,7 +285,7 @@ Un sistema de alertas bien configurado es la diferencia entre un programa reacti
 
 1. **Despliega SpiderFoot en tu infraestructura** para escaneos automatizados y profundos.
 2. **Contrata una plataforma profesional** si el volumen de alertas o la criticidad de tus activos lo justifica.
-3. **Integra con playbooks de respuesta automática:** ante una alerta crítica (credenciales con privilegios), ejecuta automáticamente el reseteo de contrasena y la revocación de sesiones vía tu IdP (Okta, Azure AD, Google Workspace).
+3. **Integra con playbooks de respuesta automática:** ante una alerta crítica (credenciales con privilegios), ejecuta automáticamente el reseteo de contraseña y la revocación de sesiones vía tu IdP (Okta, Azure AD, Google Workspace).
 
 ### Ejemplo de script básico de alertas
 
@@ -321,13 +321,13 @@ def send_slack_alert(webhook_url, message):
 
 Este es un ejemplo simplificado. En un entorno productivo necesitaras manejo de errores, rate limiting, almacenamiento de resultados previos para evitar alertas duplicadas, y autenticación adecuada.
 
-## Fuentes OSINT más utiles para dark web monitoring
+## Fuentes OSINT más útiles para dark web monitoring
 
 Más allá de las herramientas ya mencionadas, estas fuentes OSINT complementan un programa de monitoring completo.
 
 ### Feeds de indicadores de compromiso (IoCs)
 
-- **[Abuse.ch](https://abuse.ch/):** feeds gratuitos de malware (MalwareBazaar), URLs maliciosas (URLhaus) y botnets (Feodo Tracker). Imprescindible para correlacionar actividad de la dark web con infraestructura de ataque.
+- **[Abuse.ch](https://abuse.ch/):** feeds gratuitos de malware (MalwareBazaar), URLs maliciosas (URLhaus) y botnets (Feodo Tracker). Imprescindible para correlaciónar actividad de la dark web con infraestructura de ataque.
 - **[AlienVault OTX](https://otx.alienvault.com/):** plataforma colaborativa de threat intelligence con pulsos que incluyen IoCs de la dark web.
 - **[MISP Feeds](https://www.misp-project.org/):** la plataforma MISP ofrece feeds compartidos por comunidades de seguridad que incluyen datos de la dark web.
 
@@ -363,7 +363,7 @@ No todas las empresas necesitan una plataforma profesional desde el primer día.
 - Tu organización tiene más de 500 empleados y múltiples dominios
 - Tu SOC necesita integración automatizada con el SIEM para reducir tiempos de respuesta
 - Los ejecutivos C-level son objetivos potenciales (sector financiero, defensa, tecnología)
-- Necesitas reporting ejecutivo periódico para el consejo de administración o el comite de riesgos
+- Necesitas reporting ejecutivo periódico para el consejo de administración o el comité de riesgos
 
 ### Modelo híbrido (recomendado)
 
@@ -393,7 +393,7 @@ Encontrar datos de tu organización en la dark web no es cuestion de si, sino de
 - Reseta credenciales comprometidas y revoca sesiones activas
 - Bloquea accesos desde IPs sospechosas identificadas en la filtración
 - Activa monitoreo reforzado en los sistemas afectados
-- Si hay dominios typosquatting, anade los a las listas de bloqueo
+- Si hay dominios typosquatting, añade los a las listas de bloqueo
 
 **Paso 3: Investigación (primeras 24-72 horas)**
 
@@ -411,10 +411,10 @@ Encontrar datos de tu organización en la dark web no es cuestion de si, sino de
 
 **Paso 5: Remediación y mejora (semana siguiente)**
 
-- Implementa controles para evitar que se repita (MFA universal, políticas de contrasenas más estrictas)
+- Implementa controles para evitar que se repita (MFA universal, políticas de contraseñas más estrictas)
 - Actualiza tu programa de monitoring con los nuevos indicadores descubiertos
 - Realiza un post-mortem documentado
-- Reporta al comite de dirección con lecciones aprendidas y recomendaciones
+- Reporta al comité de dirección con lecciones aprendidas y recomendaciones
 
 {{< cta type="bofu" text="Riskitera automatiza el protocolo de respuesta ante filtraciones en la dark web. Empieza tu PoC de 90 dias." label="Iniciar PoC" >}}
 

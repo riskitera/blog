@@ -64,7 +64,7 @@ Sí, y es la aproximación recomendada. La estrategia óptima es implementar un 
 
 Una organización que ya tiene ISO 27001 reduce entre un 40% y un 60% el esfuerzo de implementar el ENS.
 
-{{< cta type="tofu" text="Riskitera mapea automaticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
+{{< cta type="tofu" text="Riskitera mapea automáticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
 
 ## Qué certificación necesita mi empresa?
 
@@ -91,7 +91,7 @@ Si implementas ambos de forma coordinada, el coste total es un 30-40% menos que 
 
 **Ciclo de mejora continua.** El SGSI de ISO 27001 cubre los requisitos de mantenimiento del ENS.
 
-{{< cta type="mofu" text="Automatiza la recopilacion de evidencias y el seguimiento de controles con Riskitera." >}}
+{{< cta type="mofu" text="Automatiza la recopilación de evidencias y el seguimiento de controles con Riskitera." >}}
 
 **Artículos relacionados:**
 - [Qué es el ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)

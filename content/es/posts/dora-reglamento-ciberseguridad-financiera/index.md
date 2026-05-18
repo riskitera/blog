@@ -1,7 +1,7 @@
 ---
 title: "DORA: el reglamento que cambia la ciberseguridad financiera en Europa"
 image: "cover.png"
-description: "Guía completa sobre el Reglamento DORA: que es, a quien afecta, los cinco pilares de resiliencia operativa digital, plazos, sanciones y como prepararse para cumplir."
+description: "Guía completa sobre el Reglamento DORA: que es, a quién afecta, los cinco pilares de resiliencia operativa digital, plazos, sanciones y como prepararse para cumplir."
 slug: "dora-reglamento-ciberseguridad-financiera"
 date: 2026-03-10
 lastmod: 2026-03-10
@@ -38,7 +38,7 @@ El ámbito de aplicación de DORA es extraordinariamente amplio dentro del secto
 
 ### Entidades financieras
 
-- **Entidades de credito** (bancos).
+- **Entidades de crédito** (bancos).
 - **Empresas de servicios de inversión**.
 - **Sociedades de gestión de organismos de inversión colectiva** (gestoras de fondos).
 - **Empresas de seguros y reaseguros**.
@@ -67,7 +67,7 @@ DORA aplica el principio de proporcionalidad: las microempresas financieras (men
 
 ## Cuáles son los cinco pilares de DORA?
 
-DORA se estructura en torno a cinco areas fundamentales que, conjuntamente, definen un marco integral de resiliencia operativa digital.
+DORA se estructura en torno a cinco áreas fundamentales que, conjuntamente, definen un marco integral de resiliencia operativa digital.
 
 ### Pilar 1: Gestión de riesgos TIC
 
@@ -84,10 +84,10 @@ Las entidades financieras deben establecer un marco sólido e integral de gesti�
 
 DORA establece un proceso armonizado de clasificación y notificación de incidentes:
 
-- **Clasificación**: las entidades deben clasificar los incidentes TIC según criterios definidos: número de clientes afectados, duración, extensión geográfica, impacto económico, perdida de datos y criticidad de los servicios afectados.
+- **Clasificación**: las entidades deben clasificar los incidentes TIC según criterios definidos: número de clientes afectados, duración, extensión geográfica, impacto económico, pérdida de datos y criticidad de los servicios afectados.
 - **Notificación inicial**: dentro de las 4 horas siguientes a la clasificación del incidente como grave (y no más de 24 horas después de su detección).
-- **Informe intermedio**: dentro de las 72 horas, con actualizaciones sobre la gestión del incidente.
-- **Informe final**: en el plazo de un mes, con el análisis de causas raiz y las medidas adoptadas.
+- **Informe intermedio**: dentro de las 72 horas, con actualizaciónes sobre la gestión del incidente.
+- **Informe final**: en el plazo de un mes, con el análisis de causas raíz y las medidas adoptadas.
 
 Las notificaciones se dirigen a la autoridad competente nacional. En España, serán el Banco de España, la CNMV o la Dirección General de Seguros y Fondos de Pensiones, según el tipo de entidad.
 
@@ -113,13 +113,13 @@ Este pilar aborda la dependencia crítica del sector financiero de proveedores t
 
 DORA fomenta el intercambio voluntario de información sobre ciberamenazas entre entidades financieras:
 
-- Las entidades pueden establecer acuerdos para compartir indicadores de compromiso (IoC), tacticas, técnicas y procedimientos (TTP) y alertas de seguridad.
+- Las entidades pueden establecer acuerdos para compartir indicadores de compromiso (IoC), tácticas, técnicas y procedimientos (TTP) y alertas de seguridad.
 - El intercambio debe respetar la normativa de protección de datos y competencia.
 - Las autoridades supervisoras facilitaran y promoveran estos intercambios, reconociendo que la ciberseguridad es un desafio colectivo.
 
 ## Cómo se relaciona DORA con NIS2 y otras normativas?
 
-DORA y NIS2 se aprobaron el mismo día y fueron disenadas para complementarse:
+DORA y NIS2 se aprobaron el mismo día y fueron diseñadas para complementarse:
 
 - **DORA es lex specialis**: para las entidades financieras, DORA prevalece sobre [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) en los aspectos que regula. Es decir, si una entidad financiera está sujeta a DORA, debe cumplir DORA y no NIS2 para los requisitos de gestión de riesgos TIC, notificación de incidentes y pruebas de resiliencia. Para conocer en detalle los requisitos de [NIS2](/es/posts/2026/04/nis2-que-es-a-quien-afecta/), consulta nuestro artículo dedicado.
 - **[ENS](https://www.boe.es/eli/es/rd/2022/05/03/311)**: las entidades financieras que operen en España y tengan relación con la Administración pública pueden necesitar cumplir tanto con DORA como con el ENS.
@@ -127,7 +127,7 @@ DORA y NIS2 se aprobaron el mismo día y fueron disenadas para complementarse:
 - **Directrices EBA/EIOPA/ESMA**: las directrices sectoriales preexistentes (como las Directrices EBA sobre gestión de riesgos TIC o las Directrices sobre externalización) se integran dentro del marco de DORA.
 - **[ISO 27001](https://www.iso.org/standard/27001)**: si tu organización ya está certificada en ISO 27001, dispone de una base sólida para cumplir con el pilar 1 de DORA. Nuestra [guía de implementación de ISO 27001](/es/posts/2026/02/guia-iso-27001-startups/) puede ser un recurso útil para entender el marco de referencia.
 
-{{< cta type="tofu" text="Cumplir DORA implica demostrar resiliencia operativa digital. Riskitera mapea los requisitos DORA a controles auditables automaticamente." label="Ver cómo" >}}
+{{< cta type="tofu" text="Cumplir DORA implica demostrar resiliencia operativa digital. Riskitera mapea los requisitos DORA a controles auditables automáticamente." label="Ver cómo" >}}
 
 ## Cuándo entra en vigor DORA?
 

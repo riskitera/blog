@@ -21,19 +21,19 @@ Los 15 mejores feeds de threat intelligence gratuitos en 2026: MISP, AlienVault 
 - Los feeds de CTI gratuitos proporcionan IOCs (indicadores de compromiso) que alimentan tu SIEM, firewall y EDR sin coste de licencia.
 - Los cuatro pilares gratuitos son AlienVault OTX, el ecosistema Abuse.ch, MISP/CIRCL y el catálogo CISA KEV.
 - La calidad de un feed se mide por su tasa de falsos positivos, frecuencia de actualización, contexto proporcionado y facilidad de integración.
-- Integrar demasiados feeds sin filtrado genera fatiga de alertas. La clave es correlacionar, puntuar y descartar IOCs obsoletos.
+- Integrar demasiados feeds sin filtrado genera fatiga de alertas. La clave es correlaciónar, puntuar y descartar IOCs obsoletos.
 - Pasar de feeds gratuitos a comerciales tiene sentido cuando necesitas atribución, contexto geopolitico o cobertura de dark web que los feeds abiertos no ofrecen.
 {{< /key-takeaways >}}
 
 ## Qué es un feed de CTI y por que lo necesitas
 
-Un feed de Cyber Threat Intelligence (CTI) es una fuente de datos estructurados que proporciona indicadores de compromiso (IOCs), información sobre amenazas activas y contexto sobre campañas maliciosas. Los IOCs tipicos incluyen hashes de malware, direcciones IP maliciosas, dominios de phishing, URLs de distribución de malware y firmas de vulnerabilidades explotadas.
+Un feed de Cyber Threat Intelligence (CTI) es una fuente de datos estructurados que proporciona indicadores de compromiso (IOCs), información sobre amenazas activas y contexto sobre campañas maliciosas. Los IOCs típicos incluyen hashes de malware, direcciones IP maliciosas, dominios de phishing, URLs de distribución de malware y firmas de vulnerabilidades explotadas.
 
 La razón por la que un SOC necesita feeds de CTI es simple: sin inteligencia externa, tu capacidad de detección se limita a lo que ya conoces. Los feeds te permiten:
 
 - **Detectar proactivamente** amenazas conocidas antes de que causen daño.
 - **Enriquecer alertas** del SIEM con contexto (quien ataca, que campaña, que malware).
-- **Priorizar respuesta** basandote en la severidad y relevancia de la amenaza.
+- **Priorizar respuesta** basándote en la severidad y relevancia de la amenaza.
 - **Bloquear preventivamente** dominios, IPs y hashes maliciosos en tus controles perimetrales.
 
 La buena noticia: no necesitas gastar miles de euros en feeds comerciales para empezar. Existen feeds gratuitos de alta calidad que cubren una parte significativa de las amenazas operativas.
@@ -117,7 +117,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 ### 6. MISP (Malware Information Sharing Platform)
 
-[MISP](https://www.misp-project.org/) no es un feed, sino una plataforma open source de compartición de inteligencia que agrega feeds de múltiples fuentes (incluidos todos los de Abuse.ch) y permite crear, compartir y correlacionar eventos de amenazas.
+[MISP](https://www.misp-project.org/) no es un feed, sino una plataforma open source de compartición de inteligencia que agrega feeds de múltiples fuentes (incluidos todos los de Abuse.ch) y permite crear, compartir y correlaciónar eventos de amenazas.
 
 | Caracteristica | Detalle |
 |---|---|
@@ -126,11 +126,11 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 | **Frecuencia de actualización** | Depende de los feeds configurados y la comunidad |
 | **Registro** | Requiere instancia propia o acceso a instancia comunitaria |
 
-**Punto fuerte**: la capacidad de correlación. MISP conecta IOCs entre si (esta IP sirve este malware, que explota esta vulnerabilidad, en esta campaña). Los "feeds por defecto" de MISP incluyen la mayoría de las fuentes de esta lista, así que una instancia MISP bien configurada es un agregador de feeds en si misma.
+**Punto fuerte**: la capacidad de correlación. MISP conecta IOCs entre sí (esta IP sirve este malware, que explota esta vulnerabilidad, en esta campaña). Los "feeds por defecto" de MISP incluyen la mayoría de las fuentes de esta lista, así que una instancia MISP bien configurada es un agregador de feeds en sí misma.
 
-**Limitación**: requiere mantenimiento. Instalar y mantener una instancia MISP no es trivial (necesita servidor dedicado, actualizaciones, curation de feeds).
+**Limitación**: requiere mantenimiento. Instalar y mantener una instancia MISP no es trivial (necesita servidor dedicado, actualizaciónes, curation de feeds).
 
-**Integración SIEM**: MISP tiene modulos de exportación directa para Splunk, QRadar, Elastic, TheHive y practicamente cualquier plataforma que soporte STIX/TAXII. El modulo `misp-modules` permite enriquecimiento bidireccional.
+**Integración SIEM**: MISP tiene módulos de exportación directa para Splunk, QRadar, Elastic, TheHive y practicamente cualquier plataforma que soporte STIX/TAXII. El modulo `misp-modules` permite enriquecimiento bidireccional.
 
 ### 7. CIRCL (Computer Incident Response Center Luxembourg)
 
@@ -143,7 +143,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 | **Frecuencia de actualización** | Continua |
 | **Registro** | Necesario para acceso completo |
 
-**Punto fuerte**: el passive DNS. Permite resolver "que dominios apuntaron a esta IP en el pasado" o "a que IPs apunto este dominio historicamente". Fundamental para investigaciones de infraestructura C2.
+**Punto fuerte**: el passive DNS. Permite resolver "que dominios apuntaron a esta IP en el pasado" o "a que IPs apunto este dominio historicamente". Fundamental para investigaciónes de infraestructura C2.
 
 ### 8. PhishTank
 
@@ -162,7 +162,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 ### 9. GreyNoise Community
 
-[GreyNoise](https://www.greynoise.io/community) analiza el ruido de internet: escaneos masivos, crawlers y actividad de fondo que no es dirigida contra tu organización especificamente.
+[GreyNoise](https://www.greynoise.io/community) analiza el ruido de internet: escaneos masivos, crawlers y actividad de fondo que no es dirigida contra tu organización específicamente.
 
 | Caracteristica | Detalle |
 |---|---|
@@ -177,7 +177,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 ### 10. Shodan
 
-[Shodan](https://www.shodan.io/) es el motor de busqueda de dispositivos conectados a internet. Aunque no es un feed CTI clásico, su valor para threat intelligence es enorme.
+[Shodan](https://www.shodan.io/) es el motor de búsqueda de dispositivos conectados a internet. Aunque no es un feed CTI clásico, su valor para threat intelligence es enorme.
 
 | Caracteristica | Detalle |
 |---|---|
@@ -203,9 +203,9 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 **Punto fuerte**: la agregación de motores. Si 40 de 70 antivirus detectan un hash como malicioso, la confianza es alta. Útil para confirmar o descartar IOCs de otras fuentes.
 
-**Limitación**: la API gratuita está muy limitada (4 consultas por minuto, sin busquedas avanzadas). Para uso operativo en un SOC necesitas la licencia de VT Enterprise.
+**Limitación**: la API gratuita está muy limitada (4 consultas por minuto, sin búsquedas avanzadas). Para uso operativo en un SOC necesitas la licencia de VT Enterprise.
 
-**Integración SIEM**: enriquecimiento de alertas. Cuando el SIEM detecta un hash sospechoso, una automatización (vía SOAR o script) consulta VT y anade el resultado a la alerta. En Splunk existe el add-on oficial de VirusTotal.
+**Integración SIEM**: enriquecimiento de alertas. Cuando el SIEM detecta un hash sospechoso, una automatización (vía SOAR o script) consulta VT y añade el resultado a la alerta. En Splunk existe el add-on oficial de VirusTotal.
 
 ### 12. Emerging Threats (Proofpoint)
 
@@ -233,7 +233,7 @@ El catálogo [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-cat
 
 **Punto fuerte**: la curaduria. A diferencia de la base de datos NVD (que lista todas las CVEs), CISA KEV solo incluye las que tienen evidencia confirmada de explotación. Si una vulnerabilidad está en KEV, parcheala ya. Es el feed de priorización de parcheado más fiable que existe.
 
-**Integración SIEM**: cruza el feed KEV con los resultados de tu escaner de vulnerabilidades (Nessus, Qualys, OpenVAS). Las vulnerabilidades que están en KEV y en tu infraestructura son la máxima prioridad.
+**Integración SIEM**: cruza el feed KEV con los resultados de tu escáner de vulnerabilidades (Nessus, Qualys, OpenVAS). Las vulnerabilidades que están en KEV y en tu infraestructura son la máxima prioridad.
 
 ### 14. CCN-CERT e INCIBE-CERT (feeds españoles)
 
@@ -263,7 +263,7 @@ El [CCN-CERT](https://www.ccn-cert.cni.es/) y el [INCIBE-CERT](https://www.incib
 
 **Punto fuerte**: la visión macro. DShield te dice "estas son las IPs que están atacando más infraestructura a nivel global ahora mismo". Útil para bloqueos preventivos y para contexto: si una IP que te ataca está en el top 10 de DShield, es un escaneo masivo, no dirigido.
 
-**Mención adicional: Tor Exit Nodes**. La lista de nodos de salida de Tor se pública en `https://check.torproject.org/torbulkexitlist`. No es un feed CTI per se, pero correlacionar tu tráfico con nodos de salida de Tor puede revelar actividad anonimizada sospechosa. Atención: bloquear todo el tráfico de Tor tiene implicaciones de privacidad y no siempre es recomendable.
+**Mención adicional: Tor Exit Nodes**. La lista de nodos de salida de Tor se pública en `https://check.torproject.org/torbulkexitlist`. No es un feed CTI per se, pero correlaciónar tu tráfico con nodos de salida de Tor puede revelar actividad anonimizada sospechosa. Atención: bloquear todo el tráfico de Tor tiene implicaciones de privacidad y no siempre es recomendable.
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana." label="Ver demo SOC" >}}
 
@@ -277,11 +277,11 @@ Un feed con muchos falsos positivos genera fatiga de alertas y erosiona la confi
 
 ### Frecuencia de actualización
 
-Un IOC de hace 6 meses probablemente ya no sea relevante. Los mejores feeds actualizan cada pocos minutos (Abuse.ch, GreyNoise). Los que actualizan semanalmente son utiles para contexto estratégico pero no para detección operativa.
+Un IOC de hace 6 meses probablemente ya no sea relevante. Los mejores feeds actualizan cada pocos minutos (Abuse.ch, GreyNoise). Los que actualizan semanalmente son útiles para contexto estratégico pero no para detección operativa.
 
 ### Contexto proporcionado
 
-Un hash suelto es menos útil que un hash con familia de malware, campaña asociada, TTP (tacticas, técnicas y procedimientos) y kill chain phase. Los feeds que proporcionan contexto (OTX, ThreatFox, CISA KEV) permiten mejor triage que los que solo listan IOCs desnudos.
+Un hash suelto es menos útil que un hash con familia de malware, campaña asociada, TTP (tácticas, técnicas y procedimientos) y kill chain phase. Los feeds que proporcionan contexto (OTX, ThreatFox, CISA KEV) permiten mejor triage que los que solo listan IOCs desnudos.
 
 ### Formato y facilidad de integración
 
@@ -289,7 +289,7 @@ Feeds que soportan STIX/TAXII se integran de forma estándar con cualquier TIP o
 
 ### Cobertura y especialización
 
-Ningun feed cubre todo. AlienVault OTX es generalista. Abuse.ch esta especializado en malware y botnets. CISA KEV solo cubre vulnerabilidades explotadas. La combinación de feeds especializados proporciona mejor cobertura que un único feed generalista.
+Ningún feed cubre todo. AlienVault OTX es generalista. Abuse.ch esta especializado en malware y botnets. CISA KEV solo cubre vulnerabilidades explotadas. La combinación de feeds especializados proporciona mejor cobertura que un único feed generalista.
 
 ### Tabla comparativa
 
@@ -334,7 +334,7 @@ Splunk soporta feeds CTI a través de:
 
 1. **Splunk Enterprise Security (ES)**: incluye el framework de Threat Intelligence nativo. Importa feeds en formato CSV, STIX/TAXII o vía modular inputs. Correlaciona automáticamente IOCs con eventos.
 2. **Add-ons específicos**: AlienVault OTX, VirusTotal, Abuse.ch tienen add-ons en Splunkbase.
-3. **Lookups manuales**: para feeds en CSV, crea un `lookup` en Splunk y usa `| lookup` en las busquedas para correlacionar.
+3. **Lookups manuales**: para feeds en CSV, crea un `lookup` en Splunk y usa `| lookup` en las búsquedas para correlaciónar.
 
 ```spl
 | inputlookup threatintel_iocs.csv
@@ -419,7 +419,7 @@ El problema más común al integrar feeds CTI no es la falta de datos, sino el e
 
 Asigna una puntuación de confianza a cada IOC basada en:
 
-- **Numero de fuentes** que lo reportan (más fuentes = más confianza).
+- **Número de fuentes** que lo reportan (más fuentes = más confianza).
 - **Edad** del IOC (IOCs de más de 30 días pierden relevancia para detección operativa).
 - **Contexto** disponible (hash con familia de malware y campaña > hash suelto).
 - **Relevancia sectorial** (un IOC de campaña contra banca es más relevante si operas en banca).
@@ -446,11 +446,11 @@ Mantener una lista de IOCs que son falsos positivos recurrentes (CDNs como Cloud
 
 Un match simple (la IP de la alerta está en un feed) genera demasiado ruido. La correlación avanzada combina:
 
-- IOC match + comportamiento anomalo (la IP está en un feed Y el tráfico es a un puerto inusual).
+- IOC match + comportamiento anómalo (la IP está en un feed Y el tráfico es a un puerto inusual).
 - IOC match + contexto de activo (el hash se detecto en un servidor crítico, no en un sandbox).
 - Múltiples IOC matches en ventana temporal (la misma fuente aparece en 3 feeds distintos en 24 horas).
 
-### Estrategia 5: Revisar y podar periodicamente
+### Estrategia 5: Revisar y podar periódicamente
 
 Cada trimestre, revisa:
 
@@ -472,7 +472,7 @@ El [CCN-CERT](https://www.ccn-cert.cni.es/) opera el Sistema de Alerta Temprana 
 - **LUCIA**: plataforma de gestión de incidentes con inteligencia integrada.
 - **REYES**: plataforma de threat intelligence del CCN basada en MISP, accesible para organismos adheridos.
 
-Las guías CCN-STIC 817 y 818 recomiendan explicitamente la integración de feeds CTI en los sistemas de detección, priorizando fuentes oficiales (CCN, INCIBE) y fuentes de confianza (Abuse.ch, CISA).
+Las guías CCN-STIC 817 y 818 recomiendan explícitamente la integración de feeds CTI en los sistemas de detección, priorizando fuentes oficiales (CCN, INCIBE) y fuentes de confianza (Abuse.ch, CISA).
 
 ### Recomendaciones de ENISA
 
@@ -540,11 +540,11 @@ Este modelo híbrido proporciona la mejor relación coste-efectividad sin depend
 
 ### Es legal usar feeds CTI gratuitos en una empresa privada?
 
-Sí. Todos los feeds listados en este artículo tienen licencias que permiten su uso en organizaciones privadas, incluyendo uso comercial en la mayoría de los casos. AlienVault OTX, Abuse.ch, CISA KEV y PhishTank son explicitamente gratuitos y abiertos. MISP es software open source bajo licencia AGPL. La única restricción relevante es que algunos feeds del CCN-CERT (como SAT-INET y la plataforma REYES) están limitados a organismos públicos e infraestructuras críticas. Siempre revisa los términos de uso de cada feed, especialmente si vas a redistribuir los datos a terceros.
+Sí. Todos los feeds listados en este artículo tienen licencias que permiten su uso en organizaciones privadas, incluyendo uso comercial en la mayoría de los casos. AlienVault OTX, Abuse.ch, CISA KEV y PhishTank son explícitamente gratuitos y abiertos. MISP es software open source bajo licencia AGPL. La única restricción relevante es que algunos feeds del CCN-CERT (como SAT-INET y la plataforma REYES) están limitados a organismos públicos e infraestructuras críticas. Siempre revisa los términos de uso de cada feed, especialmente si vas a redistribuir los datos a terceros.
 
 ### Cuantos feeds CTI debería usar mi SOC?
 
-No hay un número magico, pero la recomendación práctica es entre 5 y 8 feeds activos para un SOC mediano. Menos de 3 feeds deja puntos ciegos significativos. Más de 10 feeds sin una TIP que los gestione genera ruido inmanejable. La clave no es la cantidad sino la combinación: al menos un feed generalista (OTX o MISP), uno o dos especializados en malware (Abuse.ch), uno de vulnerabilidades explotadas (CISA KEV), uno de contexto (GreyNoise) y uno local (CCN-CERT/INCIBE si operas en España). Empieza con pocos, mide el valor que aporta cada uno y anade gradualmente.
+No hay un número mágico, pero la recomendación práctica es entre 5 y 8 feeds activos para un SOC mediano. Menos de 3 feeds deja puntos ciegos significativos. Más de 10 feeds sin una TIP que los gestione genera ruido inmanejable. La clave no es la cantidad sino la combinación: al menos un feed generalista (OTX o MISP), uno o dos especializados en malware (Abuse.ch), uno de vulnerabilidades explotadas (CISA KEV), uno de contexto (GreyNoise) y uno local (CCN-CERT/INCIBE si operas en España). Empieza con pocos, mide el valor que aporta cada uno y añade gradualmente.
 
 ### Cómo se que un IOC de un feed gratuito no es un falso positivo?
 
@@ -552,7 +552,7 @@ La regla de oro es la corroboración cruzada: si un IOC aparece en dos o más fe
 
 ### Puedo integrar feeds CTI sin tener un SIEM?
 
-Sí, aunque con menos automatización. Las opciones son: (1) usar las blocklists directamente en tu firewall o proxy (Feodo Tracker pública listas para pfSense e iptables listas para usar), (2) usar un EDR que soporte importación de IOCs (la mayoría de los EDR modernos permiten subir listas de hashes para bloqueo), (3) usar MISP como TIP standalone para almacenar, correlacionar y buscar IOCs manualmente durante investigaciones. Un SIEM potencia enormemente el valor de los feeds al automatizar la correlación, pero no es un prerrequisito absoluto para empezar a usar threat intelligence.
+Sí, aunque con menos automatización. Las opciones son: (1) usar las blocklists directamente en tu firewall o proxy (Feodo Tracker pública listas para pfSense e iptables listas para usar), (2) usar un EDR que soporte importación de IOCs (la mayoría de los EDR modernos permiten subir listas de hashes para bloqueo), (3) usar MISP como TIP standalone para almacenar, correlaciónar y buscar IOCs manualmente durante investigaciónes. Un SIEM potencia enormemente el valor de los feeds al automatizar la correlación, pero no es un prerrequisito absoluto para empezar a usar threat intelligence.
 
 ### Con que frecuencia debo actualizar los feeds en mi SIEM?
 

@@ -12,15 +12,15 @@ author: "David Moya"
 translationKey: "soc-guide"
 ---
 
-Un Centro de Operaciones de Seguridad (SOC) es el nucleo de la capacidad de detección y respuesta ante amenazas de una organización. Es el equipo, los procesos y la tecnología que trabajan de forma coordinada para monitorizar, analizar y responder a incidentes de ciberseguridad las 24 horas del día, los 365 días del año. Montar un SOC desde cero es un proyecto complejo, pero con la planificación adecuada, cualquier empresa de tamaño mediano o grande puede hacerlo de forma eficaz.
+Un Centro de Operaciones de Seguridad (SOC) es el núcleo de la capacidad de detección y respuesta ante amenazas de una organización. Es el equipo, los procesos y la tecnología que trabajan de forma coordinada para monitorizar, analizar y responder a incidentes de ciberseguridad las 24 horas del día, los 365 días del año. Montar un SOC desde cero es un proyecto complejo, pero con la planificación adecuada, cualquier empresa de tamaño mediano o grande puede hacerlo de forma eficaz.
 
 <!--more-->
 
 {{< key-takeaways >}}
 - Tres modelos: SOC interno (700K-1.5M EUR/año), externalizado (96K-300K EUR/año) o híbrido (250K-500K EUR/año)
 - Equipo mínimo 24/7: 5-6 analistas N1, 2-3 N2, 1-2 N3, más SOC Manager e ingeniero de detección
-- Stack tecnologico esencial: SIEM + EDR + SOAR + plataforma de threat intelligence
-- Metricas clave: MTTD, MTTR, tasa de falsos positivos y cobertura MITRE ATT&CK
+- Stack tecnológico esencial: SIEM + EDR + SOAR + plataforma de threat intelligence
+- Métricas clave: MTTD, MTTR, tasa de falsos positivos y cobertura MITRE ATT&CK
 - Error más común: empezar por la tecnología en lugar de por los procesos y casos de uso
 {{< /key-takeaways >}}
 
@@ -89,7 +89,7 @@ Combina un equipo interno reducido con el apoyo de un proveedor externo. Es el m
 - Necesidad de definir claramente roles, responsabilidades y escalados.
 - Gestión de dos culturas operativas distintas.
 
-Según datos de INCIBE, en 2025 el 34 por ciento de las empresas medianas y grandes españolas con SOC operaban un modelo híbrido, el 41 por ciento externalizaban completamente y el 25 por ciento mantenian un SOC interno puro.
+Según datos de INCIBE, en 2025 el 34 por ciento de las empresas medianas y grandes españolas con SOC operaban un modelo híbrido, el 41 por ciento externalizaban completamente y el 25 por ciento mantenían un SOC interno puro.
 
 ## Qué roles necesita un equipo SOC?
 
@@ -131,8 +131,8 @@ Un SOC maduro necesita al menos 2-3 analistas N2.
 Los analistas N3 son los perfiles más experimentados del SOC. Se dedican a la caza proactiva de amenazas, al análisis avanzado de malware y a la mejora continua de las capacidades de detección.
 
 **Responsabilidades:**
-- Threat hunting proactivo: busqueda de amenazas que han eludido los mecanismos de detección automatizados.
-- Análisis avanzado de malware (ingenieria inversa).
+- Threat hunting proactivo: búsqueda de amenazas que han eludido los mecanismos de detección automatizados.
+- Análisis avanzado de malware (ingeniería inversa).
 - Forense digital avanzado.
 - Desarrollo de inteligencia de amenazas aplicada.
 - Diseno de arquitectura de detección y optimización de reglas.
@@ -155,7 +155,7 @@ La tecnología es uno de los tres pilares del SOC, junto con las personas y los 
 
 ### SIEM (Security Information and Event Management)
 
-El SIEM es la herramienta central del SOC. Recopila logs de toda la infraestructura, los normaliza, los correlaciona y genera alertas. Para una guía detallada sobre [qué es un SIEM y como funciona](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), consulta nuestro artículo dedicado.
+El SIEM es la herramienta central del SOC. Recopila logs de toda la infraestructura, los normaliza, los correlacióna y genera alertas. Para una guía detallada sobre [qué es un SIEM y como funciona](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), consulta nuestro artículo dedicado.
 
 Opciones principales en el mercado:
 - **[Splunk](https://www.splunk.com/) Enterprise Security**: lider de mercado, potente pero costoso.
@@ -216,8 +216,8 @@ Basado en marcos reconocidos como el [NIST SP 800-61](https://csrc.nist.gov/pubs
 
 ### Threat hunting
 
-Proceso proactivo de busqueda de amenazas:
-1. Formulación de hipotesis basada en inteligencia de amenazas.
+Proceso proactivo de búsqueda de amenazas:
+1. Formulación de hipótesis basada en inteligencia de amenazas.
 2. Recopilación de datos relevantes.
 3. Investigación y análisis.
 4. Documentación de hallazgos.
@@ -232,7 +232,7 @@ Los casos de uso son las reglas de detección que alimentan el SIEM:
 4. Prueba y validación.
 5. Operación y ajuste continuo.
 
-### Metricas y KPI
+### Métricas y KPI
 
 Mide la eficacia del SOC con métricas clave:
 - **MTTD (Mean Time to Detect)**: tiempo medio desde que ocurre un incidente hasta que se detecta.
@@ -312,7 +312,7 @@ Tecnicamente si. Elastic Security como SIEM, [Wazuh](https://wazuh.com/) como ED
 
 ### Qué certificaciones debería tener el equipo del SOC?
 
-Las certificaciones más valoradas en el mercado español para equipos SOC son: [CompTIA Security+](https://www.comptia.org/certifications/security) y CySA+ para N1, GCIH y ECIH para N2, y GCFA, GREM u OSCP para N3. Para el SOC Manager, CISM o [CISSP](https://www.isc2.org/certifications/cissp). Las certificaciones específicas de fabricantes (Splunk Certified Power User, Microsoft SC-200) también son muy utiles para los roles de ingenieria.
+Las certificaciones más valoradas en el mercado español para equipos SOC son: [CompTIA Security+](https://www.comptia.org/certifications/security) y CySA+ para N1, GCIH y ECIH para N2, y GCFA, GREM u OSCP para N3. Para el SOC Manager, CISM o [CISSP](https://www.isc2.org/certifications/cissp). Las certificaciones específicas de fabricantes (Splunk Certified Power User, Microsoft SC-200) también son muy útiles para los roles de ingeniería.
 
 ### Cómo se mide el ROI de un SOC?
 

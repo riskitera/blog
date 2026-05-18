@@ -30,19 +30,19 @@ El ENS es una normativa española que define la política de seguridad en la uti
 
 Publicado originalmente en 2010 mediante el Real Decreto 3/2010, el ENS ha evolucionado significativamente. La versión vigente, aprobada por el Real Decreto 311/2022, incorpora lecciones aprendidas de más de una decada de aplicación y adapta el marco a las amenazas actuales del panorama de ciberseguridad.
 
-El Centro Criptologico Nacional ([CCN-CERT](https://www.ccn-cert.cni.es/)), adscrito al Centro Nacional de Inteligencia (CNI), es el organismo encargado de velar por el cumplimiento del ENS y de publicar las guías técnicas [CCN-STIC](https://www.ccn-cert.cni.es/series-ccn-stic.html) que detallan como implementar cada medida de seguridad.
+El Centro Criptológico Nacional ([CCN-CERT](https://www.ccn-cert.cni.es/)), adscrito al Centro Nacional de Inteligencia (CNI), es el organismo encargado de velar por el cumplimiento del ENS y de publicar las guías técnicas [CCN-STIC](https://www.ccn-cert.cni.es/series-ccn-stic.html) que detallan como implementar cada medida de seguridad.
 
 ## Cómo ha evolucionado el ENS desde 2010?
 
-La primera versión del ENS nacio al amparo de la Ley 11/2007 de acceso electrónico de los ciudadanos a los servicios públicos. En aquel momento, la digitalización del sector público estaba en sus inicios y la normativa buscaba establecer unas bases mínimas de seguridad.
+La primera versión del ENS nació al amparo de la Ley 11/2007 de acceso electrónico de los ciudadanos a los servicios públicos. En aquel momento, la digitalización del sector público estaba en sus inicios y la normativa buscaba establecer unas bases mínimas de seguridad.
 
-En 2015 se público una actualización menor mediante el Real Decreto 951/2015, que ajusto algunos aspectos técnicos. Sin embargo, el cambio verdaderamente significativo llego en mayo de 2022 con el Real Decreto 311/2022, que derogo la normativa anterior y estableció un marco completamente renovado.
+En 2015 se público una actualización menor mediante el Real Decreto 951/2015, que ajustó algunos aspectos técnicos. Sin embargo, el cambio verdaderamente significativo llego en mayo de 2022 con el Real Decreto 311/2022, que derogo la normativa anterior y estableció un marco completamente renovado.
 
 Las principales novedades del ENS 2022 incluyen:
 
 - **Perfiles de cumplimiento específicos**: el CCN ha definido perfiles de cumplimiento que simplifican la adopción del ENS para tipos concretos de organizaciones, como ayuntamientos, universidades o proveedores tecnológicos.
 - **Vigilancia continúa y respuesta a incidentes**: se refuerza la obligación de monitorizar los sistemas de forma permanente y de notificar incidentes al CCN-CERT.
-- **Interconexion con marcos europeos**: se alinea el ENS con normativas europeas como el Reglamento eIDAS y la Directiva [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555).
+- **Interconexión con marcos europeos**: se alinea el ENS con normativas europeas como el Reglamento eIDAS y la Directiva [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555).
 - **Gestión de la cadena de suministro**: se exige a las Administraciones que sus proveedores tecnológicos también cumplan con el ENS.
 
 ## Cuáles son los niveles de seguridad del ENS: alto, medio y bajo?
@@ -74,7 +74,7 @@ Según datos del CCN, en 2025 el 47 por ciento de las certificaciones ENS corres
 El ámbito de aplicación del ENS es amplio y no se limita al sector público en sentido estricto:
 
 - **Administración General del Estado** (ministerios, organismos autónomos, agencias estatales).
-- **Administraciones autonomicas y locales** (comunidades autónomas, diputaciones, ayuntamientos).
+- **Administraciones autonómicas y locales** (comunidades autónomas, diputaciones, ayuntamientos).
 - **Universidades públicas**.
 - **Entidades de derecho público** vinculadas a las Administraciones.
 - **Proveedores del sector público**: cualquier empresa que preste servicios tecnológicos, gestione sistemas de información o trate datos en nombre de una Administración pública debe cumplir el ENS en la medida que corresponda al servicio prestado.
@@ -82,7 +82,7 @@ El ámbito de aplicación del ENS es amplio y no se limita al sector público en
 
 Este último punto es especialmente relevante: si tu empresa desarrolla software para la Administración, ofrece servicios cloud a un organismo público o gestiona la infraestructura TIC de un ayuntamiento, necesitas cumplir con el ENS.
 
-El CCN estima que más de 15.000 entidades en España están sujetas al cumplimiento del ENS, aunque el número de certificaciones activas a finales de 2025 rondaba las 3.200, lo que indica que todavia existe un margen significativo de mejora.
+El CCN estima que más de 15.000 entidades en España están sujetas al cumplimiento del ENS, aunque el número de certificaciones activas a finales de 2025 rondaba las 3.200, lo que indica que todavía existe un margen significativo de mejora.
 
 ## Cuáles son las medidas de seguridad clave del ENS?
 
@@ -94,7 +94,7 @@ Define las políticas y procedimientos de gobernanza de la seguridad:
 
 - **Política de seguridad**: documento aprobado por la dirección que establece el compromiso con la seguridad y asigna roles y responsabilidades.
 - **Normativa de seguridad**: conjunto de normas internas que regulan el uso de los sistemas de información.
-- **Procedimientos de seguridad**: instrucciones detalladas para la ejecución de tareas de seguridad.
+- **Procedimientos de seguridad**: instrucciones detalladas para la ejecución de táreas de seguridad.
 - **Proceso de autorización**: mecanismo formal para autorizar nuevos sistemas o cambios significativos.
 
 ### Marco operacional
@@ -103,7 +103,7 @@ Abarca las medidas técnicas y procedimentales del día a día:
 
 - **Planificación**: análisis de riesgos, arquitectura de seguridad y adquisición de componentes.
 - **Control de acceso**: identificación, autenticación, mecanismo de acceso y segregación de funciones.
-- **Explotación**: inventario de activos, gestión de configuración, mantenimiento, gestión de cambios, protección frente a código danino y gestión de incidentes.
+- **Explotación**: inventario de activos, gestión de configuración, mantenimiento, gestión de cambios, protección frente a código dañino y gestión de incidentes.
 - **Servicios externos**: contratación, acuerdos de nivel de servicio y seguimiento continuo de proveedores.
 - **Continuidad del servicio**: planes de continuidad, pruebas periódicas y gestión de crisis.
 - **Monitorización del sistema**: detección de intrusiones, registros de actividad y métricas de seguridad.
@@ -132,7 +132,7 @@ Identifica los servicios y sistemas de información que entran en el ámbito del
 
 ### 3. Análisis de riesgos
 
-Realiza un análisis de riesgos formal siguiendo una metodología reconocida. [MAGERIT](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html) es la metodología de referencia en el contexto español y esta plenamente alineada con el ENS. Identifica activos, amenazas, vulnerabilidades y calcula el riesgo residual.
+Realiza un análisis de riesgos formal siguiendo una metodología reconocida. [MAGERIT](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html) es la metodología de referencia en el contexto español y está plenamente alineada con el ENS. Identifica activos, amenazas, vulnerabilidades y calcula el riesgo residual.
 
 ### 4. Declaración de aplicabilidad
 
@@ -159,8 +159,8 @@ Si tu organización busca optimizar este proceso, plataformas como Riskitera aut
 El ENS no existe de forma aislada. Forma parte de un ecosistema normativo cada vez más interconectado:
 
 - **[ISO 27001](https://www.iso.org/standard/27001)**: el ENS y la ISO 27001 comparten muchos conceptos y controles. Una organización certificada en ISO 27001 tiene gran parte del camino recorrido para el ENS, aunque hay medidas específicas del ENS que la ISO no cubre. Si estas valorando implementar ISO 27001 en tu organización, te recomendamos nuestra [guía práctica de ISO 27001 para startups](/es/posts/2026/02/guia-iso-27001-startups/).
-- **[NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555)**: la Directiva europea NIS2 afecta a entidades esenciales e importantes en toda la Union Europea. En España, el ENS actuara como vehículo para implementar parte de los requisitos de NIS2 en el sector público. En próximos artículos analizaremos en detalle [qué es la NIS2 y a quien afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/).
-- **[DORA](https://eur-lex.europa.eu/eli/reg/2022/2554)**: el Reglamento de Resiliencia Operativa Digital afecta al sector financiero europeo. Las entidades financieras sujetas a DORA que también trabajan con la Administración pública podrían necesitar cumplir con ambos marcos. Publicaremos proximamente una guía completa sobre [DORA y la ciberseguridad financiera](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/).
+- **[NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555)**: la Directiva europea NIS2 afecta a entidades esenciales e importantes en toda la Unión Europea. En España, el ENS actuara como vehículo para implementar parte de los requisitos de NIS2 en el sector público. En próximos artículos analizaremos en detalle [qué es la NIS2 y a quién afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/).
+- **[DORA](https://eur-lex.europa.eu/eli/reg/2022/2554)**: el Reglamento de Resiliencia Operativa Digital afecta al sector financiero europeo. Las entidades financieras sujetas a DORA que también trabajan con la Administración pública podrían necesitar cumplir con ambos marcos. Publicaremos próximamente una guía completa sobre [DORA y la ciberseguridad financiera](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/).
 - **[RGPD](https://eur-lex.europa.eu/eli/reg/2016/679)**: el cumplimiento del ENS contribuye a satisfacer los requisitos de seguridad del Reglamento General de Protección de Datos, aunque no lo sustituye.
 
 ## Qué beneficios aporta la certificación ENS?
@@ -175,9 +175,9 @@ Más allá del cumplimiento legal, la certificación ENS aporta ventajas tangibl
 
 ## Cuáles son los errores más comunes al implementar el ENS?
 
-Basandonos en la experiencia del sector, estos son los errores más frecuentes:
+Basándonos en la experiencia del sector, estos son los errores más frecuentes:
 
-- **Tratar el ENS como un proyecto exclusivamente tecnologico**: el ENS exige medidas organizativas y de gobernanza que van más allá de la tecnología.
+- **Tratar el ENS como un proyecto exclusivamente tecnológico**: el ENS exige medidas organizativas y de gobernanza que van más allá de la tecnología.
 - **Subestimar la gestión documental**: la documentación es un pilar fundamental del ENS. Sin políticas, normas y procedimientos formalizados, la auditoría no se supera.
 - **Ignorar la cadena de suministro**: desde el RD 311/2022, los proveedores deben cumplir con el ENS. No verificar su cumplimiento es un riesgo y un incumplimiento.
 - **No asignar recursos suficientes**: la implementación requiere dedicación. Intentar hacerlo sin personal dedicado ni presupuesto adecuado es una receta para el fracaso.
@@ -205,4 +205,4 @@ La certificación ENS tiene una validez de dos años. Al cabo de ese periodo, es
 
 ### Qué papel juega el CCN-CERT en el ENS?
 
-El CCN-CERT (Centro Criptologico Nacional - Computer Emergency Response Team) es el equipo de respuesta a incidentes de seguridad de referencia para el sector público español. En el marco del ENS, el CCN-CERT pública las guías técnicas CCN-STIC, gestiona las herramientas oficiales como PILAR (análisis de riesgos) e INES (estado de cumplimiento del ENS), coordina la respuesta a incidentes y mantiene actualizado el catálogo de productos de seguridad certificados. Además, es el organismo ante el que las entidades públicas deben notificar los incidentes de seguridad.
+El CCN-CERT (Centro Criptológico Nacional - Computer Emergency Response Team) es el equipo de respuesta a incidentes de seguridad de referencia para el sector público español. En el marco del ENS, el CCN-CERT pública las guías técnicas CCN-STIC, gestiona las herramientas oficiales como PILAR (análisis de riesgos) e INES (estado de cumplimiento del ENS), coordina la respuesta a incidentes y mantiene actualizado el catálogo de productos de seguridad certificados. Además, es el organismo ante el que las entidades públicas deben notificar los incidentes de seguridad.

@@ -18,26 +18,26 @@ Guía práctica de Zero Trust para empresas: principios reales, componentes téc
 <!--more-->
 
 {{< key-takeaways >}}
-- Zero Trust no es un producto: es un modelo de seguridad basado en verificación continúa, mínimo privilegio y asunción de brecha.
+- Zero Trust no es un producto: es un modelo de seguridad basado en verificación continua, mínimo privilegio y asunción de brecha.
 - Los cinco pilares (identidad, dispositivos, red, aplicaciones, datos) deben abordarse de forma conjunta, no aislada.
-- La implementación se divide en fases: visibilidad, microsegmentación, automatización y optimización continúa.
+- La implementación se divide en fases: visibilidad, microsegmentación, automatización y optimización continua.
 - El Esquema Nacional de Seguridad (ENS) y normativas como NIS2 y DORA se alinean directamente con los principios Zero Trust.
 - Los errores más comunes son tratar Zero Trust como un proyecto puntual, ignorar la experiencia de usuario y no medir la madurez.
 {{< /key-takeaways >}}
 
 ## Qué es Zero Trust y por que importa?
 
-El concepto de Zero Trust nacio en 2010 de la mano de John Kindervag, entonces analista en Forrester Research. Su premisa era sencilla pero radical: dejar de confiar en cualquier entidad por el mero hecho de estar dentro del perimetro de la red corporativa. Diez años después, el [NIST público la Special Publication 800-207](https://csrc.nist.gov/pubs/sp/800/207/final), que formalizo la arquitectura Zero Trust como un marco de referencia para agencias federales y, por extensión, para cualquier organización que quiera proteger sus activos de forma moderna.
+El concepto de Zero Trust nació en 2010 de la mano de John Kindervag, entonces analista en Forrester Research. Su premisa era sencilla pero radical: dejar de confiar en cualquier entidad por el mero hecho de estar dentro del perímetro de la red corporativa. Diez años después, el [NIST público la Special Publication 800-207](https://csrc.nist.gov/pubs/sp/800/207/final), que formalizó la arquitectura Zero Trust como un marco de referencia para agencias federales y, por extensión, para cualquier organización que quiera proteger sus activos de forma moderna.
 
-El modelo tradicional de seguridad perimetral (el "castillo y foso") asume que todo lo que está dentro de la red es de confianza. Este supuesto se rompe constantemente: un empleado que conecta un portatil infectado a la VPN, un proveedor con credenciales comprometidas, un atacante que realiza movimiento lateral tras comprometer un único endpoint. Los informes de brechas año tras año confirman que la mayoría de los incidentes graves implican movimiento lateral dentro de redes supuestamente protegidas.
+El modelo tradicional de seguridad perimetral (el "castillo y foso") asume que todo lo que está dentro de la red es de confianza. Este supuesto se rompe constantemente: un empleado que conecta un portátil infectado a la VPN, un proveedor con credenciales comprometidas, un atacante que realiza movimiento lateral tras comprometer un único endpoint. Los informes de brechas año tras año confirman que la mayoría de los incidentes graves implican movimiento lateral dentro de redes supuestamente protegidas.
 
-Zero Trust invierte la lógica. En lugar de confiar por defecto, cada solicitud de acceso se evalúa en tiempo real considerando la identidad del usuario, el estado del dispositivo, la ubicación, la hora, el comportamiento histórico y el nivel de sensibilidad del recurso al que se accede. No importa si la petición viene de la oficina central o de una cafeteria en otro país: la verificación es la misma.
+Zero Trust invierte la lógica. En lugar de confiar por defecto, cada solicitud de acceso se evalúa en tiempo real considerando la identidad del usuario, el estado del dispositivo, la ubicación, la hora, el comportamiento histórico y el nivel de sensibilidad del recurso al que se accede. No importa si la petición viene de la oficina central o de una cafetería en otro país: la verificación es la misma.
 
 ### Por que ahora es urgente
 
-Tres factores han convertido Zero Trust de concepto teorico a necesidad operativa:
+Tres factores han convertido Zero Trust de concepto teórico a necesidad operativa:
 
-1. **Trabajo remoto e híbrido.** La pandemia elimino el perimetro físico. Las plantillas acceden a recursos corporativos desde redes domesticas, coworkings y redes móviles. El perimetro ya no es la oficina: es la identidad.
+1. **Trabajo remoto e híbrido.** La pandemia elimino el perímetro físico. Las plantillas acceden a recursos corporativos desde redes domesticas, coworkings y redes móviles. El perímetro ya no es la oficina: es la identidad.
 
 2. **Adopción masiva de la nube.** Las aplicaciones SaaS, las cargas de trabajo en IaaS y los datos distribuidos entre múltiples proveedores hacen inviable el modelo de "todo pasa por un firewall central".
 
@@ -47,7 +47,7 @@ En Europa, regulaciones como el [Esquema Nacional de Seguridad (ENS)](https://ww
 
 ## Los tres principios fundamentales de Zero Trust
 
-Antes de hablar de tecnología, conviene fijar los principios que guian cualquier implementación Zero Trust. El NIST SP 800-207 los resume, pero en la práctica se destilan en tres ideas:
+Antes de hablar de tecnología, conviene fijar los principios que guían cualquier implementación Zero Trust. El NIST SP 800-207 los resume, pero en la práctica se destilan en tres ideas:
 
 ### 1. Nunca confiar, siempre verificar
 
@@ -63,7 +63,7 @@ El mínimo privilegio no es solo un concepto de gestión de identidades. Aplica 
 
 ### 3. Asumir la brecha
 
-El diseñó de seguridad parte de que el atacante ya está dentro. En lugar de intentar crear un perimetro impenetrable (algo imposible), se disena para limitar el impacto de una brecha: segmentación, detección de anomalías, respuesta automatizada, cifrado end-to-end.
+El diseñó de seguridad parte de que el atacante ya está dentro. En lugar de intentar crear un perímetro impenetrable (algo imposible), se diseña para limitar el impacto de una brecha: segmentación, detección de anomalías, respuesta automatizada, cifrado end-to-end.
 
 Esta mentalidad cambia fundamentalmente el enfoque: de "como evito que entren" a "cuando entren, como limito el daño y detecto rápido".
 
@@ -73,7 +73,7 @@ Google popularizo el concepto con su modelo [BeyondCorp](https://cloud.google.co
 
 ### Pilar 1: Identidad
 
-La identidad es el nuevo perimetro. En un modelo Zero Trust, cada acceso comienza con la verificación de quien solicita el recurso.
+La identidad es el nuevo perímetro. En un modelo Zero Trust, cada acceso comienza con la verificación de quien solicita el recurso.
 
 **Componentes clave:**
 - **Autenticación multifactor (MFA)** resistente a phishing: FIDO2/WebAuthn, no SMS.
@@ -100,16 +100,16 @@ Un dispositivo sin parches críticos puede recibir acceso limitado (solo a recur
 La red deja de ser un mecanismo de confianza para convertirse en un canal de transporte hostil. Todo el tráfico se trata como potencialmente malicioso.
 
 **Componentes clave:**
-- **Microsegmentación**: dividir la red en segmentos granulares con políticas de acceso explicitas entre cada par de segmentos.
+- **Microsegmentación**: dividir la red en segmentos granulares con políticas de acceso explícitas entre cada par de segmentos.
 - **Cifrado en tránsito**: TLS 1.3 mínimo para todo el tráfico interno, mTLS entre servicios.
 - **Software-Defined Perimeter (SDP)**: los recursos no son visibles en la red hasta que se autentica y autoriza la conexión.
 - **DNS seguro** y monitorización de tráfico lateral.
 
-La microsegmentación es quiza el componente más impactante y más difícil de implementar. En lugar de una red plana donde cualquier servidor puede hablar con cualquier otro, cada comunicación requiere una política explicita. Si un atacante compromete un servidor web, no puede saltar al servidor de base de datos porque no existe una ruta de red permitida.
+La microsegmentación es quizá el componente más impactante y más difícil de implementar. En lugar de una red plana donde cualquier servidor puede hablar con cualquier otro, cada comunicación requiere una política explicita. Si un atacante compromete un servidor web, no puede saltar al servidor de base de datos porque no existe una ruta de red permitida.
 
 ### Pilar 4: Aplicaciones y cargas de trabajo
 
-Las aplicaciones deben autenticarse entre si y aplicar controles de acceso a nivel de API y datos.
+Las aplicaciones deben autenticarse entre sí y aplicar controles de acceso a nivel de API y datos.
 
 **Componentes clave:**
 - **API Gateway** con autenticación, autorización y rate limiting.
@@ -146,11 +146,11 @@ No puedes proteger lo que no conoces. El primer paso es obtener visibilidad comp
 - Evaluar el estado actual: que controles existen, donde hay gaps, cual es la superficie de ataque real.
 - Clasificar usuarios por nivel de privilegio y patrón de acceso.
 
-**Herramientas tipicas:** CMDB, escaner de red (Nmap, Qualys), CASB para SaaS discovery, análisis de logs de firewall y proxy.
+**Herramientas típicas:** CMDB, escáner de red (Nmap, Qualys), CASB para SaaS discovery, análisis de logs de firewall y proxy.
 
 **Entregable:** Un mapa de activos, flujos y gaps que sirve como baseline para las fases siguientes.
 
-### Fase 2: Identidad como perimetro (meses 3 a 6)
+### Fase 2: Identidad como perímetro (meses 3 a 6)
 
 Con el mapa de visibilidad, la prioridad es consolidar la identidad como mecanismo central de acceso.
 
@@ -161,14 +161,14 @@ Con el mapa de visibilidad, la prioridad es consolidar la identidad como mecanis
 - Desplegar PAM para cuentas administrativas con acceso just-in-time.
 - Establecer políticas de acceso condicional: si el dispositivo no cumple, no accede.
 
-**Metrica clave:** Porcentaje de accesos a recursos críticos protegidos por MFA + acceso condicional.
+**Métrica clave:** Porcentaje de accesos a recursos críticos protegidos por MFA + acceso condicional.
 
 ### Fase 3: Microsegmentación y cifrado (meses 6 a 12)
 
-Con la identidad consolidada, el siguiente paso es eliminar la confianza implicita en la red.
+Con la identidad consolidada, el siguiente paso es eliminar la confianza implícita en la red.
 
 **Acciones concretas:**
-- Disenar zonas de seguridad basadas en la sensibilidad de los datos y las funciones de negocio.
+- Diseñar zonas de seguridad basadas en la sensibilidad de los datos y las funciones de negocio.
 - Implementar microsegmentación: empezar por los segmentos más críticos (bases de datos, sistemas de pago).
 - Activar mTLS entre todos los servicios internos.
 - Desplegar SDP o ZTNA (Zero Trust Network Access) como alternativa a la VPN tradicional.
@@ -198,7 +198,7 @@ Zero Trust no tiene un estado final. El entorno cambia, las amenazas evolucionan
 
 ## El modelo BeyondCorp: Zero Trust en la práctica de Google
 
-Google fue pionero en implementar Zero Trust a escala empresarial con su modelo BeyondCorp, publicado en una serie de papers entre 2014 y 2016. La motivación fue la Operación Aurora (2009), un ataque sofisticado que demostro que el perimetro tradicional era insuficiente.
+Google fue pionero en implementar Zero Trust a escala empresarial con su modelo BeyondCorp, publicado en una serie de papers entre 2014 y 2016. La motivación fue la Operación Aurora (2009), un ataque sofisticado que demostró que el perímetro tradicional era insuficiente.
 
 **Principios de BeyondCorp:**
 - El acceso a los servicios no depende de la red desde la que te conectas.
@@ -230,7 +230,7 @@ En una red tradicional (red plana), cualquier dispositivo puede comunicarse con 
 
 **Basada en host (agentes en endpoints):** Herramientas como Illumio, Guardicore o Calico despliegan agentes en cada servidor/contenedor que aplican políticas de microsegmentación a nivel de sistema operativo. Más granular y dinámico que el enfoque de red.
 
-**Basada en identidad de workload (service mesh):** En entornos de contenedores, un service mesh como Istio aplica mTLS automático y políticas de acceso entre microservicios. Cada servicio tiene una identidad criptografica (certificado SPIFFE) y las comunicaciones solo se permiten según políticas declarativas.
+**Basada en identidad de workload (service mesh):** En entornos de contenedores, un service mesh como Istio aplica mTLS automático y políticas de acceso entre microservicios. Cada servicio tiene una identidad criptográfica (certificado SPIFFE) y las comunicaciones solo se permiten según políticas declarativas.
 
 ### Ejemplo práctico de microsegmentación
 
@@ -241,14 +241,14 @@ Imaginemos una aplicación web con tres componentes: frontend, API backend y bas
 **Con microsegmentación:**
 - El frontend solo puede hablar con el API backend en el puerto 443.
 - El API backend solo puede hablar con la base de datos en el puerto 5432.
-- La base de datos no puede iniciar conexiones a ningun otro componente.
+- La base de datos no puede iniciar conexiones a ningún otro componente.
 - Todo tráfico no autorizado se bloquea y se registra.
 
 Si el atacante compromete el frontend, no puede acceder directamente a la base de datos. Necesita comprometer también el backend, lo que multiplica la dificultad y da más tiempo a la detección.
 
 ## Zero Trust y el Esquema Nacional de Seguridad
 
-El [ENS (Real Decreto 311/2022)](https://www.boe.es/eli/es/rd/2022/05/03/311) no menciona Zero Trust explicitamente, pero sus requisitos se alinean directamente con sus principios:
+El [ENS (Real Decreto 311/2022)](https://www.boe.es/eli/es/rd/2022/05/03/311) no menciona Zero Trust explícitamente, pero sus requisitos se alinean directamente con sus principios:
 
 | Requisito ENS | Pilar Zero Trust |
 |---|---|
@@ -267,7 +267,7 @@ Lo mismo aplica a NIS2 (obligatoria para operadores de servicios esenciales e im
 
 ### Error 1: Comprar un producto y declarar "Zero Trust implementado"
 
-Ningun producto individual implementa Zero Trust. Los fabricantes de firewall, ZTNA, IAM y EDR venden sus soluciones como "la solución Zero Trust", pero Zero Trust es una estrategia que requiere múltiples tecnologías, procesos y cambios organizativos coordinados.
+Ningún producto individual implementa Zero Trust. Los fabricantes de firewall, ZTNA, IAM y EDR venden sus soluciones como "la solución Zero Trust", pero Zero Trust es una estrategia que requiere múltiples tecnologías, procesos y cambios organizativos coordinados.
 
 **Cómo evitarlo:** Definir una estrategia Zero Trust antes de comprar tecnología. Evaluar que pilares cubres con lo que ya tienes y donde están los gaps reales.
 
@@ -275,7 +275,7 @@ Ningun producto individual implementa Zero Trust. Los fabricantes de firewall, Z
 
 Si Zero Trust convierte cada acción en una fricción (MFA constante, bloqueos por políticas demasiado restrictivas, accesos denegados sin explicación), los usuarios buscaran formas de evitar los controles. Shadow IT, excepciones permanentes, tokens compartidos.
 
-**Cómo evitarlo:** Disenar controles que sean transparentes siempre que sea posible (certificados de dispositivo, evaluación automática de postura). Reservar la fricción (MFA interactivo, aprobaciones manuales) para acciones de alto riesgo.
+**Cómo evitarlo:** Diseñar controles que sean transparentes siempre que sea posible (certificados de dispositivo, evaluación automática de postura). Reservar la fricción (MFA interactivo, aprobaciones manuales) para acciones de alto riesgo.
 
 ### Error 3: Tratar Zero Trust como un proyecto con fecha de fin
 
@@ -306,17 +306,17 @@ La CISA (Cybersecurity and Infrastructure Security Agency) de Estados Unidos pú
 1. **Tradicional:** Perimetro estático, acceso basado en red, MFA limitado o inexistente.
 2. **Inicial:** MFA desplegado parcialmente, segmentación básica, visibilidad parcial de activos.
 3. **Avanzado:** Acceso condicional basado en identidad y dispositivo, microsegmentación en segmentos críticos, SIEM integrado.
-4. **Optimo:** Acceso continuo adaptativo, microsegmentación completa, respuesta automatizada, métricas en tiempo real.
+4. **Óptimo:** Acceso continuo adaptativo, microsegmentación completa, respuesta automatizada, métricas en tiempo real.
 
-### Metricas concretas para medir progreso
+### Métricas concretas para medir progreso
 
-| Metrica | Objetivo |
+| Métrica | Objetivo |
 |---|---|
 | % de accesos protegidos por MFA resistente a phishing | >95% en 12 meses |
 | Tiempo medio de revocación de acceso (offboarding) | <4 horas |
 | % de comunicaciones internas con mTLS | >80% en 18 meses |
 | % de activos inventariados con postura evaluable | 100% |
-| Numero de segmentos de red con políticas explicitas | Creciente cada trimestre |
+| Número de segmentos de red con políticas explícitas | Creciente cada trimestre |
 | Tiempo de detección de movimiento lateral (MTTD) | <1 hora |
 | Excepciones de política activas | Decreciente cada trimestre |
 
@@ -324,7 +324,7 @@ La CISA (Cybersecurity and Infrastructure Security Agency) de Estados Unidos pú
 
 El coste varía enormemente según el tamaño de la organización, el estado actual de la infraestructura y la ambición de la implementación.
 
-### Costes tipicos por componente
+### Costes típicos por componente
 
 **Identidad (IdP + MFA + PAM):** De 5 a 15 EUR por usuario al mes para soluciones cloud (Azure AD P2, Okta). Alternativas open-source como Keycloak reducen el coste de licencia pero requieren equipo interno para operación.
 
@@ -334,13 +334,13 @@ El coste varía enormemente según el tamaño de la organización, el estado act
 
 **SIEM/SOAR/UEBA:** De 10 a 50 EUR por usuario al mes para soluciones completas. Alternativas open-source (Wazuh, OSSEC) con coste de operación interno.
 
-### Enfoque pragmatico
+### Enfoque pragmático
 
 Para una organización mediana (200 a 500 empleados), un programa Zero Trust de 18 meses puede costar entre 150.000 y 500.000 EUR, incluyendo licencias, integración y personal. Sin embargo, el ROI se mide en reducción de riesgo: una única brecha evitada puede superar con creces esta inversión.
 
 El enfoque más inteligente es empezar con lo que ya tienes (la mayoría de organizaciones ya tienen un IdP y algun nivel de MFA) y expandir gradualmente, priorizando los activos de mayor riesgo.
 
-{{< cta type="bofu" text="Empieza tu PoC de 90 dias con Riskitera y automatiza el compliance desde el primer dia." label="Iniciar PoC" >}}
+{{< cta type="bofu" text="Empieza tu PoC de 90 días con Riskitera y automatiza el compliance desde el primer dia." label="Iniciar PoC" >}}
 
 
 **Artículos relacionados:**
@@ -350,19 +350,19 @@ El enfoque más inteligente es empezar con lo que ya tienes (la mayoría de orga
 
 ### Zero Trust significa que no confio en mis empleados?
 
-No. Zero Trust no es una cuestion de confianza personal, sino de diseñó de sistemas. Se trata de eliminar la confianza implicita en la infraestructura. Un empleado de confianza puede tener su portatil comprometido sin saberlo. Un proveedor fiable puede sufrir una brecha en su cadena de suministro. Zero Trust protege a la organización y a los propios empleados al verificar cada acceso de forma automática, independientemente de quien lo realice. La confianza en las personas sigue existiendo; lo que desaparece es la confianza ciega en la red y los dispositivos.
+No. Zero Trust no es una cuestion de confianza personal, sino de diseñó de sistemas. Se trata de eliminar la confianza implícita en la infraestructura. Un empleado de confianza puede tener su portátil comprometido sin saberlo. Un proveedor fiable puede sufrir una brecha en su cadena de suministro. Zero Trust protege a la organización y a los propios empleados al verificar cada acceso de forma automática, independientemente de quien lo realice. La confianza en las personas sigue existiendo; lo que desaparece es la confianza ciega en la red y los dispositivos.
 
 ### Necesito eliminar mi VPN para implementar Zero Trust?
 
-No necesariamente, aunque a medio plazo la VPN tradicional tiende a ser reemplazada. En la Fase 2 de una implementación típica, se despliega ZTNA (Zero Trust Network Access) como alternativa que ofrece acceso granular por aplicación en lugar de acceso completo a la red. Muchas organizaciones mantienen la VPN durante la transición para sistemas legacy que no soportan acceso basado en identidad. El objetivo final es que cada recurso sea accesible de forma segura sin necesidad de un tunel de red completo, como demostro Google con BeyondCorp.
+No necesariamente, aunque a medio plazo la VPN tradicional tiende a ser reemplazada. En la Fase 2 de una implementación típica, se despliega ZTNA (Zero Trust Network Access) como alternativa que ofrece acceso granular por aplicación en lugar de acceso completo a la red. Muchas organizaciones mantienen la VPN durante la transición para sistemas legacy que no soportan acceso basado en identidad. El objetivo final es que cada recurso sea accesible de forma segura sin necesidad de un tunel de red completo, como demostró Google con BeyondCorp.
 
 ### Cuánto tiempo lleva implementar Zero Trust de forma completa?
 
-No existe un "Zero Trust completo" como estado final. La transformación es continúa. Sin embargo, se pueden establecer hitos: visibilidad básica en 3 meses, identidad consolidada con MFA en 6 meses, microsegmentación de activos críticos en 12 meses y automatización de respuesta en 18 meses. El modelo de madurez CISA ofrece un marco para medir el progreso. Lo importante es empezar con ganancias rapidas (MFA, inventario de activos) y avanzar de forma iterativa sin intentar abarcar todo a la vez.
+No existe un "Zero Trust completo" como estado final. La transformación es continúa. Sin embargo, se pueden establecer hitos: visibilidad básica en 3 meses, identidad consolidada con MFA en 6 meses, microsegmentación de activos críticos en 12 meses y automatización de respuesta en 18 meses. El modelo de madurez CISA ofrece un marco para medir el progreso. Lo importante es empezar con ganancias rápidas (MFA, inventario de activos) y avanzar de forma iterativa sin intentar abarcar todo a la vez.
 
 ### Zero Trust es solo para grandes empresas?
 
-No. Los principios aplican a cualquier tamaño de organización. Una PYME puede implementar Zero Trust con herramientas asequibles: Keycloak como IdP, MFA con llaves FIDO2 de bajo coste, Tailscale para acceso seguro a servicios internos, Wazuh como SIEM open-source y Row-Level Security en la base de datos. Lo que cambia es la escala y complejidad, no los principios. De hecho, una empresa pequeña puede alcanzar un nivel de madurez alto más rapidamente porque tiene menos sistemas legacy y menos deuda técnica.
+No. Los principios aplican a cualquier tamaño de organización. Una PYME puede implementar Zero Trust con herramientas asequibles: Keycloak como IdP, MFA con llaves FIDO2 de bajo coste, Tailscale para acceso seguro a servicios internos, Wazuh como SIEM open-source y Row-Level Security en la base de datos. Lo que cambia es la escala y complejidad, no los principios. De hecho, una empresa pequeña puede alcanzar un nivel de madurez alto más rápidamente porque tiene menos sistemas legacy y menos deuda técnica.
 
 ### Cómo se alinea Zero Trust con ISO 27001?
 

@@ -20,7 +20,7 @@ Guía práctica para definir SLAs de ciberseguridad: MTTR, MTTD, MTTC, benchmark
 {{< key-takeaways >}}
 - MTTR, MTTD y MTTC son las tres métricas fundamentales que cualquier SOC debe medir para demostrar eficacia operativa.
 - Los benchmarks del sector sitúan el MTTD medio en 204 días y el MTTR en 73 días, cifras que cualquier organización sería debería mejorar significativamente.
-- Los SLAs contractuales con MSSPs deben incluir penalizaciones concretas y mecanismos de verificación independiente.
+- Los SLAs contractuales con MSSPs deben incluir penalizaciónes concretas y mecanismos de verificación independiente.
 - El ENS y la directiva NIS2 exigen tiempos de notificación y respuesta que condicionan directamente los SLAs internos.
 - La automatización del triage y la correlación de alertas puede reducir el MTTD en un 60-80% respecto a procesos manuales.
 {{< /key-takeaways >}}
@@ -55,7 +55,7 @@ El MTTD mide el tiempo medio que transcurre desde que una amenaza o incidente se
 - El tiempo de validación (eso es parte del triage).
 - El tiempo de respuesta (eso es MTTR).
 
-**Ejemplo práctico:** Un atacante compromete credenciales de un empleado el lunes a las 09:00. El SIEM detecta un patrón anomalo de acceso el miercoles a las 15:00. El MTTD es de 54 horas.
+**Ejemplo práctico:** Un atacante compromete credenciales de un empleado el lunes a las 09:00. El SIEM detecta un patrón anómalo de acceso el miércoles a las 15:00. El MTTD es de 54 horas.
 
 ### MTTC: Mean Time To Contain
 
@@ -76,23 +76,23 @@ El MTTR tiene dos acepciones comunes: Mean Time To Respond y Mean Time To Recove
 - **MTTR (Respond):** Tiempo desde la detección hasta que se inicia la primera acción de respuesta. Cubre la fase de triage y escalado.
 - **MTTR (Recover):** Tiempo desde la detección hasta la restauración completa del servicio afectado. Es un superset que incluye contención, erradicación y recuperación.
 
-En SLAs contractuales, es crítico especificar cual de las dos acepciones se esta usando. Un MTTR de 4 horas para "respond" es agresivo pero alcanzable. Un MTTR de 4 horas para "recover" es, en la mayoría de escenarios, irrealista.
+En SLAs contractuales, es crítico especificar cual de las dos acepciones se está usando. Un MTTR de 4 horas para "respond" es agresivo pero alcanzable. Un MTTR de 4 horas para "recover" es, en la mayoría de escenarios, irrealista.
 
 ### Otras métricas complementarias
 
 Además de las tres principales, un SOC maduro debería medir:
 
-| Metrica | Definición | Benchmark |
+| Métrica | Definición | Benchmark |
 |---------|-----------|-----------|
 | MTTA (Acknowledge) | Tiempo hasta que un analista acepta la alerta | < 15 min (críticos) |
 | MTTI (Investigate) | Tiempo de investigación completa | 1-4 horas |
 | False Positive Rate | % de alertas que resultan ser falsos positivos | < 30% (objetivo) |
-| Alert Volume | Numero de alertas por día/semana | Variable por sector |
+| Alert Volume | Número de alertas por día/semana | Variable por sector |
 | Escalation Rate | % de alertas escaladas a N2/N3 | 10-20% |
 
 ## Cuáles son los benchmarks del sector?
 
-Los benchmarks de la industria son utiles como punto de partida, pero hay que interpretarlos con cuidado. Los números que publican IBM, Mandiant o Ponemon representan medias globales que incluyen desde grandes bancos con SOC 24x7 hasta pymes sin equipo de seguridad dedicado.
+Los benchmarks de la industria son útiles como punto de partida, pero hay que interpretarlos con cuidado. Los números que publican IBM, Mandiant o Ponemon representan medias globales que incluyen desde grandes bancos con SOC 24x7 hasta pymes sin equipo de seguridad dedicado.
 
 ### Datos clave del IBM Cost of a Data Breach Report 2024
 
@@ -113,11 +113,11 @@ Los benchmarks de la industria son utiles como punto de partida, pero hay que in
 
 ### Benchmarks objetivo para un SOC profesional
 
-Los benchmarks globales son utiles para el contexto, pero un SOC que aspire a operar profesionalmente debería apuntar a objetivos mucho más agresivos:
+Los benchmarks globales son útiles para el contexto, pero un SOC que aspire a operar profesionalmente debería apuntar a objetivos mucho más agresivos:
 
 | Severidad | MTTD objetivo | MTTA objetivo | MTTC objetivo | MTTR objetivo |
 |-----------|--------------|--------------|--------------|--------------|
-| Critica (P1) | < 1 hora | < 15 min | < 4 horas | < 24 horas |
+| Crítica (P1) | < 1 hora | < 15 min | < 4 horas | < 24 horas |
 | Alta (P2) | < 4 horas | < 30 min | < 8 horas | < 48 horas |
 | Media (P3) | < 24 horas | < 2 horas | < 24 horas | < 5 días |
 | Baja (P4) | < 72 horas | < 8 horas | < 48 horas | < 10 días |
@@ -143,15 +143,15 @@ Si no tienes histórico, no inventes números. Es mejor arrancar con SLAs conser
 
 ### Paso 2: Clasificar por severidad y tipo de activo
 
-No todos los incidentes merecen el mismo SLA. Un intento de phishing generico no requiere la misma urgencia que un movimiento lateral detectado en el directorio activo. La clasificación debería considerar:
+No todos los incidentes merecen el mismo SLA. Un intento de phishing genérico no requiere la misma urgencia que un movimiento lateral detectado en el directorio activo. La clasificación debería considerar:
 
-- **Severidad del incidente:** Critica, alta, media, baja (alineada con la taxonomia de [INCIBE](https://www.incibe.es/) o tu framework de referencia).
+- **Severidad del incidente:** Crítica, alta, media, baja (alineada con la taxonomía de [INCIBE](https://www.incibe.es/) o tu framework de referencia).
 - **Tipo de activo afectado:** Sistemas críticos de negocio, datos regulados (PII, financieros), sistemas de soporte, entornos de desarrollo.
 - **Impacto potencial:** Perdida de datos, interrupción de servicio, impacto regulatorio, daño reputacional.
 
 ### Paso 3: Alinear con requisitos regulatorios
 
-En España y la Union Europea, los SLAs internos deben ser compatibles con las obligaciones legales:
+En España y la Unión Europea, los SLAs internos deben ser compatibles con las obligaciones legales:
 
 - **ENS (nivel alto):** Notificación al [CCN-CERT](https://www.ccn-cert.cni.es/) en menos de 24 horas para incidentes de nivel alto o crítico. Esto implica que el MTTD + MTTA debe ser inferior a 20 horas para dejar margen.
 - **NIS2:** Alerta temprana en 24 horas, notificación completa en 72 horas, informe final en un mes. Aplica a operadores esenciales e importantes.
@@ -177,11 +177,11 @@ Si contratas un proveedor de servicios de seguridad gestionados, ten en cuenta e
 - **Exige métricas verificables.** No aceptes un SLA que se mida con las herramientas del propio proveedor sin capacidad de auditoría independiente.
 - **Define claramente el inicio del cronometro.** El MTTR empieza cuando se detecta, no cuando el cliente notifica.
 - **Incluye cláusulas de mejora continua.** Los SLAs del primer año deben ser más laxos que los del tercero.
-- **Negocia creditos reales.** Un 5% de descuento en la factura mensual por incumplimiento no es una penalización sería si el incumplimiento genero un incidente de 500.000 euros.
+- **Negocia créditos reales.** Un 5% de descuento en la factura mensual por incumplimiento no es una penalización sería si el incumplimiento genero un incidente de 500.000 euros.
 
 ## Cómo medir y reportar SLAs de seguridad?
 
-Medir SLAs no es simplemente hacer un calculo de tiempo. Requiere infraestructura, procesos y disciplina.
+Medir SLAs no es simplemente hacer un cálculo de tiempo. Requiere infraestructura, procesos y disciplina.
 
 ### Infraestructura de medición
 
@@ -189,7 +189,7 @@ Para medir SLAs de forma fiable necesitas:
 
 1. **Ticketing con timestamps automáticos.** Cada cambio de estado de un incidente debe generar un timestamp automático. Herramientas como ServiceNow, Jira Service Management o TheHive lo soportan de forma nativa.
 
-2. **SIEM con capacidad de reporting.** Tu SIEM debe poder exportar los tiempos de detección de cada alerta, correlacionados con el ticket del incidente correspondiente. Si usas [Wazuh, Splunk o Elastic](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), todos ofrecen esta funcionalidad.
+2. **SIEM con capacidad de reporting.** Tu SIEM debe poder exportar los tiempos de detección de cada alerta, correlaciónados con el ticket del incidente correspondiente. Si usas [Wazuh, Splunk o Elastic](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), todos ofrecen esta funcionalidad.
 
 3. **Dashboard de métricas en tiempo real.** Un panel centralizado que muestre las métricas clave actualizadas en tiempo real o near-real-time. Grafana con fuentes de datos del SIEM y el ticketing es una opción excelente.
 
@@ -197,15 +197,15 @@ Para medir SLAs de forma fiable necesitas:
 
 ### Calculo correcto de las métricas
 
-El calculo de MTTD y MTTR parece trivial, pero tiene trampas:
+El cálculo de MTTD y MTTR parece trivial, pero tiene trampas:
 
-**MTTD = Suma de tiempos de detección / Numero de incidentes detectados**
+**MTTD = Suma de tiempos de detección / Número de incidentes detectados**
 
 La trampa: los incidentes que nunca se detectan no entran en el calculo. Un SOC con un MTTD excelente pero que solo detecta el 40% de los incidentes tiene un problema mucho más grave que uno con un MTTD mediocre pero que detecta el 90%.
 
-Por eso, el MTTD siempre debe acompanarse de la tasa de detección (Detection Rate), idealmente validada con ejercicios de red team o purple team periódicos.
+Por eso, el MTTD siempre debe acompañarse de la tasa de detección (Detection Rate), idealmente validada con ejercicios de red team o purple team periódicos.
 
-**MTTR = Suma de tiempos de respuesta / Numero de incidentes resueltos**
+**MTTR = Suma de tiempos de respuesta / Número de incidentes resueltos**
 
 La trampa: definir "resuelto". Un incidente de ransomware puede considerarse "contenido" (servidores aislados) en 2 horas pero "resuelto" (sistemas restaurados y operativos) en 5 días. El SLA debe especificar qué hito marca el final del MTTR.
 
@@ -216,8 +216,8 @@ La frecuencia del reporting de SLAs depende de la audiencia:
 | Audiencia | Frecuencia | Contenido |
 |-----------|-----------|-----------|
 | Equipo SOC | Diario | Dashboard operativo, alertas abiertas, SLAs en riesgo |
-| CISO / Security Management | Semanal | Metricas agregadas, tendencias, incumplimientos |
-| Dirección / Comite de seguridad | Mensual | Resumen ejecutivo, comparativa con benchmarks, ROI |
+| CISO / Security Management | Semanal | Métricas agregadas, tendencias, incumplimientos |
+| Dirección / Comité de seguridad | Mensual | Resumen ejecutivo, comparativa con benchmarks, ROI |
 | Auditores | Bajo demanda | Evidencias completas, trazabilidad, historial de mejora |
 
 ### Automatización del reporting
@@ -240,18 +240,18 @@ Las auditorías de seguridad (ya sean internas, de terceros o regulatorias bajo 
 
 3. **Evidencia de medición.** No basta con tener un documento que diga "MTTR < 4 horas". El auditor pedira evidencia de que mides esa métrica, como la mides y cuales son los resultados reales.
 
-4. **Historial de cumplimiento.** Un SLA que se incumple sistematicamente sin plan de mejora es peor que no tener SLA. El auditor espera ver un porcentaje de cumplimiento (idealmente > 95%) y acciones correctivas cuando se incumple.
+4. **Historial de cumplimiento.** Un SLA que se incumple sistemáticamente sin plan de mejora es peor que no tener SLA. El auditor espera ver un porcentaje de cumplimiento (idealmente > 95%) y acciones correctivas cuando se incumple.
 
-5. **Plan de mejora continua.** Los SLAs deben revisarse periodicamente y ajustarse en función de los resultados. Un auditor mira con buenos ojos un histórico que muestre mejora progresiva.
+5. **Plan de mejora continua.** Los SLAs deben revisarse periódicamente y ajustarse en función de los resultados. Un auditor mira con buenos ojos un histórico que muestre mejora progresiva.
 
 ### Estructura recomendada para la presentación
 
 Cuando te sientes con un auditor, presenta los SLAs con esta estructura:
 
-1. **Contexto organizativo.** Tamano del equipo, herramientas, cobertura horaria, tipos de activos protegidos.
+1. **Contexto organizativo.** Tamaño del equipo, herramientas, cobertura horaria, tipos de activos protegidos.
 2. **Definición de los SLAs.** Tabla clara con métricas, objetivos por severidad y alcance.
-3. **Metodología de medición.** Herramientas, automatizaciones, fuentes de datos.
-4. **Resultados del periodo.** Metricas reales vs. objetivos, porcentaje de cumplimiento, tendencias.
+3. **Metodología de medición.** Herramientas, automatizaciónes, fuentes de datos.
+4. **Resultados del periodo.** Métricas reales vs. objetivos, porcentaje de cumplimiento, tendencias.
 5. **Incumplimientos y acciones correctivas.** No escondas los fallos: presenta que pasó, por que y que se hizo para evitar que se repita.
 6. **Plan de mejora.** Objetivos para el próximo periodo, inversiones previstas, cambios de proceso planificados.
 
@@ -276,14 +276,14 @@ Los contratos con proveedores de seguridad gestionados suelen incluir:
 
 ### Consecuencias operativas
 
-Un SLA incumplido es un sintoma. Las causas raiz tipicas son:
+Un SLA incumplido es un sintoma. Las causas raíz típicas son:
 
 - **Subdimensionamiento del equipo.** Pocos analistas para el volumen de alertas.
 - **Herramientas inadecuadas.** SIEM sin reglas de correlación actualizadas, SOAR sin playbooks maduros.
 - **Procesos deficientes.** Falta de runbooks, escalado confuso, handoff entre turnos deficiente.
 - **Fatiga de alertas.** Demasiados falsos positivos generan que los analistas ignoren o depriorizan alertas legitimas.
 
-La acción correctiva no debería ser simplemente "relajar el SLA" sino diagnosticar y atacar la causa raiz. Si el equipo N1 tiene un MTTA de 45 minutos cuando el SLA es de 15, quizás la solución no es subir el SLA a 45 sino automatizar el triage para que el analista reciba alertas pre-priorizadas y enriquecidas.
+La acción correctiva no debería ser simplemente "relajar el SLA" sino diagnosticar y atacar la causa raíz. Si el equipo N1 tiene un MTTA de 45 minutos cuando el SLA es de 15, quizás la solución no es subir el SLA a 45 sino automatizar el triage para que el analista reciba alertas pre-priorizadas y enriquecidas.
 
 ### Consecuencias regulatorias
 
@@ -324,7 +324,7 @@ La automatización no sustituye al analista humano. Lo que hace es eliminar la f
 
 ### Cuál es la diferencia entre MTTR y MTTC?
 
-El MTTC (Mean Time To Contain) mide el tiempo desde la confirmación de un incidente hasta que se contiene su propagación (aislamiento de sistemas, bloqueo de cuentas). El MTTR (Mean Time To Respond/Recover) es más amplio y abarca desde la detección hasta la restauración completa del servicio afectado. Un incidente puede estar contenido en 30 minutos pero no completamente resuelto hasta 3 días después. En los SLAs es fundamental especificar cual de las dos métricas se esta utilizando para evitar malentendidos, especialmente en contratos con proveedores MSSP.
+El MTTC (Mean Time To Contain) mide el tiempo desde la confirmación de un incidente hasta que se contiene su propagación (aislamiento de sistemas, bloqueo de cuentas). El MTTR (Mean Time To Respond/Recover) es más amplio y abarca desde la detección hasta la restauración completa del servicio afectado. Un incidente puede estar contenido en 30 minutos pero no completamente resuelto hasta 3 días después. En los SLAs es fundamental especificar cual de las dos métricas se está utilizando para evitar malentendidos, especialmente en contratos con proveedores MSSP.
 
 ### Qué SLAs de ciberseguridad exige el ENS?
 
@@ -334,9 +334,9 @@ El ENS no define SLAs específicos como "MTTD < X horas". Lo que establece son o
 
 La forma más efectiva de reducir el MTTD sin aumentar plantilla es invertir en automatización: reglas de correlación afinadas en el SIEM para reducir falsos positivos, feeds de threat intelligence automatizados que actualicen IOCs en tiempo real, y detección basada en comportamiento (UEBA) que identifique anomalías sin depender de firmas. La reducción de falsos positivos es clave porque permite que los analistas existentes se centren en las alertas que realmente importan. Organizaciones que implementan estas medidas reportan reducciones del MTTD del 40-60%.
 
-### Qué penalizaciones debo incluir en el contrato con mi MSSP?
+### Qué penalizaciónes debo incluir en el contrato con mi MSSP?
 
-Las penalizaciones deben ser proporcionales al impacto del incumplimiento. Un esquema típico incluye: service credits del 10-25% de la factura mensual por incumplimiento sostenido de SLAs críticos, derecho a auditoría independiente de las métricas del proveedor, obligación de presentar plan de mejora en 30 días tras un incumplimiento, y cláusula de terminación anticipada sin penalización tras 3 meses consecutivos de incumplimiento. Evita penalizaciones puramente simbolicas (como un 2% de descuento) que no incentivan realmente al proveedor a mejorar.
+Las penalizaciónes deben ser proporcionales al impacto del incumplimiento. Un esquema típico incluye: service credits del 10-25% de la factura mensual por incumplimiento sostenido de SLAs críticos, derecho a auditoría independiente de las métricas del proveedor, obligación de presentar plan de mejora en 30 días tras un incumplimiento, y cláusula de terminación anticipada sin penalización tras 3 meses consecutivos de incumplimiento. Evita penalizaciónes puramente simbolicas (como un 2% de descuento) que no incentivan realmente al proveedor a mejorar.
 
 ### Con que frecuencia debo revisar los SLAs de mi SOC?
 

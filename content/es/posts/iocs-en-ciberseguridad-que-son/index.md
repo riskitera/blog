@@ -20,7 +20,7 @@ Los Indicadores de Compromiso (IOCs, por sus siglas en ingles) constituyen una d
 - Los IOCs (Indicadores de Compromiso) son evidencias técnicas de actividad maliciosa: IPs, hashes, dominios, URLs
 - Fuentes gratuitas principales: AlienVault OTX, MISP, Abuse.ch, CIRCL y los feeds de INCIBE-CERT
 - Estándares de intercambio: STIX (formato) y TAXII (transporte) facilitan la automatización
-- Los IOCs se degradan rapidamente: un hash de malware pierde valor en días si el atacante lo modifica
+- Los IOCs se degradan rápidamente: un hash de malware pierde valor en días si el atacante lo modifica
 - La piramide del dolor de David Bianco explica por que los TTPs son más valiosos que los IOCs atomicos
 {{< /key-takeaways >}}
 
@@ -30,7 +30,7 @@ Un Indicador de Compromiso es cualquier dato observable que, con un nivel razona
 
 A diferencia de las firmas tradicionales de antivirus, que buscan coincidencias exactas con malware conocido, los IOCs ofrecen un enfoque más amplio y contextual. Un mismo incidente puede generar decenas de indicadores diferentes, y la correlación entre ellos permite a los analistas de seguridad reconstruir la cadena de ataque completa.
 
-El [CCN-CERT](https://www.ccn-cert.cni.es/), el equipo de respuesta a incidentes del Centro Criptologico Nacional de España, pública regularmente IOCs asociados a campañas que afectan a organismos públicos y empresas estratégicas. [INCIBE](https://www.incibe.es/), por su parte, ofrece alertas y avisos que frecuentemente incluyen indicadores utiles para la detección temprana.
+El [CCN-CERT](https://www.ccn-cert.cni.es/), el equipo de respuesta a incidentes del Centro Criptológico Nacional de España, pública regularmente IOCs asociados a campañas que afectan a organismos públicos y empresas estratégicas. [INCIBE](https://www.incibe.es/), por su parte, ofrece alertas y avisos que frecuentemente incluyen indicadores útiles para la detección temprana.
 
 Es importante distinguir entre IOCs e IOAs (Indicators of Attack). Mientras que los IOCs son evidencias de que un compromiso ya ha ocurrido, los IOAs describen comportamientos activos que sugieren que un ataque está en curso. Ambos son complementarios y una estrategia madura de Cyber Threat Intelligence (CTI) utiliza los dos.
 
@@ -52,7 +52,7 @@ Los dominios utilizados para phishing, distribución de malware o comunicaciones
 
 ### URLs
 
-Las URLs completas proporcionan mayor granularidad que los dominios solos, ya que identifican la ruta exacta utilizada para alojar un kit de phishing o un payload malicioso. Son especialmente utiles para detectar compromisos en sitios web legitimos que alojan contenido malicioso en rutas específicas.
+Las URLs completas proporcionan mayor granularidad que los dominios solos, ya que identifican la ruta exacta utilizada para alojar un kit de phishing o un payload malicioso. Son especialmente útiles para detectar compromisos en sitios web legitimos que alojan contenido malicioso en rutas específicas.
 
 ### Direcciones de correo electrónico
 
@@ -72,7 +72,7 @@ Un IOC nace cuando un analista, un sistema automatizado o un equipo de respuesta
 
 ### Enriquecimiento y contextualización
 
-El IOC crudo tiene valor limitado sin contexto. La fase de enriquecimiento anade información como la campaña o grupo asociado, la familia de malware, la gravedad estimada, las tacticas y técnicas [MITRE ATT&CK](https://attack.mitre.org/) relacionadas y la fecha de observación. Un IOC enriquecido permite tomar decisiones informadas sobre que acciones ejecutar.
+El IOC crudo tiene valor limitado sin contexto. La fase de enriquecimiento añade información como la campaña o grupo asociado, la familia de malware, la gravedad estimada, las tácticas y técnicas [MITRE ATT&CK](https://attack.mitre.org/) relacionadas y la fecha de observación. Un IOC enriquecido permite tomar decisiones informadas sobre que acciones ejecutar.
 
 ### Distribución y consumo
 
@@ -90,9 +90,9 @@ Disponer de fuentes fiables y actualizadas es fundamental. Afortunadamente, exis
 
 **[AlienVault OTX](https://otx.alienvault.com/) (Open Threat Exchange)** es una de las plataformas comunitarias más grandes del mundo, con más de 200.000 usuarios que comparten "pulsos" de inteligencia. Cada pulso contiene IOCs contextualizados con descripciones, referencias y etiquetas MITRE ATT&CK.
 
-**[Abuse.ch](https://abuse.ch/)** ofrece varios proyectos especializados: URLhaus (URLs maliciosas), MalwareBazaar (muestras de malware), ThreatFox (IOCs genericos) y Feodo Tracker (infraestructura de botnets bancarias). Sus datos se actualizan en tiempo real y cuentan con APIs accesibles.
+**[Abuse.ch](https://abuse.ch/)** ofrece varios proyectos especializados: URLhaus (URLs maliciosas), MalwareBazaar (muestras de malware), ThreatFox (IOCs genéricos) y Feodo Tracker (infraestructura de botnets bancarias). Sus datos se actualizan en tiempo real y cuentan con APIs accesibles.
 
-**[MISP](https://www.misp-project.org/) (Malware Information Sharing Platform)** no es solo una fuente sino una plataforma completa para compartir, almacenar y correlacionar IOCs. Muchos CERTs nacionales, incluido el CCN-CERT, operan instancias MISP para compartir inteligencia con sus comunidades.
+**[MISP](https://www.misp-project.org/) (Malware Information Sharing Platform)** no es solo una fuente sino una plataforma completa para compartir, almacenar y correlaciónar IOCs. Muchos CERTs nacionales, incluido el CCN-CERT, operan instancias MISP para compartir inteligencia con sus comunidades.
 
 **CISA KEV (Known Exploited Vulnerabilities)** cataloga vulnerabilidades activamente explotadas con fechas límite de parcheado. Aunque no es estrictamente un feed de IOCs, complementa la inteligencia sobre amenazas con información crítica sobre vulnerabilidades bajo explotación activa.
 
@@ -112,7 +112,7 @@ La interoperabilidad entre organizaciones y herramientas requiere estándares co
 
 ### TAXII (Trusted Automated eXchange of Intelligence Information)
 
-TAXII es el protocolo de transporte complementario a STIX. Define como se transmiten los objetos STIX entre sistemas, utilizando APIs RESTful. TAXII soporta dos modelos principales: colecciones (el consumidor solicita datos bajo demanda) y canales (el productor envía datos al consumidor en tiempo real).
+TAXII es el protocolo de transporte complementario a STIX. Define como se transmiten los objetos STIX entre sístemas, utilizando APIs RESTful. TAXII soporta dos modelos principales: colecciones (el consumidor solicita datos bajo demanda) y canales (el productor envía datos al consumidor en tiempo real).
 
 La combinación STIX/TAXII se ha convertido en el estándar de facto, soportado por la mayoría de plataformas de CTI y herramientas de seguridad. OASIS, el consorcio que mantiene estos estándares, cuenta con la participación de organizaciones como MITRE, IBM, Palo Alto Networks y numerosas agencias gubernamentales.
 
@@ -122,11 +122,11 @@ Integrar IOCs en las operaciones del centro de operaciones de seguridad requiere
 
 ### Integración con el SIEM
 
-El [SIEM](/es/posts/que-es-un-siem-para-que-sirve/) es el punto natural de integración para la mayoría de IOCs. Las plataformas modernas permiten ingestar feeds STIX/TAXII y correlacionar automáticamente los IOCs con los logs recibidos. Cuando un evento coincide con un IOC, se genera una alerta priorizada según el contexto del indicador. Es fundamental configurar correctamente la priorización para evitar la fatiga de alertas.
+El [SIEM](/es/posts/que-es-un-siem-para-que-sirve/) es el punto natural de integración para la mayoría de IOCs. Las plataformas modernas permiten ingestar feeds STIX/TAXII y correlaciónar automáticamente los IOCs con los logs recibidos. Cuando un evento coincide con un IOC, se genera una alerta priorizada según el contexto del indicador. Es fundamental configurar correctamente la priorización para evitar la fatiga de alertas.
 
 ### Integración con EDR y firewalls
 
-Los hashes de archivos maliciosos se integran directamente en las soluciones EDR para bloquear o alertar sobre su ejecución. Las IPs y dominios se incorporan en listas de bloqueo de firewalls y proxies web. La automatización de estas integraciones mediante SOAR reduce el tiempo de respuesta de horas a segundos.
+Los hashes de archivos maliciosos se integran directamente en las soluciones EDR para bloquear o alertar sobre su ejecución. Las IPs y dominios se incorporan en listas de bloqueo de firewalls y proxies web. La automatización de estas integraciónes mediante SOAR reduce el tiempo de respuesta de horas a segundos.
 
 ### Plataformas de inteligencia de amenazas (TIP)
 
@@ -136,21 +136,21 @@ Una TIP (Threat Intelligence Platform) centraliza la gestión de IOCs: ingesta d
 
 No todos los IOCs merecen la misma atención. Es esencial establecer un proceso de triaje que considere la fiabilidad de la fuente, la antiguedad del indicador, la relevancia para el sector y la geografia de la organización, y el contexto proporcionado. Un IOC de alta confianza procedente de un CERT nacional requiere acción inmediata; un hash aislado sin contexto de un feed comunitario puede requerir validación adicional.
 
-{{< cta type="tofu" text="Riskitera integra feeds de IOCs directamente en tu flujo de detección, correlacionando indicadores con alertas del SIEM." label="Ver integración" >}}
+{{< cta type="tofu" text="Riskitera integra feeds de IOCs directamente en tu flujo de detección, correlaciónando indicadores con alertas del SIEM." label="Ver integración" >}}
 
 ## Qué herramientas se usan para gestionar IOCs?
 
 El ecosistema de herramientas para gestionar IOCs es amplio. Estas son las más relevantes:
 
-**MISP** es la plataforma de referencia open source para compartir y gestionar IOCs. Permite crear eventos, asignar atributos (IOCs) con taxonomias y galaxias, y compartirlos con comunidades a través de sincronización entre instancias.
+**MISP** es la plataforma de referencia open source para compartir y gestionar IOCs. Permite crear eventos, asignar atributos (IOCs) con taxonomías y galaxias, y compartirlos con comunidades a través de sincronización entre instancias.
 
 **OpenCTI** es una plataforma de CTI moderna que organiza la inteligencia siguiendo el modelo de datos STIX 2.1. Ofrece visualizaciones de relaciones entre entidades, integración con MISP y conectores para decenas de fuentes.
 
-**Yeti** (Your Everyday Threat Intelligence) sirve como repositorio de observables e indicadores con capacidades de enriquecimiento automático y API para integraciones.
+**Yeti** (Your Everyday Threat Intelligence) sirve como repositorio de observables e indicadores con capacidades de enriquecimiento automático y API para integraciónes.
 
 **CyberChef**, desarrollado por GCHQ, es una herramienta web para transformar, analizar y decodificar datos, útil para extraer IOCs de documentos, correos o muestras de malware.
 
-Para la creación de reglas de detección basadas en IOCs, las **[reglas Sigma](https://github.com/SigmaHQ/sigma)** permiten definir detecciones genericas que se traducen a consultas específicas para cada SIEM, mientras que las **reglas YARA** identifican malware basandose en patrones binarios y textuales.
+Para la creación de reglas de detección basadas en IOCs, las **[reglas Sigma](https://github.com/SigmaHQ/sigma)** permiten definir detecciónes genéricas que se traducen a consultas específicas para cada SIEM, mientras que las **reglas YARA** identifican malware basándose en patrones binarios y textuales.
 
 ## Cuáles son los errores comunes al trabajar con IOCs?
 
@@ -164,7 +164,7 @@ Conocer los errores frecuentes permite evitarlos y mejorar la eficacia del progr
 
 **Depender de un único tipo de IOC.** Limitarse a hashes o IPs deja angulos ciegos. Una estrategia madura combina IOCs de red, de host y comportamentales, idealmente mapeados contra el framework [MITRE ATT&CK](/es/posts/mitre-attack-que-es-como-usarlo/).
 
-**No medir la eficacia.** Sin métricas que indiquen cuantos IOCs generaron detecciones reales, cuantos produjeron falsos positivos y cual fue el tiempo medio de integración, es imposible mejorar el programa.
+**No medir la eficacia.** Sin métricas que indiquen cuantos IOCs generaron detecciónes reales, cuantos produjeron falsos positivos y cual fue el tiempo medio de integración, es imposible mejorar el programa.
 
 ## Mejores prácticas para maximizar el valor de los IOCs
 
@@ -192,7 +192,7 @@ Los IOCs (Indicators of Compromise) son artefactos observables que evidencian qu
 
 No existe un número óptimo universal. Lo relevante es la calidad, no la cantidad. Una pyme puede gestionar eficazmente unos pocos miles de IOCs procedentes de fuentes seleccionadas, mientras que un SOC de gran empresa puede manejar millones. Lo importante es que cada IOC tenga contexto suficiente y que existan procesos de caducidad y depuración automáticos.
 
-### Puedo obtener IOCs utiles sin presupuesto
+### Puedo obtener IOCs útiles sin presupuesto
 
 Sí. Fuentes como AlienVault OTX, Abuse.ch, los feeds de MISP comunitarios y las publicaciones de CISA, CCN-CERT e INCIBE proporcionan IOCs de calidad sin coste. Herramientas open source como MISP y OpenCTI permiten gestionarlos profesionalmente. El principal recurso necesario es tiempo de analistas para triaje y validación.
 
@@ -202,4 +202,4 @@ Los feeds deben actualizarse con la mayor frecuencia que permita la infraestruct
 
 ### Cómo mido la eficacia de mi programa de IOCs
 
-Las métricas clave incluyen: tasa de detección real (porcentaje de IOCs que generaron alertas verdaderas), tasa de falsos positivos, tiempo medio desde la publicación de un IOC hasta su integración en los sistemas de detección, cobertura de fuentes (número y diversidad de feeds consumidos), y porcentaje de IOCs enriquecidos con contexto. Revisar estas métricas mensualmente permite identificar areas de mejora y justificar inversiones.
+Las métricas clave incluyen: tasa de detección real (porcentaje de IOCs que generaron alertas verdaderas), tasa de falsos positivos, tiempo medio desde la publicación de un IOC hasta su integración en los sistemas de detección, cobertura de fuentes (número y diversidad de feeds consumidos), y porcentaje de IOCs enriquecidos con contexto. Revisar estas métricas mensualmente permite identificar áreas de mejora y justificar inversiones.

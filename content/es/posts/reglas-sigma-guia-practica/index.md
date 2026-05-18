@@ -1,6 +1,6 @@
 ---
-title: "Reglas Sigma: guía práctica para escribir detecciones portables"
-description: "Guía completa de reglas Sigma para SOC y SIEM: sintaxis, ejemplos prácticos, conversión a SIEM, integración con MITRE ATT&CK y mejores prácticas para escribir detecciones portables."
+title: "Reglas Sigma: guía práctica para escribir detecciónes portables"
+description: "Guía completa de reglas Sigma para SOC y SIEM: sintaxis, ejemplos prácticos, conversión a SIEM, integración con MITRE ATT&CK y mejores prácticas para escribir detecciónes portables."
 slug: "reglas-sigma-guia-practica"
 date: 2026-06-04
 publishDate: 2026-06-04
@@ -13,13 +13,13 @@ keyword: "reglas sigma"
 funnel: "mofu"
 ---
 
-Guía completa de reglas Sigma para SOC y SIEM: sintaxis, ejemplos prácticos, conversión a SIEM, integración con MITRE ATT&CK y mejores prácticas para escribir detecciones portables.
+Guía completa de reglas Sigma para SOC y SIEM: sintaxis, ejemplos prácticos, conversión a SIEM, integración con MITRE ATT&CK y mejores prácticas para escribir detecciónes portables.
 
 <!--more-->
 
 {{< key-takeaways >}}
 - Sigma es el formato estándar abierto para escribir reglas de detección portables entre cualquier SIEM (Splunk, Elastic, Sentinel, Wazuh, etc.).
-- La sintaxis YAML de Sigma permite definir detecciones con condiciones booleanas, modificadores de campo y correlación temporal.
+- La sintaxis YAML de Sigma permite definir detecciónes con condiciones booleanas, modificadores de campo y correlación temporal.
 - El repositorio SigmaHQ contiene más de 3.000 reglas mantenidas por la comunidad, listas para convertir y desplegar.
 - sigma-cli permite convertir reglas a SPL, KQL, Lucene y otros lenguajes de consulta de SIEM con un solo comando.
 - Escribir reglas Sigma propias es la forma más eficiente de construir un programa de detection engineering portable y mantenible.
@@ -27,7 +27,7 @@ Guía completa de reglas Sigma para SOC y SIEM: sintaxis, ejemplos prácticos, c
 
 ## Qué son las reglas Sigma
 
-[Sigma](https://github.com/SigmaHQ/sigma) es un formato generico y abierto para escribir reglas de detección de seguridad. Su propósito es resolver un problema fundamental: cada SIEM tiene su propio lenguaje de consulta (SPL en Splunk, KQL en Elastic/Sentinel, SQL en Graylog) y escribir detecciones directamente en el lenguaje del SIEM te ata a ese producto.
+[Sigma](https://github.com/SigmaHQ/sigma) es un formato genérico y abierto para escribir reglas de detección de seguridad. Su propósito es resolver un problema fundamental: cada SIEM tiene su propio lenguaje de consulta (SPL en Splunk, KQL en Elastic/Sentinel, SQL en Graylog) y escribir detecciónes directamente en el lenguaje del SIEM te ata a ese producto.
 
 Sigma funciona como un intermediario. Escribes la regla una vez en formato YAML y luego la conviertes al lenguaje de consulta de tu SIEM. Si cambias de SIEM, no reescribes las reglas: solo cambias el backend de conversión.
 
@@ -46,7 +46,7 @@ El proyecto fue creado en 2017 por Florian Roth y Thomas Patzke, inspirado en lo
 1. **Portabilidad**: una regla Sigma funciona en cualquier SIEM con un backend compatible.
 2. **Compartibilidad**: la comunidad comparte reglas en un formato común. [SigmaHQ](https://github.com/SigmaHQ/sigma) tiene más de 3.000 reglas.
 3. **Versionado**: al ser YAML plano, las reglas se gestionan en Git con diff, review y CI/CD.
-4. **Estandarización**: todos los analistas del equipo escriben detecciones en el mismo formato.
+4. **Estandarización**: todos los analistas del equipo escriben detecciónes en el mismo formato.
 5. **Independencia de vendor**: no estas atado al SIEM que uses hoy.
 
 ## Anatomia de una regla Sigma
@@ -94,10 +94,10 @@ level: high
 | `status` | Si | `experimental`, `test`, `stable`, `deprecated`, `unsupported` |
 | `description` | Si | Explicación detallada del comportamiento detectado |
 | `references` | No | URLs a documentación, blog posts, técnicas ATT&CK |
-| `author` | Si | Quien escribio la regla |
+| `author` | Si | Quien escribió la regla |
 | `date` | Si | Fecha de creación (formato YYYY/MM/DD) |
 | `modified` | No | Fecha de última modificación |
-| `tags` | Si | Etiquetas ATT&CK y otras clasificaciones |
+| `tags` | Si | Etiquetas ATT&CK y otras clasificaciónes |
 | `level` | Si | `informational`, `low`, `medium`, `high`, `critical` |
 | `falsepositives` | Si | Escenarios conocidos de falsos positivos |
 
@@ -138,7 +138,7 @@ logsource:
 
 Las categorías más comunes:
 
-| Categoría | Descripción | Fuentes tipicas |
+| Categoría | Descripción | Fuentes típicas |
 |-----------|-------------|-----------------|
 | `process_creation` | Creación de procesos | Sysmon 1, Windows 4688, EDR |
 | `authentication` | Eventos de autenticación | Windows 4624/4625, Linux auth.log |
@@ -153,7 +153,7 @@ Las categorías más comunes:
 
 ### El bloque detection
 
-El bloque `detection` es el corazon de la regla. Define las condiciones que deben cumplirse para que la regla dispare.
+El bloque `detection` es el corazón de la regla. Define las condiciones que deben cumplirse para que la regla dispare.
 
 #### Selecciones simples
 
@@ -215,7 +215,7 @@ Los modificadores de campo son una de las funcionalidades más potentes de Sigma
 
 #### Condiciones de agregación
 
-Sigma soporta funciones de agregación para detecciones basadas en umbrales:
+Sigma soporta funciones de agregación para detecciónes basadas en umbrales:
 
 ```yaml
 detection:
@@ -258,7 +258,7 @@ detection:
   timeframe: 5m
   condition: selection | count() by src_ip > 15
 falsepositives:
-  - Usuarios legitimos que olvidan la contrasena
+  - Usuarios legitimos que olvidan la contraseña
   - Conexiones automatizadas con credenciales caducadas
   - Herramientas de escaneo de compliance
 level: medium
@@ -320,7 +320,7 @@ title: Scheduled Task Creation for Persistence
 id: 3b5c7d9e-1a2f-4e6g-8h0i-jklm12345678
 status: stable
 description: >
-  Detecta la creación de tareas programadas que apuntan
+  Detecta la creación de táreas programadas que apuntan
   a ejecutables en ubicaciones sospechosas, técnica
   frecuente de persistencia usada por malware y atacantes.
 references:
@@ -353,8 +353,8 @@ detection:
       - 'OneDrive'
   condition: selection_event and selection_suspicious_path and not filter_known_tools
 falsepositives:
-  - Software legítimo que instala tareas programadas en rutas de usuario
-  - Herramientas de IT que usan tareas programadas para mantenimiento
+  - Software legítimo que instala táreas programadas en rutas de usuario
+  - Herramientas de IT que usan táreas programadas para mantenimiento
 level: high
 ```
 
@@ -506,7 +506,7 @@ SecurityEvent
 
 ### Pipelines de procesamiento
 
-Los pipelines de procesamiento transforman los nombres de campo genericos de Sigma a los nombres específicos de tu SIEM. Sin un pipeline adecuado, la conversión puede generar nombres de campo que tu SIEM no reconoce.
+Los pipelines de procesamiento transforman los nombres de campo genéricos de Sigma a los nombres específicos de tu SIEM. Sin un pipeline adecuado, la conversión puede generar nombres de campo que tu SIEM no reconoce.
 
 ```bash
 # Ver pipelines disponibles
@@ -552,7 +552,7 @@ sigma convert -t elasticsearch -p custom_pipeline.yml rules/
 
 ## Integración con MITRE ATT&CK
 
-Una de las ventajas de Sigma es su integración nativa con [MITRE ATT&CK](https://attack.mitre.org/). Cada regla puede (y debería) estar etiquetada con las tacticas y técnicas ATT&CK correspondientes.
+Una de las ventajas de Sigma es su integración nativa con [MITRE ATT&CK](https://attack.mitre.org/). Cada regla puede (y debería) estar etiquetada con las tácticas y técnicas ATT&CK correspondientes.
 
 ### Convenciones de etiquetado
 
@@ -560,7 +560,7 @@ Las etiquetas ATT&CK en Sigma siguen un formato estándar:
 
 ```yaml
 tags:
-  - attack.tactica          # Nombre de la tactica en minúsculas
+  - attack.táctica          # Nombre de la táctica en minúsculas
   - attack.tXXXX            # ID de la técnica
   - attack.tXXXX.YYY        # ID de la sub-técnica
 ```
@@ -717,7 +717,7 @@ Las reglas en SigmaHQ tienen un status que indica su madurez:
 No todas las reglas de SigmaHQ funcionan directamente en tu entorno. El proceso de curación incluye:
 
 1. **Filtrar por fuentes de datos disponibles**: si no tienes Sysmon desplegado, las reglas que dependen de Sysmon no te sirven (a menos que tengas un EDR equivalente).
-2. **Ajustar exclusiones**: las exclusiones de SigmaHQ son genericas. Necesitas anadir las específicas de tu entorno.
+2. **Ajustar exclusiones**: las exclusiones de SigmaHQ son genéricas. Necesitas añadir las específicas de tu entorno.
 3. **Calibrar niveles de severidad**: lo que es `high` en un entorno puede ser `medium` en otro según el contexto de negocio.
 4. **Validar contra logs históricos**: ejecutar la regla contra 7-30 días de logs para entender la tasa de falsos positivos esperada.
 
@@ -727,7 +727,7 @@ Las reglas de SigmaHQ cubren muchos escenarios comunes, pero cada organización 
 
 ### Proceso de desarrollo
 
-**Paso 1: Definir la hipotesis de detección**
+**Paso 1: Definir la hipótesis de detección**
 
 Documenta que comportamiento quieres detectar, por que es malicioso y que técnica ATT&CK mapea.
 
@@ -861,7 +861,7 @@ Siempre documenta escenarios de falsos positivos, incluso si no tienes exclusion
 **4. No usar modificadores apropiados**
 
 ```yaml
-# MAL: busqueda exacta que falla con variaciones de ruta
+# MAL: búsqueda exacta que falla con variaciones de ruta
 detection:
   selection:
     Image: 'C:\Windows\System32\cmd.exe'
@@ -890,7 +890,7 @@ sigma check rules/custom/my_rule.yml
 sigma convert -t splunk rules/custom/my_rule.yml > /dev/null
 ```
 
-**Nivel 2: Testing con logs sinteticos**
+**Nivel 2: Testing con logs sintéticos**
 
 Crea logs de ejemplo que representen tanto el comportamiento malicioso como el normal, y verifica que la regla produce los resultados esperados.
 
@@ -988,7 +988,7 @@ El campo `id` debe ser un UUID único generado con `uuidgen`. Esto permite rastr
 
 ### 3. Tags ATT&CK obligatorios
 
-Cada regla debe tener al menos un tag de tactica y técnica ATT&CK. Esto facilita medir la cobertura.
+Cada regla debe tener al menos un tag de táctica y técnica ATT&CK. Esto facilita medir la cobertura.
 
 ### 4. Documentar falsos positivos
 
@@ -998,9 +998,9 @@ El campo `falsepositives` no es opcional. Incluso si no conoces falsos positivos
 
 Los modificadores (`contains`, `startswith`, `endswith`) son más legibles y más faciles de convertir que las expresiones regulares. Reserva `re` para casos donde los modificadores no son suficientes.
 
-### 6. Organizar por tactica ATT&CK
+### 6. Organizar por táctica ATT&CK
 
-Estructura el directorio de reglas siguiendo las tacticas ATT&CK:
+Estructura el directorio de reglas siguiendo las tácticas ATT&CK:
 
 ```
 rules/
@@ -1019,7 +1019,7 @@ rules/
 
 ### 7. Revisar y actualizar regularmente
 
-Las reglas no son estaticas. Programa revisiones trimestrales para:
+Las reglas no son estáticas. Programa revisiones trimestrales para:
 
 - Verificar que las reglas siguen siendo relevantes.
 - Ajustar exclusiones según cambios en el entorno.
@@ -1050,21 +1050,21 @@ La calidad de la conversión depende del backend (plugin) de tu SIEM. Algunos ba
 
 ### 3. Campos no estandarizados
 
-Sigma define nombres de campo genericos, pero no todos los proveedores de logs usan los mismos nombres. Los pipelines de procesamiento mitigan esto, pero requieren mantenimiento.
+Sigma define nombres de campo genéricos, pero no todos los proveedores de logs usan los mismos nombres. Los pipelines de procesamiento mitigan esto, pero requieren mantenimiento.
 
 ### 4. Agregaciones limitadas
 
-Las funciones de agregación de Sigma son básicas comparadas con lo que ofrecen los lenguajes nativos de los SIEM. Para detecciones que requieren correlación compleja, estadisticas avanzadas o machine learning, necesitaras escribir queries nativas.
+Las funciones de agregación de Sigma son básicas comparadas con lo que ofrecen los lenguajes nativos de los SIEM. Para detecciónes que requieren correlación compleja, estadísticas avanzadas o machine learning, necesitaras escribir queries nativas.
 
 ### 5. No reemplaza el conocimiento del analista
 
-Sigma facilita escribir y compartir detecciones, pero no sustituye el conocimiento de un analista experimentado que entiende el entorno, las amenazas relevantes y el contexto de negocio.
+Sigma facilita escribir y compartir detecciónes, pero no sustituye el conocimiento de un analista experimentado que entiende el entorno, las amenazas relevantes y el contexto de negocio.
 
 ### 6. Correlación entre fuentes de datos
 
-Sigma opera sobre una fuente de datos a la vez. Si necesitas correlacionar eventos de múltiples fuentes (por ejemplo, un login exitoso seguido de una ejecución de proceso en otro sistema), necesitas herramientas complementarias o reglas nativas del SIEM.
+Sigma opera sobre una fuente de datos a la vez. Si necesitas correlaciónar eventos de múltiples fuentes (por ejemplo, un login exitoso seguido de una ejecución de proceso en otro sistema), necesitas herramientas complementarias o reglas nativas del SIEM.
 
-{{< cta type="bofu" text="Solicita una demo personalizada para tu SOC y descubre cómo Riskitera integra detecciones Sigma con IA soberana para priorizar alertas." label="Solicitar demo" >}}
+{{< cta type="bofu" text="Solicita una demo personalizada para tu SOC y descubre cómo Riskitera integra detecciónes Sigma con IA soberana para priorizar alertas." label="Solicitar demo" >}}
 
 
 **Artículos relacionados:**
@@ -1075,11 +1075,11 @@ Sigma opera sobre una fuente de datos a la vez. Si necesitas correlacionar event
 
 ### Sigma reemplaza las reglas nativas de mi SIEM?
 
-No. Sigma complementa las reglas nativas, no las reemplaza. Para detecciones estándar que se benefician de portabilidad (brute force, movimiento lateral, persistencia común), Sigma es ideal. Para detecciones que requieren funcionalidades específicas de tu SIEM (machine learning, correlación compleja entre múltiples fuentes, queries de rendimiento optimizado), seguiras necesitando reglas nativas. El enfoque recomendado es usar Sigma para el 70-80% de tus detecciones y reglas nativas para el 20-30% restante.
+No. Sigma complementa las reglas nativas, no las reemplaza. Para detecciónes estándar que se benefician de portabilidad (brute force, movimiento lateral, persistencia común), Sigma es ideal. Para detecciónes que requieren funcionalidades específicas de tu SIEM (machine learning, correlación compleja entre múltiples fuentes, queries de rendimiento optimizado), seguiras necesitando reglas nativas. El enfoque recomendado es usar Sigma para el 70-80% de tus detecciónes y reglas nativas para el 20-30% restante.
 
 ### Cuantas reglas de SigmaHQ debería desplegar?
 
-No despliegues todas las 3.000+ reglas de golpe. Empieza con las reglas marcadas como `stable` que cubren las tacticas más críticas para tu entorno (initial access, execution, persistence, credential access). Un buen punto de partida son 50-100 reglas cuidadosamente seleccionadas y validadas. Después, expande gradualmente basandote en los gaps de cobertura ATT&CK y la threat intelligence relevante para tu sector.
+No despliegues todas las 3.000+ reglas de golpe. Empieza con las reglas marcadas como `stable` que cubren las tácticas más críticas para tu entorno (initial access, execution, persistence, credential access). Un buen punto de partida son 50-100 reglas cuidadosamente seleccionadas y validadas. Después, expande gradualmente basándote en los gaps de cobertura ATT&CK y la threat intelligence relevante para tu sector.
 
 ### Qué SIEM tiene mejor soporte para Sigma?
 

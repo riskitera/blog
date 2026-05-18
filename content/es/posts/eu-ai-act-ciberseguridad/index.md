@@ -27,7 +27,7 @@ Análisis del EU AI Act desde la perspectiva de ciberseguridad: clasificación d
 
 ## Qué es el EU AI Act y por que importa a los equipos de ciberseguridad
 
-El [Reglamento (UE) 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689), conocido como EU AI Act, es la primera legislación integral sobre inteligencia artificial a nivel mundial. Aprobado en marzo de 2024 y publicado en el Diario Oficial de la UE en julio de 2024, este reglamento establece un marco jurídico armonizado para el desarrollo, comercialización y uso de sistemas de IA en la Union Europea.
+El [Reglamento (UE) 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689), conocido como EU AI Act, es la primera legislación integral sobre inteligencia artificial a nivel mundial. Aprobado en marzo de 2024 y publicado en el Diario Oficial de la UE en julio de 2024, este reglamento establece un marco jurídico armonizado para el desarrollo, comercialización y uso de sistemas de IA en la Unión Europea.
 
 Para los equipos de ciberseguridad, el EU AI Act no es "otra normativa más" que gestionar desde compliance. Es una regulación que afecta directamente a las herramientas que usan a diario. Desde los motores de detección de amenazas basados en machine learning hasta los sistemas de triage automatizado en el SOC, pasando por las plataformas de evaluación de riesgos con IA, practicamente todo el stack de seguridad moderno incorpora algun componente de inteligencia artificial.
 
@@ -41,7 +41,7 @@ Esta convergencia regulatoria significa que los equipos de ciberseguridad no pue
 
 ## Cómo clasifica el EU AI Act los sistemas de IA por riesgo
 
-El nucleo del EU AI Act es su sistema de clasificación basado en riesgo. No todos los sistemas de IA reciben el mismo tratamiento regulatorio. El reglamento establece cuatro categorías con obligaciones progresivas.
+El núcleo del EU AI Act es su sistema de clasificación basado en riesgo. No todos los sistemas de IA reciben el mismo tratamiento regulatorio. El reglamento establece cuatro categorías con obligaciones progresivas.
 
 ### Riesgo inaceptable (prohibido)
 
@@ -49,16 +49,16 @@ Son sistemas de IA cuyo uso esta directamente prohibido en la UE por considerars
 
 - **Sistemas de puntuación social** (social scoring) por parte de autoridades públicas o en su nombre.
 - **Manipulación subliminal** de personas mediante técnicas que explotan vulnerabilidades (edad, discapacidad, situación económica).
-- **Identificación biometrica remota en tiempo real** en espacios públicos con fines de aplicación de la ley (con excepciones tasadas).
-- **Categorización biometrica** basada en caracteristicas sensibles (raza, orientación sexual, creencias políticas).
-- **Scraping no dirigido de imagenes faciales** de internet o camaras de videovigilancia para crear bases de datos de reconocimiento facial.
+- **Identificación biométrica remota en tiempo real** en espacios públicos con fines de aplicación de la ley (con excepciones tasadas).
+- **Categorización biométrica** basada en caracteristicas sensibles (raza, orientación sexual, creencias políticas).
+- **Scraping no dirigido de imagenes faciales** de internet o cámaras de videovigilancia para crear bases de datos de reconocimiento facial.
 - **Reconocimiento de emociones** en el lugar de trabajo y en centros educativos.
 
 Para ciberseguridad, la implicación directa es que cualquier herramienta de seguridad física o de vigilancia que use reconocimiento facial en tiempo real necesita una revisión legal inmediata. También afecta a los sistemas de behavioral analytics que puedan inferir estados emocionales de empleados.
 
 ### Riesgo alto
 
-Esta es la categoría más relevante para los equipos de ciberseguridad. Un sistema de IA se considera de alto riesgo cuando se utiliza en alguna de las areas listadas en el Anexo III del reglamento, que incluye:
+Esta es la categoría más relevante para los equipos de ciberseguridad. Un sistema de IA se considera de alto riesgo cuando se utiliza en alguna de las áreas listadas en el Anexo III del reglamento, que incluye:
 
 - **Infraestructuras críticas**: sistemas de IA usados en la gestión y operación de infraestructuras críticas digitales, incluyendo el suministro de agua, gas, calefacción y electricidad.
 - **Acceso a servicios esenciales**: sistemas que determinan el acceso a servicios públicos y privados esenciales.
@@ -66,7 +66,7 @@ Esta es la categoría más relevante para los equipos de ciberseguridad. Un sist
 - **Gestión de migración, asilo y control de fronteras**.
 - **Administración de justicia y procesos democraticos**.
 
-En la práctica, muchos sistemas de seguridad operan en o para infraestructuras críticas. Un SIEM con capacidades de IA que monitoriza una red electrica, un sistema de detección de intrusiones con machine learning en un hospital, o una plataforma de gestión de vulnerabilidades con priorización automatizada en un banco: todos podrían caer en la categoría de alto riesgo dependiendo del contexto de uso.
+En la práctica, muchos sistemas de seguridad operan en o para infraestructuras críticas. Un SIEM con capacidades de IA que monitoriza una red eléctrica, un sistema de detección de intrusiones con machine learning en un hospital, o una plataforma de gestión de vulnerabilidades con priorización automatizada en un banco: todos podrían caer en la categoría de alto riesgo dependiendo del contexto de uso.
 
 ### Riesgo limitado
 
@@ -74,13 +74,13 @@ Los sistemas de riesgo limitado tienen obligaciones de transparencia. Esto signi
 
 - **Chatbots**: cualquier sistema conversacional basado en IA debe informar al usuario de que está interactuando con una máquina.
 - **Deep fakes**: contenido generado o manipulado por IA debe etiquetarse como tal.
-- **Sistemas de reconocimiento de emociones o categorización biometrica** (los que no están prohibidos).
+- **Sistemas de reconocimiento de emociones o categorización biométrica** (los que no están prohibidos).
 
 En ciberseguridad, esto afecta a los chatbots de soporte de seguridad, a los asistentes virtuales para gestión de incidentes y a cualquier interfaz conversacional que use IA para interactuar con usuarios o analistas.
 
 ### Riesgo mínimo
 
-La gran mayoría de sistemas de IA quedan en esta categoría y no tienen obligaciones específicas bajo el AI Act. Incluyen filtros de spam, sistemas de recomendación de contenido, herramientas de busqueda básicas y otros usos cotidianos que no plantean riesgos significativos para los derechos fundamentales.
+La gran mayoría de sistemas de IA quedan en esta categoría y no tienen obligaciones específicas bajo el AI Act. Incluyen filtros de spam, sistemas de recomendación de contenido, herramientas de búsqueda básicas y otros usos cotidianos que no plantean riesgos significativos para los derechos fundamentales.
 
 Algunos componentes del stack de seguridad podrían clasificarse aquí: filtros antispam básicos, clasificadores de correo, o herramientas de productividad con IA integrada.
 
@@ -93,7 +93,7 @@ Los sistemas clasificados como alto riesgo deben cumplir un conjunto exhaustivo 
 El artículo 9 del AI Act exige un sistema de gestión de riesgos que se mantenga durante todo el ciclo de vida del sistema de IA. No es un análisis puntual: es un proceso iterativo que incluye identificación, estimación, evaluación y tratamiento de riesgos. Para los equipos de seguridad, esto se traduce en:
 
 - Documentar los riesgos de cada sistema de IA desplegado en el SOC o en herramientas GRC.
-- Evaluar periodicamente si el perfil de riesgo ha cambiado (por actualizaciones del modelo, cambios en los datos de entrenamiento, nuevos vectores de ataque).
+- Evaluar periódicamente si el perfil de riesgo ha cambiado (por actualizaciónes del modelo, cambios en los datos de entrenamiento, nuevos vectores de ataque).
 - Implementar medidas de mitigación proporcionales al nivel de riesgo identificado.
 
 ### Gobernanza de datos
@@ -109,12 +109,12 @@ Antes de comercializar un sistema de IA de alto riesgo, el proveedor debe elabor
 - Descripción general del sistema y su propósito.
 - Descripción detallada de los elementos del sistema y su proceso de desarrollo.
 - Información sobre los datos de entrenamiento, validación y prueba.
-- Metricas de rendimiento y limitaciones conocidas.
+- Métricas de rendimiento y limitaciones conocidas.
 - Descripción de las medidas de supervisión humana.
 
 ### Registro automático de actividad (logging)
 
-El artículo 12 requiere que los sistemas de IA de alto riesgo incluyan capacidades de logging que permitan la trazabilidad de su funcionamiento. Los registros deben permitir identificar situaciones de riesgo, facilitar la monitorización post-despliegue y asistir en investigaciones de conformidad.
+El artículo 12 requiere que los sistemas de IA de alto riesgo incluyan capacidades de logging que permitan la trazabilidad de su funcionamiento. Los registros deben permitir identificar situaciones de riesgo, facilitar la monitorización post-despliegue y asistir en investigaciónes de conformidad.
 
 Para equipos de ciberseguridad, este requisito es natural: el logging exhaustivo ya es una práctica estándar. La diferencia es que ahora el logging de los propios sistemas de IA de seguridad tiene un marco legal que define que debe registrarse y durante cuanto tiempo.
 
@@ -233,7 +233,7 @@ El AI Act no opera en solitario. Para organizaciones en España y la UE, la inte
 
 El [ENS](https://ens.ccn.cni.es/) establece los principios básicos y requisitos mínimos de seguridad para los sistemas de información del sector público español y sus proveedores. Cuando una administración pública o su cadena de suministro despliega sistemas de IA, el AI Act se superpone al ENS:
 
-- **Gestión de riesgos**: ambos requieren análisis de riesgos, pero el AI Act anade requisitos específicos para riesgos derivados de la IA (sesgos, robustez, ataques adversariales).
+- **Gestión de riesgos**: ambos requieren análisis de riesgos, pero el AI Act añade requisitos específicos para riesgos derivados de la IA (sesgos, robustez, ataques adversariales).
 - **Trazabilidad**: el ENS ya exige logging extenso, lo que facilita el cumplimiento del artículo 12 del AI Act.
 - **Supervisión**: el ENS categoriza los sistemas por nivel de seguridad (bajo, medio, alto), lo que puede complementar la clasificación de riesgo del AI Act.
 
@@ -288,7 +288,7 @@ Esta es una guía práctica para que los CISOs y responsables de seguridad prepa
 
 12. **Establecer un proceso de monitorización post-despliegue** para todos los sistemas de IA de alto riesgo.
 13. **Integrar la gestión de riesgos de IA** en el ciclo de gestión de riesgos corporativo.
-14. **Auditar periodicamente** el cumplimiento de los requisitos del AI Act.
+14. **Auditar periódicamente** el cumplimiento de los requisitos del AI Act.
 15. **Mantener actualizada la documentación técnica** ante cambios en los sistemas de IA.
 
 ## Impacto en herramientas de seguridad con IA
@@ -329,14 +329,14 @@ El régimen sancionador del AI Act es significativo y proporcional a la gravedad
 
 Para PYMEs y startups, las multas se calculan sobre la base del porcentaje de facturación, lo que proporciona cierta proporcionalidad. No obstante, incluso una sanción del 3% puede ser existencial para una empresa pequeña.
 
-Las autoridades nacionales de supervisión (en España, la [AEPD](https://www.aepd.es/) tiene un papel coordinador junto con la futura Agencia Espanola de Supervisión de la IA) tendrán potestad para:
+Las autoridades nacionales de supervisión (en España, la [AEPD](https://www.aepd.es/) tiene un papel coordinador junto con la futura Agencia Española de Supervisión de la IA) tendrán potestad para:
 
 - Realizar inspecciones.
 - Exigir acceso a la documentación técnica.
 - Ordenar la retirada de sistemas de IA no conformes del mercado.
 - Imponer sanciones económicas.
 
-{{< cta type="bofu" text="Empieza tu PoC de 90 dias con Riskitera y automatiza el compliance del AI Act, ENS y NIS2 desde el primer dia." label="Iniciar PoC" >}}
+{{< cta type="bofu" text="Empieza tu PoC de 90 días con Riskitera y automatiza el compliance del AI Act, ENS y NIS2 desde el primer dia." label="Iniciar PoC" >}}
 
 ## Recomendaciones prácticas para equipos de ciberseguridad
 
@@ -350,7 +350,7 @@ Las autoridades nacionales de supervisión (en España, la [AEPD](https://www.ae
 
 4. **Forma a tus analistas SOC**. Los analistas que supervisan sistemas de IA deben entender las capacidades y limitaciones de estos sistemas. La supervisión humana efectiva requiere conocimiento técnico.
 
-5. **Revisa tus playbooks de respuesta automatizada**. Identifica donde la IA toma decisiones críticas sin supervisión humana y anade checkpoints de validación humana donde sea necesario.
+5. **Revisa tus playbooks de respuesta automatizada**. Identifica donde la IA toma decisiones críticas sin supervisión humana y añade checkpoints de validación humana donde sea necesario.
 
 ### Para proveedores de herramientas de seguridad
 
@@ -358,7 +358,7 @@ Las autoridades nacionales de supervisión (en España, la [AEPD](https://www.ae
 
 2. **Documentad todo**. La documentación técnica exigida por el AI Act debe ser exhaustiva: arquitectura, datos de entrenamiento, métricas de rendimiento, limitaciones conocidas, medidas de seguridad.
 
-3. **Implementad explainability**. Los clientes necesitan entender por que la IA toma cada decisión. Esto no significa que los modelos deban ser interpretables (glass box), pero si que cada resultado debe acompanarse de información contextual suficiente.
+3. **Implementad explainability**. Los clientes necesitan entender por que la IA toma cada decisión. Esto no significa que los modelos deban ser interpretables (glass box), pero si que cada resultado debe acompañarse de información contextual suficiente.
 
 4. **Preparad las evaluaciones de conformidad**. Para sistemas de alto riesgo, necesitareis someteros a evaluaciones de conformidad por organismos notificados.
 
@@ -368,7 +368,7 @@ Para mantenerse actualizado sobre el EU AI Act y su aplicación en cibersegurida
 
 - **[ENISA](https://www.enisa.europa.eu/)**: la Agencia de la UE para la Ciberseguridad pública guías y análisis sobre la intersección entre IA y ciberseguridad.
 - **[AI Office de la Comisión Europea](https://digital-strategy.ec.europa.eu/en/policies/ai-office)**: responsable de supervisar los modelos GPAI y coordinar la aplicación del AI Act.
-- **[CCN-CERT](https://www.ccn-cert.cni.es/)**: en el ámbito español, el Centro Criptologico Nacional pública guías de seguridad que iran incorporando los requisitos del AI Act.
+- **[CCN-CERT](https://www.ccn-cert.cni.es/)**: en el ámbito español, el Centro Criptológico Nacional pública guías de seguridad que iran incorporando los requisitos del AI Act.
 - **[INCIBE](https://www.incibe.es/)**: el Instituto Nacional de Ciberseguridad ofrece recursos y formación sobre seguridad, incluyendo aspectos relacionados con IA.
 - **Texto completo del reglamento**: [EUR-Lex 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689).
 
@@ -384,11 +384,11 @@ No. El AI Act no prohibe el uso de IA en operaciones de seguridad. Lo que hace e
 
 ### Qué pasa si mi proveedor de SIEM o EDR no cumple el AI Act?
 
-Si despliegas un sistema de IA que no cumple el AI Act, la responsabilidad recae tanto en el proveedor (como desarrollador del sistema) como en tu organización (como deployer o usuario). El reglamento establece obligaciones diferenciadas para proveedores y usuarios. Como usuario, debes verificar que tus proveedores cumplen, exigir la documentación técnica necesaria y mantener registros de tu diligencia debida. Si un proveedor no demuestra cumplimiento antes de agosto de 2026, deberias evaluar alternativas.
+Si despliegas un sistema de IA que no cumple el AI Act, la responsabilidad recae tanto en el proveedor (como desarrollador del sistema) como en tu organización (como deployer o usuario). El reglamento establece obligaciones diferenciadas para proveedores y usuarios. Como usuario, debes verificar que tus proveedores cumplen, exigir la documentación técnica necesaria y mantener registros de tu diligencia debida. Si un proveedor no demuestra cumplimiento antes de agosto de 2026, deberías evaluar alternativas.
 
 ### Cómo clasifico la IA de mi SOC: alto riesgo o riesgo limitado?
 
-La clasificación depende del contexto de uso, no de la tecnología en si. Un mismo sistema de detección de anomalías puede ser de alto riesgo si protege una infraestructura crítica (hospital, central electrica, red de transporte) y de riesgo limitado si protege una empresa de comercio electrónico. La clave está en revisar el Anexo III del reglamento e identificar si el uso de tu sistema entra en alguna de las categorías listadas. Ante la duda, clasifica como alto riesgo: cumplir requisitos superiores nunca es un problema regulatorio.
+La clasificación depende del contexto de uso, no de la tecnología en si. Un mismo sistema de detección de anomalías puede ser de alto riesgo si protege una infraestructura crítica (hospital, central eléctrica, red de transporte) y de riesgo limitado si protege una empresa de comercio electrónico. La clave está en revisar el Anexo III del reglamento e identificar si el uso de tu sistema entra en alguna de las categorías listadas. Ante la duda, clasifica como alto riesgo: cumplir requisitos superiores nunca es un problema regulatorio.
 
 ### El AI Act afecta a los modelos de IA open source que uso en mi SOC?
 
@@ -396,4 +396,4 @@ Sí. El AI Act se aplica independientemente de si el modelo es propietario u ope
 
 ### Cuánto cuesta adaptarse al EU AI Act para un equipo de seguridad típico?
 
-El coste depende enormemente del tamaño de la organización, del número de sistemas de IA en uso y del nivel de madurez actual en gobernanza de IA. Para una organización mediana (500-2000 empleados) con un SOC que utiliza 3-5 herramientas con componentes de IA, la estimación realista incluye: inventario y clasificación (2-4 semanas de trabajo de consultoría), gap analysis (4-8 semanas), implementación de controles adicionales (variable, pero tipicamente 3-6 meses), y formación del equipo (1-2 semanas). En términos económicos, el rango típico es de 50.000 a 200.000 euros para el proyecto inicial de adaptación, más un coste recurrente de mantenimiento del 10-15% anual.
+El coste depende enormemente del tamaño de la organización, del número de sistemas de IA en uso y del nivel de madurez actual en gobernanza de IA. Para una organización mediana (500-2000 empleados) con un SOC que utiliza 3-5 herramientas con componentes de IA, la estimación realista incluye: inventario y clasificación (2-4 semanas de trabajo de consultoría), gap analysis (4-8 semanas), implementación de controles adicionales (variable, pero típicamente 3-6 meses), y formación del equipo (1-2 semanas). En términos económicos, el rango típico es de 50.000 a 200.000 euros para el proyecto inicial de adaptación, más un coste recurrente de mantenimiento del 10-15% anual.

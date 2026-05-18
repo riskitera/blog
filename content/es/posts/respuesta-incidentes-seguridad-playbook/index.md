@@ -22,12 +22,12 @@ Playbook completo de respuesta a incidentes para SOC: fases NIST, roles, comunic
 - Cada tipo de incidente (ransomware, phishing, data breach, DDoS) requiere un playbook específico con criterios de detección, pasos de contención y procedimientos de recuperación propios
 - Los roles del equipo de respuesta deben estar definidos antes del incidente, con un Incident Commander que coordine todas las acciones
 - La documentación durante el incidente y el análisis post-mortem son tan importantes como la contención técnica
-- Frameworks como MITRE ATT&CK y guías de CCN-CERT e INCIBE proporcionan taxonomias y procedimientos estandarizados para equipos SOC en España
+- Frameworks como MITRE ATT&CK y guías de CCN-CERT e INCIBE proporcionan taxonomías y procedimientos estandarizados para equipos SOC en España
 {{< /key-takeaways >}}
 
 ## Qué es un plan de respuesta a incidentes
 
-Un plan de respuesta a incidentes (Incident Response Plan, IRP) es el documento que define como una organización detecta, contiene, erradica y se recupera de un incidente de ciberseguridad. No es un documento teorico: es un manual operativo que el equipo SOC sigue bajo presión, cuando los sistemas están caidos y la dirección exige respuestas.
+Un plan de respuesta a incidentes (Incident Response Plan, IRP) es el documento que define como una organización detecta, contiene, erradica y se recupera de un incidente de ciberseguridad. No es un documento teórico: es un manual operativo que el equipo SOC sigue bajo presión, cuando los sistemas están caidos y la dirección exige respuestas.
 
 La referencia principal para construir un IRP es el [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) (Computer Security Incident Handling Guide), publicado por el National Institute of Standards and Technology. En el contexto español, el [CCN-CERT](https://www.ccn-cert.cni.es/) pública guías complementarias adaptadas al Esquema Nacional de Seguridad (ENS), y el [INCIBE](https://www.incibe.es/) ofrece recursos para el sector privado y las pymes.
 
@@ -53,7 +53,7 @@ La preparación ocurre antes del incidente. Es la fase más importante y la más
 - EDR/XDR desplegado en todos los endpoints
 - Plataforma de ticketing para incidentes (no sirve un Excel)
 - Herramientas forenses: adquisición de imagenes, análisis de memoria, PCAP
-- Canales de comunicación alternativos (si el correo esta comprometido, como os comunicais?)
+- Canales de comunicación alternativos (si el correo está comprometido, como os comunicais?)
 
 **Documentación:**
 - Inventario de activos actualizado (no puedes proteger lo que no conoces)
@@ -134,7 +134,7 @@ NIST agrupa estas tres actividades en una sola fase porque en la práctica se ej
 La fase que todos quieren saltarse y la que más valor genera a largo plazo.
 
 **Post-mortem (Lessons Learned):**
-- Reunion formal dentro de los 5 días laborables posteriores al cierre del incidente
+- Reunión formal dentro de los 5 días laborables posteriores al cierre del incidente
 - Participan todos los roles involucrados (no solo técnicos)
 - Se documenta: timeline, que funciono, que fallo, acciones de mejora
 
@@ -146,7 +146,7 @@ La fase que todos quieren saltarse y la que más valor genera a largo plazo.
 4. Vector de ataque y TTPs mapeados a MITRE ATT&CK
 5. Acciones de contención y erradicación realizadas
 6. Impacto: operativo, financiero, regulatorio, reputacional
-7. Causa raiz
+7. Causa raíz
 8. Acciones de mejora con responsable y fecha límite
 9. Indicadores de compromiso (IOCs) para compartir
 
@@ -221,7 +221,7 @@ El ransomware es el incidente más frecuente y de mayor impacto en España, como
 - Alertas de EDR por cifrado masivo de ficheros
 - Extensión de archivos cambiada a patrones conocidos (.locked, .encrypt, .ryuk, .lockbit)
 - Notas de rescate detectadas en directorios
-- Spike anomalo en operaciones de escritura en disco
+- Spike anómalo en operaciones de escritura en disco
 - Comunicaciones salientes a dominios/IPs de C2 conocidos
 - Procesos sospechosos: vssadmin.exe eliminando Shadow Copies, bcdedit.exe modificando opciones de arranque
 
@@ -232,7 +232,7 @@ El ransomware es el incidente más frecuente y de mayor impacto en España, como
 3. **Desconectar backups de la red** si aún no están afectados. Verificar integridad de snapshots.
 4. **Bloquear IOCs** en firewall, proxy y EDR: hashes, IPs, dominios de C2.
 5. **Revocar credenciales** de cuentas comprometidas o potencialmente comprometidas (empezar por cuentas privilegiadas).
-6. **Activar comunicación alternativa.** Si el correo esta comprometido, usar canal secundario (Signal, llamadas telefonicas, Slack externo).
+6. **Activar comunicación alternativa.** Si el correo está comprometido, usar canal secundario (Signal, llamadas telefonicas, Slack externo).
 
 ### Contención
 
@@ -245,10 +245,10 @@ El ransomware es el incidente más frecuente y de mayor impacto en España, como
 ### Erradicación
 
 - Eliminar el ransomware y todos los artefactos asociados de los sistemas afectados.
-- Buscar backdoors o mecanismos de persistencia (tareas programadas, servicios, claves de registro).
+- Buscar backdoors o mecanismos de persistencia (táreas programadas, servicios, claves de registro).
 - Parchear la vulnerabilidad explotada como vector de entrada.
-- Si Active Directory esta comprometido: reconstruir desde cero o desde backup offline verificado.
-- Resetear TODAS las contrasenas del dominio (no solo las comprometidas).
+- Si Active Directory está comprometido: reconstruir desde cero o desde backup offline verificado.
+- Resetear TODAS las contraseñas del dominio (no solo las comprometidas).
 
 ### Recuperación
 
@@ -286,7 +286,7 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 
 1. **Aislar el correo malicioso.** Buscar en todo el tenant de correo el mismo mensaje (por hash, asunto, remitente) y eliminarlo de todos los buzones.
 2. **Identificar a todos los usuarios que interactuaron** con el correo (abrieron, hicieron clic, introdujeron credenciales).
-3. **Forzar cambio de contrasena** para todos los usuarios afectados.
+3. **Forzar cambio de contraseña** para todos los usuarios afectados.
 4. **Revocar tokens de sesión activos** (OAuth, cookies de sesión) para evitar que el atacante mantenga acceso.
 5. **Verificar reglas de reenvio** en los buzones afectados y eliminar las no autorizadas.
 
@@ -300,7 +300,7 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 ### Erradicación
 
 - Eliminar reglas de reenvio, delegaciones y permisos no autorizados.
-- Revocar aplicaciones OAuth de terceros anadidas por el atacante.
+- Revocar aplicaciones OAuth de terceros añadidas por el atacante.
 - Verificar que no hay mecanismos de persistencia (app passwords, tokens de API).
 - Si el phishing incluia malware: ejecutar el playbook de malware en paralelo.
 
@@ -316,7 +316,7 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 ### Criterios de detección
 
 - DLP (Data Loss Prevention) alerta sobre exfiltración de datos sensibles
-- Volumenes anomalos de datos transferidos fuera de la red
+- Volumenes anómalos de datos transferidos fuera de la red
 - Acceso masivo a registros de base de datos fuera de patrón habitual
 - Datos de la organización detectados en foros underground o paste sites
 - Notificación de un tercero (investigador, cliente, proveedor)
@@ -349,7 +349,7 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 - **Notificación a afectados:** Si el riesgo para los derechos y libertades es alto, notificar a las personas afectadas sin dilación.
 - **Registro interno:** Documentar la brecha en el registro de violaciones de seguridad (obligatorio RGPD, artículo 33.5).
 - Evaluar si los datos exfiltrados permiten identificar personas, realizar fraude o causar otro daño.
-- Ofrecer medidas de mitigación a los afectados (cambio de contrasenas, monitorización de identidad).
+- Ofrecer medidas de mitigación a los afectados (cambio de contraseñas, monitorización de identidad).
 
 ## Playbook 4: DDoS (denegación de servicio distribuido)
 
@@ -357,7 +357,7 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 
 - Spike subito en tráfico de red hacia servidores públicos
 - Degradación o caida de servicios web sin causa interna identificada
-- Alertas de CDN o WAF por tráfico anomalo
+- Alertas de CDN o WAF por tráfico anómalo
 - Incremento masivo de conexiones desde IPs dispersas geograficamente
 - Patrones de tráfico no humanos (request rate, user agents, distribución de IPs)
 
@@ -402,7 +402,7 @@ La comunicación durante un incidente es tan crítica como la respuesta técnica
 
 **Primeras 24 horas:**
 - Comunicación general a empleados con: que ha pasado (en términos generales), que deben hacer (no hacer), y cuando recibiran la siguiente actualización.
-- Establecer cadencia de actualizaciones (cada 4-8 horas en P1, cada 24 horas en P2).
+- Establecer cadencia de actualizaciónes (cada 4-8 horas en P1, cada 24 horas en P2).
 
 **Durante el incidente:**
 - Mantener un canal de war room (virtual o presencial) para el equipo de respuesta.
@@ -456,7 +456,7 @@ El post-mortem es la actividad con mayor retorno de inversión en todo el proces
 
 ### Cuándo hacerlo
 
-- Reunion formal: dentro de los 5 días laborables posteriores al cierre del incidente
+- Reunión formal: dentro de los 5 días laborables posteriores al cierre del incidente
 - Asistentes: todos los roles involucrados en la respuesta (técnicos, comunicación, legal, dirección)
 - Duración: 90-120 minutos para un P1, 60 minutos para un P2
 
@@ -470,9 +470,9 @@ El post-mortem es la actividad con mayor retorno de inversión en todo el proces
 - Hora de contención efectiva
 - Hora de erradicación
 - Hora de recuperación
-- Metricas clave: MTTD (Mean Time to Detect), MTTC (Mean Time to Contain), MTTR (Mean Time to Recover)
+- Métricas clave: MTTD (Mean Time to Detect), MTTC (Mean Time to Contain), MTTR (Mean Time to Recover)
 
-**Análisis de causa raiz:**
+**Análisis de causa raíz:**
 - Vector de ataque inicial
 - Que controles fallaron y por que
 - Que controles funcionaron
@@ -493,14 +493,14 @@ Causa: El vector de entrada fue credenciales VPN comprometidas sin segundo facto
 Responsable: Jefe de Infraestructura
 Fecha límite: 30 días
 Estado: Pendiente
-Prioridad: Critica
+Prioridad: Crítica
 ```
 
-### Metricas del programa de respuesta
+### Métricas del programa de respuesta
 
 Para medir la madurez del programa IR a lo largo del tiempo:
 
-| Metrica | Objetivo | Frecuencia de medición |
+| Métrica | Objetivo | Frecuencia de medición |
 |---------|----------|------------------------|
 | MTTD (detección) | < 24 horas | Por incidente |
 | MTTC (contención) | < 4 horas desde detección | Por incidente |
@@ -513,11 +513,11 @@ Para medir la madurez del programa IR a lo largo del tiempo:
 
 ### MITRE ATT&CK
 
-[MITRE ATT&CK](https://attack.mitre.org/) proporciona la taxonomia común para describir las técnicas de los atacantes. Cada playbook debe mapear las TTPs observadas a la matriz ATT&CK para:
+[MITRE ATT&CK](https://attack.mitre.org/) proporciona la taxonomía común para describir las técnicas de los atacantes. Cada playbook debe mapear las TTPs observadas a la matriz ATT&CK para:
 
 - Comunicar de forma estandarizada con otros equipos y organizaciones
 - Identificar gaps en la cobertura de detección
-- Priorizar reglas de detección en el SIEM basandose en técnicas reales
+- Priorizar reglas de detección en el SIEM basándose en técnicas reales
 
 **Ejemplo de mapeo para un incidente de ransomware:**
 
@@ -546,7 +546,7 @@ El [CCN-CERT](https://www.ccn-cert.cni.es/) es la referencia para la Administrac
 - **INCIBE-CERT:** Gestión de incidentes para ciudadanos y empresas
 - **Linea 017:** Teléfono de atención en ciberseguridad
 - **Guías y herramientas:** Kits de concienciación, políticas de seguridad tipo, planes de respuesta
-- **Informes anuales:** Balance de ciberseguridad con datos estadisticos nacionales
+- **Informes anuales:** Balance de ciberseguridad con datos estadísticos nacionales
 
 ## Errores comunes en la respuesta a incidentes
 
@@ -584,7 +584,7 @@ Antes de que ocurra el próximo incidente, verifica que tienes:
 - [ ] Playbooks específicos para ransomware, phishing, data breach y DDoS
 - [ ] Roles asignados: Incident Commander, analistas, forense, infra, legal, comunicaciones
 - [ ] Lista de contactos de emergencia actualizada (incluyendo fuera de horario)
-- [ ] Canal de comunicación alternativo (por si el correo esta comprometido)
+- [ ] Canal de comunicación alternativo (por si el correo está comprometido)
 - [ ] Backups offline verificados (probados, no solo existentes)
 - [ ] Herramientas forenses preparadas (software de adquisición, jump bag)
 - [ ] Contrato con proveedor IR externo (retainer) para escalado

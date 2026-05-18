@@ -19,7 +19,7 @@ Comparativa práctica de las metodologías FAIR y MAGERIT para medir el riesgo e
 
 {{< key-takeaways >}}
 - MAGERIT es la metodología de referencia para el sector público español y obligatoria para el cumplimiento del ENS, con un enfoque cualitativo basado en activos, amenazas y salvaguardas
-- FAIR cuantifica el riesgo en términos monetarios, permitiendo calcular la perdida esperada anual (ALE) y facilitar la comunicación con la dirección financiera
+- FAIR cuantifica el riesgo en términos monetarios, permitiendo calcular la pérdida esperada anual (ALE) y facilitar la comunicación con la dirección financiera
 - Ambas metodologías no son excluyentes: un enfoque híbrido que use MAGERIT para el inventario y las amenazas, y FAIR para la cuantificación financiera, da los mejores resultados
 - La elección entre ambas depende del contexto regulatorio (ENS obliga MAGERIT), la madurez del equipo y el interlocutor (técnico vs financiero)
 - Las herramientas automatizadas reducen el esfuerzo de aplicación de cualquiera de las dos metodologías en un 60-70%, eliminando el principal obstáculo: la carga manual
@@ -27,7 +27,7 @@ Comparativa práctica de las metodologías FAIR y MAGERIT para medir el riesgo e
 
 ## Cómo se mide el riesgo en ciberseguridad?
 
-Medir el riesgo en ciberseguridad es una de las tareas más complejas y, paradojicamente, más importantes de un CISO. Sin una medición rigurosa, las decisiones de inversión en seguridad se basan en intuiciones, miedos o titulares de prensa. Con una medición rigurosa, el CISO puede responder preguntas concretas: cuanto dinero estamos dispuestos a perder, donde tenemos las mayores exposiciones, y que inversión reduce más riesgo por cada euro gastado.
+Medir el riesgo en ciberseguridad es una de las táreas más complejas y, paradojicamente, más importantes de un CISO. Sin una medición rigurosa, las decisiones de inversión en seguridad se basan en intuiciones, miedos o titulares de prensa. Con una medición rigurosa, el CISO puede responder preguntas concretas: cuanto dinero estamos dispuestos a perder, donde tenemos las mayores exposiciones, y que inversión reduce más riesgo por cada euro gastado.
 
 El problema es que "medir riesgo" no significa lo mismo para todos. Para un auditor del [CCN-CERT](https://www.ccn-cert.cni.es/), medir riesgo es evaluar activos, identificar amenazas, calcular el impacto y la probabilidad, y determinar un nivel de riesgo cualitativo (Bajo, Medio, Alto, Muy Alto, Crítico). Para un CFO, medir riesgo es responder: cuanto dinero podemos perder si nos atacan, y cual es la probabilidad de que eso ocurra este año.
 
@@ -47,7 +47,7 @@ MAGERIT es la metodología oficial de análisis de riesgos de la administración
 MAGERIT se organiza en tres libros:
 
 1. **Libro I: Metodo.** Define el proceso completo de análisis de riesgos: identificación de activos, valoración, identificación de amenazas, estimación de impacto y riesgo.
-2. **Libro II: Catálogo de elementos.** Proporciona taxonomias de activos, dimensiones de valoración, amenazas y salvaguardas.
+2. **Libro II: Catálogo de elementos.** Proporciona taxonomías de activos, dimensiones de valoración, amenazas y salvaguardas.
 3. **Libro III: Guía de técnicas.** Describe técnicas complementarias como análisis de impacto en el negocio (BIA), arboles de ataque y análisis coste-beneficio.
 
 ### Proceso de análisis con MAGERIT
@@ -84,7 +84,7 @@ El proceso MAGERIT sigue estos pasos:
 
 ## Qué es la metodología FAIR?
 
-FAIR (Factor Analysis of Information Risk) es un modelo cuantitativo de análisis de riesgo creado por Jack Jones en 2005. A diferencia de MAGERIT, FAIR no prescribe un proceso de gestión de riesgos completo, sino que se centra en la cuantificación: descomponer el riesgo en factores medibles y expresar el resultado en términos monetarios (dolares o euros de perdida esperada).
+FAIR (Factor Analysis of Information Risk) es un modelo cuantitativo de análisis de riesgo creado por Jack Jones en 2005. A diferencia de MAGERIT, FAIR no prescribe un proceso de gestión de riesgos completo, sino que se centra en la cuantificación: descomponer el riesgo en factores medibles y expresar el resultado en términos monetarios (dolares o euros de pérdida esperada).
 
 FAIR se convirtio en un estándar abierto de The Open Group en 2014, y el [FAIR Institute](https://www.fairinstitute.org/) promueve su adopción a nivel global. En 2025, FAIR-MAM (FAIR Materiality Assessment Model) amplio el framework para incluir análisis de materialidad regulatoria.
 
@@ -92,15 +92,15 @@ FAIR se convirtio en un estándar abierto de The Open Group en 2014, y el [FAIR 
 
 FAIR descompone el riesgo en dos factores principales:
 
-**LEF (Loss Event Frequency):** Con que frecuencia esperamos que un evento de perdida ocurra en un periodo determinado. Se descompone en:
+**LEF (Loss Event Frequency):** Con que frecuencia esperamos que un evento de pérdida ocurra en un periodo determinado. Se descompone en:
 - TEF (Threat Event Frequency): frecuencia con la que un agente de amenaza actúa contra un activo
 - Vulnerability: probabilidad de que la acción del agente de amenaza resulte en un evento de perdida
 
-**LM (Loss Magnitude):** Cuanto perdemos cuando el evento de perdida ocurre. Se descompone en:
-- Primary Loss: perdida directa (respuesta al incidente, reposición de activos, productividad)
-- Secondary Loss: perdida indirecta (multas, litigios, daño reputacional, perdida de clientes)
+**LM (Loss Magnitude):** Cuanto perdemos cuando el evento de pérdida ocurre. Se descompone en:
+- Primary Loss: pérdida directa (respuesta al incidente, reposición de activos, productividad)
+- Secondary Loss: pérdida indirecta (multas, litigios, daño reputacional, pérdida de clientes)
 
-El resultado final es una distribución de probabilidad de la perdida anual esperada (ALE, Annualized Loss Expectancy), tipicamente expresada como un rango (por ejemplo: "hay un 90% de probabilidad de que la perdida anual por ransomware este entre 50.000 EUR y 1.200.000 EUR, con una mediana de 320.000 EUR").
+El resultado final es una distribución de probabilidad de la pérdida anual esperada (ALE, Annualized Loss Expectancy), típicamente expresada como un rango (por ejemplo: "hay un 90% de probabilidad de que la pérdida anual por ransomware este entre 50.000 EUR y 1.200.000 EUR, con una mediana de 320.000 EUR").
 
 ### Proceso de análisis con FAIR
 
@@ -110,11 +110,11 @@ El resultado final es una distribución de probabilidad de la perdida anual espe
 
 **Paso 3: Estimar la vulnerabilidad.** Se evalúa la probabilidad de que el intento tenga éxito, considerando los controles existentes (segmentación de red, backups, EDR, formación).
 
-**Paso 4: Calcular la frecuencia del evento de perdida (LEF).** LEF = TEF x Vulnerabilidad.
+**Paso 4: Calcular la frecuencia del evento de pérdida (LEF).** LEF = TEF x Vulnerabilidad.
 
-**Paso 5: Estimar la magnitud de la perdida.** Se desglosan los costes: respuesta al incidente, perdida de negocio, notificaciones regulatorias, multas, litigios, daño reputacional. Cada componente se estima como un rango (mínimo, más probable, máximo).
+**Paso 5: Estimar la magnitud de la perdida.** Se desglosan los costes: respuesta al incidente, pérdida de negocio, notificaciones regulatorias, multas, litigios, daño reputacional. Cada componente se estima como un rango (mínimo, más probable, máximo).
 
-**Paso 6: Calcular el riesgo (ALE).** Utilizando simulación de Monte Carlo, se genera una distribución de probabilidad de la perdida anual esperada.
+**Paso 6: Calcular el riesgo (ALE).** Utilizando simulación de Monte Carlo, se genera una distribución de probabilidad de la pérdida anual esperada.
 
 ### Ventajas de FAIR
 
@@ -179,13 +179,13 @@ Siguiendo el proceso FAIR:
 
 **Escenario:** Ransomware cifra el ERP y backups locales, paralizando la operación.
 
-**TEF (Threat Event Frequency):** Basandonos en datos del sector industrial español (informe INCIBE 2025), estimamos 2-6 intentos de ransomware al año dirigidos a la organización, con un valor más probable de 3. Usamos una distribución PERT (min: 2, más probable: 3, max: 6).
+**TEF (Threat Event Frequency):** Basándonos en datos del sector industrial español (informe INCIBE 2025), estimamos 2-6 intentos de ransomware al año dirigidos a la organización, con un valor más probable de 3. Usamos una distribución PERT (min: 2, más probable: 3, max: 6).
 
 **Vulnerabilidad:** Con los controles actuales (AV tradicional, sin EDR, backups locales vulnerables, segmentación básica), estimamos una probabilidad de éxito del 20-40% por intento, con un valor más probable del 30%.
 
-**LEF (Loss Event Frequency):** TEF x Vulnerabilidad = 3 x 0.30 = 0.9 eventos de perdida por año (aproximadamente uno cada 13 meses).
+**LEF (Loss Event Frequency):** TEF x Vulnerabilidad = 3 x 0.30 = 0.9 eventos de pérdida por año (aproximadamente uno cada 13 meses).
 
-**Magnitud de la perdida (desglosada):**
+**Magnitud de la pérdida (desglosada):**
 
 | Componente | Mínimo | Más probable | Máximo |
 |---|---|---|---|
@@ -193,7 +193,7 @@ Siguiendo el proceso FAIR:
 | Perdida de negocio (5 días de paralización, facturación diaria ~200K) | 500.000 EUR | 800.000 EUR | 1.200.000 EUR |
 | Pago de rescate (si se decide pagar) | 0 EUR | 0 EUR | 500.000 EUR |
 | Notificación regulatoria y multas (RGPD, si hay exfiltración) | 0 EUR | 50.000 EUR | 600.000 EUR |
-| Dano reputacional (perdida de clientes) | 50.000 EUR | 200.000 EUR | 800.000 EUR |
+| Dano reputacional (pérdida de clientes) | 50.000 EUR | 200.000 EUR | 800.000 EUR |
 | **Total por evento** | **580.000 EUR** | **1.130.000 EUR** | **3.300.000 EUR** |
 
 **ALE (simulación Monte Carlo, 10.000 iteraciones):**
@@ -202,7 +202,7 @@ Siguiendo el proceso FAIR:
 - Percentil 90: 2.100.000 EUR/año
 - Media: 950.000 EUR/año
 
-**Conclusión FAIR:** La perdida anual esperada por ransomware es de aproximadamente 950.000 EUR, con un rango amplio que refleja la incertidumbre. Una inversión de 150.000 EUR en controles adicionales (EDR: 40.000 EUR, backup air-gap: 30.000 EUR, segmentación avanzada: 50.000 EUR, formación trimestral: 30.000 EUR) reduciria la vulnerabilidad al 5-10%, bajando la ALE a 150.000-300.000 EUR. El ROI de la inversión sería del 400-500% anual.
+**Conclusión FAIR:** La pérdida anual esperada por ransomware es de aproximadamente 950.000 EUR, con un rango amplio que refleja la incertidumbre. Una inversión de 150.000 EUR en controles adicionales (EDR: 40.000 EUR, backup air-gap: 30.000 EUR, segmentación avanzada: 50.000 EUR, formación trimestral: 30.000 EUR) reduciria la vulnerabilidad al 5-10%, bajando la ALE a 150.000-300.000 EUR. El ROI de la inversión sería del 400-500% anual.
 
 ### Comparación de resultados
 
@@ -221,7 +221,7 @@ Más allá del ejemplo práctico, las diferencias fundamentales entre ambas meto
 
 ### Enfoque: cualitativo vs cuantitativo
 
-MAGERIT produce resultados cualitativos (escalas de color, niveles de riesgo). FAIR produce resultados cuantitativos (distribuciones de probabilidad en euros). Ningun enfoque es inherentemente superior: depende del interlocutor y del propósito. Para un informe al CCN-CERT, necesitas MAGERIT. Para un business case de inversión, necesitas FAIR.
+MAGERIT produce resultados cualitativos (escalas de color, niveles de riesgo). FAIR produce resultados cuantitativos (distribuciones de probabilidad en euros). Ningún enfoque es inherentemente superior: depende del interlocutor y del propósito. Para un informe al CCN-CERT, necesitas MAGERIT. Para un business case de inversión, necesitas FAIR.
 
 ### Alcance: gestión completa vs cuantificación
 
@@ -229,7 +229,7 @@ MAGERIT cubre todo el ciclo de gestión de riesgos: desde la identificación de 
 
 ### Regulación: obligatoria vs opcional
 
-Para organizaciones sujetas al ENS, MAGERIT es la metodología de referencia. El [CCN-CERT](https://www.ccn-cert.cni.es/) proporciona PILAR como herramienta oficial para realizar análisis MAGERIT. FAIR no tiene este respaldo regulatorio en España, aunque DORA (para el sector financiero) y algunas directrices de [ENISA](https://www.enisa.europa.eu/) si mencionan explicitamente el análisis cuantitativo de riesgos.
+Para organizaciones sujetas al ENS, MAGERIT es la metodología de referencia. El [CCN-CERT](https://www.ccn-cert.cni.es/) proporciona PILAR como herramienta oficial para realizar análisis MAGERIT. FAIR no tiene este respaldo regulatorio en España, aunque DORA (para el sector financiero) y algunas directrices de [ENISA](https://www.enisa.europa.eu/) si mencionan explícitamente el análisis cuantitativo de riesgos.
 
 ### Datos requeridos: catálogos vs estimaciones
 
@@ -237,7 +237,7 @@ MAGERIT se apoya en catálogos predefinidos de amenazas y salvaguardas. El anali
 
 ### Comunicación: técnica vs ejecutiva
 
-Los resultados MAGERIT hablan el lenguaje de la seguridad: niveles de riesgo, dimensiones de seguridad, salvaguardas. Los resultados FAIR hablan el lenguaje del negocio: euros, probabilidades, ROI. Un CISO que necesite defender un presupuesto ante el comite de dirección tendrá más éxito con un "el ransomware nos puede costar 950K al año y con 150K de inversión lo bajamos a 250K" que con un "tenemos 15 riesgos en nivel Alto que necesitamos reducir".
+Los resultados MAGERIT hablan el lenguaje de la seguridad: niveles de riesgo, dimensiones de seguridad, salvaguardas. Los resultados FAIR hablan el lenguaje del negocio: euros, probabilidades, ROI. Un CISO que necesite defender un presupuesto ante el comité de dirección tendrá más éxito con un "el ransomware nos puede costar 950K al año y con 150K de inversión lo bajamos a 250K" que con un "tenemos 15 riesgos en nivel Alto que necesitamos reducir".
 
 ## Cuándo usar MAGERIT y cuando FAIR?
 
@@ -253,9 +253,9 @@ Los resultados MAGERIT hablan el lenguaje de la seguridad: niveles de riesgo, di
 
 - Necesitas justificar inversiones en seguridad con números ante la dirección
 - Tu organización opera en sectores donde el riesgo se mide en términos financieros (banca, seguros)
-- Quieres priorizar entre múltiples riesgos usando una métrica común (EUR de perdida esperada)
+- Quieres priorizar entre múltiples riesgos usando una métrica común (EUR de pérdida esperada)
 - DORA te exige análisis cuantitativo de riesgo operacional
-- Tu interlocutor es el CFO, el comite de riesgos o el consejo de administración
+- Tu interlocutor es el CFO, el comité de riesgos o el consejo de administración
 
 ### Usa ambas cuando:
 
@@ -275,7 +275,7 @@ El flujo sería el siguiente:
 
 **Fase 2: Selección de riesgos críticos.** Del mapa de riesgos MAGERIT, selecciona los 10-15 riesgos clasificados como Alto o Muy Alto. Estos son los candidatos para cuantificación FAIR.
 
-**Fase 3: Cuantificación FAIR de riesgos críticos.** Para cada riesgo crítico, aplica el modelo FAIR para obtener la perdida anual esperada en euros. Esto permite priorizar entre riesgos que MAGERIT clasifica en el mismo nivel.
+**Fase 3: Cuantificación FAIR de riesgos críticos.** Para cada riesgo crítico, aplica el modelo FAIR para obtener la pérdida anual esperada en euros. Esto permite priorizar entre riesgos que MAGERIT clasifica en el mismo nivel.
 
 **Fase 4: Business case con datos FAIR.** Usa los resultados cuantitativos para construir business cases de inversión. Compara el coste de las salvaguardas propuestas con la reducción de ALE que producen.
 
@@ -318,7 +318,7 @@ Ahora la priorización es clara: el ransomware y la fuga de datos son las priori
 - **Hojas de calculo:** Muchas organizaciones implementan FAIR en Excel con plantillas de simulación Monte Carlo. Funcional para análisis individuales, no escalable.
 - **Riskitera:** Soporta cuantificación FAIR integrada con los datos de MAGERIT, permitiendo el enfoque híbrido descrito anteriormente.
 
-{{< cta type="bofu" text="Empieza tu PoC de 90 dias con Riskitera y automatiza el compliance desde el primer dia." label="Iniciar PoC" >}}
+{{< cta type="bofu" text="Empieza tu PoC de 90 días con Riskitera y automatiza el compliance desde el primer dia." label="Iniciar PoC" >}}
 
 ## Errores comunes al medir riesgos y como evitarlos
 
@@ -326,7 +326,7 @@ Independientemente de la metodología elegida, hay errores recurrentes que inval
 
 ### Error 1: Confundir amenaza con riesgo
 
-"El ransomware" no es un riesgo. Es una amenaza. El riesgo es "ransomware que cifra el ERP y paraliza la producción durante 5 días, con una perdida estimada de 800K EUR". Un riesgo siempre vincula una amenaza con un activo y un impacto. Sin ese vinculo, no se puede medir.
+"El ransomware" no es un riesgo. Es una amenaza. El riesgo es "ransomware que cifra el ERP y paraliza la producción durante 5 días, con una pérdida estimada de 800K EUR". Un riesgo siempre vincula una amenaza con un activo y un impacto. Sin ese vinculo, no se puede medir.
 
 ### Error 2: Matrices de riesgo con demasiados niveles
 
@@ -358,7 +358,7 @@ Estas capacidades ya existen en plataformas GRC modernas y representan la evoluc
 
 
 **Artículos relacionados:**
-- [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/04/analisis-riesgos-ciberseguridad-paso-a-paso/)
+- [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/04/análisis-riesgos-ciberseguridad-paso-a-paso/)
 
 ## Preguntas frecuentes
 
@@ -372,12 +372,12 @@ El primer análisis FAIR de un escenario específico puede llevar 4-8 horas, inc
 
 ### Puedo usar FAIR para cumplir con NIS2 o DORA?
 
-DORA (Digital Operational Resilience Act) exige explicitamente que las entidades financieras realicen análisis cuantitativos de riesgo operacional, lo que hace de FAIR una opción natural. NIS2 no prescribe una metodología específica, pero sus requisitos de gestión de riesgos son compatibles con FAIR. En ambos casos, FAIR por si sola no cubre todos los requisitos de gestión de riesgos: necesitaras complementarla con un proceso de gestión de riesgos más amplio (como el que proporciona MAGERIT o ISO 27005).
+DORA (Digital Operational Resilience Act) exige explícitamente que las entidades financieras realicen análisis cuantitativos de riesgo operacional, lo que hace de FAIR una opción natural. NIS2 no prescribe una metodología específica, pero sus requisitos de gestión de riesgos son compatibles con FAIR. En ambos casos, FAIR por si sola no cubre todos los requisitos de gestión de riesgos: necesitaras complementarla con un proceso de gestión de riesgos más amplio (como el que proporciona MAGERIT o ISO 27005).
 
 ### Qué datos necesito para empezar con FAIR si no tengo histórico de incidentes?
 
-No tener datos históricos propios no es un bloqueo para empezar con FAIR. Puedes usar: informes sectoriales de [INCIBE](https://www.incibe.es/) y [ENISA](https://www.enisa.europa.eu/) para frecuencias de amenazas, el informe anual de coste de brechas de IBM/Ponemon para magnitudes de perdida, datos de [MITRE ATT&CK](https://attack.mitre.org/) para técnicas y tacticas de atacantes, y benchmarks del FAIR Institute para calibrar estimaciones. Lo importante es documentar las fuentes y los supuestos: un análisis FAIR con datos imperfectos pero supuestos transparentes es más útil que un análisis cualitativo que oculta la incertidumbre.
+No tener datos históricos propios no es un bloqueo para empezar con FAIR. Puedes usar: informes sectoriales de [INCIBE](https://www.incibe.es/) y [ENISA](https://www.enisa.europa.eu/) para frecuencias de amenazas, el informe anual de coste de brechas de IBM/Ponemon para magnitudes de perdida, datos de [MITRE ATT&CK](https://attack.mitre.org/) para técnicas y tácticas de atacantes, y benchmarks del FAIR Institute para calibrar estimaciones. Lo importante es documentar las fuentes y los supuestos: un análisis FAIR con datos imperfectos pero supuestos transparentes es más útil que un análisis cualitativo que oculta la incertidumbre.
 
 ### Qué metodología recomendais como punto de partida?
 
-Si tu organización está sujeta al ENS, empieza por MAGERIT (no hay alternativa regulatoria). Si no, recomendamos empezar con un enfoque pragmatico: usa ISO 27005 o MAGERIT simplificada para construir el inventario de activos y el registro de riesgos, y aplica FAIR a los 5-10 riesgos más críticos para obtener cifras que justifiquen la inversión en seguridad. A medida que la madurez del equipo crezca, expande la cuantificación FAIR a más escenarios. El error más común es paralizarse eligiendo la metodología "perfecta" en lugar de empezar con cualquiera de las dos.
+Si tu organización está sujeta al ENS, empieza por MAGERIT (no hay alternativa regulatoria). Si no, recomendamos empezar con un enfoque pragmático: usa ISO 27005 o MAGERIT simplificada para construir el inventario de activos y el registro de riesgos, y aplica FAIR a los 5-10 riesgos más críticos para obtener cifras que justifiquen la inversión en seguridad. A medida que la madurez del equipo crezca, expande la cuantificación FAIR a más escenarios. El error más común es paralizarse eligiendo la metodología "perfecta" en lugar de empezar con cualquiera de las dos.
