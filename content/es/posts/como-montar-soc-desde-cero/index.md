@@ -24,7 +24,7 @@ Un Centro de Operaciones de Seguridad (SOC) es el núcleo de la capacidad de det
 - Error más común: empezar por la tecnología en lugar de por los procesos y casos de uso
 {{< /key-takeaways >}}
 
-## ¿Qué es un SOC y por que lo necesita tu empresa?
+## ¿Qué es un SOC y por qué lo necesita tu empresa?
 
 Un SOC (Security Operations Center) es una función centralizada que emplea personas, procesos y tecnología para monitorizar y mejorar continuamente la postura de seguridad de una organización, al tiempo que previene, detecta, analiza y responde a incidentes de ciberseguridad.
 
@@ -40,7 +40,7 @@ Las razones principales para contar con un SOC son:
 
 ## ¿Qué tipos de SOC existen: interno, externo o híbrido?
 
-Antes de disenar tu SOC, la primera decisión estratégica es elegir el modelo operativo.
+Antes de diseñar tu SOC, la primera decisión estratégica es elegir el modelo operativo.
 
 ### SOC interno (in-house)
 
@@ -100,7 +100,7 @@ El equipo de un SOC se organiza en tres niveles (tiers) con funciones, habilidad
 Los analistas N1 son la primera línea de defensa. Su función principal es monitorizar las alertas generadas por las herramientas de seguridad, realizar un triaje inicial y escalar las alertas que requieran investigación adicional.
 
 **Responsabilidades:**
-- Monitorización continúa de alertas del SIEM, EDR, IDS/IPS y otras fuentes.
+- Monitorización continua de alertas del SIEM, EDR, IDS/IPS y otras fuentes.
 - Triaje y clasificación inicial de alertas (verdadero positivo, falso positivo, requiere escalado).
 - Documentación básica de cada alerta en el sistema de ticketing.
 - Ejecución de playbooks predefinidos para incidentes rutinarios.
@@ -135,8 +135,8 @@ Los analistas N3 son los perfiles más experimentados del SOC. Se dedican a la c
 - Análisis avanzado de malware (ingeniería inversa).
 - Forense digital avanzado.
 - Desarrollo de inteligencia de amenazas aplicada.
-- Diseno de arquitectura de detección y optimización de reglas.
-- Asesoria técnica en incidentes complejos.
+- Diseño de arquitectura de detección y optimización de reglas.
+- Asesoría técnica en incidentes complejos.
 - Mentorización de analistas N1 y N2.
 
 **Perfil típico:** 5 o más años de experiencia en ciberseguridad. Especialización en forense, malware analysis o threat intelligence. Certificaciones avanzadas (GCFA, GREM, OSCP).
@@ -155,10 +155,10 @@ La tecnología es uno de los tres pilares del SOC, junto con las personas y los 
 
 ### SIEM (Security Information and Event Management)
 
-El SIEM es la herramienta central del SOC. Recopila logs de toda la infraestructura, los normaliza, los correlaciona y genera alertas. Para una guía detallada sobre [qué es un SIEM y como funciona](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), consulta nuestro artículo dedicado.
+El SIEM es la herramienta central del SOC. Recopila logs de toda la infraestructura, los normaliza, los correlaciona y genera alertas. Para una guía detallada sobre [qué es un SIEM y cómo funciona](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), consulta nuestro artículo dedicado.
 
 Opciones principales en el mercado:
-- **[Splunk](https://www.splunk.com/) Enterprise Security**: lider de mercado, potente pero costoso.
+- **[Splunk](https://www.splunk.com/) Enterprise Security**: líder de mercado, potente pero costoso.
 - **[Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel)**: solución cloud nativa, ideal para entornos Microsoft/Azure.
 - **IBM QRadar**: robusto, con buenas capacidades de correlación out-of-the-box.
 - **[Elastic Security](https://www.elastic.co/security)**: basado en Elasticsearch, con una opción open source.
@@ -193,7 +193,7 @@ Automatiza la respuesta a incidentes mediante playbooks predefinidos y orquesta 
 
 ## ¿Cuáles son los procesos fundamentales de un SOC?
 
-La tecnología sin procesos bien definidos es inutil. Estos son los procesos esenciales:
+La tecnología sin procesos bien definidos es inútil. Estos son los procesos esenciales:
 
 ### Gestión de alertas
 
@@ -227,7 +227,7 @@ Proceso proactivo de búsqueda de amenazas:
 
 Los casos de uso son las reglas de detección que alimentan el SIEM:
 1. Identificación de amenazas relevantes (basada en [MITRE ATT&CK](https://attack.mitre.org/)).
-2. Diseno de la lógica de detección.
+2. Diseño de la lógica de detección.
 3. Implementación en el SIEM.
 4. Prueba y validación.
 5. Operación y ajuste continuo.
@@ -272,7 +272,7 @@ Estos son los errores que vemos con más frecuencia en organizaciones que intent
 
 ### Empezar por la tecnología en lugar de por los procesos
 
-Muchas empresas invierten en herramientas caras antes de definir qué quieren detectar, como van a responder y quien va a operar el SOC. La tecnología debe servir a los procesos, no al reves.
+Muchas empresas invierten en herramientas caras antes de definir qué quieren detectar, cómo van a responder y quién va a operar el SOC. La tecnología debe servir a los procesos, no al revés.
 
 ### Subestimar las necesidades de personal
 
@@ -280,15 +280,15 @@ Un SOC 24/7 requiere más personal del que parece. Contar con solo dos o tres an
 
 ### No definir casos de uso antes de desplegar el SIEM
 
-Conectar todas las fuentes de logs al SIEM sin haber definido que se quiere detectar genera un volumen insostenible de alertas, la mayoría irrelevantes. Es mejor empezar con 20-30 casos de uso bien afinados y crecer gradualmente.
+Conectar todas las fuentes de logs al SIEM sin haber definido qué se quiere detectar genera un volumen insostenible de alertas, la mayoría irrelevantes. Es mejor empezar con 20-30 casos de uso bien afinados y crecer gradualmente.
 
 ### Ignorar la fatiga de alertas
 
-Si los analistas reciben cientos de alertas diarias, la mayoría falsos positivos, dejaran de prestar atención. El tuning continuo de las reglas de detección y la automatización mediante SOAR son esenciales.
+Si los analistas reciben cientos de alertas diarias, la mayoría falsos positivos, dejarán de prestar atención. El tuning continuo de las reglas de detección y la automatización mediante SOAR son esenciales.
 
 ### No medir la eficacia
 
-Sin métricas claras (MTTD, MTTR, tasa de falsos positivos), es imposible saber si el SOC esta funcionando o si es simplemente un centro de monitorización pasivo.
+Sin métricas claras (MTTD, MTTR, tasa de falsos positivos), es imposible saber si el SOC está funcionando o si es simplemente un centro de monitorización pasivo.
 
 ### Olvidar la formación continua
 
@@ -308,7 +308,7 @@ Para un SOC interno con capacidad operativa básica (cobertura 8x5, casos de uso
 
 ### ¿Puedo montar un SOC solo con herramientas open source?
 
-Tecnicamente si. Elastic Security como SIEM, [Wazuh](https://wazuh.com/) como EDR, Shuffle como SOAR, MISP como plataforma de inteligencia y TheHive como sistema de ticketing forman un stack funcional. El coste de licencias será mínimo, pero necesitaras personal con experiencia para desplegar, configurar, mantener y operar estas herramientas, lo que puede suponer un coste mayor en personal cualificado.
+Técnicamente sí. Elastic Security como SIEM, [Wazuh](https://wazuh.com/) como EDR, Shuffle como SOAR, MISP como plataforma de inteligencia y TheHive como sistema de ticketing forman un stack funcional. El coste de licencias será mínimo, pero necesitarás personal con experiencia para desplegar, configurar, mantener y operar estas herramientas, lo que puede suponer un coste mayor en personal cualificado.
 
 ### ¿Qué certificaciones debería tener el equipo del SOC?
 

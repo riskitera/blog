@@ -1,7 +1,7 @@
 ---
-title: "Cómo hacer un análisis de riesgos en ciberseguridad pasó a pasó"
+title: "Cómo hacer un análisis de riesgos en ciberseguridad paso a paso"
 image: "cover.png"
-description: "Guía pasó a pasó para realizar un análisis de riesgos en ciberseguridad: metodologías MAGERIT, FAIR, ISO 27005 y NIST RMF, inventario de activos, evaluación de amenazas, cálculo y tratamiento de riesgos."
+description: "Guía paso a paso para realizar un análisis de riesgos en ciberseguridad: metodologías MAGERIT, FAIR, ISO 27005 y NIST RMF, inventario de activos, evaluación de amenazas, cálculo y tratamiento de riesgos."
 slug: "análisis-riesgos-ciberseguridad-paso-a-paso"
 date: 2026-03-15
 lastmod: 2026-03-15
@@ -12,14 +12,14 @@ author: "David Moya"
 translationKey: "risk-analysis-guide"
 ---
 
-El análisis de riesgos es el proceso fundamental que permite a una organización identificar, evaluar y priorizar las amenazas a las que están expuestos sus activos de información. Sin un análisis de riesgos riguroso, las decisiones de seguridad se toman por intuición, lo que inevitablemente conduce a inversiones desproporcionadas en áreas de bajo riesgo y protección insuficiente donde realmente importa. Según datos del Informe de Amenazas de [ENISA](https://www.enisa.europa.eu/), más del 60 por ciento de las pymes europeas que sufrieron un ciberataque grave no habian realizado un análisis de riesgos formal previo. Esta guía detalla el proceso completo, las metodologías disponibles y los errores que conviene evitar.
+El análisis de riesgos es el proceso fundamental que permite a una organización identificar, evaluar y priorizar las amenazas a las que están expuestos sus activos de información. Sin un análisis de riesgos riguroso, las decisiones de seguridad se toman por intuición, lo que inevitablemente conduce a inversiones desproporcionadas en áreas de bajo riesgo y protección insuficiente donde realmente importa. Según datos del Informe de Amenazas de [ENISA](https://www.enisa.europa.eu/), más del 60 por ciento de las pymes europeas que sufrieron un ciberataque grave no habían realizado un análisis de riesgos formal previo. Esta guía detalla el proceso completo, las metodologías disponibles y los errores que conviene evitar.
 
 <!--more-->
 
 {{< key-takeaways >}}
 - El análisis de riesgos es obligatorio por ENS, RGPD, NIS2, DORA e ISO 27001
 - Principales metodologías: MAGERIT (referencia en España), FAIR (cuantitativa), ISO 27005 y NIST RMF
-- Proceso en 7 pasos: alcance, inventario de activos, amenazas, vulnerabilidades, calculo, priorización y tratamiento
+- Proceso en 7 pasos: alcance, inventario de activos, amenazas, vulnerabilidades, cálculo, priorización y tratamiento
 - Debe revisarse al menos anualmente y actualizarse ante cambios significativos
 - La herramienta PILAR del CCN facilita el análisis siguiendo MAGERIT
 {{< /key-takeaways >}}
@@ -28,7 +28,7 @@ El análisis de riesgos es el proceso fundamental que permite a una organizació
 
 El análisis de riesgos en ciberseguridad no es un ejercicio académico ni un requisito burocrático: es la base sobre la que se construye toda la estrategia de seguridad de una organización. Sus beneficios son concretos y medibles.
 
-En primer lugar, permite asignar recursos de forma racional. Los presupuestos de seguridad son siempre limitados, y el análisis de riesgos identifica donde cada euro invertido genera mayor reducción de riesgo. Sin esta información, las organizaciones tienden a invertir en tecnología de moda en lugar de abordar los riesgos reales.
+En primer lugar, permite asignar recursos de forma racional. Los presupuestos de seguridad son siempre limitados, y el análisis de riesgos identifica dónde cada euro invertido genera mayor reducción de riesgo. Sin esta información, las organizaciones tienden a invertir en tecnología de moda en lugar de abordar los riesgos reales.
 
 En segundo lugar, es un requisito normativo. Regulaciones como el Esquema Nacional de Seguridad (ENS), el [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679), la Directiva [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555), [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) y el estándar [ISO 27001](/es/posts/guia-iso-27001-startups/) exigen la realización de análisis de riesgos como requisito fundamental. El artículo 32 del RGPD establece explícitamente que las medidas de seguridad deben ser proporcionales al riesgo, lo que presupone que se ha realizado una evaluación formal.
 
@@ -42,17 +42,17 @@ Existen diversas metodologías reconocidas internacionalmente. La elección depe
 
 ### MAGERIT
 
-MAGERIT (Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información) es la metodología oficial del gobierno español, desarrollada por el Consejo Superior de Administración Electronica y mantenida por el [CCN](https://www.ccn-cert.cni.es/). Es la metodología de referencia para el cumplimiento del [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) y es ampliamente utilizada en el sector público español y en empresas que trabajan con la administración.
+MAGERIT (Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información) es la metodología oficial del gobierno español, desarrollada por el Consejo Superior de Administración Electrónica y mantenida por el [CCN](https://www.ccn-cert.cni.es/). Es la metodología de referencia para el cumplimiento del [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) y es ampliamente utilizada en el sector público español y en empresas que trabajan con la administración.
 
-MAGERIT se estructura en tres libros: el método (que describe el proceso), el catálogo de elementos (que proporciona inventarios tipificados de activos, amenazas y salvaguardas) y la guía de técnicas (que detalla técnicas complementarias como análisis de impacto o arboles de ataque).
+MAGERIT se estructura en tres libros: el método (que describe el proceso), el catálogo de elementos (que proporciona inventarios tipificados de activos, amenazas y salvaguardas) y la guía de técnicas (que detalla técnicas complementarias como análisis de impacto o árboles de ataque).
 
-Su enfoque es cualitativo-cuantitativo, permitiendo valorar activos y riesgos tanto en escalas numericas como en categorías. El CCN proporciona la herramienta [PILAR](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html) como soporte oficial para la realización de análisis MAGERIT, facilitando significativamente el proceso.
+Su enfoque es cualitativo-cuantitativo, permitiendo valorar activos y riesgos tanto en escalas numéricas como en categorías. El CCN proporciona la herramienta [PILAR](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html) como soporte oficial para la realización de análisis MAGERIT, facilitando significativamente el proceso.
 
 ### [FAIR](https://www.fairinstitute.org/) (Factor Analysis of Information Risk)
 
 FAIR es el único modelo cuantitativo estandarizado (por The Open Group) para medir el riesgo en términos financieros. A diferencia de las metodologías cualitativas que clasifican riesgos como "alto", "medio" o "bajo", FAIR calcula la pérdida esperada en unidades monetarias, utilizando distribuciones de probabilidad.
 
-El modelo descompone el riesgo en factores como la frecuencia de eventos de amenaza, la probabilidad de que el evento resulte en perdida, la magnitud de la pérdida primaria y la magnitud de las pérdidas secundarias (regulatorias, reputacionales). Esta descomposición permite identificar con precisión que factores contribuyen más al riesgo total.
+El modelo descompone el riesgo en factores como la frecuencia de eventos de amenaza, la probabilidad de que el evento resulte en pérdida, la magnitud de la pérdida primaria y la magnitud de las pérdidas secundarias (regulatorias, reputacionales). Esta descomposición permite identificar con precisión qué factores contribuyen más al riesgo total.
 
 FAIR es especialmente útil para comunicar riesgos a la dirección financiera y para priorizar inversiones con base en el retorno de reducción de riesgo. Sin embargo, requiere datos históricos que no siempre están disponibles, especialmente en organizaciones menos maduras.
 
@@ -74,7 +74,7 @@ Independientemente de la metodología elegida, el proceso de análisis de riesgo
 
 ### Paso 1: Definición del alcance y contexto
 
-Antes de comenzar el análisis, es imprescindible definir con claridad que se va a analizar. El alcance puede abarcar toda la organización, un departamento, un sistema de información concreto o un proceso de negocio.
+Antes de comenzar el análisis, es imprescindible definir con claridad qué se va a analizar. El alcance puede abarcar toda la organización, un departamento, un sistema de información concreto o un proceso de negocio.
 
 La definición del contexto incluye identificar los requisitos legales y normativos aplicables (ENS, RGPD, NIS2, ISO 27001), comprender los objetivos de negocio y la tolerancia al riesgo de la dirección, identificar las partes interesadas y sus expectativas y delimitar las fronteras tecnológicas y organizativas del análisis.
 
@@ -88,13 +88,13 @@ Los activos son los elementos que tienen valor para la organización y que, por 
 
 **Activos tecnológicos:** servidores, estaciones de trabajo, dispositivos de red, aplicaciones, servicios cloud, dispositivos móviles.
 
-**Activos de soporte:** instalaciones físicas, suministro electrico, climatización, enlaces de comunicaciones.
+**Activos de soporte:** instalaciones físicas, suministro eléctrico, climatización, enlaces de comunicaciones.
 
 **Activos humanos:** personal clave, conocimiento especializado no documentado.
 
-Cada activo debe valorarse en función de su importancia para la organización, considerando las dimensiones de confidencialidad, integridad y disponibilidad. Un servidor de base de datos con información de clientes tendrá una valoración alta en confidencialidad, mientras que un servidor web público priorizara la disponibilidad.
+Cada activo debe valorarse en función de su importancia para la organización, considerando las dimensiones de confidencialidad, integridad y disponibilidad. Un servidor de base de datos con información de clientes tendrá una valoración alta en confidencialidad, mientras que un servidor web público priorizará la disponibilidad.
 
-MAGERIT proporciona un catálogo completo de tipos de activos que facilita este proceso. La herramienta PILAR del CCN permite gestionar inventarios de activos siguiendo está clasificación.
+MAGERIT proporciona un catálogo completo de tipos de activos que facilita este proceso. La herramienta PILAR del CCN permite gestionar inventarios de activos siguiendo esta clasificación.
 
 ### Paso 3: Identificación de amenazas
 
@@ -102,9 +102,9 @@ Para cada activo o grupo de activos, se identifican las amenazas que podrían ca
 
 **Amenazas naturales:** inundaciones, terremotos, incendios naturales, tormentas eléctricas.
 
-**Amenazas industriales:** fallos electricos, fallos de climatización, fugas de agua, fallos de hardware.
+**Amenazas industriales:** fallos eléctricos, fallos de climatización, fugas de agua, fallos de hardware.
 
-**Amenazas humanas no intencionadas:** errores de configuración, eliminación accidental de datos, envio de información al destinatario equivocado.
+**Amenazas humanas no intencionadas:** errores de configuración, eliminación accidental de datos, envío de información al destinatario equivocado.
 
 **Amenazas humanas intencionadas:** ataques externos (ransomware, phishing, DDoS, APT), amenazas internas (empleados descontentos, espionaje industrial), ataques de ingeniería social.
 
@@ -122,13 +122,13 @@ Las vulnerabilidades son debilidades en los activos o en sus controles de seguri
 
 Cada vulnerabilidad se valora en términos de facilidad de explotación y grado de exposición del activo afectado.
 
-### Paso 5: Calculo del riesgo
+### Paso 5: Cálculo del riesgo
 
 El riesgo se calcula combinando la probabilidad de que una amenaza explote una vulnerabilidad con el impacto que tendría para la organización. La fórmula básica es:
 
 **Riesgo = Probabilidad x Impacto**
 
-En enfoques cualitativos, tanto la probabilidad como el impacto se expresan en escalas categoricas (muy bajo, bajo, medio, alto, muy alto) y se combinan mediante matrices de riesgo predefinidas. En enfoques cuantitativos como FAIR, ambos factores se expresan en valores numéricos (frecuencia anual y pérdida monetaria estimada).
+En enfoques cualitativos, tanto la probabilidad como el impacto se expresan en escalas categóricas (muy bajo, bajo, medio, alto, muy alto) y se combinan mediante matrices de riesgo predefinidas. En enfoques cuantitativos como FAIR, ambos factores se expresan en valores numéricos (frecuencia anual y pérdida monetaria estimada).
 
 La probabilidad se estima considerando la frecuencia histórica de la amenaza, la motivación y capacidad de los potenciales atacantes, la facilidad de explotación de las vulnerabilidades y la eficacia de los controles existentes.
 
@@ -136,7 +136,7 @@ El impacto se evalúa en múltiples dimensiones: impacto financiero directo (cos
 
 ### Paso 6: Evaluación y priorización
 
-Una vez calculado el riesgo de cada escenario, se evalúa comparandolo con los criterios de aceptación de riesgo definidos por la organización. Los riesgos que superan el umbral de aceptación requieren tratamiento; los que se sitúan por debajo pueden aceptarse formalmente.
+Una vez calculado el riesgo de cada escenario, se evalúa comparándolo con los criterios de aceptación de riesgo definidos por la organización. Los riesgos que superan el umbral de aceptación requieren tratamiento; los que se sitúan por debajo pueden aceptarse formalmente.
 
 La priorización ordena los riesgos de mayor a menor, permitiendo asignar recursos a los riesgos más críticos primero. Una representación visual mediante mapas de calor (heat maps) facilita la comunicación de los resultados a la dirección.
 
@@ -146,7 +146,7 @@ Para cada riesgo que supera el umbral de aceptación, se selecciona una estrateg
 
 **Mitigar:** implementar controles de seguridad que reduzcan la probabilidad o el impacto. Es la opción más común. Ejemplos: instalar un EDR, implementar MFA, realizar copias de seguridad cifradas.
 
-**Transferir:** trasladar el riesgo a un tercero, típicamente mediante un seguro cibernetico o la externalización del servicio a un proveedor especializado con SLAs definidos.
+**Transferir:** trasladar el riesgo a un tercero, típicamente mediante un seguro cibernético o la externalización del servicio a un proveedor especializado con SLAs definidos.
 
 **Evitar:** eliminar la actividad o el activo que genera el riesgo. Por ejemplo, dejar de almacenar datos que no son necesarios para el negocio.
 
@@ -205,7 +205,7 @@ El registro de riesgos debe revisarse al menos trimestralmente y actualizarse an
 
 Empezar con lo crítico. No intentes analizar todo a la vez. Identifica los 10 o 20 activos más críticos y comienza por ellos. Un análisis profundo de los activos esenciales aporta más valor que un análisis superficial de todo el inventario.
 
-Utilizar múltiples fuentes de información. No te límites a entrevistas: complementa con escaneos técnicos, revisión de incidentes históricos, informes del sector y estadísticas de organismos como INCIBE y ENISA.
+Utilizar múltiples fuentes de información. No te limites a entrevistas: complementa con escaneos técnicos, revisión de incidentes históricos, informes del sector y estadísticas de organismos como INCIBE y ENISA.
 
 Documentar las asunciones. Toda valoración de probabilidad e impacto implica asunciones. Documentarlas permite revisar y actualizar el análisis cuando la información disponible cambia.
 
@@ -213,7 +213,7 @@ Vincular riesgos con objetivos de negocio. Los riesgos que amenazan directamente
 
 Automatizar donde sea posible. El inventario de activos tecnológicos, el escaneo de vulnerabilidades y la monitorización de controles pueden automatizarse para mantener el análisis actualizado de forma continua.
 
-{{< cta type="mofu" text="Simplifica tu proximo análisis de riesgos con una plataforma que integra MAGERIT, FAIR y registro de riesgos automatizado." >}}
+{{< cta type="mofu" text="Simplifica tu próximo análisis de riesgos con una plataforma que integra MAGERIT, FAIR y registro de riesgos automatizado." >}}
 
 ## Lo que más preguntan los equipos de seguridad
 

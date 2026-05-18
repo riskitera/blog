@@ -1,5 +1,5 @@
 ---
-title: "Ciberseguridad en banca: cómo cumplir DORA pasó a pasó"
+title: "Ciberseguridad en banca: cómo cumplir DORA paso a paso"
 description: "Guía práctica para entidades bancarias y fintech sobre cómo cumplir el reglamento DORA: requisitos técnicos, gestión de riesgos TIC, pruebas de resiliencia y plazos de implementación."
 slug: "ciberseguridad-banca-dora"
 date: 2026-05-19
@@ -78,7 +78,7 @@ DORA establece dos niveles de pruebas:
 3. Fase de Blue Team: se evalúa la capacidad de detección y respuesta del equipo interno
 4. Informe y remediación: documentación de hallazgos, plan de remediación con plazos y seguimiento
 
-Los criterios para determinar si una entidad es "significativa" incluyen: tamaño (activos totales), interconexion con el sistema financiero, complejidad de la infraestructura TIC y si presta servicios críticos a otras entidades.
+Los criterios para determinar si una entidad es "significativa" incluyen: tamaño (activos totales), interconexión con el sistema financiero, complejidad de la infraestructura TIC y si presta servicios críticos a otras entidades.
 
 Las pruebas TLPT deben ser ejecutadas por proveedores externos certificados. Los resultados son confidenciales pero deben compartirse con la autoridad supervisora.
 
@@ -86,11 +86,11 @@ Las pruebas TLPT deben ser ejecutadas por proveedores externos certificados. Los
 
 La gestión de terceros es uno de los aspectos más exigentes de DORA para los bancos, especialmente por la dependencia creciente de servicios cloud, fintech y proveedores de software.
 
-**Clasificación de proveedores.** Cada entidad debe clasificar sus proveedores TIC según la criticidad de la función que soportan. Un proveedor es crítico si su fallo, degradación o interrupción pondria en riesgo la continuidad de funciones críticas o importantes del banco.
+**Clasificación de proveedores.** Cada entidad debe clasificar sus proveedores TIC según la criticidad de la función que soportan. Un proveedor es crítico si su fallo, degradación o interrupción pondría en riesgo la continuidad de funciones críticas o importantes del banco.
 
 **Requisitos contractuales mínimos.** DORA define cláusulas obligatorias en los contratos con proveedores TIC:
 - Descripción completa de servicios con SLAs medibles
-- Localización de datos y procesamiento (país y region)
+- Localización de datos y procesamiento (país y región)
 - Disponibilidad, autenticidad, integridad y confidencialidad de datos
 - Derecho de acceso, inspección y auditoría por parte de la entidad y del regulador
 - Notificación de incidentes que afecten a los servicios prestados
@@ -98,7 +98,7 @@ La gestión de terceros es uno de los aspectos más exigentes de DORA para los b
 - Estrategia de salida con periodos de transición adecuados
 - Obligación de cooperar en caso de resolución de la entidad financiera
 
-**Registro de proveedores.** Las entidades deben mantener un registro actualizado de todos los contratos con proveedores TIC y reportarlo anualmente a su autoridad supervisora. Las ESAs mantendran un registro centralizado europeo.
+**Registro de proveedores.** Las entidades deben mantener un registro actualizado de todos los contratos con proveedores TIC y reportarlo anualmente a su autoridad supervisora. Las ESAs mantendrán un registro centralizado europeo.
 
 **Riesgo de concentración.** DORA introduce el concepto de proveedor crítico a nivel europeo. Si un proveedor TIC (por ejemplo, un gran hiperescalar cloud) es designado como crítico por las ESAs, queda sujeto a supervisión directa europea con capacidad sancionadora.
 
@@ -128,7 +128,7 @@ DORA delega la definición del régimen sancionador en los Estados miembros, per
 - Exigir medidas correctivas con plazos vinculantes
 - Imponer sanciones administrativas pecuniarias
 
-En España, el régimen sancionador se integra en la Ley del Mercado de Valores, la Ley de Ordenación, Supervisión y Solvencia de Entidades de Credito y normativa sectorial aplicable. Las sanciones pueden incluir:
+En España, el régimen sancionador se integra en la Ley del Mercado de Valores, la Ley de Ordenación, Supervisión y Solvencia de Entidades de Crédito y normativa sectorial aplicable. Las sanciones pueden incluir:
 
 **Para entidades financieras:**
 - Multas de hasta el 1% del volumen de negocios medio diario del año anterior, impuestas de forma diaria hasta que se corrija el incumplimiento

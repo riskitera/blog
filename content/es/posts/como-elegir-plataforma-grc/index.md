@@ -17,7 +17,7 @@ Guía de compra para CISOs y compliance managers: criterios para elegir una plat
 
 <!--more-->
 
-## ¿Qué es una plataforma GRC y para que sirve?
+## ¿Qué es una plataforma GRC y para qué sirve?
 
 Una plataforma GRC (Governance, Risk and Compliance) es un software que centraliza la gestión del gobierno corporativo, los riesgos y el cumplimiento normativo en una única herramienta. En el contexto de ciberseguridad, una plataforma GRC permite gestionar el ciclo completo del compliance: desde el inventario de controles y el análisis de riesgos hasta la recopilación de evidencias, la planificación de auditorías y el reporting a dirección.
 
@@ -29,7 +29,7 @@ El valor real de una plataforma GRC no está en almacenar información, sino en 
 
 **Automatización de evidencias.** En lugar de pedir manualmente capturas de pantalla y configuraciones antes de cada auditoría, la plataforma se conecta a tus herramientas de seguridad (SIEM, EDR, IAM, vulnerability scanner) y recopila evidencias automáticamente y en continuo.
 
-**Visibilidad en tiempo real.** Dashboards que muestran el estado de cumplimiento por marco, por control y por area, con alertas cuando un control se degrada. El CISO puede responder en cualquier momento a la pregunta "como estamos de compliance" sin necesidad de preparar un informe ad hoc.
+**Visibilidad en tiempo real.** Dashboards que muestran el estado de cumplimiento por marco, por control y por area, con alertas cuando un control se degrada. El CISO puede responder en cualquier momento a la pregunta "cómo estamos de compliance" sin necesidad de preparar un informe ad hoc.
 
 ## ¿Qué funcionalidades debe tener una plataforma GRC?
 
@@ -71,15 +71,15 @@ Las funcionalidades se organizan en cinco bloques. No todas las plataformas cubr
 
 Más allá de las funcionalidades, estos criterios determinan si una plataforma GRC encaja en tu organización:
 
-**Cobertura de marcos regulatorios.** Verifica que los marcos que necesitas esten precargados y actualizados. Una plataforma con ISO 27001 y SOC 2 pero sin ENS ni NIS2 no sirve para una empresa española regulada. Pregunta con que frecuencia actualizan los marcos cuando cambia la regulación.
+**Cobertura de marcos regulatorios.** Verifica que los marcos que necesitas estén precargados y actualizados. Una plataforma con ISO 27001 y SOC 2 pero sin ENS ni NIS2 no sirve para una empresa española regulada. Pregunta con qué frecuencia actualizan los marcos cuando cambia la regulación.
 
-**Integraciónes técnicas.** La plataforma debe conectarse con tus herramientas existentes: SIEM (Splunk, Elastic, Wazuh), cloud (AWS, Azure, GCP), endpoint (CrowdStrike, SentinelOne), IAM (Okta, Azure AD), ticketing (Jira, ServiceNow). Sin integraciones, la recopilación de evidencias sigue siendo manual.
+**Integraciones técnicas.** La plataforma debe conectarse con tus herramientas existentes: SIEM (Splunk, Elastic, Wazuh), cloud (AWS, Azure, GCP), endpoint (CrowdStrike, SentinelOne), IAM (Okta, Azure AD), ticketing (Jira, ServiceNow). Sin integraciones, la recopilación de evidencias sigue siendo manual.
 
 **Soberania de datos.** Para organizaciones sujetas a ENS Alto o que manejan datos sensibles: ¿dónde se alojan los datos de la plataforma? Si la plataforma es SaaS americana con datos en us-east-1, puede ser un problema regulatorio. Busca opciones con hosting en la UE o on-premise.
 
 **Escalabilidad.** La plataforma debe crecer con tu organización. Si hoy tienes 50 controles y mañana necesitas 300, si hoy tienes un marco y mañana tres, el coste y el rendimiento deben escalar razonablemente.
 
-**Usabilidad.** Una plataforma GRC la usan muchas personas: el CISO, los responsables de area, los auditores, los técnicos que aportan evidencias. Si la interfaz es compleja, la adopción fracasa y vuelves a las hojas de calculo. Pide un trial y pruebala con usuarios reales de tu equipo.
+**Usabilidad.** Una plataforma GRC la usan muchas personas: el CISO, los responsables de area, los auditores, los técnicos que aportan evidencias. Si la interfaz es compleja, la adopción fracasa y vuelves a las hojas de cálculo. Pide un trial y pruébala con usuarios reales de tu equipo.
 
 **Soporte y comunidad.** Soporte en español (o al menos en tu idioma de trabajo), tiempo de respuesta, documentación, comunidad de usuarios. Para plataformas open source: actividad del repositorio, frecuencia de releases, tamaño de la comunidad.
 
@@ -89,13 +89,13 @@ Más allá de las funcionalidades, estos criterios determinan si una plataforma 
 
 ## ¿Qué preguntas hacer al proveedor de GRC?
 
-Antes de firmar, haz estas preguntas. Las respuestas te diran más que cualquier demo comercial:
+Antes de firmar, haz estas preguntas. Las respuestas te dirán más que cualquier demo comercial:
 
 **Sobre funcionalidad:**
-1. ¿Qué marcos normativos teneis precargados? ¿Con qué frecuencia los actualizais cuando cambia la regulación?
+1. ¿Qué marcos normativos tenéis precargados? ¿Con qué frecuencia los actualizáis cuando cambia la regulación?
 2. ¿Cómo funciona el mapeo cruzado de controles? ¿Es automático o manual?
-3.¿Qué integraciones técnicas teneis disponibles? (pide la lista completa, no solo los logos del marketing)
-4. ¿Cómo se recopilan las evidencias automáticamente? Necesito instalar agentes?
+3. ¿Qué integraciones técnicas tenéis disponibles? (pide la lista completa, no solo los logos del marketing)
+4. ¿Cómo se recopilan las evidencias automáticamente? ¿Necesito instalar agentes?
 5. ¿Puedo crear marcos custom para políticas internas o requisitos de clientes?
 
 **Sobre datos y seguridad:**
@@ -108,18 +108,18 @@ Antes de firmar, haz estas preguntas. Las respuestas te diran más que cualquier
 **Sobre costes:**
 11. ¿Cuál es el modelo de pricing? Por usuario, por marco, por control, flat fee?
 12. ¿Hay costes ocultos por integraciones, módulos adicionales o soporte premium?
-13. ¿Cuánto cuesta escalar si anado un marco nuevo o duplico el número de usuarios?
+13. ¿Cuánto cuesta escalar si añado un marco nuevo o duplico el número de usuarios?
 14. ¿Hay compromiso mínimo de permanencia?
 
 **Sobre implementación:**
-15. ¿Cuánto dura la implementación típica? Qué recursos necesito de mi equipo?
-16. Incluye migración de datos desde mi sistema actual (aunque sean hojas de Excel)?
-17. ¿Qué formación ofreceis? Es presencial, online, bajo demanda?
-18. Tengo un account manager dedicado o es soporte generico?
+15. ¿Cuánto dura la implementación típica? ¿Qué recursos necesito de mi equipo?
+16. ¿Incluye migración de datos desde mi sistema actual (aunque sean hojas de Excel)? 
+17. ¿Qué formación ofrecéis? ¿Es presencial, online, bajo demanda?
+18. ¿Tengo un account manager dedicado o es soporte genérico?
 
 **Sobre referencias:**
 19. ¿Puedo hablar con un cliente de mi sector y tamaño similar?
-20. Que tasa de renovación teneis? (si no te la dan, es mala señal)
+20. ¿Qué tasa de renovación tenéis? (si no te la dan, es mala señal)
 
 ## ¿Cuánto cuesta una plataforma GRC?
 
@@ -160,13 +160,13 @@ El mercado GRC tiene un rango de precios amplio. Estos son los rangos típicos e
 La decisión depende de tus requisitos regulatorios, capacidad técnica y presupuesto:
 
 **SaaS (la mayoría del mercado).**
-- Ventajas: implementación rápida (semanas, no meses), actualizaciónes automáticas, sin infraestructura que mantener, escalable.
+- Ventajas: implementación rápida (semanas, no meses), actualizaciones automáticas, sin infraestructura que mantener, escalable.
 - Desventajas: datos en infraestructura del proveedor (aunque sea EU), dependencia del vendor, menos personalizable.
 - Recomendado para: empresas que no manejan datos clasificados, que quieren time-to-value rápido y que no tienen equipo de infraestructura dedicado.
 
 **On-premise / self-hosted.**
 - Ventajas: control total sobre los datos, cumple cualquier requisito de soberanía, personalizable sin límites.
-- Desventajas: coste de infraestructura y mantenimiento, actualizaciónes manuales, requiere equipo técnico.
+- Desventajas: coste de infraestructura y mantenimiento, actualizaciones manuales, requiere equipo técnico.
 - Recomendado para: organizaciones con requisitos ENS Alto o datos clasificados, sector defensa, infraestructuras críticas.
 
 **Modelo híbrido.**
@@ -177,19 +177,19 @@ La decisión depende de tus requisitos regulatorios, capacidad técnica y presup
 
 ## ¿Cuáles son los errores más comunes al evaluar herramientas GRC?
 
-**1. Comprar la plataforma antes de definir el programa de compliance.** La herramienta es un acelerador, no un sustituto de la estrategia. Si no tienes claro que marcos te aplican, que controles necesitas y quien es responsable de que, la plataforma no te va a dar esas respuestas. Define primero, compra después.
+**1. Comprar la plataforma antes de definir el programa de compliance.** La herramienta es un acelerador, no un sustituto de la estrategia. Si no tienes claro qué marcos te aplican, qué controles necesitas y quién es responsable de qué, la plataforma no te va a dar esas respuestas. Define primero, compra después.
 
 **2. Evaluar solo con el equipo de seguridad.** Una plataforma GRC la usan muchas personas: responsables de area que aportan evidencias, auditores internos que revisan, dirección que consulta dashboards, IT que conecta integraciones. Si solo evalúas con el CISO, puedes elegir una herramienta potente pero que nadie más sabe (ni quiere) usar.
 
 **3. Sobrevalorar la cantidad de marcos precargados.** Un vendedor te dira que tiene "200+ frameworks". Lo relevante es si tiene los que tu necesitas (ENS, NIS2, DORA, ISO 27001, RGPD) actualizados y con mapeo cruzado real. 200 marcos que no usas no aportan valor.
 
-**4. Ignorar las integraciones técnicas.** Si la plataforma no se conecta con tu SIEM, tu cloud y tu IAM, la recopilación de evidencias sigue siendo manual. Y si es manual, tu equipo dejara de hacerlo en cuanto tenga trabajo operativo urgente. Antes de evaluar, lista tus herramientas de seguridad críticas y verifica las integraciones.
+**4. Ignorar las integraciones técnicas.** Si la plataforma no se conecta con tu SIEM, tu cloud y tu IAM, la recopilación de evidencias sigue siendo manual. Y si es manual, tu equipo dejará de hacerlo en cuanto tenga trabajo operativo urgente. Antes de evaluar, lista tus herramientas de seguridad críticas y verifica las integraciones.
 
-**5. No calcular el TCO.** El precio anual de la licencia es tentador pero enganoso. Suma: coste de implementación, formación, horas de tu equipo para la adopción inicial (3-6 meses de dedicación parcial), integraciones custom, y el coste de migrar si en 2 años decides cambiar. Pide al vendor un TCO a 3 años.
+**5. No calcular el TCO.** El precio anual de la licencia es tentador pero engañoso. Suma: coste de implementación, formación, horas de tu equipo para la adopción inicial (3-6 meses de dedicación parcial), integraciones custom, y el coste de migrar si en 2 años decides cambiar. Pide al vendor un TCO a 3 años.
 
 **6. Elegir la plataforma más completa en lugar de la más adecuada.** Una plataforma enterprise con 500 funcionalidades puede ser un avion de combate cuando necesitas un utilitario. Si eres una empresa de 200 empleados con ISO 27001 y RGPD, no necesitas ServiceNow GRC. Elige la complejidad justa para tus necesidades actuales y a 2 años vista.
 
-**7. No hacer un PoC con datos reales.** Las demos comerciales siempre funcionan. Pide un periodo de prueba (mínimo 2 semanas, idealmente 30 días) y carga tus controles, tus evidencias y tus usuarios reales. Solo así sabras si la plataforma encaja en tu operativa diaria.
+**7. No hacer un PoC con datos reales.** Las demos comerciales siempre funcionan. Pide un periodo de prueba (mínimo 2 semanas, idealmente 30 días) y carga tus controles, tus evidencias y tus usuarios reales. Solo así sabrás si la plataforma encaja en tu operativa diaria.
 
 
 {{< cta type="bofu" text="Empieza tu PoC de 90 días con Riskitera y automatiza el compliance desde el primer dia." label="Iniciar PoC" >}}
@@ -201,14 +201,14 @@ La decisión depende de tus requisitos regulatorios, capacidad técnica y presup
 
 ## Dudas habituales
 
-**Puedo gestionar el compliance sin una plataforma GRC?**
-Sí, si tienes un solo marco normativo y un equipo pequeño. Con hojas de Excel bien estructuradas, un sistema de carpetas compartidas y disciplina puedes gestionar ISO 27001 o ENS para una organización pequeña. El problema aparece cuando escalas: múltiples marcos, decenas de controles, auditorías frecuentes. A partir de 2-3 marcos simultaneos, la plataforma se paga sola en ahorro de tiempo.
+**¿Puedo gestionar el compliance sin una plataforma GRC?**
+Sí, si tienes un solo marco normativo y un equipo pequeño. Con hojas de Excel bien estructuradas, un sistema de carpetas compartidas y disciplina puedes gestionar ISO 27001 o ENS para una organización pequeña. El problema aparece cuando escalas: múltiples marcos, decenas de controles, auditorías frecuentes. A partir de 2-3 marcos simultáneos, la plataforma se paga sola en ahorro de tiempo.
 
 **¿Cuánto tarda la implementación de una plataforma GRC?**
 Para plataformas SaaS mid-market: 4 a 12 semanas incluyendo configuración, carga de datos, integraciones básicas y formación. Para plataformas enterprise: 3 a 9 meses. El factor limitante suele ser la disponibilidad del equipo interno, no la tecnología. Planifica dedicación parcial de al menos 2-3 personas durante la implementación.
 
 **¿Qué plataforma GRC es mejor para empresas españolas?**
-No hay una respuesta universal. Las plataformas americanas (Vanta, Drata) son fuertes en SOC 2 e ISO 27001 pero debiles en ENS y NIS2. Las europeas (OneTrust GRC, ERAMBA) suelen tener mejor cobertura regulatoria europea. La clave es verificar: tiene ENS precargado y actualizado a RD 311/2022? Tiene NIS2? Soporta MAGERIT como metodología de riesgos? Hosting en la UE?
+No hay una respuesta universal. Las plataformas americanas (Vanta, Drata) son fuertes en SOC 2 e ISO 27001 pero débiles en ENS y NIS2. Las europeas (OneTrust GRC, ERAMBA) suelen tener mejor cobertura regulatoria europea. La clave es verificar: tiene ENS precargado y actualizado a RD 311/2022? Tiene NIS2? Soporta MAGERIT como metodología de riesgos? Hosting en la UE?
 
-**Una plataforma GRC sustituye al consultor?**
-No en la primera fase. El consultor aporta conocimiento regulatorio, experiencia en auditorías y capacidad de interpretar requisitos ambiguos. La plataforma aporta eficiencia operativa y automatización. Lo ideal: el consultor te ayuda a disenar el programa y preparar la primera auditoría, la plataforma lo operativiza y mantiene. A medio plazo, puedes reducir la dependencia del consultor a revisiones puntuales.
+**¿Una plataforma GRC sustituye al consultor?**
+No en la primera fase. El consultor aporta conocimiento regulatorio, experiencia en auditorías y capacidad de interpretar requisitos ambiguos. La plataforma aporta eficiencia operativa y automatización. Lo ideal: el consultor te ayuda a diseñar el programa y preparar la primera auditoría, la plataforma lo operativiza y mantiene. A medio plazo, puedes reducir la dependencia del consultor a revisiones puntuales.

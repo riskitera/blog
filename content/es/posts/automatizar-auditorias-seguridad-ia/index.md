@@ -1,6 +1,6 @@
 ---
 title: "Automatización de auditorías con IA: del papel al triage en minutos"
-description: "Como automatizar auditorías de seguridad informática con inteligencia artificial: recopilación de evidencias, análisis de gaps, generación de informes y reducción de costes operativos."
+description: "Cómo automatizar auditorías de seguridad informática con inteligencia artificial: recopilación de evidencias, análisis de gaps, generación de informes y reducción de costes operativos."
 slug: "automatizar-auditorias-seguridad-ia"
 date: 2026-05-14
 publishDate: 2026-05-14
@@ -31,18 +31,18 @@ El modelo tradicional de auditoría tiene problemas estructurales que la automat
 
 ## ¿Qué partes de una auditoría se pueden automatizar con IA?
 
-No todas las fases de una auditoría son automatizables. El juicio experto sigue siendo necesario para evaluar riesgos contextuales, validar excepciones y emitir opiniones profesionales. Pero las tareas mecanicas si:
+No todas las fases de una auditoría son automatizables. El juicio experto sigue siendo necesario para evaluar riesgos contextuales, validar excepciones y emitir opiniones profesionales. Pero las tareas mecánicas sí:
 
-| Fase | Automatizable | Como |
+| Fase | Automatizable | Cómo |
 |------|--------------|------|
-| Inventario de activos | Si | Escaneo automático de red, integración con CMDB |
+| Inventario de activos | Sí | Escaneo automático de red, integración con CMDB |
 | Recopilación de evidencias | Si (80%) | Agentes que consultan APIs de sistemas, extraen configuraciones |
-| Verificación de configuraciones | Si | Comparación automática con baselines (CIS Benchmarks, CCN-STIC) |
-| Análisis de gaps | Si | LLM compara documentación con requisitos normativos |
+| Verificación de configuraciones | Sí | Comparación automática con baselines (CIS Benchmarks, CCN-STIC) |
+| Análisis de gaps | Sí | LLM compara documentación con requisitos normativos |
 | Evaluación de riesgos | Parcial | IA sugiere, auditor válida |
 | Generación de informes | Si (borrador) | LLM genera informe a partir de hallazgos estructurados |
 | Recomendaciones | Parcial | IA sugiere basándose en mejores prácticas, auditor prioriza |
-| Opinion profesional | No | Requiere juicio experto humano |
+| Opinión profesional | No | Requiere juicio experto humano |
 
 ## ¿Cómo funciona la recopilación automática de evidencias?
 
@@ -89,10 +89,10 @@ El ahorro más significativo no es el económico directo, sino la capacidad de h
 El mercado ofrece soluciones en diferentes categorías:
 
 **Plataformas GRC con IA integrada:**
-- Riskitera: mapeo automático de controles ENS/NIS2/ISO 27001, recopilación de evidencias, generación de informes. Soberania de datos en infraestructura europea.
+- Riskitera: mapeo automático de controles ENS/NIS2/ISO 27001, recopilación de evidencias, generación de informes. Soberanía de datos en infraestructura europea.
 - Drata: enfocada en SOC 2 y ISO 27001, fuerte en integraciones cloud.
 - Vanta: similar a Drata, con automatización de evidencias para startups.
-- ServiceNow GRC: enterprise, con modulo de IA para análisis de riesgos.
+- ServiceNow GRC: enterprise, con módulo de IA para análisis de riesgos.
 
 **Herramientas de compliance as code:**
 - OpenSCAP: verificación automática de configuraciones contra CIS Benchmarks.
@@ -107,7 +107,7 @@ El mercado ofrece soluciones en diferentes categorías:
 
 ## ¿Cómo implementar la automatización paso a paso?
 
-1. **Inventaria tus obligaciones de auditoría**: que marcos normativos debes cumplir (ENS, ISO 27001, NIS2, DORA) y con que periodicidad
+1. **Inventaria tus obligaciones de auditoría**: qué marcos normativos debes cumplir (ENS, ISO 27001, NIS2, DORA) y con qué periodicidad
 2. **Mapea los controles críticos**: identifica los 20-30 controles que generan más trabajo de evidencias y son más propensos a desviaciones
 3. **Conecta las fuentes de datos**: integra la herramienta GRC con Active Directory, SIEM, firewall, cloud y endpoint protection
 4. **Automatiza la recopilación de evidencias**: configura agentes para recopilar evidencias automáticamente, al menos semanalmente
@@ -128,7 +128,7 @@ La implementación típica lleva 4-8 semanas para los controles críticos y 3-6 
 
 ### ¿La IA puede sustituir al auditor externo?
 
-No. La IA automatiza la preparación y recopilación de evidencias, pero la opinion profesional del auditor sigue siendo necesaria para certificaciones ENS e ISO 27001. Lo que cambia es que el auditor recibe un dossier de evidencias organizado y verificado automáticamente, lo que reduce el tiempo de auditoría in situ y el coste de la consultoría.
+No. La IA automatiza la preparación y recopilación de evidencias, pero la opinión profesional del auditor sigue siendo necesaria para certificaciones ENS e ISO 27001. Lo que cambia es que el auditor recibe un dossier de evidencias organizado y verificado automáticamente, lo que reduce el tiempo de auditoría in situ y el coste de la consultoría.
 
 ### ¿Es válida una evidencia recopilada automáticamente?
 
@@ -140,4 +140,4 @@ Las soluciones varían desde herramientas open source gratuitas (OpenSCAP, Prowl
 
 ### ¿Se puede automatizar la auditoría ENS?
 
-Parcialmente. La recopilación de evidencias, la verificación de configuraciones y la generación de informes se automatizan. La categorización de sistemas, la evaluación de riesgos contextuales y la validación de excepciones requieren juicio humano. El CCN esta desarrollando herramientas (ANA) que automatizan parte del análisis de cumplimiento ENS, disponibles gratuitamente para administraciones públicas.
+Parcialmente. La recopilación de evidencias, la verificación de configuraciones y la generación de informes se automatizan. La categorización de sistemas, la evaluación de riesgos contextuales y la validación de excepciones requieren juicio humano. El CCN está desarrollando herramientas (ANA) que automatizan parte del análisis de cumplimiento ENS, disponibles gratuitamente para administraciones públicas.

@@ -13,7 +13,7 @@ keyword: "incidentes ciberseguridad Espana"
 funnel: "tofu"
 ---
 
-Los 10 incidentes de ciberseguridad más importantes en España: ataques a hospitales, administraciones públicas, empresas críticas. Que pasó, como se resolvió y que lecciones dejó cada caso.
+Los 10 incidentes de ciberseguridad más importantes en España: ataques a hospitales, administraciones públicas, empresas críticas. Qué pasó, cómo se resolvió y qué lecciones dejó cada caso.
 
 <!--more-->
 
@@ -25,45 +25,45 @@ Los 10 incidentes de ciberseguridad más importantes en España: ataques a hospi
 - Los informes anuales de [INCIBE](https://www.incibe.es/) y [CCN-CERT](https://www.ccn-cert.cni.es/) documentan un crecimiento sostenido de incidentes críticos año tras año
 {{< /key-takeaways >}}
 
-## ¿Por qué España es un objetivo frecuente de ciberataques
+## ¿Por qué España es un objetivo frecuente de ciberataques?
 
-España ocupa posiciones destacadas en los rankings europeos de incidentes de ciberseguridad. Según el *Balance de Ciberseguridad* de [INCIBE](https://www.incibe.es/incibe/sala-de-prensa/incibe-gestiono-mas-de-83000-incidentes-de-ciberseguridad-en-2023), en 2023 se gestionaron más de 83.000 incidentes, un 24% más que el año anterior, y la tendencia se ha mantenido al alza en 2024 con más de 97.000 incidentes gestionados. El [CCN-CERT](https://www.ccn-cert.cni.es/) reporto cifras similares en el ámbito de la Administración Pública: su *Informe de Ciberamenazas y Tendencias (IA-13/24)* documenta más de 100.000 notificaciones procesadas y califica el nivel de ciberamenaza contra España como "muy alto", con especial foco en ransomware dirigido y ciberespionaje patrocinado por estados.
+España ocupa posiciones destacadas en los rankings europeos de incidentes de ciberseguridad. Según el *Balance de Ciberseguridad* de [INCIBE](https://www.incibe.es/incibe/sala-de-prensa/incibe-gestiono-mas-de-83000-incidentes-de-ciberseguridad-en-2023), en 2023 se gestionaron más de 83.000 incidentes, un 24% más que el año anterior, y la tendencia se ha mantenido al alza en 2024 con más de 97.000 incidentes gestionados. El [CCN-CERT](https://www.ccn-cert.cni.es/) reportó cifras similares en el ámbito de la Administración Pública: su *Informe de Ciberamenazas y Tendencias (IA-13/24)* documenta más de 100.000 notificaciones procesadas y califica el nivel de ciberamenaza contra España como "muy alto", con especial foco en ransomware dirigido y ciberespionaje patrocinado por estados.
 
-Varios factores explican esta exposición. El tejido empresarial español está formado mayoritariamente por pymes con presupuestos limitados en seguridad. La digitalización acelerada tras la pandemia amplio la superficie de ataque. Y la dependencia de infraestructura legacy en administraciones públicas crea brechas que los atacantes explotan de forma sistemática.
+Varios factores explican esta exposición. El tejido empresarial español está formado mayoritariamente por pymes con presupuestos limitados en seguridad. La digitalización acelerada tras la pandemia amplió la superficie de ataque. Y la dependencia de infraestructura legacy en administraciones públicas crea brechas que los atacantes explotan de forma sistemática.
 
-Lo que sigue es un análisis detallado de los 10 incidentes más graves que han sacudido al país. No es un ranking arbitrario: cada caso se selecciono por su impacto real en ciudadanos, por la dimensión de la organización afectada o por las lecciones que dejó para el sector.
+Lo que sigue es un análisis detallado de los 10 incidentes más graves que han sacudido al país. No es un ranking arbitrario: cada caso se seleccionó por su impacto real en ciudadanos, por la dimensión de la organización afectada o por las lecciones que dejó para el sector.
 
-## 1. Everis: el ataque de Ryuk que paralizo una consultora global (noviembre 2019)
+## 1. Everis: el ataque de Ryuk que paralizó una consultora global (noviembre 2019)
 
 ### ¿Qué pasó
 
-El 4 de noviembre de 2019, Everis (ahora NTT Data) sufrio un ataque de ransomware que obligo a desconectar todos sus sistemas internos. Los empleados recibieron instrucciones por megafonia de apagar los equipos inmediatamente. El ransomware identificado fue una variante de **Ryuk**, desplegada tras un acceso inicial que los analistas vincularon a la cadena Emotet/TrickBot.
+El 4 de noviembre de 2019, Everis (ahora NTT Data) sufrió un ataque de ransomware que obligó a desconectar todos sus sistemas internos. Los empleados recibieron instrucciones por megafonía de apagar los equipos inmediatamente. El ransomware identificado fue una variante de **Ryuk**, desplegada tras un acceso inicial que los analistas vincularon a la cadena Emotet/TrickBot.
 
 ### Timeline y alcance
 
-- **Dia 0 (4 nov):** Detección del cifrado masivo. Desconexion total de la red corporativa.
+- **Dia 0 (4 nov):** Detección del cifrado masivo. Desconexión total de la red corporativa.
 - **Dia 1-3:** Evaluación del daño. Miles de equipos afectados en oficinas de España y otros países.
 - **Semana 1-2:** Restauración progresiva desde backups. Algunos proyectos con clientes paralizados.
 - **Semana 3-4:** Vuelta gradual a la normalidad operativa.
 
-El ataque afecto a más de 15.000 empleados en España. Coincidio en el tiempo con un ataque similar a la Cadena SER (Grupo PRISA), lo que sugirio una campaña coordinada contra empresas españolas.
+El ataque afecto a más de 15.000 empleados en España. Coincidió en el tiempo con un ataque similar a la Cadena SER (Grupo PRISA), lo que sugirió una campaña coordinada contra empresas españolas.
 
 ### Impacto
 
 - Paralización total de operaciones durante varios días
 - Proyectos de clientes retrasados, con impacto contractual
 - Coste estimado superior a los 15 millones de euros (entre remediación, pérdida de productividad y daño reputacional)
-- La nota de rescate exigia entre 750.000 y 1.500.000 euros en Bitcoin
+- La nota de rescate exigía entre 750.000 y 1.500.000 euros en Bitcoin
 
 ### Lecciones
 
-El caso Everis demostró que las grandes consultoras tecnológicas no son inmunes. La cadena de ataque Emotet a TrickBot a Ryuk era conocida, pero la segmentación de red insuficiente permitio la propagación lateral. Desde entonces, Everis (NTT Data) reforzo su arquitectura de segmentación, implemento EDR avanzado y reviso sus procedimientos de respuesta.
+El caso Everis demostró que las grandes consultoras tecnológicas no son inmunes. La cadena de ataque Emotet a TrickBot a Ryuk era conocida, pero la segmentación de red insuficiente permitio la propagación lateral. Desde entonces, Everis (NTT Data) reforzó su arquitectura de segmentación, implemento EDR avanzado y reviso sus procedimientos de respuesta.
 
 ## 2. Prosegur: Ryuk golpea al sector de la seguridad física (noviembre 2019)
 
 ### ¿Qué pasó
 
-Apenas tres semanas después del ataque a Everis, el 27 de noviembre de 2019, Prosegur confirmo un incidente de ransomware que afecto a sus comunicaciones y sistemas internos. La ironia no pasó desapercibida: una de las mayores empresas de seguridad del mundo era victima de un ciberataque.
+Apenas tres semanas después del ataque a Everis, el 27 de noviembre de 2019, Prosegur confirmó un incidente de ransomware que afecto a sus comunicaciones y sistemas internos. La ironia no pasó desapercibida: una de las mayores empresas de seguridad del mundo era víctima de un ciberataque.
 
 ### Timeline y alcance
 
@@ -88,7 +88,7 @@ Prosegur reacciono con transparencia, algo poco habitual en 2019. La empresa pú
 
 ### ¿Qué pasó
 
-En septiembre de 2020, SegurCaixa Adeslas, la mayor aseguradora de salud privada de España, sufrio un ataque de ransomware que afecto a sus sistemas durante semanas. Los asegurados no podian acceder a sus citas, autorizaciones médicas ni polizas online.
+En septiembre de 2020, SegurCaixa Adeslas, la mayor aseguradora de salud privada de España, sufrió un ataque de ransomware que afecto a sus sistemas durante semanas. Los asegurados no podian acceder a sus citas, autorizaciones médicas ni pólizas online.
 
 ### Timeline y alcance
 
@@ -108,13 +108,13 @@ El ransomware utilizado fue una variante no confirmada publicamente, aunque fuen
 
 ### Lecciones
 
-El caso Adeslas mostro como un ataque a una aseguradora impacta en cadena a todo el ecosistema sanitario. Las clínicas dependian de los sistemas de Adeslas para autorizar pruebas y tratamientos. La falta de un plan de continuidad de negocio robusto convirtio una crisis IT en una crisis asistencial.
+El caso Adeslas mostró cómo un ataque a una aseguradora impacta en cadena a todo el ecosistema sanitario. Las clínicas dependian de los sistemas de Adeslas para autorizar pruebas y tratamientos. La falta de un plan de continuidad de negocio robusto convirtio una crisis IT en una crisis asistencial.
 
 ## 4. SEPE: ransomware contra el servicio público de empleo (marzo 2021)
 
 ### ¿Qué pasó
 
-El 9 de marzo de 2021, el [Servicio Público de Empleo Estatal (SEPE)](https://www.sepe.es/) sufrio un ataque de ransomware que paralizo completamente sus sistemas. La amenaza fue especialmente grave porque ocurrio en plena crisis de desempleo por la pandemia, cuando millones de españoles dependian de prestaciones y ERTEs.
+El 9 de marzo de 2021, el [Servicio Público de Empleo Estatal (SEPE)](https://www.sepe.es/) sufrió un ataque de ransomware que paralizó completamente sus sistemas. La amenaza fue especialmente grave porque ocurrió en plena crisis de desempleo por la pandemia, cuando millones de españoles dependian de prestaciones y ERTEs.
 
 ### Timeline y alcance
 
@@ -129,23 +129,23 @@ El ransomware fue **Ryuk** (de nuevo). La infraestructura del SEPE corria sobre 
 
 - 710 oficinas presenciales paralizadas
 - Retrasos en el pago de prestaciones y subsidios a millones de personas
-- Saturación de las líneas telefonicas de atención al ciudadano
+- Saturación de las líneas telefónicas de atención al ciudadano
 - Coste de remediación y modernización posterior estimado en más de 150 millones de euros
 - Exposición pública de las carencias tecnológicas de la Administración
 
 ### Lecciones
 
-El SEPE se convirtio en el caso emblematico de la deuda tecnológica del sector público español. Sistemas de más de tres decadas, sin parchear, sin segmentación, sin backups offline verificados. El Gobierno anuncio tras el incidente un plan de modernización tecnológica del SEPE con una inversión de más de 150 millones de euros. El CCN-CERT público guías específicas para la Administración tras este caso.
+El SEPE se convirtió en el caso emblematico de la deuda tecnológica del sector público español. Sistemas de más de tres decadas, sin parchear, sin segmentación, sin backups offline verificados. El Gobierno anunció tras el incidente un plan de modernización tecnológica del SEPE con una inversión de más de 150 millones de euros. El CCN-CERT publicó guías específicas para la Administración tras este caso.
 
-## 5. Ministerio de Trabajo y Economia Social: segundo golpe en tres meses (junio 2021)
+## 5. Ministerio de Trabajo y Economía Social: segundo golpe en tres meses (junio 2021)
 
 ### ¿Qué pasó
 
-El 9 de junio de 2021, apenas tres meses después del ataque al SEPE, el Ministerio de Trabajo y Economia Social confirmo un nuevo ataque de ransomware. Aunque el SEPE es un organismo autónomo adscrito al Ministerio, las infraestructuras afectadas fueron diferentes.
+El 9 de junio de 2021, apenas tres meses después del ataque al SEPE, el Ministerio de Trabajo y Economía Social confirmó un nuevo ataque de ransomware. Aunque el SEPE es un organismo autónomo adscrito al Ministerio, las infraestructuras afectadas fueron diferentes.
 
 ### Timeline y alcance
 
-- **9 junio:** El Ministerio confirma el ataque y activa el protocolo de desconexion.
+- **9 junio:** El Ministerio confirma el ataque y activa el protocolo de desconexión.
 - **Dia 1-5:** Sistemas internos afectados. La web del Ministerio queda inaccesible temporalmente.
 - **Semana 2:** Restauración parcial con apoyo del CCN-CERT.
 - **Julio 2021:** Vuelta a la operación normal.
@@ -155,23 +155,23 @@ El 9 de junio de 2021, apenas tres meses después del ataque al SEPE, el Ministe
 - Web del Ministerio inaccesible
 - Sistemas internos de gestión afectados
 - Impacto menor que el del SEPE, pero genero alarma por la reincidencia
-- Cuestiono publicamente la eficacia de las medidas adoptadas tras el ataque al SEPE
+- Cuestionó públicamente la eficacia de las medidas adoptadas tras el ataque al SEPE
 
 ### Lecciones
 
-Dos ataques en tres meses al mismo ámbito ministerial evidenciaron un problema estructural. No bastaba con restaurar sistemas: habia que cambiar la arquitectura de red, implementar detección temprana y establecer mecanismos de respuesta coordinados. El incidente acelero la creación del Centro de Operaciones de Ciberseguridad de la AGE (Administración General del Estado).
+Dos ataques en tres meses al mismo ámbito ministerial evidenciaron un problema estructural. No bastaba con restaurar sistemas: había que cambiar la arquitectura de red, implementar detección temprana y establecer mecanismos de respuesta coordinados. El incidente aceleró la creación del Centro de Operaciones de Ciberseguridad de la AGE (Administración General del Estado).
 
 ## 6. Iberdrola: filtración masiva de datos de clientes (marzo 2022)
 
 ### ¿Qué pasó
 
-En marzo de 2022, [Iberdrola](https://www.iberdrola.com/) confirmo una brecha de seguridad que expuso datos personales de aproximadamente 1,3 millones de clientes. Los atacantes accedieron a un sistema que contenía nombres, DNI y datos de contacto (no datos financieros).
+En marzo de 2022, [Iberdrola](https://www.iberdrola.com/) confirmó una brecha de seguridad que expuso datos personales de aproximadamente 1,3 millones de clientes. Los atacantes accedieron a un sistema que contenía nombres, DNI y datos de contacto (no datos financieros).
 
 ### Timeline y alcance
 
 - **Marzo 2022:** Detección del acceso no autorizado a una base de datos de clientes.
-- **Notificación inmediata:** Iberdrola comunico el incidente a la Agencia Española de Protección de Datos (AEPD) y a los clientes afectados.
-- **Abril 2022:** La empresa confirmo que no se habian comprometido datos bancarios ni contraseñas.
+- **Notificación inmediata:** Iberdrola comunicó el incidente a la Agencia Española de Protección de Datos (AEPD) y a los clientes afectados.
+- **Abril 2022:** La empresa confirmó que no se habían comprometido datos bancarios ni contraseñas.
 
 ### Impacto
 
@@ -183,13 +183,13 @@ En marzo de 2022, [Iberdrola](https://www.iberdrola.com/) confirmo una brecha de
 
 ### Lecciones
 
-El caso Iberdrola demostró que incluso cuando no se comprometen datos financieros, una brecha de datos personales tiene consecuencias graves. Los datos expuestos son oro para campañas de phishing y vishing (llamadas fraudulentas). La notificación rápida fue un punto positivo, pero la brecha revelo deficiencias en la segmentación del acceso a bases de datos de clientes.
+El caso Iberdrola demostró que incluso cuando no se comprometen datos financieros, una brecha de datos personales tiene consecuencias graves. Los datos expuestos son oro para campañas de phishing y vishing (llamadas fraudulentas). La notificación rápida fue un punto positivo, pero la brecha reveló deficiencias en la segmentación del acceso a bases de datos de clientes.
 
 ## 7. Telefónica: filtración de datos de empleados y clientes (2022)
 
 ### ¿Qué pasó
 
-En 2022, [Telefónica](https://www.telefonica.com/) sufrio una brecha de seguridad en la que atacantes accedieron a datos internos que posteriormente aparecieron en foros de venta de datos. La compañía confirmo el incidente y activo sus protocolos de respuesta.
+En 2022, [Telefónica](https://www.telefonica.com/) sufrio una brecha de seguridad en la que atacantes accedieron a datos internos que posteriormente aparecieron en foros de venta de datos. La compañía confirmó el incidente y activó sus protocolos de respuesta.
 
 ### Timeline y alcance
 
@@ -202,11 +202,11 @@ En 2022, [Telefónica](https://www.telefonica.com/) sufrio una brecha de segurid
 - Datos de empleados y clientes expuestos en foros underground
 - Riesgo de ingeniería social contra empleados (acceso a infraestructura crítica de telecomunicaciones)
 - Impacto reputacional para el principal operador de telecomunicaciones de España
-- La compañía no revelo cifras exactas de registros afectados
+- La compañía no reveló cifras exactas de registros afectados
 
 ### Lecciones
 
-Cuando una telco sufre una brecha, el impacto potencial va más allá de los datos. Telefónica opera infraestructura crítica nacional. El incidente reforzo la necesidad de aplicar el principio de mínimo privilegio, revisar regularmente los accesos de terceros y mantener una monitorización continua de la dark web para detectar filtraciones tempranas.
+Cuando una telco sufre una brecha, el impacto potencial va más allá de los datos. Telefónica opera infraestructura crítica nacional. El incidente reforzó la necesidad de aplicar el principio de mínimo privilegio, revisar regularmente los accesos de terceros y mantener una monitorización continua de la dark web para detectar filtraciones tempranas.
 
 ## 8. Consejo General del Poder Judicial (CGPJ): ataque a la Justicia (noviembre 2022)
 
@@ -229,13 +229,13 @@ En noviembre de 2022, el [Consejo General del Poder Judicial (CGPJ)](https://www
 
 ### Lecciones
 
-El ataque al CGPJ puso de manifiesto la criticidad de los sistemas de intercambio de datos entre administraciones. El PNJ es un nodo central: si se compromete, el daño potencial es enorme. El caso impulso una auditoría integral de los sistemas judiciales y reforzo la importancia de la segmentación, la monitorización de accesos y los controles de autenticación robustos en entornos gubernamentales.
+El ataque al CGPJ puso de manifiesto la criticidad de los sistemas de intercambio de datos entre administraciones. El PNJ es un nodo central: si se compromete, el daño potencial es enorme. El caso impulso una auditoría integral de los sistemas judiciales y reforzó la importancia de la segmentación, la monitorización de accesos y los controles de autenticación robustos en entornos gubernamentales.
 
 ## 9. Ayuntamiento de Sevilla: LockBit paraliza una capital de provincia (septiembre 2023)
 
 ### ¿Qué pasó
 
-El 5 de septiembre de 2023, el [Ayuntamiento de Sevilla](https://www.sevilla.org/) sufrio un ataque de ransomware del grupo **LockBit** que paralizo todos los servicios digitales municipales. La cuarta ciudad más grande de España se quedo sin sistemas informáticos.
+El 5 de septiembre de 2023, el [Ayuntamiento de Sevilla](https://www.sevilla.org/) sufrió un ataque de ransomware del grupo **LockBit** que paralizó todos los servicios digitales municipales. La cuarta ciudad más grande de España se quedo sin sistemas informáticos.
 
 ### Timeline y alcance
 
@@ -244,7 +244,7 @@ El 5 de septiembre de 2023, el [Ayuntamiento de Sevilla](https://www.sevilla.org
 - **Semana 2-4:** Restauración progresiva con apoyo del CCN-CERT.
 - **Octubre-noviembre 2023:** Recuperación gradual de servicios online.
 
-El grupo **LockBit** reclamo la autoria y exigio un rescate de aproximadamente 1,5 millones de euros. El Ayuntamiento confirmo publicamente que no pago.
+El grupo **LockBit** reclamó la autoría y exigió un rescate de aproximadamente 1,5 millones de euros. El Ayuntamiento confirmó públicamente que no pagó.
 
 ### Impacto
 
@@ -252,38 +252,38 @@ El grupo **LockBit** reclamo la autoria y exigio un rescate de aproximadamente 1
 - 700.000 ciudadanos afectados
 - Servicios de emergencias (bomberos, policía local) operando con protocolos manuales
 - Coste de remediación estimado en más de 5 millones de euros
-- LockBit público parte de los datos exfiltrados en su sitio de filtraciones
+- LockBit publicó parte de los datos exfiltrados en su sitio de filtraciones
 
 ### Lecciones
 
-Sevilla se convirtio en el caso de referencia para los ayuntamientos españoles. Demostro que las administraciones locales son objetivos prioritarios porque combinan datos sensibles con infraestructura débil. El alcalde reconocio publicamente la falta de inversión en ciberseguridad. Tras el ataque, el Ayuntamiento aprobó un plan de ciberseguridad con una inversión de varios millones de euros.
+Sevilla se convirtió en el caso de referencia para los ayuntamientos españoles. Demostro que las administraciones locales son objetivos prioritarios porque combinan datos sensibles con infraestructura débil. El alcalde reconoció públicamente la falta de inversión en ciberseguridad. Tras el ataque, el Ayuntamiento aprobó un plan de ciberseguridad con una inversión de varios millones de euros.
 
 ## 10. Hospital Clinic de Barcelona: RansomHouse ataca la sanidad pública (marzo 2023)
 
 ### ¿Qué pasó
 
-El 5 de marzo de 2023, el [Hospital Clinic de Barcelona](https://www.clinicbarcelona.org/) sufrio un ataque de ransomware del grupo **RansomHouse** que obligo a cancelar miles de consultas, intervenciones quirurgicas y sesiones de radioterapia. Fue el primer gran ataque a un hospital público español con impacto directo en la asistencia sanitaria.
+El 5 de marzo de 2023, el [Hospital Clinic de Barcelona](https://www.clinicbarcelona.org/) sufrió un ataque de ransomware del grupo **RansomHouse** que obligó a cancelar miles de consultas, intervenciones quirúrgicas y sesiones de radioterapia. Fue el primer gran ataque a un hospital público español con impacto directo en la asistencia sanitaria.
 
 ### Timeline y alcance
 
 - **5 marzo:** Detección del ataque. Los sistemas del hospital caen. Activación del protocolo de emergencia.
-- **Dia 1-3:** 150 intervenciones quirurgicas no urgentes canceladas. 3.000 consultas externas aplazadas. 300 análisis anulados. Derivación de urgencias a otros hospitales.
+- **Dia 1-3:** 150 intervenciones quirúrgicas no urgentes canceladas. 3.000 consultas externas aplazadas. 300 análisis anulados. Derivación de urgencias a otros hospitales.
 - **Semana 1-2:** Funcionamiento con papel. Los médicos acceden a historiales de memoria o en papel.
 - **Semana 3-4:** Restauración progresiva de sistemas.
-- **Abril 2023:** RansomHouse pública 4,5 TB de datos robados, incluyendo historiales clinicos.
+- **Abril 2023:** RansomHouse publica 4,5 TB de datos robados, incluyendo historiales clínicos.
 
 ### Impacto
 
 - Cancelación de miles de citas, operaciones y tratamientos
-- 4,5 TB de datos clinicos exfiltrados y publicados (historiales, datos personales, informes médicos)
-- Riesgo directo para la salud de pacientes (retrasos en radioterapia oncologica)
+- 4,5 TB de datos clínicos exfiltrados y publicados (historiales, datos personales, informes médicos)
+- Riesgo directo para la salud de pacientes (retrasos en radioterapia oncológica)
 - Impacto emocional en pacientes cuyos datos médicos intimos fueron expuestos
 - Coste de remediación y modernización posterior estimado en millones de euros
 - Investigación de la Agencia Catalana de Protección de Datos
 
 ### Lecciones
 
-El Hospital Clinic fue un punto de inflexión para la ciberseguridad sanitaria en España. Demostro que un ataque a un hospital puede poner vidas en riesgo. Los sistemas legacy del hospital, la falta de segmentación entre redes clínicas y administrativas, y la ausencia de backups offline inmutables facilitaron el impacto. El caso impulso la creación de programas específicos de ciberseguridad para el sector sanitario, promovidos por INCIBE y las comunidades autónomas.
+El Hospital Clinic fue un punto de inflexión para la ciberseguridad sanitaria en España. Demostro que un ataque a un hospital puede poner vidas en riesgo. Los sistemas legacy del hospital, la falta de segmentación entre redes clínicas y administrativas, y la ausencia de backups offline inmutables facilitaron el impacto. El caso impulsó la creación de programas específicos de ciberseguridad para el sector sanitario, promovidos por INCIBE y las comunidades autónomas.
 
 ## Patrones comunes en los 10 incidentes
 
@@ -300,13 +300,13 @@ Tras analizar los 10 casos, emergen patrones que se repiten una y otra vez:
 
 ### Deficiencias estructurales
 
-1. **Segmentación de red insuficiente.** En practicamente todos los casos, los atacantes se movieron lateralmente sin restricciones una vez dentro.
+1. **Segmentación de red insuficiente.** En prácticamente todos los casos, los atacantes se movieron lateralmente sin restricciones una vez dentro.
 2. **Backups sin verificar o sin aislamiento.** Varios organismos descubrieron que sus backups estaban conectados a la misma red y fueron cifrados.
-3. **Sistemas legacy sin parchear.** El SEPE, el Hospital Clinic y el CGPJ operaban sobre infraestructura con decadas de antiguedad.
+3. **Sistemas legacy sin parchear.** El SEPE, el Hospital Clinic y el CGPJ operaban sobre infraestructura con décadas de antigüedad.
 4. **Falta de planes de respuesta probados.** La improvisación durante las primeras horas fue evidente en varios casos.
-5. **Dependencia de un único proveedor o sistema.** El caso Adeslas mostro como la caida de un sistema central arrastra a todo un ecosistema.
+5. **Dependencia de un único proveedor o sistema.** El caso Adeslas mostró cómo la caida de un sistema central arrastra a todo un ecosistema.
 
-## ¿Qué sectores han sido más atacados en España
+## ¿Qué sectores han sido más atacados en España?
 
 Según los datos acumulados de INCIBE y CCN-CERT entre 2019 y 2024:
 
@@ -337,9 +337,9 @@ A estos costes directos hay que sumar:
 - **Dano reputacional:** Dificil de cuantificar, pero medible en pérdida de confianza ciudadana y de clientes.
 - **Coste de oportunidad:** Proyectos de transformación digital aplazados para priorizar la remediación.
 
-## ¿Qué medidas habrian prevenido estos incidentes
+## ¿Qué medidas habrían prevenido estos incidentes
 
-Ninguna medida individual habría evitado todos los ataques, pero un conjunto de controles básicos habría reducido drasticamente el impacto:
+Ninguna medida individual habría evitado todos los ataques, pero un conjunto de controles básicos habría reducido drásticamente el impacto:
 
 ### 1. Segmentación de red efectiva
 
@@ -355,7 +355,7 @@ Los sistemas legacy del SEPE y el Hospital Clinic tenían vulnerabilidades conoc
 
 ### 4. MFA en todos los accesos privilegiados
 
-El movimiento lateral en Everis y Prosegur se facilito por credenciales comprometidas sin segundo factor. MFA no es opcional: es un control básico.
+El movimiento lateral en Everis y Prosegur se facilitó por credenciales comprometidas sin segundo factor. MFA no es opcional: es un control básico.
 
 ### 5. Planes de respuesta probados
 
@@ -363,7 +363,7 @@ No basta con tener un plan en un documento. Hay que probarlo con simulacros regu
 
 ### 6. Monitorización continúa y EDR
 
-La detección temprana es la diferencia entre un incidente contenido y una catastrofe. Soluciones EDR con capacidad de respuesta automatizada y un SOC 24/7 habrian reducido el tiempo de permanencia del atacante en la red.
+La detección temprana es la diferencia entre un incidente contenido y una catástrofe. Soluciones EDR con capacidad de respuesta automatizada y un SOC 24/7 habrían reducido el tiempo de permanencia del atacante en la red.
 
 {{< cta type="tofu" text="Riskitera evalua tu postura de seguridad y te muestra los gaps de cumplimiento en minutos. Identifica si tu organización tiene las mismas vulnerabilidades que permitieron estos ataques." label="Evaluar postura" >}}
 
@@ -381,7 +381,7 @@ El SEPE y el Ministerio de Trabajo demostraron que la Administración Pública e
 
 ### 2022: brechas de datos y ransomware combinados
 
-Iberdrola, Telefónica y el CGPJ mostraron una evolución hacia la doble extorsión: cifrar datos y amenazar con publicarlos. El modelo de negocio del ransomware se sofistico.
+Iberdrola, Telefónica y el CGPJ mostraron una evolución hacia la doble extorsión: cifrar datos y amenazar con publicarlos. El modelo de negocio del ransomware se sofisticó.
 
 ### 2023-2025: ataques dirigidos a infraestructura crítica
 
@@ -401,7 +401,7 @@ El crecimiento es sostenido y no muestra signos de desaceleración. La profesion
 
 ## ¿Qué hacer si tu organización es el próximo objetivo
 
-Los 10 casos analizados demuestran que la pregunta no es "si" te atacaran, sino "cuando" y "como de preparado estas". Estas son las acciones prioritarias:
+Los 10 casos analizados demuestran que la pregunta no es "si" te atacaran, sino "cuando" y "cómo de preparado estás". Estas son las acciones prioritarias:
 
 1. **Evaluar la postura de seguridad actual.** Auditorías periódicas de vulnerabilidades, configuraciones y accesos.
 2. **Implementar controles básicos.** MFA, segmentación, backups offline, parcheo. No son controles avanzados: son el mínimo.
@@ -420,7 +420,7 @@ Los 10 casos analizados demuestran que la pregunta no es "si" te atacaran, sino 
 
 ### ¿Cuál fue el ciberataque más grave en España?
 
-Por impacto directo en ciudadanos, el ataque al SEPE en marzo de 2021 fue el más grave. Paralizo 710 oficinas y retraso el pago de prestaciones a millones de personas en plena crisis económica por la pandemia. Por sensibilidad de los datos, el ataque al Hospital Clinic de Barcelona (2023) supuso la publicación de 4,5 TB de historiales clinicos.
+Por impacto directo en ciudadanos, el ataque al SEPE en marzo de 2021 fue el más grave. Paralizo 710 oficinas y retraso el pago de prestaciones a millones de personas en plena crisis económica por la pandemia. Por sensibilidad de los datos, el ataque al Hospital Clinic de Barcelona (2023) supuso la publicación de 4,5 TB de historiales clínicos.
 
 ### ¿Cuántos ciberataques sufre España al año?
 
@@ -436,4 +436,4 @@ Sí. El RGPD obliga a notificar brechas de datos personales a la AEPD en un plaz
 
 ### ¿Se puede prevenir un ataque de ransomware?
 
-No se puede garantizar al 100%, pero se puede reducir drasticamente la probabilidad y el impacto. Los controles clave son: segmentación de red, backups offline inmutables, MFA en accesos privilegiados, parcheo de vulnerabilidades, EDR/XDR con detección automatizada y un plan de respuesta probado. Los 10 casos analizados demuestran que la mayoría de estos ataques explotaron la ausencia de controles básicos, no vulnerabilidades sofisticadas.
+No se puede garantizar al 100%, pero se puede reducir drásticamente la probabilidad y el impacto. Los controles clave son: segmentación de red, backups offline inmutables, MFA en accesos privilegiados, parcheo de vulnerabilidades, EDR/XDR con detección automatizada y un plan de respuesta probado. Los 10 casos analizados demuestran que la mayoría de estos ataques explotaron la ausencia de controles básicos, no vulnerabilidades sofisticadas.

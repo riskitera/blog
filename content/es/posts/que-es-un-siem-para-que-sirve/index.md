@@ -1,5 +1,5 @@
 ---
-title: "Qué es un SIEM y por que tu empresa lo necesita"
+title: "Qué es un SIEM y por qué tu empresa lo necesita"
 image: "cover.png"
 description: "Guía completa sobre SIEM: qué es, cómo funciona, principales soluciones del mercado (Splunk, QRadar, Elastic, Sentinel), open source vs comercial, y cuándo necesitas uno."
 slug: "que-es-un-siem-para-que-sirve"
@@ -24,9 +24,9 @@ Un SIEM (Security Information and Event Management) es la herramienta central de
 - El tuning continuo de reglas es crítico: sin el, la fatiga de alertas inutiliza la herramienta
 {{< /key-takeaways >}}
 
-## ¿Qué es un SIEM y para que sirve?
+## ¿Qué es un SIEM y para qué sirve?
 
-SIEM es el acronimo de Security Information and Event Management. El término fue acuñado por Gartner en 2005 para describir la convergencia de dos categorías de productos que hasta entonces existian por separado:
+SIEM es el acrónimo de Security Information and Event Management. El término fue acuñado por Gartner en 2005 para describir la convergencia de dos categorías de productos que hasta entonces existían por separado:
 
 - **SIM (Security Information Management)**: enfocado en la recopilación, almacenamiento a largo plazo y análisis de logs con fines de cumplimiento normativo y auditoría.
 - **SEM (Security Event Management)**: centrado en la monitorización en tiempo real de eventos de seguridad, la correlación y la generación de alertas.
@@ -74,7 +74,7 @@ La correlación es el corazón del SIEM. Es donde los eventos individuales, que 
 **Tipos de correlación:**
 
 - **Basada en reglas**: la forma más tradicional. Se definen reglas que especifican condiciones que, cuando se cumplen, generan una alerta. Ejemplo: "Si un usuario falla la autenticación más de 5 veces en 10 minutos desde una IP externa y luego accede exitosamente, genera una alerta de posible fuerza bruta exitosa."
-- **Estadistica**: detecta desviaciones respecto a una línea base. Ejemplo: "Si el volumen de tráfico DNS de un host supera en más de 3 desviaciones estándar su media histórica, alerta de posible exfiltración por DNS tunneling."
+- **Estadística**: detecta desviaciones respecto a una línea base. Ejemplo: "Si el volumen de tráfico DNS de un host supera en más de 3 desviaciones estándar su media histórica, alerta de posible exfiltración por DNS tunneling."
 - **Basada en amenazas**: correlaciona los eventos con indicadores de compromiso (IoC) procedentes de feeds de inteligencia de amenazas. Ejemplo: "Si un host se comunica con una IP que está en la lista de servidores C2 de Cobalt Strike, genera una alerta crítica."
 - **UEBA (User and Entity Behavior Analytics)**: analiza el comportamiento de usuarios y entidades para detectar anomalías. Ejemplo: "El usuario jgarcia normalmente accede desde Madrid en horario de oficina. Hoy ha accedido desde Rusia a las 3:00 AM. Alerta de comportamiento anómalo."
 
@@ -86,7 +86,7 @@ Cuando la correlación identifica una amenaza potencial, el SIEM genera una aler
 
 - **Consola de alertas**: lista priorizada de alertas con información contextual (severidad, fuente, descripción, eventos relacionados).
 - **Dashboards**: paneles visuales que muestran el estado de seguridad en tiempo real, tendencias, métricas y KPI.
-- **Notificaciones**: correo electrónico, integración con sistemas de ticketing, mensajeria (Slack, Teams), integración con SOAR.
+- **Notificaciones**: correo electrónico, integración con sistemas de ticketing, mensajería (Slack, Teams), integración con SOAR.
 
 La calidad del tuning de las reglas determina la utilidad práctica del SIEM. Un SIEM mal configurado genera cientos de alertas diarias, la mayoría falsos positivos, provocando fatiga en los analistas. Un SIEM bien afinado genera alertas accionables y priorizadas.
 
@@ -225,7 +225,7 @@ Es tentador querer tener visibilidad completa desde el inicio, pero conectar dec
 
 ### No dedicar recursos al tuning
 
-Un SIEM recien desplegado genera una cantidad enorme de falsos positivos. Sin una dedicación continua al ajuste de reglas (tuning), los analistas sufriran fatiga de alertas y el SIEM perdera su valor. Planifica al menos un 20 por ciento del tiempo del equipo para tuning durante los primeros 6 meses.
+Un SIEM recién desplegado genera una cantidad enorme de falsos positivos. Sin una dedicación continua al ajuste de reglas (tuning), los analistas sufrirán fatiga de alertas y el SIEM perderá su valor. Planifica al menos un 20 por ciento del tiempo del equipo para tuning durante los primeros 6 meses.
 
 ### Usar solo reglas del fabricante
 
@@ -233,7 +233,7 @@ Las reglas de detección que vienen preconfiguradas son un punto de partida, per
 
 ### Ignorar la gestión de la capacidad
 
-El volumen de logs crece con el tiempo. Si no planificas la capacidad de almacenamiento, procesamiento e ingesta, el SIEM se degradara progresivamente hasta que deje de ser funcional. Monitoriza el crecimiento de datos y planifica con antelación.
+El volumen de logs crece con el tiempo. Si no planificas la capacidad de almacenamiento, procesamiento e ingesta, el SIEM se degradará progresivamente hasta que deje de ser funcional. Monitoriza el crecimiento de datos y planifica con antelación.
 
 {{< cta type="mofu" text="¿Evaluando soluciones SIEM? Descubre cómo Riskitera se integra con tu stack de seguridad existente." >}}
 
@@ -245,7 +245,7 @@ El coste varía enormemente según la solución elegida, el volumen de datos y e
 
 ### ¿Puedo usar un SIEM sin tener un SOC?
 
-Tecnicamente si, pero su valor se reduce drasticamente. Un SIEM sin personas que analicen las alertas y respondan a los incidentes es como una alarma que suena en una casa vacia. Si no tienes equipo interno para operar el SIEM, la alternativa más razonable es contratar un servicio MDR/MSSP que incluya el SIEM y el equipo humano.
+Técnicamente sí, pero su valor se reduce drasticamente. Un SIEM sin personas que analicen las alertas y respondan a los incidentes es como una alarma que suena en una casa vacia. Si no tienes equipo interno para operar el SIEM, la alternativa más razonable es contratar un servicio MDR/MSSP que incluya el SIEM y el equipo humano.
 
 ### ¿Cuánto tiempo tarda en estar operativo un SIEM?
 
@@ -253,7 +253,7 @@ Un despliegue básico (instalación, conexión de fuentes críticas, reglas inic
 
 ### SIEM, XDR o MDR: ¿qué necesito?
 
-Depende de tu situación. Si tienes equipo de seguridad y quieres control total sobre la detección, un SIEM es la opción. Si buscas simplicidad y tienes un entorno tecnológico homogeneo (por ejemplo, mayoritariamente Microsoft), un XDR puede ser suficiente. Si no tienes equipo interno de seguridad, un servicio MDR (que incluye tecnología y personas) es probablemente la mejor opción. Muchas organizaciones combinan SIEM con MDR: el proveedor MDR opera el SIEM y complementa con analistas las capacidades del equipo interno.
+Depende de tu situación. Si tienes equipo de seguridad y quieres control total sobre la detección, un SIEM es la opción. Si buscas simplicidad y tienes un entorno tecnológico homogéneo (por ejemplo, mayoritariamente Microsoft), un XDR puede ser suficiente. Si no tienes equipo interno de seguridad, un servicio MDR (que incluye tecnología y personas) es probablemente la mejor opción. Muchas organizaciones combinan SIEM con MDR: el proveedor MDR opera el SIEM y complementa con analistas las capacidades del equipo interno.
 
 ### ¿Es obligatorio tener un SIEM por normativa?
 

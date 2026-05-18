@@ -27,7 +27,7 @@ El ENS establece un marco común de seguridad que incluye:
 
 **Requisitos mínimos.** 15 requisitos mínimos que toda administración pública debe cumplir: organización e implantación del proceso de seguridad, análisis y gestión de riesgos, gestión de personal, profesionalidad, autorización y control de accesos, protección de las instalaciones, adquisición de productos de seguridad, seguridad por defecto, integridad y actualización del sistema, protección de la información almacenada y en tránsito, prevención ante otros sistemas interconectados, registro de actividad, incidentes de seguridad, continuidad de la actividad y mejora continua.
 
-**73 medidas de seguridad.** Organizadas en tres marcos (organizativo, operacional y de protección), con niveles de exigencia que dependen de la categoría del sistema (básica, media o alta). Cada medida tiene requisitos concretos: que implementar, como documentarlo y como auditarlo.
+**73 medidas de seguridad.** Organizadas en tres marcos (organizativo, operacional y de protección), con niveles de exigencia que dependen de la categoría del sistema (básica, media o alta). Cada medida tiene requisitos concretos: qué implementar, cómo documentarlo y cómo auditarlo.
 
 **Conformidad.** Las administraciones públicas deben obtener la Declaración de Conformidad (categoría básica) o la Certificación de Conformidad (categorías media y alta) emitida por un organismo acreditado. El proceso de certificación incluye auditoría documental, auditoría técnica y revisión por el CCN.
 
@@ -147,7 +147,7 @@ La Directiva NIS2 (2022/2555) incluye a las administraciones públicas como enti
 **Plazo de transposición.** El plazo de transposición de NIS2 era octubre de 2024. España (como la mayoría de Estados miembros) no cumplió el plazo. La transposición está en trámite parlamentario y se espera su aprobación durante 2026.
 
 
-{{< cta type="bofu" text="Empieza tu PoC y descubre cuanto tiempo ahorras en cada ciclo de auditoría." label="Iniciar PoC" >}}
+{{< cta type="bofu" text="Empieza tu PoC y descubre cuánto tiempo ahorras en cada ciclo de auditoría." label="Iniciar PoC" >}}
 
 
 **Artículos relacionados:**
@@ -156,16 +156,16 @@ La Directiva NIS2 (2022/2555) incluye a las administraciones públicas como enti
 
 ## Preguntas frecuentes
 
-**Un ayuntamiento pequeño tiene que cumplir el ENS?**
+**¿Un ayuntamiento pequeño tiene que cumplir el ENS?**
 Sí. El ENS es obligatorio para todas las administraciones públicas, independientemente de su tamaño. Un ayuntamiento de 500 habitantes está sujeto al ENS igual que un ministerio. La diferencia está en la categorización: los sistemas de un ayuntamiento pequeño serán probablemente de categoría BASICA, lo que reduce el número de controles exigibles. El CCN ofrece herramientas gratuitas y guías simplificadas para entidades locales pequeñas.
 
 **¿Cuánto cuesta la certificación ENS?**
-El coste depende de la categoría y la complejidad. Para un ayuntamiento mediano con sistemas de categoría MEDIA, la auditoría de certificación cuesta entre 15.000 y 40.000 euros. Para un organismo de la AGE con múltiples sistemas de categoría ALTA, puede superar los 100.000 euros. A esto hay que sumar el coste de adecuación previo (consultoría, herramientas, personal), que es significativamente mayor que la auditoría en si.
+El coste depende de la categoría y la complejidad. Para un ayuntamiento mediano con sistemas de categoría MEDIA, la auditoría de certificación cuesta entre 15.000 y 40.000 euros. Para un organismo de la AGE con múltiples sistemas de categoría ALTA, puede superar los 100.000 euros. A esto hay que sumar el coste de adecuación previo (consultoría, herramientas, personal), que es significativamente mayor que la auditoría en sí.
 
 **¿Qué pasa si una administración pública no cumple el ENS?**
 No hay un régimen sancionador explícito en el propio ENS como el del RGPD. Sin embargo, el incumplimiento puede tener consecuencias: requerimientos del CCN, informes negativos en INES que afectan a la reputación institucional, responsabilidad patrimonial de la administración en caso de brecha de seguridad, y responsabilidad personal de los funcionarios que no adoptaron las medidas exigidas. Con NIS2, las consecuencias se endurecen significativamente.
 
-**Se puede cumplir ENS e ISO 27001 al mismo tiempo?**
+**¿Se puede cumplir ENS e ISO 27001 al mismo tiempo?**
 Sí, y es recomendable. El ENS y la ISO 27001 comparten muchos controles (gestión de riesgos, control de accesos, continuidad, auditorías). El CCN ha publicado la guía CCN-STIC-825 que mapea los controles del ENS con los de ISO 27001:2022. Una entidad que se certifique en ambos marcos puede optimizar el proceso evitando duplicar esfuerzos. Riskitera mapea automáticamente controles entre ambos marcos.
 
 **¿Cómo afecta la Ley 40/2015 a la seguridad de las AA.PP.?**

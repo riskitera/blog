@@ -1,5 +1,5 @@
 ---
-title: "Guía práctica: Implementar ISO 27001 en tu Startup pasó a pasó"
+title: "Guía práctica: Implementar ISO 27001 en tu Startup paso a paso"
 description: "Cómo una startup puede lograr la certificación ISO 27001 sin morir en el intento. Pasos concretos, errores comunes y consejos prácticos."
 slug: "guia-iso-27001-startups"
 date: 2026-02-22

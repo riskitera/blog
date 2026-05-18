@@ -1,7 +1,7 @@
 ---
-title: "MITRE ATT&CK: que es y como aplicarlo en tu organización"
+title: "MITRE ATT&CK: qué es y cómo aplicarlo en tu organización"
 image: "cover.png"
-description: "Guía completa sobre el framework MITRE ATT&CK: matrices Enterprise, Mobile e ICS, tácticas y técnicas, integración con el SOC, threat hunting y herramientas cómo ATT&CK Navigator."
+description: "Guía completa sobre el framework MITRE ATT&CK: matrices Enterprise, Mobile e ICS, tácticas y técnicas, integración con el SOC, threat hunting y herramientas como ATT&CK Navigator."
 slug: "mitre-attack-que-es-como-usarlo"
 date: 2026-04-14
 lastmod: 2026-04-14
@@ -24,11 +24,11 @@ translationKey: "mitre-attack-guide"
 - Integración directa con SIEM, EDR y plataformas de threat intelligence
 {{< /key-takeaways >}}
 
-## ¿Qué es MITRE ATT&CK y para que sirve?
+## ¿Qué es MITRE ATT&CK y para qué sirve?
 
-MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) es una base de conocimiento estructurada que describe el comportamiento de los atacantes a lo largo de todo el ciclo de vida de una intrusión. A diferencia de otros frameworks que se centran en controles defensivos o en la gestión de riesgos, ATT&CK adopta la perspectiva del adversario: documenta que hacen los atacantes, como lo hacen y con que herramientas.
+MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) es una base de conocimiento estructurada que describe el comportamiento de los atacantes a lo largo de todo el ciclo de vida de una intrusión. A diferencia de otros frameworks que se centran en controles defensivos o en la gestión de riesgos, ATT&CK adopta la perspectiva del adversario: documenta qué hacen los atacantes, cómo lo hacen y con qué herramientas.
 
-El proyecto comenzo en 2013 como una iniciativa interna de MITRE para documentar las tácticas, técnicas y procedimientos (TTPs) utilizados por grupos de amenazas avanzadas (APT) contra sistemas Windows. Desde entonces ha crecido exponencialmente y en la actualidad cubre entornos empresariales, dispositivos móviles y sistemas de control industrial.
+El proyecto comenzó en 2013 como una iniciativa interna de MITRE para documentar las tácticas, técnicas y procedimientos (TTPs) utilizados por grupos de amenazas avanzadas (APT) contra sistemas Windows. Desde entonces ha crecido exponencialmente y en la actualidad cubre entornos empresariales, dispositivos móviles y sistemas de control industrial.
 
 La versión actual de ATT&CK (v15, publicada en 2024) incluye 14 tácticas, más de 200 técnicas y más de 400 subtécnicas en la matriz Enterprise. Cada técnica está documentada con descripciones detalladas, ejemplos de procedimientos utilizados por grupos reales, fuentes de datos para su detección y mitigaciones recomendadas.
 
@@ -42,7 +42,7 @@ MITRE ATT&CK se organiza en tres matrices principales, cada una adaptada a un en
 
 [Es la matriz más extensa y utilizada](https://attack.mitre.org/matrices/enterprise/). Cubre las plataformas Windows, macOS, Linux, entornos cloud (AWS, Azure, GCP, SaaS), redes y contenedores. Organiza el comportamiento adversario en 14 tácticas que representan los objetivos del atacante en cada fase de la intrusión:
 
-1. **Reconnaissance** (Reconocimiento): el adversario recopila información sobre la victima antes del ataque.
+1. **Reconnaissance** (Reconocimiento): el adversario recopila información sobre la víctima antes del ataque.
 2. **Resource Development** (Desarrollo de recursos): el adversario prepara infraestructura y herramientas.
 3. **Initial Access** (Acceso inicial): el adversario obtiene un punto de entrada en la red.
 4. **Execution** (Ejecución): el adversario ejecuta código malicioso.
@@ -51,8 +51,8 @@ MITRE ATT&CK se organiza en tres matrices principales, cada una adaptada a un en
 7. **Defense Evasión** (Evasión de defensas): el adversario evita ser detectado.
 8. **Credential Access** (Acceso a credenciales): el adversario roba nombres de usuario y contraseñas.
 9. **Discovery** (Descubrimiento): el adversario explora el entorno para entender su composición.
-10. **Lateral Movement** (Movimiento lateral): el adversario se desplaza entre sístemas.
-11. **Collection** (Recopilación): el adversario recopila datos de interes.
+10. **Lateral Movement** (Movimiento lateral): el adversario se desplaza entre sistemas.
+11. **Collection** (Recopilación): el adversario recopila datos de interés.
 12. **Command and Control** (Comando y control): el adversario se comunica con los sistemas comprometidos.
 13. **Exfiltration** (Exfiltración): el adversario extrae datos fuera de la red.
 14. **Impact** (Impacto): el adversario manipula, interrumpe o destruye sistemas y datos.
@@ -65,23 +65,23 @@ MITRE ATT&CK se organiza en tres matrices principales, cada una adaptada a un en
 
 Orientada a [sistemas de control industrial (ICS/SCADA)](https://attack.mitre.org/matrices/ics/), esta matriz documenta técnicas utilizadas contra infraestructuras críticas como redes eléctricas, plantas de tratamiento de agua o instalaciones de fabricación. Incluye tácticas específicas como la inhibición de funciones de respuesta o la manipulación de procesos físicos. ENISA ha destacado en sus informes anuales la importancia de proteger estos entornos, y ATT&CK for ICS proporciona el vocabulario común para hacerlo.
 
-## ¿Cómo se organizan las tácticas, técnicas y subtecnicas?
+## ¿Cómo se organizan las tácticas, técnicas y subtécnicas?
 
 Comprender la jerarquía de ATT&CK es esencial para utilizarlo correctamente.
 
-### Tacticas: el "por que"
+### Tácticas: el "por qué"
 
-Las tácticas representan el objetivo táctico del adversario: por que realiza una acción determinada. Por ejemplo, la táctica "Persistence" indica que el objetivo del atacante es mantener su acceso al sistema incluso después de un reinicio. Las tácticas son relativamente estables y no cambian con frecuencia.
+Las tácticas representan el objetivo táctico del adversario: por qué realiza una acción determinada. Por ejemplo, la táctica "Persistence" indica que el objetivo del atacante es mantener su acceso al sistema incluso después de un reinicio. Las tácticas son relativamente estables y no cambian con frecuencia.
 
-### Técnicas: el "como"
+### Técnicas: el "cómo"
 
-Las técnicas describen como el adversario logra un objetivo táctico. Dentro de la táctica "Persistence", por ejemplo, se encuentran técnicas como "Boot or Logon Autostart Execution" (el adversario configura programas para ejecutarse automáticamente al iniciar el sistema) o "Create Account" (el adversario crea cuentas para mantener el acceso).
+Las técnicas describen cómo el adversario logra un objetivo táctico. Dentro de la táctica "Persistence", por ejemplo, se encuentran técnicas como "Boot or Logon Autostart Execution" (el adversario configura programas para ejecutarse automáticamente al iniciar el sistema) o "Create Account" (el adversario crea cuentas para mantener el acceso).
 
-### Subtecnicas: el "como" con detalle
+### Subtécnicas: el "cómo" con detalle
 
 Las subtécnicas proporcionan un nivel adicional de granularidad. La técnica "Boot or Logon Autostart Execution" se descompone en subtécnicas como "Registry Run Keys / Startup Folder", "Authentication Package" o "Kernel Modules and Extensions". Este nivel de detalle permite mapeos de detección más precisos.
 
-### Procedimientos: el "quien y cuando"
+### Procedimientos: el "quién y cuándo"
 
 Los procedimientos son implementaciones específicas de técnicas por parte de grupos de amenaza concretos. Por ejemplo, el grupo APT29 (asociado a actores rusos) utiliza la subtécnica "Registry Run Keys" de una manera particular, documentada en ATT&CK con referencias a informes públicos de inteligencia.
 
@@ -91,17 +91,17 @@ La aplicación práctica de ATT&CK en un [centro de operaciones de seguridad](/e
 
 ### Mapeo de detecciones
 
-El uso más inmediato de ATT&CK en el SOC es evaluar qué técnicas puede detectar la organización y cuales representan puntos ciegos. El proceso consiste en tomar cada regla de detección existente en el SIEM, EDR u otras herramientas y asignarle la técnica o subtécnica de ATT&CK correspondiente. El resultado es un mapa visual de cobertura que revela que tácticas están bien cubiertas y donde hay brechas críticas.
+El uso más inmediato de ATT&CK en el SOC es evaluar qué técnicas puede detectar la organización y cuáles representan puntos ciegos. El proceso consiste en tomar cada regla de detección existente en el SIEM, EDR u otras herramientas y asignarle la técnica o subtécnica de ATT&CK correspondiente. El resultado es un mapa visual de cobertura que revela qué tácticas están bien cubiertas y dónde hay brechas críticas.
 
 Este ejercicio suele revelar que muchas organizaciones tienen buena cobertura en tácticas como Initial Access y Execution, pero presentan debilidades significativas en Defense Evasión y Lateral Movement, que son precisamente las fases donde los atacantes avanzados invierten más esfuerzo.
 
 ### Priorización de inversiones
 
-Una vez identificados los puntos ciegos, ATT&CK permite priorizar donde invertir recursos de detección. Si la organización pertenece al sector financiero, puede consultar que grupos de amenaza atacan ese sector, revisar sus técnicas preferidas en ATT&CK y priorizar la cobertura de esas técnicas específicas. Este enfoque basado en inteligencia de amenazas es significativamente más eficaz que intentar cubrir todas las técnicas por igual.
+Una vez identificados los puntos ciegos, ATT&CK permite priorizar dónde invertir recursos de detección. Si la organización pertenece al sector financiero, puede consultar qué grupos de amenaza atacan ese sector, revisar sus técnicas preferidas en ATT&CK y priorizar la cobertura de esas técnicas específicas. Este enfoque basado en inteligencia de amenazas es significativamente más eficaz que intentar cubrir todas las técnicas por igual.
 
 ### Comunicación estandarizada
 
-ATT&CK proporciona un vocabulario común que facilita la comunicación entre equipos técnicos, responsables de seguridad y dirección. En lugar de describir un incidente con terminologia vaga, los analistas pueden reportar: "El adversario utilizo T1566.001 (Spearphishing Attachment) para obtener acceso inicial, seguido de T1059.001 (PowerShell) para ejecución y T1053.005 (Scheduled Task) para persistencia". Esta precisión mejora la calidad de los informes y la trazabilidad de las investigaciones.
+ATT&CK proporciona un vocabulario común que facilita la comunicación entre equipos técnicos, responsables de seguridad y dirección. En lugar de describir un incidente con terminología vaga, los analistas pueden reportar: "El adversario utilizó T1566.001 (Spearphishing Attachment) para obtener acceso inicial, seguido de T1059.001 (PowerShell) para ejecución y T1053.005 (Scheduled Task) para persistencia". Esta precisión mejora la calidad de los informes y la trazabilidad de las investigaciones.
 
 ### Evaluación de herramientas
 
@@ -113,7 +113,7 @@ El framework ATT&CK es una herramienta esencial para estructurar programas de th
 
 ### Generación de hipótesis
 
-ATT&CK permite generar hipótesis de caza estructuradas. Un hunter puede formular hipótesis como: "Es posible que un adversario este utilizando T1055 (Process Injection) para ejecutar código malicioso dentro de procesos legitimos y evadir nuestras defensas". Esta hipótesis define exactamente que buscar, donde buscar y que fuentes de datos son necesarias.
+ATT&CK permite generar hipótesis de caza estructuradas. Un hunter puede formular hipótesis como: "Es posible que un adversario esté utilizando T1055 (Process Injection) para ejecutar código malicioso dentro de procesos legítimos y evadir nuestras defensas". Esta hipótesis define exactamente qué buscar, dónde buscar y qué fuentes de datos son necesarias.
 
 ### Cobertura sistemática
 
@@ -139,7 +139,7 @@ Permite a las organizaciones crear y mantener versiones personalizadas de ATT&CK
 
 ### Atomic Red Team
 
-Desarrollado por Red Canary, es una biblioteca de pruebas atomicas que implementan técnicas de ATT&CK de forma segura y controlada. Cada prueba esta mapeada a una técnica específica y puede ejecutarse para validar si las defensas existentes la detectan.
+Desarrollado por Red Canary, es una biblioteca de pruebas atomicas que implementan técnicas de ATT&CK de forma segura y controlada. Cada prueba está mapeada a una técnica específica y puede ejecutarse para validar si las defensas existentes la detectan.
 
 ### Sigma y detección basada en ATT&CK
 
@@ -155,13 +155,13 @@ La integración entre ATT&CK y el SIEM es una de las aplicaciones más potentes 
 
 ### Etiquetado de reglas
 
-Cada regla de correlación en el SIEM debe etiquetarse con la técnica o subtécnica de ATT&CK que detecta. Esto permite generar dashboards de cobertura en tiempo real y medir automáticamente que porcentaje de la matriz está cubierto por las detecciones activas.
+Cada regla de correlación en el SIEM debe etiquetarse con la técnica o subtécnica de ATT&CK que detecta. Esto permite generar dashboards de cobertura en tiempo real y medir automáticamente qué porcentaje de la matriz está cubierto por las detecciones activas.
 
 ### Correlación contextual
 
-Cuando una alerta del SIEM se mapea contra ATT&CK, el analista obtiene inmediatamente contexto adicional: que grupos utilizan esa técnica, que otras técnicas suelen acompanarla, que fuentes de datos adicionales podrían confirmarlo y que mitigaciones son aplicables. Este contexto acelera significativamente el triaje y la investigación.
+Cuando una alerta del SIEM se mapea contra ATT&CK, el analista obtiene inmediatamente contexto adicional: qué grupos utilizan esa técnica, qué otras técnicas suelen acompañarla, qué fuentes de datos adicionales podrían confirmarlo y qué mitigaciones son aplicables. Este contexto acelera significativamente el triaje y la investigación.
 
-### Medición continúa
+### Medición continua
 
 Con las reglas etiquetadas, es posible generar métricas continuas de cobertura de detección: porcentaje de técnicas cubiertas por tactica, tendencia temporal de cobertura, técnicas con mayor volumen de alertas y técnicas detectadas pero sin alertas reales (posibles áreas de sobredetección). Riskitera mapea automáticamente los controles de seguridad contra las técnicas de MITRE ATT&CK, proporcionando visibilidad instantánea sobre la cobertura de detección y los puntos ciegos de la organización.
 
@@ -169,7 +169,7 @@ Con las reglas etiquetadas, es posible generar métricas continuas de cobertura 
 
 **Intentar cubrir toda la matriz a la vez.** ATT&CK es extenso y pretender detectar todas las técnicas simultáneamente es inviable para la mayoría de organizaciones. Es mejor priorizar las técnicas más relevantes según el perfil de amenaza y avanzar gradualmente.
 
-**Confundir cobertura teorica con detección real.** Tener una regla de SIEM mapeada a una técnica no garantiza que funcione. Las detecciones deben validarse periódicamente con pruebas como Atomic Red Team o ejercicios de red team.
+**Confundir cobertura teórica con detección real.** Tener una regla de SIEM mapeada a una técnica no garantiza que funcione. Las detecciones deben validarse periódicamente con pruebas como Atomic Red Team o ejercicios de red team.
 
 **Ignorar las fuentes de datos.** Cada técnica en ATT&CK documenta las fuentes de datos necesarias para su detección. Si la organización no recoge esas fuentes de datos, la detección es imposible independientemente de las reglas configuradas.
 
@@ -179,7 +179,7 @@ Con las reglas etiquetadas, es posible generar métricas continuas de cobertura 
 
 MITRE ofrece numerosos recursos gratuitos para aprender y aplicar ATT&CK:
 
-La página oficial (attack.mitre.org) proporciona acceso completo a la base de conocimiento, con búsqueda y navegación interactiva. El blog de MITRE ATT&CK pública regularmente artículos sobre actualizaciónes, casos de uso y mejores prácticas. Los cursos ATT&CK Training de MITRE Engenuity ofrecen formación estructurada. Los CTI Blueprints proporcionan plantillas para crear informes de inteligencia basados en ATT&CK.
+La página oficial (attack.mitre.org) proporciona acceso completo a la base de conocimiento, con búsqueda y navegación interactiva. El blog de MITRE ATT&CK publica regularmente artículos sobre actualizaciones, casos de uso y mejores prácticas. Los cursos ATT&CK Training de MITRE Engenuity ofrecen formación estructurada. Los CTI Blueprints proporcionan plantillas para crear informes de inteligencia basados en ATT&CK.
 
 En el ámbito europeo, el CCN-CERT ha publicado guías CCN-STIC que referencian ATT&CK para la detección de amenazas en organismos públicos españoles, y ENISA incluye referencias al framework en su informe anual de amenazas (ENISA Threat Landscape).
 
@@ -193,7 +193,7 @@ No. MITRE ATT&CK es una base de conocimiento abierta y gratuita, no un estándar
 
 ### ¿Qué diferencia hay entre MITRE ATT&CK y el Cyber Kill Chain
 
-El Cyber Kill Chain de Lockheed Martin describe las fases de un ataque de forma lineal y a alto nivel (7 fases). MITRE ATT&CK es significativamente más granular, con 14 tácticas y cientos de técnicas y subtecnicas. Además, ATT&CK no asume un flujo lineal: los atacantes pueden saltar entre tácticas y repetir fases. Ambos marcos son complementarios, pero ATT&CK ofrece mucha mayor utilidad operativa.
+El Cyber Kill Chain de Lockheed Martin describe las fases de un ataque de forma lineal y a alto nivel (7 fases). MITRE ATT&CK es significativamente más granular, con 14 tácticas y cientos de técnicas y subtécnicas. Además, ATT&CK no asume un flujo lineal: los atacantes pueden saltar entre tácticas y repetir fases. Ambos marcos son complementarios, pero ATT&CK ofrece mucha mayor utilidad operativa.
 
 ### ¿Necesito un equipo grande para implementar ATT&CK
 
@@ -201,8 +201,8 @@ No necesariamente. Una organización pequeña puede comenzar seleccionando las 2
 
 ### ¿Con qué frecuencia se actualiza MITRE ATT&CK
 
-MITRE pública actualizaciónes mayores de ATT&CK aproximadamente dos veces al año, incorporando nuevas técnicas, subtecnicas, grupos de amenaza y software documentado por la comunidad. Entre actualizaciónes mayores, se realizan correcciones y adiciones menores. Es recomendable revisar los changelogs de cada versión para identificar técnicas nuevas que puedan ser relevantes.
+MITRE publica actualizaciones mayores de ATT&CK aproximadamente dos veces al año, incorporando nuevas técnicas, subtécnicas, grupos de amenaza y software documentado por la comunidad. Entre actualizaciones mayores, se realizan correcciones y adiciones menores. Es recomendable revisar los changelogs de cada versión para identificar técnicas nuevas que puedan ser relevantes.
 
-### ¿Cómo puedo empezar a implementar ATT&CK manana
+### ¿Cómo puedo empezar a implementar ATT&CK mañana
 
-El primer paso práctico es descargar ATT&CK Navigator y crear una capa que represente las detecciones actuales de la organización. Esto proporciona una radiografia inmediata de la cobertura y los puntos ciegos. A partir de ahí, se priorizan las técnicas a cubrir según el perfil de amenaza y se escriben o adquieren las detecciones correspondientes. Es un proceso iterativo que mejora con cada ciclo.
+El primer paso práctico es descargar ATT&CK Navigator y crear una capa que represente las detecciones actuales de la organización. Esto proporciona una radiografía inmediata de la cobertura y los puntos ciegos. A partir de ahí, se priorizan las técnicas a cubrir según el perfil de amenaza y se escriben o adquieren las detecciones correspondientes. Es un proceso iterativo que mejora con cada ciclo.

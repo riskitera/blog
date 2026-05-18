@@ -24,13 +24,13 @@ El analista de un Centro de Operaciones de Seguridad (SOC) es uno de los perfile
 - Salarios en España (2026): N1 25-35K EUR, N2 38-55K EUR, N3 55-80K EUR
 {{< /key-takeaways >}}
 
-## ¿Qué es un analista SOC y que hace?
+## ¿Qué es un analista SOC y qué hace?
 
 Un analista SOC es el profesional encargado de monitorizar, detectar, investigar y responder a las amenazas de ciberseguridad que afectan a una organización. Trabaja dentro de un Centro de Operaciones de Seguridad, utilizando herramientas especializadas como SIEM, EDR y SOAR para proteger los activos digitales de la empresa.
 
 El trabajo del analista SOC es fundamentalmente operativo: se trata de estar en la primera línea de defensa, analizando en tiempo real las alertas de seguridad, investigando actividades sospechosas y ejecutando acciones de respuesta cuando se confirma un incidente. Es un rol que exige atención al detalle, capacidad de análisis bajo presión y actualización constante de conocimientos.
 
-Si quieres entender el contexto completo en el que trabajan estos profesionales, te recomendamos nuestra [guía sobre como montar un SOC desde cero](/es/posts/2026/04/como-montar-soc-desde-cero/), donde explicamos la estructura, herramientas y procesos de un Centro de Operaciones de Seguridad.
+Si quieres entender el contexto completo en el que trabajan estos profesionales, te recomendamos nuestra [guía sobre cómo montar un SOC desde cero](/es/posts/2026/04/como-montar-soc-desde-cero/), donde explicamos la estructura, herramientas y procesos de un Centro de Operaciones de Seguridad.
 
 ## Analista SOC N1: triaje de alertas y primera respuesta
 
@@ -38,7 +38,7 @@ El analista N1 (también llamado Tier 1 o analista de triaje) es el punto de ent
 
 ### Responsabilidades del N1
 
-- **Monitorización continúa de alertas**: supervisa las consolas del SIEM, los paneles de EDR y otras herramientas de seguridad durante su turno, identificando las alertas que requieren atención.
+- **Monitorización continua de alertas**: supervisa las consolas del SIEM, los paneles de EDR y otras herramientas de seguridad durante su turno, identificando las alertas que requieren atención.
 - **Triaje y clasificación**: para cada alerta, el N1 realiza una evaluación rápida para determinar si es un verdadero positivo, un falso positivo o si requiere escalado a N2. Utiliza playbooks predefinidos para guiar su análisis.
 - **Documentación**: registra cada alerta en el sistema de ticketing, documentando la información relevante, las acciones realizadas y la decisión tomada (cierre, escalado o respuesta).
 - **Ejecución de playbooks básicos**: ante incidentes rutinarios (phishing confirmado, malware detectado por el antivirus, intentos de acceso fallidos repetidos), ejecuta los procedimientos de respuesta predefinidos.
@@ -54,7 +54,7 @@ El analista N1 (también llamado Tier 1 o analista de triaje) es el punto de ent
 
 **Habilidades blandas:**
 - Atención al detalle: la capacidad de distinguir una alerta real de un falso positivo depende de observar los detalles.
-- Trabajo bajo presión: los turnos de SOC pueden ser intensos, con múltiples alertas simultaneas.
+- Trabajo bajo presión: los turnos de SOC pueden ser intensos, con múltiples alertas simultáneas.
 - Comunicación: documentar de forma clara y concisa es fundamental para que los escalados a N2 sean eficientes.
 - Disciplina: seguir los playbooks y procedimientos sin atajos.
 
@@ -68,7 +68,7 @@ El analista N1 (también llamado Tier 1 o analista de triaje) es el punto de ent
 
 ### Un día típico de un analista N1
 
-El turno comienza con un handover del turno anterior: revisión de alertas pendientes, incidentes en curso y cualquier novedad relevante. Durante las siguientes 8-12 horas (dependiendo de la rotación), el analista revisa las alertas que llegan a la consola del SIEM, realizando triaje de cada una. En un turno activo, un N1 puede procesar entre 40 y 100 alertas. La mayoría serán falsos positivos o alertas de baja severidad que se cierran directamente. Entre un 10 y un 20 por ciento requerirá algun tipo de análisis adicional, y un porcentaje menor se escalara a N2.
+El turno comienza con un handover del turno anterior: revisión de alertas pendientes, incidentes en curso y cualquier novedad relevante. Durante las siguientes 8-12 horas (dependiendo de la rotación), el analista revisa las alertas que llegan a la consola del SIEM, realizando triaje de cada una. En un turno activo, un N1 puede procesar entre 40 y 100 alertas. La mayoría serán falsos positivos o alertas de baja severidad que se cierran directamente. Entre un 10 y un 20 por ciento requerirá algún tipo de análisis adicional, y un porcentaje menor se escalará a N2.
 
 ## Analista SOC N2: investigación profunda y análisis forense
 
@@ -81,7 +81,7 @@ El analista N2 (Tier 2 o analista de incidentes) es el investigador del SOC. Rec
 - **Forense preliminar**: recopila y preserva evidencias digitales, realiza análisis de memoria, disco y red cuando es necesario para entender la cadena de ataque.
 - **Coordinación de la respuesta**: dirige las acciones de contención (aislamiento de hosts, bloqueo de IPs, revocación de credenciales) y trabaja con los equipos de TI para la remediación.
 - **Desarrollo de reglas de detección**: basándose en los incidentes investigados, propone y desarrolla nuevas reglas de correlación para el SIEM y mejora los playbooks existentes.
-- **Generación de informes**: redacta informes detallados de incidentes que incluyen la cronologia, el análisis técnico, las acciones realizadas y las recomendaciones.
+- **Generación de informes**: redacta informes detallados de incidentes que incluyen la cronología, el análisis técnico, las acciones realizadas y las recomendaciones.
 
 ### Habilidades requeridas para N2
 
@@ -94,8 +94,8 @@ El analista N2 (Tier 2 o analista de incidentes) es el investigador del SOC. Rec
 - Conocimiento profundo de ataques: técnicas de movimiento lateral, escalada de privilegios, persistencia, exfiltración de datos.
 
 **Habilidades blandas:**
-- Pensamiento analitico: capacidad de conectar puntos dispares para formar una imagen coherente del incidente.
-- Gestión del estres: los incidentes graves generan presión por parte de la dirección y de los equipos afectados.
+- Pensamiento analítico: capacidad de conectar puntos dispares para formar una imagen coherente del incidente.
+- Gestión del estrés: los incidentes graves generan presión por parte de la dirección y de los equipos afectados.
 - Comunicación técnica: explicar hallazgos complejos tanto a audiencias técnicas como no técnicas.
 - Mentorización: los N2 deben ayudar al desarrollo profesional de los N1.
 
@@ -134,8 +134,8 @@ El analista N3 (Tier 3, threat hunter o analista senior) representa el nivel má
 - Inteligencia de amenazas: modelos Diamond, Kill Chain, MITRE ATT&CK a nivel experto. Conocimiento de grupos APT relevantes para el sector.
 
 **Habilidades blandas:**
-- Pensamiento estratégico: capacidad de ver más allá del incidente individual y disenar mejoras sistemicas.
-- Autonomia: los N3 trabajan con poca supervisión directa y deben ser capaces de planificar y ejecutar investigaciones complejas de forma independiente.
+- Pensamiento estratégico: capacidad de ver más allá del incidente individual y diseñar mejoras sistémicas.
+- Autonomía: los N3 trabajan con poca supervisión directa y deben ser capaces de planificar y ejecutar investigaciones complejas de forma independiente.
 - Liderazgo técnico: capacidad de influir en la dirección técnica del SOC sin necesariamente tener autoridad jerárquica directa.
 - Comunicación ejecutiva: capacidad de traducir hallazgos técnicos complejos en riesgos de negocio comprensibles para la dirección.
 
@@ -163,7 +163,7 @@ La carrera de un analista SOC es una progresión natural que, con dedicación y 
 
 3. **Analista N2** (3-5 años): tras demostrar competencia en triaje y adquirir conocimientos más profundos de investigación y respuesta, el analista progresa a N2. Es común obtener certificaciones como GCIH, ECIH o BTL1 en esta fase.
 
-4. **Analista N3 / Threat Hunter** (5+ años): requiere especialización en un area concreta (forense, malware, threat intelligence) y una visión estratégica de la seguridad. Certificaciones como GCFA, GREM, OSCP o GXPN marcan la diferencia.
+4. **Analista N3 / Threat Hunter** (5+ años): requiere especialización en un área concreta (forense, malware, threat intelligence) y una visión estratégica de la seguridad. Certificaciones como GCFA, GREM, OSCP o GXPN marcan la diferencia.
 
 5. **Roles avanzados** (7+ años): SOC Manager, responsable de threat intelligence, arquitecto de seguridad, CISO. La bifurcación entre la vía técnica y la vía de gestión se produce habitualmente entre los 5 y los 8 años de carrera.
 
@@ -199,7 +199,7 @@ Los salarios en ciberseguridad en España han experimentado un crecimiento soste
 - **Experiencia media**: 55.000 - 70.000 euros brutos anuales.
 - **SOC Manager senior en grandes organizaciones**: 70.000 - 95.000 euros brutos anuales.
 
-Es importante senalar que el trabajo remoto ha ampliado las opciones: muchos analistas SOC españoles trabajan para empresas europeas o americanas con salarios significativamente superiores a los del mercado local.
+Es importante señalar que el trabajo remoto ha ampliado las opciones: muchos analistas SOC españoles trabajan para empresas europeas o americanas con salarios significativamente superiores a los del mercado local.
 
 El equipo SOC de Riskitera está formado por analistas de todos los niveles con experiencia en sectores regulados, ofreciendo servicios de monitorización, detección y respuesta 24/7 a organizaciones que necesitan capacidades SOC sin la complejidad de montarlo internamente.
 
@@ -209,7 +209,7 @@ Para quienes quieran iniciar una carrera como analistas SOC, este es el camino r
 
 ### Paso 1: Formación base
 
-Un grado universitario en informática, telecomunicaciones o ciberseguridad proporciona una base sólida, pero no es imprescindible. Los ciclos formativos de grado superior en ciberseguridad, administración de sistemas o desarrollo de aplicaciones también son puntos de entrada validos. Lo fundamental es tener buenos cimientos en redes, sistemas operativos y programación básica.
+Un grado universitario en informática, telecomunicaciones o ciberseguridad proporciona una base sólida, pero no es imprescindible. Los ciclos formativos de grado superior en ciberseguridad, administración de sistemas o desarrollo de aplicaciones también son puntos de entrada válidos. Lo fundamental es tener buenos cimientos en redes, sistemas operativos y programación básica.
 
 ### Paso 2: Certificaciones iniciales
 
@@ -233,7 +233,7 @@ Busca posiciones de analista SOC N1, SOC junior o security analyst en empresas d
 
 ### ¿Necesito un título universitario para ser analista SOC?
 
-No es estrictamente necesario, aunque si es recomendable. Muchos analistas SOC exitosos provienen de formación profesional de grado superior en ciberseguridad o administración de sistemas. Lo que realmente importa es el conocimiento práctico demostrable: certificaciones reconocidas (CompTIA Security+, CySA+, GCIH), experiencia en laboratorios y plataformas de práctica, y la capacidad de analizar y resolver problemas técnicos. Dicho esto, un título universitario sigue siendo un requisito en muchas ofertas de empleo, especialmente en grandes corporaciones y en el sector público.
+No es estrictamente necesario, aunque sí es recomendable. Muchos analistas SOC exitosos provienen de formación profesional de grado superior en ciberseguridad o administración de sistemas. Lo que realmente importa es el conocimiento práctico demostrable: certificaciones reconocidas (CompTIA Security+, CySA+, GCIH), experiencia en laboratorios y plataformas de práctica, y la capacidad de analizar y resolver problemas técnicos. Dicho esto, un título universitario sigue siendo un requisito en muchas ofertas de empleo, especialmente en grandes corporaciones y en el sector público.
 
 ### ¿Cuánto tiempo se tarda en pasar de N1 a N2?
 
@@ -241,12 +241,12 @@ La progresión típica de N1 a N2 es de 2 a 3 años, aunque depende de factores 
 
 ### ¿Qué diferencia hay entre un analista SOC y un pentester?
 
-Son roles complementarios pero distintos. El analista SOC es un perfil defensivo (blue team): detecta, investiga y responde a amenazas reales contra los sistemas de la organización. El pentester es un perfil ofensivo (red team): simula ataques para encontrar vulnerabilidades antes de que los atacantes reales las exploten. Ambos requieren conocimientos técnicos solidos, pero la mentalidad y las habilidades del día a día son diferentes. Algunos profesionales evolucionan hacia el purple teaming, que combina ambos enfoques.
+Son roles complementarios pero distintos. El analista SOC es un perfil defensivo (blue team): detecta, investiga y responde a amenazas reales contra los sistemas de la organización. El pentester es un perfil ofensivo (red team): simula ataques para encontrar vulnerabilidades antes de que los atacantes reales las exploten. Ambos requieren conocimientos técnicos sólidos, pero la mentalidad y las habilidades del día a día son diferentes. Algunos profesionales evolucionan hacia el purple teaming, que combina ambos enfoques.
 
 ### ¿Es sostenible trabajar en turnos de SOC a largo plazo?
 
-Los turnos rotativos (manana, tarde, noche) son una realidad del trabajo en SOC 24/7 y pueden generar desgaste si no se gestionan bien. La clave está en la organización del equipo: una rotación equilibrada con suficiente personal para cubrir vacaciones y descansos, políticas claras de compensación por nocturnidad y fines de semana, y una cultura que valore el bienestar del equipo. Muchos analistas trabajan en turnos durante los primeros años de su carrera (N1 y N2) y progresivamente migran a roles con horarios más regulares (N3, SOC Manager, ingeniería de detección) a medida que ganan experiencia.
+Los turnos rotativos (mañana, tarde, noche) son una realidad del trabajo en SOC 24/7 y pueden generar desgaste si no se gestionan bien. La clave está en la organización del equipo: una rotación equilibrada con suficiente personal para cubrir vacaciones y descansos, políticas claras de compensación por nocturnidad y fines de semana, y una cultura que valore el bienestar del equipo. Muchos analistas trabajan en turnos durante los primeros años de su carrera (N1 y N2) y progresivamente migran a roles con horarios más regulares (N3, SOC Manager, ingeniería de detección) a medida que ganan experiencia.
 
 ### ¿Qué idiomas necesita un analista SOC?
 
-El español es obviamente necesario para el mercado laboral español. El inglés es imprescindible: la documentación técnica, los informes de amenazas, las comunidades profesionales y la mayoría de las herramientas están en ingles. Un nivel B2 o superior de inglés técnico es un requisito de facto para cualquier posición SOC. Otros idiomas (portugues, aleman, frances) son un plus, especialmente en SOC que dan servicio a clientes internacionales.
+El español es obviamente necesario para el mercado laboral español. El inglés es imprescindible: la documentación técnica, los informes de amenazas, las comunidades profesionales y la mayoría de las herramientas están en inglés. Un nivel B2 o superior de inglés técnico es un requisito de facto para cualquier posición SOC. Otros idiomas (portugués, alemán, francés) son un plus, especialmente en SOC que dan servicio a clientes internacionales.

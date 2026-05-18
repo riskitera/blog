@@ -1,5 +1,5 @@
 ---
-title: "NIS2: que es, a quién afecta y plazos de cumplimiento en España"
+title: "NIS2: qué es, a quién afecta y plazos de cumplimiento en España"
 image: "cover.png"
 description: "Guía completa sobre la Directiva NIS2: qué empresas deben cumplirla, requisitos principales, plazos de transposición en España, sanciones y pasos para prepararse."
 slug: "nis2-que-es-a-quien-afecta"
@@ -24,17 +24,17 @@ La [Directiva NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) (Directiva (UE)
 - En España, el ENS cubre parte de los requisitos de NIS2 para el sector público
 {{< /key-takeaways >}}
 
-## ¿Qué es la Directiva NIS2 y por que es importante?
+## ¿Qué es la Directiva NIS2 y por qué es importante?
 
 La Directiva NIS2 (Network and Information Security 2) es la actualización de la Directiva NIS original de 2016, que fue la primera legislación europea centrada exclusivamente en ciberseguridad. NIS2 fue adoptada por el Parlamento Europeo y el Consejo en diciembre de 2022 y publicada en el Diario Oficial de la Unión Europea el 27 de diciembre de 2022.
 
-Su objetivo principal es alcanzar un nivel común elevado de ciberseguridad en toda la Unión Europea, armonizando las obligaciones entre Estados miembros y eliminando las disparidades que existian con la primera directiva. Según la Agencia de la Unión Europea para la Ciberseguridad ([ENISA](https://www.enisa.europa.eu/)), los ciberataques a infraestructuras críticas europeas aumentaron un 68 por ciento entre 2021 y 2024, lo que justificó plenamente la necesidad de endurecer el marco regulatorio.
+Su objetivo principal es alcanzar un nivel común elevado de ciberseguridad en toda la Unión Europea, armonizando las obligaciones entre Estados miembros y eliminando las disparidades que existían con la primera directiva. Según la Agencia de la Unión Europea para la Ciberseguridad ([ENISA](https://www.enisa.europa.eu/)), los ciberataques a infraestructuras críticas europeas aumentaron un 68 por ciento entre 2021 y 2024, lo que justificó plenamente la necesidad de endurecer el marco regulatorio.
 
 ## ¿Cuáles son las diferencias entre NIS1 y NIS2?
 
 La primera Directiva NIS, transpuesta en España mediante el Real Decreto-ley 12/2018, tenía un alcance limitado y dejó demasiado margen de interpretación a los Estados miembros. NIS2 corrige estos problemas de forma sustancial:
 
-### Ambito de aplicación ampliado
+### Ámbito de aplicación ampliado
 
 NIS1 afectaba a aproximadamente 7.000 entidades en toda Europa, fundamentalmente operadores de servicios esenciales y proveedores de servicios digitales. NIS2 multiplica esa cifra por más de veinte, incluyendo sectores que antes quedaban fuera como la gestión de residuos, la industria alimentaria, los servicios postales, la fabricación de productos críticos y la administración pública.
 
@@ -60,10 +60,10 @@ NIS2 establece dos categorías de entidades obligadas, basándose en el sector d
 
 ### Entidades esenciales
 
-Son aquellas que operan en sectores de alta criticidad y que, por su tamaño o naturaleza, representan un riesgo sistemico. Incluyen:
+Son aquellas que operan en sectores de alta criticidad y que, por su tamaño o naturaleza, representan un riesgo sistémico. Incluyen:
 
 - **Energía**: electricidad, petróleo, gas, hidrógeno, calefacción y refrigeración urbana.
-- **Transporte**: aereo, ferroviario, maritimo y por carretera.
+- **Transporte**: aéreo, ferroviario, marítimo y por carretera.
 - **Banca y mercados financieros**.
 - **Sanidad**: hospitales, laboratorios, fabricantes de productos farmacéuticos y de dispositivos médicos.
 - **Agua potable y aguas residuales**.
@@ -77,11 +77,11 @@ Para ser clasificada como esencial, la entidad debe operar en uno de estos secto
 
 Operan en sectores críticos pero con un perfil de riesgo menor. Incluyen:
 
-- **Servicios postales y de mensajeria**.
+- **Servicios postales y de mensajería**.
 - **Gestión de residuos**.
-- **Fabricación de productos quimicos**.
+- **Fabricación de productos químicos**.
 - **Producción y distribución de alimentos**.
-- **Fabricación de productos críticos**: dispositivos médicos, productos informáticos, electrónicos, opticos, maquinaria, vehículos y equipos de transporte.
+- **Fabricación de productos críticos**: dispositivos médicos, productos informáticos, electrónicos, ópticos, maquinaria, vehículos y equipos de transporte.
 - **Servicios digitales**: mercados en línea, motores de búsqueda, redes sociales.
 - **Investigación**: organizaciones de investigación.
 
@@ -107,7 +107,7 @@ NIS2 establece diez medidas mínimas de gestión de riesgos que todas las entida
 
 7. **Prácticas básicas de ciberhigiene y formación**: programas de concienciación y formación en ciberseguridad para todo el personal.
 
-8. **Políticas de uso de criptografia y cifrado**: uso adecuado del cifrado para proteger la información.
+8. **Políticas de uso de criptografía y cifrado**: uso adecuado del cifrado para proteger la información.
 
 9. **Seguridad de recursos humanos, control de acceso y gestión de activos**: políticas de seguridad del personal, gestión de identidades y accesos, e inventario de activos.
 
@@ -133,7 +133,7 @@ A fecha de abril de 2026, España tiene el Anteproyecto de Ley de Ciberseguridad
 - **Autoridades competentes**: se designan autoridades sectoriales de supervisión para cada ámbito de actividad.
 - **INCIBE como CSIRT nacional**: INCIBE-CERT se consolida como el equipo de respuesta a incidentes de referencia para el sector privado.
 
-La expectativa del sector es que la ley este plenamente en vigor antes de finales de 2026, con un periodo transitorio para la adaptación de las entidades afectadas.
+La expectativa del sector es que la ley esté plenamente en vigor antes de finales de 2026, con un periodo transitorio para la adaptación de las entidades afectadas.
 
 Las organizaciones no deberían esperar a la transposición definitiva para actuar. La Directiva tiene efecto directo en muchos aspectos y las entidades que no estén preparadas cuando la ley entre en vigor se enfrentarán a plazos de adaptación muy ajustados.
 
@@ -155,9 +155,9 @@ Además, NIS2 introduce la posibilidad de que las autoridades de supervisión re
 
 ## ¿Cómo prepararse para cumplir NIS2?
 
-La adaptación a NIS2 requiere un enfoque metodico y multidisciplinar. Estos son los pasos recomendados:
+La adaptación a NIS2 requiere un enfoque metódico y multidisciplinar. Estos son los pasos recomendados:
 
-### 1. Determinar si tu organización esta afectada
+### 1. Determinar si tu organización está afectada
 
 Analiza el sector de actividad de tu empresa, su tamaño (empleados y facturación) y si presta servicios que encajen en las categorías definidas por NIS2. Si tienes dudas, consulta la lista completa de sectores en los Anexos I y II de la Directiva.
 
@@ -208,7 +208,7 @@ Depende. NIS2 utiliza los criterios de la Recomendación 2003/361/CE de la Comis
 
 ### ¿Si ya cumplo con ISO 27001, estoy cubierto para NIS2?
 
-ISO 27001 proporciona una base excelente, pero no cubre todos los requisitos de NIS2. Las principales diferencias están en las obligaciones de notificación de incidentes (con plazos muy concretos), la responsabilidad explícita de la alta dirección, la gestión de la cadena de suministro con el nivel de detalle que exige NIS2 y la cooperación con las autoridades competentes. Necesitaras complementar tu SGSI con estos aspectos adicionales.
+ISO 27001 proporciona una base excelente, pero no cubre todos los requisitos de NIS2. Las principales diferencias están en las obligaciones de notificación de incidentes (con plazos muy concretos), la responsabilidad explícita de la alta dirección, la gestión de la cadena de suministro con el nivel de detalle que exige NIS2 y la cooperación con las autoridades competentes. Necesitarás complementar tu SGSI con estos aspectos adicionales.
 
 ### ¿Qué pasa si España no ha transpuesto NIS2 y mi empresa ya está operando?
 
@@ -220,4 +220,4 @@ El Anteproyecto de Ley de Ciberseguridad español establece que, para las entida
 
 ### ¿Quién supervisa el cumplimiento de NIS2 en España?
 
-Según el modelo previsto, la supervisión se reparte entre varias autoridades sectoriales. El CCN será la autoridad de referencia para el sector público, INCIBE para el sector privado en general, y existiran autoridades sectoriales específicas para ámbitos como energía, transporte o sanidad. INCIBE-CERT y CCN-CERT actuaran como los equipos de respuesta a incidentes de referencia, canalizando las notificaciones y coordinando la respuesta.
+Según el modelo previsto, la supervisión se reparte entre varias autoridades sectoriales. El CCN será la autoridad de referencia para el sector público, INCIBE para el sector privado en general, y existirán autoridades sectoriales específicas para ámbitos como energía, transporte o sanidad. INCIBE-CERT y CCN-CERT actuarán como los equipos de respuesta a incidentes de referencia, canalizando las notificaciones y coordinando la respuesta.

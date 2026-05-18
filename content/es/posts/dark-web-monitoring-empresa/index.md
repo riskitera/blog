@@ -13,7 +13,7 @@ keyword: "dark web monitoring empresa"
 funnel: "mofu"
 ---
 
-Guía práctica de monitorización de la dark web para empresas: que buscar, herramientas accesibles, fuentes OSINT, alertas automatizadas y cuando contratar un servicio profesional.
+Guía práctica de monitorización de la dark web para empresas: qué buscar, herramientas accesibles, fuentes OSINT, alertas automatizadas y cuándo contratar un servicio profesional.
 
 <!--more-->
 
@@ -21,11 +21,11 @@ Guía práctica de monitorización de la dark web para empresas: que buscar, her
 - La dark web es un ecosistema donde se comercian credenciales robadas, datos corporativos filtrados y accesos iniciales a redes empresariales. Monitorizar estos espacios no es opcional para empresas con activos digitales relevantes.
 - Existen herramientas gratuitas (Have I Been Pwned, IntelX, Dehashed) que permiten arrancar un programa básico de vigilancia sin inversión inicial.
 - Las plataformas profesionales (Recorded Future, Flashpoint, SpiderFoot) ofrecen cobertura automatizada de foros, mercados y canales de Telegram donde se negocian datos corporativos.
-- En España, acceder a la dark web es legal siempre que no se participe en actividades ilicitas. El marco normativo (RGPD, LSSI, NIS2) exige protección proactiva de datos.
+- En España, acceder a la dark web es legal siempre que no se participe en actividades ilícitas. El marco normativo (RGPD, LSSI, NIS2) exige protección proactiva de datos.
 - Integrar las alertas de dark web monitoring en el flujo de trabajo del SOC es imprescindible para que la inteligencia se traduzca en acciones concretas y tiempos de respuesta medibles.
 {{< /key-takeaways >}}
 
-## ¿Qué es la monitorización de la dark web y por que importa en 2026
+## ¿Qué es la monitorización de la dark web y por qué importa en 2026?
 
 La dark web es la porción de internet que no está indexada por buscadores convencionales y requiere software específico (normalmente [Tor](https://www.torproject.org/)) para acceder. Dentro de este ecosistema operan foros de hacking, mercados de datos robados, servicios de malware-as-a-service y canales de comunicación cifrada donde actores maliciosos negocian accesos corporativos.
 
@@ -33,7 +33,7 @@ El dark web monitoring consiste en vigilar de forma sistemática estos espacios 
 
 Según el informe [Data Breach Investigations Report de Verizon](https://www.verizon.com/business/resources/reports/dbir/), el 86% de las brechas involucran credenciales robadas. Muchas de esas credenciales aparecen en la dark web semanas o meses antes de que se utilicen en un ataque. Esa ventana temporal es exactamente lo que el monitoring te permite aprovechar.
 
-En 2026 el panorama se ha intensificado. Los initial access brokers (IABs) venden accesos VPN y RDP corporativos en subastas con precios que van desde 500 hasta 50.000 euros dependiendo del tamaño y sector de la victima. Los infostealers como Lumma, Raccoon y RedLine extraen cookies de sesión, credenciales almacenadas en navegadores y tokens de autenticación de forma masiva. El volumen de datos filtrados crece cada trimestre.
+En 2026 el panorama se ha intensificado. Los initial access brokers (IABs) venden accesos VPN y RDP corporativos en subastas con precios que van desde 500 hasta 50.000 euros dependiendo del tamaño y sector de la víctima. Los infostealers como Lumma, Raccoon y RedLine extraen cookies de sesión, credenciales almacenadas en navegadores y tokens de autenticación de forma masiva. El volumen de datos filtrados crece cada trimestre.
 
 ### El coste de no monitorizar
 
@@ -41,13 +41,13 @@ Para una pyme española, el coste medio de una brecha de datos ronda los 100.000
 
 ## Credenciales, datos filtrados y menciones: qué monitorizar en la dark web
 
-No basta con "vigilar la dark web" de forma generica. Necesitas definir qué activos monitorizar y que tipo de amenazas son relevantes para tu organización. Estos son los cinco vectores principales.
+No basta con "vigilar la dark web" de forma genérica. Necesitas definir qué activos monitorizar y qué tipo de amenazas son relevantes para tu organización. Estos son los cinco vectores principales.
 
 ### 1. Filtraciones de credenciales
 
 Es el caso de uso más común y el que ofrece resultados más inmediatos. Debes buscar:
 
-- **Credenciales corporativas filtradas:** combinaciones de email/contraseña de tus dominios que aparecen en dumps o combolists. Un solo par de credenciales validas puede ser la puerta de entrada a tu red.
+- **Credenciales corporativas filtradas:** combinaciones de email/contraseña de tus dominios que aparecen en dumps o combolists. Un solo par de credenciales válidas puede ser la puerta de entrada a tu red.
 - **Credenciales de servicios SaaS:** cuentas de empleados en plataformas como Slack, Jira, GitHub, Office 365. Los actores maliciosos saben que muchas organizaciones no implementan MFA en todas sus herramientas.
 - **Cookies de sesión y tokens:** los infostealers modernos no solo roban contraseñas. Extraen cookies de sesión activas que permiten bypass completo de MFA. Si un token de sesión de tu VPN corporativa aparece en un log de infostealer, tienes un problema crítico.
 - **Credenciales de acceso remoto:** VPN, RDP, Citrix, SSH. Los IABs las venden como paquetes de "acceso inicial" en foros especializados.
@@ -87,7 +87,7 @@ Los ataques de spear phishing y business email compromise (BEC) frecuentemente c
 
 Los atacantes registran dominios similares al tuyo para campañas de phishing. Debes monitorizar:
 
-- Dominios con errores tipograficos de tu marca (ej. riskltera.com, riskitera.net)
+- Dominios con errores tipográficos de tu marca (ej. riskltera.com, riskitera.net)
 - Certificados SSL emitidos para dominios similares al tuyo (Certificate Transparency logs)
 - Paginas de phishing que imitan tu portal de login o tu web corporativa
 - Kits de phishing a la venta que incluyan plantillas de tu organización
@@ -105,7 +105,7 @@ No necesitas un presupuesto de seis cifras para iniciar un programa básico de d
 1. Registra tu dominio en HIBP verificando propiedad vía DNS TXT record o email
 2. Activa las notificaciones para recibir alertas cuando aparezcan nuevas brechas
 3. Revisa el listado inicial de brechas que afectan a cuentas de tu dominio
-4. Para cada brecha, identifica que datos se expusieron (contraseñas, hashes, datos personales)
+4. Para cada brecha, identifica qué datos se expusieron (contraseñas, hashes, datos personales)
 
 **Limitaciones:** HIBP solo cubre brechas que se hacen públicas y que Troy Hunt incorpora a la base de datos. No cubre datos vendidos en privado ni filtraciones recientes que aún no se hayan difundido ampliamente.
 
@@ -122,7 +122,7 @@ No necesitas un presupuesto de seis cifras para iniciar un programa básico de d
 3. Revisa los resultados por tipo de fuente (paste sites, leaks, dark web)
 4. Documenta hallazgos y prioriza por criticidad
 
-**Tier gratuito vs de pago:** la versión gratuita muestra resultados truncados y limita el número de búsquedas diarias. Para un uso operativo serio necesitaras el plan profesional, pero la versión gratuita es suficiente para evaluaciones puntuales y para decidir si la herramienta aporta valor a tu organización.
+**Tier gratuito vs de pago:** la versión gratuita muestra resultados truncados y limita el número de búsquedas diarias. Para un uso operativo serio necesitarás el plan profesional, pero la versión gratuita es suficiente para evaluaciones puntuales y para decidir si la herramienta aporta valor a tu organización.
 
 ### Dehashed
 
@@ -130,10 +130,10 @@ No necesitas un presupuesto de seis cifras para iniciar un programa básico de d
 
 **¿Cómo usarla:**
 
-1. Busca tu dominio para ver cuantas credenciales filtradas existen
+1. Busca tu dominio para ver cuántas credenciales filtradas existen
 2. Busca nombres de empleados clave para detectar reutilización de credenciales
 3. Cruza resultados con tu directorio activo para identificar cuentas activas comprometidas
-4. Prioriza el reseteo de credenciales que aún esten en uso
+4. Prioriza el reseteo de credenciales que aún estén en uso
 
 **Importante:** Dehashed contiene datos sensibles. Usala exclusivamente para proteger tu propia organización y documenta el propósito legítimo de cada consulta.
 
@@ -150,7 +150,7 @@ Cuando el volumen de activos a monitorizar crece o la organización opera en un 
 
 ### Recorded Future
 
-[Recorded Future](https://www.recordedfuture.com/) es una de las plataformas de threat intelligence más completas del mercado. Su modulo de dark web monitoring cubre:
+[Recorded Future](https://www.recordedfuture.com/) es una de las plataformas de threat intelligence más completas del mercado. Su módulo de dark web monitoring cubre:
 
 - Indexación automatizada de foros, mercados y canales de Telegram
 - Detección de credenciales filtradas con contexto (fuente, fecha, tipo de brecha)
@@ -164,21 +164,21 @@ Cuando el volumen de activos a monitorizar crece o la organización opera en un 
 
 [Flashpoint](https://flashpoint.io/) se especializa en inteligencia sobre actores de amenaza y análisis de la dark web en profundidad. Sus fortalezas:
 
-- Cobertura de foros cerrados y comunidades de habla rusa, china y arabe
+- Cobertura de foros cerrados y comunidades de habla rusa, china y árabe
 - Análisis de intenciones y capacidades de actores de amenaza
 - Detección de campañas de fraude y venta de datos
 - Reporting adaptado a audiencias ejecutivas y técnicas
-- Contextualización geopolitica de amenazas
+- Contextualización geopolítica de amenazas
 
 **Ideal para:** organizaciones con programas de CTI maduros que necesitan inteligencia contextualizada, no solo alertas. Flashpoint es particularmente fuerte en el análisis de amenazas procedentes de actores estatales y grupos de crimen organizado.
 
 ### SpiderFoot
 
-[SpiderFoot](https://www.spiderfoot.net/) es una plataforma de OSINT con una versión open source (SpiderFoot HX) y una versión cloud. Su enfoqué es la automatización del reconocimiento:
+[SpiderFoot](https://www.spiderfoot.net/) es una plataforma de OSINT con una versión open source (SpiderFoot HX) y una versión cloud. Su enfoque es la automatización del reconocimiento:
 
 - Más de 200 módulos de recopilación de datos
 - Correlación automática entre fuentes (dark web, DNS, redes sociales, brechas)
-- Visualización grafica de relaciones entre entidades
+- Visualización gráfica de relaciones entre entidades
 - Versión open source desplegable en tu propia infraestructura
 
 **Ideal para:** equipos técnicos que quieren control total sobre sus herramientas y prefieren self-hosting. La versión open source es gratuita y potente, aunque requiere mantenimiento y conocimiento técnico para sacarle partido.
@@ -200,7 +200,7 @@ Uno de los temas que más dudas genera es la legalidad de acceder a la dark web 
 
 ### Marco normativo aplicable
 
-**Acceso a la dark web:** en España no existe ninguna ley que prohiba acceder a la red Tor ni navegar por la dark web. Lo que es ilegal son las actividades que puedas realizar alli (comprar datos robados, contratar servicios de hacking, adquirir malware).
+**Acceso a la dark web:** en España no existe ninguna ley que prohiba acceder a la red Tor ni navegar por la dark web. Lo que es ilegal son las actividades que puedas realizar allí (comprar datos robados, contratar servicios de hacking, adquirir malware).
 
 **[RGPD](https://www.aepd.es/reglamento/reglamento.html) y protección de datos:** si durante el monitoring encuentras datos personales de terceros (empleados de otras empresas, clientes), debes tratarlos conforme al RGPD. Esto incluye minimización de datos, propósito legítimo documentado y eliminación cuando ya no sean necesarios.
 
@@ -208,11 +208,11 @@ Uno de los temas que más dudas genera es la legalidad de acceder a la dark web 
 
 **[NIS2](https://www.enisa.europa.eu/):** la Directiva NIS2, aplicable desde octubre de 2024, exige a entidades esenciales e importantes medidas de gestión de riesgos de ciberseguridad. El dark web monitoring es una práctica razonable dentro de esas medidas. [ENISA](https://www.enisa.europa.eu/) recomienda explícitamente la monitorización de amenazas como parte de la postura de seguridad.
 
-**[INCIBE](https://www.incibe.es/)** (Instituto Nacional de Ciberseguridad) proporciona guías y recursos para empresas españolas sobre como gestionar incidentes y implementar medidas de ciberseguridad, incluyendo la monitorización de amenazas.
+**[INCIBE](https://www.incibe.es/)** (Instituto Nacional de Ciberseguridad) proporciona guías y recursos para empresas españolas sobre cómo gestionar incidentes y implementar medidas de ciberseguridad, incluyendo la monitorización de amenazas.
 
 ### Buenas prácticas legales
 
-1. **Documenta el propósito:** mantén un registro escrito de por que monitorizas la dark web, que activos vigilas y quien autoriza las búsquedas.
+1. **Documenta el propósito:** mantén un registro escrito de por qué monitorizas la dark web, qué activos vigilas y quién autoriza las búsquedas.
 2. **No interactues con actores maliciosos:** observa, documenta, pero no compres datos, no participes en foros simulando ser un ciberdelincuente, no contactes vendedores.
 3. **Notifica hallazgos relevantes:** si encuentras datos de otras organizaciones, valora notificarlas. Si encuentras evidencia de delitos graves, considera comunicarlo a las FCSE (Fuerzas y Cuerpos de Seguridad del Estado) o al INCIBE-CERT.
 4. **Consulta con asesoria jurídica:** si operas en sectores regulados (banca, salud, infraestructuras críticas), involucra al departamento legal antes de iniciar un programa de monitoring.
@@ -266,12 +266,12 @@ La información de la dark web solo tiene valor si se integra en los procesos op
 
 ## ¿Cómo configurar alertas automatizadas paso a paso
 
-Un sistema de alertas bien configurado es la diferencia entre un programa reactivo y uno proactivo. Aqui tienes un plan de implementación progresivo.
+Un sistema de alertas bien configurado es la diferencia entre un programa reactivo y uno proactivo. Aquí tienes un plan de implementación progresivo.
 
 ### Nivel 1: Alertas básicas (semana 1)
 
 1. **Registra tu dominio en Have I Been Pwned.** Verifica propiedad y activa notificaciones por email.
-2. **Configura Google Alerts** para tu nombre de dominio, nombre de empresa y variaciones comunes con errores tipograficos.
+2. **Configura Google Alerts** para tu nombre de dominio, nombre de empresa y variaciones comunes con errores tipográficos.
 3. **Revisa crt.sh semanalmente** buscando certificados nuevos emitidos para dominios similares al tuyo.
 4. **Crea una búsqueda guardada en IntelX** (tier gratuito) para tu dominio principal.
 
@@ -319,7 +319,7 @@ def send_slack_alert(webhook_url, message):
     requests.post(webhook_url, json=payload)
 ```
 
-Este es un ejemplo simplificado. En un entorno productivo necesitaras manejo de errores, rate limiting, almacenamiento de resultados previos para evitar alertas duplicadas, y autenticación adecuada.
+Este es un ejemplo simplificado. En un entorno productivo necesitarás manejo de errores, rate limiting, almacenamiento de resultados previos para evitar alertas duplicadas, y autenticación adecuada.
 
 ## Fuentes OSINT más útiles para dark web monitoring
 
@@ -333,7 +333,7 @@ Más allá de las herramientas ya mencionadas, estas fuentes OSINT complementan 
 
 ### Monitores de ransomware
 
-- **Ransomwatch:** proyecto que monitoriza sitios de leaks de grupos de ransomware. Permite detectar si tu organización aparece como victima antes de que los datos se publiquen completamente.
+- **Ransomwatch:** proyecto que monitoriza sitios de leaks de grupos de ransomware. Permite detectar si tu organización aparece como víctima antes de que los datos se publiquen completamente.
 - **DarkFeed de DarkTracer:** feed de actividad de ransomware en la dark web.
 
 ### Canales de Telegram
@@ -377,7 +377,7 @@ Este enfoque permite cubrir la superficie de ataque sin sobredimensionar la inve
 
 ## Protocolo de respuesta ante filtraciones detectadas en dark web
 
-Encontrar datos de tu organización en la dark web no es cuestion de si, sino de cuando. Lo importante es tener un protocolo claro de respuesta.
+Encontrar datos de tu organización en la dark web no es cuestión de si, sino de cuándo. Lo importante es tener un protocolo claro de respuesta.
 
 ### Protocolo de respuesta inmediata
 
@@ -385,7 +385,7 @@ Encontrar datos de tu organización en la dark web no es cuestion de si, sino de
 
 - Confirma que los datos son reales y pertenecen a tu organización
 - Determina la antiguedad de la filtración (reciente vs histórica)
-- Evalua la sensibilidad de los datos expuestos
+- Evalúa la sensibilidad de los datos expuestos
 - Identifica la fuente probable (brecha en tercero, ataque directo, insider)
 
 **Paso 2: Contención (primeras 4 horas)**
@@ -407,7 +407,7 @@ Encontrar datos de tu organización en la dark web no es cuestion de si, sino de
 - **AEPD:** si hay datos personales afectados, notificación en las primeras 72 horas según RGPD
 - **INCIBE-CERT:** si eres operador de servicios esenciales o infraestructura crítica
 - **Clientes afectados:** si sus datos personales están comprometidos, notificación obligatoria
-- **Aseguradora cyber:** si tienes poliza de ciberseguro, notifica para activar cobertura
+- **Aseguradora cyber:** si tienes póliza de ciberseguro, notifica para activar cobertura
 
 **Paso 5: Remediación y mejora (semana siguiente)**
 
@@ -422,8 +422,8 @@ Encontrar datos de tu organización en la dark web no es cuestion de si, sino de
 
 Después de trabajar con múltiples organizaciones en programas de CTI, estos son los errores que vemos con más frecuencia:
 
-1. **Monitorizar sin plan de respuesta.** De nada sirve detectar una filtración si nadie sabe que hacer con la alerta. Define el playbook antes de activar las herramientas.
-2. **Centrarse solo en credenciales.** Las credenciales son importantes, pero ignorar menciones de marca, planificación de ataques o infraestructura de phishing deja angulos muertos críticos.
+1. **Monitorizar sin plan de respuesta.** De nada sirve detectar una filtración si nadie sabe qué hacer con la alerta. Define el playbook antes de activar las herramientas.
+2. **Centrarse solo en credenciales.** Las credenciales son importantes, pero ignorar menciones de marca, planificación de ataques o infraestructura de phishing deja ángulos muertos críticos.
 3. **No actualizar los activos monitorizados.** Las empresas adquieren dominios, lanzan productos, contratan empleados. Si la lista de activos no se actualiza trimestralmente, el monitoring se queda obsoleto.
 4. **Confundir acceso con actividad ilegal.** Acceder a la dark web para monitoring es legal. Participar en transacciones o simular ser un actor malicioso cruza la línea. Forma a tu equipo.
 5. **No medir resultados.** Si no mides tiempo de detección, tiempo de respuesta y credenciales neutralizadas, no puedes demostrar el valor del programa ni justificar presupuesto.
@@ -437,7 +437,7 @@ Después de trabajar con múltiples organizaciones en programas de CTI, estos so
 
 ### ¿Es legal acceder a la dark web en España?
 
-Sí. Acceder a la dark web mediante Tor u otras redes anonimas es completamente legal en España. Lo que está prohibido son las actividades ilicitas que puedas realizar alli: comprar datos robados, contratar servicios de hacking, adquirir malware o participar en mercados ilegales. Para dark web monitoring con fines defensivos, documenta el propósito legítimo y evita cualquier interacción con actores maliciosos.
+Sí. Acceder a la dark web mediante Tor u otras redes anónimas es completamente legal en España. Lo que está prohibido son las actividades ilícitas que puedas realizar allí: comprar datos robados, contratar servicios de hacking, adquirir malware o participar en mercados ilegales. Para dark web monitoring con fines defensivos, documenta el propósito legítimo y evita cualquier interacción con actores maliciosos.
 
 ### ¿Cuánto cuesta implementar dark web monitoring en una pyme?
 
@@ -453,4 +453,4 @@ Las alertas críticas (credenciales activas, accesos a la venta, datos de client
 
 ### ¿Puedo hacer dark web monitoring sin un SOC dedicado?
 
-Sí, especialmente en la fase inicial. Un equipo de IT con formación básica en ciberseguridad puede gestionar un programa de monitoring con herramientas gratuitas. La clave es tener un playbook de respuesta claro para cada tipo de alerta. Conforme el volumen de alertas crece o si operas en sectores regulados, necesitaras un SOC (interno o externalizado como servicio MSSP) para mantener tiempos de respuesta aceptables.
+Sí, especialmente en la fase inicial. Un equipo de IT con formación básica en ciberseguridad puede gestionar un programa de monitoring con herramientas gratuitas. La clave es tener un playbook de respuesta claro para cada tipo de alerta. Conforme el volumen de alertas crece o si operas en sectores regulados, necesitarás un SOC (interno o externalizado como servicio MSSP) para mantener tiempos de respuesta aceptables.

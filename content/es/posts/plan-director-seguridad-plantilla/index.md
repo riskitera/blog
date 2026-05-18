@@ -1,5 +1,5 @@
 ---
-title: "Plan director de seguridad: plantilla y guía pasó a pasó"
+title: "Plan director de seguridad: plantilla y guía paso a paso"
 description: "Guía completa para elaborar un plan director de seguridad de la información: estructura, contenido mínimo, priorización de proyectos, presupuesto y plantilla descargable."
 slug: "plan-director-seguridad-plantilla"
 date: 2026-06-13

@@ -1,5 +1,5 @@
 ---
-title: "ENS Alto vs Medio vs Bajo: diferencias, requisitos y como elegir categoría"
+title: "ENS Alto vs Medio vs Bajo: diferencias, requisitos y cómo elegir categoría"
 description: "Comparativa detallada de los tres niveles del Esquema Nacional de Seguridad (ENS): criterios de categorización, medidas obligatorias por nivel y cómo elegir la categoría correcta para tu organización."
 slug: "ens-alto-medio-bajo-diferencias"
 date: 2026-05-05
@@ -25,7 +25,7 @@ Los tres niveles del ENS reflejan el impacto que un incidente de seguridad tendr
 
 **Nivel Medio** corresponde a sistemas donde un incidente tendría un impacto grave pero no catastrófico. Ejemplo: la sede electrónica de un ayuntamiento que gestiona trámites con datos personales, o un sistema de gestión tributaria municipal. Un incidente afectaría a servicios públicos y a datos de ciudadanos.
 
-**Nivel Alto** se reserva para sistemas donde un incidente tendría consecuencias muy graves. Ejemplo: sistemas sanitarios con historiales clinicos, infraestructuras críticas, o sistemas que gestionen datos de menores o victimas de violencia de genero. Un incidente comprometeria derechos fundamentales o la seguridad pública.
+**Nivel Alto** se reserva para sistemas donde un incidente tendría consecuencias muy graves. Ejemplo: sistemas sanitarios con historiales clínicos, infraestructuras críticas, o sistemas que gestionen datos de menores o víctimas de violencia de género. Un incidente comprometería derechos fundamentales o la seguridad pública.
 
 | Dimensión | Bajo | Medio | Alto |
 |-----------|------|-------|------|
@@ -83,13 +83,13 @@ La elección no es discrecional: depende del tipo de información que gestionas 
 **Categoriza como nivel medio** si tu sistema:
 - Gestiona datos personales de ciudadanos (padrón, tributos, licencias)
 - Soporta tramitación electrónica o sede electrónica
-- Un fallo interrumpiria servicios públicos durante horas o días
+- Un fallo interrumpiría servicios públicos durante horas o días
 - Maneja datos económicos o contractuales
 
 **Categoriza como nivel alto** si tu sistema:
-- Gestiona datos de categorías especiales (salud, menores, victimas)
+- Gestiona datos de categorías especiales (salud, menores, víctimas)
 - Soporta infraestructuras críticas o servicios esenciales
-- Un fallo comprometeria derechos fundamentales
+- Un fallo comprometería derechos fundamentales
 - Maneja información clasificada o secretos oficiales
 
 La recomendación del CCN es categorizar siempre con un enfoque conservador: ante la duda entre dos niveles, elegir el superior. Recategorizar a la baja después de una auditoría es más complicado que implementar medidas adicionales desde el inicio.
@@ -99,15 +99,15 @@ La recomendación del CCN es categorizar siempre con un enfoque conservador: ant
 Una categorización incorrecta tiene consecuencias directas en la auditoría de cumplimiento y en la protección real de la organización.
 
 **Si categorizas por debajo del nivel real:**
-- La auditoría detectara que las medidas implementadas son insuficientes para los riesgos reales
-- El informe de auditoría reflejara no conformidades críticas
+- La auditoría detectará que las medidas implementadas son insuficientes para los riesgos reales
+- El informe de auditoría reflejará no conformidades críticas
 - En caso de incidente, la organización podría enfrentar responsabilidades agravadas por negligencia en la categorización
 - El CCN puede exigir una recategorización y la implementación urgente de medidas adicionales
 
 **Si categorizas por encima del nivel necesario:**
-- Implementaras medidas de seguridad innecesariamente costosas
+- Implementarás medidas de seguridad innecesariamente costosas
 - Los plazos de implementación se alargan sin beneficio proporcional
-- Los recursos (presupuesto, personal) se desvian de otras prioridades
+- Los recursos (presupuesto, personal) se desvían de otras prioridades
 - La auditoría será más exigente y costosa de lo necesario
 
 Según datos del CCN-CERT de 2025, los errores más frecuentes de categorización son: no considerar los datos personales que gestiona el sistema, no evaluar el impacto en los ciudadanos (solo en la organización), y categorizar todos los sistemas al mismo nivel sin análisis individual.
@@ -148,7 +148,7 @@ Para organizaciones que deben cumplir ambos marcos, la recomendación es impleme
 
 ### ¿Puede un sistema tener nivel alto en una dimensión y bajo en otra?
 
-Sí. La categorización se realiza dimensión por dimensión. Un sistema puede tener nivel alto en confidencialidad (gestiona datos sensibles) y nivel bajo en disponibilidad (no es crítico que este caido unas horas). El nivel global del sistema será el máximo de todas las dimensiones, es decir, alto en este ejemplo.
+Sí. La categorización se realiza dimensión por dimensión. Un sistema puede tener nivel alto en confidencialidad (gestiona datos sensibles) y nivel bajo en disponibilidad (no es crítico que esté caído unas horas). El nivel global del sistema será el máximo de todas las dimensiones, es decir, alto en este ejemplo.
 
 ### ¿Cada cuánto hay que revisar la categorización?
 

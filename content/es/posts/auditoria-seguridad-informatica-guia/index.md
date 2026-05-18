@@ -12,7 +12,7 @@ author: "David Moya"
 translationKey: "security-audit-guide"
 ---
 
-La auditoría de seguridad informática es el proceso sistemático mediante el cual se evalúa si los controles de seguridad de una organización son adecuados, están correctamente implementados y funcionan de forma eficaz. En un entorno regulatorio cada vez más exigente, donde normativas como el [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311), [ISO 27001](https://www.iso.org/standard/27001), [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) y [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) imponen requisitos específicos de verificación, la capacidad de realizar y superar auditorías de seguridad se ha convertido en una competencia organizacional crítica. Esta guía aborda los tipos de auditorías, sus fases, la gestión de evidencias y como automatizar el proceso para reducir el esfuerzo y mejorar los resultados.
+La auditoría de seguridad informática es el proceso sistemático mediante el cual se evalúa si los controles de seguridad de una organización son adecuados, están correctamente implementados y funcionan de forma eficaz. En un entorno regulatorio cada vez más exigente, donde normativas como el [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311), [ISO 27001](https://www.iso.org/standard/27001), [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) y [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) imponen requisitos específicos de verificación, la capacidad de realizar y superar auditorías de seguridad se ha convertido en una competencia organizacional crítica. Esta guía aborda los tipos de auditorías, sus fases, la gestión de evidencias y cómo automatizar el proceso para reducir el esfuerzo y mejorar los resultados.
 
 <!--more-->
 
@@ -26,9 +26,9 @@ La auditoría de seguridad informática es el proceso sistemático mediante el c
 
 ## ¿Qué es una auditoría de seguridad informática?
 
-Una auditoría de seguridad informática es una evaluación independiente y documentada de los controles, políticas, procedimientos y sistemas de seguridad de una organización. Su objetivo es determinar en que medida estos elementos cumplen con los requisitos establecidos (normativos, contractuales o internos) y si son eficaces para proteger los activos de información.
+Una auditoría de seguridad informática es una evaluación independiente y documentada de los controles, políticas, procedimientos y sistemas de seguridad de una organización. Su objetivo es determinar en qué medida estos elementos cumplen con los requisitos establecidos (normativos, contractuales o internos) y si son eficaces para proteger los activos de información.
 
-A diferencia de una evaluación de vulnerabilidades o un test de penetración, que se centran en identificar debilidades técnicas específicas, la auditoría abarca tanto los aspectos técnicos como los organizativos, procedimentales y humanos de la seguridad. Una auditoría evalúa si existe una política de gestión de accesos, si esta aprobada por la dirección, si se comunica al personal, si se implementa técnicamente, si se monitoriza su cumplimiento y si se revisa periódicamente.
+A diferencia de una evaluación de vulnerabilidades o un test de penetración, que se centran en identificar debilidades técnicas específicas, la auditoría abarca tanto los aspectos técnicos como los organizativos, procedimentales y humanos de la seguridad. Una auditoría evalúa si existe una política de gestión de accesos, si está aprobada por la dirección, si se comunica al personal, si se implementa técnicamente, si se monitoriza su cumplimiento y si se revisa periódicamente.
 
 El valor de la auditoría reside en su carácter independiente y sistemático. El auditor aplica criterios predefinidos (controles de una norma, requisitos de una regulación) y recopila evidencias objetivas que soportan sus conclusiones. Este enfoque basado en evidencias proporciona confianza a la dirección, a los reguladores y a otras partes interesadas sobre el estado real de la seguridad.
 
@@ -40,11 +40,11 @@ Las auditorías de seguridad se clasifican según su origen, su objetivo y su al
 
 ### Auditoría interna
 
-Realizada por personal de la propia organización o por consultores contratados que actuan en nombre de la organización. Su objetivo es evaluar el cumplimiento de las políticas internas y los requisitos normativos aplicables, identificar áreas de mejora y preparar la organización para auditorías externas.
+Realizada por personal de la propia organización o por consultores contratados que actúan en nombre de la organización. Su objetivo es evaluar el cumplimiento de las políticas internas y los requisitos normativos aplicables, identificar áreas de mejora y preparar la organización para auditorías externas.
 
 ISO 27001 exige la realización de auditorías internas planificadas como parte del ciclo de mejora continua del sistema de gestión de seguridad de la información (SGSI). El ENS también requiere auditorías internas periódicas para verificar la conformidad con sus requisitos.
 
-La principal ventaja de la auditoría interna es el conocimiento profundo del entorno que tienen los auditores internos. Su principal desafio es mantener la independencia: el auditor interno no debe auditar procesos o sistemas en los que participa directamente.
+La principal ventaja de la auditoría interna es el conocimiento profundo del entorno que tienen los auditores internos. Su principal desafío es mantener la independencia: el auditor interno no debe auditar procesos o sistemas en los que participa directamente.
 
 ### Auditoría externa
 
@@ -54,7 +54,7 @@ Las auditorías de certificación ISO 27001 las realizan organismos acreditados 
 
 ### Auditoría de cumplimiento normativo
 
-Enfocada específicamente en verificar el cumplimiento de requisitos legales y regulatorios. Una auditoría de cumplimiento del [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679) evaluaria si la organización cumple con los principios de protección de datos, si ha designado un DPO cuando es obligatorio, si mantiene un registro de actividades de tratamiento y si ha realizado evaluaciones de impacto cuando procede.
+Enfocada específicamente en verificar el cumplimiento de requisitos legales y regulatorios. Una auditoría de cumplimiento del [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679) evaluaría si la organización cumple con los principios de protección de datos, si ha designado un DPO cuando es obligatorio, si mantiene un registro de actividades de tratamiento y si ha realizado evaluaciones de impacto cuando procede.
 
 Las auditorías de cumplimiento de NIS2 y DORA, aunque estas normativas son relativamente recientes, ya están generando demanda de profesionales y metodologías especializadas en su verificación.
 
@@ -72,11 +72,11 @@ El proceso de auditoría sigue una secuencia estructurada que garantiza la exhau
 
 La planificación es la fase más crítica y frecuentemente la más subestimada. Una buena planificación determina la eficacia de todo el proceso.
 
-**Definición del alcance.** Delimitar con precisión que sistemas, procesos, ubicaciones y normativas abarca la auditoría. Un alcance mal definido genera ambiguedad y hallazgos irrelevantes.
+**Definición del alcance.** Delimitar con precisión qué sistemas, procesos, ubicaciones y normativas abarca la auditoría. Un alcance mal definido genera ambigüedad y hallazgos irrelevantes.
 
-**Selección de criterios.** Identificar los requisitos contra los que se evaluara: controles de ISO 27001 Anexo A, medidas del ENS según categoría, requisitos del RGPD aplicables o políticas internas de la organización.
+**Selección de criterios.** Identificar los requisitos contra los que se evaluará: controles de ISO 27001 Anexo A, medidas del ENS según categoría, requisitos del RGPD aplicables o políticas internas de la organización.
 
-**Elaboración del programa.** Definir el calendario, los recursos necesarios (auditores, herramientas), los interlocutores en cada area y los metodos de evaluación (entrevistas, revisión documental, pruebas técnicas, observación directa).
+**Elaboración del programa.** Definir el calendario, los recursos necesarios (auditores, herramientas), los interlocutores en cada área y los métodos de evaluación (entrevistas, revisión documental, pruebas técnicas, observación directa).
 
 **Análisis de riesgos de auditoría.** Identificar las áreas de mayor riesgo para concentrar en ellas los recursos de auditoría. Un [análisis de riesgos](/es/posts/análisis-riesgos-ciberseguridad-paso-a-paso/) actualizado es un input fundamental para esta fase.
 
@@ -84,7 +84,7 @@ La planificación es la fase más crítica y frecuentemente la más subestimada.
 
 ### Fase 2: Ejecución
 
-La ejecución es la fase donde se recopilan las evidencias que soportaran las conclusiones de la auditoría.
+La ejecución es la fase donde se recopilan las evidencias que soportarán las conclusiones de la auditoría.
 
 **Revisión documental.** Análisis de políticas, procedimientos, registros, planes, informes y otros documentos que evidencian la existencia e implementación de controles. Se verifica que la documentación está actualizada, aprobada, comunicada y accesible al personal relevante.
 
@@ -98,13 +98,13 @@ La ejecución es la fase donde se recopilan las evidencias que soportaran las co
 
 ### Fase 3: Elaboración de hallazgos
 
-Los hallazgos son las conclusiones del auditor sobre cada area evaluada, soportadas por evidencias. Cada hallazgo se clasifica según su gravedad:
+Los hallazgos son las conclusiones del auditor sobre cada área evaluada, soportadas por evidencias. Cada hallazgo se clasifica según su gravedad:
 
 **No conformidad mayor:** incumplimiento significativo de un requisito que pone en riesgo la eficacia del sistema de gestión de seguridad o genera un riesgo grave. Ejemplo: ausencia de un proceso de gestión de incidentes de seguridad.
 
 **No conformidad menor:** incumplimiento puntual que no compromete la eficacia global del sistema pero requiere corrección. Ejemplo: un procedimiento que no ha sido revisado en el plazo establecido.
 
-**Observación:** area donde se identifica una oportunidad de mejora sin que exista un incumplimiento formal. Ejemplo: un proceso que funciona correctamente pero podría beneficiarse de mayor automatización.
+**Observación:** área donde se identifica una oportunidad de mejora sin que exista un incumplimiento formal. Ejemplo: un proceso que funciona correctamente pero podría beneficiarse de mayor automatización.
 
 **Conformidad:** el control evaluado cumple los requisitos y funciona eficazmente.
 
@@ -116,7 +116,7 @@ El informe es el entregable principal de la auditoría y debe ser claro, preciso
 
 La estructura típica de un informe de auditoría incluye un resumen ejecutivo (para la dirección, con las conclusiones principales y el nivel de cumplimiento global), el alcance y los criterios de auditoría, la metodología empleada, el detalle de hallazgos clasificados por gravedad, las recomendaciones priorizadas y los anexos con evidencias de soporte.
 
-El informe debe redactarse de forma que permita a la organización entender exactamente que debe corregir, por que y con que prioridad. Los hallazgos vagos o las recomendaciones genéricas reducen la utilidad del informe.
+El informe debe redactarse de forma que permita a la organización entender exactamente qué debe corregir, por qué y con qué prioridad. Los hallazgos vagos o las recomendaciones genéricas reducen la utilidad del informe.
 
 ### Fase 5: Seguimiento
 
@@ -138,7 +138,7 @@ Las evidencias pueden ser documentales (políticas aprobadas, registros de forma
 
 **Relevancia:** cada evidencia debe estar directamente relacionada con el requisito que se evalúa.
 
-**Fiabilidad:** las evidencias deben proceder de fuentes fiables y verificables. Una captura de pantalla de una configuración actual es más fiable que una declaración verbal sobre como está configurado el sistema.
+**Fiabilidad:** las evidencias deben proceder de fuentes fiables y verificables. Una captura de pantalla de una configuración actual es más fiable que una declaración verbal sobre cómo está configurado el sistema.
 
 **Trazabilidad:** cada evidencia debe estar vinculada al hallazgo que soporta, con fecha de obtención y fuente identificada.
 
@@ -146,7 +146,7 @@ Las evidencias pueden ser documentales (políticas aprobadas, registros de forma
 
 Un sistema organizado de gestión de evidencias ahorra tiempo significativo durante la auditoría y en auditorías posteriores. Se recomienda estructurar las evidencias por control o requisito, con una nomenclatura coherente y un registro que vincule cada evidencia con el hallazgo correspondiente.
 
-Riskitera automatiza la recopilación de evidencias de seguridad, extrayendo datos directamente de los sistemas y organizandolos por control normativo, lo que reduce drasticamente el esfuerzo manual de preparación de auditorías.
+Riskitera automatiza la recopilación de evidencias de seguridad, extrayendo datos directamente de los sistemas y organizándolos por control normativo, lo que reduce drásticamente el esfuerzo manual de preparación de auditorías.
 
 {{< cta type="tofu" text="La gestión de evidencias es el cuello de botella de toda auditoría. Riskitera automatiza la recopilación y trazabilidad de evidencias." label="Ver demo" >}}
 
@@ -154,9 +154,9 @@ Riskitera automatiza la recopilación de evidencias de seguridad, extrayendo dat
 
 ### [ISO 19011](https://www.iso.org/standard/70017.html)
 
-ISO 19011 es el estándar internacional que proporciona directrices para la auditoría de sistemas de gestión. Aunque es genérico (aplicable a cualquier sistema de gestión, no solo a seguridad), establece los principios fundamentales de auditoría (integridad, presentación ecuanime, diligencia profesional, confidencialidad, independencia, enfoque basado en evidencias), las competencias requeridas de los auditores, la gestión de programas de auditoría y la ejecución de auditorías individuales.
+ISO 19011 es el estándar internacional que proporciona directrices para la auditoría de sistemas de gestión. Aunque es genérico (aplicable a cualquier sistema de gestión, no solo a seguridad), establece los principios fundamentales de auditoría (integridad, presentación ecuánime, diligencia profesional, confidencialidad, independencia, enfoque basado en evidencias), las competencias requeridas de los auditores, la gestión de programas de auditoría y la ejecución de auditorías individuales.
 
-ISO 19011 es la referencia metodologica para las auditorías internas del SGSI basado en ISO 27001 y para las auditorías de conformidad con el ENS.
+ISO 19011 es la referencia metodológica para las auditorías internas del SGSI basado en ISO 27001 y para las auditorías de conformidad con el ENS.
 
 ### [ISACA](https://www.isaca.org/) y los marcos de auditoría de SI
 
@@ -164,7 +164,7 @@ ISACA (Information Systems Audit and Control Association) es la organización pr
 
 La certificación CISA (Certified Information Systems Auditor) de ISACA es la credencial profesional más reconocida para auditores de seguridad informática. El manual de preparación de CISA cubre en detalle las metodologías, técnicas y herramientas de auditoría de SI.
 
-ISACA también pública el ITAF (IT Assurance Framework), un marco detallado para la planificación, ejecución e informe de auditorías de tecnología de la información, con guías prácticas para cada fase del proceso.
+ISACA también publica el ITAF (IT Assurance Framework), un marco detallado para la planificación, ejecución e informe de auditorías de tecnología de la información, con guías prácticas para cada fase del proceso.
 
 ### Guías CCN-STIC
 
@@ -182,7 +182,7 @@ Para auditorías técnicas, las herramientas clave incluyen escáner de vulnerab
 
 ### Automatización de la recopilación de evidencias
 
-La recopilación manual de evidencias es uno de los procesos más costosos en tiempo durante una auditoría. La automatización mediante scripts que exportan configuraciones, generan informes de cumplimiento y recopilan logs relevantes reduce significativamente el esfuerzo. Herramientas de compliance-as-code como Chef InSpec o Open Policy Agent permiten definir los controles como código y verificar su cumplimiento de forma automatizada y continúa.
+La recopilación manual de evidencias es uno de los procesos más costosos en tiempo durante una auditoría. La automatización mediante scripts que exportan configuraciones, generan informes de cumplimiento y recopilan logs relevantes reduce significativamente el esfuerzo. Herramientas de compliance-as-code como Chef InSpec o Open Policy Agent permiten definir los controles como código y verificar su cumplimiento de forma automatizada y continua.
 
 ## ¿Cómo automatizar las auditorías de seguridad?
 
@@ -190,7 +190,7 @@ La tendencia hacia la auditoría continua representa un cambio significativo res
 
 ### De la auditoría puntual a la auditoría continua
 
-El modelo tradicional de auditorías anuales o semestrales presenta una limitación fundamental: proporciona una foto fija del cumplimiento en un momento determinado, pero el estado de seguridad cambia continuamente. Un control que cumplia en la fecha de la auditoría puede dejar de cumplir al día siguiente.
+El modelo tradicional de auditorías anuales o semestrales presenta una limitación fundamental: proporciona una foto fija del cumplimiento en un momento determinado, pero el estado de seguridad cambia continuamente. Un control que cumplía en la fecha de la auditoría puede dejar de cumplir al día siguiente.
 
 La auditoría continua utiliza automatización para verificar el cumplimiento de forma permanente, generando alertas cuando se detectan desviaciones. Esto permite corregir problemas inmediatamente en lugar de descubrirlos meses después.
 
@@ -202,7 +202,7 @@ Frameworks como CIS Benchmarks proporcionan perfiles de seguridad predefinidos q
 
 ### Integración con la gestión de riesgos
 
-Los resultados de las auditorías automatizadas alimentan directamente el proceso de gestión de riesgos: un control que deja de cumplir incrementa automáticamente el nivel de riesgo asociado, activando los procesos de tratamiento correspondientes. Esta integración bidireccional entre auditoría y riesgos es una caracteristica de los programas GRC maduros.
+Los resultados de las auditorías automatizadas alimentan directamente el proceso de gestión de riesgos: un control que deja de cumplir incrementa automáticamente el nivel de riesgo asociado, activando los procesos de tratamiento correspondientes. Esta integración bidireccional entre auditoría y riesgos es una característica de los programas GRC maduros.
 
 ## ¿Cómo prepararse para una auditoría externa?
 
@@ -212,15 +212,15 @@ La preparación es determinante para el resultado de una auditoría externa. Est
 
 **Verificar que la documentación está actualizada.** Políticas, procedimientos, registros y planes deben estar en su versión vigente, aprobados, y accesibles. La documentación obsoleta o no aprobada es un hallazgo frecuente y evitable.
 
-**Preparar las evidencias con antelación.** Recopilar y organizar las evidencias que el auditor solicitara según el alcance de la auditoría. Un dossier de evidencias bien organizado agiliza el proceso y transmite una imagen de madurez.
+**Preparar las evidencias con antelación.** Recopilar y organizar las evidencias que el auditor solicitará según el alcance de la auditoría. Un dossier de evidencias bien organizado agiliza el proceso y transmite una imagen de madurez.
 
-**Formar al personal.** Las personas que serán entrevistadas durante la auditoría deben conocer las políticas y procedimientos de su area y ser capaces de explicar cómo los aplican en su trabajo diario.
+**Formar al personal.** Las personas que serán entrevistadas durante la auditoría deben conocer las políticas y procedimientos de su área y ser capaces de explicar cómo los aplican en su trabajo diario.
 
 **Designar un coordinador de auditoría.** Una persona que sirva como punto de contacto con el auditor, coordine la logística, facilite el acceso a sistemas y documentación y resuelva incidencias durante el proceso.
 
 **Revisar hallazgos de auditorías anteriores.** Verificar que todas las no conformidades de auditorías previas han sido cerradas y que las acciones correctivas fueron eficaces. Los hallazgos recurrentes son una señal negativa para los auditores.
 
-{{< cta type="mofu" text="Prepara tu proxima auditoría con una plataforma que mapea controles, gestiona evidencias y genera informes automáticamente." >}}
+{{< cta type="mofu" text="Prepara tu próxima auditoría con una plataforma que mapea controles, gestiona evidencias y genera informes automáticamente." >}}
 
 ## Preguntas frecuentes
 
@@ -234,7 +234,7 @@ La auditoría evalúa la conformidad de los controles de seguridad con un marco 
 
 ### Quien puede realizar una auditoría interna de seguridad
 
-La auditoría interna puede ser realizada por personal de la organización con formación en auditoría y conocimientos de seguridad de la información, siempre que sea independiente del area auditada. También puede encargarse a consultores externos que actuen en nombre de la organización. Las certificaciones CISA de ISACA o Lead Auditor ISO 27001 son credenciales que acreditan la competencia del auditor, aunque no son obligatorias para auditorías internas.
+La auditoría interna puede ser realizada por personal de la organización con formación en auditoría y conocimientos de seguridad de la información, siempre que sea independiente del área auditada. También puede encargarse a consultores externos que actúen en nombre de la organización. Las certificaciones CISA de ISACA o Lead Auditor ISO 27001 son credenciales que acreditan la competencia del auditor, aunque no son obligatorias para auditorías internas.
 
 ### ¿Qué pasa si se identifica una no conformidad mayor en la auditoría externa
 

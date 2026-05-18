@@ -19,13 +19,13 @@ La inteligencia artificial ha pasado de ser una promesa a ser una herramienta op
 
 ## ¿Cómo se usa la inteligencia artificial en ciberseguridad en 2026?
 
-La IA en ciberseguridad se aplica en tres grandes areas: detección, respuesta y compliance. Cada area tiene niveles de madurez diferentes.
+La IA en ciberseguridad se aplica en tres grandes áreas: detección, respuesta y compliance. Cada area tiene niveles de madurez diferentes.
 
 **Detección** es donde la IA lleva más tiempo y tiene más impacto. Los modelos de machine learning para detección de anomalías en tráfico de red, comportamiento de usuarios (UEBA) y análisis de malware son maduros y están integrados en la mayoría de EDR y SIEM comerciales. Según Gartner, el 78% de las detecciones de amenazas avanzadas en 2025 involucraron algun componente de ML.
 
-**Respuesta** es el area de mayor crecimiento. Los agentes de IA que automatizan el triage de alertas, enriquecen indicadores de compromiso y sugieren acciones de contención están pasando de pilotos a producción. La clave es el modelo HITL (human-in-the-loop): la IA sugiere, el analista decide.
+**Respuesta** es el área de mayor crecimiento. Los agentes de IA que automatizan el triage de alertas, enriquecen indicadores de compromiso y sugieren acciones de contención están pasando de pilotos a producción. La clave es el modelo HITL (human-in-the-loop): la IA sugiere, el analista decide.
 
-**Compliance y GRC** es el area más reciente. Los modelos de lenguaje se utilizan para analizar documentación de compliance, identificar gaps en controles, generar borradores de políticas y mapear requisitos normativos. La automatización de auditorías con IA reduce el ciclo de compliance de semanas a días.
+**Compliance y GRC** es el área más reciente. Los modelos de lenguaje se utilizan para analizar documentación de compliance, identificar gaps en controles, generar borradores de políticas y mapear requisitos normativos. La automatización de auditorías con IA reduce el ciclo de compliance de semanas a días.
 
 ## ¿Qué casos de uso reales tiene la IA en el SOC?
 
@@ -33,7 +33,7 @@ Los casos de uso más maduros y con mayor impacto operativo:
 
 **Triage automatizado de alertas.** El SOC medio recibe entre 5.000 y 15.000 alertas diarias. Un modelo de clasificación entrenado con el histórico de decisiones de los analistas puede categorizar automáticamente el 70-80% de las alertas como verdaderos positivos, falsos positivos o duplicados, dejando al equipo humano solo las alertas ambiguas.
 
-**Enriquecimiento automático de IOCs.** Cuando se detecta un indicador sospechoso (IP, hash, dominio), un agente de IA consulta automáticamente fuentes de CTI (VirusTotal, Shodan, MISP, feeds propios), correlaciona con incidentes previos y genera un informe de contexto en segundos. Lo que un analista N1 tardaria 15-30 minutos, la IA lo hace en menos de 10 segundos.
+**Enriquecimiento automático de IOCs.** Cuando se detecta un indicador sospechoso (IP, hash, dominio), un agente de IA consulta automáticamente fuentes de CTI (VirusTotal, Shodan, MISP, feeds propios), correlaciona con incidentes previos y genera un informe de contexto en segundos. Lo que un analista N1 tardaría 15-30 minutos, la IA lo hace en menos de 10 segundos.
 
 **Detección de amenazas basada en comportamiento (UEBA).** Los modelos de ML aprenden el patrón de comportamiento normal de cada usuario y endpoint. Cuando detectan desviaciones significativas (acceso a horas inusuales, descarga masiva, movimiento lateral), generan alertas de alta fidelidad que los analistas priorizan.
 
@@ -43,7 +43,7 @@ Los casos de uso más maduros y con mayor impacto operativo:
 
 ## ¿Cómo ayuda la IA al compliance y GRC?
 
-La IA esta transformando la gestión del compliance de un proceso manual y periódico a uno continuo y automatizado:
+La IA está transformando la gestión del compliance de un proceso manual y periódico a uno continuo y automatizado:
 
 **Análisis de gaps automatizado.** Un modelo de lenguaje puede analizar la documentación de seguridad de una organización (políticas, procedimientos, registros) y compararla con los requisitos de ENS, NIS2, ISO 27001 o DORA para identificar gaps de cumplimiento. Lo que un consultor tarda semanas, la IA lo hace en horas.
 
@@ -75,7 +75,7 @@ Ambas cosas. La IA generativa es una herramienta dual que amplifica las capacida
 
 **Para los defensores:** generación de reglas de detección, análisis de malware asistido, simulación de ataques para red teaming, generación de playbooks de respuesta y automatización de documentación de compliance.
 
-**Para los atacantes:** generación de phishing personalizado a escala (los correos de phishing generados por LLMs tienen tasas de click un 40% superiores según datos de Proofpoint 2025), creación de malware polimorfico, bypass de CAPTCHA y deepfakes para ingeniería social.
+**Para los atacantes:** generación de phishing personalizado a escala (los correos de phishing generados por LLMs tienen tasas de click un 40% superiores según datos de Proofpoint 2025), creación de malware polimórfico, bypass de CAPTCHA y deepfakes para ingeniería social.
 
 La conclusión del sector es clara: no adoptar IA en defensa no es una opción, porque los atacantes ya la están usando. La clave está en adoptarla de forma segura, con supervisión humana, soberanía de datos y evaluación continua.
 
@@ -83,13 +83,13 @@ La conclusión del sector es clara: no adoptar IA en defensa no es una opción, 
 
 Las tendencias con mayor probabilidad de impacto operativo en los próximos 12-18 meses:
 
-**Agentes autónomos para SOC.** Los agentes que hoy sugieren acciones evolucionaran hacia la ejecución autónoma de acciones de contención de bajo riesgo (bloquear una IP en el firewall, aislar un endpoint, revocar un token). Las acciones de alto riesgo seguiran requiriendo aprobación humana.
+**Agentes autónomos para SOC.** Los agentes que hoy sugieren acciones evolucionarán hacia la ejecución autónoma de acciones de contención de bajo riesgo (bloquear una IP en el firewall, aislar un endpoint, revocar un token). Las acciones de alto riesgo seguirán requiriendo aprobación humana.
 
 **IA para compliance continuo.** La transición de auditorías periódicas (anuales o bianuales) a compliance continuo, donde la IA monitoriza el estado de cumplimiento en tiempo real y alerta cuando un control se degrada.
 
 **Modelos especializados en ciberseguridad.** Modelos de lenguaje fine-tuned con corpus específicos de ciberseguridad (CVEs, CTI reports, documentación ENS/NIS2) que superan a los modelos generalistas en tareas de seguridad.
 
-**Seguridad de la IA como disciplina.** Red teaming de modelos de IA, evaluación de vulnerabilidades en pipelines de ML, y defensa contra ataques adversariales se convertiran en funciones estándar del equipo de seguridad.
+**Seguridad de la IA como disciplina.** Red teaming de modelos de IA, evaluación de vulnerabilidades en pipelines de ML, y defensa contra ataques adversariales se convertirán en funciones estándar del equipo de seguridad.
 
 ## ¿Cómo empezar a integrar IA en tu equipo de seguridad?
 

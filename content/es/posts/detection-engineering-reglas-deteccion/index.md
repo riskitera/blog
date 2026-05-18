@@ -13,7 +13,7 @@ keyword: "detection engineering"
 funnel: "mofu"
 ---
 
-Guía práctica de detection engineering: como disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciones.
+Guía práctica de detection engineering: cómo diseñar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciones.
 
 <!--more-->
 
@@ -31,7 +31,7 @@ Detection engineering es la disciplina que aplica principios de ingeniería de s
 
 El término fue popularizado por [Jared Atkinson](https://posts.specterops.io/detection-spectrum-198a0bfb9302) y la comunidad de SpecterOps, aunque la práctica existe desde que los primeros equipos de seguridad se dieron cuenta de que copiar reglas de un foro y pegarlas en el SIEM no escalaba.
 
-En un SOC tradicional, las reglas de detección suelen vivir dentro del SIEM como objetos propietarios. Nadie sabe quien las creo, cuando se modificaron por última vez ni si siguen siendo relevantes. Detection engineering cambia eso radicalmente.
+En un SOC tradicional, las reglas de detección suelen vivir dentro del SIEM como objetos propietarios. Nadie sabe quién las creó, cuándo se modificaron por última vez ni si siguen siendo relevantes. Detection engineering cambia eso radicalmente.
 
 ### Detection-as-Code: la filosofía central
 
@@ -72,7 +72,7 @@ detections/
         └── ci.yml
 ```
 
-### Por que importa en 2026
+### Por qué importa en 2026
 
 El volumen de telemetría que genera una organización media ha crecido exponencialmente. Un endpoint con EDR genera decenas de miles de eventos por día. Multiplicado por cientos o miles de endpoints, más logs de red, cloud, identidad y aplicaciones, el resultado es un flujo de datos que ningún equipo puede revisar manualmente.
 
@@ -82,13 +82,13 @@ Sin detection engineering, los SOC caen en una de dos trampas: o tienen muy poca
 
 Cada regla de detección pasa por un ciclo de vida con cinco fases. Saltarse cualquiera de ellas es la receta para reglas que no funcionan o que generan más ruido del que eliminan.
 
-### Fase 1: Hipotesis
+### Fase 1: Hipótesis
 
-Todo empieza con una pregunta: "que comportamiento malicioso queremos detectar?". La hipótesis debe ser específica y basada en inteligencia de amenazas real.
+Todo empieza con una pregunta: "qué comportamiento malicioso queremos detectar?". La hipótesis debe ser específica y basada en inteligencia de amenazas real.
 
 Ejemplos de hipótesis bien formuladas:
 
-- "Un atacante que obtiene credenciales validas intentara acceder a múltiples sistemas en un periodo corto de tiempo usando RDP."
+- "Un atacante que obtiene credenciales válidas intentará acceder a múltiples sistemas en un periodo corto de tiempo usando RDP."
 - "Un atacante que establece persistencia en Windows creara una tarea programada con `schtasks.exe` apuntando a un ejecutable en una ruta no estándar."
 - "Un atacante que realiza movimiento lateral usara WMI para ejecutar comandos de forma remota."
 
@@ -103,13 +103,13 @@ La hipótesis debe vincularse a una técnica de [MITRE ATT&CK](https://attack.mi
 
 Con la hipótesis clara, el siguiente paso es escribir la regla. Esto implica definir:
 
-1. **Fuente de datos**: que logs necesitas (Windows Security Events, Sysmon, EDR telemetry, network flow, etc.).
+1. **Fuente de datos**: qué logs necesitas (Windows Security Events, Sysmon, EDR telemetry, network flow, etc.).
 2. **Logica de detección**: las condiciones que deben cumplirse para que salte la alerta.
-3. **Contexto de enriquecimiento**: que información adicional necesita el analista para investigar la alerta.
-4. **Nivel de severidad**: como de crítica es la alerta si resulta ser un verdadero positivo.
+3. **Contexto de enriquecimiento**: qué información adicional necesita el analista para investigar la alerta.
+4. **Nivel de severidad**: cómo de crítica es la alerta si resulta ser un verdadero positivo.
 5. **Runbook asociado**: los pasos que debe seguir el analista cuando recibe la alerta.
 
-Un ejemplo en pseudocodigo YAML:
+Un ejemplo en pseudocódigo YAML:
 
 ```yaml
 name: Sospecha de Kerberoasting
@@ -216,7 +216,7 @@ Una regla desplegada no es una regla terminada. El tuning es un proceso continuo
 
 - **Monitorizar la tasa de falsos positivos**: si supera un umbral (por ejemplo, 80%), la regla necesita ajuste.
 - **Revisar falsos negativos**: usar threat hunting y purple team exercises para descubrir qué se está escapando.
-- **Actualizar exclusiones**: añadir excepciones legitimas documentadas.
+- **Actualizar exclusiones**: añadir excepciones legítimas documentadas.
 - **Ajustar umbrales**: modificar conteos, ventanas temporales y condiciones según el entorno.
 
 ```yaml
@@ -231,7 +231,7 @@ exclusions:
 
 ## Cobertura MITRE ATT&CK: el mapa de tu visibilidad
 
-La matriz de [MITRE ATT&CK](https://attack.mitre.org/) es el framework de referencia para catalogar técnicas de adversarios. Pero su valor real para detection engineering no está en conocer las técnicas, sino en mapear cuales tienes cubiertas y cuales no.
+La matriz de [MITRE ATT&CK](https://attack.mitre.org/) es el framework de referencia para catalogar técnicas de adversarios. Pero su valor real para detection engineering no está en conocer las técnicas, sino en mapear cuáles tienes cubiertas y cuáles no.
 
 ### Construir una matriz de cobertura
 
@@ -253,7 +253,7 @@ Una matriz de cobertura es un documento que cruza las técnicas de ATT&CK con el
 
 - Definir la visibilidad de datos (que fuentes de logs tienes y con que calidad).
 - Mapear las detecciones existentes a técnicas ATT&CK.
-- Generar heatmaps visuales que muestran donde tienes cobertura y donde hay gaps.
+- Generar heatmaps visuales que muestran dónde tienes cobertura y dónde hay gaps.
 - Comparar tu cobertura contra grupos de amenazas específicos.
 
 ```yaml
@@ -295,17 +295,17 @@ No tiene sentido intentar cubrir las 200+ técnicas de ATT&CK de golpe. La prior
 1. **Threat intelligence**: que técnicas usan los grupos de amenazas relevantes para tu sector (financiero, salud, infraestructura crítica, etc.).
 2. **Superficie de ataque**: si no tienes infraestructura cloud, no priorices técnicas cloud.
 3. **Impacto potencial**: técnicas de exfiltración y ransomware suelen tener prioridad sobre técnicas de reconocimiento.
-4. **Viabilidad de detección**: algunas técnicas son inherentemente dificiles de detectar (ej. living-off-the-land). Empieza por las que puedes detectar con confianza.
+4. **Viabilidad de detección**: algunas técnicas son inherentemente difíciles de detectar (ej. living-off-the-land). Empieza por las que puedes detectar con confianza.
 
 ## Testing de detecciones con Atomic Red Team
 
 [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) es un proyecto de Red Canary que proporciona tests atomicos mapeados a técnicas MITRE ATT&CK. Cada test es una simulación pequeña y autocontenida de una técnica de ataque que se puede ejecutar de forma segura en un entorno controlado.
 
-### Por que Atomic Red Team
+### Por qué Atomic Red Team
 
 La alternativa a Atomic Red Team es testear detecciones de forma manual, lo cual no escala. Con Atomic Red Team:
 
-- Cada test esta mapeado a una técnica ATT&CK específica.
+- Cada test está mapeado a una técnica ATT&CK específica.
 - Los tests son reproducibles y automatizables.
 - Se pueden integrar en pipelines de CI/CD.
 - La comunidad mantiene cientos de tests actualizados.
@@ -405,7 +405,7 @@ logic: |
 
 **2. Whitelist basada en contexto**
 
-Las exclusiones deben ser específicas y documentadas. Nunca excluyas de forma generica.
+Las exclusiones deben ser específicas y documentadas. Nunca excluyas de forma genérica.
 
 ```yaml
 # MAL: exclusión generica
@@ -482,7 +482,7 @@ El Detection Maturity Model (DMM) es un framework para evaluar la madurez del pr
 - Existen reglas básicas (firmas, IOCs, reglas de umbral).
 - Las reglas se documentan minimamente.
 - El equipo empieza a usar frameworks como MITRE ATT&CK como referencia.
-- El testing es manual y esporadico.
+- El testing es manual y esporádico.
 
 ### Nivel 2: Procedural
 
@@ -584,7 +584,7 @@ Un dashboard útil incluye:
 
 Para aterrizar toda la teoría, veamos un ejemplo completo del ciclo de vida de una detección.
 
-### Hipotesis
+### Hipótesis
 
 "Un atacante que ha comprometido credenciales de un usuario realizará movimiento lateral usando PsExec, creando un servicio temporal en el sistema remoto."
 
@@ -646,7 +646,7 @@ Get-WinEvent -FilterHashtable @{
 
 ### Resultado
 
-La regla se despliega en staging, se válida durante 48 horas (0 falsos positivos porque PsExec no se usa en el entorno controlado), y se promueve a producción. Se añade una exclusión documentada para el equipo de IT que usa PsExec para despliegues de software los martes y jueves entre las 10:00 y las 12:00.
+La regla se despliega en staging, se valida durante 48 horas (0 falsos positivos porque PsExec no se usa en el entorno controlado), y se promueve a producción. Se añade una exclusión documentada para el equipo de IT que usa PsExec para despliegues de software los martes y jueves entre las 10:00 y las 12:00.
 
 {{< cta type="bofu" text="Solicita una demo personalizada para tu SOC y descubre cómo Riskitera optimiza tus operaciones de detección con IA." label="Solicitar demo" >}}
 
