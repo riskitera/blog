@@ -1,6 +1,6 @@
 ---
-title: "Como medir el riesgo ciber: metodologías FAIR vs MAGERIT en la práctica"
-description: "Comparativa práctica de las metodologías FAIR y MAGERIT para medir el riesgo en ciberseguridad: cuando usar cada una, ventajas, limitaciones y como combinarlas."
+title: "Cómo medir el riesgo ciber: metodologías FAIR vs MAGERIT en la práctica"
+description: "Comparativa práctica de las metodologías FAIR y MAGERIT para medir el riesgo en ciberseguridad: cuándo usar cada una, ventajas, limitaciones y cómo combinarlas."
 slug: "medir-riesgo-ciberseguridad-fair-magerit"
 date: 2026-06-11
 publishDate: 2026-06-11
@@ -27,7 +27,7 @@ Comparativa práctica de las metodologías FAIR y MAGERIT para medir el riesgo e
 
 ## ¿Cómo se mide el riesgo en ciberseguridad?
 
-Medir el riesgo en ciberseguridad es una de las táreas más complejas y, paradojicamente, más importantes de un CISO. Sin una medición rigurosa, las decisiones de inversión en seguridad se basan en intuiciones, miedos o titulares de prensa. Con una medición rigurosa, el CISO puede responder preguntas concretas: cuanto dinero estamos dispuestos a perder, donde tenemos las mayores exposiciones, y que inversión reduce más riesgo por cada euro gastado.
+Medir el riesgo en ciberseguridad es una de las tareas más complejas y, paradojicamente, más importantes de un CISO. Sin una medición rigurosa, las decisiones de inversión en seguridad se basan en intuiciones, miedos o titulares de prensa. Con una medición rigurosa, el CISO puede responder preguntas concretas: cuanto dinero estamos dispuestos a perder, donde tenemos las mayores exposiciones, y que inversión reduce más riesgo por cada euro gastado.
 
 El problema es que "medir riesgo" no significa lo mismo para todos. Para un auditor del [CCN-CERT](https://www.ccn-cert.cni.es/), medir riesgo es evaluar activos, identificar amenazas, calcular el impacto y la probabilidad, y determinar un nivel de riesgo cualitativo (Bajo, Medio, Alto, Muy Alto, Crítico). Para un CFO, medir riesgo es responder: cuanto dinero podemos perder si nos atacan, y cual es la probabilidad de que eso ocurra este año.
 
@@ -40,7 +40,7 @@ En este artículo vamos a comparar ambas metodologías de forma práctica, anali
 
 ## ¿Qué es la metodología MAGERIT?
 
-MAGERIT es la metodología oficial de análisis de riesgos de la administración pública española. Su primera versión se público en 1997, y la versión 3 (vigente) en 2012. Esta disenada para cumplir con los requisitos del Esquema Nacional de Seguridad (ENS) y se apoya en la herramienta [PILAR](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html), desarrollada por el CCN-CERT.
+MAGERIT es la metodología oficial de análisis de riesgos de la administración pública española. Su primera versión se público en 1997, y la versión 3 (vigente) en 2012. Esta diseñada para cumplir con los requisitos del Esquema Nacional de Seguridad (ENS) y se apoya en la herramienta [PILAR](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html), desarrollada por el CCN-CERT.
 
 ### Estructura de MAGERIT
 

@@ -1,5 +1,5 @@
 ---
-title: "Como reducir falsos positivos en el SOC: técnicas reales que funcionan"
+title: "Cómo reducir falsos positivos en el SOC: técnicas reales que funcionan"
 description: "Técnicas probadas para reducir falsos positivos en el SOC: tuning de reglas, enrichment automático, whitelisting inteligente, ML para clasificación y métricas de calidad."
 slug: "reducir-falsos-positivos-soc"
 date: 2026-06-16
@@ -43,7 +43,7 @@ En teoría, un falso positivo es solo una molestia menor: el analista lo revisa,
 
 ### El circulo vicioso
 
-Los falsos positivos generan un circulo vicioso: más FPs producen más fatiga, la fatiga produce menos investigación, menos investigación produce más alertas ignoradas, y alertas ignoradas producen brechas que retroalimentan la presión sobre el SOC. Romper este circulo es una de las táreas más importantes del equipo de detection engineering.
+Los falsos positivos generan un circulo vicioso: más FPs producen más fatiga, la fatiga produce menos investigación, menos investigación produce más alertas ignoradas, y alertas ignoradas producen brechas que retroalimentan la presión sobre el SOC. Romper este circulo es una de las tareas más importantes del equipo de detection engineering.
 
 ## Ratio aceptable de falsos positivos: benchmarks por sector
 
@@ -57,7 +57,7 @@ Antes de reducir falsos positivos, necesitas medirlos. Sin métricas, no sabes s
 
 **Tiempo medio de triage por alerta.** Cuanto tarda un analista en determinar si una alerta es verdadera o falsa. Si el tiempo medio es inferior a 30 segundos, los analistas probablemente están cerrando alertas sin investigar. Si supera los 15 minutos, el enriquecimiento automático es insuficiente.
 
-**Ratio de alertas cerradas sin acción.** Porcentaje de alertas que se cierran como "no procede" o "informativo" sin generar un incidente. Este ratio correlacióna directamente con el volumen de FP.
+**Ratio de alertas cerradas sin acción.** Porcentaje de alertas que se cierran como "no procede" o "informativo" sin generar un incidente. Este ratio correlaciona directamente con el volumen de FP.
 
 **True Positive Rate por regla.** Desglosar el ratio de verdaderos positivos por cada regla de detección. Esto identifica las reglas que generan más ruido y permite priorizar el tuning.
 
@@ -92,7 +92,7 @@ Reglas con umbrales fijos ("más de 5 intentos de login fallidos en 10 minutos")
 
 ### 4. Falta de correlación
 
-Una alerta aislada tiene menos valor que un patrón de alertas correlaciónadas. "Login desde país inusual" por si solo puede ser un falso positivo (el usuario esta de viaje). "Login desde país inusual + acceso a datos sensibles + descarga masiva en 30 minutos" es un patrón que merece investigación inmediata. Sin correlación, cada alerta se evalúa en aislamiento, multiplicando los FPs.
+Una alerta aislada tiene menos valor que un patrón de alertas correlacionadas. "Login desde país inusual" por si solo puede ser un falso positivo (el usuario esta de viaje). "Login desde país inusual + acceso a datos sensibles + descarga masiva en 30 minutos" es un patrón que merece investigación inmediata. Sin correlación, cada alerta se evalúa en aislamiento, multiplicando los FPs.
 
 ## ¿Cómo hacer tuning de reglas de detección?
 
@@ -108,7 +108,7 @@ El tuning de reglas es el mecanismo principal para reducir falsos positivos. No 
 
 - **Añadir exclusiones específicas:** Excluir cuentas de servicio conocidas, IPs de infraestructura interna, procesos de mantenimiento programado.
 - **Ajustar umbrales:** Cambiar de valores fijos a valores basados en la línea base del entorno.
-- **Añadir condiciones de correlación:** En lugar de disparar con un evento aislado, requerir dos o más eventos correlaciónados.
+- **Añadir condiciones de correlación:** En lugar de disparar con un evento aislado, requerir dos o más eventos correlacionados.
 - **Cambiar severidad:** Si una regla genera muchos FPs pero los TPs son de bajo impacto, reducir la severidad para que no consuma atención de N1.
 - **Desactivar la regla:** Si una regla genera más ruido que valor y no se puede tunear de forma práctica, desactivarla es mejor que dejarla generando fatiga. Documentar la decisión y el riesgo aceptado.
 
@@ -326,7 +326,7 @@ Reuniendo todas las técnicas anteriores, este es el workflow que recomendamos p
 
 ### Mes 2: Correlación y UEBA
 
-- Convertir reglas de evento único en reglas correlaciónadas donde sea posible.
+- Convertir reglas de evento único en reglas correlacionadas donde sea posible.
 - Activar UEBA con periodo de aprendizaje de 4 semanas.
 - Continuar con las siguientes 10 reglas del ranking de FPs.
 
@@ -371,4 +371,4 @@ Tres medidas concretas. Primera: especificidad máxima en cada entrada (nunca "e
 
 ### ¿Qué herramientas open-source ayudan a reducir falsos positivos?
 
-Varias opciones cubren diferentes aspectos. Para detection engineering y reglas: Sigma (formato estándar de reglas) permite compartir y reutilizar reglas tuneadas por la comunidad. Para SIEM con capacidades de correlación: Wazuh (open-source, incluye HIDS, correlación básica y enrichment). Para enrichment de CTI: MISP (plataforma de inteligencia de amenazas) y OpenCTI (gestión de CTI con integraciónes a MITRE ATT&CK). Para UEBA básico: Apache Spot o soluciones custom con Elasticsearch ML. Para orquestación y automatización: Shuffle SOAR (open-source, integrable con SIEM y fuentes de enrichment). El ecosistema open-source es sólido para SOCs que tienen equipo técnico para operar y mantener estas herramientas.
+Varias opciones cubren diferentes aspectos. Para detection engineering y reglas: Sigma (formato estándar de reglas) permite compartir y reutilizar reglas tuneadas por la comunidad. Para SIEM con capacidades de correlación: Wazuh (open-source, incluye HIDS, correlación básica y enrichment). Para enrichment de CTI: MISP (plataforma de inteligencia de amenazas) y OpenCTI (gestión de CTI con integraciones a MITRE ATT&CK). Para UEBA básico: Apache Spot o soluciones custom con Elasticsearch ML. Para orquestación y automatización: Shuffle SOAR (open-source, integrable con SIEM y fuentes de enrichment). El ecosistema open-source es sólido para SOCs que tienen equipo técnico para operar y mantener estas herramientas.

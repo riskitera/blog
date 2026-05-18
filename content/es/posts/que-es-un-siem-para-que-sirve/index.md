@@ -1,7 +1,7 @@
 ---
-title: "Que es un SIEM y por que tu empresa lo necesita"
+title: "Qué es un SIEM y por que tu empresa lo necesita"
 image: "cover.png"
-description: "Guía completa sobre SIEM: que es, como funciona, principales soluciones del mercado (Splunk, QRadar, Elastic, Sentinel), open source vs comercial, y cuando necesitas uno."
+description: "Guía completa sobre SIEM: qué es, cómo funciona, principales soluciones del mercado (Splunk, QRadar, Elastic, Sentinel), open source vs comercial, y cuándo necesitas uno."
 slug: "que-es-un-siem-para-que-sirve"
 date: 2026-03-30
 lastmod: 2026-03-30
@@ -12,12 +12,12 @@ author: "David Moya"
 translationKey: "siem-guide"
 ---
 
-Un SIEM (Security Information and Event Management) es la herramienta central de cualquier operación de ciberseguridad moderna. Recopila, normaliza y correlacióna los eventos de seguridad de toda la infraestructura tecnológica de una organización, detectando amenazas que sería imposible identificar analizando cada sistema de forma aislada. Según [Gartner](https://www.gartner.com/), el 72 por ciento de las organizaciones con más de 500 empleados utilizan alguna forma de SIEM, y la tendencia es claramente creciente en el segmento de empresas medianas.
+Un SIEM (Security Information and Event Management) es la herramienta central de cualquier operación de ciberseguridad moderna. Recopila, normaliza y correlaciona los eventos de seguridad de toda la infraestructura tecnológica de una organización, detectando amenazas que sería imposible identificar analizando cada sistema de forma aislada. Según [Gartner](https://www.gartner.com/), el 72 por ciento de las organizaciones con más de 500 empleados utilizan alguna forma de SIEM, y la tendencia es claramente creciente en el segmento de empresas medianas.
 
 <!--more-->
 
 {{< key-takeaways >}}
-- Un SIEM recopila, normaliza y correlacióna eventos de seguridad de toda la infraestructura para detectar amenazas
+- Un SIEM recopila, normaliza y correlaciona eventos de seguridad de toda la infraestructura para detectar amenazas
 - Principales soluciones: Splunk, Microsoft Sentinel, IBM QRadar, Elastic Security y Google Chronicle
 - El coste para una empresa mediana oscila entre 30.000 y 200.000 EUR anuales según la solución
 - Alternativas open source viables: Wazuh (SIEM+EDR), Elastic Security (Basic) y OSSIM
@@ -36,7 +36,7 @@ Un SIEM moderno combina ambas funciones y añade capacidades avanzadas como aná
 En términos simples, un SIEM hace tres cosas fundamentales:
 
 1. **Recopila datos** de toda tu infraestructura: servidores, estaciones de trabajo, firewalls, aplicaciones, servicios cloud, bases de datos, sistemas de autenticación y cualquier otra fuente relevante.
-2. **Analiza y correlacióna** esos datos en tiempo real, aplicando reglas de detección para identificar patrones que indiquen una amenaza.
+2. **Analiza y correlaciona** esos datos en tiempo real, aplicando reglas de detección para identificar patrones que indiquen una amenaza.
 3. **Genera alertas** cuando detecta actividad sospechosa, proporcionando al equipo de seguridad la información necesaria para investigar y responder.
 
 ## Arquitectura interna de un SIEM: recolección, correlación y respuesta
@@ -75,7 +75,7 @@ La correlación es el corazón del SIEM. Es donde los eventos individuales, que 
 
 - **Basada en reglas**: la forma más tradicional. Se definen reglas que especifican condiciones que, cuando se cumplen, generan una alerta. Ejemplo: "Si un usuario falla la autenticación más de 5 veces en 10 minutos desde una IP externa y luego accede exitosamente, genera una alerta de posible fuerza bruta exitosa."
 - **Estadistica**: detecta desviaciones respecto a una línea base. Ejemplo: "Si el volumen de tráfico DNS de un host supera en más de 3 desviaciones estándar su media histórica, alerta de posible exfiltración por DNS tunneling."
-- **Basada en amenazas**: correlacióna los eventos con indicadores de compromiso (IoC) procedentes de feeds de inteligencia de amenazas. Ejemplo: "Si un host se comunica con una IP que está en la lista de servidores C2 de Cobalt Strike, genera una alerta crítica."
+- **Basada en amenazas**: correlaciona los eventos con indicadores de compromiso (IoC) procedentes de feeds de inteligencia de amenazas. Ejemplo: "Si un host se comunica con una IP que está en la lista de servidores C2 de Cobalt Strike, genera una alerta crítica."
 - **UEBA (User and Entity Behavior Analytics)**: analiza el comportamiento de usuarios y entidades para detectar anomalías. Ejemplo: "El usuario jgarcia normalmente accede desde Madrid en horario de oficina. Hoy ha accedido desde Rusia a las 3:00 AM. Alerta de comportamiento anómalo."
 
 Las reglas de correlación se organizan en casos de uso que, idealmente, se mapean al framework [MITRE ATT&CK](https://attack.mitre.org/) para garantizar una cobertura sistemática de las técnicas de ataque conocidas.
@@ -106,7 +106,7 @@ El mercado de SIEM es competitivo y diverso. El *Gartner Magic Quadrant for SIEM
 
 ### [Splunk](https://www.splunk.com/) Enterprise Security
 
-Splunk es la solución SIEM más reconocida del mercado. Adquirida por Cisco en 2024, destaca por su potente lenguaje de búsqueda (SPL), su flexibilidad para ingerir cualquier tipo de dato y su amplio ecosistema de aplicaciones e integraciónes.
+Splunk es la solución SIEM más reconocida del mercado. Adquirida por Cisco en 2024, destaca por su potente lenguaje de búsqueda (SPL), su flexibilidad para ingerir cualquier tipo de dato y su amplio ecosistema de aplicaciones e integraciones.
 
 **Fortalezas:** potencia de búsqueda y análisis, ecosistema maduro, gran comunidad, capacidad de manejar volúmenes masivos de datos.
 **Limitaciones:** coste elevado (especialmente en modelos de licenciamiento por volumen de ingesta), curva de aprendizaje del SPL, complejidad de administración en despliegues grandes.
@@ -141,7 +141,7 @@ Basada en el Elastic Stack (Elasticsearch, Logstash, Kibana), Elastic Security h
 Chronicle, la solución de seguridad de Google Cloud, destaca por su capacidad de análisis a escala masiva, almacenando un año de datos de seguridad a coste fijo sin penalizar por volumen de ingesta.
 
 **Fortalezas:** almacenamiento a coste fijo (no penaliza por volumen), velocidad de búsqueda sobre petabytes de datos, integración con el ecosistema de inteligencia de amenazas de Mandiant/Google, modelo de precios predecible.
-**Limitaciones:** menor ecosistema de integraciónes nativas comparado con Splunk o Sentinel, requiere presencia en Google Cloud, madurez relativa como producto, menor presencia en el mercado europeo.
+**Limitaciones:** menor ecosistema de integraciones nativas comparado con Splunk o Sentinel, requiere presencia en Google Cloud, madurez relativa como producto, menor presencia en el mercado europeo.
 **Modelo de licenciamiento:** precio fijo por empleado, independientemente del volumen de datos. Esto es una ventaja diferencial significativa para organizaciones con altos volúmenes de logs.
 
 ## SIEM open source o comercial: ¿cuál elegir?
@@ -200,7 +200,7 @@ El SIEM es la herramienta principal de un SOC, pero no la única. Su valor se mu
 ### Flujo típico SIEM-SOC
 
 1. Las fuentes de logs envían eventos al SIEM.
-2. El SIEM normaliza, correlacióna y genera alertas.
+2. El SIEM normaliza, correlaciona y genera alertas.
 3. Las alertas se presentan a los analistas N1, que realizan el triaje.
 4. Las alertas que requieren investigación se escalan a N2, que utiliza el SIEM para búsquedas avanzadas y correlación manual.
 5. Los analistas N3 utilizan el SIEM para threat hunting proactivo.

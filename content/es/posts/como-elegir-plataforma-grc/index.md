@@ -1,5 +1,5 @@
 ---
-title: "Como elegir una plataforma GRC: criterios reales para empresas reguladas"
+title: "Cómo elegir una plataforma GRC: criterios reales para empresas reguladas"
 description: "Guía de compra para CISOs y compliance managers: criterios para elegir una plataforma GRC, funcionalidades clave, preguntas al proveedor, costes y errores al evaluar herramientas de compliance."
 slug: "como-elegir-plataforma-grc"
 date: 2026-05-28
@@ -49,7 +49,7 @@ Las funcionalidades se organizan en cinco bloques. No todas las plataformas cubr
 - Heat maps y reportes de riesgo para dirección
 
 **3. Gestión de evidencias y auditorías.**
-- Recopilación automática de evidencias vía integraciónes (APIs con SIEM, cloud, endpoint)
+- Recopilación automática de evidencias vía integraciones (APIs con SIEM, cloud, endpoint)
 - Asignación de responsables por control y evidencia
 - Workflow de revisión y aprobación de evidencias
 - Planificación y seguimiento de auditorías internas y externas
@@ -73,7 +73,7 @@ Más allá de las funcionalidades, estos criterios determinan si una plataforma 
 
 **Cobertura de marcos regulatorios.** Verifica que los marcos que necesitas esten precargados y actualizados. Una plataforma con ISO 27001 y SOC 2 pero sin ENS ni NIS2 no sirve para una empresa española regulada. Pregunta con que frecuencia actualizan los marcos cuando cambia la regulación.
 
-**Integraciónes técnicas.** La plataforma debe conectarse con tus herramientas existentes: SIEM (Splunk, Elastic, Wazuh), cloud (AWS, Azure, GCP), endpoint (CrowdStrike, SentinelOne), IAM (Okta, Azure AD), ticketing (Jira, ServiceNow). Sin integraciónes, la recopilación de evidencias sigue siendo manual.
+**Integraciónes técnicas.** La plataforma debe conectarse con tus herramientas existentes: SIEM (Splunk, Elastic, Wazuh), cloud (AWS, Azure, GCP), endpoint (CrowdStrike, SentinelOne), IAM (Okta, Azure AD), ticketing (Jira, ServiceNow). Sin integraciones, la recopilación de evidencias sigue siendo manual.
 
 **Soberania de datos.** Para organizaciones sujetas a ENS Alto o que manejan datos sensibles: ¿dónde se alojan los datos de la plataforma? Si la plataforma es SaaS americana con datos en us-east-1, puede ser un problema regulatorio. Busca opciones con hosting en la UE o on-premise.
 
@@ -107,7 +107,7 @@ Antes de firmar, haz estas preguntas. Las respuestas te diran más que cualquier
 
 **Sobre costes:**
 11. ¿Cuál es el modelo de pricing? Por usuario, por marco, por control, flat fee?
-12. ¿Hay costes ocultos por integraciónes, módulos adicionales o soporte premium?
+12. ¿Hay costes ocultos por integraciones, módulos adicionales o soporte premium?
 13. ¿Cuánto cuesta escalar si anado un marco nuevo o duplico el número de usuarios?
 14. ¿Hay compromiso mínimo de permanencia?
 
@@ -129,7 +129,7 @@ El mercado GRC tiene un rango de precios amplio. Estos son los rangos típicos e
 - 50.000 a 300.000 EUR/año
 - Implementación: 100.000 a 500.000 EUR (consultoría + personalización)
 - Para: grandes empresas, +1.000 empleados, múltiples marcos
-- Ventaja: funcionalidad exhaustiva, integraciónes profundas
+- Ventaja: funcionalidad exhaustiva, integraciones profundas
 - Desventaja: coste, complejidad, time-to-value largo (6-12 meses)
 
 **Plataformas mid-market (Vanta, Drata, Tugboat Logic, OneTrust).**
@@ -137,7 +137,7 @@ El mercado GRC tiene un rango de precios amplio. Estos son los rangos típicos e
 - Implementación: 5.000 a 30.000 EUR
 - Para: empresas medianas, 100-1.000 empleados, 2-4 marcos
 - Ventaja: buena relación funcionalidad/precio, implementación rápida
-- Desventaja: menos personalizable, integraciónes limitadas para stack no estándar
+- Desventaja: menos personalizable, integraciones limitadas para stack no estándar
 
 **Plataformas para PYMES y startups (Secureframe, Sprinto, Scytale).**
 - 5.000 a 25.000 EUR/año
@@ -151,9 +151,9 @@ El mercado GRC tiene un rango de precios amplio. Estos son los rangos típicos e
 - Coste real: hosting + mantenimiento + personalización (15.000-50.000 EUR/año en recursos internos)
 - Para: organizaciones con equipo técnico capaz de mantener la plataforma
 - Ventaja: control total, soberanía de datos, sin vendor lock-in
-- Desventaja: requiere recursos técnicos internos, menos integraciónes out-of-the-box
+- Desventaja: requiere recursos técnicos internos, menos integraciones out-of-the-box
 
-**Factor clave: coste total de propiedad (TCO).** El precio de la licencia es solo una parte. Suma: implementación, formación, integraciónes custom, tiempo del equipo interno dedicado a la plataforma, y el coste de migrar si cambias de proveedor. Un software barato que requiere 2 FTEs para mantenerlo puede ser más caro que uno premium con automatización real.
+**Factor clave: coste total de propiedad (TCO).** El precio de la licencia es solo una parte. Suma: implementación, formación, integraciones custom, tiempo del equipo interno dedicado a la plataforma, y el coste de migrar si cambias de proveedor. Un software barato que requiere 2 FTEs para mantenerlo puede ser más caro que uno premium con automatización real.
 
 ## On-premise vs SaaS: ¿qué modelo elegir?
 
@@ -179,13 +179,13 @@ La decisión depende de tus requisitos regulatorios, capacidad técnica y presup
 
 **1. Comprar la plataforma antes de definir el programa de compliance.** La herramienta es un acelerador, no un sustituto de la estrategia. Si no tienes claro que marcos te aplican, que controles necesitas y quien es responsable de que, la plataforma no te va a dar esas respuestas. Define primero, compra después.
 
-**2. Evaluar solo con el equipo de seguridad.** Una plataforma GRC la usan muchas personas: responsables de area que aportan evidencias, auditores internos que revisan, dirección que consulta dashboards, IT que conecta integraciónes. Si solo evalúas con el CISO, puedes elegir una herramienta potente pero que nadie más sabe (ni quiere) usar.
+**2. Evaluar solo con el equipo de seguridad.** Una plataforma GRC la usan muchas personas: responsables de area que aportan evidencias, auditores internos que revisan, dirección que consulta dashboards, IT que conecta integraciones. Si solo evalúas con el CISO, puedes elegir una herramienta potente pero que nadie más sabe (ni quiere) usar.
 
 **3. Sobrevalorar la cantidad de marcos precargados.** Un vendedor te dira que tiene "200+ frameworks". Lo relevante es si tiene los que tu necesitas (ENS, NIS2, DORA, ISO 27001, RGPD) actualizados y con mapeo cruzado real. 200 marcos que no usas no aportan valor.
 
-**4. Ignorar las integraciónes técnicas.** Si la plataforma no se conecta con tu SIEM, tu cloud y tu IAM, la recopilación de evidencias sigue siendo manual. Y si es manual, tu equipo dejara de hacerlo en cuanto tenga trabajo operativo urgente. Antes de evaluar, lista tus herramientas de seguridad críticas y verifica las integraciónes.
+**4. Ignorar las integraciones técnicas.** Si la plataforma no se conecta con tu SIEM, tu cloud y tu IAM, la recopilación de evidencias sigue siendo manual. Y si es manual, tu equipo dejara de hacerlo en cuanto tenga trabajo operativo urgente. Antes de evaluar, lista tus herramientas de seguridad críticas y verifica las integraciones.
 
-**5. No calcular el TCO.** El precio anual de la licencia es tentador pero enganoso. Suma: coste de implementación, formación, horas de tu equipo para la adopción inicial (3-6 meses de dedicación parcial), integraciónes custom, y el coste de migrar si en 2 años decides cambiar. Pide al vendor un TCO a 3 años.
+**5. No calcular el TCO.** El precio anual de la licencia es tentador pero enganoso. Suma: coste de implementación, formación, horas de tu equipo para la adopción inicial (3-6 meses de dedicación parcial), integraciones custom, y el coste de migrar si en 2 años decides cambiar. Pide al vendor un TCO a 3 años.
 
 **6. Elegir la plataforma más completa en lugar de la más adecuada.** Una plataforma enterprise con 500 funcionalidades puede ser un avion de combate cuando necesitas un utilitario. Si eres una empresa de 200 empleados con ISO 27001 y RGPD, no necesitas ServiceNow GRC. Elige la complejidad justa para tus necesidades actuales y a 2 años vista.
 
@@ -205,7 +205,7 @@ La decisión depende de tus requisitos regulatorios, capacidad técnica y presup
 Sí, si tienes un solo marco normativo y un equipo pequeño. Con hojas de Excel bien estructuradas, un sistema de carpetas compartidas y disciplina puedes gestionar ISO 27001 o ENS para una organización pequeña. El problema aparece cuando escalas: múltiples marcos, decenas de controles, auditorías frecuentes. A partir de 2-3 marcos simultaneos, la plataforma se paga sola en ahorro de tiempo.
 
 **¿Cuánto tarda la implementación de una plataforma GRC?**
-Para plataformas SaaS mid-market: 4 a 12 semanas incluyendo configuración, carga de datos, integraciónes básicas y formación. Para plataformas enterprise: 3 a 9 meses. El factor limitante suele ser la disponibilidad del equipo interno, no la tecnología. Planifica dedicación parcial de al menos 2-3 personas durante la implementación.
+Para plataformas SaaS mid-market: 4 a 12 semanas incluyendo configuración, carga de datos, integraciones básicas y formación. Para plataformas enterprise: 3 a 9 meses. El factor limitante suele ser la disponibilidad del equipo interno, no la tecnología. Planifica dedicación parcial de al menos 2-3 personas durante la implementación.
 
 **¿Qué plataforma GRC es mejor para empresas españolas?**
 No hay una respuesta universal. Las plataformas americanas (Vanta, Drata) son fuertes en SOC 2 e ISO 27001 pero debiles en ENS y NIS2. Las europeas (OneTrust GRC, ERAMBA) suelen tener mejor cobertura regulatoria europea. La clave es verificar: tiene ENS precargado y actualizado a RD 311/2022? Tiene NIS2? Soporta MAGERIT como metodología de riesgos? Hosting en la UE?

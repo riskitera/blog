@@ -1,6 +1,6 @@
 ---
 title: "El coste real de no cumplir con el RGPD: multas y casos reales"
-description: "Análisis de las multas RGPD más importantes en España: importes, motivos, sectores afectados y como evitarlas. Datos de la AEPD actualizados a 2026."
+description: "Análisis de las multas RGPD más importantes en España: importes, motivos, sectores afectados y cómo evitarlas. Datos de la AEPD actualizados a 2026."
 slug: "multas-rgpd-espana-coste-real"
 date: 2026-06-27
 publishDate: 2026-06-27

@@ -1,5 +1,5 @@
 ---
-title: "Que es el Esquema Nacional de Seguridad (ENS): guía completa 2026"
+title: "Qué es el Esquema Nacional de Seguridad (ENS): guía completa 2026"
 image: "cover.png"
 description: "Todo lo que necesitas saber sobre el Esquema Nacional de Seguridad (ENS): niveles de seguridad, quien debe cumplirlo, medidas clave y pasos para implementarlo en tu organización."
 slug: "que-es-esquema-nacional-seguridad-ens"
@@ -94,7 +94,7 @@ Define las políticas y procedimientos de gobernanza de la seguridad:
 
 - **Política de seguridad**: documento aprobado por la dirección que establece el compromiso con la seguridad y asigna roles y responsabilidades.
 - **Normativa de seguridad**: conjunto de normas internas que regulan el uso de los sistemas de información.
-- **Procedimientos de seguridad**: instrucciones detalladas para la ejecución de táreas de seguridad.
+- **Procedimientos de seguridad**: instrucciones detalladas para la ejecución de tareas de seguridad.
 - **Proceso de autorización**: mecanismo formal para autorizar nuevos sistemas o cambios significativos.
 
 ### Marco operacional

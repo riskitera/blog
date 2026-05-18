@@ -1,5 +1,5 @@
 ---
-title: "ROI de una plataforma GRC: como calcularlo y justificar la inversión"
+title: "ROI de una plataforma GRC: cómo calcularlo y justificar la inversión"
 description: "Como calcular el retorno de inversión de una plataforma GRC: costes evitados, ahorro operativo, reducción de riesgo, time-to-compliance y presentación al comité de dirección."
 slug: "roi-plataforma-grc-calcular"
 date: 2026-07-11
@@ -103,7 +103,7 @@ Organizaciones con [ENS](/es/posts/2026/03/que-es-esquema-nacional-seguridad-ens
 
 ### Reducción del tiempo del equipo de compliance
 
-Fuera de los ciclos de auditoría, el equipo de compliance dedica tiempo diario a táreas repetitivas:
+Fuera de los ciclos de auditoría, el equipo de compliance dedica tiempo diario a tareas repetitivas:
 
 - Actualizar el estado de controles manualmente
 - Perseguir a responsables para que suban evidencias
@@ -244,7 +244,7 @@ Calcular el ROI es la mitad del trabajo. Presentarlo de forma convincente al com
 
 **Diapositiva 1: El problema (2 minutos).** Exposición financiera actual por incumplimiento. Tres cifras: multa máxima aplicable, coste medio de brecha en tu sector, contratos perdidos o en riesgo.
 
-**Diapositiva 2: La solución (3 minutos).** Que hace la plataforma GRC, en términos de negocio (no técnicos). Frameworks que cubre, automatizaciónes clave, integraciónes con sistemas existentes.
+**Diapositiva 2: La solución (3 minutos).** Que hace la plataforma GRC, en términos de negocio (no técnicos). Frameworks que cubre, automatizaciónes clave, integraciones con sistemas existentes.
 
 **Diapositiva 3: El ROI (5 minutos).** Tabla resumen con costes, beneficios y ROI. Periodo de recuperación (payback). Escenarios conservador, base y optimista. Comparación con alternativas (no hacer nada, hacer manual, contratar más personas).
 
@@ -346,7 +346,7 @@ El time-to-compliance es crítico: cada mes sin certificación es un mes sin pod
 
 ### ¿Cuánto tiempo se tarda en ver retorno de una plataforma GRC?
 
-El periodo medio de recuperación (payback) oscila entre 8 y 18 meses. Los quick wins aparecen antes: en los primeros 30-60 días ya debería ser visible la reducción de tiempo en táreas repetitivas (seguimiento de controles, generación de informes). El ROI completo, incluyendo costes evitados y oportunidades comerciales, se consolida típicamente a partir del segundo año.
+El periodo medio de recuperación (payback) oscila entre 8 y 18 meses. Los quick wins aparecen antes: en los primeros 30-60 días ya debería ser visible la reducción de tiempo en tareas repetitivas (seguimiento de controles, generación de informes). El ROI completo, incluyendo costes evitados y oportunidades comerciales, se consolida típicamente a partir del segundo año.
 
 ### ¿Es posible calcular el ROI de forma precisa si nunca hemos tenido una multa?
 
@@ -358,7 +358,7 @@ El ROI marginal de cada framework adicional es alto porque el coste incremental 
 
 ### ¿Cómo justificó el ROI si mi organización es pequeña y el riesgo parece bajo?
 
-Para pymes, el argumento más potente no son las multas (aunque la AEPD sanciona a empresas de todos los tamaños), sino la eficiencia operativa y el acceso a oportunidades comerciales. Calcula cuantas horas al mes dedica tu equipo a táreas de compliance manual y cuantos contratos has perdido (o no has podido optar a) por falta de certificaciones. Si la respuesta es "más de 20 horas/mes" o "al menos 1 contrato perdido", el ROI de una solución básica (200-400 EUR/mes) es positivo.
+Para pymes, el argumento más potente no son las multas (aunque la AEPD sanciona a empresas de todos los tamaños), sino la eficiencia operativa y el acceso a oportunidades comerciales. Calcula cuantas horas al mes dedica tu equipo a tareas de compliance manual y cuantos contratos has perdido (o no has podido optar a) por falta de certificaciones. Si la respuesta es "más de 20 horas/mes" o "al menos 1 contrato perdido", el ROI de una solución básica (200-400 EUR/mes) es positivo.
 
 ### ¿Qué pasa con el ROI si cambiamos de plataforma GRC?
 

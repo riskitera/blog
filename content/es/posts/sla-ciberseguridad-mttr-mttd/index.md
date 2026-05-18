@@ -1,6 +1,6 @@
 ---
-title: "SLAs en ciberseguridad: como definir MTTR, MTTD y no morir en la auditoría"
-description: "Guía práctica para definir SLAs de ciberseguridad: MTTR, MTTD, MTTC, benchmarks del sector, como medirlos y como presentarlos en auditorías de seguridad."
+title: "SLAs en ciberseguridad: cómo definir MTTR, MTTD y no morir en la auditoría"
+description: "Guía práctica para definir SLAs de ciberseguridad: MTTR, MTTD, MTTC, benchmarks del sector, cómo medirlos y cómo presentarlos en auditorías de seguridad."
 slug: "sla-ciberseguridad-mttr-mttd"
 date: 2026-06-20
 publishDate: 2026-06-20
@@ -189,7 +189,7 @@ Para medir SLAs de forma fiable necesitas:
 
 1. **Ticketing con timestamps automáticos.** Cada cambio de estado de un incidente debe generar un timestamp automático. Herramientas como ServiceNow, Jira Service Management o TheHive lo soportan de forma nativa.
 
-2. **SIEM con capacidad de reporting.** Tu SIEM debe poder exportar los tiempos de detección de cada alerta, correlaciónados con el ticket del incidente correspondiente. Si usas [Wazuh, Splunk o Elastic](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), todos ofrecen esta funcionalidad.
+2. **SIEM con capacidad de reporting.** Tu SIEM debe poder exportar los tiempos de detección de cada alerta, correlacionados con el ticket del incidente correspondiente. Si usas [Wazuh, Splunk o Elastic](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), todos ofrecen esta funcionalidad.
 
 3. **Dashboard de métricas en tiempo real.** Un panel centralizado que muestre las métricas clave actualizadas en tiempo real o near-real-time. Grafana con fuentes de datos del SIEM y el ticketing es una opción excelente.
 

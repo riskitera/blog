@@ -1,6 +1,6 @@
 ---
-title: "Dark Web monitoring: como vigilar tu marca sin gastar una fortuna"
-description: "Guía práctica de monitorización de la dark web para empresas: que buscar, herramientas accesibles, fuentes OSINT, alertas automatizadas y cuando contratar un servicio profesional."
+title: "Dark Web monitoring: cómo vigilar tu marca sin gastar una fortuna"
+description: "Guía práctica de monitorización de la dark web para empresas: qué buscar, herramientas accesibles, fuentes OSINT, alertas automatizadas y cuándo contratar un servicio profesional."
 slug: "dark-web-monitoring-empresa"
 date: 2026-07-25
 publishDate: 2026-07-25
@@ -327,7 +327,7 @@ Más allá de las herramientas ya mencionadas, estas fuentes OSINT complementan 
 
 ### Feeds de indicadores de compromiso (IoCs)
 
-- **[Abuse.ch](https://abuse.ch/):** feeds gratuitos de malware (MalwareBazaar), URLs maliciosas (URLhaus) y botnets (Feodo Tracker). Imprescindible para correlaciónar actividad de la dark web con infraestructura de ataque.
+- **[Abuse.ch](https://abuse.ch/):** feeds gratuitos de malware (MalwareBazaar), URLs maliciosas (URLhaus) y botnets (Feodo Tracker). Imprescindible para correlacionar actividad de la dark web con infraestructura de ataque.
 - **[AlienVault OTX](https://otx.alienvault.com/):** plataforma colaborativa de threat intelligence con pulsos que incluyen IoCs de la dark web.
 - **[MISP Feeds](https://www.misp-project.org/):** la plataforma MISP ofrece feeds compartidos por comunidades de seguridad que incluyen datos de la dark web.
 

@@ -67,7 +67,7 @@ Las evidencias se clasifican según su naturaleza, su origen y su grado de autom
 
 **Evidencias semi-automatizadas.** Se generan con herramientas pero requieren intervención para recopilarlas: exportar un informe del SIEM, ejecutar un script que genera un reporte, extraer métricas de un dashboard.
 
-**Evidencias automatizadas.** Se recopilan sin intervención humana: colectores que extraen configuraciones periódicamente, integraciónes API que recogen logs, monitores que generan evidencias de disponibilidad. Este es el objetivo para al menos el 60% de tus evidencias.
+**Evidencias automatizadas.** Se recopilan sin intervención humana: colectores que extraen configuraciones periódicamente, integraciones API que recogen logs, monitores que generan evidencias de disponibilidad. Este es el objetivo para al menos el 60% de tus evidencias.
 
 ## ¿Cómo recopilar evidencias de forma eficiente?
 
@@ -254,7 +254,7 @@ La presentación de evidencias es el momento de la verdad. Un auditor experiment
 
 La automatización es la diferencia entre un proceso de auditoría que consume 400 horas y uno que consume 100. Veamos como implementarla de forma práctica.
 
-### Nivel 1: Automatización básica (scripts + táreas programadas)
+### Nivel 1: Automatización básica (scripts + tareas programadas)
 
 Si tu presupuesto es limitado, empieza con scripts que automaticen la recopilación de las evidencias técnicas más frecuentes:
 
@@ -274,9 +274,9 @@ Una [plataforma GRC](/es/posts/2026/04/como-elegir-plataforma-grc/) añade la ca
 - **Dashboard de estado.** Visión en tiempo real de cuantas evidencias están vigentes, cuantas vencen en los próximos 30 días y cuantas faltan.
 - **Calendario de recopilación.** La plataforma genera recordatorios automáticos a los responsables.
 
-### Nivel 3: Automatización avanzada (integraciónes API + IA)
+### Nivel 3: Automatización avanzada (integraciones API + IA)
 
-El nivel más maduro combina integraciónes nativas con sistemas fuente y capacidades de inteligencia artificial:
+El nivel más maduro combina integraciones nativas con sistemas fuente y capacidades de inteligencia artificial:
 
 - **Colectores API.** Integraciónes directas con tu SIEM, tu herramienta de vulnerabilidades, tu directorio activo, tu ticketing y tu cloud. Las evidencias se recopilan automáticamente sin intervención humana.
 - **Clasificación automática.** La IA clasifica la evidencia, la vincula al control correcto y detecta anomalías (por ejemplo, una evidencia que muestra un gap de seguridad).

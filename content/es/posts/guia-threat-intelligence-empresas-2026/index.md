@@ -36,7 +36,7 @@ En 2026, la TI ha dejado de ser un lujo reservado a grandes corporaciones. Tres 
 
 1. **Regulación obligatoria.** La Directiva [NIS2](https://www.enisa.europa.eu/) exige a entidades esenciales e importantes la implementación de medidas de gestión de riesgos que incluyan "políticas sobre análisis de riesgos y seguridad de los sistemas de información". [DORA](https://www.eiopa.europa.eu/browse/regulation-and-policy/digital-operational-resilience-act-dora_en) va más lejos para el sector financiero, requiriendo explícitamente capacidades de threat intelligence compartida.
 
-2. **Sofisticación de las amenazas.** Los actores de amenaza utilizan IA generativa para crear campañas de phishing más convincentes, malware polimorfico que evade detecciónes y ataques a la cadena de suministro cada vez más complejos. Defenderse solo con reglas estáticas ya no es viable.
+2. **Sofisticación de las amenazas.** Los actores de amenaza utilizan IA generativa para crear campañas de phishing más convincentes, malware polimorfico que evade detecciones y ataques a la cadena de suministro cada vez más complejos. Defenderse solo con reglas estáticas ya no es viable.
 
 3. **Herramientas accesibles.** Plataformas open source como [MISP](https://www.misp-project.org/) y frameworks como MITRE ATT&CK han reducido drasticamente la barrera de entrada. Una empresa mediana puede montar un programa básico de TI con herramientas gratuitas.
 
@@ -81,7 +81,7 @@ La inteligencia táctica responde a:
 - Nuestros controles actuales detectan esas técnicas?
 - Qué gaps existen entre las técnicas del adversario y nuestras capacidades de detección?
 
-**Ejemplo práctico:** un mapeo MITRE ATT&CK que muestra que el grupo Volt Typhoon utiliza living-off-the-land binaries (LOLBins) para moverse lateralmente. El equipo de seguridad descubre que no tiene detecciónes para T1218 (Signed Binary Proxy Execution) ni T1059.001 (PowerShell). Se priorizan esas reglas de detección.
+**Ejemplo práctico:** un mapeo MITRE ATT&CK que muestra que el grupo Volt Typhoon utiliza living-off-the-land binaries (LOLBins) para moverse lateralmente. El equipo de seguridad descubre que no tiene detecciones para T1218 (Signed Binary Proxy Execution) ni T1059.001 (PowerShell). Se priorizan esas reglas de detección.
 
 ### Inteligencia operativa
 
@@ -273,7 +273,7 @@ La elección de plataforma depende del nivel de madurez, presupuesto y necesidad
 
 ### MISP (Malware Information Sharing Platform)
 
-[MISP](https://www.misp-project.org/) es la plataforma open source de referencia para compartir, almacenar y correlaciónar IoCs y threat intelligence.
+[MISP](https://www.misp-project.org/) es la plataforma open source de referencia para compartir, almacenar y correlacionar IoCs y threat intelligence.
 
 **Fortalezas:**
 
@@ -379,7 +379,7 @@ La tecnología sin personas que la operen no genera inteligencia. Estos son los 
 ### Programa mínimo (1-2 personas)
 
 - **Analista de TI (senior):** responsable de todo el ciclo de inteligencia. Debe tener experiencia en análisis de amenazas, conocimiento de MITRE ATT&CK, y capacidad de comunicar a audiencias técnicas y ejecutivas.
-- **Ingeniero de TI (junior/medio):** responsable de la infraestructura técnica: plataformas, feeds, integraciónes, automatización.
+- **Ingeniero de TI (junior/medio):** responsable de la infraestructura técnica: plataformas, feeds, integraciones, automatización.
 
 En una pyme, estos roles pueden ser compartidos con el SOC o el equipo de seguridad general.
 
@@ -388,7 +388,7 @@ En una pyme, estos roles pueden ser compartidos con el SOC o el equipo de seguri
 - **TI Manager:** define PIRs, coordina con negocio, gestiona relaciones con ISACs y CERTs
 - **Analista senior:** análisis profundo de campañas, atribución, producción de informes
 - **Analista junior (x2):** triaje de feeds, procesamiento de IoCs, hunting básico
-- **Ingeniero de TI:** infraestructura, automatización, integraciónes
+- **Ingeniero de TI:** infraestructura, automatización, integraciones
 
 ### Programa avanzado (6+ personas)
 

@@ -21,7 +21,7 @@ Los 15 mejores feeds de threat intelligence gratuitos en 2026: MISP, AlienVault 
 - Los feeds de CTI gratuitos proporcionan IOCs (indicadores de compromiso) que alimentan tu SIEM, firewall y EDR sin coste de licencia.
 - Los cuatro pilares gratuitos son AlienVault OTX, el ecosistema Abuse.ch, MISP/CIRCL y el catálogo CISA KEV.
 - La calidad de un feed se mide por su tasa de falsos positivos, frecuencia de actualización, contexto proporcionado y facilidad de integración.
-- Integrar demasiados feeds sin filtrado genera fatiga de alertas. La clave es correlaciónar, puntuar y descartar IOCs obsoletos.
+- Integrar demasiados feeds sin filtrado genera fatiga de alertas. La clave es correlacionar, puntuar y descartar IOCs obsoletos.
 - Pasar de feeds gratuitos a comerciales tiene sentido cuando necesitas atribución, contexto geopolitico o cobertura de dark web que los feeds abiertos no ofrecen.
 {{< /key-takeaways >}}
 
@@ -117,7 +117,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 ### 6. MISP (Malware Information Sharing Platform)
 
-[MISP](https://www.misp-project.org/) no es un feed, sino una plataforma open source de compartición de inteligencia que agrega feeds de múltiples fuentes (incluidos todos los de Abuse.ch) y permite crear, compartir y correlaciónar eventos de amenazas.
+[MISP](https://www.misp-project.org/) no es un feed, sino una plataforma open source de compartición de inteligencia que agrega feeds de múltiples fuentes (incluidos todos los de Abuse.ch) y permite crear, compartir y correlacionar eventos de amenazas.
 
 | Caracteristica | Detalle |
 |---|---|
@@ -143,7 +143,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 | **Frecuencia de actualización** | Continua |
 | **Registro** | Necesario para acceso completo |
 
-**Punto fuerte**: el passive DNS. Permite resolver "que dominios apuntaron a esta IP en el pasado" o "a que IPs apunto este dominio historicamente". Fundamental para investigaciónes de infraestructura C2.
+**Punto fuerte**: el passive DNS. Permite resolver "que dominios apuntaron a esta IP en el pasado" o "a que IPs apunto este dominio historicamente". Fundamental para investigaciones de infraestructura C2.
 
 ### 8. PhishTank
 
@@ -263,7 +263,7 @@ El [CCN-CERT](https://www.ccn-cert.cni.es/) y el [INCIBE-CERT](https://www.incib
 
 **Punto fuerte**: la visión macro. DShield te dice "estas son las IPs que están atacando más infraestructura a nivel global ahora mismo". Útil para bloqueos preventivos y para contexto: si una IP que te ataca está en el top 10 de DShield, es un escaneo masivo, no dirigido.
 
-**Mención adicional: Tor Exit Nodes**. La lista de nodos de salida de Tor se pública en `https://check.torproject.org/torbulkexitlist`. No es un feed CTI per se, pero correlaciónar tu tráfico con nodos de salida de Tor puede revelar actividad anonimizada sospechosa. Atención: bloquear todo el tráfico de Tor tiene implicaciones de privacidad y no siempre es recomendable.
+**Mención adicional: Tor Exit Nodes**. La lista de nodos de salida de Tor se pública en `https://check.torproject.org/torbulkexitlist`. No es un feed CTI per se, pero correlacionar tu tráfico con nodos de salida de Tor puede revelar actividad anonimizada sospechosa. Atención: bloquear todo el tráfico de Tor tiene implicaciones de privacidad y no siempre es recomendable.
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana." label="Ver demo SOC" >}}
 
@@ -334,7 +334,7 @@ Splunk soporta feeds CTI a través de:
 
 1. **Splunk Enterprise Security (ES)**: incluye el framework de Threat Intelligence nativo. Importa feeds en formato CSV, STIX/TAXII o vía modular inputs. Correlaciona automáticamente IOCs con eventos.
 2. **Add-ons específicos**: AlienVault OTX, VirusTotal, Abuse.ch tienen add-ons en Splunkbase.
-3. **Lookups manuales**: para feeds en CSV, crea un `lookup` en Splunk y usa `| lookup` en las búsquedas para correlaciónar.
+3. **Lookups manuales**: para feeds en CSV, crea un `lookup` en Splunk y usa `| lookup` en las búsquedas para correlacionar.
 
 ```spl
 | inputlookup threatintel_iocs.csv
@@ -552,7 +552,7 @@ La regla de oro es la corroboración cruzada: si un IOC aparece en dos o más fe
 
 ### ¿Puedo integrar feeds CTI sin tener un SIEM?
 
-Sí, aunque con menos automatización. Las opciones son: (1) usar las blocklists directamente en tu firewall o proxy (Feodo Tracker pública listas para pfSense e iptables listas para usar), (2) usar un EDR que soporte importación de IOCs (la mayoría de los EDR modernos permiten subir listas de hashes para bloqueo), (3) usar MISP como TIP standalone para almacenar, correlaciónar y buscar IOCs manualmente durante investigaciónes. Un SIEM potencia enormemente el valor de los feeds al automatizar la correlación, pero no es un prerrequisito absoluto para empezar a usar threat intelligence.
+Sí, aunque con menos automatización. Las opciones son: (1) usar las blocklists directamente en tu firewall o proxy (Feodo Tracker pública listas para pfSense e iptables listas para usar), (2) usar un EDR que soporte importación de IOCs (la mayoría de los EDR modernos permiten subir listas de hashes para bloqueo), (3) usar MISP como TIP standalone para almacenar, correlacionar y buscar IOCs manualmente durante investigaciones. Un SIEM potencia enormemente el valor de los feeds al automatizar la correlación, pero no es un prerrequisito absoluto para empezar a usar threat intelligence.
 
 ### ¿Con qué frecuencia debo actualizar los feeds en mi SIEM?
 

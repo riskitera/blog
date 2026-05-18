@@ -88,7 +88,7 @@ La automatización es la única forma viable de gestionar el compliance multi-no
 
 **Monitorización continúa de controles.** En lugar de verificar el cumplimiento una vez al año (en la auditoría), monitorizarlo en tiempo real. Si un control se degrada (por ejemplo, un servidor deja de enviar logs al SIEM), se genera una alerta automática antes de que el gap se convierta en un hallazgo de auditoría.
 
-**IA para compliance.** Los modelos de lenguaje están transformando táreas que antes eran exclusivamente manuales: análisis de gaps contra normativas (el modelo compara la documentación de la organización con los requisitos regulatorios), generación de borradores de políticas y procedimientos, respuesta a cuestionarios de seguridad de clientes, y mapeo automático de controles entre marcos.
+**IA para compliance.** Los modelos de lenguaje están transformando tareas que antes eran exclusivamente manuales: análisis de gaps contra normativas (el modelo compara la documentación de la organización con los requisitos regulatorios), generación de borradores de políticas y procedimientos, respuesta a cuestionarios de seguridad de clientes, y mapeo automático de controles entre marcos.
 
 **Integración con el ecosistema de seguridad.** La plataforma GRC debe integrarse con las herramientas de seguridad operativa (SIEM, EDR, IAM, vulnerability scanner, ticketing) para que el compliance refleje el estado real de seguridad, no una foto fija del último audit.
 
@@ -98,7 +98,7 @@ El CISO (Chief Information Security Officer) es el responsable natural del compl
 
 **Responsabilidad regulatoria directa.** NIS2 y DORA exigen que la responsabilidad de la gestión de riesgos de ciberseguridad recaiga en el órgano de dirección. Esto no desplaza al CISO, sino que lo convierte en el interlocutor técnico entre la dirección y la operativa de seguridad. El CISO debe ser capaz de comunicar riesgos, gaps y estado de cumplimiento en lenguaje de negocio.
 
-**Doble sombrero: seguridad y compliance.** En muchas organizaciones, el CISO gestiona tanto la seguridad operativa (SOC, respuesta a incidentes, vulnerability management) como el compliance regulatorio. Esto genera tensión: los recursos dedicados a preparar una auditoría son recursos que no se dedican a detectar amenazas. La solución es automatizar el compliance para liberar al equipo de seguridad para táreas de valor.
+**Doble sombrero: seguridad y compliance.** En muchas organizaciones, el CISO gestiona tanto la seguridad operativa (SOC, respuesta a incidentes, vulnerability management) como el compliance regulatorio. Esto genera tensión: los recursos dedicados a preparar una auditoría son recursos que no se dedican a detectar amenazas. La solución es automatizar el compliance para liberar al equipo de seguridad para tareas de valor.
 
 **Reporting a dirección.** NIS2 obliga a que el órgano de dirección apruebe las medidas de gestión de riesgos y reciba formación periódica. El CISO debe preparar reportes periódicos que reflejen: estado de cumplimiento por normativa, riesgos principales, incidentes relevantes, estado de los planes de remediación y métricas clave (MTTD, MTTR, cobertura de controles).
 
@@ -155,7 +155,7 @@ El régimen sancionador europeo en ciberseguridad se ha endurecido drasticamente
 
 ## Tendencias en compliance para 2027
 
-**Compliance continuo.** La transición de auditorías periódicas (anuales o bianuales) a monitorización continua del cumplimiento. Las plataformas GRC con integraciónes en tiempo real permiten detectar gaps antes de que se conviertan en hallazgos de auditoría. Los reguladores están empezando a valorar este enfoque frente al modelo clásico de auditoría puntual.
+**Compliance continuo.** La transición de auditorías periódicas (anuales o bianuales) a monitorización continua del cumplimiento. Las plataformas GRC con integraciones en tiempo real permiten detectar gaps antes de que se conviertan en hallazgos de auditoría. Los reguladores están empezando a valorar este enfoque frente al modelo clásico de auditoría puntual.
 
 **IA regulada y compliance de IA.** El EU AI Act introduce una nueva capa de compliance que se solapara con la ciberseguridad. Los sistemas de IA usados en seguridad (detección de amenazas, análisis de riesgos automatizado) están clasificados como alto riesgo y requieren evaluación de conformidad, documentación técnica y supervisión humana.
 

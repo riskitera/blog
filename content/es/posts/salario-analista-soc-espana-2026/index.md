@@ -1,5 +1,5 @@
 ---
-title: "Cuanto gana un analista SOC en España en 2026: datos reales"
+title: "Cuánto gana un analista SOC en España en 2026: datos reales"
 description: "Salarios reales de analistas SOC en España en 2026: rangos por nivel (N1, N2, N3), por ciudad, por sector y comparativa con Europa. Datos de ofertas y encuestas del sector."
 slug: "salario-analista-soc-espana-2026"
 date: 2026-06-23
@@ -56,7 +56,7 @@ El analista N1 es el primer punto de contacto con las alertas de seguridad. Su t
 - Ausencia de certificaciones.
 - Contratas y subcontratas para administración pública.
 
-El perfil N1 es el que más rotación sufre. La media de permanencia en un puesto N1 en España es de 14-18 meses. La razón principal no es solo salarial: la monotonia del triage repetitivo, los turnos rotativos y la presión por volúmenes de alertas contribuyen al burnout. Los SOC que automatizan el triage básico con IA están consiguiendo retener mejor a sus N1, ya que estos pasan menos tiempo en táreas repetitivas y más en investigación real.
+El perfil N1 es el que más rotación sufre. La media de permanencia en un puesto N1 en España es de 14-18 meses. La razón principal no es solo salarial: la monotonia del triage repetitivo, los turnos rotativos y la presión por volúmenes de alertas contribuyen al burnout. Los SOC que automatizan el triage básico con IA están consiguiendo retener mejor a sus N1, ya que estos pasan menos tiempo en tareas repetitivas y más en investigación real.
 
 ### Analista SOC N2 (Tier 2): 38.000 - 55.000 euros
 
@@ -165,7 +165,7 @@ El modelo de teletrabajo completo se ha consolidado para roles SOC fuera de turn
 
 La tendencia es que cada vez menos empresas aplican ajuste por ubicación. La escasez de talento les obliga a competir por salario absoluto, independientemente de donde viva el profesional.
 
-{{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana. Libera a tu equipo de táreas repetitivas." label="Ver demo SOC" >}}
+{{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana. Libera a tu equipo de tareas repetitivas." label="Ver demo SOC" >}}
 
 ## Banca, energía y defensa: los sectores que mejor pagan en SOC
 
@@ -284,7 +284,7 @@ En 2026, esta emergiendo una nueva franja salarial para profesionales SOC con co
 
 - **Automatización de triage con LLMs**: analistas que saben integrar modelos de lenguaje en playbooks SOAR para automatizar el triage de alertas de baja prioridad.
 - **Detection Engineering con ML**: profesionales que crean reglas de detección combinando lógica tradicional (Sigma, YARA) con modelos de machine learning.
-- **Prompt engineering para CTI**: analistas que utilizan LLMs para acelerar el análisis de inteligencia de amenazas, automatizar la producción de informes y correlaciónar fuentes.
+- **Prompt engineering para CTI**: analistas que utilizan LLMs para acelerar el análisis de inteligencia de amenazas, automatizar la producción de informes y correlacionar fuentes.
 - **Integración de IA soberana**: profesionales que despliegan y gestionan modelos de IA self-hosted para operaciones de seguridad en entornos regulados.
 
 Estos perfiles están cobrando un premium del 15-25% sobre los rangos salariales estándar de su nivel. Un N2 con experiencia real en automatización SOC con IA puede superar los 55.000 euros, y un N3 con estas competencias se sitúa fácilmente en los 80.000-90.000 euros.
@@ -396,8 +396,8 @@ Para N1 que quiere llegar a N2: CySA+ o BTL1 son buenas opciones de coste-benefi
 
 ### ¿El salario SOC seguirá subiendo en los próximos años?
 
-Todo indica que si, al menos hasta 2028-2029. Los factores estructurales (deficit de talento, presión regulatoria de NIS2 y AI Act, incremento de ciberataques) no van a desaparecer a corto plazo. La automatización con IA eliminará parte de las táreas repetitivas de N1, pero no eliminará los puestos: los transformara. Los analistas N1 de 2028 harán el trabajo que hoy hacen los N2. Esto implica una presión al alza en competencias y, por extensión, en salarios. El riesgo a la baja es una recesión económica prolongada que congele contrataciones, pero incluso en ese escenario, la ciberseguridad es de las últimas áreas en recibir recortes.
+Todo indica que si, al menos hasta 2028-2029. Los factores estructurales (deficit de talento, presión regulatoria de NIS2 y AI Act, incremento de ciberataques) no van a desaparecer a corto plazo. La automatización con IA eliminará parte de las tareas repetitivas de N1, pero no eliminará los puestos: los transformara. Los analistas N1 de 2028 harán el trabajo que hoy hacen los N2. Esto implica una presión al alza en competencias y, por extensión, en salarios. El riesgo a la baja es una recesión económica prolongada que congele contrataciones, pero incluso en ese escenario, la ciberseguridad es de las últimas áreas en recibir recortes.
 
 ### ¿Cuánto tarda un N1 en llegar a N2 de media en España?
 
-La media está entre 2 y 3 años, pero la variabilidad es enorme. Un N1 en un SOC bien estructurado con mentoring activo, exposición a incidentes reales y apoyo para certificaciones puede hacer la transición en 18-24 meses. Un N1 en un SOC de volumen con rotación alta y sin plan de carrera puede tardar 4-5 años o estancarse indefinidamente. La clave está en buscar activamente la exposición a táreas de N2 (investigación de incidentes, threat hunting básico, creación de playbooks) incluso antes de la promoción formal.
+La media está entre 2 y 3 años, pero la variabilidad es enorme. Un N1 en un SOC bien estructurado con mentoring activo, exposición a incidentes reales y apoyo para certificaciones puede hacer la transición en 18-24 meses. Un N1 en un SOC de volumen con rotación alta y sin plan de carrera puede tardar 4-5 años o estancarse indefinidamente. La clave está en buscar activamente la exposición a tareas de N2 (investigación de incidentes, threat hunting básico, creación de playbooks) incluso antes de la promoción formal.

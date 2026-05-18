@@ -1,5 +1,5 @@
 ---
-title: "Threat Intelligence para empresas españolas: como empezar sin presupuesto"
+title: "Threat Intelligence para empresas españolas: cómo empezar sin presupuesto"
 description: "Guía práctica para que empresas españolas comiencen con threat intelligence sin presupuesto: fuentes gratuitas, herramientas open source, integración con el SOC y maduración del programa."
 slug: "threat-intelligence-empresas-empezar"
 date: 2026-07-04
@@ -20,7 +20,7 @@ Guía práctica para que empresas españolas comiencen con threat intelligence s
 {{< key-takeaways >}}
 - La threat intelligence no requiere presupuesto inicial: las fuentes públicas españolas (CCN-CERT, INCIBE-CERT) y las plataformas gratuitas (AlienVault OTX, Abuse.ch) cubren el 80% de las necesidades de una PYME.
 - Un programa de CTI efectivo sigue el ciclo de inteligencia: requisitos de los stakeholders, recolección, procesamiento, análisis y diseminación.
-- MISP open source permite gestionar, correlaciónar y compartir indicadores de compromiso sin coste de licencia, integrando con cualquier SIEM.
+- MISP open source permite gestionar, correlacionar y compartir indicadores de compromiso sin coste de licencia, integrando con cualquier SIEM.
 - El error más común es confundir feeds de IOCs con threat intelligence. Los indicadores sin contexto son datos, no inteligencia.
 - La operacionalización de la inteligencia (convertirla en reglas SIEM, políticas de bloqueo y decisiones de negocio) es lo que diferencia un programa funcional de uno decorativo.
 {{< /key-takeaways >}}
@@ -168,7 +168,7 @@ La cuenta gratuita tiene limitaciones de API (500 peticiones/día), pero es sufi
 
 - **ENISA Threat Landscape.** Informe anual de la agencia europea de ciberseguridad. Panorama de amenazas europeo con datos cuantitativos.
 - **Reportes de vendors.** CrowdStrike, Mandiant, Palo Alto Unit42, Cisco Talos, ESET, Kaspersky. Publican reportes gratuitos sobre campañas y actores de amenaza. Sesgo hacia sus clientes, pero son información valiosa.
-- **Blogs de investigadores.** The DFIR Report (análisis detallados de intrusiones reales), BleepingComputer (noticias), KrebsOnSecurity (investigaciónes).
+- **Blogs de investigadores.** The DFIR Report (análisis detallados de intrusiones reales), BleepingComputer (noticias), KrebsOnSecurity (investigaciones).
 
 ## Herramientas open source para CTI
 
@@ -182,7 +182,7 @@ Funcionalidades clave:
 
 - **Gestión de eventos y atributos.** Cada amenaza se modela como un evento con atributos (IPs, dominios, hashes, emails, etc.) tipados y categorizados.
 - **Taxonomías y galaxias.** Sistema de etiquetado estandarizado que incluye MITRE ATT&CK, TLP (Traffic Light Protocol), sectores afectados y tipos de amenaza.
-- **Correlación automática.** MISP correlacióna automáticamente atributos entre eventos, revelando conexiones entre campañas aparentemente independientes.
+- **Correlación automática.** MISP correlaciona automáticamente atributos entre eventos, revelando conexiones entre campañas aparentemente independientes.
 - **Compartición.** Diseñado para compartir inteligencia entre organizaciones de confianza. Soporta comunidades de compartición (sharing groups) con control granular de visibilidad.
 - **Integración.** API REST completa. Modulos de exportación a formatos STIX, CSV, IDS (Snort/Suricata), OpenIOC. Integración nativa con SIEMs vía syslog o API.
 - **Feeds integrados.** Permite suscribirse a feeds externos (Abuse.ch, CIRCL, AlienVault OTX) directamente desde la interfaz.
@@ -209,7 +209,7 @@ OpenCTI (Open Cyber Threat Intelligence) es una plataforma de gestión de CTI de
 - **Conectores.** Más de 100 conectores para importar datos de feeds, CERTs, vendors y otras plataformas (incluido MISP).
 - **Dashboards analiticos.** Paneles para monitorizar tendencias, actores activos y actividad por sector.
 
-OpenCTI es más exigente en recursos que MISP (necesita Elasticsearch/OpenSearch, RabbitMQ, Redis y MinIO), pero proporciona capacidades analiticas superiores.
+OpenCTI es más exigente en recursos que MISP (necesita Elasticsearch/OpenSearch, RabbitMQ, Redis y MinIO), pero proporciona capacidades analíticas superiores.
 
 ### TheHive: gestión de casos de respuesta
 
@@ -272,7 +272,7 @@ Reglas prácticas para la ingesta de IOCs:
 
 ### Nivel 2: Reglas de detección basadas en TTPs
 
-Los IOCs son útiles pero efimeros. Los atacantes cambian de infraestructura constantemente. Las detecciónes basadas en TTPs (tácticas, técnicas y procedimientos) son más duraderas porque detectan el comportamiento, no el indicador.
+Los IOCs son útiles pero efimeros. Los atacantes cambian de infraestructura constantemente. Las detecciones basadas en TTPs (tácticas, técnicas y procedimientos) son más duraderas porque detectan el comportamiento, no el indicador.
 
 Ejemplo: en lugar de bloquear las 50 IPs de la infraestructura C2 de Emotet (que cambian cada semana), detecta el patrón de comportamiento de Emotet:
 
@@ -297,7 +297,7 @@ Herramientas como Cortex (asociado a TheHive) o los módulos de enriquecimiento 
 
 La inteligencia alimenta las hipótesis de threat hunting. El proceso:
 
-1. El equipo de CTI pública un informe: "APT28 está usando la técnica T1218.011 (Signed Binary Proxy Execution: Rundll32) para evadir detecciónes en campañas contra gobierno europeo."
+1. El equipo de CTI pública un informe: "APT28 está usando la técnica T1218.011 (Signed Binary Proxy Execution: Rundll32) para evadir detecciones en campañas contra gobierno europeo."
 2. El threat hunter fórmula la hipótesis: "Es posible que APT28 haya comprometido nuestro entorno usando rundll32 para ejecutar DLLs maliciosas."
 3. El hunter busca en la telemetría histórica: ejecuciones de rundll32 con argumentos inusuales, rundll32 cargando DLLs desde ubicaciones temporales, rundll32 estableciendo conexiones de red.
 4. Si encuentra actividad sospechosa, escala. Si no, documenta la búsqueda y la convierte en una regla de detección permanente.
@@ -458,7 +458,7 @@ Empieza por calidad, no por cantidad. Tres fuentes bien integradas aportan más 
 
 ### ¿Qué diferencia hay entre MISP y OpenCTI? Cuál debería usar?
 
-MISP es mejor para la gestión operativa de IOCs: recopilar, normalizar, compartir y exportar indicadores al SIEM. OpenCTI es mejor para análisis y visualización: grafos de relaciones, dashboards y modelado de actores de amenaza. Para empezar, MISP es la opción recomendada porque es más ligero, tiene más documentación y cubre el caso de uso más básico (feeds a SIEM). Cuando tu programa madure al nivel 3-4 y necesites capacidades analiticas avanzadas, añade OpenCTI como capa de análisis encima de MISP (ambos se integran nativamente).
+MISP es mejor para la gestión operativa de IOCs: recopilar, normalizar, compartir y exportar indicadores al SIEM. OpenCTI es mejor para análisis y visualización: grafos de relaciones, dashboards y modelado de actores de amenaza. Para empezar, MISP es la opción recomendada porque es más ligero, tiene más documentación y cubre el caso de uso más básico (feeds a SIEM). Cuando tu programa madure al nivel 3-4 y necesites capacidades analíticas avanzadas, añade OpenCTI como capa de análisis encima de MISP (ambos se integran nativamente).
 
 ### ¿Cómo justificó el tiempo invertido en CTI ante dirección?
 

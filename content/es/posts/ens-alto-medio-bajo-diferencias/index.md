@@ -1,6 +1,6 @@
 ---
 title: "ENS Alto vs Medio vs Bajo: diferencias, requisitos y como elegir categoría"
-description: "Comparativa detallada de los tres niveles del Esquema Nacional de Seguridad (ENS): criterios de categorización, medidas obligatorias por nivel y como elegir la categoría correcta para tu organización."
+description: "Comparativa detallada de los tres niveles del Esquema Nacional de Seguridad (ENS): criterios de categorización, medidas obligatorias por nivel y cómo elegir la categoría correcta para tu organización."
 slug: "ens-alto-medio-bajo-diferencias"
 date: 2026-05-05
 publishDate: 2026-05-05

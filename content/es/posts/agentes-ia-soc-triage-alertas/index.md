@@ -1,5 +1,5 @@
 ---
-title: "Agentes de IA para SOC: como automatizar el triage de alertas sin perder contexto"
+title: "Agentes de IA para SOC: cómo automatizar el triage de alertas sin perder contexto"
 description: "Guía práctica sobre agentes de inteligencia artificial para centros de operaciones de seguridad (SOC): automatización del triage, reducción de falsos positivos y escalado inteligente."
 slug: "agentes-ia-soc-triage-alertas"
 date: 2026-05-16
@@ -19,7 +19,7 @@ Un SOC medio recibe entre 5.000 y 15.000 alertas diarias, de las cuales el 85% s
 
 ## ¿Qué son los agentes de IA para SOC?
 
-Un agente de IA para SOC es un sistema autónomo que ejecuta táreas operativas de seguridad siguiendo instrucciones predefinidas y adaptandose al contexto. A diferencia de un script o una regla SOAR estática, un agente puede:
+Un agente de IA para SOC es un sistema autónomo que ejecuta tareas operativas de seguridad siguiendo instrucciones predefinidas y adaptandose al contexto. A diferencia de un script o una regla SOAR estática, un agente puede:
 
 - **Razonar sobre la alerta**: analizar el contexto (que usuario, que endpoint, que hora, que patrón) antes de decidir la acción
 - **Consultar múltiples fuentes**: enriquecer la alerta con datos de CTI, CMDB, Active Directory y histórico de incidentes

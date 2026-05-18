@@ -1,5 +1,5 @@
 ---
-title: "Como montar y operar un SOC en 2026: guía definitiva"
+title: "Cómo montar y operar un SOC en 2026: guía definitiva"
 description: "Guía definitiva para montar y operar un SOC en 2026: modelos organizativos, equipo, herramientas, procesos, métricas, automatización con IA y costes reales."
 slug: "guia-montar-operar-soc-2026"
 date: 2026-06-30
@@ -305,7 +305,7 @@ La IA en el SOC ya no es una promesa: es una realidad operativa en 2026. Pero su
 
 ### Dónde la IA aporta valor real hoy
 
-**Triage automatizado de alertas (impacto alto).** Los LLMs y modelos de clasificación pueden analizar alertas, correlaciónarlas con contexto histórico y clasificarlas por severidad con una precisión que en muchos casos supera al analista N1 medio. Esto no elimina al N1: le libera de las alertas triviales para que se centre en las que requieren juicio humano.
+**Triage automatizado de alertas (impacto alto).** Los LLMs y modelos de clasificación pueden analizar alertas, correlacionarlas con contexto histórico y clasificarlas por severidad con una precisión que en muchos casos supera al analista N1 medio. Esto no elimina al N1: le libera de las alertas triviales para que se centre en las que requieren juicio humano.
 
 **Enriquecimiento automático de indicadores (impacto alto).** Consultar automáticamente 10-15 fuentes de reputación para cada IP, dominio o hash antes de que el analista lo toque. Esto reduce el tiempo de investigación en un 30-50%.
 
@@ -444,4 +444,4 @@ Evalua estos criterios: ubicación de los datos (deben procesarse y almacenarse 
 
 ### ¿La IA va a eliminar los puestos de trabajo en el SOC?
 
-No, pero va a transformarlos profundamente. La IA eliminará las táreas repetitivas de bajo valor (triage básico de alertas conocidas, enriquecimiento manual de IoCs, generación de informes rutinarios). Esto significa que los N1 "puros" (que solo siguen playbooks mecanicamente) tendrán que evolucionar. Pero la demanda de analistas capaces de supervisar IA, investigar incidentes complejos, realizar threat hunting creativo, desarrollar reglas de detección y comunicar hallazgos a la dirección va a seguir creciendo. En otras palabras: la IA no elimina analistas, elimina tareas. Los analistas que se adapten y adquieran competencias complementarias (supervisión de IA, detection engineering, CTI avanzado) tendrán más demanda y mejores salarios que nunca.
+No, pero va a transformarlos profundamente. La IA eliminará las tareas repetitivas de bajo valor (triage básico de alertas conocidas, enriquecimiento manual de IoCs, generación de informes rutinarios). Esto significa que los N1 "puros" (que solo siguen playbooks mecanicamente) tendrán que evolucionar. Pero la demanda de analistas capaces de supervisar IA, investigar incidentes complejos, realizar threat hunting creativo, desarrollar reglas de detección y comunicar hallazgos a la dirección va a seguir creciendo. En otras palabras: la IA no elimina analistas, elimina tareas. Los analistas que se adapten y adquieran competencias complementarias (supervisión de IA, detection engineering, CTI avanzado) tendrán más demanda y mejores salarios que nunca.

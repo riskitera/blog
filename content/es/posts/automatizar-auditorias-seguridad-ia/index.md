@@ -13,7 +13,7 @@ keyword: "automatizar auditorias seguridad"
 funnel: "mofu"
 ---
 
-Las auditorías de seguridad informática consumen entre 200 y 800 horas de trabajo manual por ciclo en una organización mediana, según datos de ISACA 2025. La mayor parte de ese tiempo se dedica a táreas repetitivas: recopilar evidencias de múltiples sistemas, verificar configuraciones, comparar controles con requisitos normativos y redactar informes. La inteligencia artificial permite reducir ese esfuerzo entre un 40% y un 70%, transformando la auditoría de un ejercicio periódico y reactivo en un proceso continuo y proactivo.
+Las auditorías de seguridad informática consumen entre 200 y 800 horas de trabajo manual por ciclo en una organización mediana, según datos de ISACA 2025. La mayor parte de ese tiempo se dedica a tareas repetitivas: recopilar evidencias de múltiples sistemas, verificar configuraciones, comparar controles con requisitos normativos y redactar informes. La inteligencia artificial permite reducir ese esfuerzo entre un 40% y un 70%, transformando la auditoría de un ejercicio periódico y reactivo en un proceso continuo y proactivo.
 
 <!--more-->
 
@@ -31,7 +31,7 @@ El modelo tradicional de auditoría tiene problemas estructurales que la automat
 
 ## ¿Qué partes de una auditoría se pueden automatizar con IA?
 
-No todas las fases de una auditoría son automatizables. El juicio experto sigue siendo necesario para evaluar riesgos contextuales, validar excepciones y emitir opiniones profesionales. Pero las táreas mecanicas si:
+No todas las fases de una auditoría son automatizables. El juicio experto sigue siendo necesario para evaluar riesgos contextuales, validar excepciones y emitir opiniones profesionales. Pero las tareas mecanicas si:
 
 | Fase | Automatizable | Como |
 |------|--------------|------|
@@ -90,7 +90,7 @@ El mercado ofrece soluciones en diferentes categorías:
 
 **Plataformas GRC con IA integrada:**
 - Riskitera: mapeo automático de controles ENS/NIS2/ISO 27001, recopilación de evidencias, generación de informes. Soberania de datos en infraestructura europea.
-- Drata: enfocada en SOC 2 y ISO 27001, fuerte en integraciónes cloud.
+- Drata: enfocada en SOC 2 y ISO 27001, fuerte en integraciones cloud.
 - Vanta: similar a Drata, con automatización de evidencias para startups.
 - ServiceNow GRC: enterprise, con modulo de IA para análisis de riesgos.
 

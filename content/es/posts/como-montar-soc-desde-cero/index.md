@@ -1,5 +1,5 @@
 ---
-title: "Como montar un SOC desde cero: guía práctica para empresas"
+title: "Cómo montar un SOC desde cero: guía práctica para empresas"
 image: "cover.png"
 description: "Guía completa para crear un Centro de Operaciones de Seguridad (SOC): tipos, roles del equipo, herramientas necesarias, procesos, costes y errores comunes a evitar."
 slug: "como-montar-soc-desde-cero"
@@ -155,7 +155,7 @@ La tecnología es uno de los tres pilares del SOC, junto con las personas y los 
 
 ### SIEM (Security Information and Event Management)
 
-El SIEM es la herramienta central del SOC. Recopila logs de toda la infraestructura, los normaliza, los correlacióna y genera alertas. Para una guía detallada sobre [qué es un SIEM y como funciona](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), consulta nuestro artículo dedicado.
+El SIEM es la herramienta central del SOC. Recopila logs de toda la infraestructura, los normaliza, los correlaciona y genera alertas. Para una guía detallada sobre [qué es un SIEM y como funciona](/es/posts/2026/04/que-es-un-siem-para-que-sirve/), consulta nuestro artículo dedicado.
 
 Opciones principales en el mercado:
 - **[Splunk](https://www.splunk.com/) Enterprise Security**: lider de mercado, potente pero costoso.

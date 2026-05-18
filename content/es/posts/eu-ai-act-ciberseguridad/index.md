@@ -114,7 +114,7 @@ Antes de comercializar un sistema de IA de alto riesgo, el proveedor debe elabor
 
 ### Registro automático de actividad (logging)
 
-El artículo 12 requiere que los sistemas de IA de alto riesgo incluyan capacidades de logging que permitan la trazabilidad de su funcionamiento. Los registros deben permitir identificar situaciones de riesgo, facilitar la monitorización post-despliegue y asistir en investigaciónes de conformidad.
+El artículo 12 requiere que los sistemas de IA de alto riesgo incluyan capacidades de logging que permitan la trazabilidad de su funcionamiento. Los registros deben permitir identificar situaciones de riesgo, facilitar la monitorización post-despliegue y asistir en investigaciones de conformidad.
 
 Para equipos de ciberseguridad, este requisito es natural: el logging exhaustivo ya es una práctica estándar. La diferencia es que ahora el logging de los propios sistemas de IA de seguridad tiene un marco legal que define que debe registrarse y durante cuanto tiempo.
 

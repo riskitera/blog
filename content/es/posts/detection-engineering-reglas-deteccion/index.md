@@ -1,6 +1,6 @@
 ---
-title: "Detection Engineering: como construir reglas de detección que realmente funcionen"
-description: "Guía práctica de detection engineering: como disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciónes."
+title: "Detection Engineering: cómo construir reglas de detección que realmente funcionen"
+description: "Guía práctica de detection engineering: cómo disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciones."
 slug: "detection-engineering-reglas-detección"
 date: 2026-06-02
 publishDate: 2026-06-02
@@ -13,7 +13,7 @@ keyword: "detection engineering"
 funnel: "mofu"
 ---
 
-Guía práctica de detection engineering: como disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciónes.
+Guía práctica de detection engineering: como disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciones.
 
 <!--more-->
 
@@ -21,13 +21,13 @@ Guía práctica de detection engineering: como disenar, implementar y mantener r
 - Detection engineering aplica principios de ingeniería de software (versionado, testing, CI/CD) al ciclo de vida completo de las reglas de detección.
 - El ciclo de vida de una detección tiene cinco fases: hipótesis, escritura de regla, testing, despliegue y tuning continuo.
 - La matriz de cobertura MITRE ATT&CK permite identificar gaps de visibilidad y priorizar donde invertir esfuerzo.
-- Atomic Red Team y DeTT&CT son herramientas clave para validar que las detecciónes funcionan antes de llegar a producción.
+- Atomic Red Team y DeTT&CT son herramientas clave para validar que las detecciones funcionan antes de llegar a producción.
 - Reducir falsos positivos no es opcional: un SOC saturado de ruido pierde la capacidad de detectar amenazas reales.
 {{< /key-takeaways >}}
 
 ## ¿Qué es detection engineering
 
-Detection engineering es la disciplina que aplica principios de ingeniería de software al proceso de crear, mantener y mejorar reglas de detección en un centro de operaciones de seguridad (SOC). No se trata solo de escribir queries en un SIEM. Se trata de tratar las detecciónes como código: versionado, testeado, desplegado de forma controlada y medido en producción.
+Detection engineering es la disciplina que aplica principios de ingeniería de software al proceso de crear, mantener y mejorar reglas de detección en un centro de operaciones de seguridad (SOC). No se trata solo de escribir queries en un SIEM. Se trata de tratar las detecciones como código: versionado, testeado, desplegado de forma controlada y medido en producción.
 
 El término fue popularizado por [Jared Atkinson](https://posts.specterops.io/detection-spectrum-198a0bfb9302) y la comunidad de SpecterOps, aunque la práctica existe desde que los primeros equipos de seguridad se dieron cuenta de que copiar reglas de un foro y pegarlas en el SIEM no escalaba.
 
@@ -143,7 +143,7 @@ runbook: docs/runbooks/kerberoasting.md
 
 ### Fase 3: Testing
 
-Aquí es donde muchos equipos fallan. Escribir una regla sin testearla es como escribir código sin ejecutarlo. El testing de detecciónes tiene dos dimensiones:
+Aquí es donde muchos equipos fallan. Escribir una regla sin testearla es como escribir código sin ejecutarlo. El testing de detecciones tiene dos dimensiones:
 
 **Testing positivo**: verificar que la regla detecta el comportamiento malicioso. Para esto se usan herramientas como [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) que simulan técnicas de ataque de forma segura.
 
@@ -235,7 +235,7 @@ La matriz de [MITRE ATT&CK](https://attack.mitre.org/) es el framework de refere
 
 ### Construir una matriz de cobertura
 
-Una matriz de cobertura es un documento que cruza las técnicas de ATT&CK con el estado actual de tus detecciónes. Para cada técnica, se registra:
+Una matriz de cobertura es un documento que cruza las técnicas de ATT&CK con el estado actual de tus detecciones. Para cada técnica, se registra:
 
 | Campo | Descripción |
 |-------|-------------|
@@ -252,7 +252,7 @@ Una matriz de cobertura es un documento que cruza las técnicas de ATT&CK con el
 [DeTT&CT](https://github.com/rabobank-cdc/DeTTECT) (Detect Tactics, Techniques & Combat Threats) es un framework open source creado por Rabobank que automatiza la creación de matrices de cobertura. Permite:
 
 - Definir la visibilidad de datos (que fuentes de logs tienes y con que calidad).
-- Mapear las detecciónes existentes a técnicas ATT&CK.
+- Mapear las detecciones existentes a técnicas ATT&CK.
 - Generar heatmaps visuales que muestran donde tienes cobertura y donde hay gaps.
 - Comparar tu cobertura contra grupos de amenazas específicos.
 
@@ -297,13 +297,13 @@ No tiene sentido intentar cubrir las 200+ técnicas de ATT&CK de golpe. La prior
 3. **Impacto potencial**: técnicas de exfiltración y ransomware suelen tener prioridad sobre técnicas de reconocimiento.
 4. **Viabilidad de detección**: algunas técnicas son inherentemente dificiles de detectar (ej. living-off-the-land). Empieza por las que puedes detectar con confianza.
 
-## Testing de detecciónes con Atomic Red Team
+## Testing de detecciones con Atomic Red Team
 
 [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) es un proyecto de Red Canary que proporciona tests atomicos mapeados a técnicas MITRE ATT&CK. Cada test es una simulación pequeña y autocontenida de una técnica de ataque que se puede ejecutar de forma segura en un entorno controlado.
 
 ### Por que Atomic Red Team
 
-La alternativa a Atomic Red Team es testear detecciónes de forma manual, lo cual no escala. Con Atomic Red Team:
+La alternativa a Atomic Red Team es testear detecciones de forma manual, lo cual no escala. Con Atomic Red Team:
 
 - Cada test esta mapeado a una técnica ATT&CK específica.
 - Los tests son reproducibles y automatizables.
@@ -424,7 +424,7 @@ exclusions:
 
 **3. Correlación temporal y por entidad**
 
-En lugar de alertar por un solo evento, correlacióna múltiples eventos en una ventana temporal agrupados por entidad (usuario, IP, hostname).
+En lugar de alertar por un solo evento, correlaciona múltiples eventos en una ventana temporal agrupados por entidad (usuario, IP, hostname).
 
 ```yaml
 # En lugar de alertar por cada login fallido...
@@ -472,7 +472,7 @@ El Detection Maturity Model (DMM) es un framework para evaluar la madurez del pr
 
 ### Nivel 0: Reactivo
 
-- Las detecciónes se crean solo después de un incidente.
+- Las detecciones se crean solo después de un incidente.
 - No hay proceso formal de desarrollo de reglas.
 - Las reglas viven exclusivamente dentro del SIEM.
 - No hay testing ni validación.
@@ -486,7 +486,7 @@ El Detection Maturity Model (DMM) es un framework para evaluar la madurez del pr
 
 ### Nivel 2: Procedural
 
-- Las detecciónes se gestionan como un proceso formal.
+- Las detecciones se gestionan como un proceso formal.
 - Las reglas se almacenan en un repositorio centralizado.
 - Existe un proceso de review antes de desplegar.
 - Se mide la tasa de falsos positivos.
@@ -506,12 +506,12 @@ El Detection Maturity Model (DMM) es un framework para evaluar la madurez del pr
 - Threat hunting continuo alimenta nuevas hipótesis de detección.
 - Métricas de calidad (FPR, MTTD, cobertura) en dashboards en tiempo real.
 - Purple team exercises regulares para validar la efectividad.
-- Las detecciónes se priorizan según threat intelligence del sector.
+- Las detecciones se priorizan según threat intelligence del sector.
 - El programa de detección se reporta a nivel directivo con métricas de negocio.
 
 La mayoría de organizaciones están entre el nivel 0 y el nivel 2. Llegar al nivel 3 requiere inversión en tooling y procesos, pero el retorno es enorme en términos de eficacia del SOC.
 
-## ¿Cómo medir la calidad de las detecciónes
+## ¿Cómo medir la calidad de las detecciones
 
 No se puede mejorar lo que no se mide. Estas son las métricas clave para un programa de detection engineering:
 
@@ -557,11 +557,11 @@ Un dashboard útil incluye:
 
 ### Para escribir y gestionar reglas
 
-- **[Sigma](https://github.com/SigmaHQ/sigma)**: formato portable de detecciónes. Escribe una vez, convierte a cualquier SIEM.
-- **[Splunk Security Content](https://github.com/splunk/security_content)**: biblioteca de detecciónes pre-escritas para Splunk.
+- **[Sigma](https://github.com/SigmaHQ/sigma)**: formato portable de detecciones. Escribe una vez, convierte a cualquier SIEM.
+- **[Splunk Security Content](https://github.com/splunk/security_content)**: biblioteca de detecciones pre-escritas para Splunk.
 - **[Elastic Detection Rules](https://github.com/elastic/detection-rules)**: repositorio oficial de reglas para Elastic Security.
 
-### Para testear detecciónes
+### Para testear detecciones
 
 - **[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)**: tests atomicos mapeados a ATT&CK.
 - **[MITRE Caldera](https://caldera.mitre.org/)**: plataforma de emulación de adversarios automatizada.
@@ -574,7 +574,7 @@ Un dashboard útil incluye:
 
 ### Para automatizar el pipeline
 
-- **GitHub Actions / GitLab CI**: para pipelines de CI/CD de detecciónes.
+- **GitHub Actions / GitLab CI**: para pipelines de CI/CD de detecciones.
 - **sigma-cli**: herramienta de línea de comandos para convertir y validar reglas Sigma.
 - **SOAR platforms**: para orquestar la respuesta automatizada cuando se activa una detección.
 
@@ -667,7 +667,7 @@ Depende del punto de partida. Un SOC que ya tiene reglas en un SIEM puede empeza
 
 ### ¿Se puede hacer detection engineering sin un SIEM caro?
 
-Sí. El formato Sigma permite escribir detecciónes portables que se pueden convertir a cualquier SIEM, incluyendo opciones open source como Wazuh, Graylog o OpenSearch. El repositorio Git, el pipeline de CI y herramientas como Atomic Red Team y DeTT&CT son gratuitas. Lo que necesitas es un equipo con conocimiento técnico y tiempo dedicado, no necesariamente un SIEM enterprise.
+Sí. El formato Sigma permite escribir detecciones portables que se pueden convertir a cualquier SIEM, incluyendo opciones open source como Wazuh, Graylog o OpenSearch. El repositorio Git, el pipeline de CI y herramientas como Atomic Red Team y DeTT&CT son gratuitas. Lo que necesitas es un equipo con conocimiento técnico y tiempo dedicado, no necesariamente un SIEM enterprise.
 
 ### ¿Cuántas reglas de detección debería tener un SOC?
 

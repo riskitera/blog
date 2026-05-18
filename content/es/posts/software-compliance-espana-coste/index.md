@@ -22,7 +22,7 @@ Guía de compra de software de compliance para empresas españolas: tipos de her
 - Los costes varían desde 200 EUR/mes para pymes hasta más de 15.000 EUR/mes para soluciones enterprise con soporte ENS Alto.
 - Las funcionalidades imprescindibles incluyen mapeo de controles multi-framework, gestión de evidencias automatizada y reporting para auditorías.
 - El modelo SaaS domina el mercado español con un 72% de cuota, pero los sectores regulados (banca, sanidad, AAPP) exigen opciones on-premise o soberanas.
-- Antes de comprar, calcula el coste total de propiedad (TCO) a 3 años: licencia, implementación, formación, integraciónes y mantenimiento.
+- Antes de comprar, calcula el coste total de propiedad (TCO) a 3 años: licencia, implementación, formación, integraciones y mantenimiento.
 {{< /key-takeaways >}}
 
 ## ¿Qué software de compliance necesita una empresa española?
@@ -205,7 +205,7 @@ La diferencia es notable. El desarrollo interno solo tiene sentido cuando tus re
 
 ### Enfoque pragmático: buy and extend
 
-La mayoría de organizaciones que evalúan el build vs buy acaban en un punto intermedio: compran una plataforma que cubre el 80% de sus necesidades y la extienden con integraciónes a medida para el 20% restante. Esto es viable siempre que la plataforma ofrezca APIs bien documentadas y capacidad de personalización.
+La mayoría de organizaciones que evalúan el build vs buy acaban en un punto intermedio: compran una plataforma que cubre el 80% de sus necesidades y la extienden con integraciones a medida para el 20% restante. Esto es viable siempre que la plataforma ofrezca APIs bien documentadas y capacidad de personalización.
 
 ## Criterios de selección: checklist de evaluación
 
@@ -282,7 +282,7 @@ La herramienta con más funcionalidades no siempre es la mejor para tu organizac
 
 ### Ignorar el coste de implementación
 
-El precio de licencia es solo una parte del TCO. La implementación, la migración de datos, la configuración de integraciónes y la formación del equipo pueden representar entre el 30% y el 50% del coste del primer año.
+El precio de licencia es solo una parte del TCO. La implementación, la migración de datos, la configuración de integraciones y la formación del equipo pueden representar entre el 30% y el 50% del coste del primer año.
 
 ### No involucrar a los usuarios finales en la selección
 
@@ -300,7 +300,7 @@ Los contratos de SaaS suelen tener cláusulas de renovación automática y subid
 
 ### Inteligencia artificial en compliance
 
-Las plataformas GRC están incorporando IA para automatizar táreas que antes requerien intervención manual: clasificación automática de evidencias, detección de gaps de cumplimiento, generación de borradores de políticas y predicción de áreas de riesgo. La IA no sustituye al responsable de compliance, pero le libera de táreas repetitivas para centrarse en la toma de decisiones.
+Las plataformas GRC están incorporando IA para automatizar tareas que antes requerien intervención manual: clasificación automática de evidencias, detección de gaps de cumplimiento, generación de borradores de políticas y predicción de áreas de riesgo. La IA no sustituye al responsable de compliance, pero le libera de tareas repetitivas para centrarse en la toma de decisiones.
 
 ### Consolidación de herramientas
 
@@ -326,15 +326,15 @@ No existe ninguna ley que obligue a usar software específico. Lo que si es obli
 
 ### ¿Puedo usar herramientas gratuitas o de código abierto para compliance?
 
-Existen herramientas open source como CISO Assistant, Eramba Community o OpenGRC que cubren funcionalidades básicas. Son una opción viable para organizaciones con equipo técnico capaz de desplegar y mantener la solución. Las limitaciones habituales: soporte limitado, actualizaciónes normativas lentas, menos integraciónes, y la necesidad de dedicar recursos internos al mantenimiento. Para organizaciones con requisitos regulatorios complejos o sin equipo técnico dedicado, las soluciones comerciales ofrecen un mejor equilibrio coste-beneficio.
+Existen herramientas open source como CISO Assistant, Eramba Community o OpenGRC que cubren funcionalidades básicas. Son una opción viable para organizaciones con equipo técnico capaz de desplegar y mantener la solución. Las limitaciones habituales: soporte limitado, actualizaciónes normativas lentas, menos integraciones, y la necesidad de dedicar recursos internos al mantenimiento. Para organizaciones con requisitos regulatorios complejos o sin equipo técnico dedicado, las soluciones comerciales ofrecen un mejor equilibrio coste-beneficio.
 
 ### ¿Cuánto tiempo se tarda en implementar una plataforma de compliance?
 
-Depende del alcance. Para una pyme con un solo framework, la implementación típica dura 2-4 semanas. Para una empresa mediana con ENS, ISO 27001 y RGPD, el rango típico es 2-4 meses. Para implementaciones enterprise con múltiples entidades, integraciónes complejas y migración de datos históricos, puede extenderse a 6-12 meses. El factor crítico no suele ser la herramienta, sino la disponibilidad del equipo interno para configurar controles, cargar evidencias existentes y validar los mapeos.
+Depende del alcance. Para una pyme con un solo framework, la implementación típica dura 2-4 semanas. Para una empresa mediana con ENS, ISO 27001 y RGPD, el rango típico es 2-4 meses. Para implementaciones enterprise con múltiples entidades, integraciones complejas y migración de datos históricos, puede extenderse a 6-12 meses. El factor crítico no suele ser la herramienta, sino la disponibilidad del equipo interno para configurar controles, cargar evidencias existentes y validar los mapeos.
 
 ### ¿Cómo saber si mi empresa necesita una plataforma GRC completa o una herramienta puntual?
 
-La regla general: si gestionas 2 o más frameworks normativos, o si tienes más de 100 controles activos, una plataforma GRC integrada es más eficiente que herramientas puntuales. Si solo necesitas gestionar RGPD y nada más, una herramienta de privacidad especializada puede ser suficiente. Otro indicador: si dedicas más de 40 horas al mes a táreas de compliance manual, la automatización de una plataforma GRC se justifica economicamente.
+La regla general: si gestionas 2 o más frameworks normativos, o si tienes más de 100 controles activos, una plataforma GRC integrada es más eficiente que herramientas puntuales. Si solo necesitas gestionar RGPD y nada más, una herramienta de privacidad especializada puede ser suficiente. Otro indicador: si dedicas más de 40 horas al mes a tareas de compliance manual, la automatización de una plataforma GRC se justifica economicamente.
 
 
 **Artículos relacionados:**

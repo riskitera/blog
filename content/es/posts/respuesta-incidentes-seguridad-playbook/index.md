@@ -245,7 +245,7 @@ El ransomware es el incidente más frecuente y de mayor impacto en España, como
 ### Erradicación
 
 - Eliminar el ransomware y todos los artefactos asociados de los sistemas afectados.
-- Buscar backdoors o mecanismos de persistencia (táreas programadas, servicios, claves de registro).
+- Buscar backdoors o mecanismos de persistencia (tareas programadas, servicios, claves de registro).
 - Parchear la vulnerabilidad explotada como vector de entrada.
 - Si Active Directory está comprometido: reconstruir desde cero o desde backup offline verificado.
 - Resetear TODAS las contraseñas del dominio (no solo las comprometidas).

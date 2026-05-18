@@ -199,7 +199,7 @@ Las entidades financieras deben gestionar el riesgo de terceros proveedores TIC 
 - **Estrategia de salida**: cada acuerdo con un proveedor crítico debe contemplar un plan de salida viable, con periodos de transición adecuados y sin degradación del servicio.
 - **Concentración de riesgo**: evitar la dependencia excesiva de un único proveedor TIC para funciones críticas. Las autoridades supervisoras evaluaran el riesgo de concentración a nivel de mercado.
 
-Un ejemplo concreto: si un banco utiliza AWS para su core bancario, Azure para el sistema de pagos y Google Cloud para analitica, DORA exige que documente las dependencias, los riesgos de concentración (tres hyperscalers estadounidenses), las alternativas viables y los planes de salida para cada uno.
+Un ejemplo concreto: si un banco utiliza AWS para su core bancario, Azure para el sistema de pagos y Google Cloud para analítica, DORA exige que documente las dependencias, los riesgos de concentración (tres hyperscalers estadounidenses), las alternativas viables y los planes de salida para cada uno.
 
 ### Requisito 11: Clausulas contractuales obligatorias (Artículos 30 a 32)
 

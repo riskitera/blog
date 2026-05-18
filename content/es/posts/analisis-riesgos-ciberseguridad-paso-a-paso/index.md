@@ -1,5 +1,5 @@
 ---
-title: "Como hacer un análisis de riesgos en ciberseguridad pasó a pasó"
+title: "Cómo hacer un análisis de riesgos en ciberseguridad pasó a pasó"
 image: "cover.png"
 description: "Guía pasó a pasó para realizar un análisis de riesgos en ciberseguridad: metodologías MAGERIT, FAIR, ISO 27005 y NIST RMF, inventario de activos, evaluación de amenazas, cálculo y tratamiento de riesgos."
 slug: "análisis-riesgos-ciberseguridad-paso-a-paso"

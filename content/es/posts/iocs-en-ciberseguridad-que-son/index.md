@@ -1,7 +1,7 @@
 ---
 title: "IOCs en ciberseguridad: que son y cómo utilizarlos eficazmente"
 image: "cover.png"
-description: "Descubre que son los Indicadores de Compromiso (IOCs) en ciberseguridad, sus tipos, fuentes gratuitas como AlienVault OTX y MISP, estandares STIX/TAXII y cómo integrarlos en tu SOC."
+description: "Descubre qué son los Indicadores de Compromiso (IOCs) en ciberseguridad, sus tipos, fuentes gratuitas cómo AlienVault OTX y MISP, estandares STIX/TAXII y cómo integrarlos en tu SOC."
 slug: "iocs-en-ciberseguridad-que-son"
 date: 2026-04-19
 lastmod: 2026-04-19
@@ -92,7 +92,7 @@ Disponer de fuentes fiables y actualizadas es fundamental. Afortunadamente, exis
 
 **[Abuse.ch](https://abuse.ch/)** ofrece varios proyectos especializados: URLhaus (URLs maliciosas), MalwareBazaar (muestras de malware), ThreatFox (IOCs genéricos) y Feodo Tracker (infraestructura de botnets bancarias). Sus datos se actualizan en tiempo real y cuentan con APIs accesibles.
 
-**[MISP](https://www.misp-project.org/) (Malware Information Sharing Platform)** no es solo una fuente sino una plataforma completa para compartir, almacenar y correlaciónar IOCs. Muchos CERTs nacionales, incluido el CCN-CERT, operan instancias MISP para compartir inteligencia con sus comunidades.
+**[MISP](https://www.misp-project.org/) (Malware Information Sharing Platform)** no es solo una fuente sino una plataforma completa para compartir, almacenar y correlacionar IOCs. Muchos CERTs nacionales, incluido el CCN-CERT, operan instancias MISP para compartir inteligencia con sus comunidades.
 
 **CISA KEV (Known Exploited Vulnerabilities)** cataloga vulnerabilidades activamente explotadas con fechas límite de parcheado. Aunque no es estrictamente un feed de IOCs, complementa la inteligencia sobre amenazas con información crítica sobre vulnerabilidades bajo explotación activa.
 
@@ -122,11 +122,11 @@ Integrar IOCs en las operaciones del centro de operaciones de seguridad requiere
 
 ### Integración con el SIEM
 
-El [SIEM](/es/posts/que-es-un-siem-para-que-sirve/) es el punto natural de integración para la mayoría de IOCs. Las plataformas modernas permiten ingestar feeds STIX/TAXII y correlaciónar automáticamente los IOCs con los logs recibidos. Cuando un evento coincide con un IOC, se genera una alerta priorizada según el contexto del indicador. Es fundamental configurar correctamente la priorización para evitar la fatiga de alertas.
+El [SIEM](/es/posts/que-es-un-siem-para-que-sirve/) es el punto natural de integración para la mayoría de IOCs. Las plataformas modernas permiten ingestar feeds STIX/TAXII y correlacionar automáticamente los IOCs con los logs recibidos. Cuando un evento coincide con un IOC, se genera una alerta priorizada según el contexto del indicador. Es fundamental configurar correctamente la priorización para evitar la fatiga de alertas.
 
 ### Integración con EDR y firewalls
 
-Los hashes de archivos maliciosos se integran directamente en las soluciones EDR para bloquear o alertar sobre su ejecución. Las IPs y dominios se incorporan en listas de bloqueo de firewalls y proxies web. La automatización de estas integraciónes mediante SOAR reduce el tiempo de respuesta de horas a segundos.
+Los hashes de archivos maliciosos se integran directamente en las soluciones EDR para bloquear o alertar sobre su ejecución. Las IPs y dominios se incorporan en listas de bloqueo de firewalls y proxies web. La automatización de estas integraciones mediante SOAR reduce el tiempo de respuesta de horas a segundos.
 
 ### Plataformas de inteligencia de amenazas (TIP)
 
@@ -136,7 +136,7 @@ Una TIP (Threat Intelligence Platform) centraliza la gestión de IOCs: ingesta d
 
 No todos los IOCs merecen la misma atención. Es esencial establecer un proceso de triaje que considere la fiabilidad de la fuente, la antiguedad del indicador, la relevancia para el sector y la geografia de la organización, y el contexto proporcionado. Un IOC de alta confianza procedente de un CERT nacional requiere acción inmediata; un hash aislado sin contexto de un feed comunitario puede requerir validación adicional.
 
-{{< cta type="tofu" text="Riskitera integra feeds de IOCs directamente en tu flujo de detección, correlaciónando indicadores con alertas del SIEM." label="Ver integración" >}}
+{{< cta type="tofu" text="Riskitera integra feeds de IOCs directamente en tu flujo de detección, correlacionando indicadores con alertas del SIEM." label="Ver integración" >}}
 
 ## ¿Qué herramientas se usan para gestionar IOCs?
 
@@ -146,11 +146,11 @@ El ecosistema de herramientas para gestionar IOCs es amplio. Estas son las más 
 
 **OpenCTI** es una plataforma de CTI moderna que organiza la inteligencia siguiendo el modelo de datos STIX 2.1. Ofrece visualizaciones de relaciones entre entidades, integración con MISP y conectores para decenas de fuentes.
 
-**Yeti** (Your Everyday Threat Intelligence) sirve como repositorio de observables e indicadores con capacidades de enriquecimiento automático y API para integraciónes.
+**Yeti** (Your Everyday Threat Intelligence) sirve como repositorio de observables e indicadores con capacidades de enriquecimiento automático y API para integraciones.
 
 **CyberChef**, desarrollado por GCHQ, es una herramienta web para transformar, analizar y decodificar datos, útil para extraer IOCs de documentos, correos o muestras de malware.
 
-Para la creación de reglas de detección basadas en IOCs, las **[reglas Sigma](https://github.com/SigmaHQ/sigma)** permiten definir detecciónes genéricas que se traducen a consultas específicas para cada SIEM, mientras que las **reglas YARA** identifican malware basándose en patrones binarios y textuales.
+Para la creación de reglas de detección basadas en IOCs, las **[reglas Sigma](https://github.com/SigmaHQ/sigma)** permiten definir detecciones genéricas que se traducen a consultas específicas para cada SIEM, mientras que las **reglas YARA** identifican malware basándose en patrones binarios y textuales.
 
 ## ¿Cuáles son los errores comunes al trabajar con IOCs?
 
@@ -164,7 +164,7 @@ Conocer los errores frecuentes permite evitarlos y mejorar la eficacia del progr
 
 **Depender de un único tipo de IOC.** Limitarse a hashes o IPs deja angulos ciegos. Una estrategia madura combina IOCs de red, de host y comportamentales, idealmente mapeados contra el framework [MITRE ATT&CK](/es/posts/mitre-attack-que-es-como-usarlo/).
 
-**No medir la eficacia.** Sin métricas que indiquen cuantos IOCs generaron detecciónes reales, cuantos produjeron falsos positivos y cual fue el tiempo medio de integración, es imposible mejorar el programa.
+**No medir la eficacia.** Sin métricas que indiquen cuantos IOCs generaron detecciones reales, cuantos produjeron falsos positivos y cual fue el tiempo medio de integración, es imposible mejorar el programa.
 
 ## Mejores prácticas para maximizar el valor de los IOCs
 
