@@ -25,7 +25,7 @@ Análisis de las multas RGPD más importantes en España: importes, motivos, sec
 - Implementar un programa de compliance RGPD proactivo (DPO, evaluaciones de impacto, registro de tratamientos, formación) reduce la probabilidad de sanción y, en caso de infracción, actúa como atenuante.
 {{< /key-takeaways >}}
 
-## Cuánto cuestan las multas RGPD en España?
+## ¿Cuánto cuestan las multas RGPD en España?
 
 España es uno de los países europeos más activos en la aplicación del [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679) (Reglamento General de Protección de Datos). La [AEPD](https://www.aepd.es/) (Agencia Española de Protección de Datos) se ha consolidado como una de las autoridades de control más prolijas de la Unión Europea en número de resoluciones sancionadoras. Según la *Memoria Anual de la AEPD*, la agencia tramitó más de 15.000 reclamaciones en 2024, un volumen que la sitúa como la autoridad de protección de datos con mayor carga de trabajo de toda la UE en términos per cápita.
 
@@ -57,7 +57,7 @@ En España, la LOPD-GDD (Ley Orgánica 3/2018) añade una clasificación propia:
 - **Infracciones graves.** Multas de 40.001 a 300.000 EUR. Prescriben a los 2 años.
 - **Infracciones muy graves.** Multas de 300.001 a 20 millones EUR (o 4% facturación). Prescriben a los 3 años.
 
-## Cuáles son las multas RGPD más altas impuestas por la AEPD?
+## ¿Cuáles son las multas RGPD más altas impuestas por la AEPD?
 
 Estos son los casos más significativos, que ilustran el alcance y la diversidad de las sanciones en España.
 
@@ -103,7 +103,7 @@ La AEPD no solo sanciona a grandes empresas. Clínicas dentales, comunidades de 
 
 El mensaje es claro: el RGPD aplica a todas las organizaciones que tratan datos personales, independientemente de su tamaño.
 
-## Qué infracciones son las más sancionadas?
+## ¿Qué infracciones son las más sancionadas?
 
 El análisis de las resoluciones de la AEPD revela patrones claros. Estas son las infracciones que concentran el mayor número de sanciones.
 
@@ -137,7 +137,7 @@ Las infracciones relacionadas con sistemas de videovigilancia representan un por
 
 {{< cta type="tofu" text="Riskitera integra la gestión RGPD con el compliance de seguridad en una sola plataforma." label="Explorar" >}}
 
-## Qué sectores reciben más multas RGPD?
+## ¿Qué sectores reciben más multas RGPD?
 
 La distribución de sanciones por sector refleja tanto la exposición al riesgo como la atención del regulador.
 
@@ -165,7 +165,7 @@ La AEPD no puede multar directamente a las administraciones públicas (solo pued
 
 Sector en crecimiento en las estadísticas de la AEPD: cookies sin consentimiento válido, newsletters sin opt-in, perfilado sin base legitimadora, y falta de atención a solicitudes de baja.
 
-## Cuál es el coste total de un incumplimiento (más allá de la multa)?
+## ¿Cuál es el coste total de un incumplimiento (más allá de la multa)?
 
 La multa de la AEPD es solo la punta del iceberg. El coste real de un incumplimiento RGPD incluye componentes que muchas organizaciones no anticipan.
 
@@ -216,7 +216,7 @@ Para una empresa mediana española, el coste total de un incidente RGPD signific
 
 Comparado con el coste de un programa de compliance RGPD proactivo (15.000 - 50.000 EUR/año para una empresa mediana), la decisión debería ser evidente.
 
-## Cómo evitar sanciones RGPD?
+## ¿Cómo evitar sanciones RGPD?
 
 No existe una fórmula mágica que garantice inmunidad ante la AEPD. Pero si existe un conjunto de medidas que reduce drasticamente la probabilidad de sanción y, en caso de infracción, actúa como atenuante reconocido por el regulador.
 
@@ -367,22 +367,22 @@ La AEPD ha incrementado las inspecciones al sector público, especialmente en el
 
 ## Preguntas frecuentes
 
-### Puede la AEPD multar a una pyme o autónomo?
+### ¿Puede la AEPD multar a una pyme o autónomo?
 
 Sí, y lo hace regularmente. El RGPD aplica a cualquier organización que trate datos personales, independientemente de su tamaño. La AEPD ha impuesto multas desde 1.000 euros a autónomos hasta millones a grandes corporaciones. El tamaño de la organización se tiene en cuenta para determinar la cuantía (una multa de 10.000 euros puede ser proporcional para una pyme), pero la exención no existe. La única excepción: tratamientos puramente personales o domesticos.
 
-### Cuánto tarda la AEPD en resolver un procedimiento sancionador?
+### ¿Cuánto tarda la AEPD en resolver un procedimiento sancionador?
 
 El procedimiento sancionador de la AEPD dura entre 6 y 18 meses desde la admisión de la denuncia hasta la resolución. Las fases son: admisión, investigación preliminar, acuerdo de inicio del procedimiento, alegaciones del responsable, propuesta de resolución, alegaciones finales y resolución. El plazo de prescripción (1, 2 o 3 años según la gravedad) corre desde la comisión de la infracción, no desde la denuncia.
 
-### Puedo recurrir una multa de la AEPD?
+### ¿Puedo recurrir una multa de la AEPD?
 
 Sí. Caben dos vias: recurso potestativo de reposición ante la propia AEPD (1 mes) o recurso contencioso-administrativo ante la Audiencia Nacional (2 meses). Aproximadamente el 20% de las resoluciones sancionadoras se recurren. El porcentaje de éxito en los recursos es bajo (alrededor del 15-20%), pero en algunos casos se consigue una reducción significativa del importe.
 
-### Si tengo ISO 27001 o ENS, estoy exento de multas RGPD?
+### ¿Si tengo ISO 27001 o ENS, estoy exento de multas RGPD?
 
 No. Las certificaciones de seguridad no eximen del cumplimiento del RGPD. Pero si actuan como atenuante: demuestran que la organización tiene un compromiso real con la protección de datos y que las medidas de seguridad del artículo 32 están implementadas. En la práctica, las organizaciones con ISO 27001 o ENS reciben sanciones significativamente menores que las que no tienen ningún marco de seguridad implementado. Además, los controles de ENS e ISO 27001 cubren una parte sustancial de los requisitos técnicos del RGPD.
 
-### Cómo denunciar una infracción RGPD ante la AEPD?
+### ¿Cómo denunciar una infracción RGPD ante la AEPD?
 
 Cualquier persona puede presentar una reclamación ante la AEPD a través de su sede electrónica (sede.agpd.gob.es). El proceso requiere: identificación del reclamante (DNI electrónico, certificado digital o Cl@ve), descripción de los hechos, identificación del responsable del tratamiento y, si es posible, evidencia de haber reclamado previamente al responsable. La AEPD no cobra tasa por las reclamaciones.

@@ -18,7 +18,7 @@ Guía definitiva de compliance en ciberseguridad para empresas españolas y euro
 
 <!--more-->
 
-## Qué es el compliance en ciberseguridad?
+## ¿Qué es el compliance en ciberseguridad?
 
 El compliance en ciberseguridad es el conjunto de procesos, controles y prácticas que una organización implementa para cumplir con las normativas, estándares y regulaciones de seguridad de la información que le son aplicables. No es un proyecto con fecha de fin: es una función continúa que requiere gobernanza, tecnología y cultura organizacional.
 
@@ -28,7 +28,7 @@ En 2026, el panorama regulatorio europeo es el más exigente del mundo. Una empr
 
 El coste del incumplimiento ha crecido exponencialmente. La AEPD impuso multas por valor de 45 millones de euros en 2025. Las sanciones de NIS2 alcanzan los 10 millones de euros o el 2% del volumen de negocio global. DORA permite multas diarias del 1% del volumen de negocio medio diario. El compliance ya no es una cuestion de reputación: es una cuestion de supervivencia económica.
 
-## Cuáles son las normativas clave en España y Europa?
+## ¿Cuáles son las normativas clave en España y Europa?
 
 El mapa regulatorio de ciberseguridad para empresas españolas y europeas en 2026:
 
@@ -46,7 +46,7 @@ El mapa regulatorio de ciberseguridad para empresas españolas y europeas en 202
 
 **LOPDGDD (Ley Orgánica 3/2018).** Complementa el RGPD en España con disposiciones sobre DPO, derechos digitales, videovigilancia y tratamientos específicos.
 
-## Cómo se relacionan ENS, NIS2, DORA e ISO 27001?
+## ¿Cómo se relacionan ENS, NIS2, DORA e ISO 27001?
 
 Estas normativas no son compartimentos estancos. Se solapan, se complementan y en algunos casos una actúa como lex specialis de otra. Entender sus relaciones permite optimizar el esfuerzo de cumplimiento.
 
@@ -60,7 +60,7 @@ Estas normativas no son compartimentos estancos. Se solapan, se complementan y e
 
 **Mapeo práctico.** Una empresa regulada española puede construir un marco unificado con un núcleo común de controles (gestión de riesgos, control de accesos, cifrado, continuidad, gestión de incidentes, auditorías) y capas específicas para cada normativa (notificación de incidentes NIS2/DORA, categorización ENS, DPO RGPD, TLPT DORA). Este enfoque reduce el esfuerzo total entre un 40% y un 60% frente a cumplir cada normativa por separado.
 
-## Qué pasos seguir para implementar un programa de compliance?
+## ¿Qué pasos seguir para implementar un programa de compliance?
 
 Un programa de compliance en ciberseguridad efectivo sigue estas fases:
 
@@ -78,7 +78,7 @@ Un programa de compliance en ciberseguridad efectivo sigue estas fases:
 
 {{< cta type="tofu" text="Riskitera evalua tu postura de seguridad y te muestra los gaps de cumplimiento en minutos." label="Evaluar postura" >}}
 
-## Cómo automatizar el compliance con tecnología?
+## ¿Cómo automatizar el compliance con tecnología?
 
 La automatización es la única forma viable de gestionar el compliance multi-normativo de forma sostenible. Los procesos manuales (hojas de Excel, documentos Word, correos de seguimiento) no escalan y son propensos a errores.
 
@@ -92,7 +92,7 @@ La automatización es la única forma viable de gestionar el compliance multi-no
 
 **Integración con el ecosistema de seguridad.** La plataforma GRC debe integrarse con las herramientas de seguridad operativa (SIEM, EDR, IAM, vulnerability scanner, ticketing) para que el compliance refleje el estado real de seguridad, no una foto fija del último audit.
 
-## Qué rol juega el CISO en el compliance?
+## ¿Qué rol juega el CISO en el compliance?
 
 El CISO (Chief Information Security Officer) es el responsable natural del compliance en ciberseguridad, pero su rol ha evolucionado significativamente con el nuevo marco regulatorio europeo.
 
@@ -104,7 +104,7 @@ El CISO (Chief Information Security Officer) es el responsable natural del compl
 
 **Perfil ideal en 2026.** El CISO de una empresa regulada española necesita: conocimiento técnico de seguridad, comprensión profunda del marco regulatorio europeo (ENS, NIS2, DORA, RGPD), capacidad de comunicación con la alta dirección, gestión de presupuestos y proveedores, y experiencia en auditorías. La demanda de CISOs con este perfil supera ampliamente la oferta: según datos de INCIBE, hay menos de 500 profesionales en España con perfil CISO senior y experiencia regulatoria.
 
-## Cuánto cuesta el compliance en ciberseguridad?
+## ¿Cuánto cuesta el compliance en ciberseguridad?
 
 El coste del compliance depende del tamaño de la organización, los marcos aplicables y el nivel de madurez previo. Estas son estimaciones para empresas españolas:
 
@@ -137,7 +137,7 @@ El coste del compliance depende del tamaño de la organización, los marcos apli
 
 **El coste del incumplimiento siempre supera al del compliance.** Una sanción de la AEPD por brecha de datos (media de 100.000 EUR para PYMES) más el coste de gestión del incidente (50.000 a 500.000 EUR) supera el coste de un programa de compliance básico.
 
-## Qué pasa si no cumples: sanciones y consecuencias
+## ¿Qué pasa si no cumples: sanciones y consecuencias
 
 El régimen sancionador europeo en ciberseguridad se ha endurecido drasticamente entre 2024 y 2026:
 
@@ -185,10 +185,10 @@ No necesariamente. Primero identifica cuales te son aplicables. Una startup tecn
 **Puedo cumplir sin contratar una consultora?**
 Depende de tu equipo interno. Si tienes un CISO con experiencia regulatoria y un equipo de seguridad competente, puedes gestionar el compliance internamente usando herramientas GRC. Si no tienes ese perfil, la consultora te ahorra tiempo y errores, especialmente en el gap analysis inicial y la preparación de la primera auditoría. A medio plazo, el objetivo debería ser internalizar la capacidad.
 
-**Que normativa debería priorizar si tengo recursos limitados?**
+**¿Qué normativa debería priorizar si tengo recursos limitados?**
 Prioriza por riesgo de sanción y plazo. En 2026: RGPD (ya en vigor, sanciones altas y aplicación activa por la AEPD), NIS2 (transposición inminente, aplicación en 2026-2027), ENS (si prestas servicios al sector público) y DORA (si eres sector financiero, ya en vigor). ISO 27001 es voluntaria pero muy demandada por clientes B2B.
 
-**Cuanto dura una certificación ISO 27001?**
+**¿Cuánto dura una certificación ISO 27001?**
 Tres años, con auditorías de seguimiento anuales. El ciclo típico: auditoría de certificación (etapa 1 documental + etapa 2 in situ), auditoría de seguimiento al final del primer año, auditoría de seguimiento al final del segundo año, y auditoría de recertificación al final del tercer año.
 
 **El compliance garantiza que no sufra un ciberataque?**

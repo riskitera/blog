@@ -24,7 +24,7 @@ El análisis de riesgos es el proceso fundamental que permite a una organizació
 - La herramienta PILAR del CCN facilita el análisis siguiendo MAGERIT
 {{< /key-takeaways >}}
 
-## Por que es imprescindible el análisis de riesgos en ciberseguridad?
+## ¿Por qué es imprescindible el análisis de riesgos en ciberseguridad?
 
 El análisis de riesgos en ciberseguridad no es un ejercicio académico ni un requisito burocrático: es la base sobre la que se construye toda la estrategia de seguridad de una organización. Sus beneficios son concretos y medibles.
 
@@ -36,7 +36,7 @@ En tercer lugar, facilita la comunicación con la dirección. Un registro de rie
 
 Finalmente, proporciona un marco para la mejora continua. El análisis de riesgos no es un documento estático sino un proceso cíclico que se actualiza ante cambios en el entorno de amenazas, la infraestructura tecnológica o los requisitos de negocio.
 
-## Qué metodologías de análisis de riesgos existen?
+## ¿Qué metodologías de análisis de riesgos existen?
 
 Existen diversas metodologías reconocidas internacionalmente. La elección depende del contexto normativo, el sector y la madurez de la organización.
 
@@ -68,7 +68,7 @@ El NIST RMF, descrito en la publicación especial [SP 800-37](https://csrc.nist.
 
 Aunque es de origen estadounidense, el NIST RMF es ampliamente utilizado internacionalmente debido a la calidad de su documentación y la disponibilidad gratuita de todas sus publicaciones. ENISA lo referencia como uno de los marcos de referencia en sus guías de gestión de riesgos.
 
-## Cómo hacer un análisis de riesgos paso a paso?
+## ¿Cómo hacer un análisis de riesgos paso a paso?
 
 Independientemente de la metodología elegida, el proceso de análisis de riesgos sigue una secuencia lógica común.
 
@@ -156,7 +156,7 @@ Para cada medida de mitigación, se define un plan de implementación con respon
 
 {{< cta type="tofu" text="Riskitera automatiza el análisis de riesgos con IA, mapeando amenazas a controles ENS e ISO 27001." label="Ver cómo funciona" >}}
 
-## Qué herramientas se usan para el análisis de riesgos?
+## ¿Qué herramientas se usan para el análisis de riesgos?
 
 ### PILAR
 
@@ -170,7 +170,7 @@ Plataformas como Archer (RSA), ServiceNow GRC y OneTrust proporcionan módulos c
 
 Aunque no son ideales para análisis complejos, las hojas de cálculo siguen siendo una herramienta válida para organizaciones pequeñas que realizan su primer análisis de riesgos. Lo importante es que la herramienta no se convierta en un obstáculo para iniciar el proceso.
 
-## Cómo se elabora un registro de riesgos?
+## ¿Cómo se elabora un registro de riesgos?
 
 El registro de riesgos es el documento central que consolida los resultados del análisis. Cada entrada del registro debe incluir:
 
@@ -189,7 +189,7 @@ El registro de riesgos es el documento central que consolida los resultados del 
 
 El registro de riesgos debe revisarse al menos trimestralmente y actualizarse ante cualquier cambio significativo en el entorno de amenazas, la infraestructura o los requisitos de negocio.
 
-## Cuáles son los errores comunes en el análisis de riesgos?
+## ¿Cuáles son los errores comunes en el análisis de riesgos?
 
 **Realizar el análisis una única vez.** El análisis de riesgos es un proceso continuo, no un proyecto puntual. Los riesgos evolucionan constantemente y un análisis de hace dos años puede estar completamente desactualizado.
 
@@ -201,7 +201,7 @@ El registro de riesgos debe revisarse al menos trimestralmente y actualizarse an
 
 **Ignorar el riesgo residual.** Tras implementar controles, siempre queda un riesgo residual que debe evaluarse y compararse con el umbral de aceptación. Asumir que los controles eliminan el riesgo completamente es un error peligroso.
 
-## Cómo hacer un análisis de riesgos eficaz?
+## ¿Cómo hacer un análisis de riesgos eficaz?
 
 Empezar con lo crítico. No intentes analizar todo a la vez. Identifica los 10 o 20 activos más críticos y comienza por ellos. Un análisis profundo de los activos esenciales aporta más valor que un análisis superficial de todo el inventario.
 
@@ -217,22 +217,22 @@ Automatizar donde sea posible. El inventario de activos tecnológicos, el escane
 
 ## Lo que más preguntan los equipos de seguridad
 
-### Cada cuanto debo actualizar el análisis de riesgos
+### ¿Cada cuánto debo actualizar el análisis de riesgos
 
 El análisis de riesgos debe revisarse como mínimo anualmente de forma completa. Además, debe actualizarse ante cambios significativos: incorporación de nuevos sistemas o servicios, cambios en la normativa aplicable, incidentes de seguridad relevantes (propios o del sector), cambios organizativos importantes o resultados de auditorías. Las normas ISO 27001 y el ENS exigen la revisión periódica del análisis de riesgos como requisito de cumplimiento.
 
-### Qué metodología es mejor para una pyme
+### ¿Qué metodología es mejor para una pyme
 
 Para una pyme española, MAGERIT con la herramienta microPILAR es una opción sólida que facilita el cumplimiento del ENS si aplica. ISO 27005 es adecuada si la organización aspira a la certificación ISO 27001. Para pymes que quieren un enfoque práctico sin formalismos excesivos, el marco [NIST CSF](https://www.nist.gov/cyberframework) incluye una función de evaluación de riesgos accesible. Lo importante no es elegir la metodología perfecta sino comenzar el proceso con la que mejor se adapte a los recursos disponibles.
 
-### Necesito un consultor externo para hacer el análisis de riesgos
+### ¿Necesito un consultor externo para hacer el análisis de riesgos
 
 No es estrictamente necesario, pero es recomendable para organizaciones que realizan el análisis por primera vez o que carecen de personal con experiencia en gestión de riesgos. Un consultor externo aporta perspectiva independiente, conocimiento de mejores prácticas y experiencia de otros sectores. En cualquier caso, el conocimiento interno de la organización es insustituible: el consultor facilita el proceso, pero los responsables de negocio y TI deben participar activamente.
 
-### Cómo integro el análisis de riesgos con el cumplimiento normativo
+### ¿Cómo integro el análisis de riesgos con el cumplimiento normativo
 
 El análisis de riesgos es el eje central que conecta todos los requisitos normativos. Las medidas de seguridad exigidas por el ENS, ISO 27001, NIS2 o RGPD deben ser proporcionales al riesgo identificado. Un análisis de riesgos bien realizado justifica las medidas implementadas, identifica las brechas de cumplimiento y prioriza las acciones correctivas. Es recomendable mapear los riesgos contra los requisitos de cada normativa aplicable para asegurar la cobertura completa.
 
-### Qué hago si la dirección no apoya el proceso de análisis de riesgos
+### ¿Qué hago si la dirección no apoya el proceso de análisis de riesgos
 
 La clave es comunicar el valor en términos de negocio, no en términos técnicos. Presenta datos concretos: el coste medio de una brecha de datos en el sector, las sanciones regulatorias aplicables, ejemplos de incidentes en organizaciones comparables y el coste de no actuar frente al coste de realizar el análisis. Los informes de INCIBE y ENISA proporcionan estadísticas que pueden utilizarse para este propósito. Si la organización está sujeta a normativas que exigen el análisis de riesgos, el argumento regulatorio es adicional e ineludible.

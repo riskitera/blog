@@ -25,7 +25,7 @@ Guía de compra de software de compliance para empresas españolas: tipos de her
 - Antes de comprar, calcula el coste total de propiedad (TCO) a 3 años: licencia, implementación, formación, integraciónes y mantenimiento.
 {{< /key-takeaways >}}
 
-## Qué software de compliance necesita una empresa española?
+## ¿Qué software de compliance necesita una empresa española?
 
 La respuesta depende de tres factores: el tamaño de la organización, el sector en el que opera y los marcos regulatorios que le aplican. Una startup fintech con 20 empleados no necesita la misma solución que un hospital público con 3.000 trabajadores o una entidad financiera sujeta a [DORA](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/).
 
@@ -37,7 +37,7 @@ El software de compliance existe precisamente para resolver este problema: centr
 
 Según datos del [INCIBE](https://www.incibe.es/) y la consultora IDC, las empresas españolas que implementan herramientas de compliance reducen el tiempo dedicado a auditorías entre un 40% y un 70%, dependiendo del grado de automatización alcanzado.
 
-## Qué tipos de herramientas de compliance existen?
+## ¿Qué tipos de herramientas de compliance existen?
 
 El mercado ofrece distintas categorías de herramientas, y es importante entender las diferencias para no comprar más (ni menos) de lo que necesitas.
 
@@ -73,7 +73,7 @@ Software para planificar, ejecutar y documentar auditorías internas de segurida
 
 Plataformas de security awareness training con cursos, simulaciones de phishing y seguimiento del progreso de los empleados. No son compliance en sentido estricto, pero demostrar la formación de empleados es un requisito en ENS, ISO 27001 y RGPD.
 
-## Cuánto cuesta el software de compliance?
+## ¿Cuánto cuesta el software de compliance?
 
 Esta es la pregunta que todos hacen y pocos responden con datos concretos. Vamos a desglosar los rangos reales del mercado español en 2026.
 
@@ -101,7 +101,7 @@ Esta es la pregunta que todos hacen y pocos responden con datos concretos. Vamos
 
 ### Modelos de licenciamiento
 
-**SaaS (Software as a Service).** Pago mensual o anual por suscripción. Sin infraestructura propia. Actualizaciones incluidas. Es el modelo dominante en 2026, especialmente para pymes y medianas empresas. Ojo: verifica donde se alojan los datos (para ENS Alto, necesitas infraestructura en la UE o, idealmente, en España).
+**SaaS (Software as a Service).** Pago mensual o anual por suscripción. Sin infraestructura propia. Actualizaciones incluidas. Es el modelo dominante en 2026, especialmente para pymes y medianas empresas. Ojo: verifica ¿dónde se alojan los datos (para ENS Alto, necesitas infraestructura en la UE o, idealmente, en España).
 
 **On-premise.** Licencia perpetua más mantenimiento anual (típicamente el 18-22% del coste de licencia). Requiere infraestructura propia y equipo de sistemas. Cada vez menos frecuente, pero todavía exigido en ciertos entornos de AAPP y defensa.
 
@@ -109,7 +109,7 @@ Esta es la pregunta que todos hacen y pocos responden con datos concretos. Vamos
 
 {{< cta type="tofu" text="Riskitera mapea automáticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
 
-## Qué funcionalidades son imprescindibles?
+## ¿Qué funcionalidades son imprescindibles?
 
 No todas las herramientas ofrecen lo mismo. Estas son las funcionalidades que deberías considerar no negociables al evaluar software de compliance para el mercado español.
 
@@ -145,11 +145,11 @@ Generación de informes estructurados que los auditores externos puedan consumir
 
 Para el mercado español, la herramienta debe estar disponible en castellano, incluir los marcos normativos españoles (ENS, LOPD-GDD, CCN-STIC) y ofrecer soporte técnico en horario peninsular como mínimo.
 
-## SaaS vs on-premise: que modelo elegir en España?
+## SaaS vs on-premise: ¿qué modelo elegir en España?
 
 La decisión entre SaaS y on-premise no es puramente técnica. Depende del marco regulatorio aplicable, la madurez de tu equipo de TI y tu estrategia de soberanía de datos.
 
-### Cuándo elegir SaaS
+### ¿Cuándo elegir SaaS
 
 El modelo SaaS es la mejor opción para la mayoría de empresas privadas españolas. Las ventajas son claras:
 
@@ -160,7 +160,7 @@ El modelo SaaS es la mejor opción para la mayoría de empresas privadas españo
 
 El principal requisito: verificar que el proveedor almacena los datos en la UE (obligatorio por RGPD) y, si necesitas ENS Alto, en centros de datos ubicados en territorio español o europeo con las certificaciones adecuadas.
 
-### Cuándo elegir on-premise
+### ¿Cuándo elegir on-premise
 
 El modelo on-premise o auto-alojado tiene sentido en escenarios concretos:
 
@@ -176,7 +176,7 @@ La tendencia en 2026 es el modelo híbrido: una plataforma SaaS con despliegue s
 
 Este modelo permite cumplir con los requisitos de soberanía de datos del ENS y de [NIS2](/es/posts/2026/03/nis2-que-es-a-quien-afecta/) sin renunciar a las ventajas del SaaS. Plataformas como Riskitera están diseñadas desde el inicio con este enfoque, ofreciendo soberanía de datos europea sin sacrificar la experiencia de uso.
 
-## Build vs buy: desarrollar internamente o comprar?
+## Build vs buy: ¿desarrollar internamente o comprar?
 
 Es una pregunta recurrente, especialmente en organizaciones con equipos de desarrollo propios. Vamos a analizar ambas opciones con datos.
 
@@ -250,7 +250,7 @@ Antes de solicitar demos, define tus criterios de evaluación. Esta checklist te
 - [ ] Sin límites artificiales en número de controles o evidencias
 - [ ] Multi-tenant si gestionas compliance para varias entidades
 
-## Cómo justificar la inversión en software de compliance?
+## ¿Cómo justificar la inversión en software de compliance?
 
 El presupuesto de compliance compite con otras prioridades. Para conseguir aprobación del comité de dirección, necesitas hablar en términos de negocio, no de tecnología.
 
@@ -316,23 +316,23 @@ La dependencia de proveedores estadounidenses preocupa cada vez más a las empre
 
 ## Consultas frecuentes de compliance
 
-### Cuánto cuesta el software de compliance más barato para una pyme española?
+### ¿Cuánto cuesta el software de compliance más barato para una pyme española?
 
 Las soluciones más básicas para pymes arrancan desde 50-100 EUR/mes para gestionar un único framework (típicamente RGPD). Para una gestión más completa que incluya ENS e ISO 27001, los precios empiezan en torno a 200-400 EUR/mes. La clave es evaluar si la solución barata cubre realmente tus necesidades o si acabaras complementándola con hojas de calculo, lo cual anula el ahorro.
 
-### Es obligatorio tener software de compliance en España?
+### ¿Es obligatorio tener software de compliance en España?
 
 No existe ninguna ley que obligue a usar software específico. Lo que si es obligatorio es cumplir con los marcos normativos aplicables (RGPD, ENS, NIS2) y poder demostrarlo ante los reguladores. El software es un medio, no un fin. Dicho esto, intentar demostrar cumplimiento de ENS Alto o ISO 27001 sin herramientas automatizadas es técnicamente posible pero operativamente insostenible para la mayoría de organizaciones.
 
-### Puedo usar herramientas gratuitas o de código abierto para compliance?
+### ¿Puedo usar herramientas gratuitas o de código abierto para compliance?
 
 Existen herramientas open source como CISO Assistant, Eramba Community o OpenGRC que cubren funcionalidades básicas. Son una opción viable para organizaciones con equipo técnico capaz de desplegar y mantener la solución. Las limitaciones habituales: soporte limitado, actualizaciónes normativas lentas, menos integraciónes, y la necesidad de dedicar recursos internos al mantenimiento. Para organizaciones con requisitos regulatorios complejos o sin equipo técnico dedicado, las soluciones comerciales ofrecen un mejor equilibrio coste-beneficio.
 
-### Cuánto tiempo se tarda en implementar una plataforma de compliance?
+### ¿Cuánto tiempo se tarda en implementar una plataforma de compliance?
 
 Depende del alcance. Para una pyme con un solo framework, la implementación típica dura 2-4 semanas. Para una empresa mediana con ENS, ISO 27001 y RGPD, el rango típico es 2-4 meses. Para implementaciones enterprise con múltiples entidades, integraciónes complejas y migración de datos históricos, puede extenderse a 6-12 meses. El factor crítico no suele ser la herramienta, sino la disponibilidad del equipo interno para configurar controles, cargar evidencias existentes y validar los mapeos.
 
-### Cómo saber si mi empresa necesita una plataforma GRC completa o una herramienta puntual?
+### ¿Cómo saber si mi empresa necesita una plataforma GRC completa o una herramienta puntual?
 
 La regla general: si gestionas 2 o más frameworks normativos, o si tienes más de 100 controles activos, una plataforma GRC integrada es más eficiente que herramientas puntuales. Si solo necesitas gestionar RGPD y nada más, una herramienta de privacidad especializada puede ser suficiente. Otro indicador: si dedicas más de 40 horas al mes a táreas de compliance manual, la automatización de una plataforma GRC se justifica economicamente.
 

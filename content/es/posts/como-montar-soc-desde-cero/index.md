@@ -24,7 +24,7 @@ Un Centro de Operaciones de Seguridad (SOC) es el núcleo de la capacidad de det
 - Error más común: empezar por la tecnología en lugar de por los procesos y casos de uso
 {{< /key-takeaways >}}
 
-## Qué es un SOC y por que lo necesita tu empresa?
+## ¿Qué es un SOC y por que lo necesita tu empresa?
 
 Un SOC (Security Operations Center) es una función centralizada que emplea personas, procesos y tecnología para monitorizar y mejorar continuamente la postura de seguridad de una organización, al tiempo que previene, detecta, analiza y responde a incidentes de ciberseguridad.
 
@@ -38,7 +38,7 @@ Las razones principales para contar con un SOC son:
 - **Visibilidad global**: el SOC proporciona una visión unificada del estado de seguridad de toda la organización.
 - **Reducción de costes por incidente**: según IBM, el coste medio de una brecha de datos en Europa fue de 4,3 millones de euros en 2025. Las organizaciones con SOC redujeron ese coste en un 40 por ciento de media.
 
-## Qué tipos de SOC existen: interno, externo o híbrido?
+## ¿Qué tipos de SOC existen: interno, externo o híbrido?
 
 Antes de disenar tu SOC, la primera decisión estratégica es elegir el modelo operativo.
 
@@ -91,7 +91,7 @@ Combina un equipo interno reducido con el apoyo de un proveedor externo. Es el m
 
 Según datos de INCIBE, en 2025 el 34 por ciento de las empresas medianas y grandes españolas con SOC operaban un modelo híbrido, el 41 por ciento externalizaban completamente y el 25 por ciento mantenían un SOC interno puro.
 
-## Qué roles necesita un equipo SOC?
+## ¿Qué roles necesita un equipo SOC?
 
 El equipo de un SOC se organiza en tres niveles (tiers) con funciones, habilidades y responsabilidades diferenciadas. Si quieres profundizar en cada perfil profesional, te recomendamos nuestro artículo sobre [analistas SOC: roles N1, N2 y N3 explicados con detalle](/es/posts/2026/04/analista-soc-roles-n1-n2-n3/).
 
@@ -191,7 +191,7 @@ Automatiza la respuesta a incidentes mediante playbooks predefinidos y orquesta 
 
 {{< cta type="tofu" text="Montar un SOC requiere las herramientas adecuadas. Riskitera integra SIEM, correlación y triage con IA en una sola plataforma." label="Conocer más" >}}
 
-## Cuáles son los procesos fundamentales de un SOC?
+## ¿Cuáles son los procesos fundamentales de un SOC?
 
 La tecnología sin procesos bien definidos es inutil. Estos son los procesos esenciales:
 
@@ -298,22 +298,22 @@ El panorama de amenazas cambia constantemente. Un equipo SOC que no se forma con
 
 ## Preguntas frecuentes
 
-### A partir de que tamaño de empresa tiene sentido un SOC?
+### ¿A partir de qué tamaño de empresa tiene sentido un SOC?
 
 No existe un umbral único. Como referencia general, las empresas con más de 200-300 empleados, que operan en sectores regulados o que manejan datos sensibles, suelen beneficiarse de un SOC, aunque sea en modelo externalizado o híbrido. La decisión depende más del perfil de riesgo que del tamaño: una fintech con 50 empleados pero que procesa millones de transacciones puede necesitar un SOC antes que una empresa industrial de 500 empleados con baja exposición digital.
 
-### Cuánto tiempo se tarda en montar un SOC desde cero?
+### ¿Cuánto tiempo se tarda en montar un SOC desde cero?
 
 Para un SOC interno con capacidad operativa básica (cobertura 8x5, casos de uso iniciales, equipo formado), entre 6 y 9 meses. Para alcanzar un SOC maduro con cobertura 24/7, threat hunting proactivo y automatización avanzada, entre 18 y 24 meses. Un SOC externalizado puede estar operativo en 4-8 semanas.
 
-### Puedo montar un SOC solo con herramientas open source?
+### ¿Puedo montar un SOC solo con herramientas open source?
 
 Tecnicamente si. Elastic Security como SIEM, [Wazuh](https://wazuh.com/) como EDR, Shuffle como SOAR, MISP como plataforma de inteligencia y TheHive como sistema de ticketing forman un stack funcional. El coste de licencias será mínimo, pero necesitaras personal con experiencia para desplegar, configurar, mantener y operar estas herramientas, lo que puede suponer un coste mayor en personal cualificado.
 
-### Qué certificaciones debería tener el equipo del SOC?
+### ¿Qué certificaciones debería tener el equipo del SOC?
 
 Las certificaciones más valoradas en el mercado español para equipos SOC son: [CompTIA Security+](https://www.comptia.org/certifications/security) y CySA+ para N1, GCIH y ECIH para N2, y GCFA, GREM u OSCP para N3. Para el SOC Manager, CISM o [CISSP](https://www.isc2.org/certifications/cissp). Las certificaciones específicas de fabricantes (Splunk Certified Power User, Microsoft SC-200) también son muy útiles para los roles de ingeniería.
 
-### Cómo se mide el ROI de un SOC?
+### ¿Cómo se mide el ROI de un SOC?
 
 El ROI del SOC se mide comparando el coste del SOC con el coste evitado por incidentes. Las métricas clave son: reducción del tiempo de detección (MTTD), reducción del tiempo de respuesta (MTTR), número de incidentes contenidos antes de que causaran daño, reducción del coste medio por incidente y ahorro en sanciones regulatorias evitadas. Según el Ponemon Institute, las organizaciones con SOC maduro reducen el coste medio por brecha de datos en un 40 a 50 por ciento.

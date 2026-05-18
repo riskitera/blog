@@ -24,7 +24,7 @@ El threat hunting, o caza proactiva de amenazas, es la disciplina de buscar acti
 - Los hallazgos del hunting deben convertirse en nuevas reglas de detección automatizada
 {{< /key-takeaways >}}
 
-## Qué es el threat hunting y por que es necesario?
+## ¿Qué es el threat hunting y por que es necesario?
 
 El threat hunting es una actividad de seguridad ofensiva en la que analistas cualificados buscan de forma proactiva amenazas que han eludido los controles de detección automatizados. A diferencia de la monitorización tradicional basada en alertas, donde el sistema notifica al analista cuando algo anómalo ocurre, el hunting invierte el flujo: es el analista quien fórmula hipótesis sobre posibles compromisiones y busca evidencias que las confirmen o descarten.
 
@@ -48,7 +48,7 @@ El threat hunting no depende de alertas previas. El hunter analiza datos con una
 
 La caza proactiva complementa la detección reactiva. Los hallazgos del hunting frecuentemente se traducen en nuevas reglas de detección que mejoran la capacidad reactiva de la organización, creando un ciclo virtuoso de mejora continua.
 
-## Cómo funciona el threat hunting basado en hipótesis?
+## ¿Cómo funciona el threat hunting basado en hipótesis?
 
 El enfoque más efectivo para el threat hunting es la formulación de hipótesis estructuradas. Este método proporciona dirección, alcance y criterios de evaluación claros para cada campaña de caza.
 
@@ -70,7 +70,7 @@ El análisis combina consultas estructuradas (queries específicas en el SIEM) c
 
 Independientemente del resultado, cada campaña de hunting debe documentarse: hipótesis, fuentes de datos consultadas, consultas ejecutadas, hallazgos y conclusiones. Si se confirma la hipótesis, se inicia un proceso de respuesta a incidentes. Si se descarta, los datos recopilados enriquecen la comprensión del entorno y las consultas pueden convertirse en detecciónes automatizadas permanentes.
 
-## Qué metodologías de threat hunting existen?
+## ¿Qué metodologías de threat hunting existen?
 
 Existen varios marcos metodológicos que proporcionan estructura y repetibilidad al proceso de hunting.
 
@@ -144,7 +144,7 @@ La automatización de consultas, el procesamiento de datos a escala y la creaci�
 
 {{< cta type="tofu" text="Riskitera potencia tu programa de threat hunting con hipótesis generadas por IA y correlación automática de telemetría." label="Explorar" >}}
 
-## Cómo construir un programa de threat hunting?
+## ¿Cómo construir un programa de threat hunting?
 
 Implementar un programa de hunting estructurado requiere planificación, recursos y compromiso organizacional.
 
@@ -168,7 +168,7 @@ El hunting requiere tiempo dedicado de analistas cualificados. Es difícil hacer
 
 Sin métricas, es imposible demostrar el valor del programa y justificar su continuidad. Las métricas de proceso y resultado son esenciales para la evolución del programa. Riskitera incluye capacidades de threat hunting proactivo en su plataforma SOC, integrando la generación de hipótesis con la inteligencia de amenazas y automatizando la ejecución de búsquedas sobre los datos centralizados.
 
-## Cómo medir la eficacia del threat hunting?
+## ¿Cómo medir la eficacia del threat hunting?
 
 Medir la eficacia del hunting es un reto frecuente. Estas son las métricas más relevantes:
 
@@ -198,22 +198,22 @@ Medir la eficacia del hunting es un reto frecuente. Estas son las métricas más
 
 ## Preguntas frecuentes
 
-### Cuál es la diferencia entre threat hunting y penetration testing
+### ¿Cuál es la diferencia entre threat hunting y penetration testing
 
 El penetration testing simula un ataque desde fuera de la organización para identificar vulnerabilidades explotables. El threat hunting busca evidencias de que un atacante real ya está dentro de la red. El pentest es ofensivo y puntual; el hunting es defensivo y continuo. Ambos son complementarios: los hallazgos de un pentest pueden alimentar las hipótesis de hunting y viceversa.
 
-### Necesito un equipo dedicado para hacer threat hunting
+### ¿Necesito un equipo dedicado para hacer threat hunting
 
 No necesariamente. Muchas organizaciones comienzan asignando un porcentaje del tiempo de sus analistas de SOC de nivel N2 o N3 a actividades de hunting. A medida que el programa madura y demuestra valor, puede justificarse un equipo o al menos un rol dedicado. Lo importante es que el tiempo asignado al hunting esté protegido y no se consuma en la gestión de alertas diarias.
 
-### Qué datos necesito recoger antes de empezar a hacer hunting
+### ¿Qué datos necesito recoger antes de empezar a hacer hunting
 
 Como mínimo, se necesitan logs de autenticación (logins exitosos y fallidos), logs de creación y ejecución de procesos (Event ID 4688 en Windows o auditd en Linux), logs de conexiones de red (firewall, proxy, DNS) y logs de acceso a archivos críticos. Cuanta mayor visibilidad se tenga del entorno, más efectivo será el hunting. Las configuraciones de Sysmon para Windows son especialmente valiosas.
 
-### Con que frecuencia debo realizar campañas de hunting
+### ¿Con qué frecuencia debo realizar campañas de hunting
 
 La frecuencia depende de los recursos disponibles y la madurez del programa. Un programa inicial puede empezar con una campaña quincenal o mensual. Un programa maduro ejecuta múltiples campañas por semana, con duraciones variables según la complejidad de la hipótesis. Lo más importante es mantener la cadencia y no dejar que el hunting se suspenda cuando el SOC está bajo presión por otros incidentes.
 
-### Cómo elijo las hipótesis de hunting más relevantes
+### ¿Cómo elijo las hipótesis de hunting más relevantes
 
 La priorización de hipótesis debe basarse en tres factores: la inteligencia de amenazas (que grupos atacan tu sector y que técnicas utilizan), la evaluación de riesgos (que activos son más críticos y cuales tienen menor cobertura de detección) y los puntos ciegos conocidos (técnicas de MITRE ATT&CK que la organización no puede detectar actualmente). Las guías del [CCN-CERT](https://www.ccn-cert.cni.es/) sobre amenazas relevantes para el sector público español y los informes de [ENISA](https://www.enisa.europa.eu/) Threat Landscape son recursos valiosos para contextualizar las hipótesis en el ámbito europeo.

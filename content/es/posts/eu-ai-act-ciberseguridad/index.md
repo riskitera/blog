@@ -25,7 +25,7 @@ Análisis del EU AI Act desde la perspectiva de ciberseguridad: clasificación d
 - La intersección con ENS, NIS2 y DORA crea un ecosistema normativo complejo que exige una estrategia de compliance integrada.
 {{< /key-takeaways >}}
 
-## Qué es el EU AI Act y por que importa a los equipos de ciberseguridad
+## ¿Qué es el EU AI Act y por que importa a los equipos de ciberseguridad
 
 El [Reglamento (UE) 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689), conocido como EU AI Act, es la primera legislación integral sobre inteligencia artificial a nivel mundial. Aprobado en marzo de 2024 y publicado en el Diario Oficial de la UE en julio de 2024, este reglamento establece un marco jurídico armonizado para el desarrollo, comercialización y uso de sistemas de IA en la Unión Europea.
 
@@ -39,7 +39,7 @@ El EU AI Act no surge en el vacio. Forma parte de una estrategia europea más am
 
 Esta convergencia regulatoria significa que los equipos de ciberseguridad no pueden analizar el AI Act de forma aislada. Necesitan entender cómo interactua con el resto del ecosistema normativo, especialmente cuando operan en sectores regulados como banca, energía, salud o telecomunicaciones.
 
-## Cómo clasifica el EU AI Act los sistemas de IA por riesgo
+## ¿Cómo clasifica el EU AI Act los sistemas de IA por riesgo
 
 El núcleo del EU AI Act es su sistema de clasificación basado en riesgo. No todos los sistemas de IA reciben el mismo tratamiento regulatorio. El reglamento establece cuatro categorías con obligaciones progresivas.
 
@@ -141,7 +141,7 @@ El artículo 15 es el que más directamente concierne a los profesionales de cib
 - **Robustez**: el sistema debe ser resiliente frente a errores, fallos, inconsistencias y situaciones inesperadas. Debe incluir medidas de redundancia y mecanismos fail-safe.
 - **Ciberseguridad**: el sistema debe protegerse frente a ataques que intenten manipular su comportamiento. Esto incluye protección contra data poisoning, adversarial examples, model extraction y otros ataques específicos a sistemas de IA.
 
-## Cómo afecta el AI Act a los equipos de ciberseguridad en la práctica
+## ¿Cómo afecta el AI Act a los equipos de ciberseguridad en la práctica
 
 Vamos a lo concreto. Estos son los escenarios prácticos donde el AI Act impacta directamente en las operaciones de seguridad.
 
@@ -378,22 +378,22 @@ Para mantenerse actualizado sobre el EU AI Act y su aplicación en cibersegurida
 
 ## Preguntas frecuentes
 
-### El EU AI Act obliga a dejar de usar IA en el SOC?
+### ¿El EU AI Act obliga a dejar de usar IA en el SOC?
 
 No. El AI Act no prohibe el uso de IA en operaciones de seguridad. Lo que hace es establecer requisitos según el nivel de riesgo del sistema. Los equipos SOC pueden seguir usando herramientas de detección, triage y respuesta basadas en IA, pero deben garantizar que cumplen los requisitos de transparencia, supervisión humana, logging y documentación aplicables a su categoría de riesgo. En la mayoría de los casos, esto supone mejorar prácticas ya existentes, no eliminar herramientas.
 
-### Qué pasa si mi proveedor de SIEM o EDR no cumple el AI Act?
+### ¿Qué pasa si mi proveedor de SIEM o EDR no cumple el AI Act?
 
 Si despliegas un sistema de IA que no cumple el AI Act, la responsabilidad recae tanto en el proveedor (como desarrollador del sistema) como en tu organización (como deployer o usuario). El reglamento establece obligaciones diferenciadas para proveedores y usuarios. Como usuario, debes verificar que tus proveedores cumplen, exigir la documentación técnica necesaria y mantener registros de tu diligencia debida. Si un proveedor no demuestra cumplimiento antes de agosto de 2026, deberías evaluar alternativas.
 
-### Cómo clasifico la IA de mi SOC: alto riesgo o riesgo limitado?
+### ¿Cómo clasifico la IA de mi SOC: alto riesgo o riesgo limitado?
 
 La clasificación depende del contexto de uso, no de la tecnología en si. Un mismo sistema de detección de anomalías puede ser de alto riesgo si protege una infraestructura crítica (hospital, central eléctrica, red de transporte) y de riesgo limitado si protege una empresa de comercio electrónico. La clave está en revisar el Anexo III del reglamento e identificar si el uso de tu sistema entra en alguna de las categorías listadas. Ante la duda, clasifica como alto riesgo: cumplir requisitos superiores nunca es un problema regulatorio.
 
-### El AI Act afecta a los modelos de IA open source que uso en mi SOC?
+### ¿El AI Act afecta a los modelos de IA open source que uso en mi SOC?
 
 Sí. El AI Act se aplica independientemente de si el modelo es propietario u open source. Si despliegas un modelo open source (por ejemplo, un modelo de detección de malware basado en un modelo fundacional abierto), eres responsable de cumplir los requisitos aplicables como deployer. Los proveedores de modelos GPAI open source tienen ciertas exenciones (no necesitan proporcionar documentación técnica tan exhaustiva si el modelo se distribuye con licencia libre), pero estas exenciones no se extienden a los usuarios que despliegan el modelo en contextos de alto riesgo.
 
-### Cuánto cuesta adaptarse al EU AI Act para un equipo de seguridad típico?
+### ¿Cuánto cuesta adaptarse al EU AI Act para un equipo de seguridad típico?
 
 El coste depende enormemente del tamaño de la organización, del número de sistemas de IA en uso y del nivel de madurez actual en gobernanza de IA. Para una organización mediana (500-2000 empleados) con un SOC que utiliza 3-5 herramientas con componentes de IA, la estimación realista incluye: inventario y clasificación (2-4 semanas de trabajo de consultoría), gap analysis (4-8 semanas), implementación de controles adicionales (variable, pero típicamente 3-6 meses), y formación del equipo (1-2 semanas). En términos económicos, el rango típico es de 50.000 a 200.000 euros para el proyecto inicial de adaptación, más un coste recurrente de mantenimiento del 10-15% anual.

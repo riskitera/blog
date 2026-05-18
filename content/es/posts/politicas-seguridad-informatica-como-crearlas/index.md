@@ -24,7 +24,7 @@ Las políticas de seguridad informática son los documentos fundamentales que es
 - La revisión periódica (al menos anual) es tan importante como la redacción inicial
 {{< /key-takeaways >}}
 
-## Qué son las políticas de seguridad informática?
+## ¿Qué son las políticas de seguridad informática?
 
 Una política de seguridad informática es un documento formal que define la posición de la organización respecto a un aspecto concreto de la protección de la información. Establece que está permitido y que no, quien es responsable de que y cuales son las consecuencias de su incumplimiento.
 
@@ -34,7 +34,7 @@ Esta jerarquía documental es fundamental para la gestión eficaz de la segurida
 
 [ISO 27001](https://www.iso.org/standard/27001) exige una política de seguridad de la información de alto nivel como requisito del SGSI, además de políticas específicas para áreas como el control de accesos, la clasificación de la información o el uso aceptable de los recursos. El [Esquema Nacional de Seguridad (ENS)](/es/posts/que-es-esquema-nacional-seguridad-ens/) requiere una política de seguridad aprobada por el órgano competente que articule la gestión continuada de la seguridad.
 
-## Qué tipos de políticas de seguridad son esenciales?
+## ¿Qué tipos de políticas de seguridad son esenciales?
 
 Cada organización necesita un conjunto de políticas adaptado a su tamaño, sector y requisitos normativos. Los siguientes tipos son los más comunes y necesarios.
 
@@ -98,7 +98,7 @@ El ENS define niveles de información (bajo, medio, alto) en las dimensiones de 
 
 Sin una clasificación de información operativa, es imposible aplicar controles de seguridad proporcionales: o se protege toda la información con el mismo nivel (costoso y poco práctico) o se toman decisiones arbitrarias e inconsistentes.
 
-## Cómo redactar políticas de seguridad eficaces?
+## ¿Cómo redactar políticas de seguridad eficaces?
 
 La calidad de la redacción determina la utilidad práctica de las políticas. Una política mal escrita, aunque técnicamente correcta, no será comprendida ni aplicada.
 
@@ -136,7 +136,7 @@ Cada política debe seguir una estructura coherente que facilite su lectura y co
 
 **Consistencia.** Las diferentes políticas deben utilizar terminologia, estructura y estilo coherentes. Las contradicciones entre políticas generan confusión y erosionan la confianza en el marco documental.
 
-## Cómo es el proceso de aprobación de políticas de seguridad?
+## ¿Cómo es el proceso de aprobación de políticas de seguridad?
 
 La aprobación formal es lo que transforma un documento de trabajo en una política con autoridad y fuerza de obligado cumplimiento.
 
@@ -162,7 +162,7 @@ Toda política debe incluir un proceso formal para gestionar excepciones. Existi
 
 Las excepciones sin proceso formal son una fuente frecuente de riesgo y de hallazgos en [auditorías de seguridad](/es/posts/auditoria-seguridad-informatica-guia/).
 
-## Cómo comunicar las políticas de seguridad a los empleados?
+## ¿Cómo comunicar las políticas de seguridad a los empleados?
 
 Una política aprobada pero desconocida por el personal es tan inútil como la ausencia de política. La comunicación es una fase crítica que muchas organizaciones descuidan.
 
@@ -184,7 +184,7 @@ Una política aprobada pero desconocida por el personal es tan inútil como la a
 
 No todo el personal necesita conocer todas las políticas con el mismo nivel de detalle. La comunicación debe adaptarse a la audiencia: la dirección necesita comprender los principios y las implicaciones de negocio; el personal general necesita saber qué reglas le aplican directamente y cómo cumplirlas; el personal técnico necesita además los detalles que le permitan implementar y operar los controles.
 
-## Con que frecuencia se deben revisar las políticas?
+## ¿Con qué frecuencia se deben revisar las políticas?
 
 Las políticas de seguridad no son documentos estáticos. Deben revisarse y actualizarse de forma periódica y ante eventos significativos.
 
@@ -200,7 +200,7 @@ Además de la revisión periódica, las políticas deben actualizarse ante cambi
 
 Cada política debe tener un sistema de control de versiones que identifique claramente la versión vigente, la fecha de aprobación, los cambios realizados respecto a la versión anterior y el historial completo de versiones. El acceso a versiones obsoletas debe restringirse o marcarse claramente para evitar que el personal consulte documentos no vigentes.
 
-## Dónde encontrar plantillas de políticas de seguridad?
+## ¿Dónde encontrar plantillas de políticas de seguridad?
 
 Para organizaciones que crean políticas por primera vez, las plantillas proporcionan un punto de partida valioso que acelera significativamente el proceso.
 
@@ -220,7 +220,7 @@ Riskitera incluye plantillas de políticas de seguridad alineadas con los requis
 
 Las plantillas son un punto de partida, no un producto final. Toda plantilla debe adaptarse al contexto específico de la organización: su sector, su tamaño, su estructura organizativa, su entorno tecnológico, sus requisitos normativos y su cultura corporativa. Una política copiada literalmente de una plantilla sin adaptación será generica, inadecuada y dificilmente aplicable.
 
-## Cuáles son los errores comunes al crear políticas de seguridad?
+## ¿Cuáles son los errores comunes al crear políticas de seguridad?
 
 **Redactar políticas que nadie lee ni conoce.** La política más perfecta técnicamente es inútil si el personal no la conoce. La comunicación y la formación son tan importantes como la redacción.
 
@@ -238,7 +238,7 @@ Las plantillas son un punto de partida, no un producto final. Toda plantilla deb
 
 ## Preguntas frecuentes
 
-### Cuantas políticas de seguridad necesita mi organización
+### ¿Cuántas políticas de seguridad necesita mi organización
 
 No existe un número fijo. Una pyme puede funcionar con 5 a 8 políticas fundamentales: política de seguridad de la información, uso aceptable, control de accesos, gestión de incidentes, clasificación de información, contraseñas, copias de seguridad y gestión de cambios. Una organización grande o altamente regulada puede necesitar 15 a 25 políticas que cubran áreas adicionales como seguridad en el desarrollo de software, gestión de proveedores, seguridad física o continuidad de negocio. Lo importante es que cada política responda a una necesidad real y se mantenga actualizada.
 
@@ -250,10 +250,10 @@ El responsable de seguridad de la información (CISO) o el equipo de seguridad s
 
 Varias normativas exigen directa o indirectamente la existencia de políticas de seguridad. El ENS requiere una política de seguridad para todos los organismos públicos y empresas que trabajan con la administración. El RGPD exige medidas organizativas de protección de datos, que se materializan en políticas. ISO 27001 exige una política de seguridad como requisito para la certificación. NIS2 obliga a las entidades esenciales e importantes a adoptar políticas de seguridad. Incluso sin un requisito legal explícito, las políticas de seguridad son una práctica mínima de diligencia debida que cualquier organización debería mantener.
 
-### Cómo consigo que los empleados cumplan las políticas
+### ¿Cómo consigo que los empleados cumplan las políticas
 
 El cumplimiento requiere un enfoque múltiple: comunicación clara del contenido y el propósito de cada política, formación periódica con ejemplos prácticos, apoyo de la dirección visible y consistente, controles técnicos que faciliten el cumplimiento (por ejemplo, configurar el MFA obligatorio en lugar de confiarlo a la voluntad del usuario), consecuencias proporcionadas y conocidas ante el incumplimiento y un proceso de excepciones que evite la sensación de rigidez excesiva. La cultura de seguridad se construye gradualmente y requiere consistencia y liderazgo.
 
-### Puedo utilizar políticas genéricas descargadas de internet
+### ¿Puedo utilizar políticas genéricas descargadas de internet
 
 Las plantillas genéricas son un punto de partida aceptable, pero nunca deben utilizarse sin adaptación. Una política que no refleja la realidad de tu organización (su tecnología, sus procesos, su sector, su normativa aplicable) será poco útil y potencialmente contraproducente. El valor de una política reside en su aplicabilidad al contexto concreto. Dedica tiempo a adaptar cada plantilla, validarla con los equipos relevantes y asegurar que las directrices son viables y pertinentes para tu organización.

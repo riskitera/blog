@@ -25,7 +25,7 @@ Comparativa práctica de las metodologías FAIR y MAGERIT para medir el riesgo e
 - Las herramientas automatizadas reducen el esfuerzo de aplicación de cualquiera de las dos metodologías en un 60-70%, eliminando el principal obstáculo: la carga manual
 {{< /key-takeaways >}}
 
-## Cómo se mide el riesgo en ciberseguridad?
+## ¿Cómo se mide el riesgo en ciberseguridad?
 
 Medir el riesgo en ciberseguridad es una de las táreas más complejas y, paradojicamente, más importantes de un CISO. Sin una medición rigurosa, las decisiones de inversión en seguridad se basan en intuiciones, miedos o titulares de prensa. Con una medición rigurosa, el CISO puede responder preguntas concretas: cuanto dinero estamos dispuestos a perder, donde tenemos las mayores exposiciones, y que inversión reduce más riesgo por cada euro gastado.
 
@@ -38,7 +38,7 @@ Ambas perspectivas son validas. Y para cada una existe una metodología establec
 
 En este artículo vamos a comparar ambas metodologías de forma práctica, analizando el mismo escenario de riesgo con cada una para que puedas ver las diferencias reales, no solo las teoricas.
 
-## Qué es la metodología MAGERIT?
+## ¿Qué es la metodología MAGERIT?
 
 MAGERIT es la metodología oficial de análisis de riesgos de la administración pública española. Su primera versión se público en 1997, y la versión 3 (vigente) en 2012. Esta disenada para cumplir con los requisitos del Esquema Nacional de Seguridad (ENS) y se apoya en la herramienta [PILAR](https://www.ccn-cert.cni.es/herramientas-de-ciberseguridad/ear-pilar.html), desarrollada por el CCN-CERT.
 
@@ -82,7 +82,7 @@ El proceso MAGERIT sigue estos pasos:
 - Las escalas cualitativas introducen subjetividad: lo que un analista valora como "Alto" otro lo puede valorar como "Medio"
 - El catálogo de amenazas, aunque exhaustivo, no se actualiza con la frecuencia del panorama de amenazas real
 
-## Qué es la metodología FAIR?
+## ¿Qué es la metodología FAIR?
 
 FAIR (Factor Analysis of Information Risk) es un modelo cuantitativo de análisis de riesgo creado por Jack Jones en 2005. A diferencia de MAGERIT, FAIR no prescribe un proceso de gestión de riesgos completo, sino que se centra en la cuantificación: descomponer el riesgo en factores medibles y expresar el resultado en términos monetarios (dolares o euros de pérdida esperada).
 
@@ -92,7 +92,7 @@ FAIR se convirtio en un estándar abierto de The Open Group en 2014, y el [FAIR 
 
 FAIR descompone el riesgo en dos factores principales:
 
-**LEF (Loss Event Frequency):** Con que frecuencia esperamos que un evento de pérdida ocurra en un periodo determinado. Se descompone en:
+**LEF (Loss Event Frequency):** ¿Con qué frecuencia esperamos que un evento de pérdida ocurra en un periodo determinado. Se descompone en:
 - TEF (Threat Event Frequency): frecuencia con la que un agente de amenaza actúa contra un activo
 - Vulnerability: probabilidad de que la acción del agente de amenaza resulte en un evento de perdida
 
@@ -215,7 +215,7 @@ Siguiendo el proceso FAIR:
 | Tiempo de análisis | 2-4 horas por escenario | 4-8 horas por escenario (primera vez) |
 | Requisito regulatorio | Cumple ENS directamente | No cumple ENS, necesita complementarse |
 
-## Cuáles son las diferencias entre FAIR y MAGERIT?
+## ¿Cuáles son las diferencias entre FAIR y MAGERIT?
 
 Más allá del ejemplo práctico, las diferencias fundamentales entre ambas metodologías se pueden agrupar en cinco ejes.
 
@@ -239,7 +239,7 @@ MAGERIT se apoya en catálogos predefinidos de amenazas y salvaguardas. El anali
 
 Los resultados MAGERIT hablan el lenguaje de la seguridad: niveles de riesgo, dimensiones de seguridad, salvaguardas. Los resultados FAIR hablan el lenguaje del negocio: euros, probabilidades, ROI. Un CISO que necesite defender un presupuesto ante el comité de dirección tendrá más éxito con un "el ransomware nos puede costar 950K al año y con 150K de inversión lo bajamos a 250K" que con un "tenemos 15 riesgos en nivel Alto que necesitamos reducir".
 
-## Cuándo usar MAGERIT y cuando FAIR?
+## ¿Cuándo usar MAGERIT y cuando FAIR?
 
 ### Usa MAGERIT cuando:
 
@@ -263,7 +263,7 @@ Los resultados MAGERIT hablan el lenguaje de la seguridad: niveles de riesgo, di
 - Tu organización tiene madurez suficiente para mantener ambas perspectivas
 - Quieres un inventario completo de activos y amenazas (MAGERIT) combinado con cuantificación financiera de los riesgos críticos (FAIR)
 
-## Se pueden combinar FAIR y MAGERIT?
+## ¿Se pueden combinar FAIR y MAGERIT?
 
 Sí, y de hecho es el enfoque que recomendamos para organizaciones con cierta madurez. El enfoque híbrido aprovecha las fortalezas de cada metodología y mitiga sus debilidades.
 
@@ -301,7 +301,7 @@ Sin FAIR, los 15 riesgos Alto/Muy Alto compiten por atención y presupuesto. El 
 
 Ahora la priorización es clara: el ransomware y la fuga de datos son las prioridades 1 y 2, aunque los tres estaban en "Muy Alto" con MAGERIT. Y el acceso a backups (Alto) tiene más impacto financiero que el DDoS (Alto), algo que MAGERIT sola no podia distinguir.
 
-## Qué herramientas soportan cada metodología?
+## ¿Qué herramientas soportan cada metodología?
 
 ### Herramientas para MAGERIT
 
@@ -362,22 +362,22 @@ Estas capacidades ya existen en plataformas GRC modernas y representan la evoluc
 
 ## Preguntas frecuentes
 
-### MAGERIT es obligatoria para todas las empresas en España?
+### ¿MAGERIT es obligatoria para todas las empresas en España?
 
 No. MAGERIT es la metodología de referencia para organizaciones sujetas al Esquema Nacional de Seguridad (ENS), que incluye la administración pública, sus organismos dependientes y los proveedores que manejan datos del sector público. Las empresas privadas no sujetas al ENS pueden usar cualquier metodología de análisis de riesgos reconocida ([ISO 27005](https://www.iso.org/standard/27001), FAIR, OCTAVE, etc.). Sin embargo, incluso para empresas privadas, MAGERIT es una opción sólida por su exhaustividad y por la disponibilidad de catálogos en español.
 
-### Cuánto tiempo lleva hacer un análisis de riesgos con FAIR?
+### ¿Cuánto tiempo lleva hacer un análisis de riesgos con FAIR?
 
 El primer análisis FAIR de un escenario específico puede llevar 4-8 horas, incluyendo la recopilación de datos, las estimaciones y la simulación. Con experiencia y datos históricos, el tiempo baja a 2-4 horas por escenario. Para una organización que quiera cuantificar los 10-15 riesgos más críticos, un proyecto inicial de 3-4 semanas es realista. La clave es no intentar cuantificar todos los riesgos: FAIR se aplica a los más críticos, no a los 200 riesgos del registro.
 
-### Puedo usar FAIR para cumplir con NIS2 o DORA?
+### ¿Puedo usar FAIR para cumplir con NIS2 o DORA?
 
 DORA (Digital Operational Resilience Act) exige explícitamente que las entidades financieras realicen análisis cuantitativos de riesgo operacional, lo que hace de FAIR una opción natural. NIS2 no prescribe una metodología específica, pero sus requisitos de gestión de riesgos son compatibles con FAIR. En ambos casos, FAIR por si sola no cubre todos los requisitos de gestión de riesgos: necesitaras complementarla con un proceso de gestión de riesgos más amplio (como el que proporciona MAGERIT o ISO 27005).
 
-### Qué datos necesito para empezar con FAIR si no tengo histórico de incidentes?
+### ¿Qué datos necesito para empezar con FAIR si no tengo histórico de incidentes?
 
 No tener datos históricos propios no es un bloqueo para empezar con FAIR. Puedes usar: informes sectoriales de [INCIBE](https://www.incibe.es/) y [ENISA](https://www.enisa.europa.eu/) para frecuencias de amenazas, el informe anual de coste de brechas de IBM/Ponemon para magnitudes de perdida, datos de [MITRE ATT&CK](https://attack.mitre.org/) para técnicas y tácticas de atacantes, y benchmarks del FAIR Institute para calibrar estimaciones. Lo importante es documentar las fuentes y los supuestos: un análisis FAIR con datos imperfectos pero supuestos transparentes es más útil que un análisis cualitativo que oculta la incertidumbre.
 
-### Qué metodología recomendais como punto de partida?
+### ¿Qué metodología recomendais como punto de partida?
 
 Si tu organización está sujeta al ENS, empieza por MAGERIT (no hay alternativa regulatoria). Si no, recomendamos empezar con un enfoque pragmático: usa ISO 27005 o MAGERIT simplificada para construir el inventario de activos y el registro de riesgos, y aplica FAIR a los 5-10 riesgos más críticos para obtener cifras que justifiquen la inversión en seguridad. A medida que la madurez del equipo crezca, expande la cuantificación FAIR a más escenarios. El error más común es paralizarse eligiendo la metodología "perfecta" en lugar de empezar con cualquiera de las dos.

@@ -24,13 +24,13 @@ La [Directiva NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) (Directiva (UE)
 - En España, el ENS cubre parte de los requisitos de NIS2 para el sector público
 {{< /key-takeaways >}}
 
-## Qué es la Directiva NIS2 y por que es importante?
+## ¿Qué es la Directiva NIS2 y por que es importante?
 
 La Directiva NIS2 (Network and Information Security 2) es la actualización de la Directiva NIS original de 2016, que fue la primera legislación europea centrada exclusivamente en ciberseguridad. NIS2 fue adoptada por el Parlamento Europeo y el Consejo en diciembre de 2022 y publicada en el Diario Oficial de la Unión Europea el 27 de diciembre de 2022.
 
 Su objetivo principal es alcanzar un nivel común elevado de ciberseguridad en toda la Unión Europea, armonizando las obligaciones entre Estados miembros y eliminando las disparidades que existian con la primera directiva. Según la Agencia de la Unión Europea para la Ciberseguridad ([ENISA](https://www.enisa.europa.eu/)), los ciberataques a infraestructuras críticas europeas aumentaron un 68 por ciento entre 2021 y 2024, lo que justificó plenamente la necesidad de endurecer el marco regulatorio.
 
-## Cuáles son las diferencias entre NIS1 y NIS2?
+## ¿Cuáles son las diferencias entre NIS1 y NIS2?
 
 La primera Directiva NIS, transpuesta en España mediante el Real Decreto-ley 12/2018, tenía un alcance limitado y dejó demasiado margen de interpretación a los Estados miembros. NIS2 corrige estos problemas de forma sustancial:
 
@@ -54,7 +54,7 @@ NIS1 dejaba las sanciones en manos de cada Estado miembro, lo que generaba enorm
 
 NIS2 introduce por primera vez la responsabilidad personal de los órganos de dirección, que deben aprobar las medidas de ciberseguridad, supervisar su implementación y pueden ser considerados responsables en caso de incumplimiento.
 
-## A que empresas y sectores afecta NIS2?
+## ¿A qué empresas y sectores afecta NIS2?
 
 NIS2 establece dos categorías de entidades obligadas, basándose en el sector de actividad y en el tamaño de la organización.
 
@@ -89,7 +89,7 @@ Las entidades importantes suelen ser empresas medianas (entre 50 y 250 empleados
 
 Existen excepciones: determinadas entidades se incluyen independientemente de su tamaño, como los proveedores de servicios DNS, los registros de nombres de dominio o los proveedores de redes públicas de comunicaciones electrónicas.
 
-## Cuáles son los requisitos principales de NIS2?
+## ¿Cuáles son los requisitos principales de NIS2?
 
 NIS2 establece diez medidas mínimas de gestión de riesgos que todas las entidades afectadas deben implementar:
 
@@ -123,7 +123,7 @@ NIS2 endurece significativamente los plazos de notificación de incidentes signi
 
 En España, estas notificaciones se canalizan a través del CSIRT de referencia, que para muchos sectores será el [CCN-CERT](https://www.ccn-cert.cni.es/) o el [INCIBE](https://www.incibe.es/)-CERT.
 
-## Cuándo entra en vigor NIS2 en España?
+## ¿Cuándo entra en vigor NIS2 en España?
 
 La Directiva NIS2 estableció el 17 de octubre de 2024 como fecha límite para que los Estados miembros la transpusieran a sus legislaciones nacionales. Sin embargo, España, como otros países de la UE, no cumplió ese plazo.
 
@@ -137,7 +137,7 @@ La expectativa del sector es que la ley este plenamente en vigor antes de finale
 
 Las organizaciones no deberían esperar a la transposición definitiva para actuar. La Directiva tiene efecto directo en muchos aspectos y las entidades que no estén preparadas cuando la ley entre en vigor se enfrentarán a plazos de adaptación muy ajustados.
 
-## Qué sanciones establece NIS2 por incumplimiento?
+## ¿Qué sanciones establece NIS2 por incumplimiento?
 
 El régimen sancionador de NIS2 es significativamente más severo que el de la primera directiva:
 
@@ -153,7 +153,7 @@ Además, NIS2 introduce la posibilidad de que las autoridades de supervisión re
 
 {{< cta type="tofu" text="Cumplir NIS2 requiere gestión de riesgos, notificación de incidentes y gobernanza demostrable. Riskitera cubre los tres pilares." label="Ver cómo" >}}
 
-## Cómo prepararse para cumplir NIS2?
+## ¿Cómo prepararse para cumplir NIS2?
 
 La adaptación a NIS2 requiere un enfoque metodico y multidisciplinar. Estos son los pasos recomendados:
 
@@ -189,7 +189,7 @@ NIS2 exige formación en ciberseguridad para todo el personal, incluyendo expres
 
 Realiza auditorías internas periódicas para verificar que las medidas implementadas son eficaces y que la organización está preparada para una inspección de la autoridad competente.
 
-## Cómo se relaciona NIS2 con ENS, DORA e ISO 27001?
+## ¿Cómo se relaciona NIS2 con ENS, DORA e ISO 27001?
 
 NIS2 no existe de forma aislada. Se interrelaciona con múltiples marcos regulatorios:
 
@@ -202,22 +202,22 @@ NIS2 no existe de forma aislada. Se interrelaciona con múltiples marcos regulat
 
 ## Preguntas frecuentes
 
-### Mi empresa tiene 45 empleados y opera en el sector alimentario. Me afecta NIS2?
+### ¿Mi empresa tiene 45 empleados y opera en el sector alimentario. Me afecta NIS2?
 
 Depende. NIS2 utiliza los criterios de la Recomendación 2003/361/CE de la Comisión Europea para definir el tamaño de las empresas. Como norma general, las empresas medianas (50 o más empleados, o más de 10 millones de euros de facturación) y grandes del sector de producción y distribución de alimentos están incluidas. Con 45 empleados, en principio quedarías por debajo del umbral, salvo que tu facturación supere los 10 millones de euros o que las autoridades nacionales te designen específicamente por el papel crítico que desempeñas en la cadena de suministro alimentaria.
 
-### Si ya cumplo con ISO 27001, estoy cubierto para NIS2?
+### ¿Si ya cumplo con ISO 27001, estoy cubierto para NIS2?
 
 ISO 27001 proporciona una base excelente, pero no cubre todos los requisitos de NIS2. Las principales diferencias están en las obligaciones de notificación de incidentes (con plazos muy concretos), la responsabilidad explícita de la alta dirección, la gestión de la cadena de suministro con el nivel de detalle que exige NIS2 y la cooperación con las autoridades competentes. Necesitaras complementar tu SGSI con estos aspectos adicionales.
 
-### Qué pasa si España no ha transpuesto NIS2 y mi empresa ya está operando?
+### ¿Qué pasa si España no ha transpuesto NIS2 y mi empresa ya está operando?
 
 Aunque España no haya completado la transposición, la Directiva NIS2 establece obligaciones claras que los Estados miembros deben implementar. Las organizaciones prudentes no esperan a la transposición definitiva: comienzan a adaptarse para evitar que la entrada en vigor les pille desprevenidas. Además, muchos requisitos de NIS2 se solapan con buenas prácticas de ciberseguridad que cualquier organización debería tener implementadas, con o sin obligación legal.
 
-### Cómo se relaciona NIS2 con el ENS en España?
+### ¿Cómo se relaciona NIS2 con el ENS en España?
 
 El Anteproyecto de Ley de Ciberseguridad español establece que, para las entidades del sector público, el cumplimiento del Esquema Nacional de Seguridad (ENS) se considera un mecanismo válido para satisfacer los requisitos de NIS2. Esto significa que las administraciones y entidades del sector público que ya cumplan con el ENS tendrán gran parte del camino recorrido. Para el sector privado, será necesario cumplir directamente con los requisitos que establezca la ley de transposición.
 
-### Quien supervisa el cumplimiento de NIS2 en España?
+### ¿Quién supervisa el cumplimiento de NIS2 en España?
 
 Según el modelo previsto, la supervisión se reparte entre varias autoridades sectoriales. El CCN será la autoridad de referencia para el sector público, INCIBE para el sector privado en general, y existiran autoridades sectoriales específicas para ámbitos como energía, transporte o sanidad. INCIBE-CERT y CCN-CERT actuaran como los equipos de respuesta a incidentes de referencia, canalizando las notificaciones y coordinando la respuesta.

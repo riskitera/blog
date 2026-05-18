@@ -76,7 +76,7 @@ Este es el coste más difícil de cuantificar pero potencialmente el más signif
 
 Si puedes identificar 2-3 oportunidades comerciales pérdidas en el último año por falta de certificaciones o compliance demostrable, tienes un dato concreto para el calculo.
 
-## Cómo calcular el ahorro operativo?
+## ¿Cómo calcular el ahorro operativo?
 
 A diferencia de los costes evitados, el ahorro operativo es directamente medible. Es la diferencia entre el coste actual de gestionar compliance manualmente y el coste con la plataforma GRC.
 
@@ -121,7 +121,7 @@ El ahorro típico: 30-50% en honorarios de consultoría. Si gastas 40.000 EUR an
 
 {{< cta type="tofu" text="Riskitera evalua tu postura de seguridad y te muestra los gaps de cumplimiento en minutos." label="Evaluar postura" >}}
 
-## Cómo cuantificar la reducción de riesgo?
+## ¿Cómo cuantificar la reducción de riesgo?
 
 La reducción de riesgo es el componente más estratégico del ROI, aunque también el más abstracto. Hay varias formas de abordarlo.
 
@@ -168,7 +168,7 @@ El time-to-compliance es el tiempo que transcurre desde que decides cumplir con 
 | RGPD (compliance demostrable) | 6 - 12 meses | 3 - 5 meses | 50 - 58% |
 | NIS2 (cumplimiento de requisitos) | 10 - 18 meses | 5 - 9 meses | 50 - 55% |
 
-### Cómo se traduce el time-to-compliance en dinero?
+### ¿Cómo se traduce el time-to-compliance en dinero?
 
 **Valor del time-to-compliance = Meses ahorrados x (Coste mensual del equipo dedicado + Oportunidades comerciales mensuales perdidas)**
 
@@ -236,7 +236,7 @@ Vamos a estructurar todos los componentes en un marco de cálculo que puedas ada
 
 Incluso con estimaciones conservadoras (eliminando las oportunidades comerciales y reduciendo a la mitad los costes evitados), el ROI supera el 200%.
 
-## Cómo presentar el ROI al comité de dirección?
+## ¿Cómo presentar el ROI al comité de dirección?
 
 Calcular el ROI es la mitad del trabajo. Presentarlo de forma convincente al comité de dirección es la otra mitad. Los ejecutivos no quieren ver hojas de cálculo de 50 líneas. Quieren respuestas claras a tres preguntas: cuanto cuesta, que nos da, y que pasa si no lo hacemos.
 
@@ -344,23 +344,23 @@ El time-to-compliance es crítico: cada mes sin certificación es un mes sin pod
 
 ## Preguntas frecuentes
 
-### Cuánto tiempo se tarda en ver retorno de una plataforma GRC?
+### ¿Cuánto tiempo se tarda en ver retorno de una plataforma GRC?
 
 El periodo medio de recuperación (payback) oscila entre 8 y 18 meses. Los quick wins aparecen antes: en los primeros 30-60 días ya debería ser visible la reducción de tiempo en táreas repetitivas (seguimiento de controles, generación de informes). El ROI completo, incluyendo costes evitados y oportunidades comerciales, se consolida típicamente a partir del segundo año.
 
-### Es posible calcular el ROI de forma precisa si nunca hemos tenido una multa?
+### ¿Es posible calcular el ROI de forma precisa si nunca hemos tenido una multa?
 
 Sí. El ROI no se basa solo en multas recibidas, sino en la probabilidad estadistica de recibirlas. La [AEPD](https://www.aepd.es/) pública anualmente el número de resoluciones sancionadoras por sector y tamaño de empresa. Puedes usar esos datos para estimar tu probabilidad. Además, los componentes de ahorro operativo (horas de auditoría, coste de equipo, consultoría) son medibles independientemente de si has recibido multas o no.
 
-### Cuál es el ROI de añadir un framework adicional (por ejemplo, NIS2) a una plataforma GRC existente?
+### ¿Cuál es el ROI de añadir un framework adicional (por ejemplo, NIS2) a una plataforma GRC existente?
 
 El ROI marginal de cada framework adicional es alto porque el coste incremental es bajo. Si ya tienes la plataforma configurada con ENS e ISO 27001, añadir [NIS2](/es/posts/2026/03/nis2-que-es-a-quien-afecta/) aprovecha entre el 40% y el 60% de los controles ya implementados (gracias al mapeo cruzado). El coste adicional suele limitarse a la licencia del framework extra y unas pocas horas de configuración. El beneficio: cumplir una normativa adicional sin duplicar esfuerzos.
 
-### Cómo justificó el ROI si mi organización es pequeña y el riesgo parece bajo?
+### ¿Cómo justificó el ROI si mi organización es pequeña y el riesgo parece bajo?
 
 Para pymes, el argumento más potente no son las multas (aunque la AEPD sanciona a empresas de todos los tamaños), sino la eficiencia operativa y el acceso a oportunidades comerciales. Calcula cuantas horas al mes dedica tu equipo a táreas de compliance manual y cuantos contratos has perdido (o no has podido optar a) por falta de certificaciones. Si la respuesta es "más de 20 horas/mes" o "al menos 1 contrato perdido", el ROI de una solución básica (200-400 EUR/mes) es positivo.
 
-### Qué pasa con el ROI si cambiamos de plataforma GRC?
+### ¿Qué pasa con el ROI si cambiamos de plataforma GRC?
 
 El coste de cambio (switching cost) es un factor a considerar. Incluye migración de datos, reconfiguración, reformación del equipo y un periodo de productividad reducida (típicamente 2-4 meses). Este coste puede representar el 50-70% del coste de la implementación original. Para minimizarlo, elige plataformas con APIs abiertas y capacidad de exportación de datos. Y para la decisión inicial, invierte tiempo en la [selección de la plataforma adecuada](/es/posts/2026/07/software-compliance-espana-coste/) porque el coste de equivocarte es significativo.
 

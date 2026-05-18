@@ -25,7 +25,7 @@ Desglose técnico de los 12 requisitos principales de DORA para entidades financ
 - La gestión de riesgo de terceros (Artículos 28 a 44) impone un marco de supervisión directa de la UE sobre proveedores TIC críticos, con poder sancionador.
 {{< /key-takeaways >}}
 
-## Qué es DORA y por que importa a las entidades financieras
+## ¿Qué es DORA y por que importa a las entidades financieras
 
 El [Reglamento (UE) 2022/2554](https://eur-lex.europa.eu/eli/reg/2022/2554), conocido como DORA (Digital Operational Resilience Act), es la primera normativa europea que establece requisitos uniformes de resiliencia operativa digital para el sector financiero. Entró en vigor en enero de 2023 y su aplicación es obligatoria desde el 17 de enero de 2025.
 
@@ -307,22 +307,22 @@ En la práctica, las autoridades nacionales (como el Banco de España o la CNMV)
 
 ## Preguntas frecuentes
 
-### Qué entidades financieras están obligadas a cumplir DORA?
+### ¿Qué entidades financieras están obligadas a cumplir DORA?
 
 DORA se aplica a más de 20 tipos de entidades financieras: entidades de crédito, empresas de inversión, entidades de pago, entidades de dinero electrónico, empresas de seguros y reaseguros, fondos de pensiones de empleo, proveedores de servicios de criptoactivos, depositarios centrales de valores, sociedades de gestión, agencias de calificación crediticia y, de forma relevante, proveedores TIC terceros que prestan servicios a cualquiera de estos. Las microempresas tienen un régimen simplificado, pero no están exentas.
 
-### En que se diferencia DORA de NIS2 para el sector financiero?
+### ¿En qué se diferencia DORA de NIS2 para el sector financiero?
 
 NIS2 establece requisitos generales de ciberseguridad para sectores esenciales e importantes, mientras que DORA es el régimen específico (lex specialis) para el sector financiero. Cuando ambas normas se solapan, se aplica DORA. Las diferencias principales son: DORA tiene requisitos más detallados sobre gestión de terceros TIC, establece un marco de supervisión directa sobre proveedores críticos (que NIS2 no contempla) e impone pruebas TLPT obligatorias. NIS2, por su parte, tiene un alcance sectorial más amplio y sus propios mecanismos de notificación de incidentes.
 
-### Qué pasa si un proveedor cloud se niega a incluir las cláusulas contractuales que exige DORA?
+### ¿Qué pasa si un proveedor cloud se niega a incluir las cláusulas contractuales que exige DORA?
 
 La entidad financiera no puede utilizar ese proveedor para funciones críticas o importantes si no cumple con los requisitos contractuales del Artículo 30. En la práctica, los principales proveedores cloud (AWS, Azure, Google Cloud) ya han adaptado sus condiciones contractuales para el mercado financiero europeo. Si un proveedor se niega, la entidad debe buscar alternativas o reclasificar la función como no crítica (si esto es justificable). La autoridad supervisora puede cuestionar cualquier clasificación que considere artificialmente baja.
 
-### Es obligatorio realizar pruebas TLPT para todas las entidades?
+### ¿Es obligatorio realizar pruebas TLPT para todas las entidades?
 
 No. Las pruebas TLPT solo son obligatorias para entidades que las autoridades competentes identifiquen como significativas en términos de riesgo sistemico. Los criterios incluyen tamaño, cuota de mercado, interconexion con el sistema financiero y naturaleza de los servicios. Tipicamente, esto incluye a los grandes bancos, aseguradoras sistemicas y plataformas de mercados. Las demás entidades deben realizar pruebas de resiliencia básicas (evaluaciones de vulnerabilidades, pruebas de penetración, simulacros de continuidad), pero no TLPT.
 
-### Cuánto tiempo lleva implementar el cumplimiento completo de DORA?
+### ¿Cuánto tiempo lleva implementar el cumplimiento completo de DORA?
 
 El tiempo de implementación depende de la madurez de la entidad. Una entidad con certificación ISO 27001 y procesos de gestión de riesgos TIC consolidados puede necesitar entre 6 y 12 meses para cubrir los gaps específicos de DORA (especialmente en gestión de terceros y preparación para TLPT). Para entidades con menor madurez, el proceso puede extenderse a 12 o 18 meses. La clave es empezar con un gap analysis riguroso que permita priorizar las áreas de mayor riesgo y mayor distancia respecto a los requisitos.

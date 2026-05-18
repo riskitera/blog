@@ -17,7 +17,7 @@ Guía de compra para CISOs y compliance managers: criterios para elegir una plat
 
 <!--more-->
 
-## Qué es una plataforma GRC y para que sirve?
+## ¿Qué es una plataforma GRC y para que sirve?
 
 Una plataforma GRC (Governance, Risk and Compliance) es un software que centraliza la gestión del gobierno corporativo, los riesgos y el cumplimiento normativo en una única herramienta. En el contexto de ciberseguridad, una plataforma GRC permite gestionar el ciclo completo del compliance: desde el inventario de controles y el análisis de riesgos hasta la recopilación de evidencias, la planificación de auditorías y el reporting a dirección.
 
@@ -31,7 +31,7 @@ El valor real de una plataforma GRC no está en almacenar información, sino en 
 
 **Visibilidad en tiempo real.** Dashboards que muestran el estado de cumplimiento por marco, por control y por area, con alertas cuando un control se degrada. El CISO puede responder en cualquier momento a la pregunta "como estamos de compliance" sin necesidad de preparar un informe ad hoc.
 
-## Qué funcionalidades debe tener una plataforma GRC?
+## ¿Qué funcionalidades debe tener una plataforma GRC?
 
 Las funcionalidades se organizan en cinco bloques. No todas las plataformas cubren todos con la misma profundidad:
 
@@ -67,7 +67,7 @@ Las funcionalidades se organizan en cinco bloques. No todas las plataformas cubr
 - Métricas de compliance: porcentaje de controles implementados, evidencias pendientes, riesgos abiertos
 - Exportación para reguladores (formato INES para ENS, plantillas de reporte NIS2)
 
-## Cuáles son los criterios clave para elegir?
+## ¿Cuáles son los criterios clave para elegir?
 
 Más allá de las funcionalidades, estos criterios determinan si una plataforma GRC encaja en tu organización:
 
@@ -75,7 +75,7 @@ Más allá de las funcionalidades, estos criterios determinan si una plataforma 
 
 **Integraciónes técnicas.** La plataforma debe conectarse con tus herramientas existentes: SIEM (Splunk, Elastic, Wazuh), cloud (AWS, Azure, GCP), endpoint (CrowdStrike, SentinelOne), IAM (Okta, Azure AD), ticketing (Jira, ServiceNow). Sin integraciónes, la recopilación de evidencias sigue siendo manual.
 
-**Soberania de datos.** Para organizaciones sujetas a ENS Alto o que manejan datos sensibles: donde se alojan los datos de la plataforma? Si la plataforma es SaaS americana con datos en us-east-1, puede ser un problema regulatorio. Busca opciones con hosting en la UE o on-premise.
+**Soberania de datos.** Para organizaciones sujetas a ENS Alto o que manejan datos sensibles: ¿dónde se alojan los datos de la plataforma? Si la plataforma es SaaS americana con datos en us-east-1, puede ser un problema regulatorio. Busca opciones con hosting en la UE o on-premise.
 
 **Escalabilidad.** La plataforma debe crecer con tu organización. Si hoy tienes 50 controles y mañana necesitas 300, si hoy tienes un marco y mañana tres, el coste y el rendimiento deben escalar razonablemente.
 
@@ -87,41 +87,41 @@ Más allá de las funcionalidades, estos criterios determinan si una plataforma 
 
 {{< cta type="tofu" text="Riskitera evalua tu postura de seguridad y te muestra los gaps de cumplimiento en minutos." label="Evaluar postura" >}}
 
-## Qué preguntas hacer al proveedor de GRC?
+## ¿Qué preguntas hacer al proveedor de GRC?
 
 Antes de firmar, haz estas preguntas. Las respuestas te diran más que cualquier demo comercial:
 
 **Sobre funcionalidad:**
-1. Qué marcos normativos teneis precargados? Con que frecuencia los actualizais cuando cambia la regulación?
-2. Cómo funciona el mapeo cruzado de controles? Es automático o manual?
-3. Que integraciónes técnicas teneis disponibles? (pide la lista completa, no solo los logos del marketing)
-4. Cómo se recopilan las evidencias automáticamente? Necesito instalar agentes?
-5. Puedo crear marcos custom para políticas internas o requisitos de clientes?
+1. ¿Qué marcos normativos teneis precargados? ¿Con qué frecuencia los actualizais cuando cambia la regulación?
+2. ¿Cómo funciona el mapeo cruzado de controles? ¿Es automático o manual?
+3.¿Qué integraciones técnicas teneis disponibles? (pide la lista completa, no solo los logos del marketing)
+4. ¿Cómo se recopilan las evidencias automáticamente? Necesito instalar agentes?
+5. ¿Puedo crear marcos custom para políticas internas o requisitos de clientes?
 
 **Sobre datos y seguridad:**
-6. Dónde se alojan mis datos? Puedo elegir region?
-7. Teneis certificación ISO 27001 o SOC 2 propios?
-8. Qué pasa con mis datos si cancelo el contrato? En que formato los exporto?
-9. Cuál es vuestro modelo de cifrado (en reposo y en tránsito)?
-10. Qué acceso tienen vuestros empleados a mis datos?
+6. ¿Dónde se alojan mis datos? ¿Puedo elegir región?
+7. ¿Tenéis certificación ISO 27001 o SOC 2 propios?
+8. ¿Qué pasa con mis datos si cancelo el contrato? ¿En qué formato los exporto?
+9. ¿Cuál es vuestro modelo de cifrado (en reposo y en tránsito)?
+10. ¿Qué acceso tienen vuestros empleados a mis datos?
 
 **Sobre costes:**
-11. Cuál es el modelo de pricing? Por usuario, por marco, por control, flat fee?
-12. Hay costes ocultos por integraciónes, módulos adicionales o soporte premium?
-13. Cuánto cuesta escalar si anado un marco nuevo o duplico el número de usuarios?
-14. Hay compromiso mínimo de permanencia?
+11. ¿Cuál es el modelo de pricing? Por usuario, por marco, por control, flat fee?
+12. ¿Hay costes ocultos por integraciónes, módulos adicionales o soporte premium?
+13. ¿Cuánto cuesta escalar si anado un marco nuevo o duplico el número de usuarios?
+14. ¿Hay compromiso mínimo de permanencia?
 
 **Sobre implementación:**
-15. Cuánto dura la implementación típica? Qué recursos necesito de mi equipo?
+15. ¿Cuánto dura la implementación típica? Qué recursos necesito de mi equipo?
 16. Incluye migración de datos desde mi sistema actual (aunque sean hojas de Excel)?
-17. Qué formación ofreceis? Es presencial, online, bajo demanda?
+17. ¿Qué formación ofreceis? Es presencial, online, bajo demanda?
 18. Tengo un account manager dedicado o es soporte generico?
 
 **Sobre referencias:**
-19. Puedo hablar con un cliente de mi sector y tamaño similar?
+19. ¿Puedo hablar con un cliente de mi sector y tamaño similar?
 20. Que tasa de renovación teneis? (si no te la dan, es mala señal)
 
-## Cuánto cuesta una plataforma GRC?
+## ¿Cuánto cuesta una plataforma GRC?
 
 El mercado GRC tiene un rango de precios amplio. Estos son los rangos típicos en 2026:
 
@@ -155,7 +155,7 @@ El mercado GRC tiene un rango de precios amplio. Estos son los rangos típicos e
 
 **Factor clave: coste total de propiedad (TCO).** El precio de la licencia es solo una parte. Suma: implementación, formación, integraciónes custom, tiempo del equipo interno dedicado a la plataforma, y el coste de migrar si cambias de proveedor. Un software barato que requiere 2 FTEs para mantenerlo puede ser más caro que uno premium con automatización real.
 
-## On-premise vs SaaS: que modelo elegir?
+## On-premise vs SaaS: ¿qué modelo elegir?
 
 La decisión depende de tus requisitos regulatorios, capacidad técnica y presupuesto:
 
@@ -175,7 +175,7 @@ La decisión depende de tus requisitos regulatorios, capacidad técnica y presup
 
 **La tendencia en 2026** es SaaS con hosting EU garantizado. Los principales proveedores ofrecen opciones de data residency en la UE (Frankfurt, Amsterdam, Paris). Para la mayoría de las empresas españolas reguladas (excepto defensa y datos clasificados), esto es suficiente.
 
-## Cuáles son los errores más comunes al evaluar herramientas GRC?
+## ¿Cuáles son los errores más comunes al evaluar herramientas GRC?
 
 **1. Comprar la plataforma antes de definir el programa de compliance.** La herramienta es un acelerador, no un sustituto de la estrategia. Si no tienes claro que marcos te aplican, que controles necesitas y quien es responsable de que, la plataforma no te va a dar esas respuestas. Define primero, compra después.
 
@@ -204,10 +204,10 @@ La decisión depende de tus requisitos regulatorios, capacidad técnica y presup
 **Puedo gestionar el compliance sin una plataforma GRC?**
 Sí, si tienes un solo marco normativo y un equipo pequeño. Con hojas de Excel bien estructuradas, un sistema de carpetas compartidas y disciplina puedes gestionar ISO 27001 o ENS para una organización pequeña. El problema aparece cuando escalas: múltiples marcos, decenas de controles, auditorías frecuentes. A partir de 2-3 marcos simultaneos, la plataforma se paga sola en ahorro de tiempo.
 
-**Cuanto tarda la implementación de una plataforma GRC?**
+**¿Cuánto tarda la implementación de una plataforma GRC?**
 Para plataformas SaaS mid-market: 4 a 12 semanas incluyendo configuración, carga de datos, integraciónes básicas y formación. Para plataformas enterprise: 3 a 9 meses. El factor limitante suele ser la disponibilidad del equipo interno, no la tecnología. Planifica dedicación parcial de al menos 2-3 personas durante la implementación.
 
-**Que plataforma GRC es mejor para empresas españolas?**
+**¿Qué plataforma GRC es mejor para empresas españolas?**
 No hay una respuesta universal. Las plataformas americanas (Vanta, Drata) son fuertes en SOC 2 e ISO 27001 pero debiles en ENS y NIS2. Las europeas (OneTrust GRC, ERAMBA) suelen tener mejor cobertura regulatoria europea. La clave es verificar: tiene ENS precargado y actualizado a RD 311/2022? Tiene NIS2? Soporta MAGERIT como metodología de riesgos? Hosting en la UE?
 
 **Una plataforma GRC sustituye al consultor?**

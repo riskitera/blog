@@ -24,7 +24,7 @@ La auditoría de seguridad informática es el proceso sistemático mediante el c
 - La automatización reduce hasta un 70% el tiempo de recopilación de evidencias
 {{< /key-takeaways >}}
 
-## Qué es una auditoría de seguridad informática?
+## ¿Qué es una auditoría de seguridad informática?
 
 Una auditoría de seguridad informática es una evaluación independiente y documentada de los controles, políticas, procedimientos y sistemas de seguridad de una organización. Su objetivo es determinar en que medida estos elementos cumplen con los requisitos establecidos (normativos, contractuales o internos) y si son eficaces para proteger los activos de información.
 
@@ -34,7 +34,7 @@ El valor de la auditoría reside en su carácter independiente y sistemático. E
 
 Organismos como el [CCN-CERT](https://www.ccn-cert.cni.es/) han publicado guías específicas para la auditoría de conformidad con el ENS (guías CCN-STIC), e [INCIBE](https://www.incibe.es/) proporciona recursos para que las pymes puedan evaluar su nivel de seguridad de forma autónoma.
 
-## Qué tipos de auditorías de seguridad existen?
+## ¿Qué tipos de auditorías de seguridad existen?
 
 Las auditorías de seguridad se clasifican según su origen, su objetivo y su alcance técnico.
 
@@ -64,7 +64,7 @@ Se centra en la evaluación de los controles técnicos: configuración de firewa
 
 Las guías CCN-STIC del CCN proporcionan perfiles de seguridad para la configuración de numerosas plataformas tecnológicas que sirven como criterio de referencia en auditorías técnicas de organismos públicos.
 
-## Cuáles son las fases de una auditoría de seguridad?
+## ¿Cuáles son las fases de una auditoría de seguridad?
 
 El proceso de auditoría sigue una secuencia estructurada que garantiza la exhaustividad y la calidad de los resultados.
 
@@ -124,7 +124,7 @@ La auditoría no termina con la entrega del informe. La fase de seguimiento veri
 
 Para cada no conformidad se define un plan de acción correctiva con responsable, plazo y evidencia de cierre esperada. El auditor o el responsable de seguridad realiza verificaciones de seguimiento para confirmar la implementación y eficacia de las correcciones.
 
-## Cómo se gestionan las evidencias en una auditoría?
+## ¿Cómo se gestionan las evidencias en una auditoría?
 
 La gestión de evidencias es uno de los aspectos más exigentes del proceso de auditoría, tanto para el auditor como para la organización auditada.
 
@@ -150,7 +150,7 @@ Riskitera automatiza la recopilación de evidencias de seguridad, extrayendo dat
 
 {{< cta type="tofu" text="La gestión de evidencias es el cuello de botella de toda auditoría. Riskitera automatiza la recopilación y trazabilidad de evidencias." label="Ver demo" >}}
 
-## Qué marcos de referencia se usan en auditorías de seguridad?
+## ¿Qué marcos de referencia se usan en auditorías de seguridad?
 
 ### [ISO 19011](https://www.iso.org/standard/70017.html)
 
@@ -170,7 +170,7 @@ ISACA también pública el ITAF (IT Assurance Framework), un marco detallado par
 
 El Centro Criptológico Nacional ha publicado numerosas guías CCN-STIC relevantes para la auditoría de seguridad en el ámbito del ENS, incluyendo guías específicas para la auditoría de conformidad, perfiles de seguridad para diferentes plataformas tecnológicas y procedimientos de evaluación de la seguridad. Estas guías son de obligado seguimiento para organismos del sector público y constituyen una referencia valiosa para cualquier organización.
 
-## Qué herramientas se usan en auditorías de seguridad?
+## ¿Qué herramientas se usan en auditorías de seguridad?
 
 ### Herramientas de gestión de auditorías
 
@@ -184,7 +184,7 @@ Para auditorías técnicas, las herramientas clave incluyen escáner de vulnerab
 
 La recopilación manual de evidencias es uno de los procesos más costosos en tiempo durante una auditoría. La automatización mediante scripts que exportan configuraciones, generan informes de cumplimiento y recopilan logs relevantes reduce significativamente el esfuerzo. Herramientas de compliance-as-code como Chef InSpec o Open Policy Agent permiten definir los controles como código y verificar su cumplimiento de forma automatizada y continúa.
 
-## Cómo automatizar las auditorías de seguridad?
+## ¿Cómo automatizar las auditorías de seguridad?
 
 La tendencia hacia la auditoría continua representa un cambio significativo respecto al modelo tradicional de auditorías puntuales.
 
@@ -204,7 +204,7 @@ Frameworks como CIS Benchmarks proporcionan perfiles de seguridad predefinidos q
 
 Los resultados de las auditorías automatizadas alimentan directamente el proceso de gestión de riesgos: un control que deja de cumplir incrementa automáticamente el nivel de riesgo asociado, activando los procesos de tratamiento correspondientes. Esta integración bidireccional entre auditoría y riesgos es una caracteristica de los programas GRC maduros.
 
-## Cómo prepararse para una auditoría externa?
+## ¿Cómo prepararse para una auditoría externa?
 
 La preparación es determinante para el resultado de una auditoría externa. Estas son las acciones clave:
 
@@ -224,11 +224,11 @@ La preparación es determinante para el resultado de una auditoría externa. Est
 
 ## Preguntas frecuentes
 
-### Cada cuanto se debe realizar una auditoría de seguridad
+### ¿Cada cuánto se debe realizar una auditoría de seguridad
 
 La frecuencia depende del marco normativo aplicable y la madurez de la organización. ISO 27001 exige auditorías internas planificadas como mínimo anualmente. El ENS requiere auditorías de conformidad cada dos años para categorías media y alta. Independientemente de los requisitos normativos, se recomienda realizar auditorías internas al menos una vez al año y auditorías técnicas (escaneos de vulnerabilidades) de forma trimestral o más frecuente.
 
-### Cuál es la diferencia entre una auditoría y un test de penetración
+### ¿Cuál es la diferencia entre una auditoría y un test de penetración
 
 La auditoría evalúa la conformidad de los controles de seguridad con un marco de referencia (norma, regulación, política interna), abarcando aspectos técnicos, organizativos y procedimentales. El test de penetración es una prueba técnica que simula un ataque real para identificar vulnerabilidades explotables. Son actividades complementarias: la auditoría verifica que los controles existen y se gestionan correctamente; el pentest verifica si son eficaces frente a un ataque.
 
@@ -236,10 +236,10 @@ La auditoría evalúa la conformidad de los controles de seguridad con un marco 
 
 La auditoría interna puede ser realizada por personal de la organización con formación en auditoría y conocimientos de seguridad de la información, siempre que sea independiente del area auditada. También puede encargarse a consultores externos que actuen en nombre de la organización. Las certificaciones CISA de ISACA o Lead Auditor ISO 27001 son credenciales que acreditan la competencia del auditor, aunque no son obligatorias para auditorías internas.
 
-### Qué pasa si se identifica una no conformidad mayor en la auditoría externa
+### ¿Qué pasa si se identifica una no conformidad mayor en la auditoría externa
 
 En una auditoría de certificación ISO 27001, una no conformidad mayor impide la emisión del certificado hasta que se corrija. La organización dispone de un plazo limitado (típicamente 90 días) para implementar la acción correctiva y presentar evidencias al organismo de certificación. Si la corrección es eficaz, la certificación puede emitirse. Si no se corrige en plazo, la auditoría se considera no satisfactoria y debe repetirse.
 
-### Cómo puedo reducir el coste y el esfuerzo de las auditorías
+### ¿Cómo puedo reducir el coste y el esfuerzo de las auditorías
 
 La automatización es la palanca principal para reducir el coste de las auditorías. Automatizar la recopilación de evidencias, la verificación de controles técnicos y la generación de informes puede reducir el esfuerzo de preparación en un 60 a 70 por ciento según estimaciones del sector. Además, mantener la documentación actualizada de forma continua (en lugar de actualizarla precipitadamente antes de cada auditoría) y utilizar una plataforma GRC centralizada que vincule controles, evidencias y hallazgos reduce significativamente el esfuerzo tanto para el auditado como para el auditor.

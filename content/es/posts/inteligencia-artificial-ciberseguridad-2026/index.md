@@ -17,7 +17,7 @@ La inteligencia artificial ha pasado de ser una promesa a ser una herramienta op
 
 <!--more-->
 
-## Cómo se usa la inteligencia artificial en ciberseguridad en 2026?
+## ¿Cómo se usa la inteligencia artificial en ciberseguridad en 2026?
 
 La IA en ciberseguridad se aplica en tres grandes areas: detección, respuesta y compliance. Cada area tiene niveles de madurez diferentes.
 
@@ -27,7 +27,7 @@ La IA en ciberseguridad se aplica en tres grandes areas: detección, respuesta y
 
 **Compliance y GRC** es el area más reciente. Los modelos de lenguaje se utilizan para analizar documentación de compliance, identificar gaps en controles, generar borradores de políticas y mapear requisitos normativos. La automatización de auditorías con IA reduce el ciclo de compliance de semanas a días.
 
-## Qué casos de uso reales tiene la IA en el SOC?
+## ¿Qué casos de uso reales tiene la IA en el SOC?
 
 Los casos de uso más maduros y con mayor impacto operativo:
 
@@ -41,7 +41,7 @@ Los casos de uso más maduros y con mayor impacto operativo:
 
 **Threat hunting asistido.** Los modelos sugieren hipótesis de caza basadas en la telemetría disponible, las técnicas MITRE ATT&CK más relevantes para el sector y los IoCs activos. El hunter válida y ejecuta, pero la IA reduce el tiempo de generación de hipótesis.
 
-## Cómo ayuda la IA al compliance y GRC?
+## ¿Cómo ayuda la IA al compliance y GRC?
 
 La IA esta transformando la gestión del compliance de un proceso manual y periódico a uno continuo y automatizado:
 
@@ -55,7 +55,7 @@ La IA esta transformando la gestión del compliance de un proceso manual y peri�
 
 {{< cta type="tofu" text="Riskitera evalua tu postura de seguridad y te muestra los gaps de cumplimiento en minutos." label="Evaluar postura" >}}
 
-## Qué riesgos tiene el uso de IA en seguridad?
+## ¿Qué riesgos tiene el uso de IA en seguridad?
 
 La adopción de IA en ciberseguridad no está libre de riesgos:
 
@@ -69,7 +69,7 @@ La adopción de IA en ciberseguridad no está libre de riesgos:
 
 **Regulación emergente.** El EU AI Act clasifica los sistemas de IA usados en infraestructuras críticas como "alto riesgo", lo que impone requisitos de documentación, transparencia y supervisión humana.
 
-## IA generativa en ciberseguridad: oportunidad o amenaza?
+## IA generativa en ciberseguridad: ¿oportunidad o amenaza?
 
 Ambas cosas. La IA generativa es una herramienta dual que amplifica las capacidades tanto de defensores como de atacantes.
 
@@ -79,7 +79,7 @@ Ambas cosas. La IA generativa es una herramienta dual que amplifica las capacida
 
 La conclusión del sector es clara: no adoptar IA en defensa no es una opción, porque los atacantes ya la están usando. La clave está en adoptarla de forma segura, con supervisión humana, soberanía de datos y evaluación continua.
 
-## Qué tendencias de IA en ciberseguridad veremos en 2027?
+## ¿Qué tendencias de IA en ciberseguridad veremos en 2027?
 
 Las tendencias con mayor probabilidad de impacto operativo en los próximos 12-18 meses:
 
@@ -91,7 +91,7 @@ Las tendencias con mayor probabilidad de impacto operativo en los próximos 12-1
 
 **Seguridad de la IA como disciplina.** Red teaming de modelos de IA, evaluación de vulnerabilidades en pipelines de ML, y defensa contra ataques adversariales se convertiran en funciones estándar del equipo de seguridad.
 
-## Cómo empezar a integrar IA en tu equipo de seguridad?
+## ¿Cómo empezar a integrar IA en tu equipo de seguridad?
 
 1. **Identifica los cuellos de botella** de tu equipo: si el problema es el volumen de alertas, empieza por triage automatizado; si es la documentación, empieza por generación de informes
 2. **Evalua la soberanía de datos** que necesitas: si manejas datos sensibles, descarta soluciones cloud y opta por modelos self-hosted
@@ -109,18 +109,18 @@ Las tendencias con mayor probabilidad de impacto operativo en los próximos 12-1
 
 ## Recursos y referencias
 
-### Puede la IA sustituir a un analista SOC?
+### ¿Puede la IA sustituir a un analista SOC?
 
 No en 2026. La IA puede automatizar táreas repetitivas (triage de alertas, enriquecimiento de IOCs, generación de informes) pero no sustituye el juicio humano para decisiones complejas: determinar si un incidente requiere escalado, comunicar con stakeholders o tomar decisiones de contención con impacto en producción. El modelo más efectivo es la colaboración IA + analista, donde la IA multiplica la capacidad del equipo humano.
 
-### Qué modelos de IA se usan en ciberseguridad?
+### ¿Qué modelos de IA se usan en ciberseguridad?
 
 Los modelos más utilizados en 2026 son: modelos de clasificación supervisada para triage de alertas (Random Forest, XGBoost), modelos de detección de anomalías para UEBA (autoencoders, isolation forests), modelos de lenguaje para análisis de texto y generación de informes (GPT-4, Claude, Qwen, Llama), y modelos de embedding para búsqueda semantica en bases de conocimiento de CTI.
 
-### Es seguro enviar datos de seguridad a APIs de IA en la nube?
+### ¿Es seguro enviar datos de seguridad a APIs de IA en la nube?
 
 Depende del tipo de datos y del marco regulatorio. Para datos no sensibles (informes públicos, documentación generica), las APIs cloud son aceptables. Para datos de incidentes, IOCs internos, datos de clientes o información sujeta a ENS Alto, la recomendación es usar modelos self-hosted desplegados en infraestructura propia o europea. El RGPD y el ENS imponen restricciones sobre el tratamiento de datos sensibles por terceros.
 
-### Cuánto cuesta implementar IA en un SOC?
+### ¿Cuánto cuesta implementar IA en un SOC?
 
 El coste varía enormemente. Un piloto básico con herramientas open source (MISP, Shuffle, modelos Hugging Face) puede implementarse con recursos internos. Una solución comercial integrada (CrowdStrike Charlotte AI, Microsoft Security Copilot, Riskitera) cuesta entre 5.000 y 50.000 EUR anuales dependiendo del volumen y las funcionalidades. El ROI típico es de 6-12 meses medido en horas de analista ahorradas.

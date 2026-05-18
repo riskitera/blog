@@ -25,7 +25,7 @@ Guía práctica de monitorización de la dark web para empresas: que buscar, her
 - Integrar las alertas de dark web monitoring en el flujo de trabajo del SOC es imprescindible para que la inteligencia se traduzca en acciones concretas y tiempos de respuesta medibles.
 {{< /key-takeaways >}}
 
-## Qué es la monitorización de la dark web y por que importa en 2026
+## ¿Qué es la monitorización de la dark web y por que importa en 2026
 
 La dark web es la porción de internet que no está indexada por buscadores convencionales y requiere software específico (normalmente [Tor](https://www.torproject.org/)) para acceder. Dentro de este ecosistema operan foros de hacking, mercados de datos robados, servicios de malware-as-a-service y canales de comunicación cifrada donde actores maliciosos negocian accesos corporativos.
 
@@ -100,7 +100,7 @@ No necesitas un presupuesto de seis cifras para iniciar un programa básico de d
 
 [Have I Been Pwned](https://haveibeenpwned.com/) es la referencia para verificar si direcciones de correo han aparecido en brechas de datos conocidas. Su funcionalidad clave para empresas es la **Domain Search**, que permite monitorizar todas las direcciones de un dominio corporativo.
 
-**Como usarla:**
+**¿Cómo usarla:**
 
 1. Registra tu dominio en HIBP verificando propiedad vía DNS TXT record o email
 2. Activa las notificaciones para recibir alertas cuando aparezcan nuevas brechas
@@ -115,7 +115,7 @@ No necesitas un presupuesto de seis cifras para iniciar un programa básico de d
 
 [IntelX](https://intelx.io/) es un motor de búsqueda que indexa contenido de la dark web, data leaks, dominios, emails, URLs y otros indicadores. Su tier gratuito permite realizar búsquedas limitadas con resultados parciales.
 
-**Como usarla:**
+**¿Cómo usarla:**
 
 1. Busca tu dominio corporativo para ver qué datos aparecen indexados
 2. Busca direcciones de email de ejecutivos y empleados críticos
@@ -128,7 +128,7 @@ No necesitas un presupuesto de seis cifras para iniciar un programa básico de d
 
 [Dehashed](https://www.dehashed.com/) permite buscar en bases de datos filtradas por email, nombre de usuario, IP, teléfono o nombre. Su tier gratuito ofrece búsquedas básicas con resultados limitados.
 
-**Como usarla:**
+**¿Cómo usarla:**
 
 1. Busca tu dominio para ver cuantas credenciales filtradas existen
 2. Busca nombres de empleados clave para detectar reutilización de credenciales
@@ -264,7 +264,7 @@ La información de la dark web solo tiene valor si se integra en los procesos op
 | Falsos positivos | < 20% del total de alertas |
 | Dominios typosquatting detectados/bloqueados | Ratio > 90% |
 
-## Cómo configurar alertas automatizadas paso a paso
+## ¿Cómo configurar alertas automatizadas paso a paso
 
 Un sistema de alertas bien configurado es la diferencia entre un programa reactivo y uno proactivo. Aqui tienes un plan de implementación progresivo.
 
@@ -344,7 +344,7 @@ Muchos actores de amenaza han migrado de foros tradicionales a canales de Telegr
 
 Los foros como BreachForums (y sus sucesores) y los mercados de la dark web son las fuentes primarias. Acceder directamente requiere experiencia, precauciones operativas (Tails OS, VPN sobre Tor, identidades separadas) y conlleva riesgos. Para la mayoría de empresas, es preferible usar plataformas que indexen estos foros automáticamente.
 
-## Cuándo contratar un servicio profesional de dark web monitoring
+## ¿Cuándo contratar un servicio profesional de dark web monitoring
 
 No todas las empresas necesitan una plataforma profesional desde el primer día. Usa esta guía para decidir.
 
@@ -435,22 +435,22 @@ Después de trabajar con múltiples organizaciones en programas de CTI, estos so
 
 ## Preguntas frecuentes
 
-### Es legal acceder a la dark web en España?
+### ¿Es legal acceder a la dark web en España?
 
 Sí. Acceder a la dark web mediante Tor u otras redes anonimas es completamente legal en España. Lo que está prohibido son las actividades ilicitas que puedas realizar alli: comprar datos robados, contratar servicios de hacking, adquirir malware o participar en mercados ilegales. Para dark web monitoring con fines defensivos, documenta el propósito legítimo y evita cualquier interacción con actores maliciosos.
 
-### Cuánto cuesta implementar dark web monitoring en una pyme?
+### ¿Cuánto cuesta implementar dark web monitoring en una pyme?
 
 Puedes empezar a coste cero con herramientas gratuitas (Have I Been Pwned, IntelX free tier, crt.sh, Google Alerts). Un programa básico pero efectivo se puede montar en menos de una semana con estas herramientas. Si necesitas una plataforma profesional, los costes arrancan en 5.000 euros anuales (SpiderFoot cloud) y pueden superar los 100.000 euros para soluciones enterprise como Recorded Future o Flashpoint. La recomendación es empezar gratis, demostrar valor, y escalar la inversión conforme la organización lo necesite.
 
-### Qué hago si encuentro credenciales de mi empresa en la dark web?
+### ¿Qué hago si encuentro credenciales de mi empresa en la dark web?
 
 Lo primero es verificar que son reales y determinar su antiguedad. Si son credenciales activas, fuerza el reseteo inmediato y revoca todas las sesiones activas de las cuentas afectadas. Verifica en los logs si ya se han utilizado para accesos no autorizados. Si los datos incluyen información personal de clientes, evalúa la obligación de notificar a la AEPD en las primeras 72 horas. Documenta todo el proceso de respuesta para el post-mortem.
 
-### Con que frecuencia debo revisar las alertas de dark web monitoring?
+### ¿Con qué frecuencia debo revisar las alertas de dark web monitoring?
 
 Las alertas críticas (credenciales activas, accesos a la venta, datos de clientes) deben revisarse en tiempo real o con un SLA máximo de 4 horas. Las alertas de prioridad media y baja pueden revisarse diariamente. La lista de activos monitorizados debe actualizarse al menos cada trimestre. El reporting ejecutivo debe ser mensual o trimestral dependiendo del nivel de madurez del programa y las exigencias regulatorias.
 
-### Puedo hacer dark web monitoring sin un SOC dedicado?
+### ¿Puedo hacer dark web monitoring sin un SOC dedicado?
 
 Sí, especialmente en la fase inicial. Un equipo de IT con formación básica en ciberseguridad puede gestionar un programa de monitoring con herramientas gratuitas. La clave es tener un playbook de respuesta claro para cada tipo de alerta. Conforme el volumen de alertas crece o si operas en sectores regulados, necesitaras un SOC (interno o externalizado como servicio MSSP) para mantener tiempos de respuesta aceptables.

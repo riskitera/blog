@@ -25,7 +25,7 @@ Comparativa detallada entre SOAR y SIEM: diferencias funcionales, cuando necesit
 - Antes de comprar un SOAR, válida que tu SOC tiene playbooks documentados, fuentes de datos integradas en el SIEM y al menos un analista capaz de mantener las automatizaciónes.
 {{< /key-takeaways >}}
 
-## Qué es un SIEM y que problema resuelve
+## ¿Qué es un SIEM y que problema resuelve
 
 Un SIEM (Security Information and Event Management) es la herramienta central de visibilidad de un SOC. Según la definición de [Gartner](https://www.gartner.com/), un SIEM combina dos capacidades que originalmente eran productos separados: la gestión de información de seguridad (SIM) y la gestión de eventos de seguridad (SEM).
 
@@ -50,7 +50,7 @@ A pesar de su importancia, un SIEM tiene limitaciones que cualquier equipo SOC c
 
 Estas limitaciones son exactamente las que un SOAR viene a resolver.
 
-## Qué es un SOAR y que problema resuelve
+## ¿Qué es un SOAR y que problema resuelve
 
 SOAR (Security Orchestration, Automation and Response) es una categoría de herramientas que automatiza y orquesta los flujos de trabajo de respuesta a incidentes de seguridad. El término fue acuñado por Gartner en 2017, aunque las capacidades subyacentes existian antes bajo otros nombres.
 
@@ -164,14 +164,14 @@ No todos los SOC necesitan un SOAR. Hay señales claras de que ha llegado el mom
 
 5. **Operas un SOC 24/7 con rotación de turnos.** La consistencia en la respuesta es crítica. Un playbook automatizado aplica la misma lógica a las 3 de la mañana que a las 10 de la manana, independientemente de quien este de turno.
 
-### Cuándo NO necesitas un SOAR (todavia)
+### ¿Cuándo NO necesitas un SOAR (todavia)
 
 - Tu equipo SOC tiene menos de 3 personas y el volumen de alertas es manejable.
 - No tienes playbooks de respuesta documentados (primero documenta, luego automatiza).
 - Tu SIEM no está bien tunado y genera más ruido que señales (arregla el SIEM primero).
 - No tienes integraciónes API con tus herramientas de seguridad (el SOAR necesita APIs para actuar).
 
-## Cómo se integran SOAR y SIEM
+## ¿Cómo se integran SOAR y SIEM
 
 La integración entre SIEM y SOAR sigue patrones bien establecidos. Estos son los más comunes:
 
@@ -259,14 +259,14 @@ Aunque n8n es una plataforma de automatización generica, su modelo self-hosted,
 
 La decisión entre comprar un SOAR comercial o construir automatizaciónes con herramientas genéricas depende de varios factores:
 
-### Cuándo comprar un SOAR comercial
+### ¿Cuándo comprar un SOAR comercial
 
 - Tu SOC tiene más de 10 analistas y gestiona más de 500 alertas diarias.
 - Necesitas integraciónes out-of-the-box con docenas de herramientas de seguridad.
 - Tienes requisitos de cumplimiento que exigen un audit trail robusto (DORA, NIS2).
 - El presupuesto lo permite (entre 50.000 y 300.000 EUR anuales según la solución y el tamaño).
 
-### Cuándo construir con herramientas genéricas
+### ¿Cuándo construir con herramientas genéricas
 
 - Tu SOC tiene menos de 10 analistas y el volumen de alertas es moderado.
 - Tienes ingenieros de seguridad capaces de desarrollar y mantener playbooks.
@@ -315,7 +315,7 @@ def enrich_ioc(ioc_value: str, ioc_type: str) -> dict:
 
 Este script, conectado a un webhook del SIEM y combinado con un par de acciones de remediación (bloqueo en firewall vía API, creación de ticket en Jira), cubre el 80% de lo que un SOAR básico ofrece para ese caso de uso específico.
 
-## Qué errores evitar al implementar SOAR
+## ¿Qué errores evitar al implementar SOAR
 
 La implementación de un SOAR es un proyecto que puede salir muy bien o muy mal. Estos son los errores más comunes:
 
@@ -369,22 +369,22 @@ El ROI típico se calcula en tiempo de analista recuperado. Si un SOAR automatiz
 
 ## Preguntas frecuentes
 
-### Puede un SOAR reemplazar completamente a un SIEM?
+### ¿Puede un SOAR reemplazar completamente a un SIEM?
 
 No. Un SOAR no recopila ni almacena logs, no ejecuta correlación de eventos a gran escala ni proporciona capacidad forense retrospectiva. El SOAR necesita una fuente de detección (normalmente un SIEM) que le alimente con alertas. Son herramientas complementarias: el SIEM detecta, el SOAR responde. Intentar usar un SOAR sin SIEM es como tener un equipo de bomberos sin sistema de alarma contra incendios.
 
-### Necesito un SOAR si mi SIEM ya tiene automatización básica?
+### ¿Necesito un SOAR si mi SIEM ya tiene automatización básica?
 
 Depende del nivel de automatización que necesites. Muchos SIEM modernos (como Microsoft Sentinel con Logic Apps o Splunk con Adaptive Response) incluyen capacidades básicas de automatización. Para SOCs pequeños con necesidades simples (notificaciones, enriquecimiento básico), esto puede ser suficiente. Cuando necesitas orquestación multi-herramienta compleja, playbooks con lógica condicional avanzada, gestión de casos completa o integraciónes con decenas de herramientas externas, un SOAR dedicado aporta un valor significativamente mayor.
 
-### Cuánto tiempo tarda en ser productivo un SOAR después de la implementación?
+### ¿Cuánto tiempo tarda en ser productivo un SOAR después de la implementación?
 
 El tiempo hasta el primer valor depende del enfoque. Un playbook simple (enriquecimiento automático de IoCs) puede estar operativo en 1 a 2 semanas. Tres a cinco playbooks de producción con integraciónes reales suelen estar listos en 4 a 8 semanas. Un programa de automatización maduro con 15 o más playbooks, métricas completas y bucles de feedback lleva entre 3 y 6 meses. La clave es empezar con victorias rápidas que demuestren valor al equipo y a la dirección, y expandir gradualmente.
 
-### Es viable un SOAR open source para un SOC en producción?
+### ¿Es viable un SOAR open source para un SOC en producción?
 
 Sí, con matices. Herramientas como Shuffle, TheHive + Cortex o incluso n8n con integraciónes de seguridad pueden cubrir las necesidades de un SOC de tamaño pequeño a mediano. Las ventajas son el control total, la ausencia de costes de licencia y la flexibilidad de personalización. Los inconvenientes son la mayor carga de mantenimiento, la necesidad de ingenieros con habilidades de desarrollo, y la ausencia de soporte comercial (aunque Shuffle y Tines ofrecen planes de pago con soporte). Para SOCs con requisitos regulatorios estrictos (banca, seguros), el audit trail y las certificaciones de un SOAR enterprise pueden ser un factor decisivo.
 
-### Cómo se relaciona la implementación de un SOAR con el cumplimiento de DORA?
+### ¿Cómo se relaciona la implementación de un SOAR con el cumplimiento de DORA?
 
 DORA (Reglamento UE 2022/2554) exige que las entidades financieras tengan procesos de gestión de incidentes TIC con plazos estrictos de notificación (4 horas para la notificación inicial, 72 horas para la intermedia). Un SOAR facilita el cumplimiento al automatizar la clasificación de incidentes, generar las notificaciones en el formato requerido por las autoridades, documentar automáticamente la timeline de acciones y calcular los tiempos de respuesta. No es un requisito explícito de DORA tener un SOAR, pero en la práctica es muy difícil cumplir los plazos de notificación de forma consistente sin algun nivel de automatización.

@@ -17,7 +17,7 @@ El Esquema Nacional de Seguridad (ENS) clasifica los sistemas de información en
 
 <!--more-->
 
-## Qué diferencias hay entre ENS Alto, Medio y Bajo?
+## ¿Qué diferencias hay entre ENS Alto, Medio y Bajo?
 
 Los tres niveles del ENS reflejan el impacto que un incidente de seguridad tendría sobre la organización, los servicios públicos y los ciudadanos. El Real Decreto 311/2022 define cada nivel en función de cinco dimensiones de seguridad: confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad.
 
@@ -35,7 +35,7 @@ Los tres niveles del ENS reflejan el impacto que un incidente de seguridad tendr
 | Medidas de seguridad | 36 básicas | 36 básicas + refuerzos | 36 básicas + refuerzos + medidas adicionales |
 | Tipo de auditoría | Autoevaluación | Auditoría formal bienal | Auditoría formal bienal + certificación |
 
-## Cómo se categoriza un sistema en el ENS?
+## ¿Cómo se categoriza un sistema en el ENS?
 
 La categorización se realiza evaluando cada sistema de información en las cinco dimensiones de seguridad. Para cada dimensión, se determina el impacto que tendría un incidente y se asigna un nivel (bajo, medio o alto). El nivel global del sistema es el máximo de los niveles asignados a cada dimensión.
 
@@ -50,7 +50,7 @@ La evaluación del impacto debe considerar factores concretos: si el sistema ges
 
 Según las guías CCN-STIC 803 y 804, los responsables de la información y del servicio son quienes determinan la categorización, no el equipo técnico. Esta decisión debe estar documentada y aprobada formalmente.
 
-## Qué medidas de seguridad exige cada nivel?
+## ¿Qué medidas de seguridad exige cada nivel?
 
 El ENS define 36 familias de medidas de seguridad organizadas en tres marcos: organizativo, operacional y de protección. Cada medida tiene requisitos que varían según el nivel del sistema.
 
@@ -70,7 +70,7 @@ Para **nivel alto**, se añaden medidas avanzadas: autenticación multifactor pa
 
 {{< cta type="tofu" text="Riskitera mapea automáticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
 
-## Cómo elegir la categoría ENS correcta para tu organización?
+## ¿Cómo elegir la categoría ENS correcta para tu organización?
 
 La elección no es discrecional: depende del tipo de información que gestionas y de los servicios que prestas. Sin embargo, existen criterios prácticos que ayudan a determinar el nivel correcto:
 
@@ -94,7 +94,7 @@ La elección no es discrecional: depende del tipo de información que gestionas 
 
 La recomendación del CCN es categorizar siempre con un enfoque conservador: ante la duda entre dos niveles, elegir el superior. Recategorizar a la baja después de una auditoría es más complicado que implementar medidas adicionales desde el inicio.
 
-## Qué pasa si categorizo mal mi sistema?
+## ¿Qué pasa si categorizo mal mi sistema?
 
 Una categorización incorrecta tiene consecuencias directas en la auditoría de cumplimiento y en la protección real de la organización.
 
@@ -112,7 +112,7 @@ Una categorización incorrecta tiene consecuencias directas en la auditoría de 
 
 Según datos del CCN-CERT de 2025, los errores más frecuentes de categorización son: no considerar los datos personales que gestiona el sistema, no evaluar el impacto en los ciudadanos (solo en la organización), y categorizar todos los sistemas al mismo nivel sin análisis individual.
 
-## Cuánto cuesta implementar cada nivel del ENS?
+## ¿Cuánto cuesta implementar cada nivel del ENS?
 
 Los costes varían enormemente según el tamaño de la organización, el estado actual de su seguridad y el número de sistemas a certificar. Estas son referencias del mercado español en 2026:
 
@@ -126,7 +126,7 @@ Los costes varían enormemente según el tamaño de la organización, el estado 
 
 Las herramientas gratuitas del CCN (PILAR, INES, LUCIA, microCLAUDIA) reducen significativamente el coste para administraciones públicas. Las plataformas GRC como Riskitera automatizan la gestión de controles y evidencias, reduciendo el coste operativo recurrente entre un 40% y un 70%.
 
-## Cómo se relacionan los niveles del ENS con ISO 27001?
+## ¿Cómo se relacionan los niveles del ENS con ISO 27001?
 
 El ENS y la ISO 27001 comparten muchos controles, pero no son equivalentes. Una organización certificada en ISO 27001 tiene entre un 60% y un 70% del camino recorrido para el ENS, según estimaciones del CCN.
 
@@ -146,22 +146,22 @@ Para organizaciones que deben cumplir ambos marcos, la recomendación es impleme
 
 ## Dudas habituales
 
-### Puede un sistema tener nivel alto en una dimensión y bajo en otra?
+### ¿Puede un sistema tener nivel alto en una dimensión y bajo en otra?
 
 Sí. La categorización se realiza dimensión por dimensión. Un sistema puede tener nivel alto en confidencialidad (gestiona datos sensibles) y nivel bajo en disponibilidad (no es crítico que este caido unas horas). El nivel global del sistema será el máximo de todas las dimensiones, es decir, alto en este ejemplo.
 
-### Cada cuanto hay que revisar la categorización?
+### ¿Cada cuánto hay que revisar la categorización?
 
 La categorización debe revisarse al menos cada dos años (coincidiendo con el ciclo de auditoría) o siempre que haya cambios significativos en el sistema: nuevos tipos de datos, nuevos servicios, cambios en la infraestructura o modificaciones normativas. El RD 311/2022 exige que la categorización sea un proceso vivo, no un ejercicio puntual.
 
-### Los proveedores tecnológicos del sector público necesitan certificarse en ENS?
+### ¿Los proveedores tecnológicos del sector público necesitan certificarse en ENS?
 
 Sí. Desde la entrada en vigor del RD 311/2022, los proveedores que gestionan sistemas de información para la administración pública deben cumplir con el ENS en el nivel correspondiente al sistema que gestionan. Esto afecta a empresas de desarrollo de software, hosting, servicios cloud y consultoría TIC que trabajan con el sector público.
 
-### Qué pasa si mi organización no cumple el ENS?
+### ¿Qué pasa si mi organización no cumple el ENS?
 
 El incumplimiento del ENS puede resultar en la imposibilidad de contratar con la administración pública, responsabilidades administrativas en caso de incidente, y daños reputacionales. Aunque el ENS no establece sanciones económicas directas como el RGPD, el CCN puede publicar el estado de cumplimiento de las entidades y exigir planes de adecuación con plazos concretos.
 
-### Es posible obtener una certificación ENS que cubra varios niveles?
+### ¿Es posible obtener una certificación ENS que cubra varios niveles?
 
 Sí. Una organización puede certificar diferentes sistemas en diferentes niveles dentro de la misma auditoría. Es común que un ayuntamiento tenga su portal web en nivel bajo, la sede electrónica en nivel medio y el sistema de policía local en nivel alto, todo bajo un mismo marco de cumplimiento ENS.

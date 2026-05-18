@@ -17,7 +17,7 @@ Guía práctica para entidades bancarias y fintech sobre cómo cumplir el reglam
 
 <!--more-->
 
-## Cómo afecta DORA a los bancos y entidades financieras?
+## ¿Cómo afecta DORA a los bancos y entidades financieras?
 
 El Reglamento DORA (Digital Operational Resilience Act, Reglamento UE 2022/2554) es de aplicación directa desde enero de 2025 para todas las entidades financieras de la UE. Esto incluye bancos, aseguradoras, gestoras de fondos, empresas de servicios de inversión, entidades de pago, fintech con licencia y proveedores críticos de servicios TIC.
 
@@ -27,7 +27,7 @@ Para los bancos españoles, DORA se superpone al marco de supervisión existente
 
 El impacto operativo es significativo. Según un estudio de McKinsey de 2025, el 68% de las entidades financieras europeas necesitaron reorganizar sus funciones de IT y riesgo para cumplir con DORA. El coste medio de adaptación para un banco mediano europeo se estima entre 2 y 5 millones de euros, dependiendo del nivel de madurez previo.
 
-## Cuáles son los requisitos técnicos de DORA para banca?
+## ¿Cuáles son los requisitos técnicos de DORA para banca?
 
 DORA estructura sus requisitos en cinco pilares. Cada uno tiene implicaciones técnicas directas:
 
@@ -41,7 +41,7 @@ DORA estructura sus requisitos en cinco pilares. Cada uno tiene implicaciones t�
 
 **Pilar 5: Compartición de información.** DORA fomenta (sin obligar) la participación en redes de compartición de inteligencia sobre ciberamenazas entre entidades financieras.
 
-## Cómo implementar la gestión de riesgos TIC que exige DORA?
+## ¿Cómo implementar la gestión de riesgos TIC que exige DORA?
 
 La gestión de riesgos TIC de DORA requiere un enfoque sistemático. Estos son los pasos clave para una entidad bancaria:
 
@@ -59,7 +59,7 @@ La gestión de riesgos TIC de DORA requiere un enfoque sistemático. Estos son l
 
 {{< cta type="tofu" text="Riskitera cubre los requisitos técnicos de DORA, ENS y NIS2 con una arquitectura soberana." label="Ver arquitectura" >}}
 
-## Qué pruebas de resiliencia operativa son obligatorias?
+## ¿Qué pruebas de resiliencia operativa son obligatorias?
 
 DORA establece dos niveles de pruebas:
 
@@ -82,7 +82,7 @@ Los criterios para determinar si una entidad es "significativa" incluyen: tamañ
 
 Las pruebas TLPT deben ser ejecutadas por proveedores externos certificados. Los resultados son confidenciales pero deben compartirse con la autoridad supervisora.
 
-## Cómo gestionar proveedores TIC críticos bajo DORA?
+## ¿Cómo gestionar proveedores TIC críticos bajo DORA?
 
 La gestión de terceros es uno de los aspectos más exigentes de DORA para los bancos, especialmente por la dependencia creciente de servicios cloud, fintech y proveedores de software.
 
@@ -104,7 +104,7 @@ La gestión de terceros es uno de los aspectos más exigentes de DORA para los b
 
 **Estrategia de salida.** Para cada proveedor crítico, el banco debe tener documentada una estrategia de salida viable que permita migrar el servicio a otro proveedor o internalizarlo sin interrupción de funciones críticas.
 
-## Cuál es el calendario de implementación para banca?
+## ¿Cuál es el calendario de implementación para banca?
 
 DORA fue publicado en el Diario Oficial de la UE en diciembre de 2022 y es de aplicación desde el 17 de enero de 2025. No hay periodo transitorio: las entidades deben cumplir todos los requisitos desde esa fecha.
 
@@ -120,7 +120,7 @@ Sin embargo, la implementación práctica sigue un calendario más granular:
 
 **2026 en adelante.** Régimen sancionador plenamente operativo. Revisión periódica del marco por la Comisión Europea (prevista para enero de 2028).
 
-## Qué sanciones aplican a entidades financieras que incumplan?
+## ¿Qué sanciones aplican a entidades financieras que incumplan?
 
 DORA delega la definición del régimen sancionador en los Estados miembros, pero establece requisitos mínimos. Las autoridades competentes deben tener la potestad de:
 
@@ -155,17 +155,17 @@ El impacto reputacional de una sanción pública por incumplimiento de DORA pued
 
 ## Dudas habituales
 
-**DORA aplica a fintech y neobancos?**
+**¿DORA aplica a fintech y neobancos?**
 Sí. DORA aplica a todas las entidades financieras reguladas en la UE, incluyendo entidades de pago, entidades de dinero electrónico y proveedores de servicios de criptoactivos autorizados bajo MiCA. Las fintech con licencia bancaria o de servicios de pago están sujetas a los mismos requisitos que los bancos tradicionales.
 
-**Que diferencia hay entre DORA y las guías EBA de riesgos TIC?**
+**¿Qué diferencia hay entre DORA y las guías EBA de riesgos TIC?**
 Las guías EBA (EBA/GL/2019/04) eran recomendaciones de "cumplir o explicar" (comply or explain). DORA es un reglamento de aplicación directa con capacidad sancionadora. DORA absorbe y eleva el nivel de las guías EBA, añadiendo requisitos nuevos como las pruebas TLPT obligatorias y la supervisión directa de proveedores críticos.
 
-**Si mi banco ya cumple ENS Alto, cumple también DORA?**
+**¿Si mi banco ya cumple ENS Alto, cumple también DORA?**
 No automáticamente. ENS Alto y DORA tienen solapamientos significativos (gestión de riesgos, continuidad, control de accesos), pero DORA introduce requisitos específicos que el ENS no cubre: notificación de incidentes con plazos determinados, pruebas TLPT, requisitos contractuales detallados para proveedores TIC y registro centralizado de contratos. Un banco que cumple ENS Alto tiene buena base, pero necesita un análisis de gaps específico para DORA.
 
-**Cuanto cuesta adaptarse a DORA para un banco mediano?**
+**¿Cuánto cuesta adaptarse a DORA para un banco mediano?**
 Depende del nivel de madurez previo. Para un banco mediano español con una postura de seguridad razonable (ENS Alto o ISO 27001 certificado), el coste de adaptación se estima entre 500.000 y 2 millones de euros, incluyendo consultoría, herramientas, personal y pruebas TLPT. Para entidades con menor madurez, puede superar los 5 millones.
 
-**Como se coordinan DORA y NIS2 para bancos?**
+**¿Cómo se coordinan DORA y NIS2 para bancos?**
 DORA es lex specialis frente a NIS2 para el sector financiero. Esto significa que los bancos cumplen NIS2 a través de DORA: los requisitos de DORA son más específicos y exigentes que los de NIS2 para este sector. No hay doble cumplimiento, pero la entidad debe poder demostrar ante ambos marcos.

@@ -17,7 +17,7 @@ Checklist actualizado de cumplimiento RGPD para empresas españolas en 2026: obl
 
 <!--more-->
 
-## Qué obligaciones tiene una empresa bajo el RGPD en 2026?
+## ¿Qué obligaciones tiene una empresa bajo el RGPD en 2026?
 
 El RGPD lleva en vigor desde mayo de 2018, pero ocho años después muchas empresas españolas siguen sin cumplirlo correctamente. La AEPD ha intensificado las inspecciones y las sanciones se han endurecido. Estas son las obligaciones principales del responsable del tratamiento en 2026:
 
@@ -33,7 +33,7 @@ El RGPD lleva en vigor desde mayo de 2018, pero ocho años después muchas empre
 
 **Responsabilidad proactiva (accountability).** No basta con cumplir: hay que poder demostrarlo. Documentar las decisiones, mantener el RAT actualizado, realizar evaluaciones de impacto cuando proceda, designar DPO si es obligatorio, y conservar las evidencias de cumplimiento.
 
-## Cuándo es obligatorio designar un DPO?
+## ¿Cuándo es obligatorio designar un DPO?
 
 El Delegado de Protección de Datos (DPO) es obligatorio en tres supuestos bajo el RGPD:
 
@@ -58,11 +58,11 @@ La LOPDGDD (Ley Orgánica 3/2018) amplica los supuestos. En España, también de
 
 **Coste de un DPO externo.** En España, los servicios de DPO externo oscilan entre 3.000 y 15.000 EUR/año para PYMES, y entre 15.000 y 50.000 EUR/año para grandes empresas, dependiendo del volumen y complejidad de los tratamientos.
 
-## Cómo realizar una evaluación de impacto (EIPD)?
+## ¿Cómo realizar una evaluación de impacto (EIPD)?
 
 La Evaluación de Impacto en Protección de Datos (EIPD o DPIA) es obligatoria antes de iniciar un tratamiento que presente alto riesgo para los derechos y libertades de los interesados. El artículo 35 del RGPD define tres supuestos obligatorios y la AEPD ha publicado una lista adicional de tratamientos que requieren EIPD.
 
-**Cuando es obligatoria:**
+**¿Cuándo es obligatoria:**
 - Evaluación sistemática y exhaustiva de aspectos personales basada en tratamiento automatizado (profiling) con efectos jurídicos o significativos
 - Tratamiento a gran escala de categorías especiales de datos o datos de condenas penales
 - Vigilancia sistemática a gran escala de una zona de acceso público (videovigilancia)
@@ -86,7 +86,7 @@ Si tras la EIPD el riesgo residual sigue siendo alto y no puede mitigarse, es ob
 
 {{< cta type="tofu" text="Riskitera integra la gestión RGPD con el compliance de seguridad en una sola plataforma." label="Explorar" >}}
 
-## Cuáles son los derechos de los interesados?
+## ¿Cuáles son los derechos de los interesados?
 
 El RGPD reconoce ocho derechos que toda empresa debe facilitar:
 
@@ -113,7 +113,7 @@ El RGPD reconoce ocho derechos que toda empresa debe facilitar:
 - Verificar la identidad del solicitante antes de responder
 - Documentar todas las solicitudes y respuestas como evidencia de compliance
 
-## Qué cambios hay en la aplicación del RGPD en 2026?
+## ¿Qué cambios hay en la aplicación del RGPD en 2026?
 
 El texto del RGPD no ha cambiado, pero su aplicación ha evolucionado significativamente:
 
@@ -153,7 +153,7 @@ El texto del RGPD no ha cambiado, pero su aplicación ha evolucionado significat
 
 **12. Formación y concienciación.** Formación periódica del personal en protección de datos (al menos anual). Formación específica para personal con acceso a datos sensibles o con funciones críticas (RRHH, marketing, IT).
 
-## Qué sanciones por incumplimiento del RGPD ha habido en España?
+## ¿Qué sanciones por incumplimiento del RGPD ha habido en España?
 
 La AEPD es una de las autoridades de protección de datos más activas de Europa. Estas son algunas de las sanciones más relevantes:
 
@@ -192,11 +192,11 @@ Sí. El RGPD aplica a toda organización que trate datos personales, independien
 **Puedo usar Google Analytics sin problemas de RGPD?**
 Depende de la configuración. Google Analytics 4 permite configurar la residencia de datos en la UE, pero los datos siguen siendo procesados por Google (entidad estadounidense). Necesitas: consentimiento del usuario (banner de cookies conforme), contrato de encargado del tratamiento con Google, y verificar que Google está certificado bajo el EU-US DPF para las transferencias. Alternativas conformes por defecto: Matomo (self-hosted), Plausible o PostHog (con hosting EU).
 
-**Que pasa si no notifico una brecha a la AEPD?**
+**¿Qué pasa si no notifico una brecha a la AEPD?**
 La no notificación es una infracción independiente de la brecha en si. La AEPD puede sancionar tanto por la brecha (medidas de seguridad insuficientes) como por la falta de notificación. Las sanciones por no notificar oscilan entre 10.000 y 100.000 EUR. Además, si la brecha se descubre por otro medio (denuncia de un afectado, investigación periodística), la falta de notificación agrava la sanción.
 
 **Necesito un banner de cookies en mi web?**
 Si tu web usa cookies no esenciales (analytics, marketing, personalización), si. El banner debe: informar de que cookies se usan y con que finalidad, permitir aceptar o rechazar de forma granular, no preseleccionar casillas de cookies no esenciales, no usar dark patterns (el boton "rechazar" debe ser tan visible como "aceptar"), y registrar el consentimiento como evidencia. Solo las cookies estrictamente necesarias para el funcionamiento de la web están exentas de consentimiento.
 
-**Cuanto tarda la AEPD en resolver una reclamación?**
+**¿Cuánto tarda la AEPD en resolver una reclamación?**
 La AEPD tiene un plazo legal de 12 meses para resolver un procedimiento sancionador, pero en la práctica los plazos varían: las reclamaciones simples se resuelven en 3 a 6 meses, los procedimientos sancionadores complejos pueden tardar 12 a 18 meses. Durante la tramitación, la empresa debe responder a los requerimientos de la AEPD en los plazos indicados (típicamente 10 días habiles).

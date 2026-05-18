@@ -24,7 +24,7 @@ El analista de un Centro de Operaciones de Seguridad (SOC) es uno de los perfile
 - Salarios en España (2026): N1 25-35K EUR, N2 38-55K EUR, N3 55-80K EUR
 {{< /key-takeaways >}}
 
-## Qué es un analista SOC y que hace?
+## ¿Qué es un analista SOC y que hace?
 
 Un analista SOC es el profesional encargado de monitorizar, detectar, investigar y responder a las amenazas de ciberseguridad que afectan a una organización. Trabaja dentro de un Centro de Operaciones de Seguridad, utilizando herramientas especializadas como SIEM, EDR y SOAR para proteger los activos digitales de la empresa.
 
@@ -109,7 +109,7 @@ Además de todas las herramientas del N1, el analista N2 utiliza:
 - Herramientas de análisis de red: Zeek, NetworkMiner, Arkime.
 - Lenguajes de scripting: Python, PowerShell, Bash.
 
-## Qué hace un analista SOC N3?
+## ¿Qué hace un analista SOC N3?
 
 El analista N3 (Tier 3, threat hunter o analista senior) representa el nivel más alto de experiencia técnica dentro del SOC. Su rol trasciende la respuesta reactiva a incidentes: se centra en la caza proactiva de amenazas, el análisis avanzado y la mejora estratégica de las capacidades de detección.
 
@@ -151,7 +151,7 @@ Además de las herramientas de N1 y N2:
 
 {{< cta type="tofu" text="Riskitera potencia a tus analistas SOC con triage automatizado por IA, reduciendo el ruido en N1 y liberando tiempo para N2 y N3." label="Descubrir más" >}}
 
-## Cómo es la trayectoria profesional de un analista SOC?
+## ¿Cómo es la trayectoria profesional de un analista SOC?
 
 La carrera de un analista SOC es una progresión natural que, con dedicación y formación continua, puede llevar desde un perfil junior hasta posiciones de liderazgo técnico o de gestión.
 
@@ -203,7 +203,7 @@ Es importante senalar que el trabajo remoto ha ampliado las opciones: muchos ana
 
 El equipo SOC de Riskitera está formado por analistas de todos los niveles con experiencia en sectores regulados, ofreciendo servicios de monitorización, detección y respuesta 24/7 a organizaciones que necesitan capacidades SOC sin la complejidad de montarlo internamente.
 
-## Cómo convertirse en analista SOC?
+## ¿Cómo convertirse en analista SOC?
 
 Para quienes quieran iniciar una carrera como analistas SOC, este es el camino recomendado:
 
@@ -231,22 +231,22 @@ Busca posiciones de analista SOC N1, SOC junior o security analyst en empresas d
 
 ## Preguntas frecuentes
 
-### Necesito un título universitario para ser analista SOC?
+### ¿Necesito un título universitario para ser analista SOC?
 
 No es estrictamente necesario, aunque si es recomendable. Muchos analistas SOC exitosos provienen de formación profesional de grado superior en ciberseguridad o administración de sistemas. Lo que realmente importa es el conocimiento práctico demostrable: certificaciones reconocidas (CompTIA Security+, CySA+, GCIH), experiencia en laboratorios y plataformas de práctica, y la capacidad de analizar y resolver problemas técnicos. Dicho esto, un título universitario sigue siendo un requisito en muchas ofertas de empleo, especialmente en grandes corporaciones y en el sector público.
 
-### Cuánto tiempo se tarda en pasar de N1 a N2?
+### ¿Cuánto tiempo se tarda en pasar de N1 a N2?
 
 La progresión típica de N1 a N2 es de 2 a 3 años, aunque depende de factores individuales como la capacidad de aprendizaje, la calidad de la mentorización recibida, el volumen y la complejidad de los incidentes gestionados, y la formación complementaria. Los analistas N1 que toman iniciativa para aprender fuera de su rol (participan en investigaciónes N2, estudian malware, desarrollan scripts de automatización) suelen progresar más rápido.
 
-### Qué diferencia hay entre un analista SOC y un pentester?
+### ¿Qué diferencia hay entre un analista SOC y un pentester?
 
 Son roles complementarios pero distintos. El analista SOC es un perfil defensivo (blue team): detecta, investiga y responde a amenazas reales contra los sistemas de la organización. El pentester es un perfil ofensivo (red team): simula ataques para encontrar vulnerabilidades antes de que los atacantes reales las exploten. Ambos requieren conocimientos técnicos solidos, pero la mentalidad y las habilidades del día a día son diferentes. Algunos profesionales evolucionan hacia el purple teaming, que combina ambos enfoques.
 
-### Es sostenible trabajar en turnos de SOC a largo plazo?
+### ¿Es sostenible trabajar en turnos de SOC a largo plazo?
 
 Los turnos rotativos (manana, tarde, noche) son una realidad del trabajo en SOC 24/7 y pueden generar desgaste si no se gestionan bien. La clave está en la organización del equipo: una rotación equilibrada con suficiente personal para cubrir vacaciones y descansos, políticas claras de compensación por nocturnidad y fines de semana, y una cultura que valore el bienestar del equipo. Muchos analistas trabajan en turnos durante los primeros años de su carrera (N1 y N2) y progresivamente migran a roles con horarios más regulares (N3, SOC Manager, ingeniería de detección) a medida que ganan experiencia.
 
-### Qué idiomas necesita un analista SOC?
+### ¿Qué idiomas necesita un analista SOC?
 
 El español es obviamente necesario para el mercado laboral español. El inglés es imprescindible: la documentación técnica, los informes de amenazas, las comunidades profesionales y la mayoría de las herramientas están en ingles. Un nivel B2 o superior de inglés técnico es un requisito de facto para cualquier posición SOC. Otros idiomas (portugues, aleman, frances) son un plus, especialmente en SOC que dan servicio a clientes internacionales.

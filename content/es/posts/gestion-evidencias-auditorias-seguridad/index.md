@@ -25,7 +25,7 @@ Workflow completo para la gestión de evidencias en auditorías de seguridad: re
 - La automatización de la recopilación de evidencias reduce el tiempo de preparación de auditorías entre un 50% y un 70%, eliminando el cuello de botella operativo más común.
 {{< /key-takeaways >}}
 
-## Qué son las evidencias en una auditoría de seguridad?
+## ¿Qué son las evidencias en una auditoría de seguridad?
 
 Una evidencia de auditoría es cualquier información verificable que demuestra que un control de seguridad esta implementado, funciona correctamente y se mantiene en el tiempo. No es un documento teórico. No es una política escrita que nadie cumple. Es la prueba tangible de que lo que dices que haces, realmente lo haces.
 
@@ -39,7 +39,7 @@ La norma [ISO 19011](https://www.iso.org/standard/70017.html) (directrices para 
 
 En la práctica, la mayoría de las organizaciones fallan no porque les falten controles, sino porque no pueden demostrarlos. Un estudio de BSI (British Standards Institution) sobre auditorías ISO 27001 en Europa revela que el 43% de las no conformidades están relacionadas con evidencias insuficientes o mal gestionadas, no con la ausencia de controles de seguridad.
 
-## Qué tipos de evidencias existen?
+## ¿Qué tipos de evidencias existen?
 
 Las evidencias se clasifican según su naturaleza, su origen y su grado de automatización.
 
@@ -69,7 +69,7 @@ Las evidencias se clasifican según su naturaleza, su origen y su grado de autom
 
 **Evidencias automatizadas.** Se recopilan sin intervención humana: colectores que extraen configuraciones periódicamente, integraciónes API que recogen logs, monitores que generan evidencias de disponibilidad. Este es el objetivo para al menos el 60% de tus evidencias.
 
-## Cómo recopilar evidencias de forma eficiente?
+## ¿Cómo recopilar evidencias de forma eficiente?
 
 La recopilación de evidencias es el cuello de botella de toda auditoría. Sin una estrategia clara, se convierte en una carrera contrarreloj de última hora donde todo el equipo busca desesperadamente capturas de pantalla, logs y documentos que demuestren cumplimiento.
 
@@ -117,7 +117,7 @@ Para cada evidencia técnica, evalúa si puedes automatizar su recopilación:
 
 {{< cta type="tofu" text="Riskitera mapea automáticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
 
-## Cómo clasificar y almacenar evidencias?
+## ¿Cómo clasificar y almacenar evidencias?
 
 Una vez recopilada, la evidencia necesita ser clasificada, indexada y almacenada de forma que sea fácilmente recuperable y su integridad este garantizada.
 
@@ -182,14 +182,14 @@ Un repositorio de evidencias bien organizado sigue una estructura que refleja la
 
 La carpeta `multi-framework` es clave. Una evidencia de revisión de accesos puede servir para ENS, ISO 27001 y RGPD. En lugar de duplicarla, almacenala una vez y vinculala a los tres frameworks.
 
-## Cómo garantizar la trazabilidad de las evidencias?
+## ¿Cómo garantizar la trazabilidad de las evidencias?
 
 La trazabilidad es lo que convierte un archivo suelto en una evidencia válida para auditoría. Necesitas poder demostrar:
 
 - **Quien genero la evidencia.** Autor o sistema de origen.
-- **Cuando se genero.** Timestamp fiable (idealmente de un servidor NTP sincronizado).
-- **Que contiene.** Descripción del alcance de la evidencia.
-- **Que no ha sido alterada.** Hash de integridad, control de versiones.
+- **¿Cuándo se genero.** Timestamp fiable (idealmente de un servidor NTP sincronizado).
+- **¿Qué contiene.** Descripción del alcance de la evidencia.
+- **¿Qué no ha sido alterada.** Hash de integridad, control de versiones.
 - **Quien ha accedido a ella.** Registro de accesos.
 - **A que control(es) responde.** Vinculación explícita con los controles del framework.
 
@@ -220,7 +220,7 @@ Para evidencias críticas, considera el uso de sellos de tiempo cualificados (TS
 
 En España, proveedores como la FNMT-RCM ofrecen servicios de sellado de tiempo cualificado que son especialmente relevantes para evidencias de ENS Alto.
 
-## Cómo presentar evidencias ante un auditor externo?
+## ¿Cómo presentar evidencias ante un auditor externo?
 
 La presentación de evidencias es el momento de la verdad. Un auditor experimentado evalúa no solo el contenido de las evidencias, sino la forma en que las presentas. Una presentación desordenada genera desconfianza; una presentación estructurada y fluida genera confianza.
 
@@ -250,7 +250,7 @@ La presentación de evidencias es el momento de la verdad. Un auditor experiment
 
 **Ausencia de evidencia de eficacia.** Demostrar que el control existe (tenemos una política de backup) pero no que funciona (la última restauración de prueba fue exitosa el 15 de mayo de 2026, con un RTO de 4 horas sobre un objetivo de 8 horas).
 
-## Cómo automatizar la gestión de evidencias?
+## ¿Cómo automatizar la gestión de evidencias?
 
 La automatización es la diferencia entre un proceso de auditoría que consume 400 horas y uno que consume 100. Veamos como implementarla de forma práctica.
 
@@ -356,22 +356,22 @@ Un log de 10.000 líneas que "demuestra" el control de monitoring. El auditor no
 
 ## Preguntas frecuentes
 
-### Cuánto tiempo deben conservarse las evidencias de auditoría?
+### ¿Cuánto tiempo deben conservarse las evidencias de auditoría?
 
 Depende del framework. Para ISO 27001, la norma no específica un periodo mínimo, pero la práctica habitual es conservar evidencias al menos 3 años (dos ciclos de certificación). Para ENS Alto, el CCN-CERT recomienda 5 años para registros de auditoría. Para RGPD, las evidencias de cumplimiento deben conservarse mientras exista la obligación de demostrar el cumplimiento y, en caso de inspección de la [AEPD](https://www.aepd.es/), la prescripción de infracciones muy graves es de 3 años. La regla segura: conservar al menos 5 años las evidencias críticas y 3 años las operativas.
 
-### Es necesario firmar digitalmente todas las evidencias?
+### ¿Es necesario firmar digitalmente todas las evidencias?
 
 No es obligatorio en la mayoría de frameworks, pero si altamente recomendable para evidencias críticas (políticas aprobadas, informes de auditoría, actas de comité de seguridad). Para evidencias técnicas automatizadas, un hash de integridad (SHA-256) con timestamp de un servidor NTP sincronizado suele ser suficiente. Para organizaciones sujetas a ENS Alto en administraciones públicas, el uso de firma electrónica cualificada (conforme a eIDAS y la Ley 39/2015) puede ser exigido por el auditor para determinados documentos.
 
-### Qué pasa si un auditor solicita una evidencia que no tenemos?
+### ¿Qué pasa si un auditor solicita una evidencia que no tenemos?
 
 Es un escenario habitual. Lo peor que puedes hacer es inventar una evidencia sobre la marcha. El auditor lo detectara. Lo correcto: reconocer la carencia, explicar por que no existe (no se habia identificado como necesaria, el control se implemento recientemente, el sistema no genera ese tipo de registro), proponer un plan de acción con fecha concreta para subsanarla, y documentar todo como hallazgo interno. Una no conformidad menor por evidencia ausente es preferible a una no conformidad mayor por evidencia falsificada.
 
-### Cómo gestionar evidencias cuando hay múltiples auditores (interno, externo, regulador)?
+### ¿Cómo gestionar evidencias cuando hay múltiples auditores (interno, externo, regulador)?
 
 Usa un repositorio único con permisos diferenciados. El auditor interno tiene acceso completo. El auditor externo de certificación tiene acceso a las evidencias vinculadas a su alcance. El regulador (por ejemplo, [ENISA](https://www.enisa.europa.eu/) para NIS2 o la AEPD para RGPD) tiene acceso solo a lo que solicite formalmente. Nunca des acceso indiscriminado. Y registra cada acceso en la cadena de custodia.
 
-### Puedo usar un repositorio en la nube (Google Drive, SharePoint) para almacenar evidencias?
+### ¿Puedo usar un repositorio en la nube (Google Drive, SharePoint) para almacenar evidencias?
 
 Puedes, con condiciones. Verifica que el proveedor cloud almacena los datos en la UE (requisito RGPD). Asegurate de que tienes control de acceso granular (no basta con compartir una carpeta con "todos"). Implementa versionado (que las herramientas cloud suelen ofrecer nativamente). Y añade una capa de hash de integridad, porque las herramientas cloud no lo hacen por defecto. Para organizaciones con ENS Alto, verifica que el proveedor cumple con los requisitos de la guía CCN-STIC 823 (uso de servicios en la nube). Una plataforma GRC dedicada es siempre preferible porque integra almacenamiento, trazabilidad, vinculación a controles y hash de integridad en un único sistema.

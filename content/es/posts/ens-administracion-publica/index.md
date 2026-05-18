@@ -17,7 +17,7 @@ Guía práctica del Esquema Nacional de Seguridad para administraciones pública
 
 <!--more-->
 
-## Qué exige el ENS a las administraciones públicas?
+## ¿Qué exige el ENS a las administraciones públicas?
 
 El Esquema Nacional de Seguridad (RD 311/2022) es obligatorio para todo el sector público español: Administración General del Estado (AGE), comunidades autónomas, entidades locales (ayuntamientos, diputaciones), universidades públicas y cualquier entidad de derecho público. También aplica a las empresas privadas que prestan servicios o manejan información del sector público.
 
@@ -31,7 +31,7 @@ El ENS establece un marco común de seguridad que incluye:
 
 **Conformidad.** Las administraciones públicas deben obtener la Declaración de Conformidad (categoría básica) o la Certificación de Conformidad (categorías media y alta) emitida por un organismo acreditado. El proceso de certificación incluye auditoría documental, auditoría técnica y revisión por el CCN.
 
-## Cuáles son los plazos de cumplimiento del ENS para AA.PP.?
+## ¿Cuáles son los plazos de cumplimiento del ENS para AA.PP.?
 
 El ENS original (RD 3/2010) lleva vigente desde 2010. La actualización de 2022 (RD 311/2022) entró en vigor en mayo de 2022 con un periodo de adecuación de 24 meses que finalizó en mayo de 2024.
 
@@ -43,7 +43,7 @@ El ENS original (RD 3/2010) lleva vigente desde 2010. La actualización de 2022 
 
 **Plazos de certificación.** No hay un plazo único de certificación impuesto, pero el CCN presiona activamente a través del sistema INES (Informe Nacional del Estado de Seguridad) para que todas las entidades públicas reporten su estado y avancen hacia la conformidad. La renovación de la certificación es cada 2 años.
 
-## Qué herramientas proporciona el CCN para cumplir el ENS?
+## ¿Qué herramientas proporciona el CCN para cumplir el ENS?
 
 El CCN-CERT pone a disposición de las administraciones públicas un ecosistema completo de herramientas gratuitas:
 
@@ -65,7 +65,7 @@ El CCN-CERT pone a disposición de las administraciones públicas un ecosistema 
 
 {{< cta type="tofu" text="Riskitera mapea automáticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
 
-## Cómo categorizan los sistemas las administraciones públicas?
+## ¿Cómo categorizan los sistemas las administraciones públicas?
 
 La categorización es el primer paso del proceso ENS y determina el nivel de exigencia de seguridad aplicable. Se basa en valorar el impacto que tendría un incidente de seguridad sobre cinco dimensiones:
 
@@ -93,7 +93,7 @@ La categorización es el primer paso del proceso ENS y determina el nivel de exi
 
 La categorización debe documentarse, justificarse y revisarse cuando cambien las circunstancias del sistema (nuevos datos tratados, nuevos servicios, cambios normativos).
 
-## Cuáles son los errores más comunes de las AA.PP. con el ENS?
+## ¿Cuáles son los errores más comunes de las AA.PP. con el ENS?
 
 Tras más de 15 años de vigencia del ENS, los errores se repiten. Estos son los más frecuentes según los informes del CCN y la experiencia de auditores:
 
@@ -113,7 +113,7 @@ Tras más de 15 años de vigencia del ENS, los errores se repiten. Estos son los
 
 **8. Registros de actividad incompletos.** El ENS exige registrar la actividad de los usuarios en los sistemas para poder investigar incidentes. Muchas entidades no configuran los logs adecuadamente, no los retienen el tiempo necesario o no los revisan nunca.
 
-## Qué papel juegan los proveedores tecnológicos de la AA.PP.?
+## ¿Qué papel juegan los proveedores tecnológicos de la AA.PP.?
 
 Los proveedores de servicios TIC de la administración pública tienen un papel crítico en el cumplimiento del ENS, y sus obligaciones han aumentado con la actualización de 2022.
 
@@ -129,7 +129,7 @@ Los proveedores de servicios TIC de la administración pública tienen un papel 
 
 **Auditorías a proveedores.** Las administraciones públicas tienen derecho a auditar a sus proveedores TIC en materia de seguridad. En la práctica, pocas lo ejercen por falta de recursos. DORA (para sector financiero) y NIS2 están elevando este estándar y es previsible que el ENS lo refuerce en futuras revisiones.
 
-## Cómo afecta NIS2 a las administraciones públicas españolas?
+## ¿Cómo afecta NIS2 a las administraciones públicas españolas?
 
 La Directiva NIS2 (2022/2555) incluye a las administraciones públicas como entidades esenciales, lo que supone un nuevo nivel de exigencia que se suma al ENS.
 
@@ -159,14 +159,14 @@ La Directiva NIS2 (2022/2555) incluye a las administraciones públicas como enti
 **Un ayuntamiento pequeño tiene que cumplir el ENS?**
 Sí. El ENS es obligatorio para todas las administraciones públicas, independientemente de su tamaño. Un ayuntamiento de 500 habitantes está sujeto al ENS igual que un ministerio. La diferencia está en la categorización: los sistemas de un ayuntamiento pequeño serán probablemente de categoría BASICA, lo que reduce el número de controles exigibles. El CCN ofrece herramientas gratuitas y guías simplificadas para entidades locales pequeñas.
 
-**Cuanto cuesta la certificación ENS?**
+**¿Cuánto cuesta la certificación ENS?**
 El coste depende de la categoría y la complejidad. Para un ayuntamiento mediano con sistemas de categoría MEDIA, la auditoría de certificación cuesta entre 15.000 y 40.000 euros. Para un organismo de la AGE con múltiples sistemas de categoría ALTA, puede superar los 100.000 euros. A esto hay que sumar el coste de adecuación previo (consultoría, herramientas, personal), que es significativamente mayor que la auditoría en si.
 
-**Que pasa si una administración pública no cumple el ENS?**
+**¿Qué pasa si una administración pública no cumple el ENS?**
 No hay un régimen sancionador explícito en el propio ENS como el del RGPD. Sin embargo, el incumplimiento puede tener consecuencias: requerimientos del CCN, informes negativos en INES que afectan a la reputación institucional, responsabilidad patrimonial de la administración en caso de brecha de seguridad, y responsabilidad personal de los funcionarios que no adoptaron las medidas exigidas. Con NIS2, las consecuencias se endurecen significativamente.
 
 **Se puede cumplir ENS e ISO 27001 al mismo tiempo?**
 Sí, y es recomendable. El ENS y la ISO 27001 comparten muchos controles (gestión de riesgos, control de accesos, continuidad, auditorías). El CCN ha publicado la guía CCN-STIC-825 que mapea los controles del ENS con los de ISO 27001:2022. Una entidad que se certifique en ambos marcos puede optimizar el proceso evitando duplicar esfuerzos. Riskitera mapea automáticamente controles entre ambos marcos.
 
-**Como afecta la Ley 40/2015 a la seguridad de las AA.PP.?**
+**¿Cómo afecta la Ley 40/2015 a la seguridad de las AA.PP.?**
 La Ley 40/2015 de Régimen Jurídico del Sector Público establece en su artículo 156 que el ENS tiene por objeto establecer la política de seguridad en la utilización de medios electrónicos y que será de aplicación a todo el sector público. Esto da cobertura legal plena al ENS y vincula su cumplimiento con la obligación legal de las administraciones de garantizar la seguridad de los servicios electrónicos que prestan a los ciudadanos.

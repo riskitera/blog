@@ -382,22 +382,22 @@ Según las ofertas de empleo publicadas en los principales portales (LinkedIn, I
 
 ## Preguntas frecuentes
 
-### Es posible cobrar más de 50.000 euros como analista SOC sin ser manager?
+### ¿Es posible cobrar más de 50.000 euros como analista SOC sin ser manager?
 
 Sí, absolutamente. Un analista N3 especializado (detection engineering, malware analysis, incident response lead) puede superar los 60.000-70.000 euros en España sin asumir responsabilidades de gestión de personas. La ruta técnica pura es viable y esta cada vez más reconocida salarialmente, especialmente en empresas que tienen career ladders diferenciados para la vía técnica y la vía de gestión. El techo salarial técnico en España se sitúa en torno a 80.000-95.000 euros para un Principal Security Engineer o Staff Security Engineer en empresas grandes.
 
-### Merece la pena trabajar en remoto para una empresa extranjera desde España?
+### ¿Merece la pena trabajar en remoto para una empresa extranjera desde España?
 
 Depende de tu situación y prioridades. Las ventajas son claras: salarios un 30-60% superiores a los del mercado español con coste de vida local. Las desventajas incluyen: posible aislamiento profesional (menos networking local), diferencias horarias (trabajar para UK o Centroeuropa es viable, para EEUU es más difícil), incertidumbre fiscal y contractual (asegurate de tener un contrato adecuado, ya sea como autónomo o a través de un Employer of Record). Si tu objetivo es maximizar ingresos a corto-medio plazo y eres autónomo y disciplinado, puede ser una excelente opción.
 
-### Qué certificación debería sacar primero para subir de salario?
+### ¿Qué certificación debería sacar primero para subir de salario?
 
 Para N1 que quiere llegar a N2: CySA+ o BTL1 son buenas opciones de coste-beneficio. Te validan competencias defensivas sin requerir una inversión enorme de tiempo o dinero. Para N2 que aspira a N3: GCIH si tu foco es respuesta a incidentes, u OSCP si quieres ampliar hacia purple team. OSCP tiene el mayor impacto salarial individual (+15-20%), pero requiere una preparación significativa (3-6 meses de estudio intenso). Para aspirar a SOC Manager: CISSP es practicamente obligatoria; es cara (749 USD el examen) y requiere 5 años de experiencia, pero es el "sello" que abre puertas en gestión de seguridad.
 
-### El salario SOC seguira subiendo en los próximos años?
+### ¿El salario SOC seguirá subiendo en los próximos años?
 
 Todo indica que si, al menos hasta 2028-2029. Los factores estructurales (deficit de talento, presión regulatoria de NIS2 y AI Act, incremento de ciberataques) no van a desaparecer a corto plazo. La automatización con IA eliminará parte de las táreas repetitivas de N1, pero no eliminará los puestos: los transformara. Los analistas N1 de 2028 harán el trabajo que hoy hacen los N2. Esto implica una presión al alza en competencias y, por extensión, en salarios. El riesgo a la baja es una recesión económica prolongada que congele contrataciones, pero incluso en ese escenario, la ciberseguridad es de las últimas áreas en recibir recortes.
 
-### Cuánto tarda un N1 en llegar a N2 de media en España?
+### ¿Cuánto tarda un N1 en llegar a N2 de media en España?
 
 La media está entre 2 y 3 años, pero la variabilidad es enorme. Un N1 en un SOC bien estructurado con mentoring activo, exposición a incidentes reales y apoyo para certificaciones puede hacer la transición en 18-24 meses. Un N1 en un SOC de volumen con rotación alta y sin plan de carrera puede tardar 4-5 años o estancarse indefinidamente. La clave está en buscar activamente la exposición a táreas de N2 (investigación de incidentes, threat hunting básico, creación de playbooks) incluso antes de la promoción formal.

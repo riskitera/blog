@@ -17,7 +17,7 @@ La Directiva NIS2 (UE 2022/2555) obliga a miles de empresas españolas a impleme
 
 <!--more-->
 
-## Cuáles son los requisitos de NIS2 para empresas españolas?
+## ¿Cuáles son los requisitos de NIS2 para empresas españolas?
 
 NIS2 establece tres bloques de requisitos obligatorios para todas las entidades afectadas:
 
@@ -29,7 +29,7 @@ NIS2 establece tres bloques de requisitos obligatorios para todas las entidades 
 
 Además, NIS2 introduce obligaciones sobre la seguridad de la cadena de suministro, que afectan a todas las empresas que prestan servicios a entidades reguladas, aunque ellas mismas no sean entidades esenciales o importantes.
 
-## Qué medidas de gestión de riesgos exige NIS2?
+## ¿Qué medidas de gestión de riesgos exige NIS2?
 
 El Artículo 21 de NIS2 establece diez medidas mínimas de gestión de riesgos:
 
@@ -53,7 +53,7 @@ El Artículo 21 de NIS2 establece diez medidas mínimas de gestión de riesgos:
 
 10. **Autenticación multifactor y comunicaciones seguras**: MFA para accesos críticos y uso de comunicaciones cifradas dentro de la organización.
 
-## Cómo debe ser la notificación de incidentes bajo NIS2?
+## ¿Cómo debe ser la notificación de incidentes bajo NIS2?
 
 NIS2 establece plazos estrictos y escalonados para la notificación de incidentes significativos:
 
@@ -67,7 +67,7 @@ Un incidente se considera **significativo** si ha causado o puede causar: pertur
 
 La autoridad competente en España será el CCN-CERT para el sector público y el INCIBE-CERT para el sector privado. Las entidades deben establecer canales de comunicación previamente acordados con estas autoridades.
 
-## Qué requisitos de gobernanza establece NIS2?
+## ¿Qué requisitos de gobernanza establece NIS2?
 
 NIS2 introduce una novedad fundamental: la responsabilidad directa de la dirección (Artículo 20). Los órganos de dirección de las entidades afectadas deben:
 
@@ -80,7 +80,7 @@ Esto significa que los consejeros delegados, directores generales y miembros del
 
 {{< cta type="tofu" text="Riskitera mapea automáticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
 
-## Qué empresas están obligadas a cumplir NIS2 en España?
+## ¿Qué empresas están obligadas a cumplir NIS2 en España?
 
 NIS2 clasifica las entidades en dos categorías:
 
@@ -105,7 +105,7 @@ NIS2 clasifica las entidades en dos categorías:
 
 El criterio de tamaño: empresas medianas (50+ empleados o 10M+ EUR facturación) y grandes. Las micropymes y pymes pequeñas quedan fuera salvo excepciones (infraestructura digital crítica, monopolios regionales).
 
-## Cuál es el plazo para cumplir con NIS2?
+## ¿Cuál es el plazo para cumplir con NIS2?
 
 La Directiva NIS2 entró en vigor el 16 de enero de 2023. Los estados miembros tenían hasta el 17 de octubre de 2024 para transponerla a su legislación nacional. España no cumplió este plazo. La transposición está en trámite parlamentario y se espera completada en 2026.
 
@@ -129,7 +129,7 @@ La recomendación de ENISA y del CCN-CERT es no esperar a la transposición: los
 - [ ] Planificar pruebas de continuidad de negocio y recuperación
 - [ ] Documentar todo: políticas, procedimientos, evidencias y métricas
 
-## Qué sanciones hay por incumplir NIS2 en España?
+## ¿Qué sanciones hay por incumplir NIS2 en España?
 
 NIS2 establece sanciones máximas a nivel europeo que la legislación nacional debe respetar:
 
@@ -149,22 +149,22 @@ Además, NIS2 permite sanciones personales a los directivos responsables, incluy
 
 ## Preguntas frecuentes
 
-### Mi empresa tiene 45 empleados, le aplica NIS2?
+### ¿Mi empresa tiene 45 empleados, le aplica NIS2?
 
 Si tu empresa opera en un sector cubierto por NIS2 pero tiene menos de 50 empleados y factura menos de 10 millones de euros, en principio no le aplica NIS2 directamente. Sin embargo, hay excepciones: si eres proveedor de servicios DNS, TLD, proveedor de servicios de confianza o tu servicio es crítico para una entidad regulada, puedes estar obligado independientemente del tamaño.
 
-### NIS2 sustituye al ENS?
+### ¿NIS2 sustituye al ENS?
 
 No. NIS2 y el ENS son marcos complementarios. El ENS seguirá siendo obligatorio para el sector público. NIS2 añade requisitos adicionales para entidades esenciales e importantes, tanto públicas como privadas. Los organismos públicos afectados por ambos deberán cumplir ambos marcos simultáneamente.
 
-### Cómo se relaciona NIS2 con DORA?
+### ¿Cómo se relaciona NIS2 con DORA?
 
 DORA (Digital Operational Resilience Act) es la normativa específica para el sector financiero. NIS2 reconoce expresamente que DORA es lex specialis: las entidades financieras sujetas a DORA cumplen los requisitos de NIS2 a través de DORA. No hay doble cumplimiento, pero si la entidad presta servicios no financieros cubiertos por NIS2, deberá cumplir ambos.
 
-### Necesito un CISO para cumplir NIS2?
+### ¿Necesito un CISO para cumplir NIS2?
 
 NIS2 no exige explícitamente un CISO, pero exige que la dirección apruebe y supervise las medidas de seguridad. En la práctica, las organizaciones medianas y grandes necesitan al menos un responsable de ciberseguridad dedicado que reporte directamente a la dirección. Este rol puede ser interno o externalizado, pero la responsabilidad sigue siendo de la dirección.
 
-### Qué diferencia hay entre NIS2 y el RGPD en cuanto a notificación de incidentes?
+### ¿Qué diferencia hay entre NIS2 y el RGPD en cuanto a notificación de incidentes?
 
 El RGPD exige notificar brechas de datos personales a la AEPD en 72 horas. NIS2 exige una alerta temprana en 24 horas para incidentes significativos (no solo los que afecten a datos personales), seguida de una notificación detallada en 72 horas y un informe final en un mes. Si un incidente afecta a datos personales y es significativo bajo NIS2, hay que notificar a ambas autoridades.

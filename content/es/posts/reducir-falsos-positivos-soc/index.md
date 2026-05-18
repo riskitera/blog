@@ -25,7 +25,7 @@ Técnicas probadas para reducir falsos positivos en el SOC: tuning de reglas, en
 - La métrica clave no es solo el ratio de falsos positivos, sino el Alert Fatigue Index y el tiempo medio de triage por alerta.
 {{< /key-takeaways >}}
 
-## Por que son un problema los falsos positivos en el SOC?
+## ¿Por qué son un problema los falsos positivos en el SOC?
 
 Un falso positivo (FP) es una alerta que indica actividad maliciosa donde no la hay. Un login legítimo que se marca como sospechoso. Un escaneo de vulnerabilidades interno que dispara reglas de detección de intrusiones. Un backup nocturno que genera alertas de exfiltración de datos.
 
@@ -72,7 +72,7 @@ Antes de reducir falsos positivos, necesitas medirlos. Sin métricas, no sabes s
 
 Estos números son orientativos. Lo importante es establecer tu propia baseline y medir la tendencia.
 
-## Por que se generan falsos positivos: causas raíz
+## ¿Por qué se generan falsos positivos: causas raíz
 
 Entender por que se generan FPs es prerequisito para reducirlos. Las causas se agrupan en cuatro categorías.
 
@@ -94,7 +94,7 @@ Reglas con umbrales fijos ("más de 5 intentos de login fallidos en 10 minutos")
 
 Una alerta aislada tiene menos valor que un patrón de alertas correlaciónadas. "Login desde país inusual" por si solo puede ser un falso positivo (el usuario esta de viaje). "Login desde país inusual + acceso a datos sensibles + descarga masiva en 30 minutos" es un patrón que merece investigación inmediata. Sin correlación, cada alerta se evalúa en aislamiento, multiplicando los FPs.
 
-## Cómo hacer tuning de reglas de detección?
+## ¿Cómo hacer tuning de reglas de detección?
 
 El tuning de reglas es el mecanismo principal para reducir falsos positivos. No es un evento puntual sino un proceso continuo que requiere un workflow sistemático.
 
@@ -134,7 +134,7 @@ El tuning de reglas es el mecanismo principal para reducir falsos positivos. No 
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana." label="Ver demo SOC" >}}
 
-## Cómo usar enrichment automático para reducir ruido?
+## ¿Cómo usar enrichment automático para reducir ruido?
 
 El enrichment automático añade contexto a cada alerta antes de que llegue al analista. El objetivo es que el analista reciba una alerta con suficiente información para tomar una decisión rápida sin necesidad de investigación manual adicional.
 
@@ -205,7 +205,7 @@ El whitelisting (listas de exclusión) es la herramienta más directa para reduc
 
 UEBA (User and Entity Behavior Analytics) complementa las reglas estáticas con modelos de comportamiento que aprenden lo que es "normal" para cada usuario, dispositivo o servicio.
 
-### Cómo funciona UEBA
+### ¿Cómo funciona UEBA
 
 1. **Fase de aprendizaje (baselining).** Durante 2 a 4 semanas, el sistema observa el comportamiento de cada entidad: horarios de acceso, volúmenes de datos transferidos, aplicaciones usadas, ubicaciones de conexión, patrones de autenticación.
 
@@ -232,7 +232,7 @@ UEBA es especialmente efectivo para detectar técnicas de MITRE ATT&CK que son d
 - **T1071 (Application Layer Protocol):** Exfiltración por canales legitimos (HTTPS, DNS). Las reglas no pueden bloquear HTTPS. UEBA detecta volúmenes o destinos anómalos.
 - **T1560 (Archive Collected Data):** Compresión de datos antes de exfiltración. Regla estática: "alerta si se ejecuta 7zip". UEBA: "alerta si este usuario nunca usa 7zip y comprime 2GB en un directorio sensible".
 
-## Cómo aplicar machine learning para clasificar alertas?
+## ¿Cómo aplicar machine learning para clasificar alertas?
 
 Machine learning (ML) va un paso más allá de UEBA. En lugar de solo detectar anomalías, ML puede clasificar alertas como TP o FP basándose en patrones históricos, reduciendo la carga del analista.
 
@@ -353,22 +353,22 @@ Reuniendo todas las técnicas anteriores, este es el workflow que recomendamos p
 
 ## Preguntas frecuentes
 
-### Es mejor desactivar una regla que genera muchos falsos positivos o intentar tunearla?
+### ¿Es mejor desactivar una regla que genera muchos falsos positivos o intentar tunearla?
 
 Depende del valor de la regla. Si la regla cubre una técnica crítica de MITRE ATT&CK y ha generado verdaderos positivos en el pasado, el esfuerzo de tuning merece la pena. Si la regla nunca ha generado un TP en 6 meses, cubre una técnica de bajo riesgo para tu entorno y consume tiempo de analista, desactivarla es la decisión correcta. Documentar siempre la decisión, el riesgo aceptado y la fecha de revisión. Una regla desactivada con documentación es mejor que una regla activa que nadie investiga.
 
-### Cuánto tiempo tarda en notarse la reducción de falsos positivos después de empezar un programa de tuning?
+### ¿Cuánto tiempo tarda en notarse la reducción de falsos positivos después de empezar un programa de tuning?
 
 Los quick wins se notan en la primera semana. Tunear las 5 reglas con más FPs puede reducir el volumen total de alertas entre un 20% y un 40%. El impacto completo del programa (incluyendo enrichment, correlación y UEBA) se consolida en 2 a 3 meses. Es importante medir desde el día uno para demostrar progreso incremental. Un error común es esperar a tener "todo listo" antes de medir: las métricas parciales también son valiosas para justificar la continuidad del programa.
 
-### El machine learning puede reemplazar el tuning manual de reglas?
+### ¿El machine learning puede reemplazar el tuning manual de reglas?
 
 No. ML complementa el tuning manual, no lo reemplaza. El tuning manual corrige defectos estructurales en las reglas (umbrales incorrectos, falta de contexto, exclusiones necesarias). ML clasifica alertas que son ambiguas incluso para reglas bien tuneadas. Un SOC que solo usa ML sin tunear sus reglas tendrá un modelo que aprende a compensar reglas malas, lo cual es frágil y se degrada rápido. El orden correcto es: primero tunear reglas, después enriquecer, después aplicar ML sobre una base sólida.
 
-### Cómo evitar que el whitelisting cree puntos ciegos de seguridad?
+### ¿Cómo evitar que el whitelisting cree puntos ciegos de seguridad?
 
 Tres medidas concretas. Primera: especificidad máxima en cada entrada (nunca "excluir todo el tráfico de IP X", sino condiciones combinadas de IP + puerto + proceso + ventana temporal). Segunda: expiración automática de cada entrada (30 a 90 días según el riesgo) con revisión obligatoria para renovar. Tercera: registro de auditoría inmutable de cada cambio en el whitelist (quien, cuando, por que, que riesgo acepta). Además, ejecutar ejercicios de red team periódicamente que incluyan escenarios que deberían ser detectados a pesar de los whitelists. Si el red team pasa desapercibido por una exclusión demasiado amplia, ajustar inmediatamente.
 
-### Qué herramientas open-source ayudan a reducir falsos positivos?
+### ¿Qué herramientas open-source ayudan a reducir falsos positivos?
 
 Varias opciones cubren diferentes aspectos. Para detection engineering y reglas: Sigma (formato estándar de reglas) permite compartir y reutilizar reglas tuneadas por la comunidad. Para SIEM con capacidades de correlación: Wazuh (open-source, incluye HIDS, correlación básica y enrichment). Para enrichment de CTI: MISP (plataforma de inteligencia de amenazas) y OpenCTI (gestión de CTI con integraciónes a MITRE ATT&CK). Para UEBA básico: Apache Spot o soluciones custom con Elasticsearch ML. Para orquestación y automatización: Shuffle SOAR (open-source, integrable con SIEM y fuentes de enrichment). El ecosistema open-source es sólido para SOCs que tienen equipo técnico para operar y mantener estas herramientas.

@@ -25,7 +25,7 @@ Guía práctica de Zero Trust para empresas: principios reales, componentes téc
 - Los errores más comunes son tratar Zero Trust como un proyecto puntual, ignorar la experiencia de usuario y no medir la madurez.
 {{< /key-takeaways >}}
 
-## Qué es Zero Trust y por que importa?
+## ¿Qué es Zero Trust y por que importa?
 
 El concepto de Zero Trust nació en 2010 de la mano de John Kindervag, entonces analista en Forrester Research. Su premisa era sencilla pero radical: dejar de confiar en cualquier entidad por el mero hecho de estar dentro del perímetro de la red corporativa. Diez años después, el [NIST público la Special Publication 800-207](https://csrc.nist.gov/pubs/sp/800/207/final), que formalizó la arquitectura Zero Trust como un marco de referencia para agencias federales y, por extensión, para cualquier organización que quiera proteger sus activos de forma moderna.
 
@@ -131,7 +131,7 @@ Los datos son el objetivo último de cualquier atacante. La protección Zero Tru
 
 En entornos multi-tenant (como plataformas SaaS), el RLS es especialmente crítico. Cada consulta a la base de datos debe filtrar automáticamente por el tenant del usuario autenticado, sin depender de la lógica de la aplicación.
 
-## Cómo implementar Zero Trust paso a paso
+## ¿Cómo implementar Zero Trust paso a paso
 
 La implementación de Zero Trust no es un proyecto de 6 meses con un entregable final. Es una transformación continua que se aborda en fases. Intentar implementar todo a la vez es la receta para el fracaso.
 
@@ -220,7 +220,7 @@ Lo relevante de BeyondCorp no es la tecnología específica de Google (que pocos
 
 La microsegmentación es el componente que más impacto tiene en la reducción del riesgo de movimiento lateral, pero también el más complejo de implementar correctamente.
 
-### Qué es exactamente
+### ¿Qué es exactamente
 
 En una red tradicional (red plana), cualquier dispositivo puede comunicarse con cualquier otro. La microsegmentación divide la red en segmentos granulares, donde cada comunicación entre segmentos requiere una política explicita. Conceptualmente, es como pasar de un edificio de oficinas con todas las puertas abiertas a uno donde cada puerta tiene un control de acceso que verifica quien eres, a donde vas y por que.
 
@@ -348,22 +348,22 @@ El enfoque más inteligente es empezar con lo que ya tienes (la mayoría de orga
 
 ## Preguntas frecuentes
 
-### Zero Trust significa que no confio en mis empleados?
+### ¿Zero Trust significa que no confío en mis empleados?
 
 No. Zero Trust no es una cuestion de confianza personal, sino de diseñó de sistemas. Se trata de eliminar la confianza implícita en la infraestructura. Un empleado de confianza puede tener su portátil comprometido sin saberlo. Un proveedor fiable puede sufrir una brecha en su cadena de suministro. Zero Trust protege a la organización y a los propios empleados al verificar cada acceso de forma automática, independientemente de quien lo realice. La confianza en las personas sigue existiendo; lo que desaparece es la confianza ciega en la red y los dispositivos.
 
-### Necesito eliminar mi VPN para implementar Zero Trust?
+### ¿Necesito eliminar mi VPN para implementar Zero Trust?
 
 No necesariamente, aunque a medio plazo la VPN tradicional tiende a ser reemplazada. En la Fase 2 de una implementación típica, se despliega ZTNA (Zero Trust Network Access) como alternativa que ofrece acceso granular por aplicación en lugar de acceso completo a la red. Muchas organizaciones mantienen la VPN durante la transición para sistemas legacy que no soportan acceso basado en identidad. El objetivo final es que cada recurso sea accesible de forma segura sin necesidad de un tunel de red completo, como demostró Google con BeyondCorp.
 
-### Cuánto tiempo lleva implementar Zero Trust de forma completa?
+### ¿Cuánto tiempo lleva implementar Zero Trust de forma completa?
 
 No existe un "Zero Trust completo" como estado final. La transformación es continúa. Sin embargo, se pueden establecer hitos: visibilidad básica en 3 meses, identidad consolidada con MFA en 6 meses, microsegmentación de activos críticos en 12 meses y automatización de respuesta en 18 meses. El modelo de madurez CISA ofrece un marco para medir el progreso. Lo importante es empezar con ganancias rápidas (MFA, inventario de activos) y avanzar de forma iterativa sin intentar abarcar todo a la vez.
 
-### Zero Trust es solo para grandes empresas?
+### ¿Zero Trust es solo para grandes empresas?
 
 No. Los principios aplican a cualquier tamaño de organización. Una PYME puede implementar Zero Trust con herramientas asequibles: Keycloak como IdP, MFA con llaves FIDO2 de bajo coste, Tailscale para acceso seguro a servicios internos, Wazuh como SIEM open-source y Row-Level Security en la base de datos. Lo que cambia es la escala y complejidad, no los principios. De hecho, una empresa pequeña puede alcanzar un nivel de madurez alto más rápidamente porque tiene menos sistemas legacy y menos deuda técnica.
 
-### Cómo se alinea Zero Trust con ISO 27001?
+### ¿Cómo se alinea Zero Trust con ISO 27001?
 
 ISO 27001 exige un sistema de gestión de seguridad de la información (SGSI) con controles del Anexo A que cubren acceso, criptografia, seguridad de red, seguridad de operaciones y gestión de activos. Todos estos dominios se mapean directamente a los pilares Zero Trust. Implementar Zero Trust no solo facilita la certificación ISO 27001, sino que la hace más robusta porque los controles son continuos y verificables en tiempo real, en lugar de basarse en revisiones periódicas. Las auditorías se simplifican cuando cada acceso esta autenticado, autorizado y registrado de forma automática.

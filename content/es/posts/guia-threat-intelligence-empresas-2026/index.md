@@ -26,7 +26,7 @@ Guía definitiva de threat intelligence para empresas en 2026: tipos, ciclo de i
 - El ROI de un programa de TI se mide en reducción de tiempo de detección, reducción de falsos positivos, mejora de la postura de seguridad y cumplimiento regulatorio demostrable.
 {{< /key-takeaways >}}
 
-## Qué es la threat intelligence y por que la necesitas en 2026
+## ¿Qué es la threat intelligence y por que la necesitas en 2026
 
 La threat intelligence (inteligencia sobre amenazas o CTI, Cyber Threat Intelligence) es el proceso de recopilar, procesar, analizar y diseminar información sobre amenazas actuales y potenciales que afectan a una organización. Su objetivo final es permitir decisiones informadas de seguridad, desde el nivel técnico (que regla escribir en el firewall) hasta el estratégico (cuanto invertir en seguridad el próximo año).
 
@@ -372,7 +372,7 @@ La elección de plataforma depende del nivel de madurez, presupuesto y necesidad
 - **Nivel 1-2 (Reactiva/Proactiva):** MISP como hub central + un feed comercial (Recorded Future o Anomali). Inversión: 50-100k EUR.
 - **Nivel 2-3 (Proactiva/Predictiva):** plataforma comercial completa + MISP para intercambio comunitario + herramientas de análisis propias. Inversión: 100k+ EUR.
 
-## Cómo construir un equipo de threat intelligence
+## ¿Cómo construir un equipo de threat intelligence
 
 La tecnología sin personas que la operen no genera inteligencia. Estos son los roles necesarios según el tamaño del programa.
 
@@ -438,7 +438,7 @@ La [Directiva NIS2](https://www.enisa.europa.eu/) aplica a entidades esenciales 
 
 **Implicación práctica:** las entidades financieras necesitan no solo consumir TI, sino participar activamente en compartirla con sus pares y reguladores.
 
-### Cómo demostrar cumplimiento
+### ¿Cómo demostrar cumplimiento
 
 Para auditorías y verificaciones regulatorias, documenta:
 
@@ -449,7 +449,7 @@ Para auditorías y verificaciones regulatorias, documenta:
 5. **Métricas de efectividad** (tiempo de detección, falsos positivos reducidos, cobertura ATT&CK)
 6. **Participación en intercambio** (ISACs, CERTs, acuerdos bilaterales)
 
-## Cómo medir el ROI de un programa de threat intelligence
+## ¿Cómo medir el ROI de un programa de threat intelligence
 
 Uno de los retos más comunes es justificar la inversión en TI ante la dirección. Estas métricas permiten cuantificar el valor del programa.
 
@@ -562,22 +562,22 @@ Los modelos de intercambio (ISACs, CERTs sectoriales, acuerdos bilaterales) est�
 
 ## Preguntas frecuentes
 
-### Qué diferencia hay entre threat intelligence y un feed de IoCs?
+### ¿Qué diferencia hay entre threat intelligence y un feed de IoCs?
 
 Un feed de IoCs es una fuente de datos técnicos (IPs, dominios, hashes) que puede alimentar un SIEM o firewall. La threat intelligence es un proceso más amplio que incluye recopilación, análisis, contextualización y producción de inteligencia accionable a múltiples niveles (estratégico, táctico, operativo, técnico). Los IoCs son un output del proceso de TI, pero la inteligencia incluye contexto sobre quien ataca, por que, como y que significa para tu organización. Un feed sin análisis es ruido. La inteligencia es señal.
 
-### Cuánto cuesta implementar un programa de threat intelligence?
+### ¿Cuánto cuesta implementar un programa de threat intelligence?
 
 Depende del nivel de madurez objetivo. Un programa básico (nivel reactivo) puede implementarse con herramientas open source gratuitas (MISP, feeds de Abuse.ch, MITRE ATT&CK) y un analista a tiempo parcial: coste en software cero, coste en personal variable. Un programa intermedio (nivel proactivo) con plataforma comercial y equipo dedicado requiere 100-200k EUR anuales. Un programa avanzado (predictivo) con equipo completo y múltiples plataformas puede superar los 500k EUR anuales. La recomendación es empezar pequeño, demostrar ROI, y escalar la inversión.
 
-### Necesito threat intelligence si ya tengo un SOC?
+### ¿Necesito threat intelligence si ya tengo un SOC?
 
 Sí. Un SOC sin TI opera en modo reactivo: responde a alertas sin contexto sobre quien ataca ni por que. La TI transforma el SOC de reactivo a proactivo, reduciendo falsos positivos (los analistas investigan lo relevante), mejorando tiempos de detección (se buscan IoCs antes de que generen incidentes) y permitiendo threat hunting dirigido. Los datos muestran que un SOC con TI integrada reduce el MTTD en un 30-50% y el MTTR en un 25-40%.
 
-### Cómo empiezo si mi organización no tiene experiencia en TI?
+### ¿Cómo empiezo si mi organización no tiene experiencia en TI?
 
 Empieza con tres pasos sencillos. Primero, define 3-5 PIRs básicos (que amenazas son relevantes para tu sector y organización). Segundo, configura MISP con feeds gratuitos (Abuse.ch, AlienVault OTX, CIRCL feeds) e integra los IoCs con tu SIEM. Tercero, designa un responsable que dedique al menos 8 horas semanales a revisar la inteligencia recibida, analizar su relevancia y producir un informe mensual para el CISO. En 3-6 meses tendrás un programa básico funcional que podras ir madurando.
 
-### La TI es obligatoria según NIS2?
+### ¿La TI es obligatoria según NIS2?
 
 No se menciona la palabra "threat intelligence" explícitamente en NIS2, pero los requisitos del artículo 21 (gestión de riesgos, análisis de amenazas, gestión de incidentes, seguridad de la cadena de suministro) son practicamente imposibles de cumplir sin un programa de TI. ENISA recomienda explícitamente la monitorización de amenazas y el intercambio de información como prácticas esenciales. DORA si menciona explícitamente el intercambio de información sobre amenazas ciber para entidades financieras. En la práctica, cualquier organización sujeta a NIS2 o DORA necesita capacidades de TI documentadas.

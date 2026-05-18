@@ -18,19 +18,19 @@ El Ayuntamiento de Oviedo, con una población de 220.000 de habitantes, está ob
 
 <!--more-->
 
-## Qué requisitos de ciberseguridad debe cumplir el Ayuntamiento de Oviedo?
+## ¿Qué requisitos de ciberseguridad debe cumplir el Ayuntamiento de Oviedo?
 
 El Ayuntamiento de Oviedo debe cumplir el ENS (Real Decreto 311/2022) en todos los sistemas que soporten servicios públicos electrónicos. Dada la población de 220.000 y los sectores económicos de la ciudad (administración, sanidad, educación), la mayoría de sus sistemas críticos requerirán nivel ENS medio o alto.
 
 Además, con la transposición de NIS2, los servicios esenciales del municipio (abastecimiento de agua, transporte público, gestión de residuos) quedarán sujetos a requisitos adicionales de gestión de riesgos y notificación de incidentes.
 
-## Qué nivel ENS necesita el Ayuntamiento de Oviedo?
+## ¿Qué nivel ENS necesita el Ayuntamiento de Oviedo?
 
 Los sistemas críticos del Ayuntamiento de Oviedo (padrón, sede electrónica, gestión tributaria, policía local) requieren como mínimo nivel ENS medio. Los sistemas que gestionen datos especialmente sensibles (servicios sociales, datos de menores, policía local) deben categorizarse como nivel alto.
 
 La categorización debe realizarse sistema por sistema, evaluando el impacto de un incidente de seguridad sobre la confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad de la información.
 
-## Cómo puede el Ayuntamiento de Oviedo empezar a cumplir el ENS?
+## ¿Cómo puede el Ayuntamiento de Oviedo empezar a cumplir el ENS?
 
 1. **Designar un responsable de seguridad** con dedicación y formación
 2. **Inventariar todos los sistemas** de información municipales
@@ -41,11 +41,11 @@ La categorización debe realizarse sistema por sistema, evaluando el impacto de 
 7. **Someterse a auditoría** de cumplimiento ENS
 8. **Mantener el cumplimiento continuo** con revisiones periódicas
 
-## Qué herramientas gratuitas del CCN puede usar el Ayuntamiento de Oviedo?
+## ¿Qué herramientas gratuitas del CCN puede usar el Ayuntamiento de Oviedo?
 
 El CCN-CERT pone a disposición de todas las administraciones públicas herramientas gratuitas: PILAR para el análisis de riesgos, INES para reportar el estado de cumplimiento del ENS, LUCIA para la gestión de ciberincidentes, microCLAUDIA para la protección de endpoints y REYES para la gestión de ciberinteligencia.
 
-## Qué impacto tiene un ciberataque en un ayuntamiento como Oviedo?
+## ¿Qué impacto tiene un ciberataque en un ayuntamiento como Oviedo?
 
 Un ciberataque al Ayuntamiento de Oviedo afectaría directamente a 220.000 de ciudadanos. Los servicios de padrón, gestión tributaria, sede electrónica y servicios sociales quedarían interrumpidos. Según el CCN-CERT, el tiempo medio de recuperación de un ayuntamiento español tras un ataque de ransomware es de 23 días, con un coste directo que puede superar los 200.000 euros.
 
@@ -53,15 +53,15 @@ Un ciberataque al Ayuntamiento de Oviedo afectaría directamente a 220.000 de ci
 
 ## Preguntas frecuentes
 
-### Cuánto cuesta al Ayuntamiento de Oviedo cumplir el ENS?
+### ¿Cuánto cuesta al Ayuntamiento de Oviedo cumplir el ENS?
 
 El coste depende del número de sistemas y del nivel de seguridad requerido. Para un ayuntamiento del tamaño de Oviedo, el presupuesto total (consultoría, implementación y auditoría) oscila entre 30.000 y 100.000 euros para nivel medio-alto. Las herramientas del CCN son gratuitas.
 
-### Puede el Ayuntamiento de Oviedo externalizar el cumplimiento del ENS?
+### ¿Puede el Ayuntamiento de Oviedo externalizar el cumplimiento del ENS?
 
 Sí. Muchos ayuntamientos trabajan con empresas especializadas en ciberseguridad que ayudan en la implementación y el mantenimiento del ENS. Lo que no puede externalizarse es la responsabilidad: el responsable de seguridad del ayuntamiento sigue siendo el último responsable del cumplimiento.
 
-### Cómo afecta NIS2 al Ayuntamiento de Oviedo?
+### ¿Cómo afecta NIS2 al Ayuntamiento de Oviedo?
 
 NIS2 amplía las obligaciones de ciberseguridad a los servicios municipales esenciales. El Ayuntamiento de Oviedo deberá notificar incidentes significativos en menos de 24 horas, implementar gestión de riesgos a nivel de dirección y garantizar la seguridad de su cadena de suministro TIC.
 

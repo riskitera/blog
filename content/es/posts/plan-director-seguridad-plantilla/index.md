@@ -25,7 +25,7 @@ Guía completa para elaborar un plan director de seguridad de la información: e
 - Errores comunes como omitir la fase de análisis previo o no asignar responsables concretos pueden invalidar todo el esfuerzo.
 {{< /key-takeaways >}}
 
-## Qué es un plan director de seguridad
+## ¿Qué es un plan director de seguridad
 
 Un plan director de seguridad (PDS) es el documento estratégico que define como una organización va a proteger sus activos de información durante un periodo determinado, normalmente entre uno y tres años. No es un documento técnico aislado: es la hoja de ruta que conecta la estrategia de negocio con las medidas de protección necesarias para operar con garantías.
 
@@ -33,7 +33,7 @@ El PDS responde a tres preguntas fundamentales:
 
 1. **Donde estamos ahora** en materia de seguridad (análisis de situación actual).
 2. **Donde queremos llegar** (nivel de madurez objetivo, requisitos normativos).
-3. **Como vamos a llegar** (proyectos, recursos, plazos, responsables).
+3. **¿Cómo vamos a llegar** (proyectos, recursos, plazos, responsables).
 
 A diferencia de una política de seguridad (que establece principios generales) o de un procedimiento operativo (que detalla cómo ejecutar una tarea concreta), el plan director opera a nivel estratégico. Es el puente entre la declaración de intenciones de la alta dirección y la ejecución técnica del equipo de seguridad.
 
@@ -317,7 +317,7 @@ Supongamos un PDS con 10 proyectos. Tras la evaluación:
 
 En este caso, MFA, SIEM y Backup comparten puntuación máxima. MFA tiene la menor complejidad, así que sería el primer quick win. El SIEM tiene mayor complejidad, así que requiere más planificación y se programa para un segundo trimestre.
 
-## Cómo estimar el presupuesto del plan director
+## ¿Cómo estimar el presupuesto del plan director
 
 El presupuesto es donde muchos PDS se caen. Si la estimación no es realista, la dirección no aprueba; si es demasiado optimista, los proyectos se quedan sin fondos a medio camino.
 
@@ -348,7 +348,7 @@ Los datos del sector ayudan a contextualizar el presupuesto:
 - **Programa de concienciación**: entre 5.000 EUR y 30.000 EUR anuales dependiendo del tamaño de la plantilla y la plataforma elegida.
 - **Auditoría ENS**: entre 15.000 EUR y 50.000 EUR por ciclo de auditoría, según el alcance.
 
-### Cómo presentar el presupuesto a la dirección
+### ¿Cómo presentar el presupuesto a la dirección
 
 La dirección no quiere ver una lista de partidas técnicas. Quiere entender la relación coste-beneficio. Prepara:
 
@@ -387,7 +387,7 @@ Un PDS de 12 meses para una organización mediana (200 a 500 empleados) podría 
 
 Este cronograma es una referencia. Cada organización debe adaptarlo a su contexto, pero el principio es siempre el mismo: fundamentos primero, protección después, madurez continua.
 
-## Cómo conseguir la aprobación de la dirección
+## ¿Cómo conseguir la aprobación de la dirección
 
 La mayor barrera para un PDS no es técnica: es política. Convencer a la dirección requiere hablar su idioma.
 
@@ -411,7 +411,7 @@ La dirección no entiende (ni necesita entender) que es un exploit de día cero.
 
 1. **Contexto regulatorio**: que nos obliga la ley (2 slides).
 2. **Estado actual**: resultado del análisis, principales riesgos (3 slides).
-3. **Que puede pasar si no actuamos**: escenarios de impacto con cifras (2 slides).
+3. **¿Qué puede pasar si no actuamos**: escenarios de impacto con cifras (2 slides).
 4. **El plan propuesto**: roadmap visual, proyectos principales (3 slides).
 5. **Presupuesto y ROI**: inversión vs riesgo evitado (2 slides).
 6. **Solicitud concreta**: aprobación del presupuesto y del mandato (1 slide).
@@ -535,22 +535,22 @@ Internet esta lleno de plantillas de PDS. Usarlas como punto de partida está bi
 
 ## Preguntas frecuentes
 
-### Cuánto tiempo se tarda en elaborar un plan director de seguridad?
+### ¿Cuánto tiempo se tarda en elaborar un plan director de seguridad?
 
 Depende del tamaño y complejidad de la organización. Para una pyme de 100 a 300 empleados, entre 6 y 10 semanas es un plazo realista. Para una organización grande (más de 1.000 empleados, múltiples sedes, regulación sectorial), puede llevar de 3 a 6 meses. La fase que más tiempo consume es el análisis de riesgos y la evaluación de madurez, que requiere entrevistas con múltiples áreas y recopilación de evidencias. No conviene acortar esta fase: un diagnóstico superficial produce un plan superficial.
 
-### Es obligatorio tener un plan director de seguridad?
+### ¿Es obligatorio tener un plan director de seguridad?
 
 Depende del sector y la normativa aplicable. Para administraciones públicas españolas y sus proveedores, el ENS (RD 311/2022) exige una planificación formal de la seguridad. La directiva NIS2 obliga a operadores de servicios esenciales e importantes a contar con medidas de gestión de riesgos documentadas. DORA impone requisitos similares al sector financiero. ISO 27001, aunque voluntaria, exige planificación de objetivos de seguridad (cláusula 6.2). Aunque para empresas privadas fuera de estos ámbitos no existe una obligación directa, tener un PDS es la forma más eficaz de demostrar diligencia debida en caso de incidente o inspección de la AEPD.
 
-### Cuál es la diferencia entre un plan director y una política de seguridad?
+### ¿Cuál es la diferencia entre un plan director y una política de seguridad?
 
 La política de seguridad es un documento de alto nivel que establece los principios, compromisos y directrices generales de la organización en materia de seguridad. Es relativamente corta (5 a 15 páginas), rara vez cambia y aplica a toda la organización. El plan director, en cambio, es el documento operativo que traduce esos principios en proyectos concretos con plazos, responsables y presupuesto. Tiene vigencia temporal (1 a 3 años) y se revisa periódicamente. La política dice "que queremos conseguir"; el PDS dice "como, cuando y con que recursos".
 
-### Puedo usar herramientas automatizadas para elaborar el plan director?
+### ¿Puedo usar herramientas automatizadas para elaborar el plan director?
 
 Sí, y cada vez es más recomendable. Herramientas de GRC como las que ofrece Riskitera automatizan la recopilación de evidencias, el análisis de gaps contra marcos normativos (ENS, NIS2, ISO 27001) y la generación de informes de madurez. Esto reduce el tiempo de la fase de diagnóstico y mejora la precisión. La herramienta PILAR del CCN-CERT es la referencia para el análisis de riesgos bajo MAGERIT en el ámbito público. Sin embargo, la herramienta no sustituye el juicio humano: la priorización de proyectos, la estimación de presupuesto y la negociación con la dirección requieren experiencia y conocimiento del contexto.
 
-### Con que frecuencia hay que actualizar el plan director?
+### ¿Con qué frecuencia hay que actualizar el plan director?
 
 El PDS debe revisarse formalmente al menos una vez al año, con seguimiento trimestral de avance. Además, debe actualizarse de forma extraordinaria cuando se produzcan cambios significativos: una nueva normativa aplicable, un incidente grave, una fusión o adquisición, un cambio importante en la infraestructura tecnológica o una modificación sustancial del presupuesto. El ENS exige que el análisis de riesgos se revise cuando cambian las condiciones que lo motivaron. En la práctica, un PDS que no se ha tocado en más de 18 meses probablemente no refleje la situación real de la organización.

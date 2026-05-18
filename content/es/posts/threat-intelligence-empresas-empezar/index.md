@@ -25,7 +25,7 @@ Guía práctica para que empresas españolas comiencen con threat intelligence s
 - La operacionalización de la inteligencia (convertirla en reglas SIEM, políticas de bloqueo y decisiones de negocio) es lo que diferencia un programa funcional de uno decorativo.
 {{< /key-takeaways >}}
 
-## Qué es la threat intelligence y por que la necesita tu empresa
+## ¿Qué es la threat intelligence y por que la necesita tu empresa
 
 La Threat Intelligence (CTI, Cyber Threat Intelligence) es el proceso de recopilar, procesar y analizar información sobre amenazas cibernéticas para tomar decisiones informadas. No es una herramienta ni un producto. Es una función que transforma datos en bruto (IPs maliciosas, hashes de malware, reportes de vulnerabilidades) en conocimiento accionable para proteger tu organización.
 
@@ -231,7 +231,7 @@ Si MISP y OpenCTI te parecen demasiado para empezar, Yeti es una alternativa má
 
 Yeti es ideal para un equipo de 1-2 personas que quiere estructurar su inteligencia antes de invertir en plataformas más complejas.
 
-## Cómo integrar threat intelligence en tu SOC
+## ¿Cómo integrar threat intelligence en tu SOC
 
 La inteligencia que no se operacionaliza es información muerta. La integración con el SOC es donde el programa CTI genera retorno real.
 
@@ -304,7 +304,7 @@ La inteligencia alimenta las hipótesis de threat hunting. El proceso:
 
 {{< cta type="tofu" text="Riskitera integra threat intelligence con detección y respuesta automatizada. IA soberana que operacionaliza tu inteligencia sin que los datos salgan de tu infraestructura." label="Ver demo CTI" >}}
 
-## Cómo construir tu programa de CTI desde cero: plan de 90 días
+## ¿Cómo construir tu programa de CTI desde cero: plan de 90 días
 
 Si empiezas sin nada, este es un roadmap realista para 90 días con un equipo de 1-2 personas dedicando parcialmente su tiempo.
 
@@ -391,7 +391,7 @@ Si no puedes demostrar que el programa CTI aporta valor, será el primero en per
 - Número de acciones preventivas implementadas gracias a inteligencia (parches priorizados, reglas creadas, bloqueos aplicados).
 - Feedback cualitativo de los stakeholders.
 
-## Cuándo invertir en threat intelligence de pago
+## ¿Cuándo invertir en threat intelligence de pago
 
 La pregunta no es "debería pagar por CTI?" sino "en que momento mi programa necesita fuentes comerciales?"
 
@@ -403,7 +403,7 @@ La pregunta no es "debería pagar por CTI?" sino "en que momento mi programa nec
 - **Necesitas monitorizar la dark web.** La monitorización de foros, mercados y canales de Telegram donde se venden credenciales o se planifican ataques requiere herramientas especializadas (y precauciones legales).
 - **Compliance o regulación lo exige.** Sectores regulados (banca, infraestructuras críticas) pueden tener requisitos de compartición o consumo de inteligencia que las fuentes gratuitas no satisfacen documentalmente.
 
-### Qué evaluar en un proveedor comercial
+### ¿Qué evaluar en un proveedor comercial
 
 Si decides invertir, evalúa:
 
@@ -444,22 +444,22 @@ La mayoría de empresas españolas están en nivel 0 o 1. Llegar a nivel 2-3 en 
 
 ## Preguntas frecuentes
 
-### Cuantas personas necesito para un programa de CTI básico?
+### ¿Cuántas personas necesito para un programa de CTI básico?
 
 Una persona dedicando el 50% de su tiempo puede mantener un programa de nivel 2 (feeds integrados, informe semanal). Para nivel 3 (MISP operativo, hunting basado en CTI, análisis propio), necesitas al menos una persona a tiempo completo. En muchas PYMES españolas, el rol de CTI lo asume un analista SOC senior como función complementaria. Lo importante no es el número de personas sino la constancia: 4 horas a la semana de CTI consistente aportan más valor que 40 horas puntuales una vez al trimestre.
 
-### Es legal monitorizar la dark web para obtener threat intelligence?
+### ¿Es legal monitorizar la dark web para obtener threat intelligence?
 
 La observación pasiva de foros y mercados dark web accesibles (sin registrarse ni interactuar) es generalmente legal en España. Sin embargo, hay líneas que no debes cruzar: comprar credenciales robadas (aunque sean de tu propia empresa), interactuar con actores de amenaza haciéndote pasar por comprador, o acceder a sistemas cerrados sin autorización. La recomendación es limitar la monitorización dark web a servicios especializados que operan dentro del marco legal y dejar la investigación activa a las FCSE (Fuerzas y Cuerpos de Seguridad del Estado).
 
-### Cómo priorizo entre tantas fuentes de IOCs gratuitas?
+### ¿Cómo priorizo entre tantas fuentes de IOCs gratuitas?
 
 Empieza por calidad, no por cantidad. Tres fuentes bien integradas aportan más que quince mal gestionadas. Para una empresa española, la combinación recomendada es: (1) Abuse.ch (URLhaus + MalwareBazaar + ThreatFox) por su alta calidad y frescura; (2) AlienVault OTX por su amplitud y facilidad de integración; (3) CCN-CERT/INCIBE-CERT por su relevancia geográfica. Anade más fuentes solo cuando hayas validado que las primeras generan verdaderos positivos en tu entorno y no saturan al equipo.
 
-### Qué diferencia hay entre MISP y OpenCTI? Cuál debería usar?
+### ¿Qué diferencia hay entre MISP y OpenCTI? Cuál debería usar?
 
 MISP es mejor para la gestión operativa de IOCs: recopilar, normalizar, compartir y exportar indicadores al SIEM. OpenCTI es mejor para análisis y visualización: grafos de relaciones, dashboards y modelado de actores de amenaza. Para empezar, MISP es la opción recomendada porque es más ligero, tiene más documentación y cubre el caso de uso más básico (feeds a SIEM). Cuando tu programa madure al nivel 3-4 y necesites capacidades analiticas avanzadas, añade OpenCTI como capa de análisis encima de MISP (ambos se integran nativamente).
 
-### Cómo justificó el tiempo invertido en CTI ante dirección?
+### ¿Cómo justificó el tiempo invertido en CTI ante dirección?
 
 El argumento más efectivo son las acciones preventivas documentadas. Lleva un registro de cada vez que la inteligencia genero una acción: "El 15 de marzo, un IOC de MISP detecto una conexión a infraestructura C2 de Emotet desde un puesto de contabilidad. Se aisle el equipo en 4 minutos y se evite la propagación." Ese tipo de ejemplos concretos, con impacto estimado (coste medio de un incidente de ransomware en España según INCIBE: entre 100.000 y 2M EUR para PYMES), son mucho más convincentes que métricas abstractas como "número de IOCs procesados".

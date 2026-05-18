@@ -25,7 +25,7 @@ Guía práctica para definir SLAs de ciberseguridad: MTTR, MTTD, MTTC, benchmark
 - La automatización del triage y la correlación de alertas puede reducir el MTTD en un 60-80% respecto a procesos manuales.
 {{< /key-takeaways >}}
 
-## Qué son los SLAs en ciberseguridad?
+## ¿Qué son los SLAs en ciberseguridad?
 
 Un SLA (Service Level Agreement) en ciberseguridad es un compromiso formal, medible y contractualmente vinculante, que define los niveles mínimos de servicio que un equipo de seguridad (interno o externo) debe cumplir. No se trata de un documento decorativo para la carpeta de compliance: es la columna vertebral operativa de cualquier SOC que pretenda funcionar de forma profesional.
 
@@ -39,7 +39,7 @@ La importancia de los SLAs va mucho más allá de la relación con un proveedor 
 
 En España, el contexto regulatorio hace que los SLAs de ciberseguridad no sean opcionales para la administración pública ni para operadores de servicios esenciales. Son un requisito legal.
 
-## Qué significan MTTR, MTTD y MTTC?
+## ¿Qué significan MTTR, MTTD y MTTC?
 
 Las tres métricas fundamentales que vertebran los SLAs de cualquier SOC son MTTD, MTTC y MTTR. Vamos a desgranarlas una por una, porque confundirlas (algo habitual) puede llevar a SLAs que no reflejan la realidad operativa.
 
@@ -47,11 +47,11 @@ Las tres métricas fundamentales que vertebran los SLAs de cualquier SOC son MTT
 
 El MTTD mide el tiempo medio que transcurre desde que una amenaza o incidente se produce hasta que el SOC lo detecta. Es, probablemente, la métrica más crítica porque lo que no se detecta no se puede contener.
 
-**Que incluye el MTTD:**
+**¿Qué incluye el MTTD:**
 - Tiempo desde el compromiso inicial hasta que una regla de correlación, un analista o un feed de threat intelligence genera una alerta.
 - Incluye el tiempo de ingestion de logs, procesamiento por el SIEM y generación de la alerta.
 
-**Que NO incluye:**
+**¿Qué NO incluye:**
 - El tiempo de validación (eso es parte del triage).
 - El tiempo de respuesta (eso es MTTR).
 
@@ -61,7 +61,7 @@ El MTTD mide el tiempo medio que transcurre desde que una amenaza o incidente se
 
 El MTTC mide el tiempo desde que se confirma un incidente hasta que se contiene su propagación. Es la métrica que más directamente impacta en la reducción de daño.
 
-**Que incluye el MTTC:**
+**¿Qué incluye el MTTC:**
 - Aislamiento del sistema comprometido.
 - Bloqueo de cuentas afectadas.
 - Aplicación de reglas de firewall de emergencia.
@@ -90,7 +90,7 @@ Además de las tres principales, un SOC maduro debería medir:
 | Alert Volume | Número de alertas por día/semana | Variable por sector |
 | Escalation Rate | % de alertas escaladas a N2/N3 | 10-20% |
 
-## Cuáles son los benchmarks del sector?
+## ¿Cuáles son los benchmarks del sector?
 
 Los benchmarks de la industria son útiles como punto de partida, pero hay que interpretarlos con cuidado. Los números que publican IBM, Mandiant o Ponemon representan medias globales que incluyen desde grandes bancos con SOC 24x7 hasta pymes sin equipo de seguridad dedicado.
 
@@ -126,7 +126,7 @@ Estos objetivos son alcanzables con un equipo bien dimensionado, herramientas mo
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana." label="Ver demo SOC" >}}
 
-## Cómo definir SLAs realistas para tu SOC?
+## ¿Cómo definir SLAs realistas para tu SOC?
 
 Definir SLAs que sean a la vez ambiciosos y alcanzables requiere un enfoque metodico. No se trata de copiar los números de un benchmark y pegarlos en un contrato: se trata de entender la realidad operativa de tu organización y construir desde ahí.
 
@@ -179,7 +179,7 @@ Si contratas un proveedor de servicios de seguridad gestionados, ten en cuenta e
 - **Incluye cláusulas de mejora continua.** Los SLAs del primer año deben ser más laxos que los del tercero.
 - **Negocia créditos reales.** Un 5% de descuento en la factura mensual por incumplimiento no es una penalización sería si el incumplimiento genero un incidente de 500.000 euros.
 
-## Cómo medir y reportar SLAs de seguridad?
+## ¿Cómo medir y reportar SLAs de seguridad?
 
 Medir SLAs no es simplemente hacer un cálculo de tiempo. Requiere infraestructura, procesos y disciplina.
 
@@ -228,7 +228,7 @@ El reporting manual es insostenible y propenso a errores. Las organizaciones mad
 - **Alertas proactivas** cuando un SLA está en riesgo de incumplimiento (por ejemplo, un P1 que lleva 3 horas sin contenerse cuando el SLA es de 4 horas).
 - **Informes mensuales automatizados** que se generan y distribuyen sin intervención manual.
 
-## Cómo presentar SLAs en una auditoría?
+## ¿Cómo presentar SLAs en una auditoría?
 
 Las auditorías de seguridad (ya sean internas, de terceros o regulatorias bajo el ENS) examinan los SLAs desde tres angulos: definición, medición y cumplimiento.
 
@@ -262,7 +262,7 @@ Cuando te sientes con un auditor, presenta los SLAs con esta estructura:
 - **SLAs desactualizados.** Presentar SLAs definidos hace tres años que no reflejan la realidad actual del SOC.
 - **Confundir métricas.** Presentar el MTTR como tiempo de respuesta cuando en realidad mides tiempo de recuperación (o viceversa).
 
-## Qué pasa cuando se incumplen los SLAs?
+## ¿Qué pasa cuando se incumplen los SLAs?
 
 El incumplimiento de SLAs tiene consecuencias en tres dimensiones: contractual, operativa y regulatoria.
 
@@ -299,13 +299,13 @@ El marco de referencia [NIST SP 800-61](https://csrc.nist.gov/pubs/sp/800/61/r3/
 
 La diferencia entre un SOC que cumple sus SLAs de forma consistente y uno que lucha cada día para no incumplirlos suele estar en el nivel de automatización.
 
-### Qué automatizar para mejorar el MTTD
+### ¿Qué automatizar para mejorar el MTTD
 
 - **Ingestion y normalización de logs.** Cuanto más rápido lleguen los logs al SIEM y se normalicen, antes se puede detectar. Pipelines de ingestion optimizados con parsers pre-configurados para las fuentes más críticas.
 - **Reglas de correlación continuamente actualizadas.** Reglas SIGMA actualizadas semanalmente con feeds de threat intelligence.
 - **Detección basada en comportamiento (UEBA).** Complementar la detección basada en firmas con análisis de comportamiento que detecte anomalías sin necesidad de reglas específicas.
 
-### Qué automatizar para mejorar el MTTR
+### ¿Qué automatizar para mejorar el MTTR
 
 - **Triage automático.** Enriquecer cada alerta automáticamente con contexto (reputación de IP, hash del fichero, historial del usuario) antes de que llegue al analista.
 - **Playbooks de respuesta.** Automatizar las acciones de contención inmediata para escenarios conocidos: bloqueo de IP, aislamiento de host, desactivación de cuenta.
@@ -322,22 +322,22 @@ La automatización no sustituye al analista humano. Lo que hace es eliminar la f
 
 ## Preguntas frecuentes
 
-### Cuál es la diferencia entre MTTR y MTTC?
+### ¿Cuál es la diferencia entre MTTR y MTTC?
 
 El MTTC (Mean Time To Contain) mide el tiempo desde la confirmación de un incidente hasta que se contiene su propagación (aislamiento de sistemas, bloqueo de cuentas). El MTTR (Mean Time To Respond/Recover) es más amplio y abarca desde la detección hasta la restauración completa del servicio afectado. Un incidente puede estar contenido en 30 minutos pero no completamente resuelto hasta 3 días después. En los SLAs es fundamental especificar cual de las dos métricas se está utilizando para evitar malentendidos, especialmente en contratos con proveedores MSSP.
 
-### Qué SLAs de ciberseguridad exige el ENS?
+### ¿Qué SLAs de ciberseguridad exige el ENS?
 
 El ENS no define SLAs específicos como "MTTD < X horas". Lo que establece son obligaciones de notificación (al CCN-CERT en menos de 24 horas para incidentes de nivel alto o crítico) y requisitos de capacidad de respuesta proporcionales al nivel de seguridad (básico, medio, alto). Estas obligaciones se traducen indirectamente en SLAs internos: si tienes que notificar en 24 horas, tu MTTD + tiempo de validación debe ser inferior a ese plazo. Para entidades bajo NIS2, los plazos son aún más estrictos con alertas tempranas en 24 horas y notificación completa en 72 horas.
 
-### Cómo reduzco el MTTD de mi SOC sin contratar más analistas?
+### ¿Cómo reduzco el MTTD de mi SOC sin contratar más analistas?
 
 La forma más efectiva de reducir el MTTD sin aumentar plantilla es invertir en automatización: reglas de correlación afinadas en el SIEM para reducir falsos positivos, feeds de threat intelligence automatizados que actualicen IOCs en tiempo real, y detección basada en comportamiento (UEBA) que identifique anomalías sin depender de firmas. La reducción de falsos positivos es clave porque permite que los analistas existentes se centren en las alertas que realmente importan. Organizaciones que implementan estas medidas reportan reducciones del MTTD del 40-60%.
 
-### Qué penalizaciónes debo incluir en el contrato con mi MSSP?
+### ¿Qué penalizaciónes debo incluir en el contrato con mi MSSP?
 
 Las penalizaciónes deben ser proporcionales al impacto del incumplimiento. Un esquema típico incluye: service credits del 10-25% de la factura mensual por incumplimiento sostenido de SLAs críticos, derecho a auditoría independiente de las métricas del proveedor, obligación de presentar plan de mejora en 30 días tras un incumplimiento, y cláusula de terminación anticipada sin penalización tras 3 meses consecutivos de incumplimiento. Evita penalizaciónes puramente simbolicas (como un 2% de descuento) que no incentivan realmente al proveedor a mejorar.
 
-### Con que frecuencia debo revisar los SLAs de mi SOC?
+### ¿Con qué frecuencia debo revisar los SLAs de mi SOC?
 
 La revisión formal debería ser trimestral como mínimo, con una revisión anual más profunda. En la revisión trimestral se analizan las métricas de cumplimiento, se identifican tendencias y se ajustan los objetivos si es necesario. En la revisión anual se reevalua la estructura completa de los SLAs en función de cambios en la organización (nuevos sistemas, cambios regulatorios, lecciones aprendidas de incidentes). Además, cualquier incidente significativo debería disparar una revisión ad hoc de los SLAs afectados para determinar si los objetivos eran realistas y si los procesos son adecuados.

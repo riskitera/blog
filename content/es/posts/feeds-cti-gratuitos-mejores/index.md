@@ -25,7 +25,7 @@ Los 15 mejores feeds de threat intelligence gratuitos en 2026: MISP, AlienVault 
 - Pasar de feeds gratuitos a comerciales tiene sentido cuando necesitas atribución, contexto geopolitico o cobertura de dark web que los feeds abiertos no ofrecen.
 {{< /key-takeaways >}}
 
-## Qué es un feed de CTI y por que lo necesitas
+## ¿Qué es un feed de CTI y por que lo necesitas
 
 Un feed de Cyber Threat Intelligence (CTI) es una fuente de datos estructurados que proporciona indicadores de compromiso (IOCs), información sobre amenazas activas y contexto sobre campañas maliciosas. Los IOCs típicos incluyen hashes de malware, direcciones IP maliciosas, dominios de phishing, URLs de distribución de malware y firmas de vulnerabilidades explotadas.
 
@@ -267,7 +267,7 @@ El [CCN-CERT](https://www.ccn-cert.cni.es/) y el [INCIBE-CERT](https://www.incib
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana." label="Ver demo SOC" >}}
 
-## Cómo evaluar la calidad de un feed CTI
+## ¿Cómo evaluar la calidad de un feed CTI
 
 No todos los feeds son iguales. Antes de integrar un feed en tu SIEM, evalualo contra estos criterios:
 
@@ -304,7 +304,7 @@ Ningún feed cubre todo. AlienVault OTX es generalista. Abuse.ch esta especializ
 | Emerging Threats | Bajo | Diaria | Medio | Reglas IDS | Detección IDS |
 | DShield | Medio | Diaria | Bajo | Texto, API | IPs atacantes |
 
-## Cómo integrar feeds CTI en tu SIEM
+## ¿Cómo integrar feeds CTI en tu SIEM
 
 La integración de feeds en el SIEM sigue un patrón general independiente de la plataforma, con variaciones específicas para cada producto.
 
@@ -411,7 +411,7 @@ if __name__ == "__main__":
 
 Este patrón se replica para cualquier feed con API REST: descarga, parsea, normaliza, envía al SIEM.
 
-## Cómo evitar sobrecarga de IOCs
+## ¿Cómo evitar sobrecarga de IOCs
 
 El problema más común al integrar feeds CTI no es la falta de datos, sino el exceso. Un SOC mediano puede acabar con millones de IOCs activos, la mayoría irrelevantes o caducados, generando miles de alertas diarias que nadie investiga.
 
@@ -461,7 +461,7 @@ Cada trimestre, revisa:
 
 Elimina feeds que no aportan valor. Menos feeds de calidad > más feeds de calidad mediocre.
 
-## Qué feeds recomienda ENISA y el CCN-CERT
+## ¿Qué feeds recomienda ENISA y el CCN-CERT
 
 ### Recomendaciones del CCN-CERT
 
@@ -497,7 +497,7 @@ Con estos cinco, cubres el 80% de las necesidades operativas de un SOC.
 
 {{< cta type="mofu" text="Conecta tu SIEM, EDR y feeds CTI en una plataforma que reduce los falsos positivos un 60%." >}}
 
-## Cuándo pasar de feeds gratuitos a pagados
+## ¿Cuándo pasar de feeds gratuitos a pagados
 
 Los feeds gratuitos son excelentes para empezar y cubren la mayoría de las necesidades operativas. Pero tienen límites. Considera pasar a feeds comerciales cuando:
 
@@ -538,22 +538,22 @@ Este modelo híbrido proporciona la mejor relación coste-efectividad sin depend
 
 ## Preguntas frecuentes
 
-### Es legal usar feeds CTI gratuitos en una empresa privada?
+### ¿Es legal usar feeds CTI gratuitos en una empresa privada?
 
 Sí. Todos los feeds listados en este artículo tienen licencias que permiten su uso en organizaciones privadas, incluyendo uso comercial en la mayoría de los casos. AlienVault OTX, Abuse.ch, CISA KEV y PhishTank son explícitamente gratuitos y abiertos. MISP es software open source bajo licencia AGPL. La única restricción relevante es que algunos feeds del CCN-CERT (como SAT-INET y la plataforma REYES) están limitados a organismos públicos e infraestructuras críticas. Siempre revisa los términos de uso de cada feed, especialmente si vas a redistribuir los datos a terceros.
 
-### Cuantos feeds CTI debería usar mi SOC?
+### ¿Cuántos feeds CTI debería usar mi SOC?
 
 No hay un número mágico, pero la recomendación práctica es entre 5 y 8 feeds activos para un SOC mediano. Menos de 3 feeds deja puntos ciegos significativos. Más de 10 feeds sin una TIP que los gestione genera ruido inmanejable. La clave no es la cantidad sino la combinación: al menos un feed generalista (OTX o MISP), uno o dos especializados en malware (Abuse.ch), uno de vulnerabilidades explotadas (CISA KEV), uno de contexto (GreyNoise) y uno local (CCN-CERT/INCIBE si operas en España). Empieza con pocos, mide el valor que aporta cada uno y añade gradualmente.
 
-### Cómo se que un IOC de un feed gratuito no es un falso positivo?
+### ¿Cómo se que un IOC de un feed gratuito no es un falso positivo?
 
 La regla de oro es la corroboración cruzada: si un IOC aparece en dos o más feeds independientes, la probabilidad de falso positivo baja significativamente. Además, verifica el contexto: un hash reportado en MalwareBazaar con resultados de sandbox que confirman comportamiento malicioso es más fiable que un dominio suelto en un pulso de OTX sin verificación. Herramientas como VirusTotal (para hashes y URLs) y GreyNoise (para IPs) funcionan como segunda opinion. Con el tiempo, construiras una whitelist de falsos positivos recurrentes (CDNs, servicios legítimos, tu propia infraestructura) que filtra automáticamente.
 
-### Puedo integrar feeds CTI sin tener un SIEM?
+### ¿Puedo integrar feeds CTI sin tener un SIEM?
 
 Sí, aunque con menos automatización. Las opciones son: (1) usar las blocklists directamente en tu firewall o proxy (Feodo Tracker pública listas para pfSense e iptables listas para usar), (2) usar un EDR que soporte importación de IOCs (la mayoría de los EDR modernos permiten subir listas de hashes para bloqueo), (3) usar MISP como TIP standalone para almacenar, correlaciónar y buscar IOCs manualmente durante investigaciónes. Un SIEM potencia enormemente el valor de los feeds al automatizar la correlación, pero no es un prerrequisito absoluto para empezar a usar threat intelligence.
 
-### Con que frecuencia debo actualizar los feeds en mi SIEM?
+### ¿Con qué frecuencia debo actualizar los feeds en mi SIEM?
 
 Depende del tipo de feed y de tu capacidad de procesamiento. Los feeds operativos de alta frecuencia (Abuse.ch, OTX) deben actualizarse al menos cada hora, idealmente cada 5 a 15 minutos. Los feeds de contexto (CISA KEV, DShield) pueden actualizarse diariamente. Las reglas IDS de Emerging Threats se actualizan una vez al día. Lo crítico es complementar la actualización con el envejecimiento: de nada sirve actualizar cada 5 minutos si nunca eliminas IOCs obsoletos. Configura un cron job para cada feed con la frecuencia adecuada y una política de aging que elimine IOCs que superan su vida útil operativa.

@@ -24,7 +24,7 @@ Un SIEM (Security Information and Event Management) es la herramienta central de
 - El tuning continuo de reglas es crítico: sin el, la fatiga de alertas inutiliza la herramienta
 {{< /key-takeaways >}}
 
-## Qué es un SIEM y para que sirve?
+## ¿Qué es un SIEM y para que sirve?
 
 SIEM es el acronimo de Security Information and Event Management. El término fue acuñado por Gartner en 2005 para describir la convergencia de dos categorías de productos que hasta entonces existian por separado:
 
@@ -144,7 +144,7 @@ Chronicle, la solución de seguridad de Google Cloud, destaca por su capacidad d
 **Limitaciones:** menor ecosistema de integraciónes nativas comparado con Splunk o Sentinel, requiere presencia en Google Cloud, madurez relativa como producto, menor presencia en el mercado europeo.
 **Modelo de licenciamiento:** precio fijo por empleado, independientemente del volumen de datos. Esto es una ventaja diferencial significativa para organizaciones con altos volúmenes de logs.
 
-## SIEM open source o comercial: cual elegir?
+## SIEM open source o comercial: ¿cuál elegir?
 
 La elección entre un SIEM open source y uno comercial depende de los recursos disponibles, el nivel de madurez del equipo y los requisitos normativos.
 
@@ -155,14 +155,14 @@ La elección entre un SIEM open source y uno comercial depende de los recursos d
 - **OSSIM (AlienVault Open Source)**: pionero en el SIEM open source, aunque su desarrollo se ha ralentizado tras la adquisición por AT&T.
 - **Apache Metron**: proyecto de la Apache Foundation para análisis de seguridad a escala, orientado a organizaciones con capacidad técnica avanzada.
 
-### Cuándo elegir open source
+### ¿Cuándo elegir open source
 
 - Presupuesto limitado para licencias de software.
 - Equipo con experiencia en administración de sistemas y capacidad de operar la solución internamente.
 - Necesidad de personalización profunda.
 - Entornos de laboratorio, desarrollo o pruebas de concepto.
 
-### Cuándo elegir comercial
+### ¿Cuándo elegir comercial
 
 - Necesidad de soporte del fabricante con SLA garantizados.
 - Equipo de seguridad que necesita enfocarse en la operación, no en la administración de la plataforma.
@@ -174,7 +174,7 @@ En la práctica, muchas organizaciones adoptan un enfoque mixto: utilizan compon
 
 {{< cta type="tofu" text="Riskitera complementa tu SIEM con correlación avanzada, triage automatizado por IA y mapeo a MITRE ATT&CK." label="Ver integración" >}}
 
-## Cuándo necesita tu empresa un SIEM?
+## ¿Cuándo necesita tu empresa un SIEM?
 
 No todas las organizaciones necesitan un SIEM completo. Estas son las señales claras de que ha llegado el momento:
 
@@ -193,7 +193,7 @@ Para organizaciones más pequeñas que aún no necesitan un SIEM completo:
 - **XDR (Extended Detection and Response)**: plataformas que combinan EDR con detección en red y cloud en una solución unificada, con menor complejidad que un SIEM tradicional.
 - **Logs centralizados sin correlación**: herramientas como Graylog o un stack ELK básico permiten centralizar logs para análisis manual y cumplimiento, sin las capacidades de correlación avanzada de un SIEM.
 
-## Cómo se integra el SIEM con el SOC?
+## ¿Cómo se integra el SIEM con el SOC?
 
 El SIEM es la herramienta principal de un SOC, pero no la única. Su valor se multiplica cuando se integra correctamente con el resto del ecosistema. Si estas valorando crear un SOC, nuestra [guía para montar un SOC desde cero](/es/posts/2026/04/como-montar-soc-desde-cero/) te dará una visión completa del proyecto, y nuestro artículo sobre [los roles de analistas SOC (N1, N2, N3)](/es/posts/2026/04/analista-soc-roles-n1-n2-n3/) explica como cada nivel del equipo interactua con el SIEM.
 
@@ -239,22 +239,22 @@ El volumen de logs crece con el tiempo. Si no planificas la capacidad de almacen
 
 ## Preguntas que surgen en la práctica
 
-### Cuánto cuesta un SIEM para una empresa mediana?
+### ¿Cuánto cuesta un SIEM para una empresa mediana?
 
 El coste varía enormemente según la solución elegida, el volumen de datos y el modelo de despliegue. Como referencia para una empresa mediana (200-500 empleados, entre 10 y 30 GB de logs diarios): una solución comercial como Splunk puede costar entre 80.000 y 200.000 euros anuales; Microsoft Sentinel entre 30.000 y 80.000 euros; Elastic Security (licencia Enterprise) entre 25.000 y 70.000 euros. Las soluciones open source como Wazuh eliminan el coste de licencia pero requieren personal cualificado para su despliegue y operación, cuyo coste salarial puede superar el ahorro en licencias.
 
-### Puedo usar un SIEM sin tener un SOC?
+### ¿Puedo usar un SIEM sin tener un SOC?
 
 Tecnicamente si, pero su valor se reduce drasticamente. Un SIEM sin personas que analicen las alertas y respondan a los incidentes es como una alarma que suena en una casa vacia. Si no tienes equipo interno para operar el SIEM, la alternativa más razonable es contratar un servicio MDR/MSSP que incluya el SIEM y el equipo humano.
 
-### Cuánto tiempo tarda en estar operativo un SIEM?
+### ¿Cuánto tiempo tarda en estar operativo un SIEM?
 
 Un despliegue básico (instalación, conexión de fuentes críticas, reglas iniciales) puede completarse en 4-8 semanas. Sin embargo, alcanzar un nivel de madurez operativa donde el SIEM genera alertas fiables y accionables requiere entre 3 y 6 meses de tuning continuo. La fase de optimización y expansión es un proceso que, en realidad, nunca termina.
 
-### SIEM, XDR o MDR: que necesito?
+### SIEM, XDR o MDR: ¿qué necesito?
 
 Depende de tu situación. Si tienes equipo de seguridad y quieres control total sobre la detección, un SIEM es la opción. Si buscas simplicidad y tienes un entorno tecnológico homogeneo (por ejemplo, mayoritariamente Microsoft), un XDR puede ser suficiente. Si no tienes equipo interno de seguridad, un servicio MDR (que incluye tecnología y personas) es probablemente la mejor opción. Muchas organizaciones combinan SIEM con MDR: el proveedor MDR opera el SIEM y complementa con analistas las capacidades del equipo interno.
 
-### Es obligatorio tener un SIEM por normativa?
+### ¿Es obligatorio tener un SIEM por normativa?
 
 Ninguna normativa menciona explícitamente la obligación de tener un SIEM. Sin embargo, regulaciones como el ENS (especialmente en niveles medio y alto), NIS2 y DORA exigen capacidades de monitorización continua, detección de incidentes, gestión de logs y respuesta a amenazas que, en la práctica, son muy dificiles de satisfacer sin un SIEM o una solución equivalente. Los auditores de cumplimiento esperan encontrar un sistema centralizado de gestión de eventos de seguridad como parte de la infraestructura de control.

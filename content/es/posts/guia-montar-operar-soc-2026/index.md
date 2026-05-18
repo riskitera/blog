@@ -26,7 +26,7 @@ Guía definitiva para montar y operar un SOC en 2026: modelos organizativos, equ
 - Las métricas que importan en 2026 van más allá de MTTD y MTTR: la cobertura de [MITRE ATT&CK](https://attack.mitre.org/), la tasa de automatización y el coste por incidente resuelto son indicadores clave de madurez.
 {{< /key-takeaways >}}
 
-## Qué es un SOC y por que es crítico en 2026
+## ¿Qué es un SOC y por que es crítico en 2026
 
 Un Security Operations Center (SOC) es la función organizativa responsable de detectar, analizar, responder y prevenir incidentes de ciberseguridad de forma continua. No es solo una sala con pantallas: es un conjunto de personas, procesos y tecnología que trabajan coordinadamente para proteger los activos digitales de una organización.
 
@@ -40,7 +40,7 @@ En 2026, el SOC es más crítico que nunca por varias razones convergentes:
 
 **El talento es escaso y caro.** Como detallamos en nuestro artículo sobre salarios SOC, España tiene un deficit de más de 30.000 profesionales de ciberseguridad. Esto obliga a las organizaciones a ser inteligentes sobre como estructuran sus equipos y donde aplican automatización.
 
-## Qué modelo de SOC elegir: interno, externo o híbrido
+## ¿Qué modelo de SOC elegir: interno, externo o híbrido
 
 La primera decisión estratégica es el modelo organizativo. No hay una respuesta universal: depende del tamaño de la organización, del sector regulatorio, del presupuesto y de la madurez de seguridad existente.
 
@@ -120,7 +120,7 @@ El modelo híbrido combina un equipo interno reducido con servicios externos. Es
 
 {{< cta type="tofu" text="Riskitera ofrece un modelo SOC híbrido con IA soberana: tu equipo interno potenciado con automatización que cumple ENS Alto y NIS2." label="Ver demo SOC" >}}
 
-## Cómo disenar el equipo de un SOC
+## ¿Cómo disenar el equipo de un SOC
 
 El equipo es el componente más crítico y más costoso de un SOC. Un error frecuente es contratar demasiados N1 y pocos N2/N3, lo que resulta en mucho triage y poca investigación real.
 
@@ -149,7 +149,7 @@ La cobertura 24/7 con personal interno requiere un mínimo de 4-5 personas solo 
 - Fuera de horario: MSSP para triage N1 + guardia rotativa del equipo interno para escalados críticos.
 - Compensación de guardia: 200-400 euros/semana de guardia (estándar en España), más compensación por activación fuera de horario.
 
-## Qué herramientas necesita un SOC en 2026
+## ¿Qué herramientas necesita un SOC en 2026
 
 El stack tecnológico de un SOC ha evolucionado significativamente. La tendencia dominante es la convergencia: menos herramientas, más integradas, con IA nativa.
 
@@ -260,7 +260,7 @@ Los SOC generan enormes cantidades de conocimiento tacito que se pierde cuando u
 - **Sesiones de knowledge sharing** regulares (semanales o quincenales) donde los analistas comparten casos interesantes.
 - **Onboarding estructurado** para nuevos analistas (no solo "sientate con Pedro un par de días").
 
-## Cómo medir la eficacia de un SOC: métricas que importan en 2026
+## ¿Cómo medir la eficacia de un SOC: métricas que importan en 2026
 
 Las métricas tradicionales (MTTD, MTTR) siguen siendo relevantes, pero un SOC moderno necesita un dashboard de métricas más completo.
 
@@ -299,7 +299,7 @@ Un dashboard de métricas SOC eficaz debe tener tres vistas:
 2. **Vista táctica (semanal/mensual):** MTTD, MTTR, cobertura ATT&CK, falsos positivos, tendencias. Para el SOC Manager.
 3. **Vista estratégica (trimestral):** coste por incidente, ROI de la automatización, benchmarking sectorial, estado de cumplimiento normativo. Para la dirección y el CISO.
 
-## Cómo integrar IA y automatización en el SOC
+## ¿Cómo integrar IA y automatización en el SOC
 
 La IA en el SOC ya no es una promesa: es una realidad operativa en 2026. Pero su implementación requiere pragmatismo y expectativas realistas.
 
@@ -355,7 +355,7 @@ La alternativa es el despliegue de modelos de IA self-hosted en infraestructura 
 
 {{< cta type="bofu" text="Riskitera opera con IA soberana desplegada en infraestructura europea. Solicita una demo personalizada para tu SOC y descubre cómo optimizamos tus operaciones cumpliendo ENS Alto." label="Solicitar demo" >}}
 
-## Cuánto cuesta montar y operar un SOC en 2026
+## ¿Cuánto cuesta montar y operar un SOC en 2026
 
 Vamos a los números reales. Estos costes están basados en el mercado español para una empresa mediana (500-2000 empleados) con un modelo híbrido.
 
@@ -426,22 +426,22 @@ El perfil del analista SOC está evolucionando. El N1 de 2027 usara IA como herr
 
 ## Preguntas frecuentes
 
-### Cuantas personas necesito como mínimo para montar un SOC?
+### ¿Cuántas personas necesito como mínimo para montar un SOC?
 
 Depende del modelo. Si optas por un SOC híbrido (recomendado para la mayoría de empresas medianas), el equipo interno mínimo viable es de 3 personas: un SOC Manager/lider técnico, un analista N2 con capacidad de N3, y un detection engineer que también cubra funciones de CTI. El triage N1 y la cobertura 24/7 se externalizan a un MSSP. Con menos de 3 personas internas, no tienes un SOC: tienes a alguien que mira alertas cuando puede. Ese modelo no escala, no cumple NIS2 y no responde eficazmente a incidentes críticos.
 
-### Puedo montar un SOC eficaz con herramientas open source?
+### ¿Puedo montar un SOC eficaz con herramientas open source?
 
 Sí, pero con matices importantes. Un stack basado en Elastic Security (SIEM), Wazuh (EDR), TheHive (case management), MISP (CTI) y Shuffle (SOAR) es técnicamente viable y tiene coste de licencia cero. El coste real está en la infraestructura (servidores, almacenamiento, red), en el tiempo de integración y configuración (multiplicar por 2-3x vs. una solución comercial), y en el mantenimiento continuo (actualizaciónes, tuning, troubleshooting). Para una organización con equipo técnico fuerte y presupuesto limitado de licencias, el stack open source es una opción válida. Para una organización sin capacidad técnica dedicada, el ahorro en licencias se pierde en horas de ingeniería.
 
-### Cuánto tarda en estar operativo un SOC desde cero?
+### ¿Cuánto tarda en estar operativo un SOC desde cero?
 
 Para un modelo híbrido con MSSP, la secuencia típica es: selección de MSSP y herramientas (4-8 semanas), despliegue e integración de herramientas (6-12 semanas), onboarding del MSSP y creación de playbooks (4-8 semanas), tuning inicial y reducción de falsos positivos (8-12 semanas continuas), y madurez operativa básica (a partir de los 6 meses). En total, espera 6-9 meses desde la decisión de montar el SOC hasta tener operaciones estables con métricas razonables. Los primeros 3 meses serán ruidosos (muchos falsos positivos, procesos en ajuste, equipo aprendiendo las herramientas). Es normal.
 
-### Cómo elijo un buen MSSP para mi SOC híbrido?
+### ¿Cómo elijo un buen MSSP para mi SOC híbrido?
 
 Evalua estos criterios: ubicación de los datos (deben procesarse y almacenarse en la UE, idealmente en España, para cumplir ENS y NIS2), capacidad de personalización (el MSSP debe poder adaptar sus playbooks a tu contexto, no aplicar un triage generico), integración tecnológica (el MSSP debe poder conectarse a tu SIEM/XDR y trabajar en tu entorno, no en el suyo), SLAs claros (tiempos de triage, escalado y respuesta definidos y medibles), experiencia en tu sector (un MSSP que entiende banca no es igual que uno que entiende manufactura), y transparencia en reporting (acceso directo a las métricas, no solo informes mensuales en PDF). Pide referencias de clientes actuales en tu sector y habla con ellos antes de firmar.
 
-### La IA va a eliminar los puestos de trabajo en el SOC?
+### ¿La IA va a eliminar los puestos de trabajo en el SOC?
 
 No, pero va a transformarlos profundamente. La IA eliminará las táreas repetitivas de bajo valor (triage básico de alertas conocidas, enriquecimiento manual de IoCs, generación de informes rutinarios). Esto significa que los N1 "puros" (que solo siguen playbooks mecanicamente) tendrán que evolucionar. Pero la demanda de analistas capaces de supervisar IA, investigar incidentes complejos, realizar threat hunting creativo, desarrollar reglas de detección y comunicar hallazgos a la dirección va a seguir creciendo. En otras palabras: la IA no elimina analistas, elimina tareas. Los analistas que se adapten y adquieran competencias complementarias (supervisión de IA, detection engineering, CTI avanzado) tendrán más demanda y mejores salarios que nunca.

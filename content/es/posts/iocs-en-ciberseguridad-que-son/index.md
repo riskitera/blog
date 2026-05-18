@@ -24,7 +24,7 @@ Los Indicadores de Compromiso (IOCs, por sus siglas en ingles) constituyen una d
 - La piramide del dolor de David Bianco explica por que los TTPs son más valiosos que los IOCs atomicos
 {{< /key-takeaways >}}
 
-## Qué son los IOCs o Indicadores de Compromiso?
+## ¿Qué son los IOCs o Indicadores de Compromiso?
 
 Un Indicador de Compromiso es cualquier dato observable que, con un nivel razonable de confianza, permite identificar actividad maliciosa en un sistema, red o entorno digital. Los IOCs funcionan como las "huellas dactilares" que dejan los atacantes durante o después de una intrusión: direcciones IP desde las que se lanzo un ataque, hashes de archivos maliciosos, dominios utilizados para comando y control (C2) o patrones específicos en el tráfico de red.
 
@@ -34,7 +34,7 @@ El [CCN-CERT](https://www.ccn-cert.cni.es/), el equipo de respuesta a incidentes
 
 Es importante distinguir entre IOCs e IOAs (Indicators of Attack). Mientras que los IOCs son evidencias de que un compromiso ya ha ocurrido, los IOAs describen comportamientos activos que sugieren que un ataque está en curso. Ambos son complementarios y una estrategia madura de Cyber Threat Intelligence (CTI) utiliza los dos.
 
-## Qué tipos de IOCs existen?
+## ¿Qué tipos de IOCs existen?
 
 Los IOCs se clasifican generalmente según el tipo de dato observable que representan. Cada tipo tiene ventajas, limitaciones y un ciclo de vida diferente.
 
@@ -62,7 +62,7 @@ Las direcciones de correo utilizadas como remitente en campañas de phishing o c
 
 Además de los tipos principales, existen IOCs basados en patrones de registro (claves de registro de Windows creadas por malware), certificados SSL asociados a infraestructura maliciosa, cadenas de User-Agent anomalas, mutexes creados por malware y patrones YARA que describen las caracteristicas binarias de archivos sospechosos.
 
-## Cuál es el ciclo de vida de un IOC?
+## ¿Cuál es el ciclo de vida de un IOC?
 
 Los IOCs no mantienen su relevancia de forma indefinida. Comprender su ciclo de vida es esencial para gestionarlos correctamente.
 
@@ -82,7 +82,7 @@ Una vez enriquecido, el IOC se distribuye a través de plataformas de intercambi
 
 Con el tiempo, los IOCs pierden relevancia. Las IPs se reasignan, los dominios expiran, las variantes de malware evolucionan. Mantener IOCs obsoletos en las listas de detección genera falsos positivos y consume recursos. Es recomendable establecer políticas de caducidad automática: por ejemplo, retirar IPs tras 30 días sin revalidación y hashes tras 90 días.
 
-## Dónde obtener feeds de IOCs gratuitos y de pago?
+## ¿Dónde obtener feeds de IOCs gratuitos y de pago?
 
 Disponer de fuentes fiables y actualizadas es fundamental. Afortunadamente, existen numerosas opciones tanto gratuitas como comerciales.
 
@@ -102,7 +102,7 @@ Otras fuentes relevantes incluyen PhishTank para URLs de phishing, los feeds de 
 
 Los proveedores comerciales como [Recorded Future](https://www.recordedfuture.com/), [Mandiant](https://www.mandiant.com/), [CrowdStrike](https://www.crowdstrike.com/) y ThreatConnect ofrecen feeds curados con mayor contexto, menor tasa de falsos positivos y soporte para integración empresarial. La decisión entre fuentes gratuitas y comerciales depende del nivel de madurez del SOC y los recursos disponibles.
 
-## Qué son los estándares STIX y TAXII?
+## ¿Qué son los estándares STIX y TAXII?
 
 La interoperabilidad entre organizaciones y herramientas requiere estándares comunes para representar y transportar inteligencia de amenazas.
 
@@ -116,7 +116,7 @@ TAXII es el protocolo de transporte complementario a STIX. Define como se transm
 
 La combinación STIX/TAXII se ha convertido en el estándar de facto, soportado por la mayoría de plataformas de CTI y herramientas de seguridad. OASIS, el consorcio que mantiene estos estándares, cuenta con la participación de organizaciones como MITRE, IBM, Palo Alto Networks y numerosas agencias gubernamentales.
 
-## Cómo integrar IOCs en tu SOC?
+## ¿Cómo integrar IOCs en tu SOC?
 
 Integrar IOCs en las operaciones del centro de operaciones de seguridad requiere una estrategia estructurada que vaya más allá de cargar listas en un firewall.
 
@@ -138,7 +138,7 @@ No todos los IOCs merecen la misma atención. Es esencial establecer un proceso 
 
 {{< cta type="tofu" text="Riskitera integra feeds de IOCs directamente en tu flujo de detección, correlaciónando indicadores con alertas del SIEM." label="Ver integración" >}}
 
-## Qué herramientas se usan para gestionar IOCs?
+## ¿Qué herramientas se usan para gestionar IOCs?
 
 El ecosistema de herramientas para gestionar IOCs es amplio. Estas son las más relevantes:
 
@@ -152,7 +152,7 @@ El ecosistema de herramientas para gestionar IOCs es amplio. Estas son las más 
 
 Para la creación de reglas de detección basadas en IOCs, las **[reglas Sigma](https://github.com/SigmaHQ/sigma)** permiten definir detecciónes genéricas que se traducen a consultas específicas para cada SIEM, mientras que las **reglas YARA** identifican malware basándose en patrones binarios y textuales.
 
-## Cuáles son los errores comunes al trabajar con IOCs?
+## ¿Cuáles son los errores comunes al trabajar con IOCs?
 
 Conocer los errores frecuentes permite evitarlos y mejorar la eficacia del programa de CTI.
 
@@ -184,22 +184,22 @@ Quinto, comparte inteligencia. La ciberseguridad es un esfuerzo colectivo. Parti
 
 ## Lo que más preguntan los equipos de seguridad
 
-### Cuál es la diferencia entre IOCs e IOAs
+### ¿Cuál es la diferencia entre IOCs e IOAs
 
 Los IOCs (Indicators of Compromise) son artefactos observables que evidencian que un compromiso ya ha ocurrido, como un hash de malware encontrado en un sistema. Los IOAs (Indicators of Attack) describen comportamientos activos que sugieren que un ataque está en curso, como un proceso que intenta escalar privilegios. Los IOCs son reactivos, mientras que los IOAs permiten una postura más proactiva. Ambos son complementarios en una estrategia madura de seguridad.
 
-### Cuantos IOCs debería gestionar mi organización
+### ¿Cuántos IOCs debería gestionar mi organización
 
 No existe un número óptimo universal. Lo relevante es la calidad, no la cantidad. Una pyme puede gestionar eficazmente unos pocos miles de IOCs procedentes de fuentes seleccionadas, mientras que un SOC de gran empresa puede manejar millones. Lo importante es que cada IOC tenga contexto suficiente y que existan procesos de caducidad y depuración automáticos.
 
-### Puedo obtener IOCs útiles sin presupuesto
+### ¿Puedo obtener IOCs útiles sin presupuesto
 
 Sí. Fuentes como AlienVault OTX, Abuse.ch, los feeds de MISP comunitarios y las publicaciones de CISA, CCN-CERT e INCIBE proporcionan IOCs de calidad sin coste. Herramientas open source como MISP y OpenCTI permiten gestionarlos profesionalmente. El principal recurso necesario es tiempo de analistas para triaje y validación.
 
-### Cada cuanto tiempo debo actualizar mis feeds de IOCs
+### ¿Cada cuánto tiempo debo actualizar mis feeds de IOCs
 
 Los feeds deben actualizarse con la mayor frecuencia que permita la infraestructura. Lo ideal es la actualización en tiempo real o cada pocos minutos para IPs y dominios, dado su corto ciclo de vida. Los hashes pueden actualizarse con menor frecuencia (cada hora o cada pocas horas). Las plataformas TIP con conectores STIX/TAXII permiten la sincronización automática continúa.
 
-### Cómo mido la eficacia de mi programa de IOCs
+### ¿Cómo mido la eficacia de mi programa de IOCs
 
 Las métricas clave incluyen: tasa de detección real (porcentaje de IOCs que generaron alertas verdaderas), tasa de falsos positivos, tiempo medio desde la publicación de un IOC hasta su integración en los sistemas de detección, cobertura de fuentes (número y diversidad de feeds consumidos), y porcentaje de IOCs enriquecidos con contexto. Revisar estas métricas mensualmente permite identificar áreas de mejora y justificar inversiones.

@@ -25,7 +25,7 @@ Guía completa de reglas Sigma para SOC y SIEM: sintaxis, ejemplos prácticos, c
 - Escribir reglas Sigma propias es la forma más eficiente de construir un programa de detection engineering portable y mantenible.
 {{< /key-takeaways >}}
 
-## Qué son las reglas Sigma
+## ¿Qué son las reglas Sigma
 
 [Sigma](https://github.com/SigmaHQ/sigma) es un formato genérico y abierto para escribir reglas de detección de seguridad. Su propósito es resolver un problema fundamental: cada SIEM tiene su propio lenguaje de consulta (SPL en Splunk, KQL en Elastic/Sentinel, SQL en Graylog) y escribir detecciónes directamente en el lenguaje del SIEM te ata a ese producto.
 
@@ -1073,22 +1073,22 @@ Sigma opera sobre una fuente de datos a la vez. Si necesitas correlaciónar even
 
 ## Preguntas que surgen en la práctica
 
-### Sigma reemplaza las reglas nativas de mi SIEM?
+### ¿Sigma reemplaza las reglas nativas de mi SIEM?
 
 No. Sigma complementa las reglas nativas, no las reemplaza. Para detecciónes estándar que se benefician de portabilidad (brute force, movimiento lateral, persistencia común), Sigma es ideal. Para detecciónes que requieren funcionalidades específicas de tu SIEM (machine learning, correlación compleja entre múltiples fuentes, queries de rendimiento optimizado), seguiras necesitando reglas nativas. El enfoque recomendado es usar Sigma para el 70-80% de tus detecciónes y reglas nativas para el 20-30% restante.
 
-### Cuantas reglas de SigmaHQ debería desplegar?
+### ¿Cuántas reglas de SigmaHQ debería desplegar?
 
 No despliegues todas las 3.000+ reglas de golpe. Empieza con las reglas marcadas como `stable` que cubren las tácticas más críticas para tu entorno (initial access, execution, persistence, credential access). Un buen punto de partida son 50-100 reglas cuidadosamente seleccionadas y validadas. Después, expande gradualmente basándote en los gaps de cobertura ATT&CK y la threat intelligence relevante para tu sector.
 
-### Qué SIEM tiene mejor soporte para Sigma?
+### ¿Qué SIEM tiene mejor soporte para Sigma?
 
 Splunk y Elastic Security son los SIEM con los backends de conversión más maduros y mejor mantenidos. Microsoft Sentinel también tiene buen soporte vía el backend Kusto. Wazuh, Graylog y QRadar tienen backends funcionales pero con algunas limitaciones en funcionalidades avanzadas. Si usas un SIEM menos común, verifica la lista de backends disponibles en el [repositorio de pySigma](https://github.com/SigmaHQ/pySigma) antes de invertir tiempo en adoptar Sigma.
 
-### Puedo contribuir reglas a SigmaHQ?
+### ¿Puedo contribuir reglas a SigmaHQ?
 
 Sí. SigmaHQ acepta contribuciones vía pull request en GitHub. Tu regla debe cumplir los estándares de calidad del proyecto: campos obligatorios completos, tags ATT&CK correctos, falsos positivos documentados, y status apropiado (normalmente `test` o `experimental` para reglas nuevas). Antes de contribuir, revisa las [guías de contribución](https://github.com/SigmaHQ/sigma/blob/master/CONTRIBUTING.md) y busca si ya existe una regla similar.
 
-### Cómo integro Sigma con mi pipeline de detection-as-code?
+### ¿Cómo integro Sigma con mi pipeline de detection-as-code?
 
 La integración típica es: (1) almacena tus reglas Sigma en un repositorio Git, (2) configura un pipeline de CI que ejecute `sigma check` y `sigma convert` para validar las reglas en cada pull request, (3) cuando se aprueba y mergea el PR, un pipeline de CD convierte las reglas al formato de tu SIEM y las despliega automáticamente, (4) monitoriza las métricas de las reglas desplegadas (volumen de alertas, tasa de falsos positivos) y retroalimenta el proceso. Herramientas como GitHub Actions o GitLab CI son suficientes para montar este pipeline sin infraestructura adicional.

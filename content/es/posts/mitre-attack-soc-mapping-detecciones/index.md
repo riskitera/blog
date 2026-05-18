@@ -25,7 +25,7 @@ Como mapear técnicas MITRE ATT&CK a detecciónes operativas en el SOC: cobertur
 - Las reglas Sigma permiten escribir detecciónes una sola vez y desplegarlas en cualquier SIEM, acelerando el time-to-detect de semanas a horas.
 {{< /key-takeaways >}}
 
-## Por que mapear detecciónes a MITRE ATT&CK cambia las reglas del juego
+## ¿Por qué mapear detecciónes a MITRE ATT&CK cambia las reglas del juego
 
 La mayoría de los SOC operan con un conjunto de reglas de detección heredadas que nadie sabe exactamente que cubren. Se añaden alertas cuando ocurre un incidente, se copian reglas de repositorios públicos y, con el tiempo, se acumula un inventario de detecciónes sin estructura ni priorización. El resultado: falsa sensación de seguridad.
 
@@ -40,7 +40,7 @@ Cuando mapeas tus detecciónes existentes a técnicas ATT&CK, obtienes algo que 
 
 El mapping no es un ejercicio teórico ni un proyecto de un mes. Es un proceso continuo que se integra en el flujo de trabajo diario del equipo de detection engineering.
 
-## Cómo se mapean detecciónes a MITRE ATT&CK paso a paso
+## ¿Cómo se mapean detecciónes a MITRE ATT&CK paso a paso
 
 El proceso de mapping tiene cinco fases. Cada una genera un artefacto que alimenta la siguiente.
 
@@ -94,7 +94,7 @@ Un ejemplo práctico: si tu SOC tiene 50 reglas mapeadas y cubren 35 de las 201 
 
 El mapping no es un proyecto con fecha de fin. Cada vez que el equipo de detection engineering escribe una nueva regla, debe incluir el mapping ATT&CK como campo obligatorio. Cada vez que MITRE pública una nueva versión de la matriz (normalmente dos veces al año), hay que revisar si los IDs de técnicas han cambiado.
 
-## Qué técnicas priorizar según tu perfil de amenaza
+## ¿Qué técnicas priorizar según tu perfil de amenaza
 
 La matriz ATT&CK Enterprise v16 tiene más de 200 técnicas y 680 sub-técnicas. Ninguna organización puede cubrir todo. La clave está en priorizar las técnicas que usan los actores de amenaza más relevantes para tu contexto.
 
@@ -138,7 +138,7 @@ Independientemente de tu sector, estas cuatro técnicas aparecen en la gran mayo
 - Patron de password spraying: un intento por cuenta con la misma contraseña.
 - Incremento anómalo de eventos 4625 (Windows) o auth failures en VPN.
 
-## Cómo escribir reglas de detección por técnica con Sigma
+## ¿Cómo escribir reglas de detección por técnica con Sigma
 
 [Sigma](https://github.com/SigmaHQ/sigma) es el formato estándar para escribir reglas de detección independientes del SIEM. Escribes la lógica una vez en YAML y luego la conviertes a la query nativa de tu plataforma (Splunk SPL, Elastic KQL, Sentinel KQL, QRadar AQL).
 
@@ -287,7 +287,7 @@ El resultado son tres capas de Navigator:
 - **Capa de detección.** Que técnicas detectas realmente con tus reglas actuales.
 - **Capa de gap.** La diferencia entre ambas. Esta es la capa más valiosa: muestra el "low hanging fruit" (técnicas donde tienes datos pero no has escrito detecciónes).
 
-## Cómo crear un dashboard de cobertura ATT&CK
+## ¿Cómo crear un dashboard de cobertura ATT&CK
 
 Un heatmap estático en Navigator es útil para reuniones trimestrales, pero el SOC necesita visibilidad en tiempo real. La solución es construir un dashboard operativo que se actualice automáticamente.
 
@@ -327,7 +327,7 @@ curl -X GET "https://elastic:9200/.kibana/_search" \
 
 Con esa información, un script Python puede generar un JSON compatible con Navigator y actualizar Grafana vía la API de datasources.
 
-## Cómo identificar y cerrar gaps de detección
+## ¿Cómo identificar y cerrar gaps de detección
 
 Identificar gaps es la mitad del trabajo. Cerrarlos requiere un proceso estructurado que no sobrecargue al equipo.
 
@@ -359,7 +359,7 @@ La emulación de adversarios es el complemento indispensable del detection engin
 - **MITRE Caldera.** Plataforma de emulación automatizada. Permite encadenar múltiples técnicas en una operación completa (kill chain) y evaluar la detección end-to-end.
 - **Red Canary.** Proporciona tests validados con buena documentación de los artefactos que debería generar cada técnica.
 
-## Qué fuentes de telemetría necesitas por tactica
+## ¿Qué fuentes de telemetría necesitas por tactica
 
 La telemetría es el combustible del detection engineering. Sin los datos adecuados, las mejores reglas no pueden funcionar. Esta tabla resume las fuentes críticas por tactica:
 
@@ -391,7 +391,7 @@ Si solo pudieras desplegar una herramienta adicional de telemetría, debería se
 
 Estos eventos cubren directamente más de 80 técnicas ATT&CK. Sin Sysmon (o un EDR equivalente), la mayoría de técnicas de Execution, Defense Evasión y Credential Access son invisibles.
 
-## Cómo automatizar el mapping de detecciónes
+## ¿Cómo automatizar el mapping de detecciónes
 
 El mapping manual es necesario al principio, pero no escala. Un SOC maduro automatiza la mayor parte del proceso.
 
@@ -440,7 +440,7 @@ Este ciclo cierra el loop entre inteligencia y operaciones, que es donde la mayo
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana. Conecta tu MITRE ATT&CK mapping con detecciónes operativas en minutos." label="Ver demo SOC" >}}
 
-## Qué métricas de cobertura ATT&CK debes medir
+## ¿Qué métricas de cobertura ATT&CK debes medir
 
 Las métricas transforman el mapping de un ejercicio académico en una herramienta de gestión. Estas son las métricas que recomendamos medir mensualmente:
 
@@ -483,22 +483,22 @@ Después de trabajar con múltiples SOC, estos son los errores que vemos con má
 
 ## Preguntas frecuentes
 
-### Cuánto tiempo se tarda en hacer el primer mapping completo de detecciónes a ATT&CK?
+### ¿Cuánto tiempo se tarda en hacer el primer mapping completo de detecciónes a ATT&CK?
 
 Depende del tamaño del SOC. Para un equipo con 200-500 reglas activas, el inventario y mapping inicial requiere entre 2 y 4 semanas dedicando unas 4 horas diarias. La mayor parte del tiempo se invierte en las primeras 100 reglas, porque el equipo todavía esta aprendiendo las técnicas. Después el ritmo se acelera. Lo importante es no intentar hacerlo perfecto a la primera: un mapping al 80% de precisión que se completa en 3 semanas es más útil que uno perfecto que tarda 3 meses.
 
-### Necesito un SIEM comercial para implementar detection engineering basada en ATT&CK?
+### ¿Necesito un SIEM comercial para implementar detection engineering basada en ATT&CK?
 
 No es imprescindible. Puedes implementar el mapping con herramientas open source. Elastic Security (con licencia básica gratuita) soporta reglas con tags ATT&CK. Wazuh incluye decoders y reglas mapeadas. Sigma te permite escribir reglas portables. Lo que si necesitas es telemetría de calidad: sin Sysmon o un EDR que recoja eventos de proceso, red y registro, el mapping será superficial independientemente del SIEM.
 
-### Cómo convenzo a dirección de que el mapping ATT&CK merece recursos dedicados?
+### ¿Cómo convenzo a dirección de que el mapping ATT&CK merece recursos dedicados?
 
 El argumento más efectivo es visual. Genera un heatmap de Navigator con la cobertura actual (la mayoría será roja) y superpone las técnicas usadas por los actores que han atacado a empresas de tu sector en España (datos de CCN-CERT e INCIBE). La intersección entre "técnicas que nos atacan" y "técnicas que no detectamos" es el argumento de negocio. Complementa con un cálculo de coste: si un incidente de ransomware cuesta de media 1.5M EUR (dato de INCIBE para PYMES), invertir 50-100 horas de equipo en cerrar los gaps críticos es trivial en comparación.
 
-### Con que frecuencia debo actualizar el mapping de detecciónes?
+### ¿Con qué frecuencia debo actualizar el mapping de detecciónes?
 
 El mapping debe actualizarse en tres momentos: (1) cuando se añade o modifica una regla de detección, como parte del proceso estándar; (2) cuando MITRE pública una nueva versión de la matriz (normalmente abril y octubre), para verificar cambios en IDs de técnicas; y (3) trimestralmente, con una revisión completa de scores de detección que incluya tests de emulación con Atomic Red Team o Caldera.
 
-### Cuál es la diferencia entre ATT&CK Navigator y DeTT&CT?
+### ¿Cuál es la diferencia entre ATT&CK Navigator y DeTT&CT?
 
 ATT&CK Navigator es una herramienta de visualización: crea capas de colores sobre la matriz ATT&CK. DeTT&CT es una metodología y conjunto de herramientas que va más allá: estructura la evaluación de data sources (que telemetría tienes y con que calidad) y detecciónes (que reglas tienes y como de robustas son), generando automáticamente las capas de Navigator. En resumen, Navigator es el lienzo; DeTT&CT es el proceso completo para pintarlo con datos reales.

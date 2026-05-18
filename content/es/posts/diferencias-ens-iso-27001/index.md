@@ -17,7 +17,7 @@ El Esquema Nacional de Seguridad (ENS) y la norma ISO 27001 son los dos marcos d
 
 <!--more-->
 
-## Cuáles son las diferencias clave entre ENS e ISO 27001?
+## ¿Cuáles son las diferencias clave entre ENS e ISO 27001?
 
 El ENS y la ISO 27001 parten de filosofias diferentes aunque compartan objetivos similares.
 
@@ -35,7 +35,7 @@ El ENS y la ISO 27001 parten de filosofias diferentes aunque compartan objetivos
 | Certificación | Auditoría ENS | Organismo acreditado ENAC |
 | Guías técnicas | CCN-STIC (gratuitas) | No hay guías prescriptivas |
 
-## Es obligatorio el ENS o la ISO 27001?
+## ¿Es obligatorio el ENS o la ISO 27001?
 
 **El ENS es obligatorio** para todas las administraciones públicas españolas y para cualquier empresa privada que gestione sistemas de información del sector público o preste servicios tecnológicos a la administración. El Real Decreto 311/2022 no admite excepciones.
 
@@ -43,7 +43,7 @@ El ENS y la ISO 27001 parten de filosofias diferentes aunque compartan objetivos
 
 En la práctica, muchas organizaciones que trabajan con el sector público necesitan ambos.
 
-## Cómo se comparan los controles de ENS y los del Anexo A de ISO 27001?
+## ¿Cómo se comparan los controles de ENS y los del Anexo A de ISO 27001?
 
 La correspondencia es alta pero no total. Comparten política de seguridad, control de acceso, gestión de incidentes, continuidad de negocio, cifrado y registro de actividad.
 
@@ -51,7 +51,7 @@ La correspondencia es alta pero no total. Comparten política de seguridad, cont
 
 **Controles ISO 27001 sin equivalente directo en ENS:** gestión detallada de activos de información, seguridad en la nube específica y seguridad en el desarrollo de software con mayor granularidad.
 
-## Puede una organización cumplir ambos a la vez?
+## ¿Puede una organización cumplir ambos a la vez?
 
 Sí, y es la aproximación recomendada. La estrategia óptima es implementar un SGSI según ISO 27001 y extenderlo con las medidas específicas del ENS.
 
@@ -66,11 +66,11 @@ Una organización que ya tiene ISO 27001 reduce entre un 40% y un 60% el esfuerz
 
 {{< cta type="tofu" text="Riskitera mapea automáticamente controles ENS, NIS2 e ISO 27001, reduciendo el esfuerzo manual un 70%." label="Ver cómo" >}}
 
-## Qué certificación necesita mi empresa?
+## ¿Qué certificación necesita mi empresa?
 
 **Solo ENS** si eres administración pública o proveedor exclusivo del sector público. **Solo ISO 27001** si eres empresa privada sin relación con el sector público y necesitas credenciales internacionales. **Ambos** si trabajas con el sector público y con clientes privados, licitas en concursos públicos o operas en sectores regulados.
 
-## Cuánto cuesta cada certificación?
+## ¿Cuánto cuesta cada certificación?
 
 | Concepto | ENS (nivel medio) | ISO 27001 |
 |----------|-------------------|-----------|
@@ -81,7 +81,7 @@ Una organización que ya tiene ISO 27001 reduce entre un 40% y un 60% el esfuerz
 
 Si implementas ambos de forma coordinada, el coste total es un 30-40% menos que hacerlos por separado.
 
-## Cómo aprovechar sinergias entre ENS e ISO 27001?
+## ¿Cómo aprovechar sinergias entre ENS e ISO 27001?
 
 **Documentación unificada.** Política de seguridad, normas de uso, procedimientos operativos y planes de contingencia se redactan una vez y cubren ambos marcos.
 
@@ -100,22 +100,22 @@ Si implementas ambos de forma coordinada, el coste total es un 30-40% menos que 
 
 ## Recursos y referencias
 
-### Si tengo ISO 27001, necesito también el ENS?
+### ¿Si tengo ISO 27001, necesito también el ENS?
 
 Si gestionas sistemas del sector público o prestas servicios tecnológicos a la administración, si. El ENS es obligatorio independientemente de que tengas ISO 27001, aunque la certificación ISO reduce significativamente el esfuerzo de implementación.
 
-### Puede un mismo auditor certificar ENS e ISO 27001?
+### ¿Puede un mismo auditor certificar ENS e ISO 27001?
 
 No necesariamente. La auditoría ISO 27001 debe realizarla un organismo acreditado por ENAC. La auditoría ENS puede realizarla una entidad del sector público o una empresa auditora cualificada. Algunas entidades cubren ambas.
 
-### Cuál certificación es más reconocida internacionalmente?
+### ¿Cuál certificación es más reconocida internacionalmente?
 
 ISO 27001 es reconocida globalmente. El ENS es una normativa española con reconocimiento limitado fuera de España, aunque las administraciones de otros países de la UE adoptan marcos similares bajo NIS2.
 
-### Con que frecuencia hay que renovar cada certificación?
+### ¿Con qué frecuencia hay que renovar cada certificación?
 
 ISO 27001 tiene validez de tres años con seguimientos anuales. ENS nivel medio y alto tiene validez de dos años. Nivel bajo es autoevaluación continua sin ciclo formal.
 
-### Existe un mapping oficial entre ENS e ISO 27001?
+### ¿Existe un mapping oficial entre ENS e ISO 27001?
 
 Sí. El CCN ha publicado guías de correspondencia en las series CCN-STIC 800, disponibles gratuitamente para administraciones públicas.

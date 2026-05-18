@@ -25,7 +25,7 @@ Guía práctica de detection engineering: como disenar, implementar y mantener r
 - Reducir falsos positivos no es opcional: un SOC saturado de ruido pierde la capacidad de detectar amenazas reales.
 {{< /key-takeaways >}}
 
-## Qué es detection engineering
+## ¿Qué es detection engineering
 
 Detection engineering es la disciplina que aplica principios de ingeniería de software al proceso de crear, mantener y mejorar reglas de detección en un centro de operaciones de seguridad (SOC). No se trata solo de escribir queries en un SIEM. Se trata de tratar las detecciónes como código: versionado, testeado, desplegado de forma controlada y medido en producción.
 
@@ -381,7 +381,7 @@ Atomic Red Team es excelente para validaciones rápidas, pero tiene limitaciones
 
 Para cadenas de ataque completas, complementa con herramientas como [MITRE Caldera](https://caldera.mitre.org/), [Infection Monkey](https://www.akamai.com/infectionmonkey) o ejercicios manuales de purple team.
 
-## Cómo reducir falsos positivos
+## ¿Cómo reducir falsos positivos
 
 Los falsos positivos son el enemigo número uno de cualquier SOC. Una regla que genera 50 alertas diarias de las cuales 49 son falsas no solo desperdicia tiempo de los analistas, sino que entrena al equipo a ignorar alertas, lo cual es exactamente lo que un atacante quiere.
 
@@ -511,7 +511,7 @@ El Detection Maturity Model (DMM) es un framework para evaluar la madurez del pr
 
 La mayoría de organizaciones están entre el nivel 0 y el nivel 2. Llegar al nivel 3 requiere inversión en tooling y procesos, pero el retorno es enorme en términos de eficacia del SOC.
 
-## Cómo medir la calidad de las detecciónes
+## ¿Cómo medir la calidad de las detecciónes
 
 No se puede mejorar lo que no se mide. Estas son las métricas clave para un programa de detection engineering:
 
@@ -657,22 +657,22 @@ La regla se despliega en staging, se válida durante 48 horas (0 falsos positivo
 
 ## Preguntas que surgen en la práctica
 
-### Qué diferencia hay entre detection engineering y threat hunting?
+### ¿Qué diferencia hay entre detection engineering y threat hunting?
 
 Detection engineering se centra en crear reglas automatizadas que alertan de comportamientos maliciosos conocidos o esperados. Threat hunting es una actividad proactiva donde un analista busca manualmente evidencia de amenazas que las reglas existentes no cubren. Son disciplinas complementarias: los hallazgos del threat hunting alimentan nuevas hipótesis de detección, y las reglas de detección liberan tiempo para que los hunters se centren en lo desconocido.
 
-### Cuánto tiempo se tarda en implementar un programa de detection engineering?
+### ¿Cuánto tiempo se tarda en implementar un programa de detection engineering?
 
 Depende del punto de partida. Un SOC que ya tiene reglas en un SIEM puede empezar a adoptar detection-as-code en 2-3 meses (migrar reglas a Git, configurar un pipeline básico de CI). Llegar a un nivel 3 de madurez (pipeline completo con testing automatizado, métricas y cobertura ATT&CK medida) suele requerir 6-12 meses de trabajo dedicado. Lo importante es empezar con un scope pequeño (por ejemplo, las 10 reglas más críticas) e iterar.
 
-### Se puede hacer detection engineering sin un SIEM caro?
+### ¿Se puede hacer detection engineering sin un SIEM caro?
 
 Sí. El formato Sigma permite escribir detecciónes portables que se pueden convertir a cualquier SIEM, incluyendo opciones open source como Wazuh, Graylog o OpenSearch. El repositorio Git, el pipeline de CI y herramientas como Atomic Red Team y DeTT&CT son gratuitas. Lo que necesitas es un equipo con conocimiento técnico y tiempo dedicado, no necesariamente un SIEM enterprise.
 
-### Cuantas reglas de detección debería tener un SOC?
+### ¿Cuántas reglas de detección debería tener un SOC?
 
 No hay un número mágico. Más reglas no significa mejor detección. Un SOC con 50 reglas bien calibradas, testeadas y mantenidas es más efectivo que uno con 500 reglas sin mantener. Como referencia, un SOC maduro que cubre las tácticas críticas de ATT&CK (initial access, execution, persistence, credential access, lateral movement, exfiltration) suele tener entre 100 y 300 reglas activas en producción.
 
-### Cómo convencer a la dirección de invertir en detection engineering?
+### ¿Cómo convencer a la dirección de invertir en detection engineering?
 
 Los argumentos que funcionan: (1) reducción de MTTD medible (si se detecta antes, el impacto del incidente es menor), (2) reducción de falsos positivos (menos horas de analista desperdiciadas, lo cual se traduce en ahorro directo), (3) cobertura medible contra frameworks reconocidos como MITRE ATT&CK (los auditores y reguladores valoran esto), y (4) reducción de riesgo de incidentes graves (el coste medio de un breach en Europa supera los 4 millones de euros según IBM). Presenta métricas concretas, no argumentos abstractos sobre "mejorar la seguridad".

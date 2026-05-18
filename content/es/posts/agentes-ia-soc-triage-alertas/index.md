@@ -17,7 +17,7 @@ Un SOC medio recibe entre 5.000 y 15.000 alertas diarias, de las cuales el 85% s
 
 <!--more-->
 
-## Qué son los agentes de IA para SOC?
+## ¿Qué son los agentes de IA para SOC?
 
 Un agente de IA para SOC es un sistema autónomo que ejecuta táreas operativas de seguridad siguiendo instrucciones predefinidas y adaptandose al contexto. A diferencia de un script o una regla SOAR estática, un agente puede:
 
@@ -28,18 +28,18 @@ Un agente de IA para SOC es un sistema autónomo que ejecuta táreas operativas 
 
 Los agentes actuales operan en un espectro de autonomía: desde los que solo sugieren (el analista decide) hasta los que ejecutan acciones de bajo riesgo automáticamente (bloquear una IP conocida como maliciosa) y escalan las de alto riesgo.
 
-## Cómo automatizan los agentes el triage de alertas?
+## ¿Cómo automatizan los agentes el triage de alertas?
 
 El flujo típico de un agente de triage:
 
 **1. Recepción de la alerta.** El SIEM o EDR genera una alerta con datos básicos: tipo, severidad, endpoint afectado, usuario, timestamp, regla que disparo.
 
 **2. Enriquecimiento automático.** El agente consulta en paralelo:
-- **CTI feeds**: la IP/dominio/hash aparece en listas de amenazas conocidas?
-- **Active Directory**: el usuario es privilegiado? Esta en un grupo sensible?
-- **CMDB**: el endpoint es crítico? Esta en producción?
-- **Historico**: ha habido alertas similares en este usuario/endpoint en las últimas 48h?
-- **Geo/horario**: el acceso es desde una ubicación o en un horario inusual para este usuario?
+- **CTI feeds**: ¿la IP/dominio/hash aparece en listas de amenazas conocidas?
+- **Active Directory**: ¿el usuario es privilegiado? ¿Está en un grupo sensible?
+- **CMDB**: ¿el endpoint es crítico? ¿Está en producción?
+- **Historico**: ¿ha habido alertas similares en este usuario/endpoint en las últimas 48h?
+- **Geo/horario**: ¿el acceso es desde una ubicación o en un horario inusual para este usuario?
 
 **3. Clasificación.** Con el contexto enriquecido, el agente clasifica la alerta:
 - **Falso positivo conocido**: patrón ya validado como benigno. Se cierra automáticamente con referencia al caso previo.
@@ -50,7 +50,7 @@ El flujo típico de un agente de triage:
 
 **4. Acción.** Según la clasificación, el agente ejecuta la acción correspondiente o la asigna al analista con todo el contexto pre-preparado.
 
-## Qué impacto tienen en la reducción de falsos positivos?
+## ¿Qué impacto tienen en la reducción de falsos positivos?
 
 Los datos de organizaciones que han implementado agentes de triage muestran resultados consistentes:
 
@@ -64,7 +64,7 @@ Los datos de organizaciones que han implementado agentes de triage muestran resu
 
 El impacto más significativo no es la velocidad, sino la **cobertura**: sin agente, un porcentaje significativo de alertas nunca se revisa por falta de capacidad. Con agente, todas las alertas reciben al menos una clasificación automática.
 
-## Cómo mantener el contexto humano en el triage automatizado?
+## ¿Cómo mantener el contexto humano en el triage automatizado?
 
 El riesgo principal de automatizar el triage es perder el "olfato" del analista experimentado: esa capacidad de detectar que algo no encaja aunque los indicadores individuales no sean alarmantes. Las mejores prácticas para mantener el contexto humano:
 
@@ -80,7 +80,7 @@ El riesgo principal de automatizar el triage es perder el "olfato" del analista 
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana." label="Ver demo SOC" >}}
 
-## Qué arquitectura necesita un SOC para integrar agentes IA?
+## ¿Qué arquitectura necesita un SOC para integrar agentes IA?
 
 La integración de agentes de IA requiere una arquitectura que conecte el SIEM, las fuentes de enriquecimiento y la plataforma de gestión de casos:
 
@@ -107,7 +107,7 @@ La integración de agentes de IA requiere una arquitectura que conecte el SIEM, 
 
 La clave es que el agente no reemplace al SIEM ni al SOAR, sino que se siente encima como una capa de inteligencia que consume alertas del SIEM y ejecuta acciones a través del SOAR.
 
-## Cuáles son los riesgos de automatizar el triage?
+## ¿Cuáles son los riesgos de automatizar el triage?
 
 **Dependencia del modelo.** Si el modelo de clasificación se degrada (por cambio en el panorama de amenazas o en la infraestructura), puede clasificar incorrectamente amenazas reales como falsos positivos. Monitorización continúa de métricas es obligatoria.
 
@@ -117,7 +117,7 @@ La clave es que el agente no reemplace al SIEM ni al SOAR, sino que se siente en
 
 **Alert fatigue inversa.** Si el agente es demasiado agresivo cerrando alertas, los analistas pueden perder la costumbre de investigar y confiar ciegamente en la IA. El muestreo aleatorio y las hunting sessions contrarrestan esto.
 
-## Cómo empezar con agentes IA en tu SOC?
+## ¿Cómo empezar con agentes IA en tu SOC?
 
 1. **Analiza tu volumen actual**: cuantas alertas recibe tu SOC, que porcentaje son FP, cuanto tarda el triage
 2. **Elige un caso de uso acotado**: empieza con un tipo de alerta específico (phishing, brute force, malware conocido) en lugar de todo el flujo
@@ -137,18 +137,18 @@ La clave es que el agente no reemplace al SIEM ni al SOAR, sino que se siente en
 
 ## Recursos y referencias
 
-### Necesito un SOAR para usar agentes de IA en el SOC?
+### ¿Necesito un SOAR para usar agentes de IA en el SOC?
 
 No es estrictamente necesario, pero es altamente recomendable. Un SOAR proporciona la capa de orquestación que permite al agente ejecutar acciones (aislar endpoint, bloquear IP, crear ticket). Sin SOAR, el agente se limita a clasificar y recomendar, y la ejecución sigue siendo manual. Herramientas open source como Shuffle o n8n pueden servir como SOAR ligero para empezar.
 
-### Cuánto histórico de alertas necesito para entrenar un agente?
+### ¿Cuánto histórico de alertas necesito para entrenar un agente?
 
 El mínimo recomendable es 3-6 meses de alertas con la decisión del analista etiquetada (falso positivo, verdadero positivo, escalado). Cuanto más histórico, mejor. Organizaciones con más de 12 meses de datos etiquetados obtienen modelos con precisión superior al 92%.
 
-### Los agentes de IA funcionan con cualquier SIEM?
+### ¿Los agentes de IA funcionan con cualquier SIEM?
 
 Sí, siempre que el SIEM exponga una API para consumir alertas. La mayoría de SIEM modernos (Elastic, Splunk, QRadar, Wazuh, Sentinel) tienen APIs REST que los agentes pueden consumir. La integración típica toma 1-2 semanas.
 
-### Qué pasa si el agente clasifica mal una alerta crítica como falso positivo?
+### ¿Qué pasa si el agente clasifica mal una alerta crítica como falso positivo?
 
 Es el riesgo más grave y la razón por la que el HITL es obligatorio en las primeras fases. Las mitigaciones son: revisión por muestreo, umbral de confianza (las alertas con baja confianza se escalan siempre), y monitoring de métricas de recall (porcentaje de amenazas reales que el agente detecta correctamente). Si el recall cae por debajo del 85%, el agente debe pasar a modo shadow hasta que se reajuste.

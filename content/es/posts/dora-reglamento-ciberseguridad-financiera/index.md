@@ -24,7 +24,7 @@ El Reglamento DORA (Digital Operational Resilience Act) es la normativa europea 
 - Las entidades que ya cumplen ISO 27001 o ENS tienen parte del camino recorrido
 {{< /key-takeaways >}}
 
-## Qué es el reglamento DORA y por que existe?
+## ¿Qué es el reglamento DORA y por que existe?
 
 [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554) (Reglamento (UE) 2022/2554) fue adoptado el 14 de diciembre de 2022 y entró en aplicación el 17 de enero de 2025. Nacio de una constatación clara: el sector financiero europeo depende de forma crítica de las tecnologías de la información y comunicación (TIC), pero no existia un marco armonizado que garantizará la resiliencia operativa digital de las entidades financieras frente a perturbaciones graves.
 
@@ -32,7 +32,7 @@ Antes de DORA, cada Estado miembro y cada regulador sectorial abordaba la cibers
 
 Según datos del BCE, los incidentes ciberneticos reportados por las entidades financieras europeas significativas aumentaron un 72 por ciento entre 2020 y 2024. El ataque a la plataforma ION Trading Technologies en enero de 2023, que afecto a la negociación de derivados en toda Europa, fue uno de los incidentes que aceleraron la adopción final de DORA.
 
-## A que entidades financieras afecta DORA?
+## ¿A qué entidades financieras afecta DORA?
 
 El ámbito de aplicación de DORA es extraordinariamente amplio dentro del sector financiero. Abarca 21 categorías de entidades:
 
@@ -65,7 +65,7 @@ Los proveedores TIC críticos serán designados por las Autoridades Europeas de 
 
 DORA aplica el principio de proporcionalidad: las microempresas financieras (menos de 10 empleados y menos de 2 millones de euros de facturación) tienen obligaciones simplificadas. Quedan exentas determinadas entidades menores como los intermediarios de seguros de pequeño tamaño. Sin embargo, la exención es estrecha y la inmensa mayoría de las entidades del sector financiero están obligadas.
 
-## Cuáles son los cinco pilares de DORA?
+## ¿Cuáles son los cinco pilares de DORA?
 
 DORA se estructura en torno a cinco áreas fundamentales que, conjuntamente, definen un marco integral de resiliencia operativa digital.
 
@@ -117,7 +117,7 @@ DORA fomenta el intercambio voluntario de información sobre ciberamenazas entre
 - El intercambio debe respetar la normativa de protección de datos y competencia.
 - Las autoridades supervisoras facilitaran y promoveran estos intercambios, reconociendo que la ciberseguridad es un desafio colectivo.
 
-## Cómo se relaciona DORA con NIS2 y otras normativas?
+## ¿Cómo se relaciona DORA con NIS2 y otras normativas?
 
 DORA y NIS2 se aprobaron el mismo día y fueron diseñadas para complementarse:
 
@@ -129,7 +129,7 @@ DORA y NIS2 se aprobaron el mismo día y fueron diseñadas para complementarse:
 
 {{< cta type="tofu" text="Cumplir DORA implica demostrar resiliencia operativa digital. Riskitera mapea los requisitos DORA a controles auditables automáticamente." label="Ver cómo" >}}
 
-## Cuándo entra en vigor DORA?
+## ¿Cuándo entra en vigor DORA?
 
 El calendario de DORA es el siguiente:
 
@@ -141,7 +141,7 @@ El calendario de DORA es el siguiente:
 
 En la práctica, las autoridades supervisoras nacionales han adoptado un enfoque gradual en la supervisión del cumplimiento durante el primer año de aplicación, priorizando la concienciación y la asistencia técnica. Sin embargo, las entidades que no demuestren avances significativos se exponen a medidas supervisoras.
 
-## Cómo prepararse para cumplir DORA?
+## ¿Cómo prepararse para cumplir DORA?
 
 ### 1. Evaluación de aplicabilidad y análisis de brechas
 
@@ -175,7 +175,7 @@ La complejidad de DORA hace que la gestión manual sea inviable para la mayoría
 
 DORA exige la capacidad de demostrar el cumplimiento ante las autoridades supervisoras. Mantener un repositorio centralizado de políticas, procedimientos, resultados de pruebas, registros de incidentes y evidencias de cumplimiento no es opcional: es una necesidad operativa.
 
-## Qué sanciones contempla DORA por incumplimiento?
+## ¿Qué sanciones contempla DORA por incumplimiento?
 
 DORA establece que los Estados miembros definan el régimen sancionador específico, pero marca unas directrices claras:
 
@@ -189,22 +189,22 @@ En España, el Banco de España y la CNMV disponen de facultades sancionadoras q
 
 ## Lo que más preguntan los equipos de seguridad
 
-### Soy una fintech con 15 empleados. Me aplica DORA?
+### ¿Soy una fintech con 15 empleados. Me aplica DORA?
 
 Si tu empresa es una entidad de pago, entidad de dinero electrónico, proveedor de servicios de criptoactivos u otra categoría incluida en el artículo 2 de DORA, estas sujeta al reglamento independientemente de tu tamaño. Sin embargo, DORA aplica el principio de proporcionalidad: las microempresas financieras (menos de 10 empleados y menos de 2 millones de euros de balance) tienen un marco simplificado de gestión de riesgos. Con 15 empleados, probablemente debas cumplir con el marco completo pero de forma proporcionada a tu tamaño y complejidad operativa.
 
-### Qué diferencia hay entre DORA y NIS2 para una entidad financiera?
+### ¿Qué diferencia hay entre DORA y NIS2 para una entidad financiera?
 
 DORA es lex specialis respecto a NIS2 para el sector financiero. Esto significa que, para los aspectos cubiertos por DORA (gestión de riesgos TIC, notificación de incidentes, pruebas de resiliencia, gestión de terceros), las entidades financieras deben cumplir DORA y no NIS2. Sin embargo, si una entidad financiera opera en algun aspecto no cubierto por DORA, los requisitos de NIS2 podrían aplicar de forma subsidiaria.
 
-### Las pruebas TLPT son obligatorias para todas las entidades?
+### ¿Las pruebas TLPT son obligatorias para todas las entidades?
 
 No. Las pruebas de penetración basadas en amenazas (TLPT) solo son obligatorias para las entidades que cumplan determinados criterios de tamaño, perfil de riesgo y criticidad sistemica. Las autoridades competentes designan a las entidades que deben someterse a estas pruebas. El resto de entidades deben realizar pruebas de resiliencia básicas (evaluaciones de vulnerabilidades, pruebas de seguridad, etc.) pero no las pruebas TLPT avanzadas.
 
-### Cuánto tiempo tengo para notificar un incidente grave bajo DORA?
+### ¿Cuánto tiempo tengo para notificar un incidente grave bajo DORA?
 
 El plazo comienza desde la clasificación del incidente como grave. La notificación inicial debe realizarse dentro de las 4 horas siguientes a la clasificación (y no más de 24 horas después de la detección). El informe intermedio debe enviarse dentro de las 72 horas y el informe final dentro de un mes. Estos plazos son más estrictos que los de NIS2 para la notificación inicial, lo que refleja la criticidad específica del sector financiero.
 
-### Mi empresa provee servicios cloud a bancos. Me afecta DORA directamente?
+### ¿Mi empresa provee servicios cloud a bancos. Me afecta DORA directamente?
 
 Sí. DORA incluye expresamente a los proveedores terceros de servicios TIC dentro de su ámbito. Si tus clientes son entidades financieras, estas sujeto a las obligaciones contractuales que DORA establece (cláusulas mínimas, derechos de auditoría, notificación de incidentes). Además, si las ESA te designan como proveedor TIC crítico, estaras sujeto a supervisión directa europea, con obligaciones adicionales de información, inspección y cumplimiento de recomendaciones vinculantes.

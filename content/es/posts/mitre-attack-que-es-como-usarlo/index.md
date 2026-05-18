@@ -24,7 +24,7 @@ translationKey: "mitre-attack-guide"
 - Integración directa con SIEM, EDR y plataformas de threat intelligence
 {{< /key-takeaways >}}
 
-## Qué es MITRE ATT&CK y para que sirve?
+## ¿Qué es MITRE ATT&CK y para que sirve?
 
 MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) es una base de conocimiento estructurada que describe el comportamiento de los atacantes a lo largo de todo el ciclo de vida de una intrusión. A diferencia de otros frameworks que se centran en controles defensivos o en la gestión de riesgos, ATT&CK adopta la perspectiva del adversario: documenta que hacen los atacantes, como lo hacen y con que herramientas.
 
@@ -65,7 +65,7 @@ MITRE ATT&CK se organiza en tres matrices principales, cada una adaptada a un en
 
 Orientada a [sistemas de control industrial (ICS/SCADA)](https://attack.mitre.org/matrices/ics/), esta matriz documenta técnicas utilizadas contra infraestructuras críticas como redes eléctricas, plantas de tratamiento de agua o instalaciones de fabricación. Incluye tácticas específicas como la inhibición de funciones de respuesta o la manipulación de procesos físicos. ENISA ha destacado en sus informes anuales la importancia de proteger estos entornos, y ATT&CK for ICS proporciona el vocabulario común para hacerlo.
 
-## Cómo se organizan las tácticas, técnicas y subtecnicas?
+## ¿Cómo se organizan las tácticas, técnicas y subtecnicas?
 
 Comprender la jerarquía de ATT&CK es esencial para utilizarlo correctamente.
 
@@ -85,7 +85,7 @@ Las subtécnicas proporcionan un nivel adicional de granularidad. La técnica "B
 
 Los procedimientos son implementaciones específicas de técnicas por parte de grupos de amenaza concretos. Por ejemplo, el grupo APT29 (asociado a actores rusos) utiliza la subtécnica "Registry Run Keys" de una manera particular, documentada en ATT&CK con referencias a informes públicos de inteligencia.
 
-## Cómo se aplica MITRE ATT&CK en el SOC?
+## ¿Cómo se aplica MITRE ATT&CK en el SOC?
 
 La aplicación práctica de ATT&CK en un [centro de operaciones de seguridad](/es/posts/como-montar-soc-desde-cero/) transforma su capacidad de detección, respuesta y comunicación.
 
@@ -107,7 +107,7 @@ ATT&CK proporciona un vocabulario común que facilita la comunicación entre equ
 
 ATT&CK se utiliza cada vez más para evaluar la eficacia de productos de seguridad. Las evaluaciones ATT&CK de MITRE Engenuity someten a soluciones EDR y de seguridad endpoint a simulaciones de ataques basadas en las TTPs de grupos reales, publicando los resultados de forma transparente. Estas evaluaciones permiten a las organizaciones comparar productos con datos objetivos.
 
-## Cómo usar ATT&CK para threat hunting?
+## ¿Cómo usar ATT&CK para threat hunting?
 
 El framework ATT&CK es una herramienta esencial para estructurar programas de threat hunting, transformando la búsqueda de amenazas de una actividad ad hoc a un proceso sistemático y medible.
 
@@ -149,7 +149,7 @@ Las [reglas Sigma](https://github.com/SigmaHQ/sigma), un formato abierto para es
 
 Desarrollado por MITRE, Caldera es una plataforma de emulación de adversarios automatizada que ejecuta cadenas de ataque basadas en perfiles de TTPs de ATT&CK. Permite simular el comportamiento de grupos de amenaza específicos para evaluar la capacidad de detección y respuesta.
 
-## Cómo integrar ATT&CK con el SIEM?
+## ¿Cómo integrar ATT&CK con el SIEM?
 
 La integración entre ATT&CK y el SIEM es una de las aplicaciones más potentes del framework.
 
@@ -191,18 +191,18 @@ En el ámbito europeo, el CCN-CERT ha publicado guías CCN-STIC que referencian 
 
 No. MITRE ATT&CK es una base de conocimiento abierta y gratuita, no un estándar regulatorio. Sin embargo, su adopción esta ampliamente recomendada por organismos como ENISA, el CCN-CERT, CISA y NIST. Muchas organizaciones lo integran como parte de sus programas de seguridad, y las evaluaciones de productos basadas en ATT&CK se han convertido en un criterio de selección habitual.
 
-### Qué diferencia hay entre MITRE ATT&CK y el Cyber Kill Chain
+### ¿Qué diferencia hay entre MITRE ATT&CK y el Cyber Kill Chain
 
 El Cyber Kill Chain de Lockheed Martin describe las fases de un ataque de forma lineal y a alto nivel (7 fases). MITRE ATT&CK es significativamente más granular, con 14 tácticas y cientos de técnicas y subtecnicas. Además, ATT&CK no asume un flujo lineal: los atacantes pueden saltar entre tácticas y repetir fases. Ambos marcos son complementarios, pero ATT&CK ofrece mucha mayor utilidad operativa.
 
-### Necesito un equipo grande para implementar ATT&CK
+### ¿Necesito un equipo grande para implementar ATT&CK
 
 No necesariamente. Una organización pequeña puede comenzar seleccionando las 20-30 técnicas más relevantes para su perfil de amenaza y evaluar su cobertura de detección sobre ellas. A medida que el equipo crece y madura, se amplía la cobertura. La clave es empezar con un alcance realista y avanzar de forma incremental.
 
-### Con que frecuencia se actualiza MITRE ATT&CK
+### ¿Con qué frecuencia se actualiza MITRE ATT&CK
 
 MITRE pública actualizaciónes mayores de ATT&CK aproximadamente dos veces al año, incorporando nuevas técnicas, subtecnicas, grupos de amenaza y software documentado por la comunidad. Entre actualizaciónes mayores, se realizan correcciones y adiciones menores. Es recomendable revisar los changelogs de cada versión para identificar técnicas nuevas que puedan ser relevantes.
 
-### Cómo puedo empezar a implementar ATT&CK manana
+### ¿Cómo puedo empezar a implementar ATT&CK manana
 
 El primer paso práctico es descargar ATT&CK Navigator y crear una capa que represente las detecciónes actuales de la organización. Esto proporciona una radiografia inmediata de la cobertura y los puntos ciegos. A partir de ahí, se priorizan las técnicas a cubrir según el perfil de amenaza y se escriben o adquieren las detecciónes correspondientes. Es un proceso iterativo que mejora con cada ciclo.

@@ -17,7 +17,7 @@ Guía de ciberseguridad para hospitales y centros sanitarios: protección de dat
 
 <!--more-->
 
-## Por que es crítica la ciberseguridad en el sector salud?
+## ¿Por qué es crítica la ciberseguridad en el sector salud?
 
 El sector sanitario es uno de los más atacados del mundo. Según el informe ENISA Threat Landscape for Health 2025, los hospitales europeos sufrieron un incremento del 73% en ciberataques entre 2023 y 2025. La razón es sencilla: los datos clinicos tienen un valor extraordinario en el mercado negro (entre 250 y 1.000 dolares por registro, frente a los 5-10 dolares de una tarjeta de crédito) y los hospitales suelen tener infraestructuras tecnológicas antiguas con una superficie de ataque amplia.
 
@@ -25,7 +25,7 @@ Pero el problema va más allá del robo de datos. Un ciberataque a un hospital p
 
 En España, el Servicio Nacional de Salud (SNS) atiende a 47 millones de personas a través de una red de hospitales públicos gestionados por las comunidades autónomas, más una red privada con más de 450 hospitales. Cada uno de ellos maneja datos de salud (categoría especial bajo RGPD), historias clínicas electrónicas, sistemas de imagen médica (PACS/DICOM), dispositivos médicos conectados (IoMT) y sistemas de gestión hospitalaria (HIS). La interconexion creciente entre estos sistemas multiplica los vectores de ataque.
 
-## Qué normativas de seguridad aplican a hospitales en España?
+## ¿Qué normativas de seguridad aplican a hospitales en España?
 
 Los hospitales españoles están sujetos a un marco regulatorio complejo que combina legislación europea, nacional y sectorial:
 
@@ -41,7 +41,7 @@ Los hospitales españoles están sujetos a un marco regulatorio complejo que com
 
 **Normativa autonómica.** Cada comunidad autónoma puede establecer requisitos adicionales a través de sus servicios de salud (SERMAS en Madrid, SAS en Andalucía, CatSalut en Cataluña, etc.).
 
-## Cómo proteger datos clinicos bajo RGPD?
+## ¿Cómo proteger datos clinicos bajo RGPD?
 
 La protección de datos clinicos bajo RGPD requiere medidas técnicas y organizativas proporcionadas al alto riesgo que implica su tratamiento:
 
@@ -59,7 +59,7 @@ La protección de datos clinicos bajo RGPD requiere medidas técnicas y organiza
 
 {{< cta type="tofu" text="Riskitera evalua tu postura de seguridad y te muestra los gaps de cumplimiento en minutos." label="Evaluar postura" >}}
 
-## Qué requisitos del ENS afectan al sector sanitario?
+## ¿Qué requisitos del ENS afectan al sector sanitario?
 
 Los hospitales públicos españoles deben cumplir el ENS (RD 311/2022). Los sistemas de información sanitarios se clasifican típicamente en categoría ALTA por la naturaleza de los datos que manejan y la criticidad de los servicios asistenciales.
 
@@ -75,7 +75,7 @@ Los controles del ENS con mayor impacto en el sector sanitario:
 
 **Herramientas del CCN.** El CCN-CERT pone a disposición del sector sanitario herramientas gratuitas: CCN-PILAR para análisis de riesgos, CCN-CLARA para verificación de cumplimiento, CCN-INES para reporte de indicadores y las guías de la serie 800 con perfiles de cumplimiento sectoriales.
 
-## Cuáles son las amenazas más comunes en sanidad?
+## ¿Cuáles son las amenazas más comunes en sanidad?
 
 El panorama de amenazas del sector sanitario tiene caracteristicas propias:
 
@@ -91,7 +91,7 @@ El panorama de amenazas del sector sanitario tiene caracteristicas propias:
 
 **Supply chain.** Ataques a proveedores de software sanitario (HIS, LIS, farmacia, radiologia) que se propagan a los hospitales clientes. El caso SolarWinds demostró el riesgo; el sector sanitario tiene decenas de proveedores con acceso remoto a sistemas críticos.
 
-## Cómo implementar un plan de seguridad en un hospital?
+## ¿Cómo implementar un plan de seguridad en un hospital?
 
 Un plan de seguridad para un hospital debe equilibrar la protección con la operatividad asistencial. Nunca puede una medida de seguridad poner en riesgo la atención al paciente.
 
@@ -105,7 +105,7 @@ Un plan de seguridad para un hospital debe equilibrar la protección con la oper
 
 **Fase 5: Mejora continúa.** Auditorías internas semestrales, ejercicios de crisis anuales (simulacros de ransomware con participación de dirección), revisión del análisis de riesgos al menos anualmente, y reporte de indicadores ENS vía CCN-INES.
 
-## Qué coste tiene un incidente de seguridad en sanidad?
+## ¿Qué coste tiene un incidente de seguridad en sanidad?
 
 El coste de un ciberincidente en sanidad es el más alto de todos los sectores. Según el informe IBM Cost of a Data Breach 2025, el coste medio de una brecha de datos en sanidad alcanza los 10.93 millones de dolares, un 53% más que el segundo sector (financiero).
 
@@ -136,17 +136,17 @@ Invertir en ciberseguridad es significativamente más barato que gestionar un in
 
 ## Dudas habituales
 
-**Los hospitales privados también deben cumplir el ENS?**
+**¿Los hospitales privados también deben cumplir el ENS?**
 Depende. Los hospitales privados que prestan servicios al Sistema Nacional de Salud (conciertos, colaboración público-privada) deben cumplir el ENS como proveedores de servicios a la administración pública. Los hospitales exclusivamente privados no están obligados por el ENS, pero si por el RGPD, la LOPDGDD y NIS2 (si superan los umbrales de tamaño).
 
-**Que pasa si un dispositivo médico no se puede parchear?**
+**¿Qué pasa si un dispositivo médico no se puede parchear?**
 Situación habitual con equipos de electrónica médica con firmware certificado. La estrategia es: segmentar el dispositivo en una VLAN dedicada, aplicar controles de acceso estrictos a nivel de red (firewall, NAC), monitorizar el tráfico del dispositivo con un IDS, y documentar el riesgo residual en el análisis de riesgos. El fabricante tiene la obligación de proporcionar actualizaciónes de seguridad durante el ciclo de vida del producto (Reglamento MDR 2017/745).
 
-**Cuanto tarda un hospital en recuperarse de un ataque de ransomware?**
+**¿Cuánto tarda un hospital en recuperarse de un ataque de ransomware?**
 La media es de 3 a 6 semanas para recuperar la operatividad completa. Algunos sistemas secundarios pueden tardar meses. El Hospital Clinic de Barcelona tardo más de un mes en recuperar todos sus sistemas tras el ataque de marzo de 2023. La clave es tener backups inmutables probados y un plan de recuperación documentado y ensayado.
 
-**Es obligatorio notificar un ciberataque a la AEPD?**
+**¿Es obligatorio notificar un ciberataque a la AEPD?**
 Si la brecha afecta a datos personales y supone un riesgo para los derechos y libertades de los afectados, si. La notificación al regulador debe hacerse en un máximo de 72 horas desde que se tiene conocimiento. Si el riesgo es alto, también debe notificarse a los pacientes afectados sin dilación indebida. Adicionalmente, bajo NIS2, los incidentes significativos deben notificarse al CSIRT de referencia (CCN-CERT para sector público, INCIBE-CERT para sector privado).
 
-**Que presupuesto mínimo necesita un hospital para ciberseguridad?**
+**¿Qué presupuesto mínimo necesita un hospital para ciberseguridad?**
 La recomendación de ENISA y del CCN es dedicar entre el 6% y el 10% del presupuesto de IT a ciberseguridad. Para un hospital mediano español con un presupuesto de IT de 3-5 millones de euros anuales, esto supone entre 180.000 y 500.000 euros al año. La realidad es que muchos hospitales públicos españoles dedican menos del 3%, lo que explica la brecha de seguridad del sector.

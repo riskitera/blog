@@ -25,7 +25,7 @@ Playbook completo de respuesta a incidentes para SOC: fases NIST, roles, comunic
 - Frameworks como MITRE ATT&CK y guías de CCN-CERT e INCIBE proporcionan taxonomías y procedimientos estandarizados para equipos SOC en España
 {{< /key-takeaways >}}
 
-## Qué es un plan de respuesta a incidentes
+## ¿Qué es un plan de respuesta a incidentes
 
 Un plan de respuesta a incidentes (Incident Response Plan, IRP) es el documento que define como una organización detecta, contiene, erradica y se recupera de un incidente de ciberseguridad. No es un documento teórico: es un manual operativo que el equipo SOC sigue bajo presión, cuando los sistemas están caidos y la dirección exige respuestas.
 
@@ -389,7 +389,7 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 - Revisar la arquitectura de resiliencia: caching, CDN, anycast, auto-scaling.
 - Considerar un servicio de mitigación DDoS dedicado si no se tenia.
 
-## Cómo comunicar un incidente interna y externamente
+## ¿Cómo comunicar un incidente interna y externamente
 
 La comunicación durante un incidente es tan crítica como la respuesta técnica. Una mala comunicación puede agravar el daño reputacional más que el propio incidente.
 
@@ -450,17 +450,17 @@ PROXIMA ACTUALIZACION:
 Contacto: [Incident Commander] vía [canal]
 ```
 
-## Cómo documentar lecciones aprendidas
+## ¿Cómo documentar lecciones aprendidas
 
 El post-mortem es la actividad con mayor retorno de inversión en todo el proceso de respuesta. Sin embargo, la mayoría de las organizaciones lo omiten o lo hacen de forma superficial.
 
-### Cuándo hacerlo
+### ¿Cuándo hacerlo
 
 - Reunión formal: dentro de los 5 días laborables posteriores al cierre del incidente
 - Asistentes: todos los roles involucrados en la respuesta (técnicos, comunicación, legal, dirección)
 - Duración: 90-120 minutos para un P1, 60 minutos para un P2
 
-### Qué documentar
+### ¿Qué documentar
 
 **Timeline completo:**
 - Hora de primer indicador (no de detección)
@@ -602,22 +602,22 @@ Antes de que ocurra el próximo incidente, verifica que tienes:
 
 ## Preguntas frecuentes
 
-### Cuánto tiempo tiene una empresa para notificar un incidente de seguridad en España?
+### ¿Cuánto tiempo tiene una empresa para notificar un incidente de seguridad en España?
 
 Depende del tipo de incidente. Si hay datos personales afectados, el RGPD exige notificación a la AEPD en un máximo de 72 horas desde que se tiene conocimiento de la brecha. La Directiva NIS2 establece una alerta temprana en 24 horas y un informe completo en 72 horas para incidentes significativos. En el ámbito del ENS, el CCN-CERT debe ser notificado según la criticidad del incidente.
 
-### Qué diferencia hay entre un plan de respuesta y un playbook?
+### ¿Qué diferencia hay entre un plan de respuesta y un playbook?
 
 El plan de respuesta (IRP) es el documento marco: define roles, responsabilidades, cadena de comunicación, criterios de severidad y políticas generales. Los playbooks son procedimientos operativos detallados para tipos de incidentes concretos (ransomware, phishing, DDoS). Un SOC necesita ambos: el plan dice "quien hace que y cuando escalar", el playbook dice "estos son los 15 pasos exactos para contener un ransomware".
 
-### Es recomendable pagar el rescate en un ataque de ransomware?
+### ¿Es recomendable pagar el rescate en un ataque de ransomware?
 
 La posición unanime de INCIBE, CCN-CERT, Europol y la mayoría de expertos es no pagar. No garantiza la recuperación de los datos, financia al grupo criminal y marca a la organización como objetivo futuro. Además, puede tener implicaciones legales (financiación de terrorismo). La mejor defensa contra el ransomware son backups offline verificados, segmentación de red y un plan de recuperación probado.
 
-### Qué framework de respuesta a incidentes es mejor para una empresa española?
+### ¿Qué framework de respuesta a incidentes es mejor para una empresa española?
 
 NIST SP 800-61 es la referencia internacional más utilizada y la base de este artículo. Para empresas españolas, se complementa con las guías CCN-STIC del CCN-CERT (obligatorias para el sector público bajo el ENS) y los recursos de INCIBE (orientados al sector privado). ISO 27035 (Gestión de incidentes de seguridad de la información) es otra opción, especialmente si la organización ya está certificada en ISO 27001.
 
-### Cómo se mide la eficacia de un equipo de respuesta a incidentes?
+### ¿Cómo se mide la eficacia de un equipo de respuesta a incidentes?
 
 Las métricas clave son: MTTD (tiempo medio de detección), MTTC (tiempo medio de contención) y MTTR (tiempo medio de recuperación). Un SOC maduro debería detectar incidentes en menos de 24 horas, contener en menos de 4 horas y recuperar servicios críticos en menos de 72 horas para incidentes P1. Además, se mide el porcentaje de post-mortems completados, las acciones de mejora cerradas en plazo y la frecuencia de simulacros.

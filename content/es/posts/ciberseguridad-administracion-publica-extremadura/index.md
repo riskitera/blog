@@ -20,37 +20,37 @@ La administración pública de Extremadura gestiona más de 400 organismos públ
 
 **Extremadura fue pionera en España en apostar por el software libre en la administración pública con el proyecto gnuLinEx (2002), una decisión que sentó las bases de su cultura tecnológica autonómica.** Hoy, la Junta de Extremadura gestiona los servicios TIC compartidos para los 388 municipios de la región a través de la Dirección General de Administración Electrónica y Transformación Digital. Con una de las densidades de población más bajas de España (26 hab/km2), la mayoría de los municipios extremeños son pequeños y carecen de recursos técnicos propios. La Universidad de Extremadura ofrece formación en ciberseguridad integrada en sus grados de Ingeniería Informática, y la región participa en los programas de capacitación del CCN para entidades locales con recursos limitados.
 
-## Qué obligaciones de ciberseguridad tiene la administración pública en Extremadura?
+## ¿Qué obligaciones de ciberseguridad tiene la administración pública en Extremadura?
 
 Todos los organismos públicos de Extremadura, incluyendo el Gobierno autonómico, los 388 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.
 
 El Real Decreto 311/2022 establece que todas las administraciones públicas deben categorizar sus sistemas, implementar las medidas de seguridad correspondientes y someterse a auditorías periódicas. Para los organismos de Extremadura, esto implica adaptar sus infraestructuras tecnológicas a los requisitos del ENS según el nivel de seguridad (alto, medio o bajo) que corresponda a cada sistema.
 
-## Qué nivel ENS necesitan los ayuntamientos de Extremadura?
+## ¿Qué nivel ENS necesitan los ayuntamientos de Extremadura?
 
 La mayoría de los ayuntamientos de Extremadura necesitan al menos un nivel ENS medio para sus sistemas principales (padrón, sede electrónica, gestión tributaria). Los ayuntamientos de mayor tamaño o los que gestionan datos sensibles (servicios sociales, policía local) pueden requerir nivel ENS alto.
 
 La categorización depende del impacto que un incidente de seguridad tendría sobre los servicios públicos y los ciudadanos. El CCN proporciona la herramienta PILAR para realizar esta categorización de forma sistemática.
 
-## Cómo afecta NIS2 a los organismos públicos de Extremadura?
+## ¿Cómo afecta NIS2 a los organismos públicos de Extremadura?
 
 La Directiva NIS2, que España está transponiendo a su legislación nacional, amplía las obligaciones de ciberseguridad a las administraciones públicas. Los organismos de Extremadura que gestionen servicios esenciales (sanidad, transporte, agua, energía) estarán directamente afectados.
 
 NIS2 exige gestión de riesgos, notificación de incidentes en menos de 24 horas y gobernanza de la ciberseguridad a nivel de dirección. Esto complementa y refuerza las obligaciones del ENS.
 
-## Qué recursos tiene Extremadura para la ciberseguridad pública?
+## ¿Qué recursos tiene Extremadura para la ciberseguridad pública?
 
 Extremadura cuenta con CSIRT.es como referencia para la gestión de incidentes de seguridad. Además, el CCN-CERT proporciona a todos los organismos públicos españoles acceso a herramientas como PILAR (análisis de riesgos), INES (estado de cumplimiento del ENS), LUCIA (gestión de ciberincidentes) y microCLAUDIA (protección de endpoints).
 
 Estas herramientas son gratuitas para la administración pública y permiten a los organismos de Extremadura avanzar en el cumplimiento del ENS sin necesidad de grandes inversiones en software.
 
-## Cuáles son los principales riesgos de ciberseguridad en Extremadura?
+## ¿Cuáles son los principales riesgos de ciberseguridad en Extremadura?
 
 Los sectores de agroalimentaria, energía, administración pública que caracterizan la economía de Extremadura presentan riesgos específicos. Los ataques de ransomware a ayuntamientos españoles han crecido un 35% entre 2024 y 2025 según datos del CCN-CERT. Los organismos públicos de Extremadura son objetivo por la cantidad de datos personales que gestionan y, en muchos casos, por la falta de recursos dedicados a ciberseguridad.
 
 Los incidentes más frecuentes en administraciones públicas incluyen: phishing dirigido a empleados públicos, ransomware contra servidores de gestión, y exfiltración de datos del padrón o servicios sociales.
 
-## Cómo empezar a cumplir el ENS en un ayuntamiento de Extremadura?
+## ¿Cómo empezar a cumplir el ENS en un ayuntamiento de Extremadura?
 
 1. **Inventariar los sistemas de información** que gestiona el ayuntamiento
 2. **Categorizar cada sistema** según el impacto de un incidente (usar PILAR)
@@ -65,15 +65,15 @@ Los incidentes más frecuentes en administraciones públicas incluyen: phishing 
 
 ## Preguntas frecuentes
 
-### Es obligatorio el ENS para todos los ayuntamientos de Extremadura?
+### ¿Es obligatorio el ENS para todos los ayuntamientos de Extremadura?
 
 Sí. El ENS es obligatorio para todas las administraciones públicas españolas, independientemente de su tamaño. Esto incluye a los 388 ayuntamientos de Extremadura, así como a sus organismos autónomos y empresas públicas que gestionen sistemas de información.
 
-### Cuánto cuesta cumplir el ENS en un ayuntamiento?
+### ¿Cuánto cuesta cumplir el ENS en un ayuntamiento?
 
 El coste depende del tamaño del ayuntamiento y del nivel de seguridad requerido. Para un ayuntamiento mediano de Extremadura, el coste total (consultoría, implementación y auditoría) oscila entre 15.000 y 50.000 euros para nivel medio. Las herramientas del CCN (PILAR, INES, LUCIA) son gratuitas para la administración pública, lo que reduce significativamente el coste.
 
-### Qué plazo tienen los ayuntamientos para cumplir NIS2?
+### ¿Qué plazo tienen los ayuntamientos para cumplir NIS2?
 
 La transposición de NIS2 a la legislación española se espera completada en 2026. Los organismos públicos que gestionen servicios esenciales tendrán un periodo de adaptación, pero la recomendación del CCN es comenzar la preparación de forma inmediata, ya que muchos de los requisitos de NIS2 coinciden con los del ENS.
 

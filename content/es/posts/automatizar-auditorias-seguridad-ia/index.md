@@ -17,7 +17,7 @@ Las auditorías de seguridad informática consumen entre 200 y 800 horas de trab
 
 <!--more-->
 
-## Por que automatizar las auditorías de seguridad?
+## ¿Por qué automatizar las auditorías de seguridad?
 
 El modelo tradicional de auditoría tiene problemas estructurales que la automatización resuelve:
 
@@ -29,7 +29,7 @@ El modelo tradicional de auditoría tiene problemas estructurales que la automat
 
 **El coste.** Una auditoría ENS de nivel medio cuesta entre 8.000 y 15.000 EUR en consultoría externa. Si el equipo interno puede preparar el 80% del trabajo con automatización, el coste de consultoría se reduce proporcionalmente.
 
-## Qué partes de una auditoría se pueden automatizar con IA?
+## ¿Qué partes de una auditoría se pueden automatizar con IA?
 
 No todas las fases de una auditoría son automatizables. El juicio experto sigue siendo necesario para evaluar riesgos contextuales, validar excepciones y emitir opiniones profesionales. Pero las táreas mecanicas si:
 
@@ -44,7 +44,7 @@ No todas las fases de una auditoría son automatizables. El juicio experto sigue
 | Recomendaciones | Parcial | IA sugiere basándose en mejores prácticas, auditor prioriza |
 | Opinion profesional | No | Requiere juicio experto humano |
 
-## Cómo funciona la recopilación automática de evidencias?
+## ¿Cómo funciona la recopilación automática de evidencias?
 
 La recopilación automática de evidencias se basa en agentes que se conectan a los sistemas de la organización y extraen la información necesaria para cada control:
 
@@ -58,7 +58,7 @@ La recopilación automática de evidencias se basa en agentes que se conectan a 
 
 Cada evidencia se etiqueta automáticamente con el control al que corresponde (por ejemplo: la política de contraseñas de AD se vincula a ENS op.acc.5 y a ISO A.8.5). Esto elimina la tarea manual de mapear evidencias a controles.
 
-## Cómo detecta la IA gaps de cumplimiento?
+## ¿Cómo detecta la IA gaps de cumplimiento?
 
 El análisis de gaps con IA funciona en dos niveles:
 
@@ -70,7 +70,7 @@ La combinación de ambos niveles proporciona una visión completa: no solo si lo
 
 {{< cta type="tofu" text="Riskitera evalua tu postura de seguridad y te muestra los gaps de cumplimiento en minutos." label="Evaluar postura" >}}
 
-## Qué ahorro supone automatizar auditorías?
+## ¿Qué ahorro supone automatizar auditorías?
 
 Los datos del sector muestran ahorros consistentes:
 
@@ -84,7 +84,7 @@ Los datos del sector muestran ahorros consistentes:
 
 El ahorro más significativo no es el económico directo, sino la capacidad de hacer compliance continuo: en lugar de preparar una auditoría cada 1-2 años, la organización monitoriza su estado de cumplimiento en tiempo real y corrige desviaciones antes de que se conviertan en no conformidades.
 
-## Qué herramientas existen para automatizar auditorías?
+## ¿Qué herramientas existen para automatizar auditorías?
 
 El mercado ofrece soluciones en diferentes categorías:
 
@@ -105,7 +105,7 @@ El mercado ofrece soluciones en diferentes categorías:
 - LUCIA: gestión de ciberincidentes.
 - ANA: análisis automatizado de cumplimiento ENS.
 
-## Cómo implementar la automatización paso a paso?
+## ¿Cómo implementar la automatización paso a paso?
 
 1. **Inventaria tus obligaciones de auditoría**: que marcos normativos debes cumplir (ENS, ISO 27001, NIS2, DORA) y con que periodicidad
 2. **Mapea los controles críticos**: identifica los 20-30 controles que generan más trabajo de evidencias y son más propensos a desviaciones
@@ -126,18 +126,18 @@ La implementación típica lleva 4-8 semanas para los controles críticos y 3-6 
 
 ## Recursos y referencias
 
-### La IA puede sustituir al auditor externo?
+### ¿La IA puede sustituir al auditor externo?
 
 No. La IA automatiza la preparación y recopilación de evidencias, pero la opinion profesional del auditor sigue siendo necesaria para certificaciones ENS e ISO 27001. Lo que cambia es que el auditor recibe un dossier de evidencias organizado y verificado automáticamente, lo que reduce el tiempo de auditoría in situ y el coste de la consultoría.
 
-### Es válida una evidencia recopilada automáticamente?
+### ¿Es válida una evidencia recopilada automáticamente?
 
 Sí, siempre que sea trazable (se pueda verificar su origen), integra (no haya sido modificada) y actual (tenga fecha y hora de recopilación). Las plataformas GRC con IA generan evidencias con metadatos de trazabilidad que los auditores aceptan. De hecho, muchos auditores prefieren evidencias automáticas porque son más fiables que las capturas de pantalla manuales.
 
-### Cuánto cuesta una plataforma de automatización de auditorías?
+### ¿Cuánto cuesta una plataforma de automatización de auditorías?
 
 Las soluciones varían desde herramientas open source gratuitas (OpenSCAP, Prowler) hasta plataformas enterprise de 50.000-200.000 EUR anuales (ServiceNow GRC). Para una empresa mediana, las plataformas SaaS como Riskitera, Drata o Vanta oscilan entre 10.000 y 40.000 EUR anuales, con ROI típico de 6-12 meses.
 
-### Se puede automatizar la auditoría ENS?
+### ¿Se puede automatizar la auditoría ENS?
 
 Parcialmente. La recopilación de evidencias, la verificación de configuraciones y la generación de informes se automatizan. La categorización de sistemas, la evaluación de riesgos contextuales y la validación de excepciones requieren juicio humano. El CCN esta desarrollando herramientas (ANA) que automatizan parte del análisis de cumplimiento ENS, disponibles gratuitamente para administraciones públicas.
