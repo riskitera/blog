@@ -124,7 +124,7 @@ La implementación típica lleva 4-8 semanas para los controles críticos y 3-6 
 - [IA en ciberseguridad: estado real en 2026](/es/posts/2026/05/inteligencia-artificial-ciberseguridad-2026/)
 - [Gestión de evidencias en auditorias](/es/posts/2026/06/gestion-evidencias-auditorias-seguridad/)
 
-## Preguntas frecuentes
+## Recursos y referencias
 
 ### La IA puede sustituir al auditor externo?
 

@@ -263,7 +263,7 @@ Para organizaciones sujetas a ENS nivel Alto, la implementación de Zero Trust n
 
 Lo mismo aplica a NIS2 (obligatoria para operadores de servicios esenciales e importantes en la UE) y DORA (sector financiero), que exigen gestión de riesgos TIC, control de acceso basado en identidad, pruebas de resiliencia y notificación de incidentes. Todas estas regulaciones empujan hacia una arquitectura que es, en esencia, Zero Trust.
 
-## Cuáles son los errores comunes al adoptar Zero Trust?
+## Errores típicos en adopciones Zero Trust (y sus consecuencias)
 
 ### Error 1: Comprar un producto y declarar "Zero Trust implementado"
 
@@ -295,7 +295,7 @@ Si Zero Trust se percibe como "un tema de IT", faltara presupuesto, apoyo de la 
 
 **Cómo evitarlo:** Presentar Zero Trust en términos de riesgo de negocio y cumplimiento regulatorio, no de tecnología. Involucrar a legal, compliance y operaciones desde el inicio.
 
-## Cómo medir la madurez Zero Trust de tu organización?
+## Modelo de madurez Zero Trust: de ad-hoc a óptimo en 5 niveles
 
 Medir la madurez permite priorizar inversiones y demostrar progreso a la dirección.
 
@@ -320,7 +320,7 @@ La CISA (Cybersecurity and Infrastructure Security Agency) de Estados Unidos pú
 | Tiempo de detección de movimiento lateral (MTTD) | <1 hora |
 | Excepciones de política activas | Decreciente cada trimestre |
 
-## Cuánto cuesta implementar Zero Trust?
+## Inversión real en Zero Trust: desde 15K hasta 500K+ EUR
 
 El coste varía enormemente según el tamaño de la organización, el estado actual de la infraestructura y la ambición de la implementación.
 

@@ -187,7 +187,7 @@ En España, el Banco de España y la CNMV disponen de facultades sancionadoras q
 
 {{< cta type="mofu" text="Prepara tu entidad financiera para DORA con una plataforma que gestiona riesgos TIC, incidentes y pruebas de resiliencia." >}}
 
-## Preguntas frecuentes
+## Lo que más preguntan los equipos de seguridad
 
 ### Soy una fintech con 15 empleados. Me aplica DORA?
 

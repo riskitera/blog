@@ -32,7 +32,7 @@ El trabajo del analista SOC es fundamentalmente operativo: se trata de estar en 
 
 Si quieres entender el contexto completo en el que trabajan estos profesionales, te recomendamos nuestra [guía sobre como montar un SOC desde cero](/es/posts/2026/04/como-montar-soc-desde-cero/), donde explicamos la estructura, herramientas y procesos de un Centro de Operaciones de Seguridad.
 
-## Qué hace un analista SOC N1?
+## Analista SOC N1: triaje de alertas y primera respuesta
 
 El analista N1 (también llamado Tier 1 o analista de triaje) es el punto de entrada al mundo del SOC y la primera línea de defensa de la organización. Su función principal es monitorizar las alertas de seguridad en tiempo real, realizar un triaje inicial y determinar si requieren investigación adicional o si se trata de falsos positivos.
 
@@ -70,7 +70,7 @@ El analista N1 (también llamado Tier 1 o analista de triaje) es el punto de ent
 
 El turno comienza con un handover del turno anterior: revisión de alertas pendientes, incidentes en curso y cualquier novedad relevante. Durante las siguientes 8-12 horas (dependiendo de la rotación), el analista revisa las alertas que llegan a la consola del SIEM, realizando triaje de cada una. En un turno activo, un N1 puede procesar entre 40 y 100 alertas. La mayoría serán falsos positivos o alertas de baja severidad que se cierran directamente. Entre un 10 y un 20 por ciento requerirá algun tipo de análisis adicional, y un porcentaje menor se escalara a N2.
 
-## Qué hace un analista SOC N2?
+## Analista SOC N2: investigación profunda y análisis forense
 
 El analista N2 (Tier 2 o analista de incidentes) es el investigador del SOC. Recibe las alertas escaladas por N1 y realiza un análisis en profundidad para determinar el alcance, la gravedad y el impacto del incidente. Es el responsable de coordinar la respuesta técnica.
 
@@ -176,7 +176,7 @@ El campo de la ciberseguridad evoluciona a una velocidad que hace imprescindible
 - **Conferencias**: RootedCON, Navaja Negra, CyberCamp ([INCIBE](https://www.incibe.es/)), h-c0n, Ekoparty.
 - **Publicaciones y blogs**: lectura habitual de informes de amenazas de Mandiant, CrowdStrike, Microsoft Threat Intelligence, Recorded Future.
 
-## Cuánto gana un analista SOC en España en 2026?
+## Salarios SOC en España 2026: de 22K (N1) a 65K+ (N3)
 
 Los salarios en ciberseguridad en España han experimentado un crecimiento sostenido en los últimos años, impulsados por la escasez de talento y la creciente demanda regulatoria. Estos son los rangos salariales orientativos para 2026, basados en datos de portales de empleo, encuestas sectoriales y nuestra experiencia en el mercado:
 

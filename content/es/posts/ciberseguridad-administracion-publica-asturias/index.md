@@ -18,6 +18,8 @@ La administración pública de Asturias gestiona más de 150 organismos público
 
 <!--more-->
 
+**Asturias alberga el clúster de ciberseguridad SECUSTURIAS y cuenta con el CSIRT del Principado integrado en la red nacional de CSIRTs coordinada por el CCN-CERT.** La Universidad de Oviedo imparte un Máster en Ingeniería de la Ciberseguridad desde 2019, orientado a formar profesionales que cubran la demanda del sector público regional. Con 78 concejos (ayuntamientos), la estructura administrativa asturiana es relativamente compacta, pero la dependencia de infraestructuras industriales críticas (siderurgia, energía) convierte a la región en un objetivo frecuente de ataques a sistemas OT que afectan también a servicios públicos.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Asturias?
 
 Todos los organismos públicos de Asturias, incluyendo el Gobierno autonómico, los 78 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

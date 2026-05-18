@@ -1071,7 +1071,7 @@ Sigma opera sobre una fuente de datos a la vez. Si necesitas correlaciónar even
 - [Qué Es Un Siem Para Que Sirve](/es/posts/2026/04/que-es-un-siem-para-que-sirve/)
 - [Mitre Attack Que Es Como Usarlo](/es/posts/2026/04/mitre-attack-que-es-como-usarlo/)
 
-## Preguntas frecuentes
+## Preguntas que surgen en la práctica
 
 ### Sigma reemplaza las reglas nativas de mi SIEM?
 

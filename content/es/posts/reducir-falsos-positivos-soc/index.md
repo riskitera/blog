@@ -29,7 +29,7 @@ Técnicas probadas para reducir falsos positivos en el SOC: tuning de reglas, en
 
 Un falso positivo (FP) es una alerta que indica actividad maliciosa donde no la hay. Un login legítimo que se marca como sospechoso. Un escaneo de vulnerabilidades interno que dispara reglas de detección de intrusiones. Un backup nocturno que genera alertas de exfiltración de datos.
 
-En teoría, un falso positivo es solo una molestia menor: el analista lo revisa, lo descarta y sigue con su trabajo. En la práctica, el problema es de escala. Un SOC típico recibe entre 5.000 y 50.000 alertas diarias. Si el ratio de falsos positivos es del 80% (algo habitual en entornos mal tuneados), el analista esta dedicando la mayor parte de su jornada a descartar ruido.
+En teoría, un falso positivo es solo una molestia menor: el analista lo revisa, lo descarta y sigue con su trabajo. En la práctica, el problema es de escala. Según el *SANS 2024 SOC Survey*, los SOC con menor madurez reportan ratios de falsos positivos superiores al 75%, y el exceso de alertas irrelevantes es el factor número uno que degrada la eficacia del equipo. Un SOC típico recibe entre 5.000 y 50.000 alertas diarias. Si el ratio de falsos positivos es del 80% (algo habitual en entornos mal tuneados), el analista esta dedicando la mayor parte de su jornada a descartar ruido.
 
 ### El coste real de los falsos positivos
 
@@ -45,7 +45,7 @@ En teoría, un falso positivo es solo una molestia menor: el analista lo revisa,
 
 Los falsos positivos generan un circulo vicioso: más FPs producen más fatiga, la fatiga produce menos investigación, menos investigación produce más alertas ignoradas, y alertas ignoradas producen brechas que retroalimentan la presión sobre el SOC. Romper este circulo es una de las táreas más importantes del equipo de detection engineering.
 
-## Cuantos falsos positivos son normales?
+## Ratio aceptable de falsos positivos: benchmarks por sector
 
 Antes de reducir falsos positivos, necesitas medirlos. Sin métricas, no sabes si estas mejorando ni donde enfocar el esfuerzo.
 
@@ -174,7 +174,7 @@ El enrichment debe ejecutarse de forma automática entre el SIEM y el analista. 
 
 Un SOC que implementa enrichment automático típicamente reduce el tiempo medio de triage por alerta de 10 a 15 minutos a 2 a 4 minutos. No reduce directamente el número de FPs, pero permite descartarlos mucho más rápido y libera tiempo de analista para trabajar en mejora de reglas.
 
-## Qué es el whitelisting inteligente?
+## Whitelisting inteligente: reducir ruido sin crear puntos ciegos
 
 El whitelisting (listas de exclusión) es la herramienta más directa para reducir FPs, pero también la más peligrosa si se usa mal. Un whitelist demasiado amplio crea puntos ciegos. Un whitelist desactualizado acumula excepciones que ya no son validas.
 
@@ -270,7 +270,7 @@ Algoritmos típicos: Random Forest, XGBoost, redes neuronales. El rendimiento de
 
 **Transparencia.** El analista debe entender por que el modelo clasifica una alerta de cierta forma. Modelos de caja negra generan desconfianza. Usar modelos interpretables (Random Forest, SHAP explanations) cuando sea posible.
 
-## Qué métricas medir para evaluar la calidad de alertas?
+## Métricas clave de calidad de alertas: precision, recall y SNR
 
 Sin métricas, no sabes si estas mejorando. Estas son las métricas que todo SOC debería trackear semanalmente.
 

@@ -18,6 +18,8 @@ La administración pública de Comunidad de Madrid gestiona más de 500 organism
 
 <!--more-->
 
+**La Comunidad de Madrid es el principal objetivo de ciberataques del sector público español: según datos del CCN-CERT, concentra más del 25% de los incidentes notificados a nivel nacional, debido a la presencia de la Administración General del Estado, organismos europeos y sedes corporativas.** Madrid Digital (la agencia TIC de la Comunidad) opera un SOC que da servicio a la Administración autonómica y ofrece soporte a los 179 municipios madrileños. Universidades como la UPM, la UC3M y la UAM ofrecen programas de máster en ciberseguridad reconocidos internacionalmente, y la región alberga el mayor ecosistema de empresas de ciberseguridad de España, con más de 200 compañías especializadas.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Comunidad de Madrid?
 
 Todos los organismos públicos de Comunidad de Madrid, incluyendo el Gobierno autonómico, los 179 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

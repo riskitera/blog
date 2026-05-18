@@ -135,7 +135,7 @@ La clave es que el agente no reemplace al SIEM ni al SOAR, sino que se siente en
 - [IA en ciberseguridad: estado real en 2026](/es/posts/2026/05/inteligencia-artificial-ciberseguridad-2026/)
 - [Cómo reducir falsos positivos en el SOC](/es/posts/2026/06/reducir-falsos-positivos-soc/)
 
-## Preguntas frecuentes
+## Recursos y referencias
 
 ### Necesito un SOAR para usar agentes de IA en el SOC?
 

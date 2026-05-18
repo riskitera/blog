@@ -25,7 +25,7 @@ Como calcular el retorno de inversión de una plataforma GRC: costes evitados, a
 - Para presentar al comité de dirección, traduce beneficios técnicos a métricas de negocio: coste por control, coste por auditoría y exposición financiera por incumplimiento.
 {{< /key-takeaways >}}
 
-## Cuál es el ROI típico de una plataforma GRC?
+## ROI medio de una plataforma GRC: entre 180% y 340% a 3 años
 
 Hablar de ROI en GRC no es como calcular el retorno de una campaña de marketing. No hay un número mágico que aplique a todas las organizaciones. Pero si hay datos suficientes para establecer rangos realistas.
 
@@ -39,7 +39,7 @@ La fórmula básica del ROI es sencilla:
 
 Lo complicado no es la formula, sino cuantificar correctamente los beneficios. Vamos a desglosarlos.
 
-## Qué costes evita una plataforma GRC?
+## Costes ocultos que elimina una plataforma GRC
 
 Los costes evitados son beneficios reales, aunque nunca aparezcan como ingreso en la cuenta de resultados. Son el equivalente a calcular cuanto te ha costado el seguro de hogar cuando no has tenido un siniestro: parece invisible, pero el día que lo necesitas, el cálculo cambia radicalmente.
 
@@ -150,7 +150,7 @@ Cada punto porcentual de cobertura adicional reduce la exposición. Si puedes vi
 
 Una plataforma GRC identifica gaps de seguridad que de otra forma pasarian desapercibidos. Cada gap identificado y corregido reduce la superficie de ataque. La cuantificación: usa el framework [MITRE ATT&CK](/es/posts/2026/04/mitre-attack-que-es-como-usarlo/) para mapear tus controles contra técnicas de ataque y evalúa cuantas técnicas quedarían sin cobertura con y sin la plataforma.
 
-## Qué es el time-to-compliance y como mejorarlo?
+## Time-to-compliance: el KPI que más impacta en el ROI del GRC
 
 El time-to-compliance es el tiempo que transcurre desde que decides cumplir con un marco normativo hasta que alcanzas un nivel de cumplimiento certificable o demostrable. Es una métrica crítica porque:
 

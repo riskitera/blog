@@ -18,6 +18,8 @@ La administración pública de Galicia gestiona más de 350 organismos públicos
 
 <!--more-->
 
+**Galicia gestiona su ciberseguridad pública a través de la AMTEGA (Axencia para a Modernización Tecnolóxica de Galicia), que proporciona servicios TIC centralizados y opera un CSIRT autonómico para la Xunta y las entidades locales.** Con 313 concellos (ayuntamientos), muchos de ellos rurales y con población envejecida, la región enfrenta el doble reto de digitalizar servicios públicos y protegerlos simultáneamente. Galicia alberga infraestructuras marítimas y portuarias estratégicas (Vigo, A Coruña, Ferrol) clasificadas como infraestructuras críticas. La Universidade da Coruña y la Universidade de Vigo ofrecen formación de posgrado en ciberseguridad que nutre de profesionales al sector público gallego.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Galicia?
 
 Todos los organismos públicos de Galicia, incluyendo el Gobierno autonómico, los 313 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

@@ -39,7 +39,7 @@ En términos simples, un SIEM hace tres cosas fundamentales:
 2. **Analiza y correlacióna** esos datos en tiempo real, aplicando reglas de detección para identificar patrones que indiquen una amenaza.
 3. **Genera alertas** cuando detecta actividad sospechosa, proporcionando al equipo de seguridad la información necesaria para investigar y responder.
 
-## Cómo funciona un SIEM?
+## Arquitectura interna de un SIEM: recolección, correlación y respuesta
 
 El funcionamiento de un SIEM se puede descomponer en varias fases interconectadas.
 
@@ -100,9 +100,9 @@ El SIEM almacena los logs durante un periodo configurable que depende de los req
 
 El coste de almacenamiento es uno de los factores más relevantes en el coste total de propiedad de un SIEM, especialmente en modelos de licenciamiento basados en volumen de ingesta.
 
-## Cuáles son las principales soluciones SIEM del mercado?
+## Comparativa 2026: Splunk, Sentinel, QRadar, Elastic y Wazuh
 
-El mercado de SIEM es competitivo y diverso. Estas son las principales opciones en 2026:
+El mercado de SIEM es competitivo y diverso. El *Gartner Magic Quadrant for SIEM 2024* sitúa a Splunk (ahora Cisco), Microsoft y IBM como líderes, con Elastic y Google (Chronicle) como challengers que ganan terreno gracias a modelos de precio más predecibles y arquitecturas cloud-native. Estas son las principales opciones en 2026:
 
 ### [Splunk](https://www.splunk.com/) Enterprise Security
 
@@ -217,7 +217,7 @@ El SIEM debe alimentarse de fuentes de inteligencia de amenazas (IoC, TTPs, info
 
 Riskitera se integra con los principales SIEM del mercado, enriqueciendo la información de seguridad con contexto de cumplimiento normativo y gestión de riesgos, proporcionando una visión unificada de la postura de seguridad y compliance de la organización.
 
-## Cuáles son los errores más comunes al implementar un SIEM?
+## Errores frecuentes en despliegues SIEM (y cómo evitarlos)
 
 ### Conectar todas las fuentes desde el primer día
 
@@ -237,7 +237,7 @@ El volumen de logs crece con el tiempo. Si no planificas la capacidad de almacen
 
 {{< cta type="mofu" text="¿Evaluando soluciones SIEM? Descubre cómo Riskitera se integra con tu stack de seguridad existente." >}}
 
-## Preguntas frecuentes
+## Preguntas que surgen en la práctica
 
 ### Cuánto cuesta un SIEM para una empresa mediana?
 

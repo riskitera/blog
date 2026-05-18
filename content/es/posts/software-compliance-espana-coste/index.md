@@ -314,7 +314,7 @@ Con la transposición de NIS2, la aplicación de DORA para el sector financiero 
 
 La dependencia de proveedores estadounidenses preocupa cada vez más a las empresas europeas, especialmente tras las incertidumbres sobre el EU-US Data Privacy Framework. Las soluciones con infraestructura europea y garantías de soberanía de datos ganan terreno rápidamente.
 
-## Preguntas frecuentes
+## Consultas frecuentes de compliance
 
 ### Cuánto cuesta el software de compliance más barato para una pyme española?
 

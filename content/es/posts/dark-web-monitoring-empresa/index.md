@@ -39,7 +39,7 @@ En 2026 el panorama se ha intensificado. Los initial access brokers (IABs) vende
 
 Para una pyme española, el coste medio de una brecha de datos ronda los 100.000 euros entre respuesta al incidente, notificación AEPD, daño reputacional y posibles sanciones. Para una empresa mediana con datos regulados (salud, financiero, infraestructuras críticas), la cifra se multiplica. El dark web monitoring funciona como un sistema de alerta temprana que reduce el tiempo de detección de días o semanas a horas.
 
-## Qué debe buscar una empresa en la dark web
+## Credenciales, datos filtrados y menciones: qué monitorizar en la dark web
 
 No basta con "vigilar la dark web" de forma generica. Necesitas definir qué activos monitorizar y que tipo de amenazas son relevantes para tu organización. Estos son los cinco vectores principales.
 
@@ -375,7 +375,7 @@ La mejor estrategia para la mayoría de empresas medianas es un modelo híbrido:
 
 Este enfoque permite cubrir la superficie de ataque sin sobredimensionar la inversión.
 
-## Qué hacer cuando encuentras datos de tu empresa en la dark web
+## Protocolo de respuesta ante filtraciones detectadas en dark web
 
 Encontrar datos de tu organización en la dark web no es cuestion de si, sino de cuando. Lo importante es tener un protocolo claro de respuesta.
 

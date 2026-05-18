@@ -32,7 +32,7 @@ Esta actividad se fundamenta en una premisa realista: ningún sistema de detecci
 
 El SANS Institute define tres niveles de madurez en threat hunting. En el nivel inicial (HM0), la organización depende exclusivamente de alertas automatizadas. En el nivel intermedio (HM1-HM2), se realizan búsquedas basadas en indicadores y se comienzan a formular hipótesis. En el nivel avanzado (HM3-HM4), el hunting es sistemático, basado en inteligencia y con automatización personalizada. La mayoría de organizaciones se sitúan entre HM0 y HM1, lo que representa un area de mejora significativa.
 
-## Cuál es la diferencia entre detección reactiva y threat hunting proactivo?
+## Detección reactiva vs threat hunting proactivo: dos filosofías opuestas
 
 Comprender la diferencia entre detección reactiva y hunting proactivo es fundamental para valorar la importancia de esta disciplina.
 
@@ -90,7 +90,7 @@ TaHiTI define tres fases principales: iniciación (recopilación de inteligencia
 
 Este modelo define cuatro niveles de madurez en hunting: nivel 0 (sin hunting, solo detección reactiva), nivel 1 (hunting basado en IOCs y búsquedas ad hoc), nivel 2 (hunting basado en hipótesis con procedimientos definidos) y nivel 3 (hunting automatizado con modelos predictivos y machine learning). Proporciona un camino claro de evolución para organizaciones en diferentes etapas de madurez.
 
-## Qué herramientas se usan en threat hunting?
+## Toolkit del threat hunter: SIEM, EDR, sandbox y OSINT
 
 El hunter necesita acceso a datos ricos y herramientas que permitan consultarlos, analizarlos y visualizarlos de forma flexible.
 
@@ -118,7 +118,7 @@ Para hunting, las reglas Sigma proporcionan un punto de partida valioso: el hunt
 
 **Jupyter Notebooks** se utilizan cada vez más para hunting avanzado, combinando la ejecución de consultas al SIEM con análisis estadístico y visualización en un entorno interactivo y reproducible.
 
-## Qué habilidades necesita un threat hunter?
+## Perfil técnico del threat hunter: habilidades imprescindibles
 
 El threat hunting requiere un perfil profesional multidisciplinar que combina conocimientos técnicos profundos con capacidad analitica.
 

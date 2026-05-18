@@ -153,7 +153,7 @@ El impacto reputacional de una sanción pública por incumplimiento de DORA pued
 **Artículos relacionados:**
 - [Dora Reglamento Ciberseguridad Financiera](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/)
 
-## Preguntas frecuentes
+## Dudas habituales
 
 **DORA aplica a fintech y neobancos?**
 Sí. DORA aplica a todas las entidades financieras reguladas en la UE, incluyendo entidades de pago, entidades de dinero electrónico y proveedores de servicios de criptoactivos autorizados bajo MiCA. Las fintech con licencia bancaria o de servicios de pago están sujetas a los mismos requisitos que los bancos tradicionales.

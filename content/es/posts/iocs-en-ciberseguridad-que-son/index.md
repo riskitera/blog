@@ -182,7 +182,7 @@ Quinto, comparte inteligencia. La ciberseguridad es un esfuerzo colectivo. Parti
 
 {{< cta type="mofu" text="Centraliza tus feeds de threat intelligence y automatiza la correlación de IOCs con Riskitera." >}}
 
-## Preguntas frecuentes
+## Lo que más preguntan los equipos de seguridad
 
 ### Cuál es la diferencia entre IOCs e IOAs
 

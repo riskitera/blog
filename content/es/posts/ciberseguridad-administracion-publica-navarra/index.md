@@ -18,6 +18,8 @@ La administración pública de Navarra gestiona más de 300 organismos públicos
 
 <!--more-->
 
+**Navarra gestiona su ciberseguridad pública a través de NASERTIC (Navarra de Servicios y Tecnologías), la empresa pública que proporciona infraestructura TIC al Gobierno Foral, a los 272 ayuntamientos y a las entidades del sector público navarro.** El régimen foral otorga a Navarra competencias fiscales y administrativas propias, lo que implica gestionar sistemas tributarios complejos que requieren niveles ENS alto. En 2024, el Gobierno de Navarra aprobó su Plan de Ciberseguridad 2024-2027 con una dotación específica para reforzar las capacidades de detección y respuesta. La Universidad Pública de Navarra (UPNA) y la Universidad de Navarra ofrecen programas de formación en ciberseguridad, y la comunidad cuenta con un tejido industrial tecnológico significativo en el sector de la automoción y las energías renovables.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Navarra?
 
 Todos los organismos públicos de Navarra, incluyendo el Gobierno autonómico, los 272 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

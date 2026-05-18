@@ -80,7 +80,7 @@ Un SOAR tiene tres componentes principales:
 
 La conclusión de esta tabla es simple: SIEM y SOAR no son competidores. Son complementarios. El SIEM es los ojos del SOC. El SOAR es las manos.
 
-## Qué hace un SOAR que no hace un SIEM
+## Orquestación, playbooks y respuesta automática: lo que aporta un SOAR
 
 Para entender cuando necesitas un SOAR, es útil desglosar las capacidades exclusivas que aporta:
 
@@ -148,7 +148,7 @@ Un SOAR bien configurado genera automáticamente métricas que un SIEM por si so
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana. Reduce tu MTTR sin enviar datos a terceros." label="Ver demo SOC" >}}
 
-## Cuándo necesitas un SOAR además del SIEM
+## Señales claras de que tu SOC necesita un SOAR
 
 No todos los SOC necesitan un SOAR. Hay señales claras de que ha llegado el momento:
 
@@ -343,7 +343,7 @@ Los playbooks no son "configurar y olvidar". Las APIs cambian, las herramientas 
 
 Cada playbook debería mapear a una o más tácticas y técnicas de MITRE ATT&CK. Esto permite identificar gaps en la cobertura de detección y respuesta, priorizar playbooks por riesgo real y comunicar el valor al negocio en un lenguaje común.
 
-## Cuánto cuesta implementar un SOAR
+## Coste real de un SOAR: licencias, integración y mantenimiento
 
 El coste total de propiedad (TCO) de un SOAR incluye mucho más que la licencia del software:
 

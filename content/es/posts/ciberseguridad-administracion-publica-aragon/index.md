@@ -18,6 +18,8 @@ La administración pública de Aragón gestiona más de 400 organismos públicos
 
 <!--more-->
 
+**Aragón gestiona su ciberseguridad pública a través de AST (Aragonesa de Servicios Telemáticos), que proporciona servicios TIC centralizados a más de 731 ayuntamientos, la mayoría con menos de 500 habitantes.** Esta dispersión y el reducido tamaño de los municipios aragoneses hace que la mayoría carezcan de personal técnico dedicado a seguridad. La Universidad de Zaragoza ofrece desde 2020 un Máster en Ciberseguridad que forma profesionales para cubrir esta demanda regional, y AST ha desplegado un SOC centralizado que da cobertura a las entidades locales adheridas al convenio marco de administración electrónica.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Aragón?
 
 Todos los organismos públicos de Aragón, incluyendo el Gobierno autonómico, los 731 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

@@ -655,7 +655,7 @@ La regla se despliega en staging, se válida durante 48 horas (0 falsos positivo
 - [Cómo Montar Soc Desde Cero](/es/posts/2026/04/como-montar-soc-desde-cero/)
 - [Mitre Attack Que Es Como Usarlo](/es/posts/2026/04/mitre-attack-que-es-como-usarlo/)
 
-## Preguntas frecuentes
+## Preguntas que surgen en la práctica
 
 ### Qué diferencia hay entre detection engineering y threat hunting?
 

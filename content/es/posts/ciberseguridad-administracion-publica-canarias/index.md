@@ -18,6 +18,8 @@ La administración pública de Canarias gestiona más de 200 organismos público
 
 <!--more-->
 
+**Canarias opera el CSIRT-GOBCAN, el equipo de respuesta ante incidentes del Gobierno de Canarias, adscrito a la Dirección General de Telecomunicaciones y Nuevas Tecnologías.** La condición insular del archipiélago añade un reto particular: la dependencia de cables submarinos para la conectividad convierte la resiliencia de las comunicaciones en un factor crítico de ciberseguridad. La Universidad de La Laguna ofrece formación especializada en seguridad informática, y el Gobierno canario ha impulsado desde 2021 un plan de adecuación al ENS para los 88 ayuntamientos del archipiélago, muchos de los cuales carecían de inventario de activos TIC actualizado.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Canarias?
 
 Todos los organismos públicos de Canarias, incluyendo el Gobierno autonómico, los 88 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

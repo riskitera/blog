@@ -184,7 +184,7 @@ La AEPD es una de las autoridades de protección de datos más activas de Europa
 **Artículos relacionados:**
 - [Políticas Seguridad Informatica Como Crearlas](/es/posts/2026/04/politicas-seguridad-informatica-como-crearlas/)
 
-## Preguntas frecuentes
+## Consultas frecuentes de compliance
 
 **Mi empresa tiene menos de 250 empleados, tengo que cumplir el RGPD?**
 Sí. El RGPD aplica a toda organización que trate datos personales, independientemente de su tamaño. La exención de 250 empleados solo afecta al Registro de Actividades de Tratamiento, y ni siquiera es absoluta: si tratas datos de categorías especiales, datos de condenas o tratamientos no ocasionales, el RAT es obligatorio aunque tengas 5 empleados.

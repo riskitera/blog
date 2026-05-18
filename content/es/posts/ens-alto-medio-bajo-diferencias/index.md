@@ -144,7 +144,7 @@ Para organizaciones que deben cumplir ambos marcos, la recomendación es impleme
 - [Qué es el Esquema Nacional de Seguridad (ENS)](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
 - [Guía práctica: ISO 27001 para Startups](/es/posts/2026/02/guia-iso-27001-startups/)
 
-## Preguntas frecuentes
+## Dudas habituales
 
 ### Puede un sistema tener nivel alto en una dimensión y bajo en otra?
 

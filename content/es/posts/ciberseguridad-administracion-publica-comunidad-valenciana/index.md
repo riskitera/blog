@@ -18,6 +18,8 @@ La administración pública de Comunidad Valenciana gestiona más de 600 organis
 
 <!--more-->
 
+**La Comunidad Valenciana opera el CSIRT-CV (Centre de Seguretat TIC de la Comunitat Valenciana), creado en 2007, lo que lo convierte en uno de los CSIRTs autonómicos más veteranos de España.** Adscrito a la Dirección General de Tecnologías de la Información y las Comunicaciones de la Generalitat Valenciana, el CSIRT-CV presta servicio a los 542 ayuntamientos, las tres diputaciones provinciales y los organismos autonómicos. La Universitat Politècnica de València y la Universitat de València son centros de referencia en formación e investigación en ciberseguridad. El Puerto de Valencia, uno de los mayores del Mediterráneo, fue incluido como infraestructura crítica bajo la Directiva NIS original, reforzando las obligaciones de seguridad que NIS2 amplía ahora al conjunto del sector público.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Comunidad Valenciana?
 
 Todos los organismos públicos de Comunidad Valenciana, incluyendo el Gobierno autonómico, los 542 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

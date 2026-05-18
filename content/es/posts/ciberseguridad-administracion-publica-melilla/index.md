@@ -18,6 +18,8 @@ La administración pública de Melilla gestiona organismos de la ciudad autónom
 
 <!--more-->
 
+**Melilla, al igual que Ceuta, es una ciudad autónoma fronteriza con Marruecos cuya administración pública opera bajo un perfil de amenaza elevado que incluye hacktivismo geopolítico y ataques dirigidos a sistemas de gestión fronteriza e inmigración.** Con una única entidad administrativa que concentra todas las competencias municipales y autonómicas, Melilla presenta un modelo de gobernanza TIC simplificado pero con recursos limitados. La ciudad depende de conexiones de fibra submarina con la Península para su conectividad, y el Ministerio del Interior y las Fuerzas Armadas mantienen sistemas interconectados que elevan los requisitos de seguridad. En 2022, la Ciudad Autónoma inició un proceso de adecuación integral al ENS con apoyo del CCN, dado que hasta entonces muchos de sus sistemas no habían sido formalmente categorizados.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Melilla?
 
 Todos los organismos públicos de Melilla, incluyendo el Gobierno autonómico, los 1 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

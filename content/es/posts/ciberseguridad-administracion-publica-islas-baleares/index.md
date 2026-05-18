@@ -18,6 +18,8 @@ La administración pública de Islas Baleares gestiona más de 100 organismos p�
 
 <!--more-->
 
+**Las Islas Baleares gestionan su transformación digital pública a través de la Fundación Bit (Balear d'Innovació Tecnològica), que presta servicios TIC al Govern Balear y a los 67 ayuntamientos del archipiélago.** La condición insular obliga a depender de cables submarinos para la conectividad, lo que añade un factor de riesgo a la resiliencia de los servicios públicos digitales. El turismo, que representa más del 45% del PIB balear, genera picos estacionales de carga en las sedes electrónicas municipales y en los sistemas sanitarios, ampliando la ventana de exposición. La Universitat de les Illes Balears ofrece formación en seguridad informática dentro de sus programas de Ingeniería, y el Govern ha priorizado la adecuación al ENS de los sistemas de gestión turística y sanitaria.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Islas Baleares?
 
 Todos los organismos públicos de Islas Baleares, incluyendo el Gobierno autonómico, los 67 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

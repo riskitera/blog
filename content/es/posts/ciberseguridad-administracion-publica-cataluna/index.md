@@ -18,6 +18,8 @@ La administración pública de Cataluña gestiona más de 1.000 organismos públ
 
 <!--more-->
 
+**Cataluña dispone de la Agència de Ciberseguretat de Catalunya, creada en 2020, que opera como CSIRT autonómico y gestiona un SOC 24/7 para la Generalitat y las entidades locales adheridas.** Es una de las pocas comunidades autónomas con una agencia de ciberseguridad propia con entidad jurídica independiente. En septiembre de 2023, el Hospital Clínic de Barcelona sufrió un ataque de ransomware del grupo RansomHouse que exfiltró 4,5 TB de datos y paralizó servicios asistenciales durante semanas, convirtiéndose en uno de los ciberincidentes públicos más graves de la historia de España. La Universitat Politècnica de Catalunya y la Universitat Oberta de Catalunya ofrecen másteres de referencia en ciberseguridad a nivel nacional.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Cataluña?
 
 Todos los organismos públicos de Cataluña, incluyendo el Gobierno autonómico, los 947 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

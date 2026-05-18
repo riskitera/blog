@@ -18,6 +18,8 @@ La administración pública de Castilla-La Mancha gestiona más de 950 organismo
 
 <!--more-->
 
+**Castilla-La Mancha, con 919 municipios, es la segunda comunidad con más ayuntamientos de España, y la gran mayoría tiene menos de 1.000 habitantes y carece de personal técnico dedicado a ciberseguridad.** La Junta de Comunidades opera a través de la Dirección General de Administración Digital servicios compartidos de infraestructura TIC para las entidades locales adheridas. En 2023, varios ayuntamientos de la región fueron objetivo de ataques de ransomware que paralizaron temporalmente sus sedes electrónicas, evidenciando la necesidad de acelerar la adecuación al ENS. La Universidad de Castilla-La Mancha ha incorporado módulos de ciberseguridad en sus grados de Ingeniería Informática en los campus de Ciudad Real y Albacete.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Castilla-La Mancha?
 
 Todos los organismos públicos de Castilla-La Mancha, incluyendo el Gobierno autonómico, los 919 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

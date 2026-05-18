@@ -18,6 +18,8 @@ La administración pública de La Rioja gestiona más de 180 organismos público
 
 <!--more-->
 
+**La Rioja, con 174 municipios para apenas 320.000 habitantes, es la comunidad autónoma uniprovincial más pequeña de España, lo que permite un modelo centralizado de gestión TIC bajo la Dirección General de Innovación y Transformación Digital del Gobierno riojano.** Este modelo facilita la adecuación al ENS al reducir la fragmentación administrativa, pero también concentra el riesgo: un incidente en los sistemas centrales puede afectar a toda la administración regional simultáneamente. La Universidad de La Rioja ofrece formación en ciberseguridad y colabora con INCIBE en programas de concienciación. El sector vitivinícola, motor económico de la región, genera cada vez más datos sensibles de trazabilidad que transitan por plataformas públicas de control agroalimentario.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en La Rioja?
 
 Todos los organismos públicos de La Rioja, incluyendo el Gobierno autonómico, los 174 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

@@ -34,7 +34,7 @@ La versión actual de ATT&CK (v15, publicada en 2024) incluye 14 tácticas, más
 
 El framework es gratuito, abierto y mantenido por un equipo dedicado en MITRE con aportaciones de la comunidad global de ciberseguridad. Organizaciones como [ENISA](https://www.enisa.europa.eu/), el [CCN-CERT](https://www.ccn-cert.cni.es/) y CISA lo referencian en sus guías y publicaciones, lo que refuerza su posición como estándar de facto en la industria.
 
-## Cuáles son las matrices de MITRE ATT&CK?
+## Las tres matrices ATT&CK: Enterprise, Mobile e ICS
 
 MITRE ATT&CK se organiza en tres matrices principales, cada una adaptada a un entorno tecnológico diferente.
 
@@ -125,7 +125,7 @@ Los hallazgos del threat hunting frecuentemente generan nuevos [IOCs](/es/posts/
 
 {{< cta type="tofu" text="Riskitera mapea tus detecciónes a MITRE ATT&CK automáticamente, visualizando gaps de cobertura en tiempo real." label="Ver cobertura" >}}
 
-## Qué herramientas existen para trabajar con ATT&CK?
+## Herramientas para ATT&CK: Navigator, TRAM, DeTT&CT y CAR
 
 El ecosistema de herramientas alrededor de ATT&CK es amplio y en constante crecimiento.
 
@@ -165,7 +165,7 @@ Cuando una alerta del SIEM se mapea contra ATT&CK, el analista obtiene inmediata
 
 Con las reglas etiquetadas, es posible generar métricas continuas de cobertura de detección: porcentaje de técnicas cubiertas por tactica, tendencia temporal de cobertura, técnicas con mayor volumen de alertas y técnicas detectadas pero sin alertas reales (posibles áreas de sobredetección). Riskitera mapea automáticamente los controles de seguridad contra las técnicas de MITRE ATT&CK, proporcionando visibilidad instantánea sobre la cobertura de detección y los puntos ciegos de la organización.
 
-## Cuáles son los errores comunes al implementar ATT&CK?
+## Trampas habituales al adoptar ATT&CK en el SOC
 
 **Intentar cubrir toda la matriz a la vez.** ATT&CK es extenso y pretender detectar todas las técnicas simultáneamente es inviable para la mayoría de organizaciones. Es mejor priorizar las técnicas más relevantes según el perfil de amenaza y avanzar gradualmente.
 

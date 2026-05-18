@@ -27,7 +27,7 @@ Análisis de las multas RGPD más importantes en España: importes, motivos, sec
 
 ## Cuánto cuestan las multas RGPD en España?
 
-España es uno de los países europeos más activos en la aplicación del [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679) (Reglamento General de Protección de Datos). La [AEPD](https://www.aepd.es/) (Agencia Española de Protección de Datos) se ha consolidado como una de las autoridades de control más prolijas de la Unión Europea en número de resoluciones sancionadoras.
+España es uno de los países europeos más activos en la aplicación del [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679) (Reglamento General de Protección de Datos). La [AEPD](https://www.aepd.es/) (Agencia Española de Protección de Datos) se ha consolidado como una de las autoridades de control más prolijas de la Unión Europea en número de resoluciones sancionadoras. Según la *Memoria Anual de la AEPD*, la agencia tramitó más de 15.000 reclamaciones en 2024, un volumen que la sitúa como la autoridad de protección de datos con mayor carga de trabajo de toda la UE en términos per cápita.
 
 Los datos hablan por sí solos:
 

@@ -199,7 +199,7 @@ La decisión depende de tus requisitos regulatorios, capacidad técnica y presup
 - [Auditoría Seguridad Informatica Guia](/es/posts/2026/04/auditoria-seguridad-informatica-guia/)
 - [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/04/análisis-riesgos-ciberseguridad-paso-a-paso/)
 
-## Preguntas frecuentes
+## Dudas habituales
 
 **Puedo gestionar el compliance sin una plataforma GRC?**
 Sí, si tienes un solo marco normativo y un equipo pequeño. Con hojas de Excel bien estructuradas, un sistema de carpetas compartidas y disciplina puedes gestionar ISO 27001 o ENS para una organización pequeña. El problema aparece cuando escalas: múltiples marcos, decenas de controles, auditorías frecuentes. A partir de 2-3 marcos simultaneos, la plataforma se paga sola en ahorro de tiempo.

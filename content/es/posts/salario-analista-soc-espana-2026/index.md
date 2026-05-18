@@ -27,7 +27,7 @@ Salarios reales de analistas SOC en España en 2026: rangos por nivel (N1, N2, N
 
 ## Panorama salarial SOC en España en 2026
 
-El mercado de ciberseguridad en España ha experimentado una transformación significativa en los últimos tres años. La combinación de la transposición de [NIS2](https://digital-strategy.ec.europa.eu/en/policies/nis2-directive), la aplicación progresiva del [EU AI Act](https://eur-lex.europa.eu/eli/reg/2024/1689) y el incremento sostenido de ciberataques ha disparado la demanda de profesionales SOC. Según datos del [INCIBE](https://www.incibe.es/) y del Observatorio Nacional de Tecnología y Sociedad ([ONTSI](https://www.ontsi.es/)), España necesitará cubrir más de 80.000 posiciones de ciberseguridad para 2027, con un deficit que ya supera las 30.000 vacantes.
+El mercado de ciberseguridad en España ha experimentado una transformación significativa en los últimos tres años. La combinación de la transposición de [NIS2](https://digital-strategy.ec.europa.eu/en/policies/nis2-directive), la aplicación progresiva del [EU AI Act](https://eur-lex.europa.eu/eli/reg/2024/1689) y el incremento sostenido de ciberataques ha disparado la demanda de profesionales SOC. Según datos del [INCIBE](https://www.incibe.es/) y del Observatorio Nacional de Tecnología y Sociedad ([ONTSI](https://www.ontsi.es/)), España necesitará cubrir más de 80.000 posiciones de ciberseguridad para 2027, con un deficit que ya supera las 30.000 vacantes. El *ENISA Threat Landscape 2024* identifica la escasez de talento en ciberseguridad como uno de los factores de riesgo sistémico para la UE, y sitúa a España entre los países con mayor brecha relativa entre demanda de profesionales y oferta formativa disponible.
 
 Este deficit tiene un efecto directo en los salarios. En 2024, los analistas SOC N1 en España cobraban una media de 22.000-28.000 euros. En 2026, esa horquilla se ha desplazado a 25.000-35.000 euros, un incremento del 15-20% en apenas dos años. En los niveles superiores, el crecimiento ha sido aún mayor: los SOC Managers en sectores regulados (banca, energía, telecomunicaciones) están superando los 80.000 euros con frecuencia.
 
@@ -167,7 +167,7 @@ La tendencia es que cada vez menos empresas aplican ajuste por ubicación. La es
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana. Libera a tu equipo de táreas repetitivas." label="Ver demo SOC" >}}
 
-## Sectores que mejor pagan
+## Banca, energía y defensa: los sectores que mejor pagan en SOC
 
 No todos los sectores pagan igual por el mismo perfil. La regulación, la criticidad de los activos y la capacidad financiera crean diferencias notables.
 
@@ -199,7 +199,7 @@ El sector público español paga por debajo del mercado privado para perfiles SO
 
 Las startups de ciberseguridad españolas (y las que operan desde España) ofrecen paquetes mixtos: salario base algo inferior al mercado (5-15% menos) pero con stock options, bonus por objetivos y, en algunos casos, una progresión profesional mucho más rápida que en empresa grande.
 
-## Impacto de las certificaciones en el salario
+## OSCP, GCIH y CISSP: cuánto sube el salario con cada certificación
 
 Las certificaciones siguen siendo un factor diferenciador medible. Estos son los incrementos salariales reales observados en el mercado español en 2026.
 
@@ -350,7 +350,7 @@ Algunos profesionales SOC con 8-10+ años de experiencia y reputación en el sec
 
 {{< cta type="mofu" text="En Riskitera buscamos analistas SOC con ganas de trabajar con IA soberana aplicada a operaciones de seguridad reales. Conecta tu SIEM, EDR y feeds CTI en una plataforma que reduce los falsos positivos un 60%." >}}
 
-## Las skills más demandadas para maximizar tu salario en 2026
+## Skills que marcan diferencia salarial en 2026: cloud, automation e IA
 
 Según las ofertas de empleo publicadas en los principales portales (LinkedIn, InfoJobs, Talent.com) y las entrevistas con responsables de contratación, estas son las competencias que más impactan en el salario SOC en 2026:
 

@@ -134,7 +134,7 @@ Invertir en ciberseguridad es significativamente más barato que gestionar un in
 **Artículos relacionados:**
 - [Qué Es Esquema Nacional Seguridad Ens](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
 
-## Preguntas frecuentes
+## Dudas habituales
 
 **Los hospitales privados también deben cumplir el ENS?**
 Depende. Los hospitales privados que prestan servicios al Sistema Nacional de Salud (conciertos, colaboración público-privada) deben cumplir el ENS como proveedores de servicios a la administración pública. Los hospitales exclusivamente privados no están obligados por el ENS, pero si por el RGPD, la LOPDGDD y NIS2 (si superan los umbrales de tamaño).

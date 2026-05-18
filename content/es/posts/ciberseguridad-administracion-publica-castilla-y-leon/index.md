@@ -18,6 +18,8 @@ La administración pública de Castilla y León gestiona más de 2.300 organismo
 
 <!--more-->
 
+**Castilla y León es la comunidad autónoma con más municipios de España (2.248 ayuntamientos), lo que la convierte en el mayor reto de adecuación al ENS a escala municipal del país.** El 87% de estos municipios tiene menos de 1.000 habitantes y depende de servicios TIC centralizados a través de las diputaciones provinciales. La Junta de Castilla y León, a través de la Agencia de Innovación y Desarrollo Económico, ha promovido convenios con el CCN para facilitar el uso de herramientas como PILAR y CLARA en entidades locales. El INCIBE, con sede en León, refuerza el ecosistema regional de ciberseguridad y colabora con la Universidad de León y la Universidad de Valladolid en programas de formación especializada.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Castilla y León?
 
 Todos los organismos públicos de Castilla y León, incluyendo el Gobierno autonómico, los 2248 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

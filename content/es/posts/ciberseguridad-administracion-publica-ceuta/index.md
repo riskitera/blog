@@ -18,6 +18,8 @@ La administración pública de Ceuta gestiona organismos de la ciudad autónoma 
 
 <!--more-->
 
+**Ceuta, como ciudad autónoma fronteriza con Marruecos, presenta un perfil de amenaza singular que combina ciberespionaje, hacktivismo geopolítico y ataques a infraestructuras de gestión fronteriza.** La Ciudad Autónoma de Ceuta concentra todas las competencias administrativas en una sola entidad (no hay municipios independientes), lo que simplifica la gobernanza del ENS pero también genera un punto único de fallo. El Ministerio de Defensa y las Fuerzas Armadas mantienen presencia significativa en la ciudad, lo que eleva los requisitos de seguridad de los sistemas que interconectan con redes civiles. Ceuta depende de cables submarinos para su conectividad con la Península, un factor de riesgo que comparte con Canarias y Baleares.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Ceuta?
 
 Todos los organismos públicos de Ceuta, incluyendo el Gobierno autonómico, los 1 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

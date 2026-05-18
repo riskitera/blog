@@ -215,7 +215,7 @@ Automatizar donde sea posible. El inventario de activos tecnológicos, el escane
 
 {{< cta type="mofu" text="Simplifica tu proximo análisis de riesgos con una plataforma que integra MAGERIT, FAIR y registro de riesgos automatizado." >}}
 
-## Preguntas frecuentes
+## Lo que más preguntan los equipos de seguridad
 
 ### Cada cuanto debo actualizar el análisis de riesgos
 

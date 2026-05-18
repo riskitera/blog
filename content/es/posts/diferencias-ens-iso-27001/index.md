@@ -98,7 +98,7 @@ Si implementas ambos de forma coordinada, el coste total es un 30-40% menos que 
 - [ENS Alto vs Medio vs Bajo](/es/posts/2026/05/ens-alto-medio-bajo-diferencias/)
 - [ISO 27001 para Startups](/es/posts/2026/02/guia-iso-27001-startups/)
 
-## Preguntas frecuentes
+## Recursos y referencias
 
 ### Si tengo ISO 27001, necesito también el ENS?
 

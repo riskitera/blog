@@ -39,6 +39,8 @@ La distinción clave es entre **datos**, **información** e **inteligencia**:
 
 España ocupa posiciones destacadas en los rankings europeos de ciberataques recibidos. Según los datos del [CCN-CERT](https://www.ccn-cert.cni.es/), el organismo de respuesta a incidentes del Centro Criptológico Nacional, los incidentes gestionados han crecido un 25% interanual de media en los últimos cinco años. [INCIBE-CERT](https://www.incibe.es/incibe-cert), el CERT de referencia para empresas y ciudadanos, gestión más de 118.000 incidentes en su último informe anual.
 
+El *Verizon Data Breach Investigations Report (DBIR) 2024* confirma que el 68% de las brechas a nivel global involucran un elemento humano (phishing, errores, uso indebido de credenciales), y que los actores externos motivados económicamente son responsables del 95% de los ataques. Estos datos son directamente aplicables al contexto español.
+
 Las empresas españolas enfrentan amenazas específicas:
 
 - **Ransomware dirigido.** Grupos como Lockbit y Cl0p han atacado activamente a empresas españolas de infraestructura, sanidad y administración pública.

@@ -18,6 +18,8 @@ La administración pública de País Vasco gestiona más de 300 organismos públ
 
 <!--more-->
 
+**El País Vasco opera el Basque Cybersecurity Centre (BCSC), creado en 2017 por el Gobierno Vasco, que funciona como CSIRT autonómico y centro de referencia en ciberseguridad industrial para toda la comunidad.** El BCSC es una de las iniciativas autonómicas más avanzadas de España en materia de ciberseguridad, con capacidades de SOC, inteligencia de amenazas y formación sectorial. La fuerte presencia industrial del País Vasco (máquina herramienta, siderurgia, energía) hace que la seguridad OT/ICS sea una prioridad estratégica que afecta directamente a los servicios públicos que dependen de estas infraestructuras. La Universidad de Deusto, Mondragon Unibertsitatea y la UPV/EHU ofrecen programas de máster en ciberseguridad reconocidos a nivel nacional, y el clúster CYBASQUE agrupa a más de 80 empresas del sector.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en País Vasco?
 
 Todos los organismos públicos de País Vasco, incluyendo el Gobierno autonómico, los 251 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

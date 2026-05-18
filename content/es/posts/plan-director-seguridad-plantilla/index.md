@@ -202,7 +202,7 @@ Los indicadores clave deben cubrir las cuatro perspectivas:
 - Tasa de click en simulaciones de phishing.
 - Cobertura de personal certificado (CISSP, CISM, CEH).
 
-## Cómo se elabora un plan director paso a paso
+## Elaboración del plan director en 6 fases: del diagnóstico al seguimiento
 
 El proceso de elaboración sigue una secuencia lógica que no conviene alterar. Saltarse pasos (especialmente el análisis de situación) es el error más frecuente y el más costoso.
 
@@ -277,7 +277,7 @@ El plan no es un documento estático. Establece:
 
 {{< cta type="tofu" text="Riskitera evalua tu postura de seguridad y te muestra los gaps de cumplimiento en minutos." label="Evaluar postura" >}}
 
-## Cómo priorizar proyectos de seguridad
+## Matriz de priorización: impacto, urgencia y coste de cada proyecto
 
 No todos los proyectos pueden ejecutarse a la vez. La priorización es crítica para asignar recursos limitados a las acciones que generan mayor impacto.
 
@@ -490,7 +490,7 @@ A continuación se describe la plantilla completa que puedes usar como base para
 - Glosario de términos.
 - Referencias normativas.
 
-## Qué errores evitar al crear un plan director
+## Errores que invalidan un plan director de seguridad
 
 Tras años trabajando en proyectos GRC, estos son los errores más frecuentes que invalidan un PDS o lo convierten en papel mojado:
 

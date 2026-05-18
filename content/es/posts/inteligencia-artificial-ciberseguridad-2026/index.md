@@ -107,7 +107,7 @@ Las tendencias con mayor probabilidad de impacto operativo en los próximos 12-1
 - [Analista SOC: roles N1, N2 y N3](/es/posts/2026/04/analista-soc-roles-n1-n2-n3/)
 - [Agentes de IA para SOC](/es/posts/2026/05/agentes-ia-soc-triage-alertas/)
 
-## Preguntas frecuentes
+## Recursos y referencias
 
 ### Puede la IA sustituir a un analista SOC?
 

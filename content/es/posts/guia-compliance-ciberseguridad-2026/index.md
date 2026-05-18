@@ -159,7 +159,7 @@ El régimen sancionador europeo en ciberseguridad se ha endurecido drasticamente
 
 **IA regulada y compliance de IA.** El EU AI Act introduce una nueva capa de compliance que se solapara con la ciberseguridad. Los sistemas de IA usados en seguridad (detección de amenazas, análisis de riesgos automatizado) están clasificados como alto riesgo y requieren evaluación de conformidad, documentación técnica y supervisión humana.
 
-**Convergencia de marcos.** Los reguladores europeos están trabajando en simplificar el paisaje normativo. La expectativa es que los frameworks nacionales (como el ENS) se alineen más estrechamente con las directivas europeas (NIS2) para reducir la carga de cumplimiento. ENISA esta desarrollando un esquema europeo de certificación de ciberseguridad (EUCS) que podría convertirse en el estándar común.
+**Convergencia de marcos.** Los reguladores europeos están trabajando en simplificar el paisaje normativo. La expectativa es que los frameworks nacionales (como el ENS) se alineen más estrechamente con las directivas europeas (NIS2) para reducir la carga de cumplimiento. Según el *ENISA NIS2 Good Practices Report (2024)*, solo el 40% de los Estados miembros habían completado la transposición de NIS2 en el plazo previsto (octubre 2024), y España se encuentra entre los países con transposición aún en trámite, lo que genera incertidumbre para las empresas afectadas. ENISA esta desarrollando un esquema europeo de certificación de ciberseguridad (EUCS) que podría convertirse en el estándar común.
 
 **Supply chain compliance.** NIS2 y DORA han puesto el foco en la cadena de suministro. Las empresas no solo deben cumplir ellas mismas, sino verificar que sus proveedores también cumplen. Esto esta generando un efecto cascada: los proveedores TIC más pequeños que no puedan demostrar cumplimiento perderan clientes regulados.
 
@@ -177,7 +177,7 @@ El régimen sancionador europeo en ciberseguridad se ha endurecido drasticamente
 - [Dora Reglamento Ciberseguridad Financiera](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/)
 - [Guía Iso 27001 Startups](/es/posts/2026/02/guia-iso-27001-startups/)
 
-## Preguntas frecuentes
+## Consultas frecuentes de compliance
 
 **Necesito cumplir todas las normativas a la vez?**
 No necesariamente. Primero identifica cuales te son aplicables. Una startup tecnológica de 30 empleados que no trata datos de salud ni opera en sector financiero probablemente solo necesite RGPD e ISO 27001 (si sus clientes lo exigen). Una empresa de servicios financieros de 500 empleados que presta servicios a la administración pública necesitará RGPD, DORA, ENS e ISO 27001. El primer paso siempre es el scope.

@@ -108,7 +108,7 @@ Los analistas N1 son la primera línea de defensa. Su función principal es moni
 
 **Perfil típico:** 1-2 años de experiencia en TI o ciberseguridad. Conocimientos básicos de redes, sistemas operativos y herramientas SIEM. Capacidad de trabajar en turnos.
 
-Un SOC 24/7 necesita un mínimo de 5-6 analistas N1 para cubrir los tres turnos con cobertura de vacaciones y bajas.
+Según el *SANS 2024 SOC Survey*, el equipo medio de un SOC con cobertura 24/7 oscila entre 11 y 25 personas, y los SOC que operan con menos de 10 analistas reportan niveles de madurez significativamente inferiores en detección y respuesta. Un SOC 24/7 necesita un mínimo de 5-6 analistas N1 para cubrir los tres turnos con cobertura de vacaciones y bajas.
 
 ### Nivel 2 (N2): Analista de incidentes
 
@@ -149,7 +149,7 @@ Un SOC típico cuenta con 1-2 analistas N3.
 - **Ingeniero de detección**: desarrolla y mantiene las reglas de correlación, los casos de uso y la infraestructura del SIEM.
 - **Ingeniero de automatización (SOAR)**: desarrolla playbooks automatizados y gestiona la plataforma SOAR.
 
-## Qué herramientas necesita un SOC?
+## Stack tecnológico del SOC: SIEM, EDR, SOAR y TIP
 
 La tecnología es uno de los tres pilares del SOC, junto con las personas y los procesos.
 
@@ -241,7 +241,7 @@ Mide la eficacia del SOC con métricas clave:
 - **Volumen de alertas por analista**: indicador de carga de trabajo.
 - **Cobertura MITRE ATT&CK**: porcentaje de técnicas del framework cubiertas por reglas de detección.
 
-## Cuánto cuesta montar y operar un SOC?
+## De 96K a 1.5M EUR/año: rangos de coste según modelo SOC
 
 El coste de un SOC varía enormemente según el modelo, el tamaño y la madurez deseada. Estas son referencias orientativas para el mercado español en 2026:
 
@@ -266,7 +266,7 @@ El coste de un SOC varía enormemente según el modelo, el tamaño y la madurez 
 
 Riskitera ofrece servicios de SOC gestionado 24/7 con un modelo flexible que se adapta a las necesidades de cada organización, combinando analistas experimentados con tecnología avanzada de detección y respuesta.
 
-## Cuáles son los errores más comunes al montar un SOC?
+## Los 5 errores que hunden un SOC antes del primer año
 
 Estos son los errores que vemos con más frecuencia en organizaciones que intentan montar un SOC:
 

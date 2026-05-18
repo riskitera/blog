@@ -18,6 +18,8 @@ La administración pública de Extremadura gestiona más de 400 organismos públ
 
 <!--more-->
 
+**Extremadura fue pionera en España en apostar por el software libre en la administración pública con el proyecto gnuLinEx (2002), una decisión que sentó las bases de su cultura tecnológica autonómica.** Hoy, la Junta de Extremadura gestiona los servicios TIC compartidos para los 388 municipios de la región a través de la Dirección General de Administración Electrónica y Transformación Digital. Con una de las densidades de población más bajas de España (26 hab/km2), la mayoría de los municipios extremeños son pequeños y carecen de recursos técnicos propios. La Universidad de Extremadura ofrece formación en ciberseguridad integrada en sus grados de Ingeniería Informática, y la región participa en los programas de capacitación del CCN para entidades locales con recursos limitados.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Extremadura?
 
 Todos los organismos públicos de Extremadura, incluyendo el Gobierno autonómico, los 388 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

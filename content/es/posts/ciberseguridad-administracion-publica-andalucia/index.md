@@ -18,6 +18,8 @@ La administración pública de Andalucía gestiona más de 1.200 organismos púb
 
 <!--more-->
 
+**Andalucía cuenta con AndalucíaCERT, el equipo de respuesta a incidentes de ciberseguridad de la Junta, operativo desde 2019 y coordinado por la Agencia Digital de Andalucía.** Con 786 ayuntamientos (el mayor número de municipios de cualquier comunidad autónoma), la superficie de ataque del sector público andaluz es la más amplia de España. Según datos del CCN-CERT, Andalucía se sitúa entre las tres comunidades con mayor volumen de ciberincidentes notificados en el sector público, lo que llevó a la Junta a aprobar en 2022 su Estrategia de Ciberseguridad autonómica y a reforzar los servicios de SOC compartido para entidades locales.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Andalucía?
 
 Todos los organismos públicos de Andalucía, incluyendo el Gobierno autonómico, los 786 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

@@ -18,6 +18,8 @@ La administración pública de Cantabria gestiona más de 120 organismos públic
 
 <!--more-->
 
+**Cantabria centraliza sus servicios TIC públicos a través de la Dirección General de Informática del Gobierno regional, que da soporte a los 102 ayuntamientos de la comunidad.** En 2021, el Hospital Universitario Marqués de Valdecilla sufrió un intento de ciberataque que puso en evidencia la exposición del sector sanitario público cántabro. La Universidad de Cantabria ofrece formación en ciberseguridad a través de su Escuela de Ingeniería, y el Gobierno regional ha priorizado la adecuación al ENS de los sistemas sanitarios y de servicios sociales, considerados de nivel alto por el tipo de datos que gestionan.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Cantabria?
 
 Todos los organismos públicos de Cantabria, incluyendo el Gobierno autonómico, los 102 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.

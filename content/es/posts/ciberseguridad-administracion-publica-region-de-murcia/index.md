@@ -18,6 +18,8 @@ La administración pública de Región de Murcia gestiona más de 100 organismos
 
 <!--more-->
 
+**La Región de Murcia, con solo 45 municipios pero 1,5 millones de habitantes, presenta una estructura administrativa compacta donde cada ayuntamiento gestiona una media de 33.000 ciudadanos, lo que eleva el volumen de datos sensibles por entidad.** La Comunidad Autónoma gestiona sus servicios TIC a través de la Dirección General de Informática y Transformación Digital, que ofrece servicios compartidos a las entidades locales adheridas. La Universidad de Murcia y la Universidad Politécnica de Cartagena ofrecen formación en ciberseguridad, y la región cuenta con el Centro de Cualificación Turística de Murcia, que ha incorporado módulos de protección de datos dada la importancia del turismo y la agroexportación como sectores que manejan grandes volúmenes de información personal y comercial.
+
 ## Qué obligaciones de ciberseguridad tiene la administración pública en Región de Murcia?
 
 Todos los organismos públicos de Región de Murcia, incluyendo el Gobierno autonómico, los 45 ayuntamientos, las diputaciones provinciales, las entidades de derecho público y las empresas públicas que gestionen sistemas de información, están obligados a cumplir el ENS. Esto incluye tanto los sistemas que gestionan datos de ciudadanos como los que soportan servicios públicos digitales.
