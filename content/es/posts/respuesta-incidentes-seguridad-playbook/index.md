@@ -25,15 +25,15 @@ Playbook completo de respuesta a incidentes para SOC: fases NIST, roles, comunic
 - Frameworks como MITRE ATT&CK y guías de CCN-CERT e INCIBE proporcionan taxonomías y procedimientos estandarizados para equipos SOC en España
 {{< /key-takeaways >}}
 
-## ¿Qué es un plan de respuesta a incidentes
+## ¿Qué es un plan de respuesta a incidentes?
 
-Un plan de respuesta a incidentes (Incident Response Plan, IRP) es el documento que define como una organización detecta, contiene, erradica y se recupera de un incidente de ciberseguridad. No es un documento teórico: es un manual operativo que el equipo SOC sigue bajo presión, cuando los sistemas están caidos y la dirección exige respuestas.
+Un plan de respuesta a incidentes (Incident Response Plan, IRP) es el documento que define cómo una organización detecta, contiene, erradica y se recupera de un incidente de ciberseguridad. No es un documento teórico: es un manual operativo que el equipo SOC sigue bajo presión, cuando los sistemas están caídos y la dirección exige respuestas.
 
-La referencia principal para construir un IRP es el [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) (Computer Security Incident Handling Guide), publicado por el National Institute of Standards and Technology. En el contexto español, el [CCN-CERT](https://www.ccn-cert.cni.es/) pública guías complementarias adaptadas al Esquema Nacional de Seguridad (ENS), y el [INCIBE](https://www.incibe.es/) ofrece recursos para el sector privado y las pymes.
+La referencia principal para construir un IRP es el [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) (Computer Security Incident Handling Guide), publicado por el National Institute of Standards and Technology. En el contexto español, el [CCN-CERT](https://www.ccn-cert.cni.es/) publica guías complementarias adaptadas al Esquema Nacional de Seguridad (ENS), y el [INCIBE](https://www.incibe.es/) ofrece recursos para el sector privado y las pymes.
 
-### Por que necesitas un playbook, no solo un plan
+### Por qué necesitas un playbook, no solo un plan
 
-Un plan de respuesta general describe el "que". Los playbooks describen el "como" para cada tipo de incidente concreto. Un SOC efectivo tiene ambos:
+Un plan de respuesta general describe el "qué". Los playbooks describen el "cómo" para cada tipo de incidente concreto. Un SOC efectivo tiene ambos:
 
 - **Plan general (IRP):** Roles, cadena de comunicación, criterios de escalado, umbrales de severidad.
 - **Playbooks específicos:** Procedimientos paso a paso para ransomware, phishing, data breach, DDoS, compromiso de credenciales, etc.
@@ -52,12 +52,12 @@ La preparación ocurre antes del incidente. Es la fase más importante y la más
 - SIEM configurado con reglas de detección actualizadas
 - EDR/XDR desplegado en todos los endpoints
 - Plataforma de ticketing para incidentes (no sirve un Excel)
-- Herramientas forenses: adquisición de imagenes, análisis de memoria, PCAP
-- Canales de comunicación alternativos (si el correo está comprometido, como os comunicais?)
+- Herramientas forenses: adquisición de imágenes, análisis de memoria, PCAP
+- Canales de comunicación alternativos (si el correo está comprometido, ¿cómo os comunicáis?)
 
 **Documentación:**
 - Inventario de activos actualizado (no puedes proteger lo que no conoces)
-- Diagramas de red con segmentación real (no la teorica)
+- Diagramas de red con segmentación real (no la teórica)
 - Lista de contactos de emergencia: equipo IR, legal, CISO, comunicación, proveedores críticos
 - Contratos con proveedores de IR externos (retainers) para escalado
 
@@ -69,21 +69,21 @@ La preparación ocurre antes del incidente. Es la fase más importante y la más
 **Inteligencia:**
 - Feeds de threat intelligence activos (MISP, OTX, feeds sectoriales)
 - Mapeo de [MITRE ATT&CK](https://attack.mitre.org/) para las técnicas más relevantes del sector
-- Seguimiento de grupos APT que atacan tu sector o geografia
+- Seguimiento de grupos APT que atacan tu sector o geografía
 
 ### Fase 2: Detección y análisis
 
-Esta es la fase donde la mayoría de los SOC viven día a día. El objetivo es identificar qué un incidente está ocurriendo, determinar su alcance y asignarle severidad.
+Esta es la fase donde la mayoría de los SOC viven día a día. El objetivo es identificar que un incidente está ocurriendo, determinar su alcance y asignarle severidad.
 
 **Fuentes de detección:**
 
 | Fuente | Tipo de alerta | Ejemplo |
 |--------|---------------|---------|
-| SIEM | Correlación de eventos | Login desde IP anomala + escalada de privilegios |
+| SIEM | Correlación de eventos | Login desde IP anómala + escalada de privilegios |
 | EDR | Comportamiento en endpoint | Proceso svchost.exe ejecutando PowerShell codificado |
-| IDS/IPS | Firmas y anomalías de red | Trafico C2 a dominio conocido |
+| IDS/IPS | Firmas y anomalías de red | Tráfico C2 a dominio conocido |
 | Threat Intelligence | IOCs coincidentes | Hash de fichero en feed de malware activo |
-| Usuarios | Reporte manual | "Mi equipo actúa raro" o "He recibido un correo sospechoso" |
+| Usuarios | Reporte manual | "Mi equipo actúa de forma rara" o "He recibido un correo sospechoso" |
 | Honeypots | Acceso a recurso trampa | Lectura de archivo canary en servidor de ficheros |
 
 **Proceso de triage:**
@@ -97,7 +97,7 @@ Esta es la fase donde la mayoría de los SOC viven día a día. El objetivo es i
 
 | Nivel | Descripción | Tiempo de respuesta |
 |-------|-------------|---------------------|
-| P1 (Crítico) | Ransomware activo, data breach confirmado, sistemas críticos caidos | Inmediato, 24/7 |
+| P1 (Crítico) | Ransomware activo, data breach confirmado, sistemas críticos caídos | Inmediato, 24/7 |
 | P2 (Alto) | Compromiso de credenciales privilegiadas, malware en propagación | < 1 hora |
 | P3 (Medio) | Phishing exitoso sin movimiento lateral, vulnerabilidad explotada contenida | < 4 horas |
 | P4 (Bajo) | Intentos fallidos, malware detectado y bloqueado por EDR | < 24 horas |
@@ -136,7 +136,7 @@ La fase que todos quieren saltarse y la que más valor genera a largo plazo.
 **Post-mortem (Lessons Learned):**
 - Reunión formal dentro de los 5 días laborables posteriores al cierre del incidente
 - Participan todos los roles involucrados (no solo técnicos)
-- Se documenta: timeline, que funciono, que fallo, acciones de mejora
+- Se documenta: timeline, qué funcionó, qué falló, acciones de mejora
 
 **Estructura del informe post-incidente:**
 
@@ -164,7 +164,7 @@ Un equipo de respuesta efectivo necesita roles claros asignados antes de que ocu
 **Incident Commander (IC):**
 - Lidera la respuesta y toma decisiones operativas
 - Coordina entre equipos técnicos, comunicación y dirección
-- Decide cuando escalar, cuando contener y cuando dar por cerrado el incidente
+- Decide cuándo escalar, cuándo contener y cuándo dar por cerrado el incidente
 - Requisito: experiencia en gestión de crisis, no necesariamente el perfil más técnico
 
 **Analista de triage (N1/N2):**
@@ -232,12 +232,12 @@ El ransomware es el incidente más frecuente y de mayor impacto en España, como
 3. **Desconectar backups de la red** si aún no están afectados. Verificar integridad de snapshots.
 4. **Bloquear IOCs** en firewall, proxy y EDR: hashes, IPs, dominios de C2.
 5. **Revocar credenciales** de cuentas comprometidas o potencialmente comprometidas (empezar por cuentas privilegiadas).
-6. **Activar comunicación alternativa.** Si el correo está comprometido, usar canal secundario (Signal, llamadas telefonicas, Slack externo).
+6. **Activar comunicación alternativa.** Si el correo está comprometido, usar canal secundario (Signal, llamadas telefónicas, Slack externo).
 
 ### Contención
 
 - Identificar el vector de entrada (phishing, RDP expuesto, vulnerabilidad explotada, supply chain).
-- Mapear el movimiento lateral: que sistemas están comprometidos y cuales están en riesgo.
+- Mapear el movimiento lateral: qué sistemas están comprometidos y cuáles están en riesgo.
 - Segmentar la red para crear zonas limpias.
 - Desplegar reglas de detección específicas para el ransomware identificado.
 - Verificar que los controladores de dominio (Active Directory) no están comprometidos. Si lo están, la recuperación cambia radicalmente.
@@ -269,7 +269,7 @@ La posición recomendada por INCIBE, CCN-CERT y Europol es **no pagar**. Las raz
 
 Si la organización no tiene backups y los datos son críticos, la decisión final es de la dirección con asesoramiento legal. Documentar la decisión y el razonamiento.
 
-{{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y la generacion de playbooks de tu SOC con IA soberana. Reduce el tiempo de detección y respuesta desde el primer dia." label="Ver demo SOC" >}}
+{{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y la generación de playbooks de tu SOC con IA soberana. Reduce el tiempo de detección y respuesta desde el primer día." label="Ver demo SOC" >}}
 
 ## Playbook 2: Phishing (compromiso de credenciales)
 
@@ -277,7 +277,7 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 
 - Usuario reporta correo sospechoso
 - Sandbox de correo detecta enlace o adjunto malicioso
-- Login desde ubicación geográfica anomala
+- Login desde ubicación geográfica anómala
 - Acceso a aplicaciones SaaS desde IP no habitual
 - Reglas de reenvio de correo creadas sin autorización
 - Alertas de impossible travel (login desde Madrid y a los 10 minutos desde otro país)
@@ -295,14 +295,14 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 - Bloquear el dominio/URL de phishing en proxy y DNS.
 - Reportar el dominio a Google Safe Browsing y PhishTank.
 - Si se comprometieron credenciales: verificar si se reutilizan en otros sistemas.
-- Revisar actividad del atacante en las cuentas comprometidas: correos leidos, datos accedidos, reglas creadas, ficheros descargados.
+- Revisar actividad del atacante en las cuentas comprometidas: correos leídos, datos accedidos, reglas creadas, ficheros descargados.
 
 ### Erradicación
 
 - Eliminar reglas de reenvio, delegaciones y permisos no autorizados.
 - Revocar aplicaciones OAuth de terceros añadidas por el atacante.
 - Verificar que no hay mecanismos de persistencia (app passwords, tokens de API).
-- Si el phishing incluia malware: ejecutar el playbook de malware en paralelo.
+- Si el phishing incluía malware: ejecutar el playbook de malware en paralelo.
 
 ### Recuperación
 
@@ -316,15 +316,15 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 ### Criterios de detección
 
 - DLP (Data Loss Prevention) alerta sobre exfiltración de datos sensibles
-- Volumenes anómalos de datos transferidos fuera de la red
+- Volúmenes anómalos de datos transferidos fuera de la red
 - Acceso masivo a registros de base de datos fuera de patrón habitual
 - Datos de la organización detectados en foros underground o paste sites
 - Notificación de un tercero (investigador, cliente, proveedor)
 
 ### Acciones inmediatas
 
-1. **Determinar que datos están afectados.** Categorizar: datos personales (RGPD), datos financieros, propiedad intelectual, datos de clientes.
-2. **Identificar el vector de exfiltración.** Via red, USB, correo, cloud storage, API expuesta.
+1. **Determinar qué datos están afectados.** Categorizar: datos personales (RGPD), datos financieros, propiedad intelectual, datos de clientes.
+2. **Identificar el vector de exfiltración.** Vía red, USB, correo, cloud storage, API expuesta.
 3. **Cortar el canal de exfiltración** sin alertar al atacante (si aún está activo).
 4. **Preservar logs y evidencias** del acceso a datos.
 5. **Notificar a Legal** inmediatamente para evaluar obligaciones RGPD.
@@ -339,7 +339,7 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 
 ### Erradicación
 
-- Cerrar la vulnerabilidad o vector de acceso que permitio la brecha.
+- Cerrar la vulnerabilidad o vector de acceso que permitió la brecha.
 - Auditar todos los accesos a los datos afectados en los últimos 90 días.
 - Verificar que no hay otros canales de exfiltración activos.
 
@@ -355,23 +355,23 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 
 ### Criterios de detección
 
-- Spike subito en tráfico de red hacia servidores públicos
-- Degradación o caida de servicios web sin causa interna identificada
+- Spike súbito en tráfico de red hacia servidores públicos
+- Degradación o caída de servicios web sin causa interna identificada
 - Alertas de CDN o WAF por tráfico anómalo
-- Incremento masivo de conexiones desde IPs dispersas geograficamente
+- Incremento masivo de conexiones desde IPs dispersas geográficamente
 - Patrones de tráfico no humanos (request rate, user agents, distribución de IPs)
 
 ### Acciones inmediatas
 
 1. **Activar mitigación en CDN/WAF.** Si usas Cloudflare, AWS Shield, Akamai o similar: activar el modo de mitigación DDoS.
-2. **Identificar el tipo de ataque.** Volumetrico (saturación de ancho de banda), de protocolo (SYN flood, amplificación) o de capa de aplicación (HTTP flood).
+2. **Identificar el tipo de ataque.** Volumétrico (saturación de ancho de banda), de protocolo (SYN flood, amplificación) o de capa de aplicación (HTTP flood).
 3. **Activar rate limiting** agresivo en las IPs y patrones identificados.
 4. **Comunicar internamente** que se trata de un DDoS, no de un fallo de infraestructura.
 
 ### Contención
 
 - Coordinar con el ISP para filtrar tráfico en upstream (blackholing o scrubbing).
-- Implementar geo-blocking si el tráfico malicioso viene de regiones específicas y los usuarios legitimos no.
+- Implementar geo-blocking si el tráfico malicioso viene de regiones específicas y los usuarios legítimos no.
 - Escalar recursos de infraestructura si es posible (auto-scaling).
 - Si el DDoS es una cortina de humo para otro ataque: verificar que no hay actividad de intrusión en paralelo.
 
@@ -387,9 +387,9 @@ Si la organización no tiene backups y los datos son críticos, la decisión fin
 - Desactivar gradualmente las reglas de mitigación agresivas para no bloquear tráfico legítimo.
 - Verificar que todos los servicios están operativos y con rendimiento normal.
 - Revisar la arquitectura de resiliencia: caching, CDN, anycast, auto-scaling.
-- Considerar un servicio de mitigación DDoS dedicado si no se tenia.
+- Considerar un servicio de mitigación DDoS dedicado si no se tenía.
 
-## ¿Cómo comunicar un incidente interna y externamente
+## ¿Cómo comunicar un incidente interna y externamente?
 
 La comunicación durante un incidente es tan crítica como la respuesta técnica. Una mala comunicación puede agravar el daño reputacional más que el propio incidente.
 
@@ -401,13 +401,13 @@ La comunicación durante un incidente es tan crítica como la respuesta técnica
 - No enviar correo masivo a toda la empresa hasta que se entienda el alcance.
 
 **Primeras 24 horas:**
-- Comunicación general a empleados con: que ha pasado (en términos generales), que deben hacer (no hacer), y cuando recibiran la siguiente actualización.
-- Establecer cadencia de actualizaciónes (cada 4-8 horas en P1, cada 24 horas en P2).
+- Comunicación general a empleados con: qué ha pasado (en términos generales), qué deben hacer (no hacer), y cuándo recibirán la siguiente actualización.
+- Establecer cadencia de actualizaciones (cada 4-8 horas en P1, cada 24 horas en P2).
 
 **Durante el incidente:**
 - Mantener un canal de war room (virtual o presencial) para el equipo de respuesta.
 - Todas las decisiones y acciones se documentan en tiempo real en el sistema de ticketing.
-- Nunca comunicar internamente lo que no se comunicaria externamente (las filtraciones son inevitables).
+- Nunca comunicar internamente lo que no se comunicaría externamente (las filtraciones son inevitables).
 
 ### Comunicación externa
 
@@ -419,7 +419,7 @@ La comunicación durante un incidente es tan crítica como la respuesta técnica
 **Con clientes/usuarios:**
 - Solo cuando se tenga información verificada del alcance
 - Lenguaje claro, sin jerga técnica
-- Incluir: que pasó, que datos se vieron afectados, que medidas se han tomado, que deben hacer ellos
+- Incluir: qué pasó, qué datos se vieron afectados, qué medidas se han tomado, qué deben hacer ellos
 
 **Con medios de comunicación:**
 - Un único portavoz designado
@@ -435,32 +435,32 @@ Estado: [Activo/Contenido/Resuelto]
 Severidad: P1
 Hora de detección: [YYYY-MM-DD HH:MM UTC]
 
-QUE HA PASADO:
+QUÉ HA PASADO:
 [Descripción factual en 2-3 líneas]
 
-QUE ESTAMOS HACIENDO:
+QUÉ ESTAMOS HACIENDO:
 [Acciones en curso]
 
-QUE NECESITAMOS DE TI:
+QUÉ NECESITAMOS DE TI:
 [Acciones que los empleados deben tomar]
 
-PROXIMA ACTUALIZACION:
+PRÓXIMA ACTUALIZACIÓN:
 [Hora estimada]
 
 Contacto: [Incident Commander] vía [canal]
 ```
 
-## ¿Cómo documentar lecciones aprendidas
+## ¿Cómo documentar lecciones aprendidas?
 
 El post-mortem es la actividad con mayor retorno de inversión en todo el proceso de respuesta. Sin embargo, la mayoría de las organizaciones lo omiten o lo hacen de forma superficial.
 
-### ¿Cuándo hacerlo
+### ¿Cuándo hacerlo?
 
 - Reunión formal: dentro de los 5 días laborables posteriores al cierre del incidente
 - Asistentes: todos los roles involucrados en la respuesta (técnicos, comunicación, legal, dirección)
 - Duración: 90-120 minutos para un P1, 60 minutos para un P2
 
-### ¿Qué documentar
+### ¿Qué documentar?
 
 **Timeline completo:**
 - Hora de primer indicador (no de detección)
@@ -474,8 +474,8 @@ El post-mortem es la actividad con mayor retorno de inversión en todo el proces
 
 **Análisis de causa raíz:**
 - Vector de ataque inicial
-- Que controles fallaron y por que
-- Que controles funcionaron
+- Qué controles fallaron y por qué
+- Qué controles funcionaron
 - TTPs mapeados a [MITRE ATT&CK](https://attack.mitre.org/) con IDs específicos (ej: T1566.001 Spearphishing Attachment, T1486 Data Encrypted for Impact)
 
 **Acciones de mejora:**
@@ -532,7 +532,7 @@ Para medir la madurez del programa IR a lo largo del tiempo:
 
 ### CCN-CERT
 
-El [CCN-CERT](https://www.ccn-cert.cni.es/) es la referencia para la Administración Pública española. Pública:
+El [CCN-CERT](https://www.ccn-cert.cni.es/) es la referencia para la Administración Pública española. Publica:
 
 - **Guías CCN-STIC:** Procedimientos técnicos de seguridad alineados con el ENS
 - **Herramienta LUCIA:** Sistema de gestión de ciberincidentes para la Administración
@@ -544,7 +544,7 @@ El [CCN-CERT](https://www.ccn-cert.cni.es/) es la referencia para la Administrac
 [INCIBE](https://www.incibe.es/) es la referencia para el sector privado y las pymes:
 
 - **INCIBE-CERT:** Gestión de incidentes para ciudadanos y empresas
-- **Linea 017:** Teléfono de atención en ciberseguridad
+- **Línea 017:** Teléfono de atención en ciberseguridad
 - **Guías y herramientas:** Kits de concienciación, políticas de seguridad tipo, planes de respuesta
 - **Informes anuales:** Balance de ciberseguridad con datos estadísticos nacionales
 
@@ -554,11 +554,11 @@ Después de analizar decenas de incidentes reales en España (incluyendo los doc
 
 ### 1. Apagar los equipos comprometidos
 
-Error intuitivo pero crítico. Al apagar un equipo se pierde la memoria RAM, donde puede haber claves de cifrado del ransomware, procesos maliciosos en ejecución e indicadores de compromiso volatiles. La acción correcta es **aislar de la red**, no apagar.
+Error intuitivo pero crítico. Al apagar un equipo se pierde la memoria RAM, donde puede haber claves de cifrado del ransomware, procesos maliciosos en ejecución e indicadores de compromiso volátiles. La acción correcta es **aislar de la red**, no apagar.
 
 ### 2. No preservar evidencias
 
-En la urgencia por restaurar, se formatean discos y se reinstalan sistemas sin adquirir imagenes forenses. Esto destruye la posibilidad de entender el ataque, determinar el alcance real y perseguir legalmente al atacante.
+En la urgencia por restaurar, se formatean discos y se reinstalan sistemas sin adquirir imágenes forenses. Esto destruye la posibilidad de entender el ataque, determinar el alcance real y perseguir legalmente al atacante.
 
 ### 3. Comunicar antes de verificar
 
@@ -566,7 +566,7 @@ Publicar información incorrecta sobre el alcance o el tipo de incidente genera 
 
 ### 4. No verificar los backups antes de restaurar
 
-Restaurar un backup que contiene el malware o la vulnerabilidad que permitio el ataque original. Todos los backups deben verificarse en un entorno aislado antes de restaurar en producción.
+Restaurar un backup que contiene el malware o la vulnerabilidad que permitió el ataque original. Todos los backups deben verificarse en un entorno aislado antes de restaurar en producción.
 
 ### 5. Declarar victoria demasiado pronto
 
@@ -608,11 +608,11 @@ Depende del tipo de incidente. Si hay datos personales afectados, el RGPD exige 
 
 ### ¿Qué diferencia hay entre un plan de respuesta y un playbook?
 
-El plan de respuesta (IRP) es el documento marco: define roles, responsabilidades, cadena de comunicación, criterios de severidad y políticas generales. Los playbooks son procedimientos operativos detallados para tipos de incidentes concretos (ransomware, phishing, DDoS). Un SOC necesita ambos: el plan dice "quien hace que y cuando escalar", el playbook dice "estos son los 15 pasos exactos para contener un ransomware".
+El plan de respuesta (IRP) es el documento marco: define roles, responsabilidades, cadena de comunicación, criterios de severidad y políticas generales. Los playbooks son procedimientos operativos detallados para tipos de incidentes concretos (ransomware, phishing, DDoS). Un SOC necesita ambos: el plan dice "quién hace qué y cuándo escalar", el playbook dice "estos son los 15 pasos exactos para contener un ransomware".
 
 ### ¿Es recomendable pagar el rescate en un ataque de ransomware?
 
-La posición unanime de INCIBE, CCN-CERT, Europol y la mayoría de expertos es no pagar. No garantiza la recuperación de los datos, financia al grupo criminal y marca a la organización como objetivo futuro. Además, puede tener implicaciones legales (financiación de terrorismo). La mejor defensa contra el ransomware son backups offline verificados, segmentación de red y un plan de recuperación probado.
+La posición unánime de INCIBE, CCN-CERT, Europol y la mayoría de expertos es no pagar. No garantiza la recuperación de los datos, financia al grupo criminal y marca a la organización como objetivo futuro. Además, puede tener implicaciones legales (financiación de terrorismo). La mejor defensa contra el ransomware son backups offline verificados, segmentación de red y un plan de recuperación probado.
 
 ### ¿Qué framework de respuesta a incidentes es mejor para una empresa española?
 

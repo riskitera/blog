@@ -25,14 +25,14 @@ Los 15 mejores feeds de threat intelligence gratuitos en 2026: MISP, AlienVault 
 - Pasar de feeds gratuitos a comerciales tiene sentido cuando necesitas atribución, contexto geopolitico o cobertura de dark web que los feeds abiertos no ofrecen.
 {{< /key-takeaways >}}
 
-## ¿Qué es un feed de CTI y por que lo necesitas
+## ¿Qué es un feed de CTI y por qué lo necesitas?
 
 Un feed de Cyber Threat Intelligence (CTI) es una fuente de datos estructurados que proporciona indicadores de compromiso (IOCs), información sobre amenazas activas y contexto sobre campañas maliciosas. Los IOCs típicos incluyen hashes de malware, direcciones IP maliciosas, dominios de phishing, URLs de distribución de malware y firmas de vulnerabilidades explotadas.
 
 La razón por la que un SOC necesita feeds de CTI es simple: sin inteligencia externa, tu capacidad de detección se limita a lo que ya conoces. Los feeds te permiten:
 
 - **Detectar proactivamente** amenazas conocidas antes de que causen daño.
-- **Enriquecer alertas** del SIEM con contexto (quien ataca, que campaña, que malware).
+- **Enriquecer alertas** del SIEM con contexto (quién ataca, qué campaña, qué malware).
 - **Priorizar respuesta** basándote en la severidad y relevancia de la amenaza.
 - **Bloquear preventivamente** dominios, IPs y hashes maliciosos en tus controles perimetrales.
 
@@ -44,7 +44,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 [AlienVault OTX](https://otx.alienvault.com/) es la plataforma de threat intelligence colaborativa más grande del mundo, con más de 200.000 participantes que comparten "pulsos" (colecciones de IOCs asociados a una amenaza concreta).
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | IPs, dominios, URLs, hashes (MD5/SHA1/SHA256), CVEs, YARA rules, CIDR |
 | **Formato** | API REST (JSON), STIX/TAXII, CSV, OpenIOC |
@@ -62,7 +62,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 [Abuse.ch](https://abuse.ch/) es un proyecto de investigación suizo que opera varios feeds especializados. [URLhaus](https://urlhaus.abuse.ch/) se centra en URLs utilizadas para distribuir malware.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | URLs de distribución de malware, tags de campaña |
 | **Formato** | CSV, JSON, API REST, STIX/TAXII |
@@ -78,7 +78,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 [MalwareBazaar](https://bazaar.abuse.ch/) es el repositorio de muestras de malware de Abuse.ch, con más de 3 millones de muestras catalogadas.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | Hashes (MD5/SHA256/SHA1), tags de familia, tlsh, imphash, ssdeep |
 | **Formato** | API REST (JSON), CSV diario, STIX/TAXII |
@@ -91,9 +91,9 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 ### 4. Abuse.ch: ThreatFox
 
-[ThreatFox](https://threatfox.abuse.ch/) recopila IOCs asociados a familias de malware específicas, con enfasis en infraestructura de comando y control (C2).
+[ThreatFox](https://threatfox.abuse.ch/) recopila IOCs asociados a familias de malware específicas, con énfasis en infraestructura de comando y control (C2).
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | IPs, dominios, URLs de C2, asociados a familias de malware |
 | **Formato** | API REST (JSON), CSV, STIX/TAXII, MISP feed |
@@ -106,7 +106,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 [Feodo Tracker](https://feodotracker.abuse.ch/) rastrea servidores de comando y control de botnets bancarios (Dridex, Emotet, TrickBot, QakBot y sus sucesores).
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | IPs de C2, puertos, estado (activo/offline), familia de botnet |
 | **Formato** | CSV, JSON, blocklist para firewalls |
@@ -119,7 +119,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 [MISP](https://www.misp-project.org/) no es un feed, sino una plataforma open source de compartición de inteligencia que agrega feeds de múltiples fuentes (incluidos todos los de Abuse.ch) y permite crear, compartir y correlacionar eventos de amenazas.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | Todos (IPs, dominios, hashes, emails, YARA, Sigma, vulnerabilidades) |
 | **Formato** | Formato MISP nativo (JSON), STIX 1.x/2.x, OpenIOC, CSV, texto |
@@ -130,26 +130,26 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 **Limitación**: requiere mantenimiento. Instalar y mantener una instancia MISP no es trivial (necesita servidor dedicado, actualizaciónes, curation de feeds).
 
-**Integración SIEM**: MISP tiene módulos de exportación directa para Splunk, QRadar, Elastic, TheHive y practicamente cualquier plataforma que soporte STIX/TAXII. El modulo `misp-modules` permite enriquecimiento bidireccional.
+**Integración SIEM**: MISP tiene módulos de exportación directa para Splunk, QRadar, Elastic, TheHive y practicamente cualquier plataforma que soporte STIX/TAXII. El módulo `misp-modules` permite enriquecimiento bidireccional.
 
 ### 7. CIRCL (Computer Incident Response Center Luxembourg)
 
 [CIRCL](https://www.circl.lu/) opera varios servicios de CTI gratuitos, siendo los más relevantes su instancia MISP pública y los feeds de passive DNS/passive SSL.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | Passive DNS, passive SSL, BGP ranking, feeds MISP |
 | **Formato** | API REST, MISP, hashlookup |
 | **Frecuencia de actualización** | Continua |
 | **Registro** | Necesario para acceso completo |
 
-**Punto fuerte**: el passive DNS. Permite resolver "que dominios apuntaron a esta IP en el pasado" o "a que IPs apunto este dominio historicamente". Fundamental para investigaciones de infraestructura C2.
+**Punto fuerte**: el passive DNS. Permite resolver "que dominios apuntaron a esta IP en el pasado" o "a que IPs apunto este dominio históricamente". Fundamental para investigaciones de infraestructura C2.
 
 ### 8. PhishTank
 
 [PhishTank](https://phishtank.org/) es una base de datos colaborativa de URLs de phishing verificadas por la comunidad, operada por Cisco Talos.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | URLs de phishing, marca suplantada, estado de verificación |
 | **Formato** | CSV, JSON, API REST |
@@ -164,22 +164,22 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 [GreyNoise](https://www.greynoise.io/community) analiza el ruido de internet: escaneos masivos, crawlers y actividad de fondo que no es dirigida contra tu organización específicamente.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | IPs que realizan escaneos masivos, clasificación (benigno/malicioso/desconocido) |
 | **Formato** | API REST (JSON), STIX/TAXII |
 | **Frecuencia de actualización** | Continua |
 | **Registro** | Necesario (plan Community gratuito: 50 consultas/día) |
 
-**Punto fuerte**: el uso inverso. En lugar de decirte "esta IP es mala", GreyNoise te dice "esta IP escanea todo internet, así que la alerta que recibiste probablemente no es un ataque dirigido". Esto reduce drasticamente los falsos positivos en tu SIEM: si una IP que dispara una alerta está en GreyNoise como "benign scanner", puedes bajar la prioridad de esa alerta.
+**Punto fuerte**: el uso inverso. En lugar de decirte "esta IP es mala", GreyNoise te dice "esta IP escanea todo internet, así que la alerta que recibiste probablemente no es un ataque dirigido". Esto reduce drásticamente los falsos positivos en tu SIEM: si una IP que dispara una alerta está en GreyNoise como "benign scanner", puedes bajar la prioridad de esa alerta.
 
-**Limitación**: el plan Community tiene un límite de 50 consultas diarias. Para integración continua con SIEM necesitas el plan Enterprise o disenar un cache local.
+**Limitación**: el plan Community tiene un límite de 50 consultas diarias. Para integración continua con SIEM necesitas el plan Enterprise o diseñar un cache local.
 
 ### 10. Shodan
 
 [Shodan](https://www.shodan.io/) es el motor de búsqueda de dispositivos conectados a internet. Aunque no es un feed CTI clásico, su valor para threat intelligence es enorme.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | Banners de servicios, puertos abiertos, vulnerabilidades, SSL/TLS, tecnologías |
 | **Formato** | API REST (JSON), CLI |
@@ -194,7 +194,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 [VirusTotal](https://www.virustotal.com/) agrega los resultados de más de 70 motores antivirus y herramientas de análisis de URLs, dominios e IPs.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | Hashes, URLs, dominios, IPs, análisis de ficheros |
 | **Formato** | API REST (JSON), GUI web |
@@ -211,7 +211,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 [Emerging Threats](https://rules.emergingthreats.net/) pública reglas de detección para Suricata y Snort, además de listas de IPs y dominios comprometidos.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | Reglas IDS (Suricata/Snort), listas de IPs comprometidas, dominios C2 |
 | **Formato** | Reglas Suricata/Snort, listas de texto plano |
@@ -224,7 +224,7 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 El catálogo [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) del gobierno de EE.UU. lista las vulnerabilidades que se sabe que están siendo explotadas activamente en el mundo real.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | CVEs con evidencia de explotación activa, fecha de detección, fecha límite de remediación |
 | **Formato** | JSON, CSV |
@@ -239,7 +239,7 @@ El catálogo [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-cat
 
 El [CCN-CERT](https://www.ccn-cert.cni.es/) y el [INCIBE-CERT](https://www.incibe.es/incibe-cert) son los equipos de respuesta nacionales de España.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | Avisos de vulnerabilidades, alertas de campañas activas contra España, IOCs |
 | **Formato** | Publicaciones web, correo (suscripción), API MISP (CCN, solo organismos públicos) |
@@ -254,7 +254,7 @@ El [CCN-CERT](https://www.ccn-cert.cni.es/) y el [INCIBE-CERT](https://www.incib
 
 [DShield](https://dshield.org/) es el sistema de detección distribuida del SANS Internet Storm Center (ISC). Agrega datos de firewalls y sensores distribuidos por todo el mundo.
 
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |---|---|
 | **Tipo de datos** | IPs atacantes (top attackers), puertos atacados (top ports), honeypot data |
 | **Formato** | API REST, feeds de texto plano, RSS |
@@ -267,13 +267,13 @@ El [CCN-CERT](https://www.ccn-cert.cni.es/) y el [INCIBE-CERT](https://www.incib
 
 {{< cta type="tofu" text="Riskitera automatiza el triage, la correlación y el reporting de tu SOC con IA soberana." label="Ver demo SOC" >}}
 
-## ¿Cómo evaluar la calidad de un feed CTI
+## ¿Cómo evaluar la calidad de un feed CTI?
 
-No todos los feeds son iguales. Antes de integrar un feed en tu SIEM, evalualo contra estos criterios:
+No todos los feeds son iguales. Antes de integrar un feed en tu SIEM, evalúalo contra estos criterios:
 
 ### Tasa de falsos positivos
 
-Un feed con muchos falsos positivos genera fatiga de alertas y erosiona la confianza del equipo SOC. Mide: de cada 100 IOCs del feed, cuantos resultan ser benignos al investigarlos. Un feed con más del 5% de falsos positivos necesita filtrado adicional o descarte.
+Un feed con muchos falsos positivos genera fatiga de alertas y erosiona la confianza del equipo SOC. Mide: de cada 100 IOCs del feed, cuántos resultan ser benignos al investigarlos. Un feed con más del 5% de falsos positivos necesita filtrado adicional o descarte.
 
 ### Frecuencia de actualización
 
@@ -289,7 +289,7 @@ Feeds que soportan STIX/TAXII se integran de forma estándar con cualquier TIP o
 
 ### Cobertura y especialización
 
-Ningún feed cubre todo. AlienVault OTX es generalista. Abuse.ch esta especializado en malware y botnets. CISA KEV solo cubre vulnerabilidades explotadas. La combinación de feeds especializados proporciona mejor cobertura que un único feed generalista.
+Ningún feed cubre todo. AlienVault OTX es generalista. Abuse.ch está especializado en malware y botnets. CISA KEV solo cubre vulnerabilidades explotadas. La combinación de feeds especializados proporciona mejor cobertura que un único feed generalista.
 
 ### Tabla comparativa
 
@@ -304,7 +304,7 @@ Ningún feed cubre todo. AlienVault OTX es generalista. Abuse.ch esta especializ
 | Emerging Threats | Bajo | Diaria | Medio | Reglas IDS | Detección IDS |
 | DShield | Medio | Diaria | Bajo | Texto, API | IPs atacantes |
 
-## ¿Cómo integrar feeds CTI en tu SIEM
+## ¿Cómo integrar feeds CTI en tu SIEM?
 
 La integración de feeds en el SIEM sigue un patrón general independiente de la plataforma, con variaciones específicas para cada producto.
 
@@ -322,7 +322,7 @@ Usar una Threat Intelligence Platform (TIP) como capa intermedia tiene ventajas:
 
 - **Normalización**: convierte todos los formatos a uno común (STIX 2.1).
 - **Deduplicación**: elimina IOCs repetidos entre feeds.
-- **Scoring**: asigna una puntuación de confianza a cada IOC basada en cuantas fuentes lo reportan.
+- **Scoring**: asigna una puntuación de confianza a cada IOC basada en cuántas fuentes lo reportan.
 - **Envejecimiento (aging)**: reduce automáticamente la relevancia de IOCs antiguos.
 - **Distribución**: alimenta SIEM, firewall y EDR desde un punto central.
 
@@ -461,7 +461,7 @@ Cada trimestre, revisa:
 
 Elimina feeds que no aportan valor. Menos feeds de calidad > más feeds de calidad mediocre.
 
-## ¿Qué feeds recomienda ENISA y el CCN-CERT
+## ¿Qué feeds recomienda ENISA y el CCN-CERT?
 
 ### Recomendaciones del CCN-CERT
 
@@ -497,7 +497,7 @@ Con estos cinco, cubres el 80% de las necesidades operativas de un SOC.
 
 {{< cta type="mofu" text="Conecta tu SIEM, EDR y feeds CTI en una plataforma que reduce los falsos positivos un 60%." >}}
 
-## ¿Cuándo pasar de feeds gratuitos a pagados
+## ¿Cuándo pasar de feeds gratuitos a pagados?
 
 Los feeds gratuitos son excelentes para empezar y cubren la mayoría de las necesidades operativas. Pero tienen límites. Considera pasar a feeds comerciales cuando:
 

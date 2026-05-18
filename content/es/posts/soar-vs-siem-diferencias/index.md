@@ -1,5 +1,5 @@
 ---
-title: "SOAR vs SIEM: diferencias, integración y cuando necesitas ambos"
+title: "SOAR vs SIEM: diferencias, integración y cuándo necesitas ambos"
 description: "Comparativa detallada entre SOAR y SIEM: diferencias funcionales, cuándo necesitas cada uno, cómo integrarlos y mejores prácticas para un SOC eficiente."
 slug: "soar-vs-siem-diferencias"
 date: 2026-06-18
@@ -13,7 +13,7 @@ keyword: "SOAR vs SIEM"
 funnel: "mofu"
 ---
 
-Comparativa detallada entre SOAR y SIEM: diferencias funcionales, cuando necesitas cada uno, cómo integrarlos y mejores prácticas para un SOC eficiente.
+Comparativa detallada entre SOAR y SIEM: diferencias funcionales, cuándo necesitas cada uno, cómo integrarlos y mejores prácticas para un SOC eficiente.
 
 <!--more-->
 
@@ -22,10 +22,10 @@ Comparativa detallada entre SOAR y SIEM: diferencias funcionales, cuando necesit
 - Un SIEM sin SOAR genera alertas que los analistas deben investigar manualmente. Un SOAR sin SIEM carece de la fuente de detección primaria para alimentar sus playbooks.
 - La integración SIEM + SOAR reduce el tiempo medio de respuesta (MTTR) de horas a minutos, automatizando el triage de alertas de bajo riesgo y enriqueciendo las de alto riesgo.
 - El mercado ofrece opciones desde soluciones enterprise (Splunk SOAR, Cortex XSOAR) hasta alternativas open source (Shuffle, Tines Community) para equipos con presupuesto limitado.
-- Antes de comprar un SOAR, válida que tu SOC tiene playbooks documentados, fuentes de datos integradas en el SIEM y al menos un analista capaz de mantener las automatizaciónes.
+- Antes de comprar un SOAR, válida que tu SOC tiene playbooks documentados, fuentes de datos integradas en el SIEM y al menos un analista capaz de mantener las automatizaciones.
 {{< /key-takeaways >}}
 
-## ¿Qué es un SIEM y que problema resuelve
+## ¿Qué es un SIEM y qué problema resuelve?
 
 Un SIEM (Security Information and Event Management) es la herramienta central de visibilidad de un SOC. Según la definición de [Gartner](https://www.gartner.com/), un SIEM combina dos capacidades que originalmente eran productos separados: la gestión de información de seguridad (SIM) y la gestión de eventos de seguridad (SEM).
 
@@ -33,7 +33,7 @@ En términos prácticos, un SIEM hace tres cosas fundamentales:
 
 **Recopilación centralizada de logs.** Ingesta datos de decenas o cientos de fuentes: firewalls, endpoints, servidores, aplicaciones, servicios cloud, proxies, sistemas de autenticación, bases de datos. Todo se normaliza en un formato común para poder correlacionar eventos entre fuentes diferentes.
 
-**Correlación y detección.** Aplica reglas de correlación, modelos estadicos y (cada vez más) modelos de machine learning para identificar patrones sospechosos. Por ejemplo: un inicio de sesión desde una IP en un país inusual, seguido de un acceso a un recurso sensible, seguido de una transferencia de datos superior al umbral normal. Ninguno de estos eventos por separado sería una alerta, pero la secuencia si.
+**Correlación y detección.** Aplica reglas de correlación, modelos estadísticos y (cada vez más) modelos de machine learning para identificar patrones sospechosos. Por ejemplo: un inicio de sesión desde una IP en un país inusual, seguido de un acceso a un recurso sensible, seguido de una transferencia de datos superior al umbral normal. Ninguno de estos eventos por separado sería una alerta, pero la secuencia sí.
 
 **Almacenamiento y búsqueda.** Retiene logs durante semanas, meses o años (según la política de retención), permitiendo investigaciones forenses retrospectivas. Cuando un analista necesita reconstruir la secuencia de un ataque que empezó hace tres meses, el SIEM es donde busca.
 
@@ -46,13 +46,13 @@ A pesar de su importancia, un SIEM tiene limitaciones que cualquier equipo SOC c
 - **Fatiga de alertas**: un SIEM mal tunado puede generar miles de alertas diarias, de las cuales un porcentaje significativo son falsos positivos. Los analistas acaban ignorando alertas o priorizando mal.
 - **Acción manual**: el SIEM detecta, pero no actúa. Cuando genera una alerta, un analista humano debe investigar, decidir y ejecutar la respuesta. Esto introduce latencia.
 - **Complejidad de reglas**: mantener las reglas de correlación actualizadas requiere conocimiento del panorama de amenazas y de la infraestructura. Las reglas obsoletas generan ruido, y las que faltan dejan puntos ciegos.
-- **Coste de ingesta**: el modelo de precios de muchos SIEM se basa en volumen de datos ingeridos (GB/día). A medida que la infraestructura crece, los costes pueden dispararse, forzando decisiones incomodas sobre que logs incluir.
+- **Coste de ingesta**: el modelo de precios de muchos SIEM se basa en volumen de datos ingeridos (GB/día). A medida que la infraestructura crece, los costes pueden dispararse, forzando decisiones incómodas sobre qué logs incluir.
 
 Estas limitaciones son exactamente las que un SOAR viene a resolver.
 
-## ¿Qué es un SOAR y que problema resuelve
+## ¿Qué es un SOAR y qué problema resuelve?
 
-SOAR (Security Orchestration, Automation and Response) es una categoría de herramientas que automatiza y orquesta los flujos de trabajo de respuesta a incidentes de seguridad. El término fue acuñado por Gartner en 2017, aunque las capacidades subyacentes existian antes bajo otros nombres.
+SOAR (Security Orchestration, Automation and Response) es una categoría de herramientas que automatiza y orquesta los flujos de trabajo de respuesta a incidentes de seguridad. El término fue acuñado por Gartner en 2017, aunque las capacidades subyacentes existían antes bajo otros nombres.
 
 Un SOAR tiene tres componentes principales:
 
@@ -71,7 +71,7 @@ Un SOAR tiene tres componentes principales:
 | **Salida principal** | Alertas correlacionadas | Acciones automatizadas, casos cerrados |
 | **Correlación** | Si (motor de reglas, ML) | Limitada (depende del SIEM) |
 | **Automatización** | Básica (alertas, dashboards) | Avanzada (playbooks completos) |
-| **Integraciónes** | Fuentes de datos (agentes, APIs) | Herramientas de acción (firewalls, EDR, ticketing) |
+| **Integraciones** | Fuentes de datos (agentes, APIs) | Herramientas de acción (firewalls, EDR, ticketing) |
 | **Almacenamiento** | Largo plazo (logs históricos) | Corto plazo (casos activos) |
 | **Tiempo de valor** | Semanas a meses (tuning) | Días a semanas (playbooks) |
 | **Modelo de coste** | Volumen de datos (GB/día) | Número de acciones/analistas |
@@ -82,7 +82,7 @@ La conclusión de esta tabla es simple: SIEM y SOAR no son competidores. Son com
 
 ## Orquestación, playbooks y respuesta automática: lo que aporta un SOAR
 
-Para entender cuando necesitas un SOAR, es útil desglosar las capacidades exclusivas que aporta:
+Para entender cuándo necesitas un SOAR, es útil desglosar las capacidades exclusivas que aporta:
 
 ### Playbooks automatizados
 
@@ -109,7 +109,7 @@ Un playbook es una secuencia de acciones predefinidas que se ejecuta automática
 1. El SIEM detecta múltiples intentos fallidos de autenticación desde una IP.
 2. Consultar la IP en listas de reputación.
 3. Si la IP es conocida como maliciosa: bloquear en firewall, notificar.
-4. Si la IP es interna: verificar si la cuenta esta comprometida, forzar cambio de contraseña.
+4. Si la IP es interna: verificar si la cuenta está comprometida, forzar cambio de contraseña.
 5. Documentar y cerrar.
 
 Estos playbooks no son teoría. Son flujos que los SOC maduros ejecutan decenas de veces al día, y sin automatización cada uno consume entre 20 y 45 minutos de trabajo de analista.
@@ -138,7 +138,7 @@ El SOAR proporciona un espacio centralizado donde cada incidente tiene su timeli
 
 ### Métricas y reporting automatizado
 
-Un SOAR bien configurado genera automáticamente métricas que un SIEM por si solo no puede calcular:
+Un SOAR bien configurado genera automáticamente métricas que un SIEM por sí solo no puede calcular:
 
 - **MTTD** (Mean Time to Detect): tiempo desde que ocurre el evento hasta que se genera la alerta.
 - **MTTR** (Mean Time to Respond): tiempo desde la alerta hasta la remediación completa.
@@ -162,20 +162,20 @@ No todos los SOC necesitan un SOAR. Hay señales claras de que ha llegado el mom
 
 4. **Tienes requisitos regulatorios de documentación y trazabilidad.** Marcos como DORA, NIS2 o ISO 27001 exigen evidencias de que los incidentes se gestionan de forma estructurada, con tiempos de respuesta medibles y acciones documentadas.
 
-5. **Operas un SOC 24/7 con rotación de turnos.** La consistencia en la respuesta es crítica. Un playbook automatizado aplica la misma lógica a las 3 de la mañana que a las 10 de la manana, independientemente de quien este de turno.
+5. **Operas un SOC 24/7 con rotación de turnos.** La consistencia en la respuesta es crítica. Un playbook automatizado aplica la misma lógica a las 3 de la mañana que a las 10 de la mañana, independientemente de quién esté de turno.
 
-### ¿Cuándo NO necesitas un SOAR (todavia)
+### ¿Cuándo NO necesitas un SOAR (todavía)?
 
 - Tu equipo SOC tiene menos de 3 personas y el volumen de alertas es manejable.
 - No tienes playbooks de respuesta documentados (primero documenta, luego automatiza).
 - Tu SIEM no está bien tunado y genera más ruido que señales (arregla el SIEM primero).
 - No tienes integraciones API con tus herramientas de seguridad (el SOAR necesita APIs para actuar).
 
-## ¿Cómo se integran SOAR y SIEM
+## ¿Cómo se integran SOAR y SIEM?
 
 La integración entre SIEM y SOAR sigue patrones bien establecidos. Estos son los más comunes:
 
-### Patron 1: SIEM como fuente primaria de alertas
+### Patrón 1: SIEM como fuente primaria de alertas
 
 El flujo más básico y más común:
 
@@ -185,7 +185,7 @@ El flujo más básico y más común:
 
 El SIEM ingesta logs, aplica reglas de correlación y genera alertas. El SOAR recibe estas alertas vía API, webhook o syslog, y ejecuta el playbook correspondiente. Este patrón funciona bien cuando el SIEM es la fuente principal de detección.
 
-### Patron 2: SOAR como agregador multi-fuente
+### Patrón 2: SOAR como agregador multi-fuente
 
 En SOCs maduros, el SOAR recibe alertas de múltiples fuentes, no solo del SIEM:
 
@@ -199,7 +199,7 @@ En SOCs maduros, el SOAR recibe alertas de múltiples fuentes, no solo del SIEM:
 
 En este patrón, el SOAR deduplica alertas (la misma IP puede generar alertas en el SIEM, el EDR y el firewall simultáneamente), las correlaciona como parte del mismo incidente y ejecuta un playbook unificado. Esto evita que tres analistas investiguen el mismo evento por separado.
 
-### Patron 3: Retroalimentación bidireccional
+### Patrón 3: Retroalimentación bidireccional
 
 El patrón más avanzado incluye un bucle de feedback:
 
@@ -209,7 +209,7 @@ El patrón más avanzado incluye un bucle de feedback:
   └── [Threat Intel actualizada, reglas refinadas] ──┘
 ```
 
-El SOAR, tras resolver un incidente, puede actualizar las reglas del SIEM (aniadir una IP a una watchlist, ajustar un umbral de correlación), enriquecer las fuentes de threat intelligence (agregar nuevos IoCs validados) o modificar la prioridad de futuras alertas similares. Este bucle de mejora continua es lo que diferencia un SOC reactivo de uno proactivo.
+El SOAR, tras resolver un incidente, puede actualizar las reglas del SIEM (añadir una IP a una watchlist, ajustar un umbral de correlación), enriquecer las fuentes de threat intelligence (agregar nuevos IoCs validados) o modificar la prioridad de futuras alertas similares. Este bucle de mejora continua es lo que diferencia un SOC reactivo de uno proactivo.
 
 ### Ejemplo de integración práctica
 
@@ -233,7 +233,7 @@ Resultado: lo que antes consumía 35 minutos por alerta ahora se resuelve en 90 
 Probablemente el SOAR más maduro del mercado. Más de 300 integraciones nativas, editor visual de playbooks, fuerte en automatización y con la ventaja de integración nativa con Splunk ES. Adquisición por Cisco en 2024 amplía el ecosistema. Punto débil: precio elevado y curva de aprendizaje para playbooks complejos.
 
 **Cortex XSOAR (Palo Alto Networks)**
-Originalmente Demisto, adquirido por Palo Alto en 2019. Destaca por su marketplace de integraciones y content packs, su motor de machine learning para clasificación de alertas y la integración con el ecosistema Palo Alto (NGFW, Prisma, Cortex XDR). Incluye un modulo de threat intelligence integrado (TIM). Punto débil: funcionalidad completa requiere el ecosistema Palo Alto.
+Originalmente Demisto, adquirido por Palo Alto en 2019. Destaca por su marketplace de integraciones y content packs, su motor de machine learning para clasificación de alertas y la integración con el ecosistema Palo Alto (NGFW, Prisma, Cortex XDR). Incluye un módulo de threat intelligence integrado (TIM). Punto débil: funcionalidad completa requiere el ecosistema Palo Alto.
 
 **Microsoft Sentinel + Logic Apps**
 Microsoft ha integrado capacidades SOAR directamente en Sentinel mediante Logic Apps y reglas de automatización. No es un SOAR independiente, sino capacidades de automatización integradas en el SIEM. Ventaja: coste nulo adicional si ya usas Sentinel. Punto débil: menos flexible que un SOAR dedicado para orquestación multi-vendor.
@@ -247,26 +247,26 @@ Fuerte en gestión de casos y cumplimiento regulatorio (incluye plantillas para 
 SOAR open source con editor visual de workflows, más de 1000 integraciones vía OpenAPI y despliegue on-premise o cloud. Ideal para equipos que quieren control total y tienen capacidad de gestión. Licencia gratuita para uso básico, con planes de pago para funcionalidades avanzadas.
 
 **Tines**
-Plataforma de automatización no-code con enfoque en seguridad. Ofrece un tier Community Edition gratuito con funcionalidad completa (limitado en volumen). Destaca por su simplicidad: los playbooks se construyen arrastrando "stories" (acciones) y conectandolas visualmente. Ideal para equipos pequeños que necesitan resultados rápidos.
+Plataforma de automatización no-code con enfoque en seguridad. Ofrece un tier Community Edition gratuito con funcionalidad completa (limitado en volumen). Destaca por su simplicidad: los playbooks se construyen arrastrando "stories" (acciones) y conectándolas visualmente. Ideal para equipos pequeños que necesitan resultados rápidos.
 
 **TheHive + Cortex**
-Combinación open source donde TheHive gestiona los casos y Cortex ejecuta los analyzers y responders (automatizaciónes). Muy popular en CERTs y SOCs europeos. Punto débil: requiere más esfuerzo de mantenimiento que las soluciones comerciales.
+Combinación open source donde TheHive gestiona los casos y Cortex ejecuta los analyzers y responders (automatizaciones). Muy popular en CERTs y SOCs europeos. Punto débil: requiere más esfuerzo de mantenimiento que las soluciones comerciales.
 
 **n8n (con enfoque seguridad)**
-Aunque n8n es una plataforma de automatización generica, su modelo self-hosted, su motor de workflows visuales y sus integraciones con APIs de seguridad lo convierten en una opción viable para equipos que necesitan automatización SOC sin el coste de un SOAR enterprise. Especialmente útil cuando ya se utiliza n8n para otras automatizaciónes operativas.
+Aunque n8n es una plataforma de automatización genérica, su modelo self-hosted, su motor de workflows visuales y sus integraciones con APIs de seguridad lo convierten en una opción viable para equipos que necesitan automatización SOC sin el coste de un SOAR enterprise. Especialmente útil cuando ya se utiliza n8n para otras automatizaciones operativas.
 
 ## Build vs buy: cuando construir tus propios playbooks
 
-La decisión entre comprar un SOAR comercial o construir automatizaciónes con herramientas genéricas depende de varios factores:
+La decisión entre comprar un SOAR comercial o construir automatizaciones con herramientas genéricas depende de varios factores:
 
-### ¿Cuándo comprar un SOAR comercial
+### ¿Cuándo comprar un SOAR comercial?
 
 - Tu SOC tiene más de 10 analistas y gestiona más de 500 alertas diarias.
 - Necesitas integraciones out-of-the-box con docenas de herramientas de seguridad.
 - Tienes requisitos de cumplimiento que exigen un audit trail robusto (DORA, NIS2).
 - El presupuesto lo permite (entre 50.000 y 300.000 EUR anuales según la solución y el tamaño).
 
-### ¿Cuándo construir con herramientas genéricas
+### ¿Cuándo construir con herramientas genéricas?
 
 - Tu SOC tiene menos de 10 analistas y el volumen de alertas es moderado.
 - Tienes ingenieros de seguridad capaces de desarrollar y mantener playbooks.
@@ -315,13 +315,13 @@ def enrich_ioc(ioc_value: str, ioc_type: str) -> dict:
 
 Este script, conectado a un webhook del SIEM y combinado con un par de acciones de remediación (bloqueo en firewall vía API, creación de ticket en Jira), cubre el 80% de lo que un SOAR básico ofrece para ese caso de uso específico.
 
-## ¿Qué errores evitar al implementar SOAR
+## ¿Qué errores evitar al implementar SOAR?
 
 La implementación de un SOAR es un proyecto que puede salir muy bien o muy mal. Estos son los errores más comunes:
 
 ### Error 1: Automatizar sin documentar
 
-Si no tienes playbooks de respuesta documentados antes de implementar el SOAR, vas a automatizar el caos. Primero documenta como gestionas cada tipo de alerta manualmente (phishing, malware, fuerza bruta, acceso no autorizado). Luego identifica que pasos son automatizables. Solo entonces configura el SOAR.
+Si no tienes playbooks de respuesta documentados antes de implementar el SOAR, vas a automatizar el caos. Primero documenta cómo gestionas cada tipo de alerta manualmente (phishing, malware, fuerza bruta, acceso no autorizado). Luego identifica qué pasos son automatizables. Solo entonces configura el SOAR.
 
 ### Error 2: Intentar automatizar todo desde el día uno
 
@@ -387,4 +387,4 @@ Sí, con matices. Herramientas como Shuffle, TheHive + Cortex o incluso n8n con 
 
 ### ¿Cómo se relaciona la implementación de un SOAR con el cumplimiento de DORA?
 
-DORA (Reglamento UE 2022/2554) exige que las entidades financieras tengan procesos de gestión de incidentes TIC con plazos estrictos de notificación (4 horas para la notificación inicial, 72 horas para la intermedia). Un SOAR facilita el cumplimiento al automatizar la clasificación de incidentes, generar las notificaciones en el formato requerido por las autoridades, documentar automáticamente la timeline de acciones y calcular los tiempos de respuesta. No es un requisito explícito de DORA tener un SOAR, pero en la práctica es muy difícil cumplir los plazos de notificación de forma consistente sin algun nivel de automatización.
+DORA (Reglamento UE 2022/2554) exige que las entidades financieras tengan procesos de gestión de incidentes TIC con plazos estrictos de notificación (4 horas para la notificación inicial, 72 horas para la intermedia). Un SOAR facilita el cumplimiento al automatizar la clasificación de incidentes, generar las notificaciones en el formato requerido por las autoridades, documentar automáticamente la timeline de acciones y calcular los tiempos de respuesta. No es un requisito explícito de DORA tener un SOAR, pero en la práctica es muy difícil cumplir los plazos de notificación de forma consistente sin algún nivel de automatización.

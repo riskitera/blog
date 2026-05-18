@@ -171,9 +171,9 @@ Las pruebas básicas que DORA contempla incluyen:
 
 Las pruebas TLPT (Threat-Led Penetration Testing) son el nivel más exigente del programa de pruebas de DORA. Están inspiradas en el marco TIBER-EU del Banco Central Europeo, pero ahora tienen base legal vinculante.
 
-Las TLPT son obligatorias para entidades **identificadas por las autoridades competentes** como significativas en términos de riesgo sistemico. Los criterios incluyen tamaño, cuota de mercado, interconexion con el sistema financiero y naturaleza de los servicios prestados.
+Las TLPT son obligatorias para entidades **identificadas por las autoridades competentes** como significativas en términos de riesgo sistémico. Los criterios incluyen tamaño, cuota de mercado, interconexión con el sistema financiero y naturaleza de los servicios prestados.
 
-Caracteristicas clave de las TLPT:
+Características clave de las TLPT:
 
 - Se ejecutan al menos cada **3 años**.
 - Deben cubrir varias o todas las funciones críticas o importantes de la entidad.
@@ -201,7 +201,7 @@ Las entidades financieras deben gestionar el riesgo de terceros proveedores TIC 
 
 Un ejemplo concreto: si un banco utiliza AWS para su core bancario, Azure para el sistema de pagos y Google Cloud para analítica, DORA exige que documente las dependencias, los riesgos de concentración (tres hyperscalers estadounidenses), las alternativas viables y los planes de salida para cada uno.
 
-### Requisito 11: Clausulas contractuales obligatorias (Artículos 30 a 32)
+### Requisito 11: Cláusulas contractuales obligatorias (Artículos 30 a 32)
 
 DORA establece un listado mínimo de cláusulas que deben incluirse en los contratos con proveedores TIC que soporten funciones críticas o importantes:
 
@@ -209,9 +209,9 @@ DORA establece un listado mínimo de cláusulas que deben incluirse en los contr
 - Ubicación del procesamiento de datos (incluidos centros de datos y países).
 - Obligación del proveedor de asistir en caso de incidente TIC.
 - Derechos de acceso, inspección y auditoría por parte de la entidad y de las autoridades supervisoras.
-- Garantias de disponibilidad, autenticidad, integridad y confidencialidad de los datos.
+- Garantías de disponibilidad, autenticidad, integridad y confidencialidad de los datos.
 - Obligación de cooperar con las autoridades de supervisión del marco de oversight.
-- Clausulas de terminación y planes de salida con periodos de transición adecuados.
+- Cláusulas de terminación y planes de salida con periodos de transición adecuados.
 - Obligación de notificar cualquier subcontratación que afecte a funciones críticas.
 
 Estas cláusulas no son negociables. Si un proveedor cloud se niega a incluir derechos de auditoría o a especificar la ubicación del procesamiento, la entidad financiera no puede contratarlo para funciones críticas. Esto ha forzado a los grandes proveedores tecnológicos a adaptar sus condiciones contractuales para el mercado financiero europeo.
@@ -264,16 +264,16 @@ Las entidades que aún no han completado su adaptación deben priorizar las áre
 
 ## Guía práctica de implementación: por donde empezar
 
-Para las entidades que necesitan estructurar su programa de cumplimiento, esta es una hoja de ruta pragmatica:
+Para las entidades que necesitan estructurar su programa de cumplimiento, esta es una hoja de ruta pragmática:
 
-### Fase 1: Diagnostico (semanas 1 a 4)
+### Fase 1: Diagnóstico (semanas 1 a 4)
 
 - Realizar un gap analysis entre la situación actual y los 12 requisitos de DORA.
 - Identificar las funciones críticas e importantes de la entidad.
 - Inventariar todos los proveedores TIC y clasificarlos por criticidad.
 - Evaluar la madurez del proceso de gestión de incidentes actual.
 
-### Fase 2: Diseno del marco (semanas 5 a 12)
+### Fase 2: Diseño del marco (semanas 5 a 12)
 
 - Establecer la gobernanza: roles, responsabilidades, comites, líneas de reporte al órgano de dirección.
 - Diseñar el marco de gestión de riesgos TIC alineado con los Artículos 6 a 16.
@@ -321,7 +321,7 @@ La entidad financiera no puede utilizar ese proveedor para funciones críticas o
 
 ### ¿Es obligatorio realizar pruebas TLPT para todas las entidades?
 
-No. Las pruebas TLPT solo son obligatorias para entidades que las autoridades competentes identifiquen como significativas en términos de riesgo sistemico. Los criterios incluyen tamaño, cuota de mercado, interconexion con el sistema financiero y naturaleza de los servicios. Tipicamente, esto incluye a los grandes bancos, aseguradoras sistemicas y plataformas de mercados. Las demás entidades deben realizar pruebas de resiliencia básicas (evaluaciones de vulnerabilidades, pruebas de penetración, simulacros de continuidad), pero no TLPT.
+No. Las pruebas TLPT solo son obligatorias para entidades que las autoridades competentes identifiquen como significativas en términos de riesgo sistémico. Los criterios incluyen tamaño, cuota de mercado, interconexión con el sistema financiero y naturaleza de los servicios. Típicamente, esto incluye a los grandes bancos, aseguradoras sistemicas y plataformas de mercados. Las demás entidades deben realizar pruebas de resiliencia básicas (evaluaciones de vulnerabilidades, pruebas de penetración, simulacros de continuidad), pero no TLPT.
 
 ### ¿Cuánto tiempo lleva implementar el cumplimiento completo de DORA?
 

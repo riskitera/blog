@@ -26,7 +26,7 @@ Guía definitiva de threat intelligence para empresas en 2026: tipos, ciclo de i
 - El ROI de un programa de TI se mide en reducción de tiempo de detección, reducción de falsos positivos, mejora de la postura de seguridad y cumplimiento regulatorio demostrable.
 {{< /key-takeaways >}}
 
-## ¿Qué es la threat intelligence y por que la necesitas en 2026
+## ¿Qué es la threat intelligence y por qué la necesitas en 2026?
 
 La threat intelligence (inteligencia sobre amenazas o CTI, Cyber Threat Intelligence) es el proceso de recopilar, procesar, analizar y diseminar información sobre amenazas actuales y potenciales que afectan a una organización. Su objetivo final es permitir decisiones informadas de seguridad, desde el nivel técnico (que regla escribir en el firewall) hasta el estratégico (cuanto invertir en seguridad el próximo año).
 
@@ -36,9 +36,9 @@ En 2026, la TI ha dejado de ser un lujo reservado a grandes corporaciones. Tres 
 
 1. **Regulación obligatoria.** La Directiva [NIS2](https://www.enisa.europa.eu/) exige a entidades esenciales e importantes la implementación de medidas de gestión de riesgos que incluyan "políticas sobre análisis de riesgos y seguridad de los sistemas de información". [DORA](https://www.eiopa.europa.eu/browse/regulation-and-policy/digital-operational-resilience-act-dora_en) va más lejos para el sector financiero, requiriendo explícitamente capacidades de threat intelligence compartida.
 
-2. **Sofisticación de las amenazas.** Los actores de amenaza utilizan IA generativa para crear campañas de phishing más convincentes, malware polimorfico que evade detecciones y ataques a la cadena de suministro cada vez más complejos. Defenderse solo con reglas estáticas ya no es viable.
+2. **Sofisticación de las amenazas.** Los actores de amenaza utilizan IA generativa para crear campañas de phishing más convincentes, malware polimórfico que evade detecciones y ataques a la cadena de suministro cada vez más complejos. Defenderse solo con reglas estáticas ya no es viable.
 
-3. **Herramientas accesibles.** Plataformas open source como [MISP](https://www.misp-project.org/) y frameworks como MITRE ATT&CK han reducido drasticamente la barrera de entrada. Una empresa mediana puede montar un programa básico de TI con herramientas gratuitas.
+3. **Herramientas accesibles.** Plataformas open source como [MISP](https://www.misp-project.org/) y frameworks como MITRE ATT&CK han reducido drásticamente la barrera de entrada. Una empresa mediana puede montar un programa básico de TI con herramientas gratuitas.
 
 ### TI vs datos vs información
 
@@ -52,7 +52,7 @@ La inteligencia incluye contexto, atribución, relevancia para tu organización 
 
 ## Los cuatro niveles de threat intelligence
 
-No toda la inteligencia sirve para la misma audiencia ni tiene el mismo horizonte temporal. Comprender los cuatro niveles es esencial para disenar un programa que cubra las necesidades de toda la organización.
+No toda la inteligencia sirve para la misma audiencia ni tiene el mismo horizonte temporal. Comprender los cuatro niveles es esencial para diseñar un programa que cubra las necesidades de toda la organización.
 
 ### Inteligencia estratégica
 
@@ -62,12 +62,12 @@ No toda la inteligencia sirve para la misma audiencia ni tiene el mismo horizont
 
 La inteligencia estratégica responde a preguntas como:
 
-- Cuáles son las tendencias de amenaza para nuestro sector en los próximos 12 meses?
-- Qué actores estatales o grupos de crimen organizado apuntan a empresas como la nuestra?
-- Cómo afecta el contexto geopolitico a nuestro perfil de riesgo?
-- Estamos invirtiendo lo suficiente en seguridad comparado con empresas similares?
+- ¿Cuáles son las tendencias de amenaza para nuestro sector en los próximos 12 meses?
+- ¿Qué actores estatales o grupos de crimen organizado apuntan a empresas como la nuestra?
+- ¿Cómo afecta el contexto geopolítico a nuestro perfil de riesgo?
+- ¿Estamos invirtiendo lo suficiente en seguridad comparado con empresas similares?
 
-**Ejemplo práctico:** un informe trimestral para el CISO que detalla cómo los ataques de ransomware al sector sanitario europeo han aumentado un 40% en el último año, que grupos están detrás (LockBit 4.0, Cl0p, Black Basta), que vectores de entrada utilizan, y como las regulaciones NIS2 y DORA incrementan la responsabilidad legal del consejo. El informe concluye con una recomendación de inversión en segmentación de redes y backup inmutable.
+**Ejemplo práctico:** un informe trimestral para el CISO que detalla cómo los ataques de ransomware al sector sanitario europeo han aumentado un 40% en el último año, qué grupos están detrás (LockBit 4.0, Cl0p, Black Basta), qué vectores de entrada utilizan, y cómo las regulaciones NIS2 y DORA incrementan la responsabilidad legal del consejo. El informe concluye con una recomendación de inversión en segmentación de redes y backup inmutable.
 
 ### Inteligencia tactica
 
@@ -95,7 +95,7 @@ La inteligencia operativa responde a:
 - Qué infraestructura utilizan los atacantes en estas campañas?
 - Qué indicadores tempranos debemos buscar?
 
-**Ejemplo práctico:** una alerta del CERT sectorial informa que se ha detectado una campaña de spear phishing contra empresas energeticas españolas utilizando documentos Word con macros que descargan Cobalt Strike desde dominios recien registrados. Se comparten los dominios, hashes y patrones de email para búsqueda proactiva.
+**Ejemplo práctico:** una alerta del CERT sectorial informa que se ha detectado una campaña de spear phishing contra empresas energéticas españolas utilizando documentos Word con macros que descargan Cobalt Strike desde dominios recién registrados. Se comparten los dominios, hashes y patrones de email para búsqueda proactiva.
 
 ### Inteligencia técnica
 
@@ -105,8 +105,8 @@ La inteligencia operativa responde a:
 
 La inteligencia técnica responde a:
 
-- Qué indicadores específicos debo buscar en mis logs y alertas?
-- Qué reglas debo implementar en mi SIEM/EDR/firewall?
+- ¿Qué indicadores específicos debo buscar en mis logs y alertas?
+- ¿Qué reglas debo implementar en mi SIEM/EDR/firewall?
 - Este artefacto que he encontrado está asociado a alguna amenaza conocida?
 
 **Ejemplo práctico:** un feed automatizado de IoCs que alimenta el SIEM con las IPs de servidores C2 activos, hashes de muestras de malware recientes y dominios de phishing. Las reglas generan alertas automáticas cuando hay coincidencia.
@@ -372,7 +372,7 @@ La elección de plataforma depende del nivel de madurez, presupuesto y necesidad
 - **Nivel 1-2 (Reactiva/Proactiva):** MISP como hub central + un feed comercial (Recorded Future o Anomali). Inversión: 50-100k EUR.
 - **Nivel 2-3 (Proactiva/Predictiva):** plataforma comercial completa + MISP para intercambio comunitario + herramientas de análisis propias. Inversión: 100k+ EUR.
 
-## ¿Cómo construir un equipo de threat intelligence
+## ¿Cómo construir un equipo de threat intelligence?
 
 La tecnología sin personas que la operen no genera inteligencia. Estos son los roles necesarios según el tamaño del programa.
 
@@ -438,13 +438,13 @@ La [Directiva NIS2](https://www.enisa.europa.eu/) aplica a entidades esenciales 
 
 **Implicación práctica:** las entidades financieras necesitan no solo consumir TI, sino participar activamente en compartirla con sus pares y reguladores.
 
-### ¿Cómo demostrar cumplimiento
+### ¿Cómo demostrar cumplimiento?
 
 Para auditorías y verificaciones regulatorias, documenta:
 
 1. **PIRs vigentes** y su alineación con los riesgos del negocio
 2. **Fuentes de TI** utilizadas (feeds, plataformas, comunidades)
-3. **Proceso de análisis** (como se transforma la información en inteligencia accionable)
+3. **Proceso de análisis** (cómo se transforma la información en inteligencia accionable)
 4. **Acciones derivadas** (reglas implementadas, vulnerabilidades priorizadas, incidentes prevenidos)
 5. **Métricas de efectividad** (tiempo de detección, falsos positivos reducidos, cobertura ATT&CK)
 6. **Participación en intercambio** (ISACs, CERTs, acuerdos bilaterales)
@@ -525,11 +525,11 @@ La TI y el SOC son dos caras de la misma moneda. Sin integración, la TI produce
 
 ## Tendencias en CTI para 2027
 
-El campo de la threat intelligence evoluciona rápidamente. Estas son las tendencias que definiran el próximo año.
+El campo de la threat intelligence evoluciona rápidamente. Estas son las tendencias que definirán el próximo año.
 
 ### IA generativa aplicada a TI
 
-La IA generativa esta transformando tanto el lado ofensivo como el defensivo:
+La IA generativa está transformando tanto el lado ofensivo como el defensivo:
 
 - **Análisis automatizado de informes:** LLMs que procesan informes de amenazas en múltiples idiomas y extraen TTPs, IoCs y recomendaciones automáticamente.
 - **Generación de reglas de detección:** modelos que traducen descripciones de TTPs en reglas Sigma, YARA o KQL.
@@ -576,7 +576,7 @@ Sí. Un SOC sin TI opera en modo reactivo: responde a alertas sin contexto sobre
 
 ### ¿Cómo empiezo si mi organización no tiene experiencia en TI?
 
-Empieza con tres pasos sencillos. Primero, define 3-5 PIRs básicos (que amenazas son relevantes para tu sector y organización). Segundo, configura MISP con feeds gratuitos (Abuse.ch, AlienVault OTX, CIRCL feeds) e integra los IoCs con tu SIEM. Tercero, designa un responsable que dedique al menos 8 horas semanales a revisar la inteligencia recibida, analizar su relevancia y producir un informe mensual para el CISO. En 3-6 meses tendrás un programa básico funcional que podras ir madurando.
+Empieza con tres pasos sencillos. Primero, define 3-5 PIRs básicos (que amenazas son relevantes para tu sector y organización). Segundo, configura MISP con feeds gratuitos (Abuse.ch, AlienVault OTX, CIRCL feeds) e integra los IoCs con tu SIEM. Tercero, designa un responsable que dedique al menos 8 horas semanales a revisar la inteligencia recibida, analizar su relevancia y producir un informe mensual para el CISO. En 3-6 meses tendrás un programa básico funcional que podrás ir madurando.
 
 ### ¿La TI es obligatoria según NIS2?
 

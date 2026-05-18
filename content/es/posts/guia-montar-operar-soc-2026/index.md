@@ -26,7 +26,7 @@ Guía definitiva para montar y operar un SOC en 2026: modelos organizativos, equ
 - Las métricas que importan en 2026 van más allá de MTTD y MTTR: la cobertura de [MITRE ATT&CK](https://attack.mitre.org/), la tasa de automatización y el coste por incidente resuelto son indicadores clave de madurez.
 {{< /key-takeaways >}}
 
-## ¿Qué es un SOC y por que es crítico en 2026
+## ¿Qué es un SOC y por qué es crítico en 2026?
 
 Un Security Operations Center (SOC) es la función organizativa responsable de detectar, analizar, responder y prevenir incidentes de ciberseguridad de forma continua. No es solo una sala con pantallas: es un conjunto de personas, procesos y tecnología que trabajan coordinadamente para proteger los activos digitales de una organización.
 
@@ -38,9 +38,9 @@ En 2026, el SOC es más crítico que nunca por varias razones convergentes:
 
 **Superficie de ataque en expansión.** Cloud multi-proveedor, trabajo híbrido, IoT industrial, APIs como vector de ataque, IA generativa como herramienta tanto para atacantes como para defensores. La superficie que un SOC debe monitorizar es ordenes de magnitud mayor que hace cinco años.
 
-**El talento es escaso y caro.** Como detallamos en nuestro artículo sobre salarios SOC, España tiene un deficit de más de 30.000 profesionales de ciberseguridad. Esto obliga a las organizaciones a ser inteligentes sobre como estructuran sus equipos y donde aplican automatización.
+**El talento es escaso y caro.** Como detallamos en nuestro artículo sobre salarios SOC, España tiene un deficit de más de 30.000 profesionales de ciberseguridad. Esto obliga a las organizaciones a ser inteligentes sobre cómo estructuran sus equipos y dónde aplican automatización.
 
-## ¿Qué modelo de SOC elegir: interno, externo o híbrido
+## ¿Qué modelo de SOC elegir: interno, externo o híbrido?
 
 La primera decisión estratégica es el modelo organizativo. No hay una respuesta universal: depende del tamaño de la organización, del sector regulatorio, del presupuesto y de la madurez de seguridad existente.
 
@@ -75,7 +75,7 @@ El SOC externo delega la monitorización y respuesta a un proveedor de servicios
 
 **Ventajas:**
 - Cobertura 24/7 desde el primer día sin necesidad de contratar un equipo completo.
-- Acceso a economias de escala del proveedor (herramientas, inteligencia de amenazas, experiencia multi-cliente).
+- Acceso a economías de escala del proveedor (herramientas, inteligencia de amenazas, experiencia multi-cliente).
 - Coste predecible y generalmente inferior a un SOC interno.
 - Escalabilidad rápida (subir o bajar capacidad según necesidad).
 
@@ -120,7 +120,7 @@ El modelo híbrido combina un equipo interno reducido con servicios externos. Es
 
 {{< cta type="tofu" text="Riskitera ofrece un modelo SOC híbrido con IA soberana: tu equipo interno potenciado con automatización que cumple ENS Alto y NIS2." label="Ver demo SOC" >}}
 
-## ¿Cómo disenar el equipo de un SOC
+## ¿Cómo diseñar el equipo de un SOC?
 
 El equipo es el componente más crítico y más costoso de un SOC. Un error frecuente es contratar demasiados N1 y pocos N2/N3, lo que resulta en mucho triage y poca investigación real.
 
@@ -149,7 +149,7 @@ La cobertura 24/7 con personal interno requiere un mínimo de 4-5 personas solo 
 - Fuera de horario: MSSP para triage N1 + guardia rotativa del equipo interno para escalados críticos.
 - Compensación de guardia: 200-400 euros/semana de guardia (estándar en España), más compensación por activación fuera de horario.
 
-## ¿Qué herramientas necesita un SOC en 2026
+## ¿Qué herramientas necesita un SOC en 2026?
 
 El stack tecnológico de un SOC ha evolucionado significativamente. La tendencia dominante es la convergencia: menos herramientas, más integradas, con IA nativa.
 
@@ -175,13 +175,13 @@ El SIEM sigue siendo el núcleo del SOC, aunque su rol ha cambiado. Ya no es sol
 La convergencia XDR es la tendencia tecnológica más importante para SOC en 2026. Una plataforma XDR madura integra detección y respuesta en endpoints, red, cloud, email e identidad en una única consola.
 
 **Plataformas XDR lider:**
-- **CrowdStrike Falcon:** lider en endpoint con capacidades XDR cada vez más maduras. Fuerte en detección basada en IA.
+- **CrowdStrike Falcon:** líder en endpoint con capacidades XDR cada vez más maduras. Fuerte en detección basada en IA.
 - **Microsoft Defender XDR:** integración nativa con el ecosistema Microsoft. La opción natural para organizaciones M365/Azure.
 - **Palo Alto Cortex XDR:** fuerte integración con firewalls Palo Alto. Buena opción para organizaciones que ya usan su infraestructura de red.
 - **SentinelOne Singularity:** plataforma unificada con Purple AI para asistencia al analista. Crecimiento rápido en el mercado europeo.
 - **Trend Micro Visión One:** buena cobertura multi-vector. Popular en el mercado español.
 
-Para organizaciones medianas, una plataforma XDR puede ser suficiente sin necesidad de un SIEM separado. La decisión depende del volumen y diversidad de fuentes de datos: si necesitas ingestar logs de aplicaciones custom, dispositivos de red legacy o fuentes no soportadas por el XDR, necesitaras un SIEM complementario.
+Para organizaciones medianas, una plataforma XDR puede ser suficiente sin necesidad de un SIEM separado. La decisión depende del volumen y diversidad de fuentes de datos: si necesitas ingestar logs de aplicaciones custom, dispositivos de red legacy o fuentes no soportadas por el XDR, necesitarás un SIEM complementario.
 
 ### SOAR (Security Orchestration, Automation and Response)
 
@@ -299,7 +299,7 @@ Un dashboard de métricas SOC eficaz debe tener tres vistas:
 2. **Vista táctica (semanal/mensual):** MTTD, MTTR, cobertura ATT&CK, falsos positivos, tendencias. Para el SOC Manager.
 3. **Vista estratégica (trimestral):** coste por incidente, ROI de la automatización, benchmarking sectorial, estado de cumplimiento normativo. Para la dirección y el CISO.
 
-## ¿Cómo integrar IA y automatización en el SOC
+## ¿Cómo integrar IA y automatización en el SOC?
 
 La IA en el SOC ya no es una promesa: es una realidad operativa en 2026. Pero su implementación requiere pragmatismo y expectativas realistas.
 
@@ -325,7 +325,7 @@ La IA en el SOC ya no es una promesa: es una realidad operativa en 2026. Pero su
 
 ### Implementación práctica de IA en el SOC
 
-Si estas evaluando integrar IA en tu SOC, este es el roadmap recomendado:
+Si estás evaluando integrar IA en tu SOC, este es el roadmap recomendado:
 
 **Fase 1 (0-3 meses): automatización básica.**
 - Implementar playbooks SOAR para enriquecimiento automático de IoCs.
@@ -388,7 +388,7 @@ El ROI de un SOC es difícil de medir directamente (es como medir el ROI de un s
 - **Coste medio de un breach en Europa (2026):** 4.1 millones de euros (fuente: estudios del sector).
 - **Reducción del impacto con SOC operativo:** los estudios estiman que un SOC maduro reduce el coste de un breach en un 50-70%.
 - **Coste de incumplimiento NIS2:** multas de hasta 10 millones de euros o el 2% de la facturación global.
-- **Coste reputacional:** difícil de cuantificar pero potencialmente devastador (pérdida de clientes, caida de confianza, daño de marca).
+- **Coste reputacional:** difícil de cuantificar pero potencialmente devastador (pérdida de clientes, caída de confianza, daño de marca).
 
 Si tu organización factura más de 10 millones de euros anuales y opera en un sector expuesto a ciberamenazas (practicamente todos en 2026), el SOC no es un lujo: es una necesidad operativa y, cada vez más, una obligación legal.
 
@@ -416,7 +416,7 @@ Con la desaparición del perímetro de red tradicional (cloud, teletrabajo, zero
 
 ### Talento: de generalista a especialista asistido por IA
 
-El perfil del analista SOC está evolucionando. El N1 de 2027 usara IA como herramienta fundamental de trabajo (igual que hoy usa un SIEM). Las competencias valoradas serán la capacidad de supervisar y corregir las decisiones de la IA, la creatividad para hipótesis de hunting, y la habilidad de comunicar hallazgos técnicos a audiencias no técnicas. El analista puramente reactive que solo sigue playbooks tiene los días contados.
+El perfil del analista SOC está evolucionando. El N1 de 2027 usará IA como herramienta fundamental de trabajo (igual que hoy usa un SIEM). Las competencias valoradas serán la capacidad de supervisar y corregir las decisiones de la IA, la creatividad para hipótesis de hunting, y la habilidad de comunicar hallazgos técnicos a audiencias no técnicas. El analista puramente reactive que solo sigue playbooks tiene los días contados.
 
 
 **Artículos relacionados:**
@@ -440,7 +440,7 @@ Para un modelo híbrido con MSSP, la secuencia típica es: selección de MSSP y 
 
 ### ¿Cómo elijo un buen MSSP para mi SOC híbrido?
 
-Evalua estos criterios: ubicación de los datos (deben procesarse y almacenarse en la UE, idealmente en España, para cumplir ENS y NIS2), capacidad de personalización (el MSSP debe poder adaptar sus playbooks a tu contexto, no aplicar un triage generico), integración tecnológica (el MSSP debe poder conectarse a tu SIEM/XDR y trabajar en tu entorno, no en el suyo), SLAs claros (tiempos de triage, escalado y respuesta definidos y medibles), experiencia en tu sector (un MSSP que entiende banca no es igual que uno que entiende manufactura), y transparencia en reporting (acceso directo a las métricas, no solo informes mensuales en PDF). Pide referencias de clientes actuales en tu sector y habla con ellos antes de firmar.
+Evalua estos criterios: ubicación de los datos (deben procesarse y almacenarse en la UE, idealmente en España, para cumplir ENS y NIS2), capacidad de personalización (el MSSP debe poder adaptar sus playbooks a tu contexto, no aplicar un triage genérico), integración tecnológica (el MSSP debe poder conectarse a tu SIEM/XDR y trabajar en tu entorno, no en el suyo), SLAs claros (tiempos de triage, escalado y respuesta definidos y medibles), experiencia en tu sector (un MSSP que entiende banca no es igual que uno que entiende manufactura), y transparencia en reporting (acceso directo a las métricas, no solo informes mensuales en PDF). Pide referencias de clientes actuales en tu sector y habla con ellos antes de firmar.
 
 ### ¿La IA va a eliminar los puestos de trabajo en el SOC?
 

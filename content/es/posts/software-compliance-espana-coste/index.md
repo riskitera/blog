@@ -31,7 +31,7 @@ La respuesta depende de tres factores: el tamaño de la organización, el sector
 
 En España, el panorama regulatorio es particularmente denso. La mayoría de empresas deben cumplir, como mínimo, con el [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679) (Reglamento General de Protección de Datos). Si trabajan con la administración pública o gestionan infraestructuras críticas, se suma el [Esquema Nacional de Seguridad (ENS)](https://www.boe.es/eli/es/rd/2022/05/03/311). Desde enero de 2025, la transposición de [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) añade obligaciones para sectores esenciales e importantes. Y muchas organizaciones adoptan voluntariamente [ISO 27001](https://www.iso.org/standard/27001) como marco de referencia internacional.
 
-Gestionar todo esto con hojas de calculo, carpetas compartidas y correos electrónicos ya no es viable. No porque falte voluntad, sino porque la complejidad crece exponencialmente cuando se cruzan múltiples frameworks con decenas de controles cada uno.
+Gestionar todo esto con hojas de cálculo, carpetas compartidas y correos electrónicos ya no es viable. No porque falte voluntad, sino porque la complejidad crece exponencialmente cuando se cruzan múltiples frameworks con decenas de controles cada uno.
 
 El software de compliance existe precisamente para resolver este problema: centralizar la gestión de obligaciones regulatorias, automatizar la recopilación de evidencias, mapear controles entre distintos marcos normativos y generar los informes que los auditores y los reguladores esperan.
 
@@ -93,7 +93,7 @@ Esta es la pregunta que todos hacen y pocos responden con datos concretos. Vamos
 
 **Volumen de activos y controles.** Algunas herramientas facturan por número de activos gestionados o controles monitorizados. Una empresa con 500 activos TI pagará significativamente más que una con 50.
 
-**Integraciónes.** Conectar el software con tu SIEM, tu directorio activo, tu ticketing o tu nube (AWS, Azure, GCP) puede requerir conectores premium o desarrollo a medida.
+**Integraciones.** Conectar el software con tu SIEM, tu directorio activo, tu ticketing o tu nube (AWS, Azure, GCP) puede requerir conectores premium o desarrollo a medida.
 
 **Soporte y SLA.** El soporte básico (email, horario comercial) suele estar incluido. El soporte premium (24/7, tiempo de respuesta garantizado, gestor de cuenta dedicado) puede añadir entre 2.000 y 10.000 EUR anuales.
 
@@ -101,7 +101,7 @@ Esta es la pregunta que todos hacen y pocos responden con datos concretos. Vamos
 
 ### Modelos de licenciamiento
 
-**SaaS (Software as a Service).** Pago mensual o anual por suscripción. Sin infraestructura propia. Actualizaciones incluidas. Es el modelo dominante en 2026, especialmente para pymes y medianas empresas. Ojo: verifica ¿dónde se alojan los datos (para ENS Alto, necesitas infraestructura en la UE o, idealmente, en España).
+**SaaS (Software as a Service).** Pago mensual o anual por suscripción. Sin infraestructura propia. Actualizaciones incluidas. Es el modelo dominante en 2026, especialmente para pymes y medianas empresas. Ojo: verifica dónde se alojan los datos (para ENS Alto, necesitas infraestructura en la UE o, idealmente, en España).
 
 **On-premise.** Licencia perpetua más mantenimiento anual (típicamente el 18-22% del coste de licencia). Requiere infraestructura propia y equipo de sistemas. Cada vez menos frecuente, pero todavía exigido en ciertos entornos de AAPP y defensa.
 
@@ -154,7 +154,7 @@ La decisión entre SaaS y on-premise no es puramente técnica. Depende del marco
 El modelo SaaS es la mejor opción para la mayoría de empresas privadas españolas. Las ventajas son claras:
 
 - **Despliegue rápido.** En semanas, no en meses. No necesitas aprovisionar infraestructura.
-- **Actualizaciones continuas.** Las actualizaciónes de normativa (nuevas versiones de ENS, transposición NIS2, cambios en guías CCN-STIC) se incorporan automáticamente.
+- **Actualizaciones continuas.** Las actualizaciones de normativa (nuevas versiones de ENS, transposición NIS2, cambios en guías CCN-STIC) se incorporan automáticamente.
 - **Coste predecible.** Suscripción mensual o anual sin sorpresas de hardware, licencias de base de datos o parches de seguridad.
 - **Escalabilidad.** Creces sin migrar plataforma.
 
@@ -172,7 +172,7 @@ El inconveniente: necesitas equipo de sistemas para mantener la plataforma, apli
 
 ### El modelo híbrido como solución
 
-La tendencia en 2026 es el modelo híbrido: una plataforma SaaS con despliegue soberano. La lógica de negocio y la interfaz se ejecutan en la nube del proveedor, pero los datos sensibles (evidencias, hallazgos, informes confidenciales) se almacenan en tu infraestructura o en un CPD europeo que tu controles.
+La tendencia en 2026 es el modelo híbrido: una plataforma SaaS con despliegue soberano. La lógica de negocio y la interfaz se ejecutan en la nube del proveedor, pero los datos sensibles (evidencias, hallazgos, informes confidenciales) se almacenan en tu infraestructura o en un CPD europeo que tú controles.
 
 Este modelo permite cumplir con los requisitos de soberanía de datos del ENS y de [NIS2](/es/posts/2026/03/nis2-que-es-a-quien-afecta/) sin renunciar a las ventajas del SaaS. Plataformas como Riskitera están diseñadas desde el inicio con este enfoque, ofreciendo soberanía de datos europea sin sacrificar la experiencia de uso.
 
@@ -226,7 +226,7 @@ Antes de solicitar demos, define tus criterios de evaluación. Esta checklist te
 - [ ] Gestión de hallazgos y acciones correctivas
 - [ ] Reporting exportable (PDF, Excel)
 
-### Integraciónes
+### Integraciones
 - [ ] APIs REST/GraphQL documentadas
 - [ ] Conectores nativos para tu stack (SIEM, cloud, directorio activo)
 - [ ] Webhooks para automatizaciónes
@@ -262,7 +262,7 @@ Las [multas RGPD en España](/es/posts/2026/06/multas-rgpd-espana-coste-real/) p
 
 Cada ciclo de auditoría manual consume entre 200 y 500 horas de trabajo del equipo. Con automatización, ese tiempo se reduce a 60 - 150 horas. A un coste medio de 45 EUR/hora, el ahorro por auditoría oscila entre 6.300 y 15.750 EUR. Si tu organización afronta 2-3 auditorías anuales, el software se paga solo.
 
-Para profundizar en este calculo, consulta nuestra guía sobre [ROI de plataformas GRC](/es/posts/2026/07/roi-plataforma-grc-calcular/).
+Para profundizar en este cálculo, consulta nuestra guía sobre [ROI de plataformas GRC](/es/posts/2026/07/roi-plataforma-grc-calcular/).
 
 ### Argumento 3: reducción de riesgo reputacional
 
@@ -278,7 +278,7 @@ Cada vez más clientes (especialmente grandes empresas y administraciones públi
 
 ### Comprar por features sin evaluar el ajuste
 
-La herramienta con más funcionalidades no siempre es la mejor para tu organización. Una pyme que solo necesita gestionar RGPD no debería pagar por una suite enterprise con 15 frameworks que nunca usara.
+La herramienta con más funcionalidades no siempre es la mejor para tu organización. Una pyme que solo necesita gestionar RGPD no debería pagar por una suite enterprise con 15 frameworks que nunca usará.
 
 ### Ignorar el coste de implementación
 
@@ -286,11 +286,11 @@ El precio de licencia es solo una parte del TCO. La implementación, la migraci�
 
 ### No involucrar a los usuarios finales en la selección
 
-Si los responsables de compliance, los auditores internos y los propietarios de controles no participan en la evaluación, el software acabara infrautilizado. Pide una PoC y que la prueben los usuarios reales, no solo el CISO.
+Si los responsables de compliance, los auditores internos y los propietarios de controles no participan en la evaluación, el software acabará infrautilizado. Pide una PoC y que la prueben los usuarios reales, no solo el CISO.
 
 ### Subestimar la importancia del soporte local
 
-Una herramienta norteamericana puede ser excelente, pero si el soporte está en ingles, en horario PST y no conoce la normativa española, tendrás problemas. El soporte local marca la diferencia en las fases críticas de implementación y en las vísperas de una auditoría.
+Una herramienta norteamericana puede ser excelente, pero si el soporte está en inglés, en horario PST y no conoce la normativa española, tendrás problemas. El soporte local marca la diferencia en las fases críticas de implementación y en las vísperas de una auditoría.
 
 ### No planificar la renovación
 
@@ -300,7 +300,7 @@ Los contratos de SaaS suelen tener cláusulas de renovación automática y subid
 
 ### Inteligencia artificial en compliance
 
-Las plataformas GRC están incorporando IA para automatizar tareas que antes requerien intervención manual: clasificación automática de evidencias, detección de gaps de cumplimiento, generación de borradores de políticas y predicción de áreas de riesgo. La IA no sustituye al responsable de compliance, pero le libera de tareas repetitivas para centrarse en la toma de decisiones.
+Las plataformas GRC están incorporando IA para automatizar tareas que antes requerían intervención manual: clasificación automática de evidencias, detección de gaps de cumplimiento, generación de borradores de políticas y predicción de áreas de riesgo. La IA no sustituye al responsable de compliance, pero le libera de tareas repetitivas para centrarse en la toma de decisiones.
 
 ### Consolidación de herramientas
 
@@ -318,15 +318,15 @@ La dependencia de proveedores estadounidenses preocupa cada vez más a las empre
 
 ### ¿Cuánto cuesta el software de compliance más barato para una pyme española?
 
-Las soluciones más básicas para pymes arrancan desde 50-100 EUR/mes para gestionar un único framework (típicamente RGPD). Para una gestión más completa que incluya ENS e ISO 27001, los precios empiezan en torno a 200-400 EUR/mes. La clave es evaluar si la solución barata cubre realmente tus necesidades o si acabaras complementándola con hojas de calculo, lo cual anula el ahorro.
+Las soluciones más básicas para pymes arrancan desde 50-100 EUR/mes para gestionar un único framework (típicamente RGPD). Para una gestión más completa que incluya ENS e ISO 27001, los precios empiezan en torno a 200-400 EUR/mes. La clave es evaluar si la solución barata cubre realmente tus necesidades o si acabarás complementándola con hojas de cálculo, lo cual anula el ahorro.
 
 ### ¿Es obligatorio tener software de compliance en España?
 
-No existe ninguna ley que obligue a usar software específico. Lo que si es obligatorio es cumplir con los marcos normativos aplicables (RGPD, ENS, NIS2) y poder demostrarlo ante los reguladores. El software es un medio, no un fin. Dicho esto, intentar demostrar cumplimiento de ENS Alto o ISO 27001 sin herramientas automatizadas es técnicamente posible pero operativamente insostenible para la mayoría de organizaciones.
+No existe ninguna ley que obligue a usar software específico. Lo que sí es obligatorio es cumplir con los marcos normativos aplicables (RGPD, ENS, NIS2) y poder demostrarlo ante los reguladores. El software es un medio, no un fin. Dicho esto, intentar demostrar cumplimiento de ENS Alto o ISO 27001 sin herramientas automatizadas es técnicamente posible pero operativamente insostenible para la mayoría de organizaciones.
 
 ### ¿Puedo usar herramientas gratuitas o de código abierto para compliance?
 
-Existen herramientas open source como CISO Assistant, Eramba Community o OpenGRC que cubren funcionalidades básicas. Son una opción viable para organizaciones con equipo técnico capaz de desplegar y mantener la solución. Las limitaciones habituales: soporte limitado, actualizaciónes normativas lentas, menos integraciones, y la necesidad de dedicar recursos internos al mantenimiento. Para organizaciones con requisitos regulatorios complejos o sin equipo técnico dedicado, las soluciones comerciales ofrecen un mejor equilibrio coste-beneficio.
+Existen herramientas open source como CISO Assistant, Eramba Community o OpenGRC que cubren funcionalidades básicas. Son una opción viable para organizaciones con equipo técnico capaz de desplegar y mantener la solución. Las limitaciones habituales: soporte limitado, actualizaciones normativas lentas, menos integraciones, y la necesidad de dedicar recursos internos al mantenimiento. Para organizaciones con requisitos regulatorios complejos o sin equipo técnico dedicado, las soluciones comerciales ofrecen un mejor equilibrio coste-beneficio.
 
 ### ¿Cuánto tiempo se tarda en implementar una plataforma de compliance?
 
@@ -334,7 +334,7 @@ Depende del alcance. Para una pyme con un solo framework, la implementación tí
 
 ### ¿Cómo saber si mi empresa necesita una plataforma GRC completa o una herramienta puntual?
 
-La regla general: si gestionas 2 o más frameworks normativos, o si tienes más de 100 controles activos, una plataforma GRC integrada es más eficiente que herramientas puntuales. Si solo necesitas gestionar RGPD y nada más, una herramienta de privacidad especializada puede ser suficiente. Otro indicador: si dedicas más de 40 horas al mes a tareas de compliance manual, la automatización de una plataforma GRC se justifica economicamente.
+La regla general: si gestionas 2 o más frameworks normativos, o si tienes más de 100 controles activos, una plataforma GRC integrada es más eficiente que herramientas puntuales. Si solo necesitas gestionar RGPD y nada más, una herramienta de privacidad especializada puede ser suficiente. Otro indicador: si dedicas más de 40 horas al mes a tareas de compliance manual, la automatización de una plataforma GRC se justifica económicamente.
 
 
 **Artículos relacionados:**
