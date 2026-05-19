@@ -197,7 +197,7 @@ La decisión depende de tus requisitos regulatorios, capacidad técnica y presup
 
 **Artículos relacionados:**
 - [Auditoría Seguridad Informatica Guia](/es/posts/2026/04/auditoria-seguridad-informatica-guia/)
-- [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/04/análisis-riesgos-ciberseguridad-paso-a-paso/)
+- [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/)
 
 ## Dudas habituales
 

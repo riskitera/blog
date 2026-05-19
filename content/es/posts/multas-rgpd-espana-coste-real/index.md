@@ -234,7 +234,7 @@ El artículo 30 del RGPD lo exige. El RAT documenta todos los tratamientos de da
 
 Obligatorias cuando un tratamiento pueda suponer un alto riesgo para los derechos de los interesados: perfilado, tratamiento a gran escala de datos sensibles, videovigilancia sistemática, nuevas tecnologías. La AEPD publica una lista de tratamientos que requieren EIPD en España.
 
-La EIPD no es solo un ejercicio de cumplimiento: es una herramienta de [gestión de riesgos](/es/posts/2026/03/análisis-riesgos-ciberseguridad-paso-a-paso/) que te permite identificar y mitigar riesgos antes de que se materialicen.
+La EIPD no es solo un ejercicio de cumplimiento: es una herramienta de [gestión de riesgos](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/) que te permite identificar y mitigar riesgos antes de que se materialicen.
 
 ### 4. Implementar medidas de seguridad proporcionales
 

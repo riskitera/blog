@@ -530,7 +530,7 @@ Internet esta lleno de plantillas de PDS. Usarlas como punto de partida está bi
 
 
 **Artículos relacionados:**
-- [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/04/análisis-riesgos-ciberseguridad-paso-a-paso/)
+- [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/)
 - [Políticas Seguridad Informatica Como Crearlas](/es/posts/2026/04/politicas-seguridad-informatica-como-crearlas/)
 
 ## Preguntas frecuentes

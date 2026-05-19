@@ -358,7 +358,7 @@ Estas capacidades ya existen en plataformas GRC modernas y representan la evoluc
 
 
 **Artículos relacionados:**
-- [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/04/análisis-riesgos-ciberseguridad-paso-a-paso/)
+- [Análisis Riesgos Ciberseguridad Paso A Paso](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/)
 
 ## Preguntas frecuentes
 

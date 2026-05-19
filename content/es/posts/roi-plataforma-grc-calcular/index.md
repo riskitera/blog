@@ -135,7 +135,7 @@ Adaptando el concepto financiero de Value at Risk, puedes calcular la exposició
 
 La diferencia es la reducción de riesgo en términos monetarios.
 
-Para esto necesitas un [análisis de riesgos](/es/posts/2026/03/análisis-riesgos-ciberseguridad-paso-a-paso/) con valores cuantitativos. Si usas [MAGERIT o FAIR](/es/posts/2026/04/medir-riesgo-ciberseguridad-fair-magerit/), ya tienes los datos. Si no, la propia plataforma GRC debería ayudarte a construirlo.
+Para esto necesitas un [análisis de riesgos](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/) con valores cuantitativos. Si usas [MAGERIT o FAIR](/es/posts/2026/04/medir-riesgo-ciberseguridad-fair-magerit/), ya tienes los datos. Si no, la propia plataforma GRC debería ayudarte a construirlo.
 
 ### Factor de cobertura de controles
 
@@ -369,4 +369,4 @@ El coste de cambio (switching cost) es un factor a considerar. Incluye migració
 - [Software de compliance en España: qué necesitas y cuánto cuesta](/es/posts/2026/07/software-compliance-espana-coste/)
 - [Cómo elegir plataforma GRC](/es/posts/2026/04/como-elegir-plataforma-grc/)
 - [Mejores plataformas GRC 2026](/es/posts/2026/04/mejores-plataformas-grc-2026/)
-- [Análisis de riesgos paso a paso](/es/posts/2026/03/análisis-riesgos-ciberseguridad-paso-a-paso/)
+- [Análisis de riesgos paso a paso](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/)

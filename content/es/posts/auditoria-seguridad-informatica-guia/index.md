@@ -78,7 +78,7 @@ La planificación es la fase más crítica y frecuentemente la más subestimada.
 
 **Elaboración del programa.** Definir el calendario, los recursos necesarios (auditores, herramientas), los interlocutores en cada área y los métodos de evaluación (entrevistas, revisión documental, pruebas técnicas, observación directa).
 
-**Análisis de riesgos de auditoría.** Identificar las áreas de mayor riesgo para concentrar en ellas los recursos de auditoría. Un [análisis de riesgos](/es/posts/análisis-riesgos-ciberseguridad-paso-a-paso/) actualizado es un input fundamental para esta fase.
+**Análisis de riesgos de auditoría.** Identificar las áreas de mayor riesgo para concentrar en ellas los recursos de auditoría. Un [análisis de riesgos](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/) actualizado es un input fundamental para esta fase.
 
 **Comunicación previa.** Informar a los responsables de las áreas auditadas sobre el alcance, el calendario y las expectativas. La colaboración del personal auditado es esencial para una auditoría eficaz.
 
