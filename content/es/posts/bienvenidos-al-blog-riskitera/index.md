@@ -22,15 +22,15 @@ Nuestro blog cubre las áreas clave de la ciberseguridad empresarial:
 
 ### GRC y Compliance
 
-Guías prácticas sobre frameworks como **ISO 27001**, **ENS**, **NIS2**, **SOC 2**, **GDPR** y **NIST CSF**. No solo teoría: casos reales y pasos concretos para implementarlos.
+Guías prácticas sobre frameworks como **[ISO 27001](/es/posts/2026/02/guia-iso-27001-startups/)**, **[ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)**, **[NIS2](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)**, **SOC 2**, **[RGPD](/es/posts/2026/04/rgpd-2026-checklist-empresas/)** y **NIST CSF**. No solo teoría: casos reales y pasos concretos para implementarlos.
 
 ### SOC Operations
 
-Cómo construir y operar un Centro de Operaciones de Seguridad eficiente. Desde la configuración de alertas hasta la respuesta automatizada a incidentes.
+Cómo [construir y operar un Centro de Operaciones de Seguridad](/es/posts/2026/04/guia-montar-operar-soc-2026/) eficiente. Desde la configuración de alertas hasta la [respuesta automatizada a incidentes](/es/posts/2026/04/respuesta-incidentes-seguridad-playbook/).
 
 ### Threat Modeling
 
-Metodologías como **STRIDE** y **DFD** aplicadas a arquitecturas reales. Análisis de superficies de ataque y cómo priorizar las amenazas que realmente importan.
+Metodologías como **STRIDE** y **DFD** aplicadas a arquitecturas reales. [Análisis de riesgos](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/) y cómo priorizar las amenazas que realmente importan.
 
 ### Code Security
 

@@ -31,7 +31,7 @@ ISO 27001 no es solo un sello que colgar en la web. Es un marco de trabajo que t
 - **Acceso a mercados regulados**: muchos clientes enterprise y contratos públicos exigen esta certificación.
 - **Confianza de inversores**: demuestra madurez operativa y reduce el riesgo percibido.
 - **Reducción real de incidentes**: un SGSI bien implementado detecta vulnerabilidades antes de que se conviertan en problemas.
-- **Cumplimiento normativo**: facilita la adaptación a NIS2, GDPR, [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311) y otros frameworks.
+- **Cumplimiento normativo**: facilita la adaptación a [NIS2](/es/posts/2026/04/nis2-que-es-a-quien-afecta/), [RGPD](/es/posts/2026/04/rgpd-2026-checklist-empresas/), [ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/) y otros frameworks.
 
 ## Los pasos clave
 
@@ -43,7 +43,7 @@ No intentes abarcar toda la empresa desde el primer día. Define un alcance acot
 
 ### 2. Evaluación de riesgos
 
-Identifica tus activos de información, las amenazas que los afectan y las vulnerabilidades que podrían ser explotadas. Prioriza por impacto y probabilidad. No necesitas una herramienta costosa: una hoja de cálculo bien estructurada funciona al inicio, aunque plataformas como Riskitera automatizan gran parte del proceso.
+Identifica tus activos de información, las amenazas que los afectan y las vulnerabilidades que podrían ser explotadas. Prioriza por [impacto y probabilidad](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/). No necesitas una herramienta costosa: una hoja de cálculo bien estructurada funciona al inicio, aunque plataformas como Riskitera automatizan gran parte del proceso.
 
 **Consejo**: involucra a los equipos técnicos desde el principio. Ellos conocen los riesgos reales mejor que nadie.
 
@@ -74,7 +74,7 @@ Documentos mínimos obligatorios:
 
 1. **Copiar políticas genéricas de internet**: el auditor lo detectará inmediatamente. Las políticas deben reflejar tu realidad.
 2. **Tratar ISO 27001 como un proyecto de IT**: es un proyecto de negocio que necesita el apoyo de dirección.
-3. **No realizar auditorías internas**: son obligatorias y sirven para detectar no conformidades antes de la auditoría de certificación.
+3. **No realizar [auditorías internas](/es/posts/2026/04/auditoria-seguridad-informatica-guia/)**: son obligatorias y sirven para detectar no conformidades antes de la auditoría de certificación.
 4. **Subestimar el tiempo necesario**: planifica entre 6 y 12 meses, dependiendo del alcance.
 5. **Olvidar la mejora continua**: la certificación no es el final, es el principio de un ciclo PDCA permanente.
 
@@ -82,6 +82,6 @@ Documentos mínimos obligatorios:
 
 ## Conclusión
 
-ISO 27001 es perfectamente alcanzable para una startup si se aborda con pragmatismo. Define un alcance realista, prioriza los riesgos críticos, implementa controles proporcionales y documenta lo que realmente haces. Con herramientas que automaticen la gestión de evidencias y el seguimiento de controles, el proceso se simplifica enormemente.
+ISO 27001 es perfectamente alcanzable para una startup si se aborda con pragmatismo. Define un alcance realista, prioriza los riesgos críticos, implementa controles proporcionales y documenta lo que realmente haces. Con [herramientas que automaticen la gestión de evidencias](/es/posts/2026/04/como-elegir-plataforma-grc/) y el seguimiento de controles, el proceso se simplifica enormemente.
 
 En Riskitera ayudamos a startups a recorrer este camino con una plataforma que unifica la evaluación de riesgos, el mapeo de controles y la generación de evidencias en un solo lugar.

@@ -52,7 +52,7 @@ Las mejores plataformas en esta dimensión ofrecen: registros de riesgos con tax
 
 ### Gestión de compliance y normativas
 
-En 2026, una empresa europea regulada puede estar sujeta simultáneamente a [ENS](https://www.ccn-cert.cni.es/) (Esquema Nacional de Seguridad), NIS2, DORA, RGPD, [ISO 27001](https://www.iso.org/standard/27001), PCI DSS y la EU AI Act. La plataforma debe permitir mapear controles a múltiples normativas, identificar solapamientos (control mapping cruzado) y generar evidencias reutilizables.
+En 2026, una empresa europea regulada puede estar sujeta simultáneamente a [ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/) (Esquema Nacional de Seguridad), [NIS2](/es/posts/2026/04/nis2-que-es-a-quien-afecta/), [DORA](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/), [RGPD](/es/posts/2026/04/rgpd-2026-checklist-empresas/), [ISO 27001](/es/posts/2026/02/guia-iso-27001-startups/), PCI DSS y la [EU AI Act](/es/posts/2026/04/eu-ai-act-ciberseguridad/). La plataforma debe permitir mapear controles a múltiples normativas, identificar solapamientos (control mapping cruzado) y generar evidencias reutilizables.
 
 ### Automatización y workflow
 
@@ -60,7 +60,7 @@ La recopilación manual de evidencias es el principal cuello de botella del comp
 
 ### Integración con SOC y CTI
 
-Un GRC aislado del SOC es un GRC incompleto. La capacidad de correlacionar alertas de seguridad con riesgos registrados, y de alimentar el análisis de riesgos con inteligencia de amenazas real (feeds CTI, [MITRE ATT&CK](https://attack.mitre.org/), IOCs), es lo que diferencia una herramienta de compliance de una plataforma de seguridad integrada.
+Un GRC aislado del SOC es un GRC incompleto. La capacidad de correlacionar alertas de seguridad con riesgos registrados, y de alimentar el [análisis de riesgos](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/) con inteligencia de amenazas real ([feeds CTI](/es/posts/2026/04/feeds-cti-gratuitos-mejores/), [MITRE ATT&CK](/es/posts/2026/04/mitre-attack-que-es-como-usarlo/), [IOCs](/es/posts/2026/04/iocs-en-ciberseguridad-que-son/)), es lo que diferencia una herramienta de compliance de una plataforma de seguridad integrada.
 
 ### Reporting y dashboards
 
@@ -324,7 +324,7 @@ Más allá de la comparativa, hay tres tendencias que están redefiniendo el mer
 
 ### IA generativa como copiloto GRC
 
-Las plataformas que integran IA de forma real (no como un chatbot decorativo) permiten a los equipos reducir el tiempo de evaluación de riesgos en un 40-60%. Las funcionalidades con mayor impacto son la generación automática de narrativas de riesgo para el board, la clasificación de hallazgos de auditoría por criticidad, y la detección de gaps de compliance cruzando múltiples normativas.
+Las plataformas que integran [IA de forma real](/es/posts/2026/05/inteligencia-artificial-ciberseguridad-2026/) (no como un chatbot decorativo) permiten a los equipos reducir el tiempo de evaluación de riesgos en un 40-60%. Las funcionalidades con mayor impacto son la generación automática de narrativas de riesgo para el board, la clasificación de hallazgos de auditoría por criticidad, y la detección de gaps de compliance cruzando múltiples normativas.
 
 Según [NIST](https://www.nist.gov/cyberframework), la integración de IA en procesos de gestión de riesgos debe incluir guardrails que garanticen la explicabilidad de las decisiones automatizadas. Esto es especialmente relevante en el contexto de la EU AI Act, que clasifica los sistemas de IA usados en ciberseguridad como "alto riesgo" en determinados escenarios.
 
@@ -358,4 +358,4 @@ Sí, siempre que la plataforma cumpla con tus requisitos de seguridad y regulato
 
 ### ¿Cómo justifico la inversión en una plataforma GRC ante la dirección?
 
-El argumento más efectivo no es el miedo al hackeo, sino el coste de la ineficiencia actual. Calcula cuántas horas dedica tu equipo a tareas manuales de compliance (recopilar evidencias, generar informes, responder a auditores) y multiplica por el coste/hora. Añade el riesgo de sanciones por incumplimiento: las multas de NIS2 pueden alcanzar los 10 millones de EUR o el 2% del volumen de negocio global. Una plataforma GRC con un TCO de 60.000 EUR/año que ahorra 2.000 horas de trabajo manual y reduce el riesgo de sanciones tiene un ROI claro y medible.
+El argumento más efectivo no es el miedo al hackeo, sino el coste de la ineficiencia actual. Calcula cuántas horas dedica tu equipo a tareas manuales de [compliance](/es/posts/2026/04/guia-compliance-ciberseguridad-2026/) (recopilar evidencias, generar informes, responder a auditores) y multiplica por el coste/hora. Añade el riesgo de sanciones por incumplimiento: las multas de NIS2 pueden alcanzar los 10 millones de EUR o el 2% del volumen de negocio global. Una plataforma GRC con un TCO de 60.000 EUR/año que ahorra 2.000 horas de trabajo manual y reduce el riesgo de sanciones tiene un ROI claro y medible.
