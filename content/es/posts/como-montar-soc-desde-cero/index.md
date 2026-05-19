@@ -134,7 +134,7 @@ Los analistas N3 son los perfiles más experimentados del SOC. Se dedican a la c
 - Threat hunting proactivo: búsqueda de amenazas que han eludido los mecanismos de detección automatizados.
 - Análisis avanzado de malware (ingeniería inversa).
 - Forense digital avanzado.
-- Desarrollo de inteligencia de amenazas aplicada.
+- Desarrollo de [inteligencia de amenazas](/es/posts/2026/04/threat-intelligence-empresas-empezar/) aplicada.
 - Diseño de arquitectura de detección y optimización de reglas.
 - Asesoría técnica en incidentes complejos.
 - Mentorización de analistas N1 y N2.

@@ -106,7 +106,7 @@ Las soluciones EDR proporcionan visibilidad granular sobre la actividad de los e
 
 ### Reglas Sigma
 
-[Sigma](https://github.com/SigmaHQ/sigma) es un formato abierto para describir detecciones de forma genérica, independiente del SIEM. Las reglas Sigma se escriben en YAML y pueden convertirse automáticamente en consultas para Splunk, Elasticsearch, Microsoft Sentinel y otras plataformas. El repositorio oficial de reglas Sigma en GitHub contiene más de 3.000 reglas, muchas de ellas mapeadas contra técnicas de MITRE ATT&CK.
+[Sigma](https://github.com/SigmaHQ/sigma) es un formato abierto para describir detecciones de forma genérica, independiente del SIEM. Para una guía completa sobre cómo escribir y mantener estas reglas, consulta nuestra [guía práctica de reglas Sigma](/es/posts/2026/06/reglas-sigma-guia-practica/). Las reglas Sigma se escriben en YAML y pueden convertirse automáticamente en consultas para Splunk, Elasticsearch, Microsoft Sentinel y otras plataformas. El repositorio oficial de reglas Sigma en GitHub contiene más de 3.000 reglas, muchas de ellas mapeadas contra técnicas de MITRE ATT&CK.
 
 Para hunting, las reglas Sigma proporcionan un punto de partida valioso: el hunter puede seleccionar reglas relevantes para su hipótesis, convertirlas al formato de su SIEM y ejecutarlas como consultas exploratorias.
 

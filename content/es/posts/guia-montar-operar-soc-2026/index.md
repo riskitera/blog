@@ -137,7 +137,7 @@ El equipo es el componente más crítico y más costoso de un SOC. Un error frec
 
 ### Roles críticos que muchos SOC olvidan
 
-**Detection Engineer.** Este rol es el que más impacto tiene en la eficacia del SOC y es el más ignorado en España. Un buen detection engineer crea reglas de detección que reducen falsos positivos, aumentan la cobertura de MITRE ATT&CK y hacen que el trabajo de los analistas sea más productivo. Sin este rol, las reglas de detección se degradan con el tiempo y el SOC se ahoga en ruido.
+**Detection Engineer.** Este rol es el que más impacto tiene en la eficacia del SOC y es el más ignorado en España. Un buen [detection engineer crea reglas de detección](/es/posts/2026/04/detection-engineering-reglas-deteccion/) que reducen falsos positivos, aumentan la cobertura de MITRE ATT&CK y hacen que el trabajo de los analistas sea más productivo. Sin este rol, las reglas de detección se degradan con el tiempo y el SOC se ahoga en ruido.
 
 **Analista CTI dedicado.** La inteligencia de amenazas no puede ser una tarea parcial del N2 "cuando tiene tiempo". Necesita un profesional dedicado que consuma fuentes de CTI, las contextualice para tu sector y organización, y produzca inteligencia accionable que alimente las reglas de detección y los playbooks de respuesta.
 
@@ -413,7 +413,7 @@ Los SOC que solo monitorizan IT están incompletos. La convergencia de redes IT 
 
 ### Identidad como perímetro
 
-Con la desaparición del perímetro de red tradicional (cloud, teletrabajo, zero trust), la identidad se convierte en el nuevo punto focal de detección. Los SOC invierten en Identity Threat Detection and Response (ITDR) para detectar compromisos de credenciales, movimiento lateral y escalado de privilegios.
+Con la desaparición del perímetro de red tradicional (cloud, teletrabajo, [zero trust](/es/posts/2026/04/zero-trust-guia-practica/)), la identidad se convierte en el nuevo punto focal de detección. Los SOC invierten en Identity Threat Detection and Response (ITDR) para detectar compromisos de credenciales, movimiento lateral y escalado de privilegios.
 
 ### Talento: de generalista a especialista asistido por IA
 

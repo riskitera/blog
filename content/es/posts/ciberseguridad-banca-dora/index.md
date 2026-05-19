@@ -24,7 +24,7 @@ El Reglamento DORA (Digital Operational Resilience Act, Reglamento UE 2022/2554)
 
 El cambio fundamental que introduce DORA es que la resiliencia digital deja de ser una recomendación y se convierte en una obligación legal supervisada. Las autoridades competentes (en España, el Banco de España y la CNMV) tienen potestad para inspeccionar, exigir correcciones y sancionar.
 
-Para los bancos españoles, DORA se superpone al marco de supervisión existente (EBA Guidelines on ICT and Security Risk Management) pero eleva el nivel de exigencia en cinco áreas clave: gestión de riesgos TIC, notificación de incidentes, pruebas de resiliencia, gestión de proveedores y compartición de información.
+Para los bancos españoles, DORA se superpone al marco de supervisión existente (EBA Guidelines on ICT and Security Risk Management) pero eleva el nivel de exigencia en cinco áreas clave: gestión de riesgos TIC, notificación de incidentes, pruebas de resiliencia, gestión de proveedores y compartición de información. Nuestra [guía de DORA para entidades financieras](/es/posts/2026/04/guia-dora-entidades-financieras-requisitos/) detalla cada requisito técnico.
 
 El impacto operativo es significativo. Según un estudio de McKinsey de 2025, el 68% de las entidades financieras europeas necesitaron reorganizar sus funciones de IT y riesgo para cumplir con DORA. El coste medio de adaptación para un banco mediano europeo se estima entre 2 y 5 millones de euros, dependiendo del nivel de madurez previo.
 

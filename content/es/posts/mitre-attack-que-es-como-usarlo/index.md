@@ -91,7 +91,7 @@ La aplicación práctica de ATT&CK en un [centro de operaciones de seguridad](/e
 
 ### Mapeo de detecciones
 
-El uso más inmediato de ATT&CK en el SOC es evaluar qué técnicas puede detectar la organización y cuáles representan puntos ciegos. El proceso consiste en tomar cada regla de detección existente en el SIEM, EDR u otras herramientas y asignarle la técnica o subtécnica de ATT&CK correspondiente. El resultado es un mapa visual de cobertura que revela qué tácticas están bien cubiertas y dónde hay brechas críticas.
+El uso más inmediato de ATT&CK en el SOC es [evaluar qué técnicas puede detectar la organización](/es/posts/2026/04/mitre-attack-soc-mapping-detecciones/) y cuáles representan puntos ciegos. El proceso consiste en tomar cada regla de detección existente en el SIEM, EDR u otras herramientas y asignarle la técnica o subtécnica de ATT&CK correspondiente. El resultado es un mapa visual de cobertura que revela qué tácticas están bien cubiertas y dónde hay brechas críticas.
 
 Este ejercicio suele revelar que muchas organizaciones tienen buena cobertura en tácticas como Initial Access y Execution, pero presentan debilidades significativas en Defense Evasión y Lateral Movement, que son precisamente las fases donde los atacantes avanzados invierten más esfuerzo.
 

@@ -154,7 +154,7 @@ Para la creación de reglas de detección basadas en IOCs, las **[reglas Sigma](
 
 ## ¿Cuáles son los errores comunes al trabajar con IOCs?
 
-Conocer los errores frecuentes permite evitarlos y mejorar la eficacia del programa de CTI.
+Conocer los errores frecuentes permite evitarlos y mejorar la eficacia del [programa de CTI](/es/posts/2026/04/guia-threat-intelligence-empresas-2026/).
 
 **Tratar los IOCs como soluciones automáticas.** Los IOCs son herramientas, no soluciones. Requieren contexto, validación y acciones humanas para ser efectivos. Cargar miles de indicadores sin triaje satura los sistemas y genera fatiga de alertas.
 

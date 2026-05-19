@@ -91,7 +91,7 @@ Existen excepciones: determinadas entidades se incluyen independientemente de su
 
 ## ¿Cuáles son los requisitos principales de NIS2?
 
-NIS2 establece diez medidas mínimas de gestión de riesgos que todas las entidades afectadas deben implementar:
+NIS2 establece diez medidas mínimas de gestión de riesgos que todas las entidades afectadas deben implementar. Para un desglose práctico con checklist descargable, consulta nuestro [checklist de requisitos NIS2 para España](/es/posts/2026/04/requisitos-nis2-espana-checklist/).
 
 1. **Políticas de análisis de riesgos y seguridad de los sistemas de información**: realizar evaluaciones periódicas de riesgos y mantener políticas de seguridad actualizadas.
 

@@ -153,7 +153,7 @@ Además de las herramientas de N1 y N2:
 
 ## ¿Cómo es la trayectoria profesional de un analista SOC?
 
-La carrera de un analista SOC es una progresión natural que, con dedicación y formación continua, puede llevar desde un perfil junior hasta posiciones de liderazgo técnico o de gestión.
+La carrera de un analista SOC es una progresión natural que, con dedicación y formación continua, puede llevar desde un perfil junior hasta posiciones de liderazgo técnico o de gestión. Para datos concretos sobre remuneración por nivel, consulta nuestro análisis de [salarios de analistas SOC en España](/es/posts/2026/04/salario-analista-soc-espana-2026/).
 
 ### Ruta típica
 

@@ -508,7 +508,7 @@ Los feeds gratuitos te dicen "esta IP es maliciosa". Los feeds comerciales (Reco
 
 ### Necesitas cobertura de dark web
 
-Los feeds gratuitos cubren la superficie visible de internet. La monitorización de foros de dark web, mercados de credenciales y canales de Telegram donde se venden accesos requiere feeds especializados (Flashpoint, Intel 471, Kela, DarkOwl).
+Los feeds gratuitos cubren la superficie visible de internet. La [monitorización de foros de dark web](/es/posts/2026/04/dark-web-monitoring-empresa/), mercados de credenciales y canales de Telegram donde se venden accesos requiere feeds especializados (Flashpoint, Intel 471, Kela, DarkOwl).
 
 ### Tu volumen de consultas supera los límites gratuitos
 
