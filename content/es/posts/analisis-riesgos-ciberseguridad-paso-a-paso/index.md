@@ -217,22 +217,22 @@ Automatizar donde sea posible. El inventario de activos tecnológicos, el escane
 
 ## Lo que más preguntan los equipos de seguridad
 
-### ¿Cada cuánto debo actualizar el análisis de riesgos
+### ¿Cada cuánto debo actualizar el análisis de riesgos?
 
 El análisis de riesgos debe revisarse como mínimo anualmente de forma completa. Además, debe actualizarse ante cambios significativos: incorporación de nuevos sistemas o servicios, cambios en la normativa aplicable, incidentes de seguridad relevantes (propios o del sector), cambios organizativos importantes o resultados de auditorías. Las normas ISO 27001 y el ENS exigen la revisión periódica del análisis de riesgos como requisito de cumplimiento.
 
-### ¿Qué metodología es mejor para una pyme
+### ¿Qué metodología es mejor para una pyme?
 
 Para una pyme española, MAGERIT con la herramienta microPILAR es una opción sólida que facilita el cumplimiento del ENS si aplica. ISO 27005 es adecuada si la organización aspira a la certificación ISO 27001. Para pymes que quieren un enfoque práctico sin formalismos excesivos, el marco [NIST CSF](https://www.nist.gov/cyberframework) incluye una función de evaluación de riesgos accesible. Lo importante no es elegir la metodología perfecta sino comenzar el proceso con la que mejor se adapte a los recursos disponibles.
 
-### ¿Necesito un consultor externo para hacer el análisis de riesgos
+### ¿Necesito un consultor externo para hacer el análisis de riesgos?
 
 No es estrictamente necesario, pero es recomendable para organizaciones que realizan el análisis por primera vez o que carecen de personal con experiencia en gestión de riesgos. Un consultor externo aporta perspectiva independiente, conocimiento de mejores prácticas y experiencia de otros sectores. En cualquier caso, el conocimiento interno de la organización es insustituible: el consultor facilita el proceso, pero los responsables de negocio y TI deben participar activamente.
 
-### ¿Cómo integro el análisis de riesgos con el cumplimiento normativo
+### ¿Cómo integro el análisis de riesgos con el cumplimiento normativo?
 
 El análisis de riesgos es el eje central que conecta todos los requisitos normativos. Las medidas de seguridad exigidas por el ENS, ISO 27001, NIS2 o RGPD deben ser proporcionales al riesgo identificado. Un análisis de riesgos bien realizado justifica las medidas implementadas, identifica las brechas de cumplimiento y prioriza las acciones correctivas. Es recomendable mapear los riesgos contra los requisitos de cada normativa aplicable para asegurar la cobertura completa.
 
-### ¿Qué hago si la dirección no apoya el proceso de análisis de riesgos
+### ¿Qué hago si la dirección no apoya el proceso de análisis de riesgos?
 
 La clave es comunicar el valor en términos de negocio, no en términos técnicos. Presenta datos concretos: el coste medio de una brecha de datos en el sector, las sanciones regulatorias aplicables, ejemplos de incidentes en organizaciones comparables y el coste de no actuar frente al coste de realizar el análisis. Los informes de INCIBE y ENISA proporcionan estadísticas que pueden utilizarse para este propósito. Si la organización está sujeta a normativas que exigen el análisis de riesgos, el argumento regulatorio es adicional e ineludible.

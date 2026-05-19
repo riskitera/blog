@@ -260,7 +260,7 @@ Los SOC generan enormes cantidades de conocimiento tacito que se pierde cuando u
 - **Sesiones de knowledge sharing** regulares (semanales o quincenales) donde los analistas comparten casos interesantes.
 - **Onboarding estructurado** para nuevos analistas (no solo "sientate con Pedro un par de días").
 
-## ¿Cómo medir la eficacia de un SOC: métricas que importan en 2026
+## ¿Cómo medir la eficacia de un SOC: métricas que importan en 2026?
 
 Las métricas tradicionales (MTTD, MTTR) siguen siendo relevantes, pero un SOC moderno necesita un dashboard de métricas más completo.
 
@@ -355,7 +355,7 @@ La alternativa es el despliegue de modelos de IA self-hosted en infraestructura 
 
 {{< cta type="bofu" text="Riskitera opera con IA soberana desplegada en infraestructura europea. Solicita una demo personalizada para tu SOC y descubre cómo optimizamos tus operaciones cumpliendo ENS Alto." label="Solicitar demo" >}}
 
-## ¿Cuánto cuesta montar y operar un SOC en 2026
+## ¿Cuánto cuesta montar y operar un SOC en 2026?
 
 Vamos a los números reales. Estos costes están basados en el mercado español para una empresa mediana (500-2000 empleados) con un modelo híbrido.
 

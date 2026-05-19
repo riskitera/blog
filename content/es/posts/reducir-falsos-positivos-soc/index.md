@@ -72,7 +72,7 @@ Antes de reducir falsos positivos, necesitas medirlos. Sin métricas, no sabes s
 
 Estos números son orientativos. Lo importante es establecer tu propia baseline y medir la tendencia.
 
-## ¿Por qué se generan falsos positivos: causas raíz
+## ¿Por qué se generan falsos positivos: causas raíz?
 
 Entender por qué se generan FPs es prerequisito para reducirlos. Las causas se agrupan en cuatro categorías.
 

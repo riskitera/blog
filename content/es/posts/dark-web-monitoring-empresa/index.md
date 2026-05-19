@@ -264,7 +264,7 @@ La información de la dark web solo tiene valor si se integra en los procesos op
 | Falsos positivos | < 20% del total de alertas |
 | Dominios typosquatting detectados/bloqueados | Ratio > 90% |
 
-## ¿Cómo configurar alertas automatizadas paso a paso
+## ¿Cómo configurar alertas automatizadas paso a paso?
 
 Un sistema de alertas bien configurado es la diferencia entre un programa reactivo y uno proactivo. Aquí tienes un plan de implementación progresivo.
 
@@ -344,7 +344,7 @@ Muchos actores de amenaza han migrado de foros tradicionales a canales de Telegr
 
 Los foros como BreachForums (y sus sucesores) y los mercados de la dark web son las fuentes primarias. Acceder directamente requiere experiencia, precauciones operativas (Tails OS, VPN sobre Tor, identidades separadas) y conlleva riesgos. Para la mayoría de empresas, es preferible usar plataformas que indexen estos foros automáticamente.
 
-## ¿Cuándo contratar un servicio profesional de dark web monitoring
+## ¿Cuándo contratar un servicio profesional de dark web monitoring?
 
 No todas las empresas necesitan una plataforma profesional desde el primer día. Usa esta guía para decidir.
 

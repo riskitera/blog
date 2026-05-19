@@ -224,11 +224,11 @@ La preparación es determinante para el resultado de una auditoría externa. Est
 
 ## Preguntas frecuentes
 
-### ¿Cada cuánto se debe realizar una auditoría de seguridad
+### ¿Cada cuánto se debe realizar una auditoría de seguridad?
 
 La frecuencia depende del marco normativo aplicable y la madurez de la organización. ISO 27001 exige auditorías internas planificadas como mínimo anualmente. El ENS requiere auditorías de conformidad cada dos años para categorías media y alta. Independientemente de los requisitos normativos, se recomienda realizar auditorías internas al menos una vez al año y auditorías técnicas (escaneos de vulnerabilidades) de forma trimestral o más frecuente.
 
-### ¿Cuál es la diferencia entre una auditoría y un test de penetración
+### ¿Cuál es la diferencia entre una auditoría y un test de penetración?
 
 La auditoría evalúa la conformidad de los controles de seguridad con un marco de referencia (norma, regulación, política interna), abarcando aspectos técnicos, organizativos y procedimentales. El test de penetración es una prueba técnica que simula un ataque real para identificar vulnerabilidades explotables. Son actividades complementarias: la auditoría verifica que los controles existen y se gestionan correctamente; el pentest verifica si son eficaces frente a un ataque.
 
@@ -236,10 +236,10 @@ La auditoría evalúa la conformidad de los controles de seguridad con un marco 
 
 La auditoría interna puede ser realizada por personal de la organización con formación en auditoría y conocimientos de seguridad de la información, siempre que sea independiente del área auditada. También puede encargarse a consultores externos que actúen en nombre de la organización. Las certificaciones CISA de ISACA o Lead Auditor ISO 27001 son credenciales que acreditan la competencia del auditor, aunque no son obligatorias para auditorías internas.
 
-### ¿Qué pasa si se identifica una no conformidad mayor en la auditoría externa
+### ¿Qué pasa si se identifica una no conformidad mayor en la auditoría externa?
 
 En una auditoría de certificación ISO 27001, una no conformidad mayor impide la emisión del certificado hasta que se corrija. La organización dispone de un plazo limitado (típicamente 90 días) para implementar la acción correctiva y presentar evidencias al organismo de certificación. Si la corrección es eficaz, la certificación puede emitirse. Si no se corrige en plazo, la auditoría se considera no satisfactoria y debe repetirse.
 
-### ¿Cómo puedo reducir el coste y el esfuerzo de las auditorías
+### ¿Cómo puedo reducir el coste y el esfuerzo de las auditorías?
 
 La automatización es la palanca principal para reducir el coste de las auditorías. Automatizar la recopilación de evidencias, la verificación de controles técnicos y la generación de informes puede reducir el esfuerzo de preparación en un 60 a 70 por ciento según estimaciones del sector. Además, mantener la documentación actualizada de forma continua (en lugar de actualizarla precipitadamente antes de cada auditoría) y utilizar una plataforma GRC centralizada que vincule controles, evidencias y hallazgos reduce significativamente el esfuerzo tanto para el auditado como para el auditor.

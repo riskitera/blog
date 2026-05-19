@@ -25,7 +25,7 @@ Guía completa para elaborar un plan director de seguridad de la información: e
 - Errores comunes como omitir la fase de análisis previo o no asignar responsables concretos pueden invalidar todo el esfuerzo.
 {{< /key-takeaways >}}
 
-## ¿Qué es un plan director de seguridad
+## ¿Qué es un plan director de seguridad?
 
 Un plan director de seguridad (PDS) es el documento estratégico que define como una organización va a proteger sus activos de información durante un periodo determinado, normalmente entre uno y tres años. No es un documento técnico aislado: es la hoja de ruta que conecta la estrategia de negocio con las medidas de protección necesarias para operar con garantías.
 
@@ -317,7 +317,7 @@ Supongamos un PDS con 10 proyectos. Tras la evaluación:
 
 En este caso, MFA, SIEM y Backup comparten puntuación máxima. MFA tiene la menor complejidad, así que sería el primer quick win. El SIEM tiene mayor complejidad, así que requiere más planificación y se programa para un segundo trimestre.
 
-## ¿Cómo estimar el presupuesto del plan director
+## ¿Cómo estimar el presupuesto del plan director?
 
 El presupuesto es donde muchos PDS se caen. Si la estimación no es realista, la dirección no aprueba; si es demasiado optimista, los proyectos se quedan sin fondos a medio camino.
 
@@ -348,7 +348,7 @@ Los datos del sector ayudan a contextualizar el presupuesto:
 - **Programa de concienciación**: entre 5.000 EUR y 30.000 EUR anuales dependiendo del tamaño de la plantilla y la plataforma elegida.
 - **Auditoría ENS**: entre 15.000 EUR y 50.000 EUR por ciclo de auditoría, según el alcance.
 
-### ¿Cómo presentar el presupuesto a la dirección
+### ¿Cómo presentar el presupuesto a la dirección?
 
 La dirección no quiere ver una lista de partidas técnicas. Quiere entender la relación coste-beneficio. Prepara:
 
@@ -387,7 +387,7 @@ Un PDS de 12 meses para una organización mediana (200 a 500 empleados) podría 
 
 Este cronograma es una referencia. Cada organización debe adaptarlo a su contexto, pero el principio es siempre el mismo: fundamentos primero, protección después, madurez continua.
 
-## ¿Cómo conseguir la aprobación de la dirección
+## ¿Cómo conseguir la aprobación de la dirección?
 
 La mayor barrera para un PDS no es técnica: es política. Convencer a la dirección requiere hablar su idioma.
 

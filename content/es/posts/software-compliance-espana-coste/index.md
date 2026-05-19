@@ -149,7 +149,7 @@ Para el mercado español, la herramienta debe estar disponible en castellano, in
 
 La decisión entre SaaS y on-premise no es puramente técnica. Depende del marco regulatorio aplicable, la madurez de tu equipo de TI y tu estrategia de soberanía de datos.
 
-### ¿Cuándo elegir SaaS
+### ¿Cuándo elegir SaaS?
 
 El modelo SaaS es la mejor opción para la mayoría de empresas privadas españolas. Las ventajas son claras:
 
@@ -160,7 +160,7 @@ El modelo SaaS es la mejor opción para la mayoría de empresas privadas españo
 
 El principal requisito: verificar que el proveedor almacena los datos en la UE (obligatorio por RGPD) y, si necesitas ENS Alto, en centros de datos ubicados en territorio español o europeo con las certificaciones adecuadas.
 
-### ¿Cuándo elegir on-premise
+### ¿Cuándo elegir on-premise?
 
 El modelo on-premise o auto-alojado tiene sentido en escenarios concretos:
 

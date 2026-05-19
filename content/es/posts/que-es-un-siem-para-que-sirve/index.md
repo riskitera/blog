@@ -155,14 +155,14 @@ La elección entre un SIEM open source y uno comercial depende de los recursos d
 - **OSSIM (AlienVault Open Source)**: pionero en el SIEM open source, aunque su desarrollo se ha ralentizado tras la adquisición por AT&T.
 - **Apache Metron**: proyecto de la Apache Foundation para análisis de seguridad a escala, orientado a organizaciones con capacidad técnica avanzada.
 
-### ¿Cuándo elegir open source
+### ¿Cuándo elegir open source?
 
 - Presupuesto limitado para licencias de software.
 - Equipo con experiencia en administración de sistemas y capacidad de operar la solución internamente.
 - Necesidad de personalización profunda.
 - Entornos de laboratorio, desarrollo o pruebas de concepto.
 
-### ¿Cuándo elegir comercial
+### ¿Cuándo elegir comercial?
 
 - Necesidad de soporte del fabricante con SLA garantizados.
 - Equipo de seguridad que necesita enfocarse en la operación, no en la administración de la plataforma.

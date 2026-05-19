@@ -184,22 +184,22 @@ Quinto, comparte inteligencia. La ciberseguridad es un esfuerzo colectivo. Parti
 
 ## Lo que más preguntan los equipos de seguridad
 
-### ¿Cuál es la diferencia entre IOCs e IOAs
+### ¿Cuál es la diferencia entre IOCs e IOAs?
 
 Los IOCs (Indicators of Compromise) son artefactos observables que evidencian que un compromiso ya ha ocurrido, como un hash de malware encontrado en un sistema. Los IOAs (Indicators of Attack) describen comportamientos activos que sugieren que un ataque está en curso, como un proceso que intenta escalar privilegios. Los IOCs son reactivos, mientras que los IOAs permiten una postura más proactiva. Ambos son complementarios en una estrategia madura de seguridad.
 
-### ¿Cuántos IOCs debería gestionar mi organización
+### ¿Cuántos IOCs debería gestionar mi organización?
 
 No existe un número óptimo universal. Lo relevante es la calidad, no la cantidad. Una pyme puede gestionar eficazmente unos pocos miles de IOCs procedentes de fuentes seleccionadas, mientras que un SOC de gran empresa puede manejar millones. Lo importante es que cada IOC tenga contexto suficiente y que existan procesos de caducidad y depuración automáticos.
 
-### ¿Puedo obtener IOCs útiles sin presupuesto
+### ¿Puedo obtener IOCs útiles sin presupuesto?
 
 Sí. Fuentes como AlienVault OTX, Abuse.ch, los feeds de MISP comunitarios y las publicaciones de CISA, CCN-CERT e INCIBE proporcionan IOCs de calidad sin coste. Herramientas open source como MISP y OpenCTI permiten gestionarlos profesionalmente. El principal recurso necesario es tiempo de analistas para triaje y validación.
 
-### ¿Cada cuánto tiempo debo actualizar mis feeds de IOCs
+### ¿Cada cuánto tiempo debo actualizar mis feeds de IOCs?
 
 Los feeds deben actualizarse con la mayor frecuencia que permita la infraestructura. Lo ideal es la actualización en tiempo real o cada pocos minutos para IPs y dominios, dado su corto ciclo de vida. Los hashes pueden actualizarse con menor frecuencia (cada hora o cada pocas horas). Las plataformas TIP con conectores STIX/TAXII permiten la sincronización automática continua.
 
-### ¿Cómo mido la eficacia de mi programa de IOCs
+### ¿Cómo mido la eficacia de mi programa de IOCs?
 
 Las métricas clave incluyen: tasa de detección real (porcentaje de IOCs que generaron alertas verdaderas), tasa de falsos positivos, tiempo medio desde la publicación de un IOC hasta su integración en los sistemas de detección, cobertura de fuentes (número y diversidad de feeds consumidos), y porcentaje de IOCs enriquecidos con contexto. Revisar estas métricas mensualmente permite identificar áreas de mejora y justificar inversiones.

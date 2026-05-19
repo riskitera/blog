@@ -449,7 +449,7 @@ Para auditorías y verificaciones regulatorias, documenta:
 5. **Métricas de efectividad** (tiempo de detección, falsos positivos reducidos, cobertura ATT&CK)
 6. **Participación en intercambio** (ISACs, CERTs, acuerdos bilaterales)
 
-## ¿Cómo medir el ROI de un programa de threat intelligence
+## ¿Cómo medir el ROI de un programa de threat intelligence?
 
 Uno de los retos más comunes es justificar la inversión en TI ante la dirección. Estas métricas permiten cuantificar el valor del programa.
 

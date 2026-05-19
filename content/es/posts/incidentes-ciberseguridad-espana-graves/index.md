@@ -35,7 +35,7 @@ Lo que sigue es un análisis detallado de los 10 incidentes más graves que han 
 
 ## 1. Everis: el ataque de Ryuk que paralizó una consultora global (noviembre 2019)
 
-### ¿Qué pasó
+### ¿Qué pasó?
 
 El 4 de noviembre de 2019, Everis (ahora NTT Data) sufrió un ataque de ransomware que obligó a desconectar todos sus sistemas internos. Los empleados recibieron instrucciones por megafonía de apagar los equipos inmediatamente. El ransomware identificado fue una variante de **Ryuk**, desplegada tras un acceso inicial que los analistas vincularon a la cadena Emotet/TrickBot.
 
@@ -61,7 +61,7 @@ El caso Everis demostró que las grandes consultoras tecnológicas no son inmune
 
 ## 2. Prosegur: Ryuk golpea al sector de la seguridad física (noviembre 2019)
 
-### ¿Qué pasó
+### ¿Qué pasó?
 
 Apenas tres semanas después del ataque a Everis, el 27 de noviembre de 2019, Prosegur confirmó un incidente de ransomware que afecto a sus comunicaciones y sistemas internos. La ironia no pasó desapercibida: una de las mayores empresas de seguridad del mundo era víctima de un ciberataque.
 
@@ -86,7 +86,7 @@ Prosegur reacciono con transparencia, algo poco habitual en 2019. La empresa pú
 
 ## 3. Adeslas/SegurCaixa: el ataque que colapso la sanidad privada (septiembre 2020)
 
-### ¿Qué pasó
+### ¿Qué pasó?
 
 En septiembre de 2020, SegurCaixa Adeslas, la mayor aseguradora de salud privada de España, sufrió un ataque de ransomware que afecto a sus sistemas durante semanas. Los asegurados no podian acceder a sus citas, autorizaciones médicas ni pólizas online.
 
@@ -112,7 +112,7 @@ El caso Adeslas mostró cómo un ataque a una aseguradora impacta en cadena a to
 
 ## 4. SEPE: ransomware contra el servicio público de empleo (marzo 2021)
 
-### ¿Qué pasó
+### ¿Qué pasó?
 
 El 9 de marzo de 2021, el [Servicio Público de Empleo Estatal (SEPE)](https://www.sepe.es/) sufrió un ataque de ransomware que paralizó completamente sus sistemas. La amenaza fue especialmente grave porque ocurrió en plena crisis de desempleo por la pandemia, cuando millones de españoles dependian de prestaciones y ERTEs.
 
@@ -139,7 +139,7 @@ El SEPE se convirtió en el caso emblematico de la deuda tecnológica del sector
 
 ## 5. Ministerio de Trabajo y Economía Social: segundo golpe en tres meses (junio 2021)
 
-### ¿Qué pasó
+### ¿Qué pasó?
 
 El 9 de junio de 2021, apenas tres meses después del ataque al SEPE, el Ministerio de Trabajo y Economía Social confirmó un nuevo ataque de ransomware. Aunque el SEPE es un organismo autónomo adscrito al Ministerio, las infraestructuras afectadas fueron diferentes.
 
@@ -163,7 +163,7 @@ Dos ataques en tres meses al mismo ámbito ministerial evidenciaron un problema 
 
 ## 6. Iberdrola: filtración masiva de datos de clientes (marzo 2022)
 
-### ¿Qué pasó
+### ¿Qué pasó?
 
 En marzo de 2022, [Iberdrola](https://www.iberdrola.com/) confirmó una brecha de seguridad que expuso datos personales de aproximadamente 1,3 millones de clientes. Los atacantes accedieron a un sistema que contenía nombres, DNI y datos de contacto (no datos financieros).
 
@@ -187,7 +187,7 @@ El caso Iberdrola demostró que incluso cuando no se comprometen datos financier
 
 ## 7. Telefónica: filtración de datos de empleados y clientes (2022)
 
-### ¿Qué pasó
+### ¿Qué pasó?
 
 En 2022, [Telefónica](https://www.telefonica.com/) sufrio una brecha de seguridad en la que atacantes accedieron a datos internos que posteriormente aparecieron en foros de venta de datos. La compañía confirmó el incidente y activó sus protocolos de respuesta.
 
@@ -210,7 +210,7 @@ Cuando una telco sufre una brecha, el impacto potencial va más allá de los dat
 
 ## 8. Consejo General del Poder Judicial (CGPJ): ataque a la Justicia (noviembre 2022)
 
-### ¿Qué pasó
+### ¿Qué pasó?
 
 En noviembre de 2022, el [Consejo General del Poder Judicial (CGPJ)](https://www.poderjudicial.es/) sufrio un ciberataque que afecto al Punto Neutro Judicial (PNJ), el sistema que conecta a los juzgados con otras administraciones para intercambiar información (datos fiscales, Seguridad Social, registros).
 
@@ -233,7 +233,7 @@ El ataque al CGPJ puso de manifiesto la criticidad de los sistemas de intercambi
 
 ## 9. Ayuntamiento de Sevilla: LockBit paraliza una capital de provincia (septiembre 2023)
 
-### ¿Qué pasó
+### ¿Qué pasó?
 
 El 5 de septiembre de 2023, el [Ayuntamiento de Sevilla](https://www.sevilla.org/) sufrió un ataque de ransomware del grupo **LockBit** que paralizó todos los servicios digitales municipales. La cuarta ciudad más grande de España se quedo sin sistemas informáticos.
 
@@ -260,7 +260,7 @@ Sevilla se convirtió en el caso de referencia para los ayuntamientos españoles
 
 ## 10. Hospital Clinic de Barcelona: RansomHouse ataca la sanidad pública (marzo 2023)
 
-### ¿Qué pasó
+### ¿Qué pasó?
 
 El 5 de marzo de 2023, el [Hospital Clinic de Barcelona](https://www.clinicbarcelona.org/) sufrió un ataque de ransomware del grupo **RansomHouse** que obligó a cancelar miles de consultas, intervenciones quirúrgicas y sesiones de radioterapia. Fue el primer gran ataque a un hospital público español con impacto directo en la asistencia sanitaria.
 
@@ -317,7 +317,7 @@ Según los datos acumulados de INCIBE y CCN-CERT entre 2019 y 2024:
 
 Los informes anuales de INCIBE muestran que en 2023, los sectores más afectados por incidentes críticos fueron administraciones públicas (32%), sanidad (18%), energía y transporte (15%) y telecomunicaciones (12%).
 
-## ¿Cuánto costaron estos incidentes a las organizaciones
+## ¿Cuánto costaron estos incidentes a las organizaciones?
 
 Los costes de un ciberataque grave van mucho más allá del rescate (que la mayoría de estas organizaciones no pago):
 
@@ -337,7 +337,7 @@ A estos costes directos hay que sumar:
 - **Dano reputacional:** Dificil de cuantificar, pero medible en pérdida de confianza ciudadana y de clientes.
 - **Coste de oportunidad:** Proyectos de transformación digital aplazados para priorizar la remediación.
 
-## ¿Qué medidas habrían prevenido estos incidentes
+## ¿Qué medidas habrían prevenido estos incidentes?
 
 Ninguna medida individual habría evitado todos los ataques, pero un conjunto de controles básicos habría reducido drásticamente el impacto:
 
@@ -367,7 +367,7 @@ La detección temprana es la diferencia entre un incidente contenido y una catá
 
 {{< cta type="tofu" text="Riskitera evalua tu postura de seguridad y te muestra los gaps de cumplimiento en minutos. Identifica si tu organización tiene las mismas vulnerabilidades que permitieron estos ataques." label="Evaluar postura" >}}
 
-## ¿Cómo ha evolucionado la ciberamenaza en España
+## ¿Cómo ha evolucionado la ciberamenaza en España?
 
 La evolución entre 2019 y 2025 muestra tendencias claras:
 
@@ -399,7 +399,7 @@ Los informes anuales de INCIBE confirman la tendencia:
 
 El crecimiento es sostenido y no muestra signos de desaceleración. La profesionalización del cibercrimen, la disponibilidad de herramientas de Ransomware-as-a-Service (RaaS) y la expansión de la superficie de ataque (cloud, IoT, teletrabajo) alimentan la tendencia.
 
-## ¿Qué hacer si tu organización es el próximo objetivo
+## ¿Qué hacer si tu organización es el próximo objetivo?
 
 Los 10 casos analizados demuestran que la pregunta no es "si" te atacaran, sino "cuando" y "cómo de preparado estás". Estas son las acciones prioritarias:
 

@@ -25,7 +25,7 @@ Guía práctica de detection engineering: cómo diseñar, implementar y mantener
 - Reducir falsos positivos no es opcional: un SOC saturado de ruido pierde la capacidad de detectar amenazas reales.
 {{< /key-takeaways >}}
 
-## ¿Qué es detection engineering
+## ¿Qué es detection engineering?
 
 Detection engineering es la disciplina que aplica principios de ingeniería de software al proceso de crear, mantener y mejorar reglas de detección en un centro de operaciones de seguridad (SOC). No se trata solo de escribir queries en un SIEM. Se trata de tratar las detecciones como código: versionado, testeado, desplegado de forma controlada y medido en producción.
 
@@ -381,7 +381,7 @@ Atomic Red Team es excelente para validaciones rápidas, pero tiene limitaciones
 
 Para cadenas de ataque completas, complementa con herramientas como [MITRE Caldera](https://caldera.mitre.org/), [Infection Monkey](https://www.akamai.com/infectionmonkey) o ejercicios manuales de purple team.
 
-## ¿Cómo reducir falsos positivos
+## ¿Cómo reducir falsos positivos?
 
 Los falsos positivos son el enemigo número uno de cualquier SOC. Una regla que genera 50 alertas diarias de las cuales 49 son falsas no solo desperdicia tiempo de los analistas, sino que entrena al equipo a ignorar alertas, lo cual es exactamente lo que un atacante quiere.
 
@@ -511,7 +511,7 @@ El Detection Maturity Model (DMM) es un framework para evaluar la madurez del pr
 
 La mayoría de organizaciones están entre el nivel 0 y el nivel 2. Llegar al nivel 3 requiere inversión en tooling y procesos, pero el retorno es enorme en términos de eficacia del SOC.
 
-## ¿Cómo medir la calidad de las detecciones
+## ¿Cómo medir la calidad de las detecciones?
 
 No se puede mejorar lo que no se mide. Estas son las métricas clave para un programa de detection engineering:
 

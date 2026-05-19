@@ -137,7 +137,7 @@ El coste del compliance depende del tamaño de la organización, los marcos apli
 
 **El coste del incumplimiento siempre supera al del compliance.** Una sanción de la AEPD por brecha de datos (media de 100.000 EUR para PYMES) más el coste de gestión del incidente (50.000 a 500.000 EUR) supera el coste de un programa de compliance básico.
 
-## ¿Qué pasa si no cumples: sanciones y consecuencias
+## ¿Qué pasa si no cumples: sanciones y consecuencias?
 
 El régimen sancionador europeo en ciberseguridad se ha endurecido drasticamente entre 2024 y 2026:
 

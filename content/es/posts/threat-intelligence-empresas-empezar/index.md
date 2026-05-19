@@ -304,7 +304,7 @@ La inteligencia alimenta las hipótesis de threat hunting. El proceso:
 
 {{< cta type="tofu" text="Riskitera integra threat intelligence con detección y respuesta automatizada. IA soberana que operacionaliza tu inteligencia sin que los datos salgan de tu infraestructura." label="Ver demo CTI" >}}
 
-## ¿Cómo construir tu programa de CTI desde cero? Plan de 90 días
+## ¿Cómo construir tu programa de CTI desde cero? Plan de 90 días?
 
 Si empiezas sin nada, este es un roadmap realista para 90 días con un equipo de 1-2 personas dedicando parcialmente su tiempo.
 

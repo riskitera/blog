@@ -411,7 +411,7 @@ if __name__ == "__main__":
 
 Este patrón se replica para cualquier feed con API REST: descarga, parsea, normaliza, envía al SIEM.
 
-## ¿Cómo evitar sobrecarga de IOCs
+## ¿Cómo evitar sobrecarga de IOCs?
 
 El problema más común al integrar feeds CTI no es la falta de datos, sino el exceso. Un SOC mediano puede acabar con millones de IOCs activos, la mayoría irrelevantes o caducados, generando miles de alertas diarias que nadie investiga.
 

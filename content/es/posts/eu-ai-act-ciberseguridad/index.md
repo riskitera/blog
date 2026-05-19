@@ -39,7 +39,7 @@ El EU AI Act no surge en el vacío. Forma parte de una estrategia europea más a
 
 Esta convergencia regulatoria significa que los equipos de ciberseguridad no pueden analizar el AI Act de forma aislada. Necesitan entender cómo interactúa con el resto del ecosistema normativo, especialmente cuando operan en sectores regulados como banca, energía, salud o telecomunicaciones.
 
-## ¿Cómo clasifica el EU AI Act los sistemas de IA por riesgo
+## ¿Cómo clasifica el EU AI Act los sistemas de IA por riesgo?
 
 El núcleo del EU AI Act es su sistema de clasificación basado en riesgo. No todos los sistemas de IA reciben el mismo tratamiento regulatorio. El reglamento establece cuatro categorías con obligaciones progresivas.
 
@@ -141,7 +141,7 @@ El artículo 15 es el que más directamente concierne a los profesionales de cib
 - **Robustez**: el sistema debe ser resiliente frente a errores, fallos, inconsistencias y situaciones inesperadas. Debe incluir medidas de redundancia y mecanismos fail-safe.
 - **Ciberseguridad**: el sistema debe protegerse frente a ataques que intenten manipular su comportamiento. Esto incluye protección contra data poisoning, adversarial examples, model extraction y otros ataques específicos a sistemas de IA.
 
-## ¿Cómo afecta el AI Act a los equipos de ciberseguridad en la práctica
+## ¿Cómo afecta el AI Act a los equipos de ciberseguridad en la práctica?
 
 Vamos a lo concreto. Estos son los escenarios prácticos donde el AI Act impacta directamente en las operaciones de seguridad.
 

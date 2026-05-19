@@ -191,18 +191,18 @@ En el ámbito europeo, el CCN-CERT ha publicado guías CCN-STIC que referencian 
 
 No. MITRE ATT&CK es una base de conocimiento abierta y gratuita, no un estándar regulatorio. Sin embargo, su adopción esta ampliamente recomendada por organismos como ENISA, el CCN-CERT, CISA y NIST. Muchas organizaciones lo integran como parte de sus programas de seguridad, y las evaluaciones de productos basadas en ATT&CK se han convertido en un criterio de selección habitual.
 
-### ¿Qué diferencia hay entre MITRE ATT&CK y el Cyber Kill Chain
+### ¿Qué diferencia hay entre MITRE ATT&CK y el Cyber Kill Chain?
 
 El Cyber Kill Chain de Lockheed Martin describe las fases de un ataque de forma lineal y a alto nivel (7 fases). MITRE ATT&CK es significativamente más granular, con 14 tácticas y cientos de técnicas y subtécnicas. Además, ATT&CK no asume un flujo lineal: los atacantes pueden saltar entre tácticas y repetir fases. Ambos marcos son complementarios, pero ATT&CK ofrece mucha mayor utilidad operativa.
 
-### ¿Necesito un equipo grande para implementar ATT&CK
+### ¿Necesito un equipo grande para implementar ATT&CK?
 
 No necesariamente. Una organización pequeña puede comenzar seleccionando las 20-30 técnicas más relevantes para su perfil de amenaza y evaluar su cobertura de detección sobre ellas. A medida que el equipo crece y madura, se amplía la cobertura. La clave es empezar con un alcance realista y avanzar de forma incremental.
 
-### ¿Con qué frecuencia se actualiza MITRE ATT&CK
+### ¿Con qué frecuencia se actualiza MITRE ATT&CK?
 
 MITRE publica actualizaciones mayores de ATT&CK aproximadamente dos veces al año, incorporando nuevas técnicas, subtécnicas, grupos de amenaza y software documentado por la comunidad. Entre actualizaciones mayores, se realizan correcciones y adiciones menores. Es recomendable revisar los changelogs de cada versión para identificar técnicas nuevas que puedan ser relevantes.
 
-### ¿Cómo puedo empezar a implementar ATT&CK mañana
+### ¿Cómo puedo empezar a implementar ATT&CK mañana?
 
 El primer paso práctico es descargar ATT&CK Navigator y crear una capa que represente las detecciones actuales de la organización. Esto proporciona una radiografía inmediata de la cobertura y los puntos ciegos. A partir de ahí, se priorizan las técnicas a cubrir según el perfil de amenaza y se escriben o adquieren las detecciones correspondientes. Es un proceso iterativo que mejora con cada ciclo.
