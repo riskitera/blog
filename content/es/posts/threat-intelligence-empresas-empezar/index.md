@@ -1,5 +1,6 @@
 ---
 title: "Threat Intelligence para empresas españolas: cómo empezar sin presupuesto"
+image: "cover.png"
 description: "Guía práctica para que empresas españolas comiencen con threat intelligence sin presupuesto: fuentes gratuitas, herramientas open source, integración con el SOC y maduración del programa."
 slug: "threat-intelligence-empresas-empezar"
 date: 2026-07-04

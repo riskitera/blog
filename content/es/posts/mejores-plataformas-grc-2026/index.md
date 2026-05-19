@@ -1,5 +1,6 @@
 ---
 title: "Mejores plataformas GRC en 2026: comparativa real para CISOs"
+image: "cover.png"
 description: "Comparativa objetiva de las mejores plataformas GRC en 2026: funcionalidades, precios, integraciones, soberanía de datos y para qué tipo de empresa encaja cada una."
 slug: "mejores-plataformas-grc-2026"
 date: 2026-07-07

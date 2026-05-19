@@ -1,5 +1,6 @@
 ---
 title: "Reglas Sigma: guía práctica para escribir detecciones portables"
+image: "cover.png"
 description: "Guía completa de reglas Sigma para SOC y SIEM: sintaxis, ejemplos prácticos, conversión a SIEM, integración con MITRE ATT&CK y mejores prácticas para escribir detecciones portables."
 slug: "reglas-sigma-guia-practica"
 date: 2026-06-04
@@ -57,6 +58,7 @@ Cada regla Sigma es un fichero YAML con una estructura definida. Vamos a desglos
 
 ```yaml
 title: Detección de Brute Force por RDP
+image: "cover.png"
 id: a]1b2c3d4-e5f6-7890-abcd-ef1234567890
 status: test
 description: >
@@ -233,6 +235,7 @@ Funciones disponibles: `count()`, `min()`, `max()`, `avg()`, `sum()`, `near`.
 
 ```yaml
 title: SSH Brute Force Attempt
+image: "cover.png"
 id: 5c2a8e1d-9f3b-4a7c-b6d2-e8f1234abcde
 status: stable
 description: >
@@ -268,6 +271,7 @@ level: medium
 
 ```yaml
 title: Remote WMI Command Execution
+image: "cover.png"
 id: 7a9b3c4d-2e1f-5678-90ab-cdef12345678
 status: stable
 description: >
@@ -317,6 +321,7 @@ level: high
 
 ```yaml
 title: Scheduled Task Creation for Persistence
+image: "cover.png"
 id: 3b5c7d9e-1a2f-4e6g-8h0i-jklm12345678
 status: stable
 description: >
@@ -362,6 +367,7 @@ level: high
 
 ```yaml
 title: Possible DNS Tunneling vía Long Subdomain Queries
+image: "cover.png"
 id: 9e8d7c6b-5a4f-3210-fedc-ba9876543210
 status: test
 description: >
@@ -454,6 +460,7 @@ Regla Sigma de entrada:
 
 ```yaml
 title: Windows Logon Brute Force
+image: "cover.png"
 logsource:
   product: windows
   service: security
@@ -743,6 +750,7 @@ Antes de escribir la regla, entiende cómo se ve la actividad normal. Ejecuta qu
 
 ```yaml
 title: Descarga de herramienta de hacking desde GitHub
+image: "cover.png"
 id: nuevo-uuid-generado
 status: test
 description: >

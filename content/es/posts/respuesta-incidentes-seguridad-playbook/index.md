@@ -1,5 +1,6 @@
 ---
 title: "Respuesta a incidentes de seguridad: playbook completo para equipos SOC"
+image: "cover.png"
 description: "Playbook completo de respuesta a incidentes para SOC: fases NIST, roles, comunicación, contención, erradicación, recuperación y lecciones aprendidas con ejemplos prácticos."
 slug: "respuesta-incidentes-seguridad-playbook"
 date: 2026-07-02

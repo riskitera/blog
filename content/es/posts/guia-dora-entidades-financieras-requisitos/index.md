@@ -1,5 +1,6 @@
 ---
 title: "Guía completa DORA para entidades financieras: 12 requisitos técnicos"
+image: "cover.png"
 description: "Desglose técnico de los 12 requisitos principales de DORA para entidades financieras: gestión de riesgos TIC, reporting, pruebas de resiliencia, terceros y compartición de información."
 slug: "guia-dora-entidades-financieras-requisitos"
 date: 2026-07-16

@@ -1,5 +1,6 @@
 ---
 title: "Diferencias entre ENS e ISO 27001: cuál necesita tu empresa"
+image: "cover.png"
 description: "Análisis completo de las diferencias entre el Esquema Nacional de Seguridad y la norma ISO 27001: alcance, obligatoriedad, controles, certificación y cuándo implementar uno, otro o ambos."
 slug: "diferencias-ens-iso-27001"
 date: 2026-05-07

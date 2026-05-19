@@ -1,5 +1,6 @@
 ---
 title: "Threat Intelligence: guía completa para empresas 2026"
+image: "cover.png"
 description: "Guía definitiva de threat intelligence para empresas en 2026: tipos, ciclo de inteligencia, fuentes, herramientas, integración con SOC, maduración del programa y tendencias."
 slug: "guia-threat-intelligence-empresas-2026"
 date: 2026-07-21

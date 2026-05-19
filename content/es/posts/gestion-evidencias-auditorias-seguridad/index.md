@@ -1,5 +1,6 @@
 ---
 title: "Gestión de evidencias en auditorías de seguridad: workflow completo"
+image: "cover.png"
 description: "Workflow completo para la gestión de evidencias en auditorías de seguridad: recopilación, clasificación, almacenamiento, trazabilidad y presentación ante auditores externos."
 slug: "gestion-evidencias-auditorias-seguridad"
 date: 2026-06-09

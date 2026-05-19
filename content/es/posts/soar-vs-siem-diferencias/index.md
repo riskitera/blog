@@ -1,5 +1,6 @@
 ---
 title: "SOAR vs SIEM: diferencias, integración y cuándo necesitas ambos"
+image: "cover.png"
 description: "Comparativa detallada entre SOAR y SIEM: diferencias funcionales, cuándo necesitas cada uno, cómo integrarlos y mejores prácticas para un SOC eficiente."
 slug: "soar-vs-siem-diferencias"
 date: 2026-06-18

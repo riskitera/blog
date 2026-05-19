@@ -1,5 +1,6 @@
 ---
 title: "RGPD en 2026: checklist actualizado para empresas españolas"
+image: "cover.png"
 description: "Checklist actualizado de cumplimiento RGPD para empresas españolas en 2026: obligaciones del responsable, derechos de los interesados, DPO, evaluaciones de impacto y sanciones recientes."
 slug: "rgpd-2026-checklist-empresas"
 date: 2026-05-30

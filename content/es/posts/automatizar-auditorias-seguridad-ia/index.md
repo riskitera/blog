@@ -1,5 +1,6 @@
 ---
 title: "Automatización de auditorías con IA: del papel al triage en minutos"
+image: "cover.png"
 description: "Cómo automatizar auditorías de seguridad informática con inteligencia artificial: recopilación de evidencias, análisis de gaps, generación de informes y reducción de costes operativos."
 slug: "automatizar-auditorias-seguridad-ia"
 date: 2026-05-14

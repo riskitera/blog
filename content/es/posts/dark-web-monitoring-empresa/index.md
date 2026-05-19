@@ -1,5 +1,6 @@
 ---
 title: "Dark Web monitoring: cómo vigilar tu marca sin gastar una fortuna"
+image: "cover.png"
 description: "Guía práctica de monitorización de la dark web para empresas: qué buscar, herramientas accesibles, fuentes OSINT, alertas automatizadas y cuándo contratar un servicio profesional."
 slug: "dark-web-monitoring-empresa"
 date: 2026-07-25

@@ -1,5 +1,6 @@
 ---
 title: "Guía completa de compliance en ciberseguridad 2026"
+image: "cover.png"
 description: "Guía definitiva de compliance en ciberseguridad para empresas españolas y europeas: ENS, NIS2, DORA, ISO 27001, RGPD, EU AI Act. Requisitos, plazos, herramientas y estrategias de cumplimiento."
 slug: "guia-compliance-ciberseguridad-2026"
 date: 2026-05-26

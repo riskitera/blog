@@ -1,5 +1,6 @@
 ---
 title: "Ciberseguridad para la administración pública en Extremadura: ENS, NIS2 y cumplimiento obligatorio"
+image: "cover.png"
 description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Extremadura: requisitos ENS, NIS2, plazos, herramientas del CCN y cómo cumplir la normativa de seguridad obligatoria."
 slug: "ciberseguridad-administracion-publica-extremadura"
 date: 2026-08-16

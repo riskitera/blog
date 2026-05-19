@@ -1,5 +1,6 @@
 ---
 title: "ROI de una plataforma GRC: cómo calcularlo y justificar la inversión"
+image: "cover.png"
 description: "Cómo calcular el retorno de inversión de una plataforma GRC: costes evitados, ahorro operativo, reducción de riesgo, time-to-compliance y presentación al comité de dirección."
 slug: "roi-plataforma-grc-calcular"
 date: 2026-07-11

@@ -1,5 +1,6 @@
 ---
 title: "Cómo elegir una plataforma GRC: criterios reales para empresas reguladas"
+image: "cover.png"
 description: "Guía de compra para CISOs y compliance managers: criterios para elegir una plataforma GRC, funcionalidades clave, preguntas al proveedor, costes y errores al evaluar herramientas de compliance."
 slug: "como-elegir-plataforma-grc"
 date: 2026-05-28

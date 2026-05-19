@@ -1,5 +1,6 @@
 ---
 title: "Cómo montar y operar un SOC en 2026: guía definitiva"
+image: "cover.png"
 description: "Guía definitiva para montar y operar un SOC en 2026: modelos organizativos, equipo, herramientas, procesos, métricas, automatización con IA y costes reales."
 slug: "guia-montar-operar-soc-2026"
 date: 2026-06-30

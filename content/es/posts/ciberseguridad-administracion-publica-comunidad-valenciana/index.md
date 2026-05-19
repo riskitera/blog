@@ -1,5 +1,6 @@
 ---
 title: "Ciberseguridad para la administración pública en Comunidad Valenciana: ENS, NIS2 y cumplimiento obligatorio"
+image: "cover.png"
 description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Comunidad Valenciana: requisitos ENS, NIS2, plazos, herramientas del CCN y cómo cumplir la normativa de seguridad obligatoria."
 slug: "ciberseguridad-administracion-publica-comunidad-valenciana"
 date: 2026-08-14

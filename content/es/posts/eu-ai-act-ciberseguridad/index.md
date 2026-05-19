@@ -1,5 +1,6 @@
 ---
 title: "EU AI Act: implicaciones reales para equipos de ciberseguridad"
+image: "cover.png"
 description: "Análisis del EU AI Act desde la perspectiva de ciberseguridad: clasificación de riesgo de sistemas IA, requisitos de seguridad, impacto en SOC y compliance, y plazos de aplicación."
 slug: "eu-ai-act-ciberseguridad"
 date: 2026-07-14

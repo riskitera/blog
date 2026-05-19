@@ -1,5 +1,6 @@
 ---
 title: "Ciberseguridad para la administración pública en Castilla y León: ENS, NIS2 y cumplimiento obligatorio"
+image: "cover.png"
 description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Castilla y León: requisitos ENS, NIS2, plazos, herramientas del CCN y cómo cumplir la normativa de seguridad obligatoria."
 slug: "ciberseguridad-administracion-publica-castilla-y-leon"
 date: 2026-08-10

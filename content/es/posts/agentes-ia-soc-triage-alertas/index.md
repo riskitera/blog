@@ -1,5 +1,6 @@
 ---
 title: "Agentes de IA para SOC: cómo automatizar el triage de alertas sin perder contexto"
+image: "cover.png"
 description: "Guía práctica sobre agentes de inteligencia artificial para centros de operaciones de seguridad (SOC): automatización del triage, reducción de falsos positivos y escalado inteligente."
 slug: "agentes-ia-soc-triage-alertas"
 date: 2026-05-16

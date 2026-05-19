@@ -1,5 +1,6 @@
 ---
 title: "Ciberseguridad para el Ayuntamiento de Vitoria-Gasteiz: cumplir ENS y NIS2"
+image: "cover.png"
 description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Vitoria-Gasteiz y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos para la certificación."
 slug: "ciberseguridad-ayuntamiento-vitoria-gasteiz"
 date: 2026-09-18

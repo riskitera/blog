@@ -1,5 +1,6 @@
 ---
 title: "Seguridad en el sector salud: proteger datos clínicos bajo ENS y RGPD"
+image: "cover.png"
 description: "Guía de ciberseguridad para hospitales y centros sanitarios: protección de datos clínicos, cumplimiento del ENS y RGPD, amenazas específicas del sector salud y buenas prácticas."
 slug: "ciberseguridad-sector-salud-ens-rgpd"
 date: 2026-05-21

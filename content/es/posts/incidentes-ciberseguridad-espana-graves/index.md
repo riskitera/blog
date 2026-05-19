@@ -1,5 +1,6 @@
 ---
 title: "Los 10 incidentes de ciberseguridad más graves en España"
+image: "cover.png"
 description: "Los 10 incidentes de ciberseguridad más importantes en España: ataques a hospitales, administraciones públicas, empresas críticas. Qué pasó, cómo se resolvió y qué lecciones dejó cada caso."
 slug: "incidentes-ciberseguridad-espana-graves"
 date: 2026-06-25

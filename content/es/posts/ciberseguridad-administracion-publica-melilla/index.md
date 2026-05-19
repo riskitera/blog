@@ -1,5 +1,6 @@
 ---
 title: "Ciberseguridad para la administración pública en Melilla: ENS, NIS2 y cumplimiento obligatorio"
+image: "cover.png"
 description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Melilla: requisitos ENS, NIS2, plazos, herramientas del CCN y cómo cumplir la normativa de seguridad obligatoria."
 slug: "ciberseguridad-administracion-publica-melilla"
 date: 2026-09-01

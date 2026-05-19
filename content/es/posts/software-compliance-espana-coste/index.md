@@ -1,5 +1,6 @@
 ---
 title: "Software de compliance en España: que necesitas y cuanto cuesta"
+image: "cover.png"
 description: "Guía de compra de software de compliance para empresas españolas: tipos de herramientas, funcionalidades clave, costes reales, modelos de licencia y criterios de selección."
 slug: "software-compliance-espana-coste"
 date: 2026-07-09

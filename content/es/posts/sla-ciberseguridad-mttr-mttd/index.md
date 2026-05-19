@@ -1,5 +1,6 @@
 ---
 title: "SLAs en ciberseguridad: cómo definir MTTR, MTTD y no morir en la auditoría"
+image: "cover.png"
 description: "Guía práctica para definir SLAs de ciberseguridad: MTTR, MTTD, MTTC, benchmarks del sector, cómo medirlos y cómo presentarlos en auditorías de seguridad."
 slug: "sla-ciberseguridad-mttr-mttd"
 date: 2026-06-20

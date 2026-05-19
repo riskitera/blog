@@ -1,5 +1,6 @@
 ---
 title: "Detection Engineering: cómo construir reglas de detección que realmente funcionen"
+image: "cover.png"
 description: "Guía práctica de detection engineering: cómo disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciones."
 slug: "detection-engineering-reglas-deteccion"
 date: 2026-06-02
@@ -601,6 +602,7 @@ Fuentes necesarias:
 
 ```yaml
 title: PsExec Service Installation
+image: "cover.png"
 id: c3f0a541-7c25-4a64-9bc8-7e921f123456
 status: production
 description: >

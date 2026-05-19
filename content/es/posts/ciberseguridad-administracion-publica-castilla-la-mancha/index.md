@@ -1,5 +1,6 @@
 ---
 title: "Ciberseguridad para la administración pública en Castilla-La Mancha: ENS, NIS2 y cumplimiento obligatorio"
+image: "cover.png"
 description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Castilla-La Mancha: requisitos ENS, NIS2, plazos, herramientas del CCN y cómo cumplir la normativa de seguridad obligatoria."
 slug: "ciberseguridad-administracion-publica-castilla-la-mancha"
 date: 2026-08-08

@@ -1,5 +1,6 @@
 ---
 title: "MITRE ATT&CK en el SOC: mapping de técnicas a detecciones reales"
+image: "cover.png"
 description: "Cómo mapear técnicas MITRE ATT&CK a detecciones operativas en el SOC: cobertura de la matriz, priorizar técnicas, crear dashboards y medir gaps de detección en tiempo real."
 slug: "mitre-attack-soc-mapping-detecciones"
 date: 2026-06-06
@@ -146,6 +147,7 @@ Independientemente de tu sector, estas cuatro técnicas aparecen en la gran mayo
 
 ```yaml
 title: Suspicious PowerShell Download Cradle
+image: "cover.png"
 id: 3b6ab547-1234-5678-9abc-def012345678
 status: experimental
 description: >
@@ -182,6 +184,7 @@ Los campos clave para el mapping ATT&CK son los **tags**. El prefijo `attack.` s
 
 ```yaml
 title: Login desde geolocalización imposible
+image: "cover.png"
 id: a1b2c3d4-5678-90ab-cdef-123456789abc
 status: experimental
 description: >
@@ -209,6 +212,7 @@ Esta regla es conceptual (la lógica real de impossible travel requiere cálculo
 
 ```yaml
 title: Password Spraying contra Active Directory
+image: "cover.png"
 id: b2c3d4e5-6789-01ab-cdef-234567890abc
 status: experimental
 description: >

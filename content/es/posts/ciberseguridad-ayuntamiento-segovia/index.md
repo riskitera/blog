@@ -1,5 +1,6 @@
 ---
 title: "Ciberseguridad para el Ayuntamiento de Segovia: cumplir ENS y NIS2"
+image: "cover.png"
 description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Segovia y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos para la certificación."
 slug: "ciberseguridad-ayuntamiento-segovia"
 date: 2026-10-18

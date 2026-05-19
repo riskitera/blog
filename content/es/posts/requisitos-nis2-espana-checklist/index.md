@@ -1,5 +1,6 @@
 ---
 title: "Requisitos NIS2 para empresas españolas: checklist completo 2026"
+image: "cover.png"
 description: "Checklist completo de los requisitos de la Directiva NIS2 aplicables a empresas españolas: medidas de gestión de riesgos, notificación de incidentes, gobernanza y plazos de cumplimiento."
 slug: "requisitos-nis2-espana-checklist"
 date: 2026-05-09
