@@ -35,7 +35,7 @@ La definición de [MITRE ATT&CK](https://attack.mitre.org/) lo resume bien: thre
 
 En 2026, la TI ha dejado de ser un lujo reservado a grandes corporaciones. Tres factores han democratizado su adopción:
 
-1. **Regulación obligatoria.** La Directiva [NIS2](https://www.enisa.europa.eu/) exige a entidades esenciales e importantes la implementación de medidas de gestión de riesgos que incluyan "políticas sobre análisis de riesgos y seguridad de los sistemas de información". [DORA](https://www.eiopa.europa.eu/browse/regulation-and-policy/digital-operational-resilience-act-dora_en) va más lejos para el sector financiero, requiriendo explícitamente capacidades de threat intelligence compartida.
+1. **Regulación obligatoria.** La Directiva [NIS2](https://www.enisa.europa.eu/) exige a entidades esenciales e importantes la implementación de medidas de gestión de riesgos que incluyan "políticas sobre análisis de riesgos y seguridad de los sistemas de información". [DORA](https://www.digital-operational-resilience-act.com/) va más lejos para el sector financiero, requiriendo explícitamente capacidades de threat intelligence compartida.
 
 2. **Sofisticación de las amenazas.** Los actores de amenaza utilizan IA generativa para crear campañas de phishing más convincentes, malware polimórfico que evade detecciones y ataques a la cadena de suministro cada vez más complejos. Defenderse solo con reglas estáticas ya no es viable.
 
@@ -429,7 +429,7 @@ La [Directiva NIS2](https://www.enisa.europa.eu/) aplica a entidades esenciales 
 
 ### DORA (Digital Operational Resilience Act)
 
-[DORA](https://www.eiopa.europa.eu/browse/regulation-and-policy/digital-operational-resilience-act-dora_en) aplica al sector financiero (bancos, aseguradoras, gestoras de fondos, proveedores de servicios de pago, fintechs).
+[DORA](https://www.digital-operational-resilience-act.com/) aplica al sector financiero (bancos, aseguradoras, gestoras de fondos, proveedores de servicios de pago, fintechs).
 
 **Requisitos relevantes para TI:**
 

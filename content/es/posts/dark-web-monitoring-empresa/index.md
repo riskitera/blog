@@ -203,7 +203,7 @@ Uno de los temas que más dudas genera es la legalidad de acceder a la dark web 
 
 **Acceso a la dark web:** en España no existe ninguna ley que prohiba acceder a la red Tor ni navegar por la dark web. Lo que es ilegal son las actividades que puedas realizar allí (comprar datos robados, contratar servicios de hacking, adquirir malware).
 
-**[RGPD](https://www.aepd.es/reglamento/reglamento.html) y protección de datos:** si durante el monitoring encuentras datos personales de terceros (empleados de otras empresas, clientes), debes tratarlos conforme al RGPD. Esto incluye minimización de datos, propósito legítimo documentado y eliminación cuando ya no sean necesarios.
+**[RGPD](https://www.aepd.es/) y protección de datos:** si durante el monitoring encuentras datos personales de terceros (empleados de otras empresas, clientes), debes tratarlos conforme al RGPD. Esto incluye minimización de datos, propósito legítimo documentado y eliminación cuando ya no sean necesarios.
 
 **[LSSI-CE](https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758):** la Ley de Servicios de la Sociedad de la Información establece obligaciones sobre comunicaciones electrónicas. Si detectas phishing que suplanta tu marca, tienes legitimidad para actuar (takedown requests).
 
