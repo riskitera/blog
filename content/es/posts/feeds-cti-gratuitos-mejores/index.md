@@ -129,9 +129,9 @@ La buena noticia: no necesitas gastar miles de euros en feeds comerciales para e
 
 **Punto fuerte**: la capacidad de correlación. MISP conecta IOCs entre sí (esta IP sirve este malware, que explota esta vulnerabilidad, en esta campaña). Los "feeds por defecto" de MISP incluyen la mayoría de las fuentes de esta lista, así que una instancia MISP bien configurada es un agregador de feeds en sí misma.
 
-**Limitación**: requiere mantenimiento. Instalar y mantener una instancia MISP no es trivial (necesita servidor dedicado, actualizaciónes, curation de feeds).
+**Limitación**: requiere mantenimiento. Instalar y mantener una instancia MISP no es trivial (necesita servidor dedicado, actualizaciones, curation de feeds).
 
-**Integración SIEM**: MISP tiene módulos de exportación directa para Splunk, QRadar, Elastic, TheHive y practicamente cualquier plataforma que soporte STIX/TAXII. El módulo `misp-modules` permite enriquecimiento bidireccional.
+**Integración SIEM**: MISP tiene módulos de exportación directa para Splunk, QRadar, Elastic, TheHive y prácticamente cualquier plataforma que soporte STIX/TAXII. El módulo `misp-modules` permite enriquecimiento bidireccional.
 
 ### 7. CIRCL (Computer Incident Response Center Luxembourg)
 
@@ -532,6 +532,8 @@ La mayoría de los SOC maduros combinan:
 
 Este modelo híbrido proporciona la mejor relación coste-efectividad sin depender exclusivamente de fuentes gratuitas.
 
+
+Si quieres explorar estos feeds de forma visual y buscar IOCs en tiempo real, [MalwareIntel](https://malwareintel.es) es una plataforma gratuita de inteligencia de amenazas que agrega 13 feeds publicos (incluyendo varios de los listados aqui) con busqueda de IOCs, generador de reglas Sigma y Knowledge Graph interactivo.
 
 **Artículos relacionados:**
 - [Iocs En Ciberseguridad Que Son](/es/posts/2026/04/iocs-en-ciberseguridad-que-son/)

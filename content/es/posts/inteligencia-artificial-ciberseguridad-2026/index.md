@@ -103,6 +103,8 @@ Las tendencias con mayor probabilidad de impacto operativo en los próximos 12-1
 
 {{< cta type="mofu" text="Riskitera unifica GRC, SOC y CTI en una plataforma con soberanía de datos europea." >}}
 
+Si quieres profundizar en IA aplicada al trabajo real (desde prompting hasta arquitectura de sistemas multi-agente), [IAcademy](https://iacedemy.com) ofrece cursos practicos en espanol con modulos gratuitos.
+
 **Artículos relacionados:**
 - [Cómo montar un SOC desde cero](/es/posts/2026/04/como-montar-soc-desde-cero/)
 - [Analista SOC: roles N1, N2 y N3](/es/posts/2026/04/analista-soc-roles-n1-n2-n3/)
