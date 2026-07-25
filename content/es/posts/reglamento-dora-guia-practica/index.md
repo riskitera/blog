@@ -1,7 +1,7 @@
 ---
 title: "Reglamento DORA: guia practica para entidades financieras"
 image: "cover.png"
-description: "Guia completa del Reglamento DORA (Digital Operational Resilience Act): a quien aplica, requisitos tecnicos, plazos, TLPT y como preparar tu entidad financiera para el cumplimiento."
+description: "Guia completa del Reglamento DORA (Digital Operational Resilience Act): a quien aplica, requisitos tecnicos, plazos, TLPT y como preparar tu entidad."
 slug: "reglamento-dora-guia-practica"
 date: 2026-07-24
 publishDate: 2026-07-24

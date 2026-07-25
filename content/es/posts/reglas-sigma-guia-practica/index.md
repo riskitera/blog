@@ -1,7 +1,7 @@
 ---
-title: "Reglas Sigma: guía práctica para escribir detecciones portables"
+title: "Reglas Sigma: guía práctica para escribir detecciones"
 image: "cover.png"
-description: "Guía completa de reglas Sigma para SOC y SIEM: sintaxis, ejemplos prácticos, conversión a SIEM, integración con MITRE ATT&CK y mejores prácticas para escribir detecciones portables."
+description: "Guía completa de reglas Sigma para SOC y SIEM: sintaxis, ejemplos prácticos, conversión a SIEM, integración con MITRE ATT&CK y mejores prácticas para."
 slug: "reglas-sigma-guia-practica"
 date: 2026-06-04
 publishDate: 2026-06-04

@@ -1,7 +1,7 @@
 ---
-title: "DORA: el reglamento que cambia la ciberseguridad financiera en Europa"
+title: "DORA: el reglamento que cambia la ciberseguridad financiera"
 image: "cover.png"
-description: "Guía completa sobre el Reglamento DORA: qué es, a quién afecta, los cinco pilares de resiliencia operativa digital, plazos, sanciones y cómo prepararse para cumplir."
+description: "Guía completa sobre el Reglamento DORA: qué es, a quién afecta, los cinco pilares de resiliencia operativa digital, plazos, sanciones y cómo prepararse para."
 slug: "dora-reglamento-ciberseguridad-financiera"
 date: 2026-03-10
 lastmod: 2026-03-10
@@ -38,22 +38,22 @@ El ámbito de aplicación de DORA es extraordinariamente amplio dentro del secto
 
 ### Entidades financieras
 
-- **Entidades de crédito** (bancos).
-- **Empresas de servicios de inversión**.
-- **Sociedades de gestión de organismos de inversión colectiva** (gestoras de fondos).
-- **Empresas de seguros y reaseguros**.
+- **Entidades de crédito**(bancos).
+-**Empresas de servicios de inversión**.
+- **Sociedades de gestión de organismos de inversión colectiva**(gestoras de fondos).
+-**Empresas de seguros y reaseguros**.
 - **Fondos de pensiones de empleo**.
 - **Entidades de dinero electrónico**.
 - **Entidades de pago**.
-- **Proveedores de servicios de criptoactivos** (incluidos bajo MiCA).
-- **Depositarios centrales de valores**.
+- **Proveedores de servicios de criptoactivos**(incluidos bajo MiCA).
+-**Depositarios centrales de valores**.
 - **Entidades de contrapartida central**.
-- **Centros de negociación** (bolsas de valores, sistemas multilaterales de negociación).
-- **Registros de operaciones**.
+- **Centros de negociación**(bolsas de valores, sistemas multilaterales de negociación).
+-**Registros de operaciones**.
 - **Agencias de calificación crediticia**.
 - **Proveedores de servicios de suministro de datos**.
 - **Administradores de índices de referencia**.
-- **Proveedores de servicios de financiación participativa** (crowdfunding financiero).
+- **Proveedores de servicios de financiación participativa**(crowdfunding financiero).
 
 ### Proveedores terceros de servicios TIC
 
@@ -73,7 +73,7 @@ DORA se estructura en torno a cinco áreas fundamentales que, conjuntamente, def
 
 Las entidades financieras deben establecer un marco sólido e integral de gestión de riesgos TIC que incluya:
 
-- **Gobernanza**: el órgano de dirección es directamente responsable de definir, aprobar, supervisar y asumir la responsabilidad última de la implementación del marco de gestión de riesgos TIC. Los miembros del consejo de administración deben recibir formación periódica en riesgos TIC.
+-**Gobernanza**: el órgano de dirección es directamente responsable de definir, aprobar, supervisar y asumir la responsabilidad última de la implementación del marco de gestión de riesgos TIC. Los miembros del consejo de administración deben recibir formación periódica en riesgos TIC.
 - **Identificación de activos y riesgos**: inventario completo de activos de información, sistemas TIC, funciones empresariales y su interdependencia. Evaluación continua de amenazas y vulnerabilidades.
 - **Protección y prevención**: implementación de políticas de seguridad, mecanismos de control de acceso, cifrado, gestión de parches y protección de redes.
 - **Detección**: capacidades de monitorización continua y detección de actividades anómalas, con múltiples capas de control.
@@ -86,7 +86,7 @@ DORA establece un proceso armonizado de clasificación y notificación de incide
 
 - **Clasificación**: las entidades deben clasificar los incidentes TIC según criterios definidos: número de clientes afectados, duración, extensión geográfica, impacto económico, pérdida de datos y criticidad de los servicios afectados.
 - **Notificación inicial**: dentro de las 4 horas siguientes a la clasificación del incidente como grave (y no más de 24 horas después de su detección).
-- **Informe intermedio**: dentro de las 72 horas, con actualizaciónes sobre la gestión del incidente.
+- **Informe intermedio**: dentro de las 72 horas, con actualizaciones sobre la gestión del incidente.
 - **Informe final**: en el plazo de un mes, con el análisis de causas raíz y las medidas adoptadas.
 
 Las notificaciones se dirigen a la autoridad competente nacional. En España, serán el Banco de España, la CNMV o la Dirección General de Seguros y Fondos de Pensiones, según el tipo de entidad.
@@ -95,8 +95,8 @@ Las notificaciones se dirigen a la autoridad competente nacional. En España, se
 
 DORA exige un programa de pruebas riguroso y periódico:
 
-- **Pruebas básicas** (para todas las entidades): evaluaciones de vulnerabilidades, análisis de software de código abierto, evaluaciones de seguridad de red, análisis de brechas, revisiones de seguridad física, pruebas de escenarios y pruebas de compatibilidad.
-- **Pruebas avanzadas de penetración basadas en amenazas (TLPT)**: obligatorias cada tres años para las entidades que cumplan determinados criterios de tamaño y criticidad. Estas pruebas, basadas en el marco TIBER-EU, simulan ataques realistas contra los sistemas críticos de la entidad. Deben ser realizadas por auditores externos independientes y cualificados.
+- **Pruebas básicas**(para todas las entidades): evaluaciones de vulnerabilidades, análisis de software de código abierto, evaluaciones de seguridad de red, análisis de brechas, revisiones de seguridad física, pruebas de escenarios y pruebas de compatibilidad.
+-**Pruebas avanzadas de penetración basadas en amenazas (TLPT)**: obligatorias cada tres años para las entidades que cumplan determinados criterios de tamaño y criticidad. Estas pruebas, basadas en el marco TIBER-EU, simulan ataques realistas contra los sistemas críticos de la entidad. Deben ser realizadas por auditores externos independientes y cualificados.
 
 Las entidades deben documentar todas las pruebas, sus resultados y las acciones correctivas adoptadas.
 
@@ -125,7 +125,7 @@ DORA y NIS2 se aprobaron el mismo día y fueron diseñadas para complementarse:
 - **[ENS](https://www.boe.es/eli/es/rd/2022/05/03/311)**: las entidades financieras que operen en España y tengan relación con la Administración pública pueden necesitar cumplir tanto con DORA como con el ENS.
 - **[RGPD](https://eur-lex.europa.eu/eli/reg/2016/679)**: un incidente TIC que afecte a datos personales activará obligaciones simultáneas bajo DORA y bajo el RGPD, con plazos y autoridades de notificación diferentes.
 - **Directrices EBA/EIOPA/ESMA**: las directrices sectoriales preexistentes (como las Directrices EBA sobre gestión de riesgos TIC o las Directrices sobre externalización) se integran dentro del marco de DORA.
-- **[ISO 27001](https://www.iso.org/standard/27001)**: si tu organización ya está certificada en ISO 27001, dispone de una base sólida para cumplir con el pilar 1 de DORA. Nuestra [guía de implementación de ISO 27001](/es/posts/2026/02/guia-iso-27001-startups/) puede ser un recurso útil para entender el marco de referencia.
+- **[ISO 27001](https://www.iso.org/standard/27001)**: si tu organización ya está certificada en ISO 27001, dispone de una base sólida para cumplir con el pilar 1 de DORA. Nuestra [guía de implementación de ISO 27001](/es/posts/2026/02/guía-iso-27001-startups/) puede ser un recurso útil para entender el marco de referencia.
 
 {{< cta type="tofu" text="Cumplir DORA implica demostrar resiliencia operativa digital. Riskitera mapea los requisitos DORA a controles auditables automáticamente." label="Ver cómo" >}}
 

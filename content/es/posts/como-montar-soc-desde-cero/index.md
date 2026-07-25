@@ -1,7 +1,7 @@
 ---
 title: "Cómo montar un SOC desde cero: guía práctica para empresas"
 image: "cover.png"
-description: "Guía completa para crear un Centro de Operaciones de Seguridad (SOC): tipos, roles del equipo, herramientas necesarias, procesos, costes y errores comunes a evitar."
+description: "Guía completa para crear un Centro de Operaciones de Seguridad (SOC): tipos, roles del equipo, herramientas necesarias, procesos, costes y errores comunes a."
 slug: "como-montar-soc-desde-cero"
 date: 2026-04-04
 lastmod: 2026-04-04

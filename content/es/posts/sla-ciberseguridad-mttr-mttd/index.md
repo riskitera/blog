@@ -1,5 +1,5 @@
 ---
-title: "SLAs en ciberseguridad: cómo definir MTTR, MTTD y no morir en la auditoría"
+title: "SLAs en ciberseguridad: cómo definir MTTR"
 image: "cover.png"
 description: "Guía práctica para definir SLAs de ciberseguridad: MTTR, MTTD, MTTC, benchmarks del sector, cómo medirlos y cómo presentarlos en auditorías de seguridad."
 slug: "sla-ciberseguridad-mttr-mttd"
@@ -271,8 +271,8 @@ El incumplimiento de SLAs tiene consecuencias en tres dimensiones: contractual, 
 
 Los contratos con proveedores de seguridad gestionados suelen incluir:
 
-- **Service Credits.** Descuentos en la facturación proporcionales al incumplimiento. Tipicamente entre el 5% y el 25% de la factura mensual.
-- **Clausulas de terminación anticipada.** Incumplimientos reiterados (por ejemplo, más de 3 meses consecutivos) pueden dar derecho a rescindir el contrato sin penalización.
+- **Service Credits.** Descuentos en la facturación proporcionales al incumplimiento. Típicamente entre el 5% y el 25% de la factura mensual.
+- **Cláusulas de terminación anticipada.** Incumplimientos reiterados (por ejemplo, más de 3 meses consecutivos) pueden dar derecho a rescindir el contrato sin penalización.
 - **Obligaciones de remediación.** El proveedor puede estar obligado a presentar un plan de mejora con plazos concretos y a absorber los costes de la remediación.
 
 ### Consecuencias operativas

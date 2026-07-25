@@ -1,7 +1,7 @@
 ---
-title: "Gestión de evidencias en auditorías de seguridad: workflow completo"
+title: "Gestión de evidencias en auditorías de seguridad"
 image: "cover.png"
-description: "Workflow completo para la gestión de evidencias en auditorías de seguridad: recopilación, clasificación, almacenamiento, trazabilidad y presentación ante auditores externos."
+description: "Workflow completo para la gestión de evidencias en auditorías de seguridad: recopilación, clasificación, almacenamiento, trazabilidad y presentación ante."
 slug: "gestion-evidencias-auditorias-seguridad"
 date: 2026-06-09
 publishDate: 2026-06-09
@@ -217,7 +217,7 @@ Algunas evidencias se actualizan periódicamente (políticas, procedimientos, re
 
 ### Sellado de tiempo
 
-Para evidencias críticas, considera el uso de sellos de tiempo cualificados (TSA, Time Stamping Authority) conforme al reglamento eIDAS. Un sello de tiempo cualificado proporciona prueba legal de que la evidencia existia en un momento determinado y no ha sido modificada desde entonces.
+Para evidencias críticas, considera el uso de sellos de tiempo cualificados (TSA, Time Stamping Authority) conforme al reglamento eIDAS. Un sello de tiempo cualificado proporciona prueba legal de que la evidencia existía en un momento determinado y no ha sido modificada desde entonces.
 
 En España, proveedores como la FNMT-RCM ofrecen servicios de sellado de tiempo cualificado que son especialmente relevantes para evidencias de ENS Alto.
 
@@ -279,7 +279,7 @@ Una [plataforma GRC](/es/posts/2026/04/como-elegir-plataforma-grc/) añade la ca
 
 El nivel más maduro combina integraciones nativas con sistemas fuente y capacidades de inteligencia artificial:
 
-- **Colectores API.** Integraciónes directas con tu SIEM, tu herramienta de vulnerabilidades, tu directorio activo, tu ticketing y tu cloud. Las evidencias se recopilan automáticamente sin intervención humana.
+- **Colectores API.** Integraciones directas con tu SIEM, tu herramienta de vulnerabilidades, tu directorio activo, tu ticketing y tu cloud. Las evidencias se recopilan automáticamente sin intervención humana.
 - **Clasificación automática.** La IA clasifica la evidencia, la vincula al control correcto y detecta anomalías (por ejemplo, una evidencia que muestra un gap de seguridad).
 - **Generación de narrativa.** La IA genera borradores de los informes de auditoría a partir de las evidencias recopiladas, que el responsable solo necesita revisar y aprobar.
 - **Alertas predictivas.** El sistema predice que evidencias van a vencer antes de la próxima auditoría y genera alertas proactivas.
@@ -367,7 +367,7 @@ No es obligatorio en la mayoría de frameworks, pero sí altamente recomendable 
 
 ### ¿Qué pasa si un auditor solicita una evidencia que no tenemos?
 
-Es un escenario habitual. Lo peor que puedes hacer es inventar una evidencia sobre la marcha. El auditor lo detectará. Lo correcto: reconocer la carencia, explicar por qué no existe (no se habia identificado como necesaria, el control se implemento recientemente, el sistema no genera ese tipo de registro), proponer un plan de acción con fecha concreta para subsanarla, y documentar todo como hallazgo interno. Una no conformidad menor por evidencia ausente es preferible a una no conformidad mayor por evidencia falsificada.
+Es un escenario habitual. Lo peor que puedes hacer es inventar una evidencia sobre la marcha. El auditor lo detectará. Lo correcto: reconocer la carencia, explicar por qué no existe (no se había identificado como necesaria, el control se implemento recientemente, el sistema no genera ese tipo de registro), proponer un plan de acción con fecha concreta para subsanarla, y documentar todo como hallazgo interno. Una no conformidad menor por evidencia ausente es preferible a una no conformidad mayor por evidencia falsificada.
 
 ### ¿Cómo gestionar evidencias cuando hay múltiples auditores (interno, externo, regulador)?
 

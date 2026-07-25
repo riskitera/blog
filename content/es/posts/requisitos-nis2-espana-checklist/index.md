@@ -1,7 +1,7 @@
 ---
-title: "Requisitos NIS2 para empresas españolas: checklist completo 2026"
+title: "Requisitos NIS2 para empresas españolas"
 image: "cover.png"
-description: "Checklist completo de los requisitos de la Directiva NIS2 aplicables a empresas españolas: medidas de gestión de riesgos, notificación de incidentes, gobernanza y plazos de cumplimiento."
+description: "Checklist completo de los requisitos de la Directiva NIS2 aplicables a empresas españolas: medidas de gestión de riesgos, notificación de incidentes."
 slug: "requisitos-nis2-espana-checklist"
 date: 2026-05-09
 publishDate: 2026-05-09
@@ -10,7 +10,7 @@ draft: false
 tags: ["NIS2", "Compliance", "Europa"]
 categories: ["Compliance"]
 author: "David Moya"
-keyword: "requisitos NIS2 espana"
+keyword: "requisitos NIS2 España"
 funnel: "mofu"
 ---
 
@@ -22,11 +22,7 @@ La Directiva NIS2 (UE 2022/2555) obliga a miles de empresas españolas a impleme
 
 NIS2 establece tres bloques de requisitos obligatorios para todas las entidades afectadas:
 
-**1. Medidas de gestión de riesgos de ciberseguridad** (Artículo 21): diez medidas mínimas que toda entidad debe implementar, sin excepciones ni proporcionalidad por tamaño.
-
-**2. Obligaciones de notificación de incidentes** (Artículo 23): plazos estrictos de 24, 72 horas y un mes para reportar incidentes significativos a la autoridad competente.
-
-**3. Gobernanza de la ciberseguridad** (Artículo 20): la dirección de la entidad es responsable directa de aprobar las medidas de seguridad y puede ser sancionada personalmente por incumplimiento.
+**1. Medidas de gestión de riesgos de ciberseguridad**(Artículo 21): diez medidas mínimas que toda entidad debe implementar, sin excepciones ni proporcionalidad por tamaño.**2. Obligaciones de notificación de incidentes**(Artículo 23): plazos estrictos de 24, 72 horas y un mes para reportar incidentes significativos a la autoridad competente.**3. Gobernanza de la ciberseguridad**(Artículo 20): la dirección de la entidad es responsable directa de aprobar las medidas de seguridad y puede ser sancionada personalmente por incumplimiento.
 
 Además, NIS2 introduce obligaciones sobre la seguridad de la cadena de suministro, que afectan a todas las empresas que prestan servicios a entidades reguladas, aunque ellas mismas no sean entidades esenciales o importantes.
 
@@ -34,7 +30,7 @@ Además, NIS2 introduce obligaciones sobre la seguridad de la cadena de suminist
 
 El Artículo 21 de NIS2 establece diez medidas mínimas de gestión de riesgos:
 
-1. **Políticas de análisis de riesgos y seguridad de los sistemas de información**: la entidad debe tener un marco formal de evaluación y gestión de riesgos ciber, actualizado periódicamente.
+1.**Políticas de análisis de riesgos y seguridad de los sistemas de información**: la entidad debe tener un marco formal de evaluación y gestión de riesgos ciber, actualizado periódicamente.
 
 2. **Gestión de incidentes**: procedimientos para detectar, gestionar, notificar y responder a incidentes de ciberseguridad. Incluye capacidades de detección y respuesta (SOC o equivalente).
 
@@ -64,7 +60,7 @@ NIS2 establece plazos estrictos y escalonados para la notificación de incidente
 | 72 horas | Notificación de incidente | Evaluación inicial de gravedad e impacto, indicadores de compromiso |
 | 1 mes | Informe final | Descripción detallada, causa raíz, medidas de mitigación, impacto real |
 
-Un incidente se considera **significativo** si ha causado o puede causar: perturbación operativa grave del servicio, pérdidas financieras significativas, o daño considerable a personas físicas o jurídicas.
+Un incidente se considera **significativo**si ha causado o puede causar: perturbación operativa grave del servicio, pérdidas financieras significativas, o daño considerable a personas físicas o jurídicas.
 
 La autoridad competente en España será el CCN-CERT para el sector público y el INCIBE-CERT para el sector privado. Las entidades deben establecer canales de comunicación previamente acordados con estas autoridades.
 
@@ -72,10 +68,10 @@ La autoridad competente en España será el CCN-CERT para el sector público y e
 
 NIS2 introduce una novedad fundamental: la responsabilidad directa de la dirección (Artículo 20). Los órganos de dirección de las entidades afectadas deben:
 
-- **Aprobar las medidas de gestión de riesgos** de ciberseguridad
-- **Supervisar su implementación** y ser informados periódicamente de su eficacia
-- **Recibir formación en ciberseguridad** para poder tomar decisiones informadas
-- **Ser responsables personalmente** del incumplimiento de estas obligaciones
+-**Aprobar las medidas de gestión de riesgos**de ciberseguridad
+-**Supervisar su implementación**y ser informados periódicamente de su eficacia
+-**Recibir formación en ciberseguridad**para poder tomar decisiones informadas
+-**Ser responsables personalmente**del incumplimiento de estas obligaciones
 
 Esto significa que los consejeros delegados, directores generales y miembros del consejo de administración pueden enfrentar sanciones personales si la entidad incumple NIS2 y se demuestra que no ejercieron la debida supervisión.
 
@@ -83,9 +79,7 @@ Esto significa que los consejeros delegados, directores generales y miembros del
 
 ## ¿Qué empresas están obligadas a cumplir NIS2 en España?
 
-NIS2 clasifica las entidades en dos categorías:
-
-**Entidades esenciales** (supervisión proactiva, sanciones más altas):
+NIS2 clasifica las entidades en dos categorías:**Entidades esenciales**(supervisión proactiva, sanciones más altas):
 - Energía (electricidad, petróleo, gas, hidrógeno)
 - Transporte (aéreo, ferroviario, marítimo, carretera)
 - Banca y infraestructuras de mercados financieros
@@ -93,9 +87,7 @@ NIS2 clasifica las entidades en dos categorías:
 - Agua (potable y residual)
 - Infraestructura digital (proveedores DNS, IXPs, proveedores cloud, data centers)
 - Administración pública (gobierno central y regional)
-- Espacio
-
-**Entidades importantes** (supervisión reactiva):
+- Espacio**Entidades importantes**(supervisión reactiva):
 - Servicios postales y de mensajería
 - Gestión de residuos
 - Fabricación de productos químicos
@@ -111,9 +103,9 @@ El criterio de tamaño: empresas medianas (50+ empleados o 10M+ EUR facturación
 La Directiva NIS2 entró en vigor el 16 de enero de 2023. Los estados miembros tenían hasta el 17 de octubre de 2024 para transponerla a su legislación nacional. España no cumplió este plazo. La transposición está en trámite parlamentario y se espera completada en 2026.
 
 Una vez en vigor la ley nacional, las entidades afectadas deberán:
-- **Registrarse** ante la autoridad competente
-- **Implementar las medidas** del Artículo 21 en un plazo que la ley nacional determinará (estimación: 12-18 meses)
-- **Establecer canales de notificación** de incidentes
+-**Registrarse**ante la autoridad competente
+-**Implementar las medidas**del Artículo 21 en un plazo que la ley nacional determinará (estimación: 12-18 meses)
+-**Establecer canales de notificación**de incidentes
 
 La recomendación de ENISA y del CCN-CERT es no esperar a la transposición: los requisitos de NIS2 son conocidos y la preparación lleva meses. Las organizaciones que empiecen ahora tendrán ventaja competitiva.
 
@@ -141,9 +133,7 @@ NIS2 establece sanciones máximas a nivel europeo que la legislación nacional d
 
 Además, NIS2 permite sanciones personales a los directivos responsables, incluyendo inhabilitación temporal para ejercer funciones de dirección. La legislación española concretará los importes y criterios de graduación.
 
-{{< cta type="mofu" text="Automatiza la recopilación de evidencias y el seguimiento de controles con Riskitera." >}}
-
-**Artículos relacionados:**
+{{< cta type="mofu" text="Automatiza la recopilación de evidencias y el seguimiento de controles con Riskitera." >}}**Artículos relacionados:**
 - [NIS2: qué es y a quién afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
 - [Qué es el ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
 - [DORA: ciberseguridad financiera](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/)

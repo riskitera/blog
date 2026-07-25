@@ -1,7 +1,7 @@
 ---
-title: "Feeds de CTI gratuitos: los 15 mejores y cómo integrarlos en tu SIEM"
+title: "Feeds de CTI gratuitos: los 15 mejores y cómo integrarlos"
 image: "cover.png"
-description: "Los 15 mejores feeds de threat intelligence gratuitos en 2026: MISP, AlienVault OTX, Abuse.ch, CIRCL y más. Como integrarlos en tu SIEM y maximizar su valor operativo."
+description: "Los 15 mejores feeds de threat intelligence gratuitos en 2026: MISP, AlienVault OTX, Abuse.ch, CIRCL y más. Como integrarlos en tu SIEM y maximizar su valor."
 slug: "feeds-cti-gratuitos-mejores"
 date: 2026-07-23
 publishDate: 2026-07-23

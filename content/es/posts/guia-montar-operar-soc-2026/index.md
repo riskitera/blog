@@ -33,7 +33,7 @@ Un Security Operations Center (SOC) es la función organizativa responsable de d
 
 En 2026, el SOC es más crítico que nunca por varias razones convergentes:
 
-**Presión regulatoria sin precedentes.** La transposición de [NIS2](https://digital-strategy.ec.europa.eu/en/policies/nis2-directive) en los estados miembros de la UE obliga a miles de organizaciones a contar con capacidades de detección y respuesta a incidentes. El [Esquema Nacional de Seguridad](https://ens.ccn.cni.es/) en España ya lo exigia para el sector público y su cadena de suministro; ahora NIS2 extiende requisitos similares al sector privado en sectores esenciales e importantes. [DORA](https://www.digital-operational-resilience-act.com/) añade requisitos específicos para el sector financiero. Y el [EU AI Act](https://eur-lex.europa.eu/eli/reg/2024/1689) introduce obligaciones de supervisión para los sistemas de IA usados en operaciones de seguridad.
+**Presión regulatoria sin precedentes.** La transposición de [NIS2](https://digital-strategy.ec.europa.eu/en/policies/nis2-directive) en los estados miembros de la UE obliga a miles de organizaciones a contar con capacidades de detección y respuesta a incidentes. El [Esquema Nacional de Seguridad](https://ens.ccn.cni.es/) en España ya lo exigía para el sector público y su cadena de suministro; ahora NIS2 extiende requisitos similares al sector privado en sectores esenciales e importantes. [DORA](https://www.digital-operational-resilience-act.com/) añade requisitos específicos para el sector financiero. Y el [EU AI Act](https://eur-lex.europa.eu/eli/reg/2024/1689) introduce obligaciones de supervisión para los sistemas de IA usados en operaciones de seguridad.
 
 **Incremento sostenido de ciberataques.** Los informes de [ENISA](https://www.enisa.europa.eu/) y del [CCN-CERT](https://www.ccn-cert.cni.es/) coinciden: los ataques de ransomware, la exfiltración de datos, los ataques a la cadena de suministro y las amenazas a infraestructuras críticas no dejan de crecer. El coste medio de un breach en Europa supera los 4 millones de euros en 2026.
 
@@ -137,7 +137,7 @@ El equipo es el componente más crítico y más costoso de un SOC. Un error frec
 
 ### Roles críticos que muchos SOC olvidan
 
-**Detection Engineer.** Este rol es el que más impacto tiene en la eficacia del SOC y es el más ignorado en España. Un buen [detection engineer crea reglas de detección](/es/posts/2026/04/detection-engineering-reglas-deteccion/) que reducen falsos positivos, aumentan la cobertura de MITRE ATT&CK y hacen que el trabajo de los analistas sea más productivo. Sin este rol, las reglas de detección se degradan con el tiempo y el SOC se ahoga en ruido.
+**Detection Engineer.** Este rol es el que más impacto tiene en la eficacia del SOC y es el más ignorado en España. Un buen [detection engineer crea reglas de detección](/es/posts/2026/04/detection-engineering-reglas-detección/) que reducen falsos positivos, aumentan la cobertura de MITRE ATT&CK y hacen que el trabajo de los analistas sea más productivo. Sin este rol, las reglas de detección se degradan con el tiempo y el SOC se ahoga en ruido.
 
 **Analista CTI dedicado.** La inteligencia de amenazas no puede ser una tarea parcial del N2 "cuando tiene tiempo". Necesita un profesional dedicado que consuma fuentes de CTI, las contextualice para tu sector y organización, y produzca inteligencia accionable que alimente las reglas de detección y los playbooks de respuesta.
 
@@ -391,7 +391,7 @@ El ROI de un SOC es difícil de medir directamente (es como medir el ROI de un s
 - **Coste de incumplimiento NIS2:** multas de hasta 10 millones de euros o el 2% de la facturación global.
 - **Coste reputacional:** difícil de cuantificar pero potencialmente devastador (pérdida de clientes, caída de confianza, daño de marca).
 
-Si tu organización factura más de 10 millones de euros anuales y opera en un sector expuesto a ciberamenazas (practicamente todos en 2026), el SOC no es un lujo: es una necesidad operativa y, cada vez más, una obligación legal.
+Si tu organización factura más de 10 millones de euros anuales y opera en un sector expuesto a ciberamenazas (prácticamente todos en 2026), el SOC no es un lujo: es una necesidad operativa y, cada vez más, una obligación legal.
 
 ## Tendencias SOC para 2027 y más allá
 
@@ -433,7 +433,7 @@ Depende del modelo. Si optas por un SOC híbrido (recomendado para la mayoría d
 
 ### ¿Puedo montar un SOC eficaz con herramientas open source?
 
-Sí, pero con matices importantes. Un stack basado en Elastic Security (SIEM), Wazuh (EDR), TheHive (case management), MISP (CTI) y Shuffle (SOAR) es técnicamente viable y tiene coste de licencia cero. El coste real está en la infraestructura (servidores, almacenamiento, red), en el tiempo de integración y configuración (multiplicar por 2-3x vs. una solución comercial), y en el mantenimiento continuo (actualizaciónes, tuning, troubleshooting). Para una organización con equipo técnico fuerte y presupuesto limitado de licencias, el stack open source es una opción válida. Para una organización sin capacidad técnica dedicada, el ahorro en licencias se pierde en horas de ingeniería.
+Sí, pero con matices importantes. Un stack basado en Elastic Security (SIEM), Wazuh (EDR), TheHive (case management), MISP (CTI) y Shuffle (SOAR) es técnicamente viable y tiene coste de licencia cero. El coste real está en la infraestructura (servidores, almacenamiento, red), en el tiempo de integración y configuración (multiplicar por 2-3x vs. una solución comercial), y en el mantenimiento continuo (actualizaciones, tuning, troubleshooting). Para una organización con equipo técnico fuerte y presupuesto limitado de licencias, el stack open source es una opción válida. Para una organización sin capacidad técnica dedicada, el ahorro en licencias se pierde en horas de ingeniería.
 
 ### ¿Cuánto tarda en estar operativo un SOC desde cero?
 
@@ -445,4 +445,4 @@ Evalua estos criterios: ubicación de los datos (deben procesarse y almacenarse 
 
 ### ¿La IA va a eliminar los puestos de trabajo en el SOC?
 
-No, pero va a transformarlos profundamente. La IA eliminará las tareas repetitivas de bajo valor (triage básico de alertas conocidas, enriquecimiento manual de IoCs, generación de informes rutinarios). Esto significa que los N1 "puros" (que solo siguen playbooks mecanicamente) tendrán que evolucionar. Pero la demanda de analistas capaces de supervisar IA, investigar incidentes complejos, realizar threat hunting creativo, desarrollar reglas de detección y comunicar hallazgos a la dirección va a seguir creciendo. En otras palabras: la IA no elimina analistas, elimina tareas. Los analistas que se adapten y adquieran competencias complementarias (supervisión de IA, detection engineering, CTI avanzado) tendrán más demanda y mejores salarios que nunca.
+No, pero va a transformarlos profundamente. La IA eliminará las tareas repetitivas de bajo valor (triage básico de alertas conocidas, enriquecimiento manual de IoCs, generación de informes rutinarios). Esto significa que los N1 "puros" (que solo siguen playbooks mecánicamente) tendrán que evolucionar. Pero la demanda de analistas capaces de supervisar IA, investigar incidentes complejos, realizar threat hunting creativo, desarrollar reglas de detección y comunicar hallazgos a la dirección va a seguir creciendo. En otras palabras: la IA no elimina analistas, elimina tareas. Los analistas que se adapten y adquieran competencias complementarias (supervisión de IA, detection engineering, CTI avanzado) tendrán más demanda y mejores salarios que nunca.

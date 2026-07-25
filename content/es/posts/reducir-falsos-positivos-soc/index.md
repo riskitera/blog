@@ -1,7 +1,7 @@
 ---
-title: "Cómo reducir falsos positivos en el SOC: técnicas reales que funcionan"
+title: "Cómo reducir falsos positivos en el SOC"
 image: "cover.png"
-description: "Técnicas probadas para reducir falsos positivos en el SOC: tuning de reglas, enrichment automático, whitelisting inteligente, ML para clasificación y métricas de calidad."
+description: "Técnicas probadas para reducir falsos positivos en el SOC: tuning de reglas, enrichment automático, whitelisting inteligente, ML para clasificación y."
 slug: "reducir-falsos-positivos-soc"
 date: 2026-06-16
 publishDate: 2026-06-16

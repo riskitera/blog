@@ -1,7 +1,7 @@
 ---
 title: "Threat Hunting: cómo cazar amenazas antes de que ataquen"
 image: "cover.png"
-description: "Guía práctica de threat hunting: metodologías PEAK y TaHiTI, herramientas SIEM y EDR, reglas Sigma, integración con MITRE ATT&CK y cómo construir un programa de caza de amenazas eficaz."
+description: "Guía práctica de threat hunting: metodologías PEAK y TaHiTI, herramientas SIEM y EDR, reglas Sigma, integración con MITRE ATT&CK y cómo construir un."
 slug: "threat-hunting-guia-practica"
 date: 2026-04-24
 lastmod: 2026-04-24

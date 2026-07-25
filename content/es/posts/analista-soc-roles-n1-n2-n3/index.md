@@ -1,7 +1,7 @@
 ---
 title: "Analista SOC: roles N1, N2 y N3 explicados con detalle"
 image: "cover.png"
-description: "Guía completa sobre los roles de analista SOC: qué hace cada nivel (N1, N2, N3), habilidades requeridas, herramientas, trayectoria profesional y salarios en España."
+description: "Guía completa sobre los roles de analista SOC: qué hace cada nivel (N1, N2, N3), habilidades requeridas, herramientas, trayectoria profesional y salarios en."
 slug: "analista-soc-roles-n1-n2-n3"
 date: 2026-04-09
 lastmod: 2026-04-09
@@ -153,7 +153,7 @@ Además de las herramientas de N1 y N2:
 
 ## ¿Cómo es la trayectoria profesional de un analista SOC?
 
-La carrera de un analista SOC es una progresión natural que, con dedicación y formación continua, puede llevar desde un perfil junior hasta posiciones de liderazgo técnico o de gestión. Para datos concretos sobre remuneración por nivel, consulta nuestro análisis de [salarios de analistas SOC en España](/es/posts/2026/04/salario-analista-soc-espana-2026/).
+La carrera de un analista SOC es una progresión natural que, con dedicación y formación continua, puede llevar desde un perfil junior hasta posiciones de liderazgo técnico o de gestión. Para datos concretos sobre remuneración por nivel, consulta nuestro análisis de [salarios de analistas SOC en España](/es/posts/2026/04/salario-analista-soc-España-2026/).
 
 ### Ruta típica
 

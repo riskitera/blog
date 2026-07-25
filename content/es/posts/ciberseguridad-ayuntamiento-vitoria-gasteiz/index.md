@@ -1,7 +1,7 @@
 ---
-title: "Ciberseguridad para el Ayuntamiento de Vitoria-Gasteiz: cumplir ENS y NIS2"
+title: "Ciberseguridad para el Ayuntamiento de Vitoria-Gasteiz"
 image: "cover.png"
-description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Vitoria-Gasteiz y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos para la certificación."
+description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Vitoria-Gasteiz y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos."
 slug: "ciberseguridad-ayuntamiento-vitoria-gasteiz"
 date: 2026-09-18
 publishDate: 2026-09-18
@@ -69,4 +69,4 @@ NIS2 amplía las obligaciones de ciberseguridad a los servicios municipales esen
 **Artículos relacionados:**
 - [Qué es el ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
 - [NIS2: qué es y a quién afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
-- [Ciberseguridad en País Vasco](/es/posts/ciberseguridad-administracion-publica-pais-vasco/)
+- [Ciberseguridad en País Vasco](/es/posts/ciberseguridad-administración-publica-pais-vasco/)

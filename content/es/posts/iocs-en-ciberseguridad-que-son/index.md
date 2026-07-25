@@ -1,7 +1,7 @@
 ---
-title: "IOCs en ciberseguridad: qué son y cómo utilizarlos eficazmente"
+title: "IOCs en ciberseguridad: qué son y cómo utilizarlos"
 image: "cover.png"
-description: "Descubre qué son los Indicadores de Compromiso (IOCs) en ciberseguridad, sus tipos, fuentes gratuitas como AlienVault OTX y MISP, estándares STIX/TAXII y cómo integrarlos en tu SOC."
+description: "Descubre qué son los Indicadores de Compromiso (IOCs) en ciberseguridad, sus tipos, fuentes gratuitas como AlienVault OTX y MISP, estándares STIX/TAXII y."
 slug: "iocs-en-ciberseguridad-que-son"
 date: 2026-04-19
 lastmod: 2026-04-19

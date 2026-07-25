@@ -1,7 +1,7 @@
 ---
-title: "MITRE ATT&CK en el SOC: mapping de técnicas a detecciones reales"
+title: "MITRE ATT&CK en el SOC: mapping de técnicas a detecciones"
 image: "cover.png"
-description: "Cómo mapear técnicas MITRE ATT&CK a detecciones operativas en el SOC: cobertura de la matriz, priorizar técnicas, crear dashboards y medir gaps de detección en tiempo real."
+description: "Cómo mapear técnicas MITRE ATT&CK a detecciones operativas en el SOC: cobertura de la matriz, priorizar técnicas, crear dashboards y medir gaps de detección."
 slug: "mitre-attack-soc-mapping-detecciones"
 date: 2026-06-06
 publishDate: 2026-06-06

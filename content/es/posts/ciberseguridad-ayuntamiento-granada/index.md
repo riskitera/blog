@@ -1,7 +1,7 @@
 ---
-title: "Ciberseguridad para el Ayuntamiento de Granada: cumplir ENS y NIS2"
+title: "Ciberseguridad para el Ayuntamiento de Granada"
 image: "cover.png"
-description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Granada y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos para la certificación."
+description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Granada y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos para la."
 slug: "ciberseguridad-ayuntamiento-granada"
 date: 2026-09-20
 publishDate: 2026-09-20
@@ -69,4 +69,4 @@ NIS2 amplía las obligaciones de ciberseguridad a los servicios municipales esen
 **Artículos relacionados:**
 - [Qué es el ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
 - [NIS2: qué es y a quién afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
-- [Ciberseguridad en Andalucía](/es/posts/ciberseguridad-administracion-publica-andalucia/)
+- [Ciberseguridad en Andalucía](/es/posts/ciberseguridad-administración-publica-andalucia/)

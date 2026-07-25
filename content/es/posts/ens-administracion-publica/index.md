@@ -1,8 +1,8 @@
 ---
-title: "ENS en la administración pública: requisitos, plazos y errores comunes"
+title: "ENS en la administración pública"
 image: "cover.png"
-description: "Guía práctica del Esquema Nacional de Seguridad para administraciones públicas: requisitos obligatorios, plazos de cumplimiento, herramientas del CCN y errores frecuentes en la implementación."
-slug: "ens-administración-pública"
+description: "Guía práctica del Esquema Nacional de Seguridad para administraciones públicas: requisitos obligatorios, plazos de cumplimiento, herramientas del CCN y."
+slug: "ens-administracion-publica"
 date: 2026-05-23
 publishDate: 2026-05-23
 lastmod: 2026-05-23

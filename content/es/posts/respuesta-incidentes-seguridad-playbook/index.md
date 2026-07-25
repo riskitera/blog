@@ -1,7 +1,7 @@
 ---
-title: "Respuesta a incidentes de seguridad: playbook completo para equipos SOC"
+title: "Respuesta a incidentes de seguridad"
 image: "cover.png"
-description: "Playbook completo de respuesta a incidentes para SOC: fases NIST, roles, comunicación, contención, erradicación, recuperación y lecciones aprendidas con ejemplos prácticos."
+description: "Playbook completo de respuesta a incidentes para SOC: fases NIST, roles, comunicación, contención, erradicación, recuperación y lecciones aprendidas con."
 slug: "respuesta-incidentes-seguridad-playbook"
 date: 2026-07-02
 publishDate: 2026-07-02
@@ -551,7 +551,7 @@ El [CCN-CERT](https://www.ccn-cert.cni.es/) es la referencia para la Administrac
 
 ## Errores comunes en la respuesta a incidentes
 
-Después de analizar decenas de incidentes reales en España (incluyendo los documentados en nuestro artículo sobre los [10 incidentes más graves en España](/es/posts/2026/06/incidentes-ciberseguridad-espana-graves/)), estos son los errores más frecuentes:
+Después de analizar decenas de incidentes reales en España (incluyendo los documentados en nuestro artículo sobre los [10 incidentes más graves en España](/es/posts/2026/06/incidentes-ciberseguridad-España-graves/)), estos son los errores más frecuentes:
 
 ### 1. Apagar los equipos comprometidos
 

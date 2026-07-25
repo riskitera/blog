@@ -1,7 +1,7 @@
 ---
-title: "Ciberseguridad para la administración pública en Aragón: ENS, NIS2 y cumplimiento obligatorio"
+title: "Ciberseguridad para la administración pública en Aragón"
 image: "cover.png"
-description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Aragón: requisitos ENS, NIS2, plazos, herramientas del CCN y cómo cumplir la normativa de seguridad obligatoria."
+description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Aragón: requisitos ENS, NIS2, plazos, herramientas del CCN y cómo cumplir la normativa de."
 slug: "ciberseguridad-administracion-publica-aragon"
 date: 2026-07-29
 publishDate: 2026-07-29
@@ -10,7 +10,7 @@ draft: false
 tags: ["ENS", "Administración Pública", "NIS2", "Aragón"]
 categories: ["Compliance"]
 author: "David Moya"
-keyword: "ciberseguridad administracion publica Aragon"
+keyword: "ciberseguridad administración publica Aragon"
 funnel: "mofu"
 geo_target: "Aragon"
 ---
@@ -81,4 +81,4 @@ La transposición de NIS2 a la legislación española se espera completada en 20
 **Artículos relacionados:**
 - [Qué es el Esquema Nacional de Seguridad (ENS)](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
 - [NIS2: qué es, a quién afecta y plazos](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
-- [ENS en la administración pública](/es/posts/2026/05/ens-administracion-publica/)
+- [ENS en la administración pública](/es/posts/2026/05/ens-administración-publica/)

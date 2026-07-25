@@ -1,7 +1,7 @@
 ---
-title: "Ciberseguridad para el Ayuntamiento de Alicante: cumplir ENS y NIS2"
+title: "Ciberseguridad para el Ayuntamiento de Alicante"
 image: "cover.png"
-description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Alicante y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos para la certificación."
+description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Alicante y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos para la."
 slug: "ciberseguridad-ayuntamiento-alicante"
 date: 2026-09-13
 publishDate: 2026-09-13
@@ -69,4 +69,4 @@ NIS2 amplía las obligaciones de ciberseguridad a los servicios municipales esen
 **Artículos relacionados:**
 - [Qué es el ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
 - [NIS2: qué es y a quién afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
-- [Ciberseguridad en Comunidad Valenciana](/es/posts/ciberseguridad-administracion-publica-comunidad-valenciana/)
+- [Ciberseguridad en Comunidad Valenciana](/es/posts/ciberseguridad-administración-publica-comunidad-valenciana/)

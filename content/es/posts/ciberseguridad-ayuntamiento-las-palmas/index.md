@@ -1,7 +1,7 @@
 ---
-title: "Ciberseguridad para el Ayuntamiento de Las Palmas de Gran Canaria: cumplir ENS y NIS2"
+title: "Ciberseguridad para el Ayuntamiento de Las Palmas de Gran"
 image: "cover.png"
-description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Las Palmas de Gran Canaria y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos para la certificación."
+description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Las Palmas de Gran Canaria y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN."
 slug: "ciberseguridad-ayuntamiento-las-palmas"
 date: 2026-09-11
 publishDate: 2026-09-11
@@ -69,4 +69,4 @@ NIS2 amplía las obligaciones de ciberseguridad a los servicios municipales esen
 **Artículos relacionados:**
 - [Qué es el ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
 - [NIS2: qué es y a quién afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
-- [Ciberseguridad en Canarias](/es/posts/ciberseguridad-administracion-publica-canarias/)
+- [Ciberseguridad en Canarias](/es/posts/ciberseguridad-administración-publica-canarias/)

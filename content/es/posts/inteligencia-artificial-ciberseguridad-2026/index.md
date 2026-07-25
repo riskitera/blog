@@ -1,7 +1,7 @@
 ---
-title: "Inteligencia artificial en ciberseguridad: estado real en 2026"
+title: "Inteligencia artificial en ciberseguridad"
 image: "cover.png"
-description: "Estado actual de la inteligencia artificial aplicada a la ciberseguridad en 2026: casos de uso reales en SOC, GRC y CTI, limitaciones, riesgos y tendencias para los próximos años."
+description: "Estado actual de la inteligencia artificial aplicada a la ciberseguridad en 2026: casos de uso reales en SOC, GRC y CTI, limitaciones, riesgos y tendencias."
 slug: "inteligencia-artificial-ciberseguridad-2026"
 date: 2026-05-12
 publishDate: 2026-05-12

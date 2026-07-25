@@ -1,7 +1,7 @@
 ---
 title: "Threat Intelligence: guía completa para empresas 2026"
 image: "cover.png"
-description: "Guía definitiva de threat intelligence para empresas en 2026: tipos, ciclo de inteligencia, fuentes, herramientas, integración con SOC, maduración del programa y tendencias."
+description: "Guía definitiva de threat intelligence para empresas en 2026: tipos, ciclo de inteligencia, fuentes, herramientas, integración con SOC, maduración del."
 slug: "guia-threat-intelligence-empresas-2026"
 date: 2026-07-21
 publishDate: 2026-07-21
@@ -123,7 +123,7 @@ Estrategica (tendencias macro)
             → Técnica (IoCs específicos)
 ```
 
-Un programa maduro produce inteligencia en los cuatro niveles. Un programa que solo consume IoCs técnicos sin contexto estratégico ni táctico esta funcionando a ciegas.
+Un programa maduro produce inteligencia en los cuatro niveles. Un programa que solo consume IoCs técnicos sin contexto estratégico ni táctico está funcionando a ciegas.
 
 ## El ciclo de inteligencia de amenazas
 
@@ -581,4 +581,4 @@ Empieza con tres pasos sencillos. Primero, define 3-5 PIRs básicos (que amenaza
 
 ### ¿La TI es obligatoria según NIS2?
 
-No se menciona la palabra "threat intelligence" explícitamente en NIS2, pero los requisitos del artículo 21 (gestión de riesgos, análisis de amenazas, gestión de incidentes, seguridad de la cadena de suministro) son practicamente imposibles de cumplir sin un programa de TI. ENISA recomienda explícitamente la monitorización de amenazas y el intercambio de información como prácticas esenciales. DORA si menciona explícitamente el intercambio de información sobre amenazas ciber para entidades financieras. En la práctica, cualquier organización sujeta a NIS2 o DORA necesita capacidades de TI documentadas.
+No se menciona la palabra "threat intelligence" explícitamente en NIS2, pero los requisitos del artículo 21 (gestión de riesgos, análisis de amenazas, gestión de incidentes, seguridad de la cadena de suministro) son prácticamente imposibles de cumplir sin un programa de TI. ENISA recomienda explícitamente la monitorización de amenazas y el intercambio de información como prácticas esenciales. DORA si menciona explícitamente el intercambio de información sobre amenazas ciber para entidades financieras. En la práctica, cualquier organización sujeta a NIS2 o DORA necesita capacidades de TI documentadas.

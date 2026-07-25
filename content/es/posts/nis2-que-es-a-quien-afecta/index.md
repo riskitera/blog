@@ -1,7 +1,7 @@
 ---
-title: "NIS2: qué es, a quién afecta y plazos de cumplimiento en España"
+title: "NIS2: qué es, a quién afecta y plazos de cumplimiento en"
 image: "cover.png"
-description: "Guía completa sobre la Directiva NIS2: qué empresas deben cumplirla, requisitos principales, plazos de transposición en España, sanciones y pasos para prepararse."
+description: "Guía completa sobre la Directiva NIS2: qué empresas deben cumplirla, requisitos principales, plazos de transposición en España, sanciones y pasos para."
 slug: "nis2-que-es-a-quien-afecta"
 date: 2026-03-05
 lastmod: 2026-03-05
@@ -68,8 +68,8 @@ Son aquellas que operan en sectores de alta criticidad y que, por su tamaño o n
 - **Sanidad**: hospitales, laboratorios, fabricantes de productos farmacéuticos y de dispositivos médicos.
 - **Agua potable y aguas residuales**.
 - **Infraestructura digital**: proveedores de puntos de intercambio de Internet, servicios DNS, registros de nombres de dominio de primer nivel.
-- **Administración pública** (nivel central y regional).
-- **Espacio**: operadores de infraestructuras terrestres de apoyo a servicios espaciales.
+- **Administración pública**(nivel central y regional).
+-**Espacio**: operadores de infraestructuras terrestres de apoyo a servicios espaciales.
 
 Para ser clasificada como esencial, la entidad debe operar en uno de estos sectores y, generalmente, tener más de 250 empleados o un volumen de negocio superior a 50 millones de euros.
 
@@ -91,7 +91,7 @@ Existen excepciones: determinadas entidades se incluyen independientemente de su
 
 ## ¿Cuáles son los requisitos principales de NIS2?
 
-NIS2 establece diez medidas mínimas de gestión de riesgos que todas las entidades afectadas deben implementar. Para un desglose práctico con checklist descargable, consulta nuestro [checklist de requisitos NIS2 para España](/es/posts/2026/04/requisitos-nis2-espana-checklist/).
+NIS2 establece diez medidas mínimas de gestión de riesgos que todas las entidades afectadas deben implementar. Para un desglose práctico con checklist descargable, consulta nuestro [checklist de requisitos NIS2 para España](/es/posts/2026/04/requisitos-nis2-España-checklist/).
 
 1. **Políticas de análisis de riesgos y seguridad de los sistemas de información**: realizar evaluaciones periódicas de riesgos y mantener políticas de seguridad actualizadas.
 
@@ -133,7 +133,7 @@ A fecha de abril de 2026, España tiene el Anteproyecto de Ley de Ciberseguridad
 - **Autoridades competentes**: se designan autoridades sectoriales de supervisión para cada ámbito de actividad.
 - **INCIBE como CSIRT nacional**: INCIBE-CERT se consolida como el equipo de respuesta a incidentes de referencia para el sector privado.
 
-La expectativa del sector es que la ley esté plenamente en vigor antes de finales de 2026, con un periodo transitorio para la adaptación de las entidades afectadas.
+La expectativa del sector es que la ley esté plenamente en vigor antes de finales de 2026, con un período transitorio para la adaptación de las entidades afectadas.
 
 Las organizaciones no deberían esperar a la transposición definitiva para actuar. La Directiva tiene efecto directo en muchos aspectos y las entidades que no estén preparadas cuando la ley entre en vigor se enfrentarán a plazos de adaptación muy ajustados.
 
@@ -141,13 +141,9 @@ Las organizaciones no deberían esperar a la transposición definitiva para actu
 
 El régimen sancionador de NIS2 es significativamente más severo que el de la primera directiva:
 
-**Para entidades esenciales:**
-- Multas de hasta 10.000.000 euros o el 2 por ciento del volumen de negocios total anual global, la cifra que sea mayor.
+**Para entidades esenciales:**- Multas de hasta 10.000.000 euros o el 2 por ciento del volumen de negocios total anual global, la cifra que sea mayor.
 - Posibilidad de suspensión temporal de certificaciones o autorizaciones.
-- Prohibición temporal de ejercer funciones de dirección para los responsables.
-
-**Para entidades importantes:**
-- Multas de hasta 7.000.000 euros o el 1,4 por ciento del volumen de negocios total anual global.
+- Prohibición temporal de ejercer funciones de dirección para los responsables.**Para entidades importantes:**- Multas de hasta 7.000.000 euros o el 1,4 por ciento del volumen de negocios total anual global.
 
 Además, NIS2 introduce la posibilidad de que las autoridades de supervisión realicen auditorías e inspecciones periódicas, tanto planificadas como ad hoc, y de que exijan la corrección de deficiencias con plazos concretos.
 
@@ -163,7 +159,7 @@ Analiza el sector de actividad de tu empresa, su tamaño (empleados y facturaci�
 
 ### 2. Realizar un análisis de brechas (gap analysis)
 
-Compara tu postura actual de ciberseguridad con los diez requisitos mínimos de NIS2. Identifica las áreas donde ya cumples y aquellas donde necesitas mejorar. Si tu organización ya tiene la certificación [ISO 27001](https://www.iso.org/standard/27001) o cumple con el [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311), tendrás una base sólida. Nuestra [guía de ISO 27001 para startups](/es/posts/2026/02/guia-iso-27001-startups/) es un buen punto de partida si aún no has implementado un sistema de gestión de seguridad.
+Compara tu postura actual de ciberseguridad con los diez requisitos mínimos de NIS2. Identifica las áreas donde ya cumples y aquellas donde necesitas mejorar. Si tu organización ya tiene la certificación [ISO 27001](https://www.iso.org/standard/27001) o cumple con el [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311), tendrás una base sólida. Nuestra [guía de ISO 27001 para startups](/es/posts/2026/02/guía-iso-27001-startups/) es un buen punto de partida si aún no has implementado un sistema de gestión de seguridad.
 
 ### 3. Involucrar a la alta dirección
 
@@ -193,7 +189,7 @@ Realiza auditorías internas periódicas para verificar que las medidas implemen
 
 NIS2 no existe de forma aislada. Se interrelaciona con múltiples marcos regulatorios:
 
-- **ENS**: en España, el cumplimiento del ENS cubre parte sustancial de los requisitos de NIS2 para entidades del sector público.
+-**ENS**: en España, el cumplimiento del ENS cubre parte sustancial de los requisitos de NIS2 para entidades del sector público.
 - **[DORA](https://eur-lex.europa.eu/eli/reg/2022/2554)**: para el sector financiero, el Reglamento DORA (Digital Operational Resilience Act) es lex specialis respecto a NIS2, lo que significa que prevalece en su ámbito de aplicación. Las entidades financieras deben cumplir DORA en lugar de NIS2 para los aspectos cubiertos por aquel.
 - **[RGPD](https://eur-lex.europa.eu/eli/reg/2016/679)**: NIS2 complementa al RGPD. Mientras que el RGPD protege los datos personales, NIS2 protege las redes y sistemas de información. Un incidente puede activar obligaciones bajo ambas normativas.
 - **CER (Directiva de Resiliencia de Entidades Críticas)**: centrada en la resiliencia física de infraestructuras críticas, complementa a NIS2 en el ámbito de la ciberseguridad.

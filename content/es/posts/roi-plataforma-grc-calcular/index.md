@@ -1,7 +1,7 @@
 ---
-title: "ROI de una plataforma GRC: cómo calcularlo y justificar la inversión"
+title: "ROI de una plataforma GRC: cómo calcularlo y justificar la"
 image: "cover.png"
-description: "Cómo calcular el retorno de inversión de una plataforma GRC: costes evitados, ahorro operativo, reducción de riesgo, time-to-compliance y presentación al comité de dirección."
+description: "Cómo calcular el retorno de inversión de una plataforma GRC: costes evitados, ahorro operativo, reducción de riesgo, time-to-compliance y presentación al."
 slug: "roi-plataforma-grc-calcular"
 date: 2026-07-11
 publishDate: 2026-07-11
@@ -48,7 +48,7 @@ Los costes evitados son beneficios reales, aunque nunca aparezcan como ingreso e
 
 Las sanciones por incumplimiento regulatorio en España son cuantificables y crecientes:
 
-- **RGPD.** Hasta 20 millones de euros o el 4% de la facturación global anual. La [AEPD](https://www.aepd.es/) impuso más de 50 millones de euros en multas durante 2025. Las [multas más comunes en España](/es/posts/2026/06/multas-rgpd-espana-coste-real/) afectan a empresas de todos los tamaños.
+- **RGPD.** Hasta 20 millones de euros o el 4% de la facturación global anual. La [AEPD](https://www.aepd.es/) impuso más de 50 millones de euros en multas durante 2025. Las [multas más comunes en España](/es/posts/2026/06/multas-rgpd-España-coste-real/) afectan a empresas de todos los tamaños.
 - **NIS2.** Hasta 10 millones de euros para entidades esenciales y 7 millones para entidades importantes.
 - **ENS.** No impone multas directas, pero el incumplimiento puede suponer exclusión de licitaciones públicas y responsabilidad patrimonial.
 - **DORA.** Para entidades financieras, sanciones que pueden alcanzar el 1% de la facturación diaria media durante un máximo de 6 meses.
@@ -220,7 +220,7 @@ Vamos a estructurar todos los componentes en un marco de cálculo que puedas ada
 - Licencia: 30.000 EUR/año = 90.000 EUR
 - Implementación: 15.000 EUR
 - Formación: 5.000 EUR + 2 x 1.700 EUR = 8.400 EUR
-- Integraciónes: 8.000 EUR
+- Integraciones: 8.000 EUR
 - **Total: 121.400 EUR**
 
 **Beneficios (3 años):**
@@ -363,11 +363,11 @@ Para pymes, el argumento más potente no son las multas (aunque la AEPD sanciona
 
 ### ¿Qué pasa con el ROI si cambiamos de plataforma GRC?
 
-El coste de cambio (switching cost) es un factor a considerar. Incluye migración de datos, reconfiguración, reformación del equipo y un periodo de productividad reducida (típicamente 2-4 meses). Este coste puede representar el 50-70% del coste de la implementación original. Para minimizarlo, elige plataformas con APIs abiertas y capacidad de exportación de datos. Y para la decisión inicial, invierte tiempo en la [selección de la plataforma adecuada](/es/posts/2026/07/software-compliance-espana-coste/) porque el coste de equivocarte es significativo.
+El coste de cambio (switching cost) es un factor a considerar. Incluye migración de datos, reconfiguración, reformación del equipo y un periodo de productividad reducida (típicamente 2-4 meses). Este coste puede representar el 50-70% del coste de la implementación original. Para minimizarlo, elige plataformas con APIs abiertas y capacidad de exportación de datos. Y para la decisión inicial, invierte tiempo en la [selección de la plataforma adecuada](/es/posts/2026/07/software-compliance-España-coste/) porque el coste de equivocarte es significativo.
 
 
 **Artículos relacionados:**
-- [Software de compliance en España: qué necesitas y cuánto cuesta](/es/posts/2026/07/software-compliance-espana-coste/)
+- [Software de compliance en España: qué necesitas y cuánto cuesta](/es/posts/2026/07/software-compliance-España-coste/)
 - [Cómo elegir plataforma GRC](/es/posts/2026/04/como-elegir-plataforma-grc/)
 - [Mejores plataformas GRC 2026](/es/posts/2026/04/mejores-plataformas-grc-2026/)
 - [Análisis de riesgos paso a paso](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/)

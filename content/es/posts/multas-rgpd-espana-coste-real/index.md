@@ -1,5 +1,5 @@
 ---
-title: "El coste real de no cumplir con el RGPD: multas y casos reales"
+title: "El coste real de no cumplir con el RGPD"
 image: "cover.png"
 description: "Análisis de las multas RGPD más importantes en España: importes, motivos, sectores afectados y cómo evitarlas. Datos de la AEPD actualizados a 2026."
 slug: "multas-rgpd-espana-coste-real"
@@ -10,7 +10,7 @@ draft: false
 tags: ["RGPD", "Compliance", "Seguridad"]
 categories: ["Compliance"]
 author: "David Moya"
-keyword: "multas RGPD Espana"
+keyword: "multas RGPD España"
 funnel: "tofu"
 ---
 
@@ -48,15 +48,13 @@ La tendencia es clara: más resoluciones, más importe total y, desde 2024, un i
 
 El Reglamento establece dos niveles de sanción:
 
-**Infracciones del artículo 83.4 (nivel inferior).** Hasta 10 millones de euros o el 2% de la facturación global anual (la cifra más alta). Incluyen: no mantener registros de tratamiento (art. 30), no notificar brechas de seguridad (art. 33), no realizar evaluaciones de impacto cuando son obligatorias (art. 35), no designar DPO cuando es obligatorio (art. 37).
-
-**Infracciones del artículo 83.5 (nivel superior).** Hasta 20 millones de euros o el 4% de la facturación global anual. Incluyen: tratamiento sin base legitimadora (art. 6), tratamiento sin consentimiento válido cuando es necesario (art. 7), vulneración de derechos de los interesados (arts. 15-22), transferencias internacionales sin garantías adecuadas (arts. 44-49).
+**Infracciones del artículo 83.4 (nivel inferior).**Hasta 10 millones de euros o el 2% de la facturación global anual (la cifra más alta). Incluyen: no mantener registros de tratamiento (art. 30), no notificar brechas de seguridad (art. 33), no realizar evaluaciones de impacto cuando son obligatorias (art. 35), no designar DPO cuando es obligatorio (art. 37).**Infracciones del artículo 83.5 (nivel superior).**Hasta 20 millones de euros o el 4% de la facturación global anual. Incluyen: tratamiento sin base legitimadora (art. 6), tratamiento sin consentimiento válido cuando es necesario (art. 7), vulneración de derechos de los interesados (arts. 15-22), transferencias internacionales sin garantías adecuadas (arts. 44-49).
 
 En España, la LOPD-GDD (Ley Orgánica 3/2018) añade una clasificación propia:
 
-- **Infracciones leves.** Multas de hasta 40.000 EUR. Prescriben al año.
-- **Infracciones graves.** Multas de 40.001 a 300.000 EUR. Prescriben a los 2 años.
-- **Infracciones muy graves.** Multas de 300.001 a 20 millones EUR (o 4% facturación). Prescriben a los 3 años.
+-**Infracciones leves.**Multas de hasta 40.000 EUR. Prescriben al año.
+-**Infracciones graves.**Multas de 40.001 a 300.000 EUR. Prescriben a los 2 años.
+-**Infracciones muy graves.**Multas de 300.001 a 20 millones EUR (o 4% facturación). Prescriben a los 3 años.
 
 ## ¿Cuáles son las multas RGPD más altas impuestas por la AEPD?
 
@@ -74,7 +72,7 @@ Vodafone ha acumulado múltiples sanciones por infracciones reiteradas: llamadas
 
 Lección: la reincidencia es un factor agravante determinante. La AEPD incrementa las sanciones cuando detecta un patrón de incumplimiento sistemático.
 
-### EDP Energia / Naturgy / Endesa: entre 1 y 3 millones cada una
+### EDP Energía / Naturgy / Endesa: entre 1 y 3 millones cada una
 
 Las grandes energéticas han recibido sanciones recurrentes por contrataciones fraudulentas (altas sin consentimiento del titular), tratamiento excesivo de datos en procesos de verificación y deficiencias en la gestión de reclamaciones de privacidad.
 
@@ -118,7 +116,7 @@ Casos típicos: llamadas comerciales a personas que no lo han solicitado, envío
 
 El artículo 32 exige implementar medidas técnicas y organizativas "apropiadas" para garantizar la seguridad de los datos. La AEPD sanciona cuando una brecha de datos revela que las medidas eran insuficientes: datos sin cifrar, accesos sin control, ausencia de autenticación multifactor, falta de segmentación de red.
 
-Es la infracción que más vincula la protección de datos con la [ciberseguridad](/es/posts/2026/04/guia-compliance-ciberseguridad-2026/). Una organización con un programa de seguridad maduro (controles [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311), [ISO 27001](https://www.iso.org/standard/27001) implementados) tiene significativamente menos probabilidad de ser sancionada por este artículo.
+Es la infracción que más vincula la protección de datos con la [ciberseguridad](/es/posts/2026/04/guía-compliance-ciberseguridad-2026/). Una organización con un programa de seguridad maduro (controles [ENS](https://www.boe.es/eli/es/rd/2022/05/03/311), [ISO 27001](https://www.iso.org/standard/27001) implementados) tiene significativamente menos probabilidad de ser sancionada por este artículo.
 
 ### 3. Deficiencias en la información a interesados (artículos 13 y 14)
 
@@ -150,7 +148,7 @@ El sector más sancionado en España en volumen total de multas. Las grandes tel
 
 Segundo sector más sancionado. Las infracciones típicas: scoring crediticio sin base legitimadora adecuada, transferencia de datos a morosos sin verificación, comunicación de datos a terceros sin consentimiento, y deficiencias en la gestión de brechas. Las entidades financieras están sujetas además a la supervisión de [DORA](/es/posts/2026/04/dora-reglamento-ciberseguridad-financiera/) y a normativa sectorial del Banco de España.
 
-### Energia
+### Energía
 
 Las energéticas comparten con las telecos un problema estructural: contrataciones fraudulentas (altas en suministro sin consentimiento del titular) y gestión deficiente de datos en procesos de cambio de compañía.
 
@@ -160,7 +158,7 @@ El tratamiento de datos de salud (categoría especial en el RGPD, con protecció
 
 ### Sector público
 
-La AEPD no puede multar directamente a las administraciones públicas (solo puede amonestar), pero sí publica las resoluciones. Ayuntamientos, consejerías y organismos públicos reciben resoluciones frecuentes por: publicación de datos personales en tablones de anuncios, gestión deficiente de solicitudes de acceso, videovigilancia en edificios públicos sin cumplir requisitos.
+La AEPD no puede multar directamente a las administraciones públicas (solo puede amonestar), pero sí pública las resoluciones. Ayuntamientos, consejerías y organismos públicos reciben resoluciones frecuentes por: publicación de datos personales en tablones de anuncios, gestión deficiente de solicitudes de acceso, videovigilancia en edificios públicos sin cumplir requisitos.
 
 ### Comercio electrónico y marketing digital
 
@@ -172,33 +170,33 @@ La multa de la AEPD es solo la punta del iceberg. El coste real de un incumplimi
 
 ### Costes directos del procedimiento
 
-- **Abogados especializados.** Contestar un procedimiento sancionador de la AEPD requiere asesoría legal especializada. Honorarios típicos: 5.000 - 30.000 EUR dependiendo de la complejidad.
-- **Consultores de privacidad.** Si necesitas contratar un DPO externo o un consultor para remediar las deficiencias identificadas: 500 - 1.500 EUR/día.
-- **Costes administrativos internos.** Tiempo del equipo dedicado a recopilar documentación, responder requerimientos y preparar alegaciones.
+-**Abogados especializados.**Contestar un procedimiento sancionador de la AEPD requiere asesoría legal especializada. Honorarios típicos: 5.000 - 30.000 EUR dependiendo de la complejidad.
+-**Consultores de privacidad.**Si necesitas contratar un DPO externo o un consultor para remediar las deficiencias identificadas: 500 - 1.500 EUR/día.
+-**Costes administrativos internos.**Tiempo del equipo dedicado a recopilar documentación, responder requerimientos y preparar alegaciones.
 
 ### Costes de remediación
 
-- **Implementación de medidas correctivas.** La AEPD puede ordenar medidas concretas además de la multa. Implementar esas medidas tiene un coste: nuevos sistemas, reconfiguraciones, auditorías de verificación.
-- **Evaluaciones de impacto retroactivas.** Si la sanción evidencia que no se realizaron EIPD obligatorias, hay que hacerlas ahora, con el agravante de hacerlo bajo presión y escrutinio.
-- **Formación del personal.** Programas de concienciación y formación en protección de datos para todo el personal. Coste: 5.000 - 20.000 EUR dependiendo del número de empleados.
+-**Implementación de medidas correctivas.**La AEPD puede ordenar medidas concretas además de la multa. Implementar esas medidas tiene un coste: nuevos sistemas, reconfiguraciones, auditorías de verificación.
+-**Evaluaciones de impacto retroactivas.**Si la sanción evidencia que no se realizaron EIPD obligatorias, hay que hacerlas ahora, con el agravante de hacerlo bajo presión y escrutinio.
+-**Formación del personal.**Programas de concienciación y formación en protección de datos para todo el personal. Coste: 5.000 - 20.000 EUR dependiendo del número de empleados.
 
 ### Costes de notificación (en caso de brecha)
 
-- **Notificación a afectados.** Si la brecha afecta a miles o millones de personas, el coste logístico de la notificación (cartas, emails, call center para consultas) puede ser enorme.
-- **Servicios de protección de identidad.** Algunas organizaciones ofrecen monitorización de crédito o protección de identidad a los afectados. Coste típico: 10 - 50 EUR por persona afectada.
-- **Investigación forense.** Determinar el alcance de la brecha, los datos afectados y la causa raíz. Coste: 15.000 - 100.000 EUR dependiendo de la complejidad.
+-**Notificación a afectados.**Si la brecha afecta a miles o millones de personas, el coste logístico de la notificación (cartas, emails, call center para consultas) puede ser enorme.
+-**Servicios de protección de identidad.**Algunas organizaciones ofrecen monitorización de crédito o protección de identidad a los afectados. Coste típico: 10 - 50 EUR por persona afectada.
+-**Investigación forense.**Determinar el alcance de la brecha, los datos afectados y la causa raíz. Coste: 15.000 - 100.000 EUR dependiendo de la complejidad.
 
 ### Costes reputacionales
 
-- **Pérdida de clientes.** Según estudios de Ponemon Institute, entre el 5% y el 7% de los clientes abandonan una empresa tras una brecha de datos pública.
-- **Impacto en marca.** La publicación de la resolución sancionadora en la web de la AEPD es pública y permanente. Los medios de comunicación cubren las sanciones más relevantes.
-- **Coste comercial.** Dificultad para cerrar nuevos contratos, especialmente con grandes empresas y administraciones públicas que verifican el historial de sanciones de sus proveedores.
+-**Pérdida de clientes.**Según estudios de Ponemon Institute, entre el 5% y el 7% de los clientes abandonan una empresa tras una brecha de datos pública.
+-**Impacto en marca.**La publicación de la resolución sancionadora en la web de la AEPD es pública y permanente. Los medios de comunicación cubren las sanciones más relevantes.
+-**Coste comercial.**Dificultad para cerrar nuevos contratos, especialmente con grandes empresas y administraciones públicas que verifican el historial de sanciones de sus proveedores.
 
 ### Costes legales derivados
 
-- **Demandas civiles.** Los afectados pueden reclamar indemnizaciones por daños y perjuicios. En España, las reclamaciones individuales son poco frecuentes, pero las acciones colectivas están creciendo.
-- **Reclamaciones de empleados.** Si la brecha afecta a datos de empleados, pueden surgir reclamaciones laborales.
-- **Responsabilidad de administradores.** En casos graves de negligencia, los administradores de la sociedad pueden tener responsabilidad personal.
+-**Demandas civiles.**Los afectados pueden reclamar indemnizaciones por daños y perjuicios. En España, las reclamaciones individuales son poco frecuentes, pero las acciones colectivas están creciendo.
+-**Reclamaciones de empleados.**Si la brecha afecta a datos de empleados, pueden surgir reclamaciones laborales.
+-**Responsabilidad de administradores.**En casos graves de negligencia, los administradores de la sociedad pueden tener responsabilidad personal.
 
 ### Estimación del coste total
 
@@ -211,9 +209,9 @@ Para una empresa mediana española, el coste total de un incidente RGPD signific
 | Investigación forense | 15.000 - 50.000 EUR |
 | Remediación técnica | 20.000 - 80.000 EUR |
 | Notificación a afectados | 5.000 - 50.000 EUR |
-| Perdida de clientes (12 meses) | 50.000 - 300.000 EUR |
+| Pérdida de clientes (12 meses) | 50.000 - 300.000 EUR |
 | Impacto reputacional (estimado) | 30.000 - 200.000 EUR |
-| **Total estimado** | **180.000 - 1.210.000 EUR** |
+|**Total estimado**|**180.000 - 1.210.000 EUR**|
 
 Comparado con el coste de un programa de compliance RGPD proactivo (15.000 - 50.000 EUR/año para una empresa mediana), la decisión debería ser evidente.
 
@@ -233,23 +231,23 @@ El artículo 30 del RGPD lo exige. El RAT documenta todos los tratamientos de da
 
 ### 3. Realizar evaluaciones de impacto (EIPD/DPIA)
 
-Obligatorias cuando un tratamiento pueda suponer un alto riesgo para los derechos de los interesados: perfilado, tratamiento a gran escala de datos sensibles, videovigilancia sistemática, nuevas tecnologías. La AEPD publica una lista de tratamientos que requieren EIPD en España.
+Obligatorias cuando un tratamiento pueda suponer un alto riesgo para los derechos de los interesados: perfilado, tratamiento a gran escala de datos sensibles, videovigilancia sistemática, nuevas tecnologías. La AEPD pública una lista de tratamientos que requieren EIPD en España.
 
-La EIPD no es solo un ejercicio de cumplimiento: es una herramienta de [gestión de riesgos](/es/posts/2026/03/analisis-riesgos-ciberseguridad-paso-a-paso/) que te permite identificar y mitigar riesgos antes de que se materialicen.
+La EIPD no es solo un ejercicio de cumplimiento: es una herramienta de [gestión de riesgos](/es/posts/2026/03/análisis-riesgos-ciberseguridad-paso-a-paso/) que te permite identificar y mitigar riesgos antes de que se materialicen.
 
 ### 4. Implementar medidas de seguridad proporcionales
 
 El artículo 32 no prescribe medidas concretas, sino que exige medidas "apropiadas al riesgo". Pero hay un consenso sobre el mínimo:
 
-- **Cifrado de datos personales** en tránsito y en reposo.
-- **Control de acceso** basado en el principio de mínimo privilegio.
-- **Autenticación multifactor** para accesos a sistemas con datos personales.
-- **Backups** con pruebas de restauración periódicas.
-- **Monitoring y detección** de accesos no autorizados (idealmente con un [SIEM](/es/posts/2026/04/que-es-un-siem-para-que-sirve/)).
-- **Gestión de vulnerabilidades** con escaneos regulares y parcheo oportuno.
-- **Segmentación de red** para aislar los datos personales de otros sistemas.
+-**Cifrado de datos personales**en tránsito y en reposo.
+-**Control de acceso**basado en el principio de mínimo privilegio.
+-**Autenticación multifactor**para accesos a sistemas con datos personales.
+-**Backups**con pruebas de restauración periódicas.
+-**Monitoring y detección**de accesos no autorizados (idealmente con un [SIEM](/es/posts/2026/04/que-es-un-siem-para-que-sirve/)).
+-**Gestión de vulnerabilidades**con escaneos regulares y parcheo oportuno.
+-**Segmentación de red**para aislar los datos personales de otros sistemas.
 
-Si tu organización implementa los controles del [ENS](/es/posts/2026/03/que-es-esquema-nacional-seguridad-ens/) o [ISO 27001](/es/posts/2026/04/guia-iso-27001-startups/), ya cubres la mayoría de los requisitos de seguridad del artículo 32.
+Si tu organización implementa los controles del [ENS](/es/posts/2026/03/que-es-esquema-nacional-seguridad-ens/) o [ISO 27001](/es/posts/2026/04/guía-iso-27001-startups/), ya cubres la mayoría de los requisitos de seguridad del artículo 32.
 
 ### 5. Gestionar los derechos de los interesados con diligencia
 
@@ -261,11 +259,11 @@ Las reclamaciones ante la AEPD por no atención de derechos son una de las vías
 
 Si tu base legitimadora es el consentimiento, asegúrate de que cumple los requisitos del RGPD:
 
-- **Libre.** Sin condicionamiento (no "acepta cookies o no uses el servicio").
-- **Específico.** Para cada finalidad por separado.
-- **Informado.** Con información clara sobre qué datos, para qué, durante cuánto tiempo.
-- **Inequívoco.** Acción afirmativa clara (no casillas premarcadas).
-- **Demostrable.** Puedes probar cuándo y cómo se obtuvo el consentimiento.
+-**Libre.**Sin condicionamiento (no "acepta cookies o no uses el servicio").
+-**Específico.**Para cada finalidad por separado.
+-**Informado.**Con información clara sobre qué datos, para qué, durante cuánto tiempo.
+-**Inequívoco.**Acción afirmativa clara (no casillas premarcadas).
+-**Demostrable.**Puedes probar cuándo y cómo se obtuvo el consentimiento.
 
 ### 7. Notificar brechas en plazo
 
@@ -285,21 +283,21 @@ El artículo 83.2 del RGPD lista los factores que la autoridad de control debe c
 
 ### Factores atenuantes
 
-- **Medidas adoptadas para paliar los daños.** Si actuaste rápidamente para minimizar el impacto.
-- **Grado de responsabilidad teniendo en cuenta las medidas organizativas y técnicas.** Si tenías controles implementados pero fallaron puntualmente.
-- **Cooperación con la autoridad.** Si colaboras activamente en la investigación.
-- **Notificación proactiva.** Si notificaste la brecha antes de que la AEPD la descubriera.
-- **Adhesión a códigos de conducta o certificaciones.** Tener ISO 27001, ENS, o adherirse a códigos de conducta aprobados se considera atenuante.
-- **Ausencia de beneficio financiero.** Si no obtuviste beneficio económico de la infracción.
+-**Medidas adoptadas para paliar los daños.**Si actuaste rápidamente para minimizar el impacto.
+-**Grado de responsabilidad teniendo en cuenta las medidas organizativas y técnicas.**Si tenías controles implementados pero fallaron puntualmente.
+-**Cooperación con la autoridad.**Si colaboras activamente en la investigación.
+-**Notificación proactiva.**Si notificaste la brecha antes de que la AEPD la descubriera.
+-**Adhesión a códigos de conducta o certificaciones.**Tener ISO 27001, ENS, o adherirse a códigos de conducta aprobados se considera atenuante.
+-**Ausencia de beneficio financiero.**Si no obtuviste beneficio económico de la infracción.
 
 ### Factores agravantes
 
-- **Reincidencia.** Sanciones previas por infracciones similares.
-- **No cooperación.** Obstrucción o falta de colaboración con la AEPD.
-- **Naturaleza de los datos.** Datos de salud, biométricos, de menores o financieros agravan la sanción.
-- **Número de afectados.** A más afectados, mayor sanción.
-- **Duración de la infracción.** Si la infracción se prolongó en el tiempo sin corrección.
-- **Carácter intencional.** Si la infracción fue deliberada (vs. negligente).
+-**Reincidencia.**Sanciones previas por infracciones similares.
+-**No cooperación.**Obstrucción o falta de colaboración con la AEPD.
+-**Naturaleza de los datos.**Datos de salud, biométricos, de menores o financieros agravan la sanción.
+-**Número de afectados.**A más afectados, mayor sanción.
+-**Duración de la infracción.**Si la infracción se prolongó en el tiempo sin corrección.
+-**Carácter intencional.**Si la infracción fue deliberada (vs. negligente).
 
 ## Herramientas para gestionar el cumplimiento RGPD
 
@@ -357,13 +355,10 @@ La transposición de [NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555) genera 
 
 ### Sector público bajo escrutinio
 
-La AEPD ha incrementado las inspecciones al sector público, especialmente en el ámbito sanitario y educativo. Aunque no puede multar a las AAPP, las resoluciones de apercibimiento son públicas y generan presión mediática.
-
-
-**Artículos relacionados:**
-- [Políticas de seguridad informática: cómo crearlas](/es/posts/2026/04/politicas-seguridad-informatica-como-crearlas/)
+La AEPD ha incrementado las inspecciones al sector público, especialmente en el ámbito sanitario y educativo. Aunque no puede multar a las AAPP, las resoluciones de apercibimiento son públicas y generan presión mediática.**Artículos relacionados:**
+- [Políticas de seguridad informática: cómo crearlas](/es/posts/2026/04/políticas-seguridad-informatica-como-crearlas/)
 - [RGPD 2026: checklist para empresas](/es/posts/2026/04/rgpd-2026-checklist-empresas/)
-- [Guía compliance ciberseguridad 2026](/es/posts/2026/04/guia-compliance-ciberseguridad-2026/)
+- [Guía compliance ciberseguridad 2026](/es/posts/2026/04/guía-compliance-ciberseguridad-2026/)
 - [NIS2: qué es y a quién afecta](/es/posts/2026/03/nis2-que-es-a-quien-afecta/)
 
 ## Preguntas frecuentes

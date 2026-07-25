@@ -1,7 +1,7 @@
 ---
-title: "EU AI Act: implicaciones reales para equipos de ciberseguridad"
+title: "EU AI Act: implicaciones reales para equipos de"
 image: "cover.png"
-description: "Análisis del EU AI Act desde la perspectiva de ciberseguridad: clasificación de riesgo de sistemas IA, requisitos de seguridad, impacto en SOC y compliance, y plazos de aplicación."
+description: "Análisis del EU AI Act desde la perspectiva de ciberseguridad: clasificación de riesgo de sistemas IA, requisitos de seguridad, impacto en SOC y compliance."
 slug: "eu-ai-act-ciberseguridad"
 date: 2026-07-14
 publishDate: 2026-07-14
@@ -94,7 +94,7 @@ Los sistemas clasificados como alto riesgo deben cumplir un conjunto exhaustivo 
 El artículo 9 del AI Act exige un sistema de gestión de riesgos que se mantenga durante todo el ciclo de vida del sistema de IA. No es un análisis puntual: es un proceso iterativo que incluye identificación, estimación, evaluación y tratamiento de riesgos. Para los equipos de seguridad, esto se traduce en:
 
 - Documentar los riesgos de cada sistema de IA desplegado en el SOC o en herramientas GRC.
-- Evaluar periódicamente si el perfil de riesgo ha cambiado (por actualizaciónes del modelo, cambios en los datos de entrenamiento, nuevos vectores de ataque).
+- Evaluar periódicamente si el perfil de riesgo ha cambiado (por actualizaciones del modelo, cambios en los datos de entrenamiento, nuevos vectores de ataque).
 - Implementar medidas de mitigación proporcionales al nivel de riesgo identificado.
 
 ### Gobernanza de datos

@@ -1,7 +1,7 @@
 ---
-title: "Detection Engineering: cómo construir reglas de detección que realmente funcionen"
+title: "Detection Engineering: cómo construir reglas de detección"
 image: "cover.png"
-description: "Guía práctica de detection engineering: cómo disenar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la calidad de las detecciones."
+description: "Guía práctica de detection engineering: cómo diseñar, implementar y mantener reglas de detección eficaces en un SOC, reducir falsos positivos y medir la."
 slug: "detection-engineering-reglas-deteccion"
 date: 2026-06-02
 publishDate: 2026-06-02

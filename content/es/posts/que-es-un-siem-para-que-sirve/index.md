@@ -1,7 +1,7 @@
 ---
 title: "Qué es un SIEM y por qué tu empresa lo necesita"
 image: "cover.png"
-description: "Guía completa sobre SIEM: qué es, cómo funciona, principales soluciones del mercado (Splunk, QRadar, Elastic, Sentinel), open source vs comercial, y cuándo necesitas uno."
+description: "Guía completa sobre SIEM: qué es, cómo funciona, principales soluciones del mercado (Splunk, QRadar, Elastic, Sentinel), open source vs comercial, y cuándo."
 slug: "que-es-un-siem-para-que-sirve"
 date: 2026-03-30
 lastmod: 2026-03-30
@@ -168,7 +168,7 @@ La elección entre un SIEM open source y uno comercial depende de los recursos d
 - Equipo de seguridad que necesita enfocarse en la operación, no en la administración de la plataforma.
 - Requisitos de certificación o auditoría que valoran el respaldo de un fabricante.
 - Volumenes de datos muy elevados que requieren optimizaciones de rendimiento garantizadas.
-- Integraciónes nativas con herramientas ya existentes en la organización.
+- Integraciones nativas con herramientas ya existentes en la organización.
 
 En la práctica, muchas organizaciones adoptan un enfoque mixto: utilizan componentes open source para funciones específicas (por ejemplo, Wazuh como agente en endpoints o MISP para inteligencia de amenazas) combinados con un SIEM comercial como plataforma central de correlación.
 
@@ -245,7 +245,7 @@ El coste varía enormemente según la solución elegida, el volumen de datos y e
 
 ### ¿Puedo usar un SIEM sin tener un SOC?
 
-Técnicamente sí, pero su valor se reduce drasticamente. Un SIEM sin personas que analicen las alertas y respondan a los incidentes es como una alarma que suena en una casa vacia. Si no tienes equipo interno para operar el SIEM, la alternativa más razonable es contratar un servicio MDR/MSSP que incluya el SIEM y el equipo humano.
+Técnicamente sí, pero su valor se reduce drásticamente. Un SIEM sin personas que analicen las alertas y respondan a los incidentes es como una alarma que suena en una casa vacia. Si no tienes equipo interno para operar el SIEM, la alternativa más razonable es contratar un servicio MDR/MSSP que incluya el SIEM y el equipo humano.
 
 ### ¿Cuánto tiempo tarda en estar operativo un SIEM?
 

@@ -1,7 +1,7 @@
 ---
-title: "ENS Alto vs Medio vs Bajo: diferencias, requisitos y cómo elegir categoría"
+title: "ENS Alto vs Medio vs Bajo: diferencias"
 image: "cover.png"
-description: "Comparativa detallada de los tres niveles del Esquema Nacional de Seguridad (ENS): criterios de categorización, medidas obligatorias por nivel y cómo elegir la categoría correcta para tu organización."
+description: "Comparativa detallada de los tres niveles del Esquema Nacional de Seguridad (ENS): criterios de categorización, medidas obligatorias por nivel y cómo elegir."
 slug: "ens-alto-medio-bajo-diferencias"
 date: 2026-05-05
 publishDate: 2026-05-05
@@ -22,11 +22,7 @@ El Esquema Nacional de Seguridad (ENS) clasifica los sistemas de información en
 
 Los tres niveles del ENS reflejan el impacto que un incidente de seguridad tendría sobre la organización, los servicios públicos y los ciudadanos. El Real Decreto 311/2022 define cada nivel en función de cinco dimensiones de seguridad: confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad.
 
-**Nivel Bajo** se aplica cuando un incidente tendría un impacto limitado. Ejemplo típico: un portal web informativo de un ayuntamiento que no gestiona datos personales sensibles. Las consecuencias de una brecha serían menores y no afectarían a derechos fundamentales.
-
-**Nivel Medio** corresponde a sistemas donde un incidente tendría un impacto grave pero no catastrófico. Ejemplo: la sede electrónica de un ayuntamiento que gestiona trámites con datos personales, o un sistema de gestión tributaria municipal. Un incidente afectaría a servicios públicos y a datos de ciudadanos.
-
-**Nivel Alto** se reserva para sistemas donde un incidente tendría consecuencias muy graves. Ejemplo: sistemas sanitarios con historiales clínicos, infraestructuras críticas, o sistemas que gestionen datos de menores o víctimas de violencia de género. Un incidente comprometería derechos fundamentales o la seguridad pública.
+**Nivel Bajo**se aplica cuando un incidente tendría un impacto limitado. Ejemplo típico: un portal web informativo de un ayuntamiento que no gestiona datos personales sensibles. Las consecuencias de una brecha serían menores y no afectarían a derechos fundamentales.**Nivel Medio**corresponde a sistemas donde un incidente tendría un impacto grave pero no catastrófico. Ejemplo: la sede electrónica de un ayuntamiento que gestiona trámites con datos personales, o un sistema de gestión tributaria municipal. Un incidente afectaría a servicios públicos y a datos de ciudadanos.**Nivel Alto**se reserva para sistemas donde un incidente tendría consecuencias muy graves. Ejemplo: sistemas sanitarios con historiales clínicos, infraestructuras críticas, o sistemas que gestionen datos de menores o víctimas de violencia de género. Un incidente comprometería derechos fundamentales o la seguridad pública.
 
 | Dimensión | Bajo | Medio | Alto |
 |-----------|------|-------|------|
@@ -42,10 +38,10 @@ La categorización se realiza evaluando cada sistema de información en las cinc
 
 El CCN proporciona la herramienta PILAR para realizar esta categorización de forma sistemática. El proceso implica:
 
-1. **Identificar los activos de información** que gestiona el sistema
-2. **Evaluar el impacto** de una pérdida de confidencialidad, integridad, disponibilidad, autenticidad o trazabilidad para cada activo
-3. **Asignar el nivel** correspondiente a cada dimensión
-4. **Determinar el nivel global** como el máximo de todas las dimensiones
+1.**Identificar los activos de información**que gestiona el sistema
+2.**Evaluar el impacto**de una pérdida de confidencialidad, integridad, disponibilidad, autenticidad o trazabilidad para cada activo
+3.**Asignar el nivel**correspondiente a cada dimensión
+4.**Determinar el nivel global**como el máximo de todas las dimensiones
 
 La evaluación del impacto debe considerar factores concretos: si el sistema gestiona datos personales (artículo 9 del RGPD), si soporta servicios esenciales para los ciudadanos, si afecta a infraestructuras críticas y si un incidente tendría consecuencias legales, económicas o reputacionales significativas.
 
@@ -53,17 +49,11 @@ Según las guías CCN-STIC 803 y 804, los responsables de la información y del 
 
 ## ¿Qué medidas de seguridad exige cada nivel?
 
-El ENS define 36 familias de medidas de seguridad organizadas en tres marcos: organizativo, operacional y de protección. Cada medida tiene requisitos que varían según el nivel del sistema.
-
-**Medidas organizativas** (comunes a todos los niveles):
+El ENS define 36 familias de medidas de seguridad organizadas en tres marcos: organizativo, operacional y de protección. Cada medida tiene requisitos que varían según el nivel del sistema.**Medidas organizativas**(comunes a todos los niveles):
 - Política de seguridad aprobada por la dirección
 - Normativa de seguridad documentada
 - Procedimientos de seguridad operativos
-- Proceso de autorización de acceso
-
-**Diferencias clave por nivel:**
-
-Para **nivel bajo**, las medidas se implementan en su versión básica. El control de acceso puede ser simple (usuario y contraseña), los registros de actividad son básicos y la gestión de incidentes es reactiva.
+- Proceso de autorización de acceso**Diferencias clave por nivel:**Para**nivel bajo**, las medidas se implementan en su versión básica. El control de acceso puede ser simple (usuario y contraseña), los registros de actividad son básicos y la gestión de incidentes es reactiva.
 
 Para **nivel medio**, se exigen refuerzos significativos: autenticación de doble factor en accesos remotos, registros de actividad detallados con retención mínima de un año, gestión de incidentes con procedimientos formalizados, cifrado de datos en tránsito y copias de seguridad verificadas periódicamente.
 
@@ -75,19 +65,15 @@ Para **nivel alto**, se añaden medidas avanzadas: autenticación multifactor pa
 
 La elección no es discrecional: depende del tipo de información que gestionas y de los servicios que prestas. Sin embargo, existen criterios prácticos que ayudan a determinar el nivel correcto:
 
-**Categoriza como nivel bajo** si tu sistema:
+**Categoriza como nivel bajo**si tu sistema:
 - No gestiona datos personales más allá de datos de contacto básicos
 - Ofrece información pública sin interacción con ciudadanos
 - No soporta servicios esenciales
-- Un fallo no afectaría a derechos de terceros
-
-**Categoriza como nivel medio** si tu sistema:
+- Un fallo no afectaría a derechos de terceros**Categoriza como nivel medio**si tu sistema:
 - Gestiona datos personales de ciudadanos (padrón, tributos, licencias)
 - Soporta tramitación electrónica o sede electrónica
 - Un fallo interrumpiría servicios públicos durante horas o días
-- Maneja datos económicos o contractuales
-
-**Categoriza como nivel alto** si tu sistema:
+- Maneja datos económicos o contractuales**Categoriza como nivel alto**si tu sistema:
 - Gestiona datos de categorías especiales (salud, menores, víctimas)
 - Soporta infraestructuras críticas o servicios esenciales
 - Un fallo comprometería derechos fundamentales
@@ -97,16 +83,10 @@ La recomendación del CCN es categorizar siempre con un enfoque conservador: ant
 
 ## ¿Qué pasa si categorizo mal mi sistema?
 
-Una categorización incorrecta tiene consecuencias directas en la auditoría de cumplimiento y en la protección real de la organización.
-
-**Si categorizas por debajo del nivel real:**
-- La auditoría detectará que las medidas implementadas son insuficientes para los riesgos reales
+Una categorización incorrecta tiene consecuencias directas en la auditoría de cumplimiento y en la protección real de la organización.**Si categorizas por debajo del nivel real:**- La auditoría detectará que las medidas implementadas son insuficientes para los riesgos reales
 - El informe de auditoría reflejará no conformidades críticas
 - En caso de incidente, la organización podría enfrentar responsabilidades agravadas por negligencia en la categorización
-- El CCN puede exigir una recategorización y la implementación urgente de medidas adicionales
-
-**Si categorizas por encima del nivel necesario:**
-- Implementarás medidas de seguridad innecesariamente costosas
+- El CCN puede exigir una recategorización y la implementación urgente de medidas adicionales**Si categorizas por encima del nivel necesario:**- Implementarás medidas de seguridad innecesariamente costosas
 - Los plazos de implementación se alargan sin beneficio proporcional
 - Los recursos (presupuesto, personal) se desvían de otras prioridades
 - La auditoría será más exigente y costosa de lo necesario
@@ -123,7 +103,7 @@ Los costes varían enormemente según el tamaño de la organización, el estado 
 | Implementación de medidas | 3.000 - 10.000 EUR | 20.000 - 60.000 EUR | 50.000 - 200.000 EUR |
 | Auditoría | Autoevaluación (interno) | 8.000 - 15.000 EUR | 12.000 - 25.000 EUR |
 | Mantenimiento anual | 2.000 - 5.000 EUR | 10.000 - 25.000 EUR | 25.000 - 60.000 EUR |
-| **Total primer año** | **10.000 - 30.000 EUR** | **43.000 - 115.000 EUR** | **92.000 - 305.000 EUR** |
+|**Total primer año**|**10.000 - 30.000 EUR**|**43.000 - 115.000 EUR**|**92.000 - 305.000 EUR**|
 
 Las herramientas gratuitas del CCN (PILAR, INES, LUCIA, microCLAUDIA) reducen significativamente el coste para administraciones públicas. Las plataformas GRC como Riskitera automatizan la gestión de controles y evidencias, reduciendo el coste operativo recurrente entre un 40% y un 70%.
 
@@ -132,7 +112,7 @@ Las herramientas gratuitas del CCN (PILAR, INES, LUCIA, microCLAUDIA) reducen si
 El ENS y la ISO 27001 comparten muchos controles, pero no son equivalentes. Una organización certificada en ISO 27001 tiene entre un 60% y un 70% del camino recorrido para el ENS, según estimaciones del CCN.
 
 Las principales diferencias:
-- **ISO 27001 no tiene niveles**: aplica los mismos requisitos a todos los sistemas
+-**ISO 27001 no tiene niveles**: aplica los mismos requisitos a todos los sistemas
 - **ENS tiene medidas prescriptivas**: ISO 27001 permite elegir controles; el ENS los impone según el nivel
 - **ENS exige herramientas CCN**: para el sector público, el uso de PILAR e INES es obligatorio
 - **Auditoría diferente**: ISO 27001 requiere auditoría de un organismo acreditado por ENAC; el ENS acepta auditores del sector público
@@ -143,7 +123,7 @@ Para organizaciones que deben cumplir ambos marcos, la recomendación es impleme
 
 **Artículos relacionados:**
 - [Qué es el Esquema Nacional de Seguridad (ENS)](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
-- [Guía práctica: ISO 27001 para Startups](/es/posts/2026/02/guia-iso-27001-startups/)
+- [Guía práctica: ISO 27001 para Startups](/es/posts/2026/02/guía-iso-27001-startups/)
 
 ## Dudas habituales
 

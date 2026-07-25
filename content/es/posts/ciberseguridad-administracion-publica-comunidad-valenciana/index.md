@@ -1,7 +1,7 @@
 ---
-title: "Ciberseguridad para la administración pública en Comunidad Valenciana: ENS, NIS2 y cumplimiento obligatorio"
+title: "Ciberseguridad para la administración pública en Comunidad"
 image: "cover.png"
-description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Comunidad Valenciana: requisitos ENS, NIS2, plazos, herramientas del CCN y cómo cumplir la normativa de seguridad obligatoria."
+description: "Guía de ciberseguridad para ayuntamientos y organismos públicos de Comunidad Valenciana: requisitos ENS, NIS2, plazos, herramientas del CCN y cómo cumplir."
 slug: "ciberseguridad-administracion-publica-comunidad-valenciana"
 date: 2026-08-14
 publishDate: 2026-08-14
@@ -10,7 +10,7 @@ draft: false
 tags: ["ENS", "Administración Pública", "NIS2", "Comunidad Valenciana"]
 categories: ["Compliance"]
 author: "David Moya"
-keyword: "ciberseguridad administracion publica Comunidad Valenciana"
+keyword: "ciberseguridad administración publica Comunidad Valenciana"
 funnel: "mofu"
 geo_target: "Comunidad Valenciana"
 ---
@@ -81,4 +81,4 @@ La transposición de NIS2 a la legislación española se espera completada en 20
 **Artículos relacionados:**
 - [Qué es el Esquema Nacional de Seguridad (ENS)](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
 - [NIS2: qué es, a quién afecta y plazos](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
-- [ENS en la administración pública](/es/posts/2026/05/ens-administracion-publica/)
+- [ENS en la administración pública](/es/posts/2026/05/ens-administración-publica/)

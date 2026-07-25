@@ -1,5 +1,5 @@
 ---
-title: "Cómo medir el riesgo ciber: metodologías FAIR vs MAGERIT en la práctica"
+title: "Cómo medir el riesgo ciber: metodologías FAIR vs MAGERIT en"
 image: "cover.png"
 description: "Comparativa práctica de las metodologías FAIR y MAGERIT para medir el riesgo en ciberseguridad: cuándo usar cada una, ventajas, limitaciones y cómo combinarlas."
 slug: "medir-riesgo-ciberseguridad-fair-magerit"

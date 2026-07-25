@@ -1,7 +1,7 @@
 ---
 title: "Cuánto gana un analista SOC en España en 2026: datos reales"
 image: "cover.png"
-description: "Salarios reales de analistas SOC en España en 2026: rangos por nivel (N1, N2, N3), por ciudad, por sector y comparativa con Europa. Datos de ofertas y encuestas del sector."
+description: "Salarios reales de analistas SOC en España en 2026: rangos por nivel (N1, N2, N3), por ciudad, por sector y comparativa con Europa. Datos de ofertas y."
 slug: "salario-analista-soc-espana-2026"
 date: 2026-06-23
 publishDate: 2026-06-23
@@ -10,7 +10,7 @@ draft: false
 tags: ["SOC", "Carreras", "Operaciones"]
 categories: ["SOC"]
 author: "David Moya"
-keyword: "salario analista SOC Espana"
+keyword: "salario analista SOC España"
 funnel: "tofu"
 ---
 

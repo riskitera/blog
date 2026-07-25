@@ -1,7 +1,7 @@
 ---
 title: "Zero Trust Architecture: guía práctica más allá del buzzword"
 image: "cover.png"
-description: "Guía práctica de Zero Trust para empresas: principios reales, componentes técnicos, pasos de implementación, errores comunes y cómo medir la madurez de tu arquitectura Zero Trust."
+description: "Guía práctica de Zero Trust para empresas: principios reales, componentes técnicos, pasos de implementación, errores comunes y cómo medir la madurez de tu."
 slug: "zero-trust-guia-practica"
 date: 2026-07-18
 publishDate: 2026-07-18

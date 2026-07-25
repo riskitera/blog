@@ -1,7 +1,7 @@
 ---
 title: "Ciberseguridad en banca: cómo cumplir DORA paso a paso"
 image: "cover.png"
-description: "Guía práctica para entidades bancarias y fintech sobre cómo cumplir el reglamento DORA: requisitos técnicos, gestión de riesgos TIC, pruebas de resiliencia y plazos de implementación."
+description: "Guía práctica para entidades bancarias y fintech sobre cómo cumplir el reglamento DORA: requisitos técnicos, gestión de riesgos TIC, pruebas de resiliencia."
 slug: "ciberseguridad-banca-dora"
 date: 2026-05-19
 publishDate: 2026-05-19

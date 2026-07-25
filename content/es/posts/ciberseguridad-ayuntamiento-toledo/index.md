@@ -1,7 +1,7 @@
 ---
-title: "Ciberseguridad para el Ayuntamiento de Toledo: cumplir ENS y NIS2"
+title: "Ciberseguridad para el Ayuntamiento de Toledo"
 image: "cover.png"
-description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Toledo y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos para la certificación."
+description: "Guía de cumplimiento ENS y NIS2 para el Ayuntamiento de Toledo y organismos públicos de la ciudad: requisitos, plazos, herramientas CCN y pasos para la."
 slug: "ciberseguridad-ayuntamiento-toledo"
 date: 2026-10-15
 publishDate: 2026-10-15
@@ -69,4 +69,4 @@ NIS2 amplía las obligaciones de ciberseguridad a los servicios municipales esen
 **Artículos relacionados:**
 - [Qué es el ENS](/es/posts/2026/04/que-es-esquema-nacional-seguridad-ens/)
 - [NIS2: qué es y a quién afecta](/es/posts/2026/04/nis2-que-es-a-quien-afecta/)
-- [Ciberseguridad en Castilla-La Mancha](/es/posts/ciberseguridad-administracion-publica-castilla-la-mancha/)
+- [Ciberseguridad en Castilla-La Mancha](/es/posts/ciberseguridad-administración-publica-castilla-la-mancha/)

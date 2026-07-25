@@ -1,7 +1,7 @@
 ---
-title: "Qué es el Esquema Nacional de Seguridad (ENS): guía completa 2026"
+title: "Qué es el Esquema Nacional de Seguridad (ENS)"
 image: "cover.png"
-description: "Todo lo que necesitas saber sobre el Esquema Nacional de Seguridad (ENS): niveles de seguridad, quién debe cumplirlo, medidas clave y pasos para implementarlo en tu organización."
+description: "Todo lo que necesitas saber sobre el Esquema Nacional de Seguridad (ENS): niveles de seguridad, quién debe cumplirlo, medidas clave y pasos para."
 slug: "que-es-esquema-nacional-seguridad-ens"
 date: 2026-02-28
 lastmod: 2026-02-28
